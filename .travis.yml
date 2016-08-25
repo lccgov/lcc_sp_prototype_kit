@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - 4.0
+before_install:
+  - npm install -g gulp-cli
+install:
+  - npm install
+script:
+  - gulp test
+after_success:
+  # Check to see if the version file has been updated
+  - ./bin/create-release-tag.sh
+branches:
+  except:
+  - "/^v/"
+deploy:
+  provider: heroku
+  api_key:
+    secure: 
+  app: lcc-sp-prototype-kit
+  on: master
+
+notifications:
+  email: false
+
+sudo: false

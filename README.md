@@ -1,0 +1,2 @@
+# LCC SharePoint Prototype kit
+
