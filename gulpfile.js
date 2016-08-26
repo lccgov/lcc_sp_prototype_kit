@@ -2,17 +2,10 @@ var gulp = require('gulp');
 var syncy = require('syncy');
 var sass = require('gulp-sass');
 var notify = require('gulp-notify');
+var sourcemaps = require('gulp-sourcemaps');
+var nodemon = require('gulp-nodemon');
 
-gulp.task('sass', function () {
-    return gulp.src('app/assets/sass/*.scss')
-      .pipe(sass({includePaths: [
-            'lcc_modules/lcc_frontend_toolkit/stylesheets/']}).on('error', function (err) {
-          notify({ title: 'SASS Task' }).write(err.line + ': ' + err.message);
-          this.emit('end');
-      }))
-      .pipe(gulp.dest('./public/stylesheets/'))
-});
-
+//Sync assets to public folder excluding SASS files
 gulp.task('sync:assets', (done) => {
     syncy(['app/assets/**/*', '!app/assets/sass/**'], 'public', {
             ignoreInDest: '**/stylesheets/**',
@@ -23,6 +16,7 @@ gulp.task('sync:assets', (done) => {
     }).catch((err) => { done(err);})
 });
 
+//Sync lcc_frontend_toolkit to lcc_modules to be used for SASS partial compilation
 gulp.task('sync:lcc_frontend_toolkit', (done) => {
     syncy(['node_modules/lcc_frontend_toolkit/**'], 'lcc_modules/lcc_frontend_toolkit', {
             base: 'node_modules/lcc_frontend_toolkit',
@@ -32,6 +26,30 @@ gulp.task('sync:lcc_frontend_toolkit', (done) => {
     }).catch((err) => { done(err);})
 });
 
-gulp.task('generate-assets',  ['sync:assets', 'sync:lcc_frontend_toolkit', 'sass']);
+//Compile SASS into the respective CSS and copy to public folder
+gulp.task('sass', function () {
+    return gulp.src('app/assets/sass/*.scss')
+      .pipe(sass({includePaths: [
+            'lcc_modules/lcc_frontend_toolkit/stylesheets/']}).on('error', function (err) {
+          notify({ title: 'SASS Task' }).write(err.line + ': ' + err.message);
+          this.emit('end');
+      }))
+      .pipe(gulp.dest('./public/stylesheets/'))
+});
 
-gulp.task('default', function() {console.log('default')});
+gulp.task('watch', function () {
+    gulp.watch('app/assets/sass/**/*.scss', ['sass']);
+    gulp.watch(['app/assets/**/*', '!app/assets/sass/**'], ['sync:assets']);
+});
+
+gulp.task('nodemon', function () {
+    nodemon({
+        script: 'server.js',
+        ignore: ['node_modules/**', 'app/assets/**', 'public/**'],
+        ext: 'js json',
+        env: { 'NODE_ENV': 'development' }
+    })
+});
+ 
+gulp.task('generate-assets',  ['sync:assets', 'sync:lcc_frontend_toolkit', 'sass']);
+gulp.task('default', ['generate-assets', 'watch', 'nodemon']);

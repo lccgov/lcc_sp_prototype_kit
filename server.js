@@ -147,10 +147,5 @@ console.log('\nNOTICE: the kit is for building prototypes, do not use it for pro
 // start the app
 utils.findAvailablePort(app, function (port) {
   console.log('Listening on port ' + port + '   url: http://localhost:' + port)
-  if (env === 'production') {
-    app.listen(port)
-  } else {
-    app.listen(port, function () {
-    })
-  }
+  app.listen(port);
 })
