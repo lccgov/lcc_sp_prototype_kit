@@ -6,6 +6,7 @@ before_install:
 install:
 - npm install
 after_success:
+- chmod +x ./bin/create-release-tag.sh
 - "./bin/create-release-tag.sh"
 branches:
   except:
