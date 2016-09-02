@@ -1,0 +1,50 @@
+{% extends "master.html" %}
+
+{% block search %}
+{% endblock %}
+
+{% block bodycontent %}
+
+  <section id="content" class="sectionOne home">
+    <div class="container-fluid">
+      <div class="row">   
+        <h1 class="sr-only">{% block header %}{% endblock %}</h1>
+        {% block sectionOne %}
+        {% endblock %}
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionTwo home">
+    <div class="container-fluid">
+      <div class="row">
+        {% block sectionTwo %}
+        {% endblock %}
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionThree home">
+    <div class="container-fluid">
+      <div class="row">
+        {% block sectionThree %}
+        {% endblock %}
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionFour home">
+    <div class="container-fluid">
+      <div class="row">
+        {% block sectionFour %}
+        {% endblock %}
+      </div>
+    </div>
+  </section>
+
+  {% include "includes/atoz.html" %}
+
+{% endblock %}
+
+
+

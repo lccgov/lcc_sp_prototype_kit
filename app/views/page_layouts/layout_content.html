@@ -1,0 +1,44 @@
+{% extends "master.html" %}
+
+{% block page_title %}
+{% endblock %}
+
+{% block bodycontent %}
+
+    {% block breadcrumb %}
+        {% include "includes/breadcrumb.html" %}
+    {% endblock %}
+
+    <section id="main" class="sectionOne">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-block">
+                        <h1>{% block header %}{% endblock %}</h1>
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    {% block rightHandColumn %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionTwo">
+        <div class="container-fluid">
+            <div class="row">
+            {% block sectionTwo %}
+            {% endblock %}
+            </div>
+        </div>
+    </section>
+
+    {% include "../includes/feedback.html" %}
+
+    {% include "../includes/atoz.html" %}
+
+{% endblock %}
+    

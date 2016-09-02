@@ -1,70 +1,59 @@
-{% extends "layouts/layout_home.html" %}
+{% extends "page_layouts/layout_home.html" %}
 
 {% block page_title %}
   Leeds.gov.uk SharePoint prototype kit
 {% endblock %}
 
-{% block breadcrumb %}
-{% endblock %}
+{% block header %}Leeds.gov.uk Prototype{% endblock %}
 
-{% block content %}
-
-    <h1 class="sr-only">Leeds City Council Home Page</h1>
-
-    <!-- HEADER -->   
-    
-    <section id="main" class="sectionOne home">
-        <div class="container-fluid">
-			<div class="row">
-                
-                <div class="col-md-12 home-banner">
+    {% block sectionOne %}
                     
-                    <div class="col-lg-8 search-wrapper">
+        <div class="col-md-12 home-banner">
+            
+            <div class="col-lg-8 search-wrapper">
 
-                        <div class="col-lg-8 search home-search no-padding">
-                            <div class="input-group">
-                              <label class="sr-only" for="searchWebsite">Search website</label>
-                              <input type="text" id="searchWebsite" class="form-control" placeholder="Search leeds.gov.uk">
-                              <span class="input-group-btn">
-                                  <button class="btn" type="button"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span></button>
-                              </span>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-10 popular-links no-padding">
-                            <h2>Popular</h2>
-                            <ul>
-                                <li><a href="#">Check your bin day</a></li>
-                                <li><a href="examples/service-page.html">Council Tax</a></li>
-                                <li><a href="#">Housing</a></li>
-                                <li><a href="#">Online payments</a></li>
-                                <li><a href="#">Search for planning applications</a></li>
-                                <li><a href="#">Jobs</a></li>
-                                <li><a href="#">Elections and referendum</a></li>
-                                <li><a href="#">Housing Benefit</a></li>
-                            </ul>
-                        </div>
-
+                <div class="col-lg-8 search home-search no-padding">
+                    <div class="input-group">
+                        <label class="sr-only" for="searchWebsite">Search website</label>
+                        <input type="text" id="searchWebsite" class="form-control" placeholder="Search leeds.gov.uk">
+                        <span class="input-group-btn">
+                            <button class="btn" type="button"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span></button>
+                        </span>
                     </div>
-
-                    <div class="col-lg-4 online-links">
-                            <ul>
-                                <li class="title"><h2>Save Time, Do It <span>Online</span></h2></li>
-                                <li><a href="#" class="equal-item"><i class="fa fa-credit-card" aria-hidden="true"></i> <span class="sr-only">Make a </span>Payment <span>eg: Parking fine, Council Tax or Business rates</span></a></li>
-                                <li><a href="#" class="equal-item"><i class="fa fa-bullhorn" aria-hidden="true"></i> Report <span>eg: Missed bin, Pothole or Street lighting  fault</span></a></li>
-                                <li><a href="#" class="equal-item"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Apply <span>eg: Blue badge, Parking permit or Taxi licence</span></a></li>
-                                <li><a href="#" class="equal-item"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Request <span>eg: Bulky collection or A new Bin</span></a></li>
-                            </ul>
-                    </div>
-                    
                 </div>
-                
-            </div>            
+
+                <div class="col-lg-10 popular-links no-padding">
+                    <h2>Popular</h2>
+                    <ul>
+                        <li><a href="#">Check your bin day</a></li>
+                        <li><a href="examples/service-page.html">Council Tax</a></li>
+                        <li><a href="#">Housing</a></li>
+                        <li><a href="#">Online payments</a></li>
+                        <li><a href="#">Search for planning applications</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Elections and referendum</a></li>
+                        <li><a href="#">Housing Benefit</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 online-links">
+                    <ul>
+                        <li class="title"><h2>Save Time, Do It <span>Online</span></h2></li>
+                        <li><a href="#" class="equal-item"><i class="fa fa-credit-card" aria-hidden="true"></i> <span class="sr-only">Make a </span>Payment <span>eg: Parking fine, Council Tax or Business rates</span></a></li>
+                        <li><a href="#" class="equal-item"><i class="fa fa-bullhorn" aria-hidden="true"></i> Report <span>eg: Missed bin, Pothole or Street lighting  fault</span></a></li>
+                        <li><a href="#" class="equal-item"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Apply <span>eg: Blue badge, Parking permit or Taxi licence</span></a></li>
+                        <li><a href="#" class="equal-item"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Request <span>eg: Bulky collection or A new Bin</span></a></li>
+                    </ul>
+            </div>
+            
         </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.section -->
-    
+
+    {% endblock %}
+
+
+    {% block sectionTwo %}
     <!-- POPULAR SERVICES -->   
     <section class="sectionTwo home">
         <div class="container-fluid">
@@ -238,9 +227,6 @@
     </section>
     <!-- /.section -->
   
-{% endblock %}
-
-{% block feedback %}
 {% endblock %}
 
 
