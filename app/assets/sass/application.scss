@@ -40,6 +40,11 @@ a{
     color:#216486;
 }
 
+a:focus, a:active, input[type=submit]:focus{
+    background-color:#FFBF47 !important;
+    color:#333 !important;
+    text-decoration:none;
+}
 
 /*SECTIONS*/
 
