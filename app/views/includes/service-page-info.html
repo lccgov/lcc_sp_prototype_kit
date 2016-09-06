@@ -1,0 +1,96 @@
+{% extends "page_layouts/layout_content.html" %}
+
+{% block page_title %}
+    Service Info Page
+{% endblock %}
+
+{% block breadcrumb %}
+<div class="breadcrumb">
+    <div class="container-fluid">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="service-page.html">Council Tax</a></li>
+            <div style="clear:both"></div>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block header %}
+    Pay Council Tax online
+{% endblock %}
+
+{% block content %}
+
+    <h2>Pay with direct debit, your card, or internet banking</h2>
+    <p>You can choose to pay 10 monthly instalments from April to January, with nothing to pay in February or March. Or you can choose to make a single payment before the end of April. There are three ways you can pay your Council tax online.</p>
+    <h3>Pay with direct debit, your card, or internet banking</h3>
+    <p>The simplest and most convenient way to pay your Council Tax is by Direct Debit. You can use our online form to set up a direct debit to pay your council tax.</p>
+    <p>You will have the added option of making 12 monthly payments, and you can choose your preferred payment date.</p>
+    <a href="#" class="btn btn-go">Set up a direct debit</a>
+    <h3>Pay with a credit or debit card</h3>
+    <p>You can also pay each instalment online using your credit or debit card and our online form.</p>
+    <a href="#" class="btn btn-go">Pay with a credit or debit card</a>
+    <h3>Make an internet banking payment</h3>
+    <p>If you use online banking, you can set up a payment for the due date.</p>
+    <p>The reference for the payment should be your 11 digit Council Tax account number which can be found at the top right hand side of your bill.</p>
+    <p>You will also need the Council's bank sort code <strong>83 06 08</strong> and account number <strong>00740589</strong>.</p>
+    <p>Use your own internet banking service to set up this payment.</p>
+    <div role="note" aria-label="Information" class="application-notice info-notice">
+        <p>There’s a different process for <a href="#">tax credits</a>.</p>
+    </div>
+    <div class="panel panel-border-wide">
+        <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
+    </div>
+    <div class="notice">
+        <i class="icon icon-important">
+            <span class="visuallyhidden">Warning</span>
+        </i>
+        <strong class="bold-small">
+            You can be fined up to £5,000 if you don’t register.
+        </strong>
+    </div>
+    {% endblock %}
+
+    {% block rightHandColumn %}
+    <div class="secondary-nav">
+        <h2>Council Tax</h2>
+        <nav role="navigation" aria-labelledby="parent-subsection">
+            <ul>
+                <li>
+                    <a href="#">Pay Council Tax Online</a>
+                </li>
+                <li>
+                    <a href="#">Other ways to pay Council Tax</a>
+                </li>
+                <li class="active">
+                    <a href="#">Discounts and exemptions</a>
+                </li>
+                <li>
+                    <a href="#">Ways to contact us</a>
+                </li>
+                <li>
+                    <a href="#">Report possible fraud</a>
+                </li>
+                <li>
+                    <a href="#">Council Tax bands and charges</a>
+                </li>
+                <li>
+                    <a href="#">Change of address</a>
+                </li>
+                <li>
+                    <a href="#">Disputes and appeals</a>
+                </li>
+                <li>
+                    <a href="#">Universal Credit</a>
+                </li>
+                <li>
+                    <a href="#">Moving into Leeds</a>
+                </li>
+                <li>
+                    <a href="#">Single person discount</a>
+                </li>
+            </ul>
+            </nav>
+    </div>
+{% endblock %}
