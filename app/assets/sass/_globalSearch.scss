@@ -1,0 +1,107 @@
+//Start sharpoint search snippet overrides 
+.ms-srch-sb>input
+{
+	width:100%;
+    min-width: 300px;
+	margin:0 -1px 0 0;
+	padding-left:5px;
+	min-height:40px;
+    line-height:2em;
+	background:#fff;
+	border: 1px solid #fff;
+	
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink {
+    font-weight: bold;
+    display:inline-block;
+    border: none;
+    background: none;
+    padding: 6px 15px 0px 15px;
+    margin: 0px;
+    line-height:2em;
+    cursor: pointer;
+    width: auto;
+    overflow: visible;
+	border: none;
+    background:$search-link-background;
+    color: $search-link;
+	font-size: 13px;
+    position:absolute;
+    right:0px;
+    top:0px;
+    min-height:auto;
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink:hover, .ms-srch-sb > .ms-srch-sb-searchLink:focus  {
+
+    background: #333;
+    text-decoration:none;
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink img
+{
+	display:none;
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink:before
+{
+  font-family: "Glyphicons Halflings";
+  content: "\e003";
+  font-size:25px;
+}
+
+.ms-srch-sb > .ms-srch-sb-searchLink {
+    margin-left: -1px;
+    height: auto;
+    width: auto;
+}
+
+.ms-srch-sb-border,  .ms-srch-sb-border:hover {
+    border: none;
+    width:100%;
+}
+
+#nav-search {
+    float:left;
+    margin:10px;
+
+
+}
+
+
+
+@media (max-width: 767px){
+
+    
+    #nav-search{
+    
+        position:absolute;
+        top:60px;
+        left:0px;
+        background:#bdc3c7;
+        padding:20px 25px 15px 25px;
+        margin:0px;
+        height:auto;
+        width:100%;
+        z-index: 10;
+        display:none;
+
+         &.active{
+        display:block;
+    
+         }
+
+       .input-group{
+        margin:0 !important;
+        width:100%;
+        }
+
+        .ms-srch-sb>input
+{
+
+    min-width: 250px;
+	
+}
+    }
+}

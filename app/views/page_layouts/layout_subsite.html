@@ -1,0 +1,54 @@
+{% extends "master2.html" %}
+
+
+{% block page_title %}
+{% endblock %}
+
+{% block bodycontent %}
+    <div class="header-nav-container">
+    {% block header_brand %}
+    {% include "includes/header_brand.html" %}
+    {% endblock %}
+  
+    {% block nav %}
+      {% include "includes/main_nav.html" %}
+       {% include "includes/main_nav_sp.html" %}
+    {% endblock %}
+    </div>
+
+    {% block sectionOneTop %}{% endblock %}
+
+    {% block breadcrumb %}
+        {% include "includes/breadcrumb_sp.html" %}
+    {% endblock %}
+
+    <section id="main" class="sectionOne">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content-block">
+                        <h1>{% block header %}{% endblock %}</h1>
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    {% block rightHandColumn %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionTwo">
+        <div class="container-fluid">
+            <div class="row">
+            {% block sectionTwo %}
+            {% endblock %}
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
+    

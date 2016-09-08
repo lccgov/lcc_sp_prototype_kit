@@ -1,0 +1,181 @@
+// headerTop.scss -- responsive icons color
+$menu-link-color:#598741;
+
+$base-font-size:16px;
+$base-font:arial;
+$base-font-color:#333;
+
+
+// mainNav.scss
+$main-nav-background: #598741;
+$main-nav-active-background: rgba(255,255,255,1);
+$main-nav-selected-link:#598741;
+$main-nav-link-background:transparent;
+$main-nav-background-hover:#333;
+$main-nav-flyout-link-background:#efefef ;
+$main-nav-flyout-background:#fff;
+$main-nav-flyout-link:#333;
+
+//footer.scss
+$footer-nav-link:#fff;
+$footer-list-item-width:18%; // this is a variable width for main nav in the footer depending on how many items you have in your main nav
+
+// sectionSubsite.scss - socialamedia.scss - blockLinks.scss
+$section-Background:#efefef;
+
+//  socialamedia.scss
+$social-link-color:#337ab7;
+
+
+//  sideNavigation.scss
+$side-nav-active-background:#133E8D !default;
+
+//  carousel.scss
+$carousel-active-background:#000;
+$carousel-indicators-active-background:#ccc;
+
+// blocklinks.scss
+
+$block-link-back:#fff;
+$block-link-back-hover:#3380A4;
+
+@import 'base';
+@import 'cookieBanner';
+@import 'masterHead';
+@import 'headerTop';
+@import 'mainMenuSubsites';
+@import 'breadcrumb';
+@import 'variables';
+@import 'mixins';
+@import 'footer';
+@import 'sectionSubsite';
+@import 'promo';
+@import 'carousel';
+@import 'socialMedia';
+@import 'sideNavigation';
+@import 'blockLinks';
+@import 'globalSearch';
+@import 'typography';
+
+
+
+
+body{
+    background:#E9EBE6;
+}
+
+
+    .sectionOne .container {
+        background:#fff;
+    }
+
+
+
+// logo overides to accomodate diiferent logo aspect ratios
+
+ .logo{
+
+        height:150px;
+        width:440px;
+        background:url(/public/img/bitmo/logo.png) center center no-repeat;
+        background-size: 100%;
+
+        @media (max-width: 767px){
+            height:100px;
+        }
+    }
+
+
+ .sectionHeader
+ { 
+       background: #fff ;
+       padding:0px;
+    .container {
+       background: url(../bitmo/img/flowers.jpg) right 30px bottom  no-repeat;
+    }  
+ }   
+
+   @media (max-width: 767px){   
+   .sectionHeader 
+     {
+     padding:30px 0;
+     background:lighten($main-nav-background, 5% );
+      
+        .container {
+       background: transparent;
+    }  
+
+     .logo{
+         background-color:#fff;
+     }
+ }
+
+   }
+
+ 
+// sharepoint overides for search button background
+ .ms-srch-sb > .ms-srch-sb-searchLink  {
+        @include linearGradient(#D61A1A, #990000);
+}
+
+// Main menu overides
+
+ .main-nav {
+
+    background: #fff;
+
+    @media (min-width: 678px){
+    .container
+             {    
+                  @include border-radius(3px 3px 0 0);
+                  @include linearGradient(#80B466, #598741);
+
+                   ul li{
+                       padding-top:7px;
+
+                    li{
+                         padding-top:0px;
+                    }
+                   }
+             }
+             }
+
+}
+
+  @media (max-width: 767px){   
+
+ .main-nav {
+
+    background:darken($main-nav-background, 4%);
+    .container
+             {    
+                background:darken($main-nav-background, 4%);
+             }
+
+}
+
+      }
+
+
+ // footer overides 
+
+
+footer.main {
+    background: none;
+     padding:0;
+.container{
+       background:$main-nav-background;
+}
+
+.footerGlobal
+{
+      background: none;
+   .container{
+       padding:0 25px;
+       background:darken( $main-nav-background, 5%)
+}
+
+}
+
+
+}

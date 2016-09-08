@@ -1,0 +1,247 @@
+// mainNav.scss
+
+
+/***********
+MAIN MENU
+*********/
+
+/*sharepoint styles overide*/
+
+.ms-core-listMenu-root
+{
+    padding:0px;
+}
+
+.s4-tn li.static > .menu-item {
+  border: none;
+  height: auto;
+}
+
+.ms-core-navigation {
+    font-family:$base-font;
+}
+
+.ms-core-listMenu-horizontalBox
+{
+    display:block; 
+}
+
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+    margin-right: 0px;
+    border: none;
+    margin-left:0px;
+}
+
+
+.s4-tn li.static > .menu-item {
+    border: none;
+    height: auto;
+}
+
+.ms-core-listMenu-item, .ms-core-listMenu-item:link, .ms-core-listMenu-item:visited, .ms-tv-item:link, .ms-tv-item:visited, .ms-tv-header:link, .ms-tv-header:visited
+{
+    color:$main-nav-link;
+}
+
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, a.ms-tv-item:hover, a.ms-tv-header:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
+    background-color: darken($main-nav-background, 5%);
+    color: $main-nav-link;
+}
+
+/*sharepoint styles overide*/
+
+
+
+.main-nav {
+    background:$main-nav-background;
+ 
+
+ ul 
+ {
+    display:inline-block;
+    margin:0px;
+    padding:0px;
+
+ li{
+  
+  display:inline-block;
+
+ a{
+    padding: 1em;
+    font-size:18px;
+    font-weight:400;
+    display:inline-block; 
+    color:$main-nav-link;
+
+}
+
+ a:hover,    a:focus{
+    background-color: darken($main-nav-background, 5%);
+    color: $main-nav-link;
+    text-decoration:none;
+}
+
+ a.selected{
+    background: darken($main-nav-background, 4%) !important;  //override shaerpoint corev15
+
+}
+
+}
+}
+
+ul ul  {
+    display: none;
+    margin: 0;
+    padding: 0.65em ;
+    position: absolute;
+    width: 300px;
+    z-index: 10000 !important;
+    background-color: darken($main-nav-background, 5%);
+    background-color: darken($main-nav-background, 5%);
+
+    li{
+        display:block;
+        border-bottom:1px solid darken($main-nav-background, 8%);
+
+        &:first-of-type{
+            border-top:1px solid darken($main-nav-background, 8%);
+        }
+
+        a
+            {
+            display:block !important;
+            width:100%;
+            padding: 0.65em;
+
+            &:hover {
+                background:darken($main-nav-background, 8%);
+            }
+
+            }
+        }
+    }
+
+
+    
+
+
+
+
+ li:hover > ul {
+    display: block;
+}
+
+}
+
+
+
+
+@media (max-width: 767px){
+
+
+    .main-nav {
+        position:absolute;
+        left:-1000px;
+        top:0px;
+        z-index:10;
+        min-height:640px;
+        width:100%;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+         -o-transition:all ease .5s;
+        transition: all ease .5s;
+        
+        .container
+        {
+            padding:20px;
+        }
+    
+    
+    &.active{
+        left:0px;
+    
+    }
+ 
+    
+  .container ul li {
+
+    border-top: 1px solid rgba(0,0,0, 0.2);
+    margin:0px;
+    padding-top:0 !important;
+    width:100%;
+
+    a{
+          width:100%; 
+          background:none;
+            &:hover, &:focus
+                {
+                    background: rgba(0,0,0, 0.2);
+                }
+            &.selected {
+                background:none;
+                color:#000;
+            } 
+                
+    }
+    
+
+       ul {
+       display:block;
+       position:relative;
+       width:100%; 
+       margin-left:0px;
+       background:none;
+       float:left;
+       padding:0px 0 10px 0;
+       border:none;
+
+       li {
+           border:none;
+           float:left;
+            
+            a{
+                font-size: 16px;
+                background:none;
+                padding:5px 20px;
+                color:#fff;
+
+        
+            }
+       }
+
+       &.active{
+           display:block;
+       }
+        
+   }  
+
+    }
+
+
+
+    }
+    
+}
+
+
+@media (max-width: 767px){
+    
+
+ .main-nav .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item{
+      margin-left:0px;
+  } 
+    
+    .menu-horizontal {
+        width: 100%;
+    }
+
+    .ms-core-listMenu-horizontalBox, .ms-core-listMenu-horizontalBox ul {
+    display:block;
+    }
+    
+    .ms-core-listMenu-horizontalBox li.static, .ms-core-listMenu-horizontalBox  a.static, .ms-core-listMenu-horizontalBox span.static {
+        width: 100%;
+    }
+    
+}
+

@@ -1,0 +1,400 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$base-font-size:26px;
+$base-font: 'Open Sans', sans-serif;
+$base-font-color:#333;
+
+
+$head-background: #f6f6f6;
+
+// headerTop.scss -- responsive icons color
+$menu-link-color:#3A7BBF;
+
+
+// mainNav.scss
+$main-nav-background: #3A7BBF;
+$main-nav-selected-link:#3A7BBF;
+
+
+//footer.scss
+$footer-font-color:#fff;
+$footer-list-item-width:10.5%; // this is a variable width for main nav in the footer depending on how many items you have in your main nav
+
+
+// sectionSubsite.scss - socialamedia.scss
+$section-Background:#efefef;
+
+//  socialamedia.scss
+$social-link-color:#337ab7;
+
+
+//  sideNavigation.scss
+$side-nav-active-background:#133E8D !default;
+
+//  carousel.scss
+$carousel-active-background:#000;
+$carousel-indicators-active-background:#ccc;
+
+// blocklinks.scss
+
+$block-link-back:#fff;
+$block-link-back-hover:#3380A4;
+
+
+@import 'base';
+@import 'cookieBanner';
+@import 'masterHead1';
+@import 'headerTop';
+@import 'mainMenu';
+@import 'breadcrumb';
+@import 'variables';
+@import 'mixins';
+@import 'footer';
+@import 'sectionSubsite';
+@import 'promo';
+@import 'carousel';
+@import 'socialMedia';
+@import 'sideNavigation';
+@import 'blockLinks';
+@import 'globalSearch';
+@import 'typography';
+
+    .sectionOne .container {
+        background:#fff;
+    }
+
+// logo overides to accomodate diiferent logo aspect ratios
+
+ .logo{
+
+        height:84px;
+        width:390px;
+        background:url(/public/img/leedsEnterpriseZone/logo.png) center center no-repeat;
+        background-size: 100%;
+
+        @media (max-width: 767px){
+            height:100px;
+        }
+    }
+
+
+    .header-right:after{
+        content:'';
+        background:url(/public/img/leedsEnterpriseZone/logo-enterprisezones.png) center center no-repeat;
+        height: 102px;
+        width: 201px;
+        right: 10px;
+        margin-top:-17px;
+        display:block;
+        float:right;
+    }
+
+    @media (max-width:767px){
+          .header-right:after{
+       display:none;
+    }
+    }
+
+
+
+
+
+
+
+
+/*******
+BLOCK CONTENT
+*******/
+.blockContent{
+	margin:0px;
+	float:left;
+	padding:10px;
+}
+.blockContent .listWebpart{
+	background:#377DC2;
+	border-radius:8px;
+	-moz-border-radius: 8px;
+	padding:40px 20px;
+	text-align:center;
+	min-height:400px;
+	position:relative;
+	margin:0px;
+}
+.blockContent .listWebpart h2{
+	font-size: 1.4em;
+	font-weight: normal;
+	line-height: 1em;
+	margin: 0px 0px 20px;
+	padding: 0px;
+	color: #fff;
+	border-bottom: none;
+	text-transform:uppercase;
+}
+.blockContent .listWebpart h2 img{
+	display:block;
+	padding:0px;
+	float: none;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+}
+.blockContent .listWebpart p{
+	margin: 0px 0px 60px;
+	padding:0;
+	font-size:1em;
+	line-height:1.5em;
+	color:#fff;
+}
+.blockContent .listWebpart ul li{
+	margin:0;
+	padding:0;
+}
+.blockContent .listWebpart a{
+	background:transparent;
+	color:#fff;
+	border-radius:8px;
+	-moz-border-radius: 8px;
+	border:2px solid #fff;
+	display:inline-block;
+	position:absolute;
+	bottom:40px;
+	left:0px;
+	right:0px;
+	margin-left:20px;
+	margin-right:20px;
+}
+.blockContent .listWebpart a:hover{
+	background:#265788;
+}
+@media only screen and (max-width: 900px) {	
+	.blockContent .listWebpart{
+		min-height:450px;
+	}
+}
+@media only screen and (max-width: 800px) {	
+	.blockContent .listWebpart{
+		min-height:350px;
+	}
+}
+@media only screen and (max-width: 600px) {	
+	.blockContent .listWebpart{
+		min-height:0px;
+		padding: 40px;
+	}
+	.blockContent .listWebpart p{
+		margin: 0px 0px 80px;
+	}
+}
+/*BLOCK CONTENT END*/
+
+/*******
+BLOCK CONTENT COLOURS
+*******/
+.red .listWebpart{
+	background:#e74c3c;
+}
+.red .listWebpart a:hover{
+	background:#c0392b;
+}
+.orange .listWebpart{
+	background:#e67e22;
+}
+.orange .listWebpart a:hover{
+	background:#d35400;
+}
+.purple .listWebpart{
+	background:#9b59b6;
+}
+.purple .listWebpart a:hover{
+	background:#8e44ad;
+}
+.teal .listWebpart{
+	background:#1abc9c;
+}
+.teal .listWebpart a:hover{
+	background:#16a085;
+}
+.green .listWebpart{
+	background:#BFC24C;
+}
+.green .listWebpart a:hover{
+	background:#929432;
+}
+.blue .listWebpart{
+	background:#377DC2;
+}
+.blue .listWebpart a:hover{
+	background:#316FAC;
+}
+
+/*BLOCK CONTENT COLOURS END*/
+
+/**********
+SIDE BLOCK
+**********/
+.sideBlock .listWebpart{
+	padding:20px;
+	text-align:left;
+	min-height:250px;
+	margin:0px;
+}
+.sideBlock .listWebpart h2{
+	margin: 10px 0px 20px;
+	padding: 0px;
+}
+.sideBlock .listWebpart h2 img{
+	position:absolute;
+	top:20px;
+	right:20px;
+	height:30px;
+}
+.sideBlock .listWebpart p{
+	margin: 0px 0px 60px;
+	padding:0;
+}
+.sideBlock .listWebpart ul li{
+	margin:0;
+	padding:0;
+}
+.sideBlock .listWebpart a{
+	text-align:center;
+	bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+.sideBlock .listWebpart {
+	min-height: 0px;
+}
+}
+
+/*END SIDE BLOCKS*/
+
+
+/*************
+BLOCK CONTENT SIZES
+*************/
+.quarterBlock{
+	width:25%;
+}
+.thirdBlock{
+	width:33%;
+}
+.halfBlock{
+	width:50%;
+}
+.fullBlock{
+	width:100%;
+}
+@media only screen and (max-width: 850px){
+.quarterBlock, .fullBlock{
+	width: 50%;
+}
+}
+@media only screen and (max-width: 800px){
+.quarterBlock{
+	width: 50%;
+}
+}
+@media only screen and (max-width: 600px){
+.quarterBlock, .halfBlock, .thirdBlock, .fullBlock{
+	width: 100%;
+}
+}
+/*END BLOCK CONTENT SIZES*/
+
+/*****************************
+DOWNLOADS
+*****************************/
+.downloads .listWebpart {
+	padding: 20px;
+	text-align: left;
+	min-height: 0px;
+	margin: 0px;
+}
+.downloads .listWebpart ul{
+	position:relative;
+	padding:0;
+	margin:30px 0px 0px;
+	}
+	
+.downloads .listWebpart ul li{
+	margin:0px;
+	padding:0px;
+	display:block;
+}
+.downloads .listWebpart a{
+	position:relative;
+	padding:10px 5px;
+	margin:0px 0px;
+	border-radius:0;
+	border:none;
+	width:100%;
+	text-align:left;
+	
+}
+
+/*******
+PARTNER SITES
+*******/
+.partnerSites {
+	width:100%;
+	padding:0px 10px;
+	}
+
+.partnerSites .listWebpart h2 {
+	font-size: 2em;
+	line-height: 1.4em;
+	margin: 0px;
+	padding: 0px 30px 0px 0px;
+	border-bottom: none;
+	text-transform:uppercase;
+	color:#BFC24C;
+	display:block;
+	float:left;
+	margin-top:12px
+	}
+.partnerSites .listWebpart li {
+	margin: 0px;
+	background: #fff;
+	padding:0;
+	}
+.partnerSites .listWebpart a {
+	color:#3A7BBF;
+	list-style: none;
+	width:auto;
+	margin:0px;
+	padding:5px 25px 5px 0px;
+	display:inline-block;
+	float:left;
+	}
+.partnerSites .listWebpart a:hover{
+	color:#3A7BBF;
+	background:#fff;
+	text-decoration:underline;
+	}
+@media only screen and (max-width: 960px) {
+	.partnerSites{
+	padding:0px 20px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.partnerSites .listWebpart h2 {
+	padding: 0px 0px 0px 0px;
+	border-bottom: none;
+	float:none;
+	margin:0px 0px 20px 0px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.partnerSites {
+	text-align:center;
+	}
+	.partnerSites .listWebpart a {
+	display:block;
+	float:none;
+	padding:10px 0px
+	}
+
+}
+/*PARTNER SITES END*/

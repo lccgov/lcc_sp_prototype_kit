@@ -29,6 +29,11 @@ a {
   cursor: pointer;
   color: #216486; }
 
+a:focus, a:active, input[type=submit]:focus {
+  background-color: #FFBF47 !important;
+  color: #333 !important;
+  text-decoration: none; }
+
 /*SECTIONS*/
 .sectionOne.home {
   background: #1f5d7c url(../images/home-1.jpg) scroll no-repeat;

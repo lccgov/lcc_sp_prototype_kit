@@ -1,0 +1,19 @@
+// mainNav.scss
+
+@import 'mixins';
+@import 'mainMenu';
+
+/***********
+MAIN MENU
+*********/
+
+.main-nav {
+
+   background:none;
+    .container {
+    background:$main-nav-background;
+    }
+   
+
+}
+

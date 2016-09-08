@@ -28,8 +28,8 @@ gulp.task('sync:lcc_frontend_toolkit', (done) => {
 
 //Compile SASS into the respective CSS and copy to public folder
 gulp.task('sass', function () {
-    return gulp.src('app/assets/sass/*.scss')
-      .pipe(sass({includePaths: [
+    return gulp.src('app/assets/sass/**/*.scss', {base:'app/assets/sass'})
+      .pipe(sass({includePaths: ['app/assets/sass',
             'lcc_modules/lcc_frontend_toolkit/stylesheets/']}).on('error', function (err) {
           notify({ title: 'SASS Task' }).write(err.line + ': ' + err.message);
           this.emit('end');

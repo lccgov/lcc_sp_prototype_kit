@@ -1,0 +1,21 @@
+.breadcrumb {
+    padding: 0;
+    margin: 30px 0;
+    list-style: outside none none;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 20px;
+
+span span a:after {
+    font-family: "Glyphicons Halflings";
+    content: "\e080";
+    font-size:20px;
+    padding: 0 10px 0 5px;
+
+}
+
+img {
+    display: none;
+}
+
+}
