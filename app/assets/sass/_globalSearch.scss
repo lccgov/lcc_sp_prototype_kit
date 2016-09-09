@@ -13,16 +13,7 @@
 }
 
 .ms-srch-sb > .ms-srch-sb-searchLink {
-    font-weight: bold;
-    display:inline-block;
-    border: none;
-    background: none;
-    padding: 6px 15px 0px 15px;
-    margin: 0px;
-    line-height:2em;
-    cursor: pointer;
-    width: auto;
-    overflow: visible;
+
 	border: none;
     background:$search-link-background;
     color: $search-link;
@@ -30,7 +21,14 @@
     position:absolute;
     right:0px;
     top:0px;
-    min-height:auto;
+    width: 60px;
+    height: 40px;   
+    min-height:40px;
+    padding:0 15px;
+    display: block;
+
+
+
 }
 
 .ms-srch-sb > .ms-srch-sb-searchLink:hover, .ms-srch-sb > .ms-srch-sb-searchLink:focus  {
@@ -51,11 +49,6 @@
   font-size:25px;
 }
 
-.ms-srch-sb > .ms-srch-sb-searchLink {
-    margin-left: -1px;
-    height: auto;
-    width: auto;
-}
 
 .ms-srch-sb-border,  .ms-srch-sb-border:hover {
     border: none;
@@ -71,13 +64,14 @@
 
 
 
+
 @media (max-width: 767px){
 
     
     #nav-search{
     
         position:absolute;
-        top:60px;
+        top:62px;
         left:0px;
         background:#bdc3c7;
         padding:20px 25px 15px 25px;
@@ -105,3 +99,13 @@
 }
     }
 }
+
+// iphone overide for images
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+}
+
+

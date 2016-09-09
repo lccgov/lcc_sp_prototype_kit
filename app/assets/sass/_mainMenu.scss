@@ -151,7 +151,7 @@ ul ul  {
          -o-transition:all ease .5s;
         transition: all ease .5s;
         
-        .container
+        .container-fluid
         {
             padding:20px;
         }
@@ -163,7 +163,7 @@ ul ul  {
     }
  
     
-  .container ul li {
+  .container-fluid ul li {
 
     border-top: 1px solid rgba(0,0,0, 0.2);
     margin:0px;

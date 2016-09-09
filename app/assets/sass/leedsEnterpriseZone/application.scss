@@ -4,11 +4,12 @@
 $base-font-size:26px;
 $base-font: 'Open Sans', sans-serif;
 $base-font-color:#333;
+$base-container-width:1500px;
 
 
 $head-background: #f6f6f6;
 
-// headerTop.scss -- responsive icons color
+// masterhead.scss -- responsive icons color
 $menu-link-color:#3A7BBF;
 
 
@@ -48,7 +49,7 @@ $block-link-back-hover:#3380A4;
 @import 'headerTop';
 @import 'mainMenu';
 @import 'breadcrumb';
-@import 'variables';
+@import 'variables1';
 @import 'mixins';
 @import 'footer';
 @import 'sectionSubsite';
@@ -59,6 +60,8 @@ $block-link-back-hover:#3380A4;
 @import 'blockLinks';
 @import 'globalSearch';
 @import 'typography';
+@import 'accordion';
+@import 'promoGroup';
 
     .sectionOne .container {
         background:#fff;
@@ -70,7 +73,7 @@ $block-link-back-hover:#3380A4;
 
         height:84px;
         width:390px;
-        background:url(/public/img/leedsEnterpriseZone/logo.png) center center no-repeat;
+        background:url(/public/img/leedsenterprisezone/logo.png) center center no-repeat;
         background-size: 100%;
 
         @media (max-width: 767px){
@@ -81,7 +84,7 @@ $block-link-back-hover:#3380A4;
 
     .header-right:after{
         content:'';
-        background:url(/public/img/leedsEnterpriseZone/logo-enterprisezones.png) center center no-repeat;
+        background:url(/public/img/leedsenterprisezone/logo-enterprisezones.png) center center no-repeat;
         height: 102px;
         width: 201px;
         right: 10px;

@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'variables1';
 
 body{
   font-size:17px;
@@ -173,6 +173,10 @@ a[rel="external"]:after {
     display:block;
 }
 
+.clearfix{
+  clear:both;
+}
+
 
 .btn {
   padding:15px 20px;
@@ -186,9 +190,15 @@ a[rel="external"]:after {
 }
 
 .container-fluid{
-    max-width:1500px;
+    max-width:$base-container-width;
 }
 
 .container-fluid.full{
     max-width:100%;
+}
+
+
+.content-block {
+    max-width: 48em;
+    padding-bottom: 2.5em;
 }

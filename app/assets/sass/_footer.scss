@@ -9,7 +9,7 @@ footer.main {
     padding:0px 0px 0px 0px;
 
 
-    .container{
+    .container-fluid{
         padding:25px 0;
     }
 
@@ -23,28 +23,29 @@ footer.main {
 
  ul{
     display:block;
+
+@for $i from 1 through 10 {
+    li:first-child:nth-last-child(#{$i}),
+    li:first-child:nth-last-child(#{$i}) ~ li {
+        width: (100%/$i);
+
+          li{ width:100%;}
+    }
+}
       
   li{
 
   display:block; 
   float:left;  
-  width:$footer-list-item-width;
-  margin:$footer-gutter-width;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding:0 15px;
 
 
-  &:first-of-type{
-      display:none;
-  }   
-
-
- a {
+ a { 
+    border-bottom:1px solid rgba(0,0,0,0.1) !important;  //override shaerpoint corev15   
     padding: 10px;
     font-size:18px;
     margin-left:0px;
     color:$footer-font-color !important; //override shaerpoint corev15
-
     display:block;
 }
 
@@ -56,53 +57,89 @@ footer.main {
    background-color:rgba(0,0,0,0.2) !important;  //override shaerpoint corev15
 }
 
-}
-
-@media (max-width:767px){
-    li{
-        width:100%;
-        border-bottom:none;
-        margin:0px !important;
-
-        ul li:first-of-type{
-           border:none;
-        }
-    }
-}
- }
-ul ul  {
+ul  {
     display: block;
     padding: 0px;
     margin:0 0 0 0px;
     position: relative;
+
+     li {
+            width:100%;  
+            margin:0px;
+            border:none;
+            padding:0px;
+
+            &:last-of-type{
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                display:block;
+            }
+
+            a {
+ 
+                font-size:15px;
+                padding:10px;
+                border-bottom:none !important;
+
+                &:hover, &:focus {
+                background:rgba(0,0,0,0.2);  
+                color:#fff;
+                }
+
+
+                }
+
+
+            }
  
 
     
 }
 
-ul ul li {
-width:100%;  
-margin:0px;
-border:none;
-
-   &:first-of-type{
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    display:block;
-   }
 }
 
- ul ul li a {
- 
-font-size:15px;
-padding:10px;
+ }
+
+@media (max-width:1200px){
+
+        @for $i from 8 through 10 {
+    li:first-child:nth-last-child(#{$i}),
+    li:first-child:nth-last-child(#{$i}) ~ li {
+        width: (100% !important);
+    }
+
+
+} 
 }
 
-ul ul li a:hover,  ul ul li a:focus {
-background:rgba(0,0,0,0.2);  
-color:#fff;
+@media (max-width:1000px){
+
+        @for $i from 6 through 10 {
+    li:first-child:nth-last-child(#{$i}),
+    li:first-child:nth-last-child(#{$i}) ~ li {
+        width: (100% !important);
+    }
+
+
+} 
 }
 
 
+@media (max-width:767px){
+
+
+    li{
+        width:100%;
+        border-bottom:none;
+        margin:0px !important;
+    }
+
+    @for $i from 1 through 10 {
+    li:first-child:nth-last-child(#{$i}),
+    li:first-child:nth-last-child(#{$i}) ~ li {
+        width: (100% !important);
+    }
+}
+}
 
 }
 
@@ -187,7 +224,7 @@ padding:1.875em 0;
    }
 }
 .logo-footer span {
-    background: url(../img/lcc-logo-white-01.svg) center center no-repeat;
+    background: url(/public/img/lcc-logo-white-01.svg) center center no-repeat;
     background-size:100%;
     width: 150px;
     height: 45px;

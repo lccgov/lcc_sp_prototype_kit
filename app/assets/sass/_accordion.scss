@@ -8,7 +8,8 @@ ul.accordionWP {
          li{
            
             border-bottom:1px solid #dedede;
-            h3{
+
+            h3.accordion {
                 margin:0px;
                 font-size:20px;
             a{
@@ -45,6 +46,11 @@ ul.accordionWP {
 
             div div {
                 padding:15px;
+
+                li{
+                    border:none;
+                }
+
             }
          }
  

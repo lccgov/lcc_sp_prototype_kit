@@ -16,10 +16,10 @@ ul.menu{
     a {
     font-size:17px;
     font-weight:bold;
-    padding:10px 15px;
+    padding:11px 15px;
     color:$menu-link-color;
     line-height:40px;
-    min-height:60px;
+    min-height:62px;
     display:block;
 
     &:hover, &:focus
@@ -43,7 +43,7 @@ ul.menu{
     &:after {
         font-family: "FontAwesome";
         content: "\f007";
-        font-size:19px;
+        font-size:18px;
         padding:0 5px;
     }
 }
@@ -62,12 +62,11 @@ ul.menu{
 
 &.search{
 
-    background:lighten(gray, 30%);
+    background:lighten(gray, 30%);        
 
 &:before {
 
         content: "\f002";
-   
 }
 
 

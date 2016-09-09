@@ -18,7 +18,10 @@
     height: 58px;
     width: 120px;}
 
-
+   @media (max-width: 767px){
+    .container-fluid
+    {
+        padding-right:0px;
+    }
 }
-
-
+}
