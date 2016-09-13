@@ -69,6 +69,13 @@ body{
 
 }
 
+        @media (max-width: 1500px){
+            body{
+                background:#fff url(/public/img/museums/background.png) no-repeat;
+                background-position: -755px 60px;
+                }
+        }
+
 
 
 
@@ -80,12 +87,12 @@ body{
 
         height:80px;
         width:300px;
-        background:url(/public/img/museums/logo.png) center center no-repeat;
-        background-size: 100%;
+        background:url(/public/img/museums/logo.png) left center no-repeat;
 
         @media (max-width: 767px){
-            height:100px;
+            width:100%;
         }
+
     }
 
 

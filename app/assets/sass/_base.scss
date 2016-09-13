@@ -183,16 +183,16 @@ a[rel="external"]:after {
   border-radius:0px;
 }
 
-
+$btn-background-color:green;
 .btn-primary
 {
-  background:green;
+  background:$btn-background-color;
+    &:hover{
+      background:darken($btn-background-color,10%);
+    }
 }
 
-.btn-default
-{
-  border-color:green;
-}
+
 
  .btn
     {
@@ -204,8 +204,12 @@ a[rel="external"]:after {
 
       &.btn-default
 {
-  border-color:green;
-  color:green;
+  border-color:$btn-background-color;
+  color:$btn-background-color;
+  &:hover{
+     background:darken($btn-background-color,10%);
+     color:#fff;
+  }
 }
 
       &:after{
