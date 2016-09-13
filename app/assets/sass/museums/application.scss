@@ -1,0 +1,97 @@
+// headerTop.scss -- responsive icons color
+$menu-link-color:#BA000E;
+$search-link-background:#BA000E;
+
+
+$base-font-size:16px;
+$base-font:arial;
+$base-font-color:#333;
+
+
+// mainNav.scss
+$main-nav-background: #8C0003;
+
+
+//footer.scss
+$footer-nav-link:#fff;
+$footer-list-item-width:18%; // this is a variable width for main nav in the footer depending on how many items you have in your main nav
+
+// sectionSubsite.scss - socialamedia.scss - blockLinks.scss
+$section-Background:#efefef;
+
+//  socialamedia.scss
+$social-link-color:#BA000E;
+
+
+//  sideNavigation.scss
+$side-nav-active-background:#133E8D !default;
+
+//  carousel.scss
+$carousel-active-background:#000;
+$carousel-indicators-active-background:#ccc;
+
+// blocklinks.scss
+
+$block-link-back:#fff;
+$block-link-back-hover:#3380A4;
+
+$promo-group-border:10px solid #ddd; 
+$promo-group-background:#ddd; 
+$promo-group-li-background:#fff;
+$promo-group-link-color:#333 !default;
+
+@import 'base';
+@import 'cookieBanner';
+@import 'masterHead1';
+@import 'headerTop';
+@import 'mainMenuSubsites';
+@import 'breadcrumb';
+@import 'variables1';
+@import 'mixins';
+@import 'footer';
+@import 'sectionSubsite';
+@import 'promo';
+@import 'carousel';
+@import 'socialMedia';
+@import 'sideNavigation';
+@import 'blockLinks';
+@import 'globalSearch';
+@import 'typography';
+@import 'accordion';
+@import 'promoGroup';
+@import 'alerts';
+
+
+
+body{
+ background:#fff url(/public/img/museums/background.png) no-repeat;
+ background-position: 50% 60px;
+
+}
+
+
+
+
+
+
+// logo overides to accomodate diiferent logo aspect ratios
+
+ .logo{
+
+        height:80px;
+        width:300px;
+        background:url(/public/img/museums/logo.png) center center no-repeat;
+        background-size: 100%;
+
+        @media (max-width: 767px){
+            height:100px;
+        }
+    }
+
+
+    .sectionOne .container-fluid {
+        background:#fff;
+        border-left:1px solid #ddd;
+        border-right:1px solid #ddd;
+
+    }

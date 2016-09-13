@@ -1,9 +1,11 @@
-{% extends "page_layouts/layout_subsite.html" %}{% block page_title %}
+{% extends "page_layouts/layout_subsite.html" %}
+
+{% block page_title %}
 	Home Page
 {% endblock %}
 
 {% block header %}
-    Welcome to Leeds Enterprise Zone
+    <h1>Welcome to Leeds Enterprise Zone</h1>
 {% endblock %}
  
  {% block sectionOneTop %}
@@ -12,11 +14,10 @@
 
  {% block breadcrumb %}
         {% include "includes/breadcrumb_sp.html" %}
-        {% include "includes/test/other-services.html" %}
+          {% include "includes/group-promos.html" %}
  {% endblock %}
 
 {% block content %}
-
   
 
     <h2>Pay with direct debit, your card, or internet banking</h2>
@@ -28,8 +29,11 @@
     <h3>Pay with a credit or debit card</h3>
     <p>You can also pay each instalment online using your credit or debit card and our online form.</p>
     <a href="#" class="btn btn-primary">Pay with a credit or debit card</a>
+     <a href="#" class="btn btn-primary" rel="pdf">Pay with a credit or debit card</a>
+      
     <h3>Make an internet banking payment</h3>
     <p>If you use online banking, you can set up a payment for the due date.</p>
+    <a href="#" class="btn btn-default">Pay with a credit or debit card</a>
     <p>The reference for the payment should be your 11 digit Council Tax account number which can be found at the top right hand side of your bill.</p>
     <p>You will also need the Council's bank sort code <strong>83 06 08</strong> and account number <strong>00740589</strong>.</p>
     <p>Use your own internet banking service to set up this payment.</p>

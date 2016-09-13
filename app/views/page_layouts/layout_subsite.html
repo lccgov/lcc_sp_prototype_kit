@@ -12,13 +12,17 @@
   
     {% block nav %}
       {% include "includes/main_nav_sp.html" %}
+      {% include "includes/alerts/alert-info.html" %}
+      {% include "includes/alerts/alert-warning.html" %}
+      {% include "includes/alerts/alert-danger.html" %}   
+      {% include "includes/alerts/alert-success.html" %}         
     {% endblock %}
     </div>
 
     {% block sectionOneTop %}{% endblock %}
     <section id="main" class="sectionOne">
         <div class="container-fluid">
-
+  
 
 
             <div class="row">
@@ -30,7 +34,7 @@
 
                 <div class="col-lg-8">
                 
-                        <h1>{% block header %}{% endblock %}</h1>
+                        {% block header %}{% endblock %}
                         
                         {% block content %}
                         {% endblock %}

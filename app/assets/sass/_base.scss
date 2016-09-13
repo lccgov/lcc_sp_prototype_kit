@@ -180,7 +180,49 @@ a[rel="external"]:after {
 
 .btn {
   padding:15px 20px;
+  border-radius:0px;
 }
+
+
+.btn-primary
+{
+  background:green;
+}
+
+.btn-default
+{
+  border-color:green;
+}
+
+ .btn
+    {
+      border-color:rgba(0,0,0,0.2);
+      position:relative;
+      padding-right:55px;
+      font-weight:bold;
+      color:#fff;
+
+      &.btn-default
+{
+  border-color:green;
+  color:green;
+}
+
+      &:after{
+                            font-family: FontAwesome;
+                            font-size:18px;
+                            line-height:2.8em;
+                            content: "\f105";
+                            position:absolute;
+                            right:0px;
+                            height:100%;
+                            background:rgba(255,255,255,0.1);
+                            padding:0 13px !important;
+                            top:0px;
+    }
+
+    }
+
 
 
 /*BOOTSTRAP OVERIDES*/
@@ -202,3 +244,27 @@ a[rel="external"]:after {
     max-width: 48em;
     padding-bottom: 2.5em;
 }
+
+
+/*SKIP LINKS*/
+a.skip {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+
+a.skip:focus, a.skip:active{
+    left: 0.625em;
+    top: 0.625em;
+    width:auto;
+    height: auto;
+    overflow:auto;
+    z-index:999;
+    padding:0.625em;
+}
+
+/*SKIP LINKS END*/

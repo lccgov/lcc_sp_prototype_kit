@@ -1,6 +1,6 @@
 
-
-
+$carousel-caption-background: rgba(0,0,0,0.6) !default;
+$carousel-caption-font-color:#fff !default;
 
 /*****************
 CAROUSEL BOOTSTRAP
@@ -8,6 +8,7 @@ CAROUSEL BOOTSTRAP
 
 .carousel {
     height: 400px;
+    margin-bottom: $base-margin-bottom;
 
 
 .item,
@@ -81,9 +82,8 @@ CAROUSEL BOOTSTRAP
 
 
     h2 span,  p,  p {
-    background: rgba(0,0,0,0.6);
-    color:#fff;
-    color:000;
+    background: $carousel-caption-background;
+    color: $carousel-caption-font-color;
     padding: 20px;
     margin: 0 0 10px;
     display: inline-block;

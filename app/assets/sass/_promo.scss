@@ -1,11 +1,10 @@
 .promo {
-    background: none;
-    margin: 10px 0;
+    background-size:cover !important;
     padding: 0;
-
-    margin-bottom: 20px;
+    margin-bottom: $base-margin-bottom;
     position: relative;
     width: 100%;
+    min-height:270px;
 
 img {
     max-width: 100%;

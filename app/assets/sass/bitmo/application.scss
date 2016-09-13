@@ -41,11 +41,11 @@ $block-link-back-hover:#3380A4;
 
 @import 'base';
 @import 'cookieBanner';
-@import 'masterHead';
+@import 'masterHead1';
 @import 'headerTop';
-@import 'mainMenuSubsites';
+@import 'mainMenu';
 @import 'breadcrumb';
-@import 'variables';
+@import 'variables1';
 @import 'mixins';
 @import 'footer';
 @import 'sectionSubsite';
@@ -56,6 +56,8 @@ $block-link-back-hover:#3380A4;
 @import 'blockLinks';
 @import 'globalSearch';
 @import 'typography';
+@import 'accordion';
+@import 'promoGroup';
 
 
 
@@ -65,7 +67,7 @@ body{
 }
 
 
-    .sectionOne .container {
+    .sectionOne .container-fluid {
         background:#fff;
     }
 
@@ -90,7 +92,7 @@ body{
  { 
        background: #fff ;
        padding:0px;
-    .container {
+    .container-fluid {
        background: url(/public/img/bitmo/flowers.jpg) right 30px bottom  no-repeat;
     }  
  }   
@@ -101,7 +103,7 @@ body{
      padding:30px 0;
      background:lighten($main-nav-background, 5% );
       
-        .container {
+        .container-fluid {
        background: transparent;
     }  
 
@@ -125,7 +127,7 @@ body{
     background: #fff;
 
     @media (min-width: 678px){
-    .container
+    .container-fluid
              {    
                   @include border-radius(3px 3px 0 0);
                   @include linearGradient(#80B466, #598741);
@@ -147,7 +149,7 @@ body{
  .main-nav {
 
     background:darken($main-nav-background, 4%);
-    .container
+    .container-fluid
              {    
                 background:darken($main-nav-background, 4%);
              }
@@ -163,14 +165,14 @@ body{
 footer.main {
     background: none;
      padding:0;
-.container{
+.container-fluid{
        background:$main-nav-background;
 }
 
 .footerGlobal
 {
       background: none;
-   .container{
+   .container-fluid{
        padding:0 25px;
        background:darken( $main-nav-background, 5%)
 }

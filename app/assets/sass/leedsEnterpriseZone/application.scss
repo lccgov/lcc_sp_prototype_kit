@@ -36,11 +36,21 @@ $side-nav-active-background:#133E8D !default;
 //  carousel.scss
 $carousel-active-background:#000;
 $carousel-indicators-active-background:#ccc;
+$carousel-caption-background: rgba(42,99,153,0.6) !default;
+$carousel-caption-font-color:#fff !default;
+
 
 // blocklinks.scss
 
 $block-link-back:#fff;
 $block-link-back-hover:#3380A4;
+
+// global used on all partials to get a uniform spacing between elements
+$base-margin-bottom:1.875em;
+
+
+
+
 
 
 @import 'base';
@@ -63,6 +73,11 @@ $block-link-back-hover:#3380A4;
 @import 'accordion';
 @import 'promoGroup';
 
+.col-lg-8 {h1,h2,h3,h4,h5
+{
+	color:#BFC24C;
+}
+}
     .sectionOne .container {
         background:#fff;
     }

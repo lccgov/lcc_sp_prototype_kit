@@ -20,11 +20,11 @@ $social-link-color:#337ab7;
 
 @import 'base';
 @import 'cookieBanner';
-@import 'masterHead';
+@import 'masterHead1';
 @import 'headerTop';
 @import 'mainMenuSubsites';
 @import 'breadcrumb';
-@import 'variables';
+@import 'variables1';
 @import 'mixins';
 @import 'footer';
 @import 'sectionSubsite';
@@ -32,9 +32,11 @@ $social-link-color:#337ab7;
 @import 'carousel';
 @import 'socialMedia';
 @import 'sideNavigation';
-@import 'accordion';
-@import 'a-z';
+@import 'blockLinks';
 @import 'globalSearch';
+@import 'typography';
+@import 'accordion';
+@import 'promoGroup';
 
 body{
     background:#f6f6f6;
@@ -42,7 +44,7 @@ body{
 }
 
 
-    .sectionOne .container {
+    .sectionOne .container-fluid {
         background:#fff;
     }
 
@@ -76,7 +78,7 @@ body{
       $navlink-background-color: darken(#AA1C40,5%);
       $navlink-background-color-hover: darken(#AA1C40,10%);
 .main-nav{
-    
+     
             ul
             {
                 padding:7px  0 0 0;
@@ -154,7 +156,7 @@ footer.main {
     color: #333;
     padding:0px;
 
-.container{
+.container-fluid{
        background:$main-nav-background;
 }
 
