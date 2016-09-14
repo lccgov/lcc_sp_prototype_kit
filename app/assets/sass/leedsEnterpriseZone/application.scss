@@ -5,6 +5,7 @@ $base-font-size:26px;
 $base-font: 'Open Sans', sans-serif;
 $base-font-color:#333;
 $base-container-width:1500px;
+$btn-background-color:#326AA3;
 
 
 $head-background: #f6f6f6;
@@ -36,8 +37,8 @@ $side-nav-active-background:#133E8D !default;
 //  carousel.scss
 $carousel-active-background:#000;
 $carousel-indicators-active-background:#ccc;
-$carousel-caption-background: rgba(42,99,153,0.6) !default;
-$carousel-caption-font-color:#fff !default;
+$carousel-caption-background: rgba(42,99,153,0.6);
+$carousel-caption-font-color:#fff;
 
 
 // blocklinks.scss
@@ -72,6 +73,7 @@ $base-margin-bottom:1.875em;
 @import 'typography';
 @import 'accordion';
 @import 'promoGroup';
+@import 'alerts';
 
 .col-lg-8 {h1,h2,h3,h4,h5
 {

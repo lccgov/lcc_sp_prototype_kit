@@ -1,0 +1,34 @@
+{% extends "page_layouts/layout_subsite.html" %}
+
+{% block page_title %}
+	Home Page
+{% endblock %}
+
+
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/whatson/application.css" rel="stylesheet">
+   {% endblock %}
+
+{% block headersection %}
+  {% include "includes/main_nav.html" %}   
+  {% include "includes/header_brand.html" %}   
+{% endblock %}   
+
+{% block header %}
+{% endblock %}
+ 
+ {% block sectionOneTop %}
+{% endblock %}
+
+ {% block breadcrumb %}
+ {% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block rightHandColumn %}
+{% endblock %}
+
+{% block sectionTwo %}
+{% include "includes/whatson/promolistwebpart.html" %}
+{% endblock %}

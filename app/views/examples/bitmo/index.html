@@ -1,0 +1,38 @@
+{% extends "page_layouts/layout_subsite.html" %}
+
+{% block page_title %}
+	Home Page
+{% endblock %}
+
+
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/bitmo/application.css" rel="stylesheet">
+   {% endblock %}
+
+{% block headersection %}
+  {% include "includes/header_brand_twoCol.html" %}
+  {% include "includes/main_nav.html" %}      
+{% endblock %}   
+
+{% block header %}
+{% endblock %}
+ 
+ {% block sectionOneTop %}
+    {% include "includes/alerts/alert-danger.html" %}   
+{% endblock %}
+
+ {% block breadcrumb %}
+ {% endblock %}
+
+{% block content %}
+      {% include "includes/carousel.html" %}  
+      <p class="lead">Welcome to Bitmo
+      </p>
+    {%include "includes/group-promos.html" %}
+{% endblock %}
+
+{% block rightHandColumn %}
+   {% include "includes/contentSectionIcon.html" %}
+      {% include "includes/promo.html" %}
+    {% include "includes/promo.html" %}
+{% endblock %}

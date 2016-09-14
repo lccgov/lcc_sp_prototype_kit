@@ -2,26 +2,61 @@
 
 .alert {
 
-    padding: 25px;
+    padding: 0px;
     margin-bottom: 0px;
     border:none;
     border-radius: 0px;
     color:#fff;
+
+
+       .container-fluid{
+           position:relative;
+            padding: 25px 25px 25px 80px;
+
+           &::before {
+
+                    font-family: FontAwesome;
+                    font-weight: normal;
+                    font-style: normal;
+                    text-decoration: none !important;
+                    border: none;
+                    position: absolute;
+                    left:15px;
+                    top: 15px;
+                    font-size: 50px;
+                    color: #fff;}
+
+
+                    }
     
     &.alert-warning{
         background:#f4d313;
+        .container-fluid::before{
+            content: '\f071';
+        }
+
     }
 
     &.alert-info{
         background:#5dade2;
+          .container-fluid::before{
+            content: '\f0a1';
+        }
+
     }
 
     &.alert-success{
-        background:#58d68d;;
+        background:#58d68d;
+          .container-fluid::before{
+            content: '\f087';
+        }
     }
 
     &.alert-danger{
-        background:#ec7063;;
+        background:#ec7063;
+          .container-fluid::before{
+            content: '\f256';
+        }
     }
 
     .close

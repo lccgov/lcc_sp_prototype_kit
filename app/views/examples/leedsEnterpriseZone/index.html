@@ -4,11 +4,22 @@
 	Home Page
 {% endblock %}
 
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/leedsenterprisezone/application.css" rel="stylesheet">
+   {% endblock %}
+
+     {% block headersection %}
+     
+      {% include "includes/header_brand_twoCol.html" %}
+      {% include "includes/main_nav_sp.html" %}      
+    {% endblock %}  
+
 {% block header %}
     <h1>Welcome to Leeds Enterprise Zone</h1>
 {% endblock %}
  
- {% block sectionOneTop %}
+ {% block sectionOneTop %}   
+    {% include "includes/alerts/alert-success.html" %}  
     {% include "includes/carousel.html" %}  
 {% endblock %}
 

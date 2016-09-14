@@ -157,6 +157,12 @@ li {
 #carouselButtons button {
     border: none;
     color: #006DA5;
+    padding: 10px 20px;
+    margin:0 1px;
+    &:after{
+        content:"";
+        background:transparent;
+    }
 }
 
 #carouselButtons button:hover,

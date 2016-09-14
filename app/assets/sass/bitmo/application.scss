@@ -39,6 +39,12 @@ $carousel-indicators-active-background:#ccc;
 $block-link-back:#fff;
 $block-link-back-hover:#3380A4;
 
+// promoGroup.scss
+$promo-group-border:10px solid #ddd; 
+$promo-group-background:#ddd; 
+$promo-group-li-background:#fff;
+$promo-group-link-color:#333;
+
 @import 'base';
 @import 'cookieBanner';
 @import 'masterHead1';
@@ -58,6 +64,7 @@ $block-link-back-hover:#3380A4;
 @import 'typography';
 @import 'accordion';
 @import 'promoGroup';
+@import 'alerts';
 
 
 

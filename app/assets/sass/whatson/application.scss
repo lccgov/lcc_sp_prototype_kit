@@ -1,6 +1,8 @@
+
+
 // headerTop.scss -- responsive icons color
-$menu-link-color:#BA000E;
-$search-link-background:#BA000E;
+$menu-link-color:#fff;
+$search-link-background:#e7cc26;
 
 
 $base-font-size:16px;
@@ -9,8 +11,10 @@ $base-font-color:#333;
 $btn-background-color:#BA000E;
 
 // mainNav.scss
-$main-nav-background: #8C0003;
+$main-nav-background:lighten(#161f28,5%);
+// masterhead.scss
 
+$head-background:  darken($main-nav-background,10%);
 
 //footer.scss
 $footer-nav-link:#fff;
@@ -40,13 +44,13 @@ $block-link-back-hover:#3380A4;
 $promo-group-border:10px solid #ddd; 
 $promo-group-background:#ddd; 
 $promo-group-li-background:#fff;
-$promo-group-link-color:#333;
+$promo-group-link-color:#333 !default;
 
 @import 'base';
 @import 'cookieBanner';
 @import 'masterHead1';
 @import 'headerTop';
-@import 'mainMenuSubsites';
+@import 'mainMenu';
 @import 'breadcrumb';
 @import 'variables1';
 @import 'mixins';
@@ -62,45 +66,41 @@ $promo-group-link-color:#333;
 @import 'accordion';
 @import 'promoGroup';
 @import 'alerts';
+@import 'promolistwebpart';
 
 
 
 body{
- background:#fff url(/public/img/museums/background.png) no-repeat;
- background-position: 50% 60px;
-
+ background:#1e2a34;
 }
 
-        @media (max-width: 1500px){
-            body{
-                background:#fff url(/public/img/museums/background.png) no-repeat;
-                background-position: -755px 60px;
-                }
-        }
 
-
-
+.masterhead a.navbar-brand {
+    background: url(/public/img/whatson/lcclogo.svg) center center no-repeat;
+}
 
 
 
 // logo overides to accomodate diiferent logo aspect ratios
+.sectionHeader{
+    padding:0px;
+    background:#2c3e50;
 
+
+    .col-lg-12{
+ 
+
+        
  .logo{
-
-        height:80px;
-        width:300px;
-        background:url(/public/img/museums/logo.png) left center no-repeat;
+        height:192px;
+        width:100%;
+        background:url(/public/img/whatson/logo.svg) center top no-repeat;
+      
 
         @media (max-width: 767px){
             width:100%;
         }
 
     }
-
-
-    .sectionOne .container-fluid {
-        background:#fff;
-        border-left:1px solid #ddd;
-        border-right:1px solid #ddd;
-
-    }
+      }
+}
