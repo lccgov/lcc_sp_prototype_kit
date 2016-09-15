@@ -1,7 +1,7 @@
 @import 'variables1';
 
 body{
-  font-size:17px;
+  font-size:$base-font-size;
   font-family:$base-font;
   color:$base-font-color;
 }
