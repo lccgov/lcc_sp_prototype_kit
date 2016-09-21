@@ -4,7 +4,7 @@ $search-link-background:#BA000E;
 
 
 $base-font-size:16px;
-$base-font:arial;
+$font-primary:arial;
 $base-font-color:#333;
 $btn-background-color:#BA000E;
 
@@ -66,14 +66,14 @@ $promo-group-link-color:#333;
 
 
 body{
- background:#fff url(/public/img/museums/background.png) no-repeat;
+ background:#fff url(../../img/museums/background.png) no-repeat;
  background-position: 50% 60px;
 
 }
 
         @media (max-width: 1500px){
             body{
-                background:#fff url(/public/img/museums/background.png) no-repeat;
+                background:#fff url(../../img/museums/background.png) no-repeat;
                 background-position: -755px 60px;
                 }
         }
@@ -89,7 +89,7 @@ body{
 
         height:80px;
         width:300px;
-        background:url(/public/img/museums/logo.png) left center no-repeat;
+        background:url(../../img/museums/logo.png) left center no-repeat;
 
         @media (max-width: 767px){
             width:100%;

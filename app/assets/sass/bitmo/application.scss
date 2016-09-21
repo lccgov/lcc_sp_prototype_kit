@@ -1,8 +1,9 @@
 // headerTop.scss -- responsive icons color
 $menu-link-color:#598741;
 
+$base-background-color:#E9EBE6;
 $base-font-size:16px;
-$base-font:arial;
+$font-primary:arial;
 $base-font-color:#333;
 
 
@@ -69,11 +70,6 @@ $promo-group-link-color:#333;
 
 
 
-body{
-    background:#E9EBE6;
-}
-
-
     .sectionOne .container-fluid {
         background:#fff;
     }
@@ -86,7 +82,7 @@ body{
 
         height:150px;
         width:440px;
-        background:url(/public/img/bitmo/logo.png) center center no-repeat;
+        background:url(../../img/bitmo/logo.png) center center no-repeat;
         background-size: 100%;
 
         @media (max-width: 767px){
@@ -100,7 +96,7 @@ body{
        background: #fff ;
        padding:0px;
     .container-fluid {
-       background: url(/public/img/bitmo/flowers.jpg) right 30px bottom  no-repeat;
+       background: url(../../img/bitmo/flowers.jpg) right 30px bottom  no-repeat;
     }  
  }   
 

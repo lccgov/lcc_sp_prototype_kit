@@ -15,17 +15,22 @@
 {% endblock %}   
 
 {% block header %}
+<h1>Events</h1>
 {% endblock %}
  
  {% block sectionOneTop %}
+ 
 {% endblock %} 
 
-{% block sectionOneFull%}
+{% block sectionOneFull %}  
+{% include "includes/whatson/events-results.html" %}
 {% endblock %}
 
 
 
  {% block breadcrumb %}
+ {% include "includes/breadcrumb_sp.html" %}
+
  {% endblock %}
 
 {% block sectionOneContent %}
@@ -47,10 +52,7 @@
 {% block sectionTwoTop %}
 {% endblock %} 
 
-{% block sectionTwoFull%}
- {% include "includes/whatson/events-search.html" %}
-
-  
+{% block sectionTwoFull %}
 {% endblock %}
 
 {% block sectionTwoContent %}
@@ -73,7 +75,7 @@
 {% endblock %} 
 
 {% block sectionThreeFull%}
-  {% include "includes/whatson/promolistwebpart.html" %}
+  
 {% endblock %}
 
 {% block sectionThreeContent %}
@@ -96,7 +98,7 @@
 {% endblock %} 
 
 {% block sectionFourFull%}
-{% include "includes/whatson/promolistwebpart3.html" %}
+
   
 {% endblock %}
 
@@ -121,7 +123,6 @@
 {% endblock %} 
 
 {% block sectionFiveFull%}
-{% include "includes/whatson/promolistwebpart4.html" %}
   
 {% endblock %}
 

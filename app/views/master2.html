@@ -52,6 +52,11 @@
 
     {% include "includes/header_globalRM.html" %}
 
+    <div class="header-nav-container">
+    {% block headersection %}
+    {% endblock %}
+    </div>
+
     {% block bodycontent %}
     {% endblock %}
 

@@ -1,55 +1,164 @@
-{% extends "master2.html" %}
+{% extends "master2.html" %} 
+{% block bodycontent %} 
 
+        {% block sectionOneTop %}{% endblock %}
 
-{% block page_title %}
-{% endblock %}
+<section id="main" class="sectionOne">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                {% block breadcrumb %} {% endblock %} {% block header %}{% endblock %} {% block sectionOneContent %} {% endblock %}
 
-  {% block css_register %}
-   {% endblock %}
+            </div>
+            <div class="col-md-4">
+                {% block sectionOneRightHandColumn %} {% endblock %}
+            </div>
+        </div>
+            <div class="row">
 
-{% block bodycontent %}
-    <div class="header-nav-container">
-    {% block headersection %}
-    {% endblock %}
+            <div class="col-lg-12">
+                {% block sectionOneFull %}{% endblock %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                {% block sectionOneThirdCol1 %} {% endblock %}
+            </div>
+            <div class="col-md-4">
+                {% block sectionOneThirdCol2 %} {% endblock %}
+            </div>
+            <div class="col-md-4">
+                {% block sectionOneThirdCol3 %} {% endblock %}
+            </div>
+        </div>
     </div>
+    </div>
+</section>
+{% block sectionTwoTop %}{% endblock %}
+<section class="sectionTwo">
+    <div class="container-fluid">
+        <div class="row">
 
-    {% block sectionOneTop %}{% endblock %}
-    <section id="main" class="sectionOne">
-        <div class="container-fluid">
-  
-
-
-            <div class="row">
-
-                 <div class="col-lg-12">
-                  <div class="spacer"></div>
-                 </div>
-
-                <div class="col-lg-8">
-                     {% block breadcrumb %}
-                      {% endblock %}
-                
-                        {% block header %}{% endblock %}
-                        
-                        {% block content %}
-                        {% endblock %}
-                    
-                </div>
-                <div class="col-lg-4">
-                    {% block rightHandColumn %}
-                    {% endblock %}
-                </div>
+            <div class="col-lg-12">
+                {% block sectionTwoFull %}{% endblock %}
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="col-md-8">
+              {% block sectionTwoContent %} {% endblock %}
 
-    <section class="sectionTwo">
-        <div class="container-fluid">
-            <div class="row">
-            {% block sectionTwo %}
-            {% endblock %}
+            </div>
+            <div class="col-md-4">
+                {% block sectionTwoRightHandColumn %} {% endblock %}
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="col-md-4">
+                {% block sectionTwoThirdCol1 %} {% endblock %}
+            </div>
+            <div class="col-md-4">
+                {% block sectionTwoThirdCol2 %} {% endblock %}
+            </div>
+            <div class="col-md-4">
+                {% block sectionTwoThirdCol3 %} {% endblock %}
+            </div>
+        </div>
+    </div>
+</section>
+{% block sectionThreeTop %}{% endblock %}
+<section class="sectionThree">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-12">
+                {% block sectionThreeFull %}{% endblock %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+              {% block sectionThreeContent %} {% endblock %}
+
+            </div>
+            <div class="col-md-4">
+                {% block sectionThreeRightHandColumn %} {% endblock %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                {% block sectionThreeThirdCol1 %} {% endblock %}
+            </div>
+            <div class="col-md-4">
+                {% block sectionThreeThirdCol2 %} {% endblock %}
+            </div>
+            <div class="col-md-4">
+                {% block sectionThreeThirdCol3 %} {% endblock %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% block sectionFourTop %}{% endblock %}
+<section class="sectionFour">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-12">
+                {% block sectionFourFull %}{% endblock %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+              {% block sectionFourContent %} {% endblock %}
+
+            </div>
+            <div class="col-md-4">
+                {% block sectionFourRightHandColumn %} {% endblock %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                {% block sectionFourThirdCol1 %} {% endblock %}
+            </div>
+            <div class="col-md-4">
+                {% block sectionFourThirdCol2 %} {% endblock %}
+            </div>
+            <div class="col-md-4">
+                {% block sectionFourThirdCol3 %} {% endblock %}
+            </div>
+        </div>
+    </div>
+</section>
+{% block sectionFiveTop %}{% endblock %}
+<section class="sectionFive">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-12">
+                {% block sectionFiveFull %}{% endblock %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+              {% block sectionFiveContent %} {% endblock %}
+
+            </div>
+            <div class="col-md-4">
+                {% block sectionFiveRightHandColumn %} {% endblock %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                {% block sectionFiveThirdCol1 %} {% endblock %}
+            </div>
+            <div class="col-md-4">
+                {% block sectionFiveThirdCol2 %} {% endblock %}
+            </div>
+            <div class="col-md-4">
+                {% block sectionFiveThirdCol3 %} {% endblock %}
+            </div>
+        </div>
+    </div>
+</section>
 
 {% endblock %}

@@ -1,6 +1,8 @@
 
 $head-background: #fff;
 
+
+$base-background-color:#f6f6f6;
 // headerTop.scss -- responsive icons color
 $menu-link-color:#AA1C40;
 
@@ -39,11 +41,6 @@ $social-link-color:#337ab7;
 @import 'promoGroup';
 @import 'alerts';
 
-body{
-    background:#f6f6f6;
-
-}
-
 
     .sectionOne .container-fluid {
         background:#fff;
@@ -55,7 +52,7 @@ body{
 
         height:150px;
         width:400px;
-        background:url(/public/img/adopt4leeds/logo.png) center center no-repeat;
+        background:url(../../img/adopt4leeds/logo.png) center center no-repeat;
         background-size: 100%;
 
         @media (max-width: 767px){
