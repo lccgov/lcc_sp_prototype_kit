@@ -149,7 +149,7 @@ CHECKBOXES EVENTS FILTERS
      .selectedFilters a {
         padding: 5px 40px 5px 10px; /*events fix*/
         width:100%; /*events fix*/
-        background: url(../img/close.png) no-repeat 98% 50%; /*events fix*/
+    
         margin: 0 0 10px 0; /*events fix*/
         font-size: 14px; /*events fix*/
     }
@@ -1913,6 +1913,28 @@ select.form-control {
 
 }
 
+.activitySearchHomeContent{
+.distance{
+        &:before{
+  top:-4px; 
+  }
+
+}
+
+}
+
+@media (max-width:700px){
+    .activitySearchHomeContent{
+.distance{
+        &:before{
+  top:106px; 
+  }
+
+}
+
+}
+
+}
 
 
 select.form-control::-ms-expand {
@@ -2039,7 +2061,7 @@ h2 {
         content: "\f00d";
         right:10px;
         top:50%;
-        margin-top:-10px;
+        margin-top:-12px;
         position:absolute;
     }
 

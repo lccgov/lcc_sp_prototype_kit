@@ -24,7 +24,7 @@
             <div role="tabpanel" class="tab-pane active" id="Events">
                 <input autocomplete="off" id="event-q" class="q ui-autocomplete-input" placeholder="Search for events or categories" type="text">
                 <input autocomplete="off" id="location" placeholder="Enter a location" type="text">
-                <select name="ctl00$m$g_fd839df0_c5ac_4d0b_adb7_c1aebc652ea9$ddlDates" id="ctl00_m_g_fd839df0_c5ac_4d0b_adb7_c1aebc652ea9_ddlDates" class="eventDateRange">
+                <span class="distance"><select name="ctl00$m$g_fd839df0_c5ac_4d0b_adb7_c1aebc652ea9$ddlDates" id="ctl00_m_g_fd839df0_c5ac_4d0b_adb7_c1aebc652ea9_ddlDates" class="eventDateRange">
 		<option value="">All Dates</option>
 		<option value="Today">Today</option>
 		<option value="Tomorrow">Tomorrow</option>
@@ -33,17 +33,17 @@
 		<option value="NextWeek">Next Week</option>
 		<option value="ThisMonth">This Month</option>
 
-	</select>
+	</select></span>
                 <input id="search-events" value="Search" class="btn btn-primary" type="submit">
             </div>
             <div role="tabpanel" class="tab-pane" id="Venues">
                 <div id="ctl00_m_g_fd839df0_c5ac_4d0b_adb7_c1aebc652ea9_pnlVenueSearchTabContent">
 		
                     <input id="venue-q" class="q" placeholder="Search by name" type="text">
-                    <select name="ctl00$m$g_fd839df0_c5ac_4d0b_adb7_c1aebc652ea9$ddlVenueCategories" id="ctl00_m_g_fd839df0_c5ac_4d0b_adb7_c1aebc652ea9_ddlVenueCategories" class="venueCategories">
+                    <span class="distance"><select name="ctl00$m$g_fd839df0_c5ac_4d0b_adb7_c1aebc652ea9$ddlVenueCategories" id="ctl00_m_g_fd839df0_c5ac_4d0b_adb7_c1aebc652ea9_ddlVenueCategories" class="venueCategories">
 			<option value="">All Categories</option>
 
-		</select>
+		</select></span>
                     <input autocomplete="off" id="venue-location" placeholder="Enter a location" type="text">
                     <input id="search-venues" value="Search" class="btn btn-primary" type="submit">
                 
