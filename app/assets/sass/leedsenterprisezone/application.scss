@@ -15,7 +15,7 @@ $menu-link-color:#3A7BBF;
 
 
 // mainNav.scss
-$main-nav-background: orange;
+$main-nav-background: #3A7BBF;
 $main-nav-selected-link:#3A7BBF;
 
 
@@ -70,7 +70,6 @@ $base-margin-bottom:1.875em;
 @import 'accordion';
 @import 'promoGroup';
 @import 'alerts';
-@import 'promolistwebpart';
 @import 'eventsWebparts';
 
 
