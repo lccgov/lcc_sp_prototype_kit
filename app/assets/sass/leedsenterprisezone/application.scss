@@ -50,10 +50,6 @@ $block-link-back-hover:#3380A4;
 $base-margin-bottom:1.875em;
 
 
-
-
-
-
 @import 'base';
 @import 'cookieBanner';
 @import 'masterHead1';
@@ -74,6 +70,8 @@ $base-margin-bottom:1.875em;
 @import 'accordion';
 @import 'promoGroup';
 @import 'alerts';
+@import 'promolistwebpart';
+@import 'eventsWebparts';
 
 
 .col-lg-8 {h1,h2,h3,h4,h5
