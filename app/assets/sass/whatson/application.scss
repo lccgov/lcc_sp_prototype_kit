@@ -78,11 +78,13 @@ body{
     font-weight:300;
 }
 
-.masterhead a.navbar-brand {
+
+.masterhead{
+
+    a.navbar-brand {
     background: url(../../img/whatson/lcclogo.svg) center center no-repeat;
 }
-
-
+}
 
 // logo overides to accomodate diiferent logo aspect ratios
 .sectionHeader{
