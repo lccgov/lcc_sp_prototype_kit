@@ -50,13 +50,13 @@ $promo-group-background:#ddd;
 $promo-group-li-background:#fff;
 $promo-group-link-color:#333 !default;
 
+@import 'variables';
 @import 'base';
 @import 'cookieBanner';
-@import 'masterHead1';
+@import 'masterHead';
 @import 'headerTop';
 @import 'mainMenu';
 @import 'breadcrumb';
-@import 'variables1';
 @import 'mixins';
 @import 'footer';
 @import 'sectionSubsite';
