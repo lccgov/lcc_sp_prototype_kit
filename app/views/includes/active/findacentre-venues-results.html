@@ -1,0 +1,616 @@
+<div class="col-xs-12 eventsFilterSortContainer removeSidePadding">
+            <div class="eventsFilter col-md-3" id="eventsFilter">
+                <div class="eventsFilterHeader">
+                    <h2><span class="iconTwenty iconLeft filterIcon"></span>Filters</h2>
+                    <a class="reset" data-bind="click: resetFiltersClick"><span class="resetIcon"></span>Reset Filters</a>
+                    <a id="closeIcon">Close</a>
+                </div>
+                <div class="eventsFilterType first">
+                    <h3>Search by Keyword</h3>
+                    <div class="input-group searchForm">
+                        <label class="sr-only" for="venue-q">Keyword Search</label>
+                        <input class="form-control" id="venue-q" placeholder="Search by name" data-bind="value: q, enterKey: generateNewQuery" type="text">
+                        <span class="input-group-btn">
+                            <button id="search-events" class="btn btn-lg btn-primary" type="button" data-bind="click: generateNewQuery"><span class="sr-only">Search</span></button>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <div class="eventsFilterType">
+                    <h3>
+                        <label for="location">LOCATION</label></h3>
+                    <input autocomplete="off" placeholder="Enter a location" data-lng="" data-lat="" class="mapIcon" id="location" data-bind="value: location, addressAutocomplete: {}, attr: { 'data-lat': lat, 'data-lng': lng }, enterKey: locationEnterKeyClick">
+                    <select class="form-control" id="radius" data-bind="options: availableRadius, optionsText: 'name', optionsValue: 'value', value: radius, event: { change: radiusChange }"><option value="">Distance (All)</option><option value="3">Within 3 miles</option><option value="5">Within 5 miles</option><option value="7">Within 7 miles</option><option value="9">Within 9 miles</option></select>
+                </div>
+                <div class="eventsFilterType">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        
+                        <div id="ctl00_m_g_a3b50f6c_7855_4bb5_89ce_b661ab3ac127_pnlFacilities" class="panel panel-default">
+		
+                            <div class="panel-heading" id="headingTwo" role="tab">
+                                <h2 class="panel-title">
+                                    <a class="collapsed" role="button" aria-expanded="false" aria-controls="collapseTwo" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">FACILITIES</a>
+                                </h2>
+                            </div>
+                            <div class="panel-collapse collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <div class="check" id="facility">
+                                        <!-- ko foreach: facilities -->
+                                        <label>
+                                            <input value="Classes" data-bind="attr: { value: $data.value }, checked: $data.selected, click: $parent.filterClick" type="checkbox">
+                                            <span data-bind="text: $data.name">Classes</span>
+                                        </label>
+                                        
+                                        <label>
+                                            <input value="Climbing" data-bind="attr: { value: $data.value }, checked: $data.selected, click: $parent.filterClick" type="checkbox">
+                                            <span data-bind="text: $data.name">Climbing</span>
+                                        </label>
+                                        
+                                        <label>
+                                            <input value="Court and Pitch Hire" data-bind="attr: { value: $data.value }, checked: $data.selected, click: $parent.filterClick" type="checkbox">
+                                            <span data-bind="text: $data.name">Court and Pitch Hire</span>
+                                        </label>
+                                        
+                                        <label>
+                                            <input value="Gym" data-bind="attr: { value: $data.value }, checked: $data.selected, click: $parent.filterClick" type="checkbox">
+                                            <span data-bind="text: $data.name">Gym</span>
+                                        </label>
+                                        
+                                        <label>
+                                            <input value="Sailing" data-bind="attr: { value: $data.value }, checked: $data.selected, click: $parent.filterClick" type="checkbox">
+                                            <span data-bind="text: $data.name">Sailing</span>
+                                        </label>
+                                        
+                                        <label>
+                                            <input value="Swim" data-bind="attr: { value: $data.value }, checked: $data.selected, click: $parent.filterClick" type="checkbox">
+                                            <span data-bind="text: $data.name">Swim</span>
+                                        </label>
+                                        <!-- /ko -->
+                                    </div>
+                                </div>
+                            </div>
+                        
+	</div>
+                    </div>
+                </div>
+                <div class="eventsFilterType" id="filterCloseButton">
+                    <a class="scroll btn btn-blue" href="#">Show Me Results</a>
+                </div>
+            </div>
+            <div class="col-md-9 contentBackground">
+                <div class="eventsSearchSort">
+                    <div class="mapToggle">
+                        <a class="btn active" id="listViewToggle" href="#" data-view="List" data-bind="css: { 'active': view() === 'List' }, click: changeViewClick"><span class="iconTwenty iconLeft listIcon"></span>List View</a>
+                        <a class="btn btn-toggle-right" id="mapViewToggle" href="#" data-view="Map" data-bind="css: { 'active': view() === 'Map' }, click: changeViewClick"><span class="iconTwenty iconLeft mapIcon"></span>Map View</a>
+                    </div>
+                    <div id="filterhide">
+                        <a class="btn btn-primary" href="#eventsFilter">Refine</a>
+                    </div>
+                    <div class="pull-right">
+                        
+                    <div class="mapToggle relDate" style="" data-bind="visible: view() !== 'Map'">
+                            <a class="btn active" id="relevanceSort" data-sort="relevance" href="#" data-bind="css: { 'active': sort() !== 'name' }, click: changeSortClick">Relevance</a>
+                            <a class="btn btn-toggle-right" id="nameSort" data-sort="name" href="#" data-bind="css: { 'active': sort() === 'name' }, click: changeSortClick">Name</a>
+                        </div></div>
+                    <div class="clear"></div>
+                </div>
+                <div id="loading" data-bind="visible: showLoadingScreen" style="display: none;">
+                    <span class="loadingImage"></span>
+                    <p><span>Hold tight! </span>We're just loading something.</p>                    
+                </div>
+                <div class="eventSearchResults" style="" id="eventSearchResultsList" data-bind="visible: view() === 'List' &amp;&amp; !showLoadingScreen()">
+                    <div id="paging">
+                        <h2>Results (<span data-bind="text: venueCount">17</span>)</h2>
+                        <div class="pagingNumber page_navigation">
+                            <!-- -->
+                        </div>
+                        <!-- ROD TODO: style filters for map -->
+                        <div class="selectedFilters">
+                            <!-- ko foreach: selectedFilters --><!-- /ko -->
+                        </div>
+                        <div class="inner">
+                            <ul class="content resultsList" style="" data-bind="visible: venueCount() > 0, template: { name: venueResultTemplate, foreach: venues, afterRender: resizeVenueHeights }">
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Climbing" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Climbing.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Gym" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Gym.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/AireboroughLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Aireborough Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->The Green<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS20 9BT</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Gym" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Gym.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/ArmleyLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Armley Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Carr Crofts<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS12 3HB</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/ChippindalePool.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Chippindale Pool<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Prince Henry's Grammar School<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS21 2BB</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Gym" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Gym.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/FearnvilleLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Fearnville Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Oakwood Lane<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS8 3LF</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Gym" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Gym.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/GarforthLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Garforth Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Ninelands Lane<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS25 1NX</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Gym" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Gym.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/HoltParkActive.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Holt Park Active<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Holtdale Approach<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS16 7RX</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Gym" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Gym.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/JohnCharlesCentreforSport.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->John Charles Centre for Sport<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Middleton Grove<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS11 5DJ</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Gym" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Gym.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/JohnSmeatonLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->John Smeaton Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Smeaton Approach<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS15 8TA</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/KippaxLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Kippax Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Station Road<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS25 7LQ</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/KirkstallLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Kirkstall Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Kirkstall Lane<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS5 3BE</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Sailing" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Sailing.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/LeedsSailingandActivityCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Leeds Sailing and Activity Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Cemetery Road<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS19 7UR</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/MiddletonLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Middleton Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Middleton Ring Road<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS10 4AX</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Gym" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Gym.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/MorleyLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Morley Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Queensway<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS27 9JP</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Gym" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Gym.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/PudseyLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Pudsey Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Market Place<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS28 7BE</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Gym" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Gym.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/RothwellLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Rothwell Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Wakefield Road<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS26 8EL</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Court and Pitch Hire" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Court and Pitch Hire.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Gym" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Gym.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/ScottHallLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Scott Hall Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Scott Hall Road<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS7 3DT</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+
+    <li style="height: 210px;" class="col-md-4 col-sm-6 resultsItemWrapper">
+        <div class="resultsItem">
+            <div class="centreFacilities" data-bind="visible: facilities.length > 0">
+                <!-- ko foreach: facilities -->
+                <img data-original-title="Classes" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Classes.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Gym" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Gym.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                
+                <img data-original-title="Swim" src="http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-Swim.png" title="" data-bind="attr: { title: $data, src: 'http://active.leeds.gov.uk/_layouts/LCC.Sports.SharePoint/img/icon-overview-' + $data + '.png', 'data-original-title': $data }" data-toggle="tooltip" data-placement="bottom" alt="">
+                <!-- /ko -->
+            </div>
+            <div class="clearfix"></div>
+            <h3><a href="/findacentre/pages/WetherbyLeisureCentre.aspx" data-bind="attr: { href: $parent.getDetailsUrl($data.id, $data.name) }">
+                <!-- ko text: name -->Wetherby Leisure Centre<!-- /ko -->
+            </a></h3>
+            <p>
+                <!-- ko text: addressLine1 -->Lodge Lane<!-- /ko -->
+                <span data-bind="visible: addressLine1.length > 0">,</span><br>
+                <span data-bind="visible: city !== '', text: city"></span><span data-bind="    text: postcode">LS22 5FN</span>
+            </p>
+            <p style="display: none;" data-bind="visible: telephone !== ''">
+                <strong>Tel: </strong>
+                <!-- ko text: telephone --><!-- /ko -->
+            </p>
+            <p class="mileage" data-bind="text: $parent.distance(latitude, longitude)"></p>
+        </div>
+    </li>
+</ul>
+                        </div>
+                        <div style="display: none;" data-bind="visible: venueCount() === 0">
+                            No results found. Please change search criteria.
+                        </div>
+                        <hr>
+                        <div class="paging">
+                            <div id="pager"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none" class="eventSearchResults" id="eventSearchResultsMap" data-bind="visible: view() === 'Map' ">
+                    <div class="selectedFilters">
+                        <!-- ko foreach: selectedFilters --><!-- /ko -->
+                    </div>
+                    <div id="googleMap"></div>
+                </div>
+            </div>
+        </div>

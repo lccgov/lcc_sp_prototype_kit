@@ -19,7 +19,7 @@ $eventsfilter-font-color:#293238; // font-color
 $eventsfilter-border-color:#E0E0E0; // border color
 $filter-header-color:#E7CC26; // filter header background color on mobile
 
-
+$contentPod-backround:#F5F7F8;
 
 
 @mixin border(){
@@ -38,6 +38,23 @@ box-shadow:inset 0 3px 5px rgba(0, 0, 0, .125);
 /*************************
 CHECKBOXES EVENTS FILTERS
 *************************/
+
+
+.btn-group .btn, .input-group-btn .btn, .btn.btn-primary {
+    font-size:18px;
+    padding: 20px 20px;
+    box-shadow: inset 0 0px 0px;
+
+    &:after{
+        content:"";
+        display:none;
+    }
+
+    &:hover{
+       background:darken($link-primary-color,20%);  
+
+    }
+}
 
 
 .eventsFilter {
@@ -332,7 +349,7 @@ select{
 
 .eventsContentPod, .venuesContentPod {
 
-    $contentPod-backround:#F5F7F8;
+
 	position:relative;
 	padding:20px !important;
 	background:$contentPod-backround;
@@ -856,6 +873,7 @@ img{
     font-style: normal;
 }
 
+
 .listIcon {
     @include icon();
     &:after{
@@ -1159,11 +1177,11 @@ a, a:visited {
 
     
     
-h2  {
+h2, h3, h4  {
     
-    font-size:$base-font-size * 2;
+    font-size:1.5em;
     margin:0 0 10px 0;
-    width:90%;
+    width:100%;
     }
 
     
@@ -1233,10 +1251,29 @@ p{
 	background: "url(images/icon-user.png) no-repeat center center";
 }
 .eventDetailsBlockIconVenue{
-	background: "url(images/icon-location.png) no-repeat center center";
+	      @include icon();
+    &:before{
+     content: "\f041";  
+     margin:0px 10px 0px 0; 
+     position:relative;
+     top:-10px; 
+     font-size:25px;
+    }
+
+    font-style: normal;
 }
+
 .eventDetailsBlockIconContact{
-	background: "url(images/icon-contact.png) no-repeat center center";
+	      @include icon();
+    &:before{
+     content: "\f095";  
+     margin:0px 10px 0px 0; 
+     position:relative;
+     top:-10px; 
+     font-size:25px;
+    }
+
+    font-style: normal;
 }
 .eventDetailsBlockIconHours{
 	background: "url(images/icon-clock.png) no-repeat center center";
@@ -1448,7 +1485,7 @@ ul.date-list
     background-color:#fff;
     background-position: 15px 50%;
     border-bottom:1px solid #D5DFEA;
-    padding:18px 50px;
+    padding:20px;
     font-size:1.3em;
     margin:0px;
 }
@@ -1507,10 +1544,9 @@ ul.date-list
 .dateBox a {
    border-top:1px solid #D5DFEA;
    background-position: 15px 50%;
-   padding:15px 15px 15px 45px;
+   padding:15px 15px 15px 20px;
    display:inline-block;
    width:100%;
-   color:#333;
    font-size:1.2em;
    font-weight:bold;
    cursor:pointer;
@@ -1616,18 +1652,37 @@ ul.date-list
 }
 
 
-.plusMinus {
-     background: "url(images/plusIconSm.png) no-repeat 10px 50%"; 
-     padding-left:48px;
+.plusMinus 
+    {
+      @include icon();
+    &:before{
+     content: "\f055";  
+     margin:0px 10px 0px 0; 
+     position:relative;
+     font-size:25px;
+    }
+
+    &.active{
+           &:before{
+     content: "\f056";  
+    }
+    }
+
+    font-style: normal
+    
 }
 
 
-.plusMinus.active {
-     background:#DDE6EE "url(images/minusIconSm.png) no-repeat 10px 50%"; 
-}
+ .when {
+      @include icon();
+    &:before{
+     content: "\f073";  
+     margin:0px 10px 0px 0; 
+     position:relative;
+     top:-2px; 
+    }
 
-.when {
-    background:  "url(images/icon-calender-events.png) no-repeat 0px 3px";
+    font-style: normal;
 }
 
 table.basicTable {
@@ -2331,27 +2386,50 @@ box-shadow: inset 0px 0px 23px -5px rgba(0,0,0,0.85);
 
 ul.content li.resultsItemWrapper
 { 
-  padding-bottom:30px;
+  margin: 1%;
+width: 31.33333333333%;
+padding: 0;
+
     
 .resultsItem
 {
-    padding:0 15px 15px 15px;
     height:100%;
-	border:1px solid $eventsfilter-border-color;
+	padding:20px !important;
+	background:$contentPod-backround;
+    margin:0 0 20px 0 ;
     color:$font-primary-color;
-    -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.02);
-    -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.02);
-    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.02);
-    
-    a{
-         color:$font-primary-color;
-    }
+  -webkit-box-shadow:2px 2px 0px 0px rgba(204, 213, 215, 1);
+-moz-box-shadow: 2px 2px 0px 0px rgba(204, 213, 215, 1);
+box-shadow: 2px 2px 0px 0px rgba(204, 213, 215, 1);
+
     
     a:hover, a:focus {
-         color:$link-primary-color;
+         color:darken($link-primary-color, 10%);
+         text-decoration:none;
+    }
+
+    h3{
+        margin:0.4em 0;
     }
 
 }
+
+}
+
+@media (max-width: 1199px) {
+    ul.content li.resultsItemWrapper {
+        width: 46%;
+        float: left;
+        margin: 2%;
+    }
+}
+
+@media (max-width: 529px) {
+    ul.content li.resultsItemWrapper {
+        width: 100%;
+        margin:0;
+        padding-bottom:20px;
+    }
 }
 
 
@@ -2385,5 +2463,9 @@ margin-bottom:0px !important;
         }
     }
 
+}
+
+.eventListOnly{
+    margin-bottom:$base-margin-bottom;
 }
 
