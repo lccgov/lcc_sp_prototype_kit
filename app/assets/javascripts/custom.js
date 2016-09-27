@@ -1,6 +1,95 @@
 (function ($) {
 
 
+
+    //image gallery
+    $("#gallery li img").hover(function () {
+        $('#main-img').attr('src', $(this).attr('src'));
+    });
+
+    $(document).ready(function () {
+        // bind a click event to the 'skip' link
+        $(".scroll").click(function (event) {
+            var that = this;
+            var scrollTo = '#' + that.href.split('#')[1]
+            $("body, html").animate({ scrollTop: $(scrollTo).offset().top }, 600, function () {
+                $(scrollTo).attr('tabindex', '-1').on('blur focusout', function () {
+                    // when focus leaves this element, 
+                    // remove the tabindex attribute
+                    $(this).removeAttr('tabindex');
+                }).focus(); // focus on the content container           
+            });
+
+        });
+    });
+
+
+    //external links
+    $('a[rel="external"]').attr('target', '_blank');
+
+    //external links
+    $('a[rel="pdf"]').attr('target', '_blank');
+
+    //external links
+    $('a[rel="doc"]').attr('target', '_blank');
+
+    //timetbale hover
+    $(function () {
+        $(".session").hover(function () {
+            $(this).find(".sessionInfo").show();
+        }
+                        , function () {
+                            $(this).find(".sessionInfo").hide();
+                        }
+                       );
+    });
+
+
+    //stop popover from jumping to top
+    $('a.popoverInfo').on('click', function (e) { e.preventDefault(); return true; });
+
+    //stop popover from jumping to top
+    $('a.noLink').on('click', function (e) { e.preventDefault(); return true; });
+
+    //stop popover from jumping to top
+    $('.sessionInfo h4 a').on('click', function (e) { e.preventDefault(); return true; });
+
+    //timetable filter toggle
+    $('a.showClassFilters').click(function () {
+        $('.classFilters').toggleClass("active");
+        $(this).toggleClass("active");
+    });
+
+    //timetable results
+    $('a.showTimetableResults').click(function () {
+        $('.timetableView').toggleClass("active");
+        $(this).toggleClass("active");
+    });
+
+    //carousel play + pause
+    $('#playButton').click(function () {
+        $('#myCarousel').carousel('cycle');
+    });
+    $('#pauseButton').click(function () {
+        $('#myCarousel').carousel('pause');
+    });
+
+
+
+    //membership table reveal
+    $(function () {
+        $("#showmemberships a").click(function () {
+            $(".memberships").toggleClass("hidememberships");
+            $("#showmemberships a").toggleClass("active");
+        });
+    });
+
+
+
+
+
+
+    // event date show first three event list items
       jQuery('ul.date-list').each(function () {
       var LiN = jQuery(this).find('li').length;
       if (LiN > 3) {
@@ -140,7 +229,7 @@
         $('#nav-search input').focus();
     });
 
-
+ //accordion
      $('.expandContent h3 ~ div').hide();
 
          $(".expandContent h3").on("click", function()

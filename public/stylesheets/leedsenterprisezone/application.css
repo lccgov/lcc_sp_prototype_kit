@@ -1256,7 +1256,7 @@ ul.promo-group {
             left: 0px;
             position: absolute; }
 
-.col-lg-8 ul.promo-group li {
+.col-md-8 ul.promo-group li {
   width: 33.3%; }
 
 @media (max-width: 1300px) {
@@ -1389,6 +1389,9 @@ ul.promo-group {
 @media (max-width: 767px) {
   .header-right:after {
     display: none; } }
+
+.sectionOne {
+  background: #fff; }
 
 /*******
 BLOCK CONTENT
