@@ -2,6 +2,5 @@
 .DS_Store
 .port.tmp
 lib/lcc_template.html
-public
 lcc_modules
 node_modules/*
