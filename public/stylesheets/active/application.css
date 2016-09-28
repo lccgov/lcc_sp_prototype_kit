@@ -1239,38 +1239,38 @@ ul.promo-group {
     width: 25%; } }
 
 @media (max-width: 990px) {
-  ul.promo-group li, .col-lg-8 ul.promo-group li {
+  ul.promo-group li, .col-md-8 ul.promo-group li {
     width: 50%; }
-    ul.promo-group li h2, .col-lg-8 ul.promo-group li h2 {
+    ul.promo-group li h2, .col-md-8 ul.promo-group li h2 {
       margin-top: 0px;
       padding: 20px 0;
       font-size: 1.3em; }
-      ul.promo-group li h2 span, .col-lg-8 ul.promo-group li h2 span {
+      ul.promo-group li h2 span, .col-md-8 ul.promo-group li h2 span {
         display: inline-block;
         font-weight: 700;
         font-size: 1em; }
-    ul.promo-group li a, .col-lg-8 ul.promo-group li a {
+    ul.promo-group li a, .col-md-8 ul.promo-group li a {
       padding: 20px;
       position: relative;
       height: 100%; }
-      ul.promo-group li a img, .col-lg-8 ul.promo-group li a img {
+      ul.promo-group li a img, .col-md-8 ul.promo-group li a img {
         display: none; }
-      ul.promo-group li a.jump-to, .col-lg-8 ul.promo-group li a.jump-to {
+      ul.promo-group li a.jump-to, .col-md-8 ul.promo-group li a.jump-to {
         display: none; }
-      ul.promo-group li a h3, .col-lg-8 ul.promo-group li a h3 {
+      ul.promo-group li a h3, .col-md-8 ul.promo-group li a h3 {
         min-height: 0px;
         font-size: 0.9em; }
-        ul.promo-group li a h3:after, .col-lg-8 ul.promo-group li a h3:after {
+        ul.promo-group li a h3:after, .col-md-8 ul.promo-group li a h3:after {
           content: '\f105';
           font-family: FontAwesome;
           position: absolute;
           top: 40%;
           right: 10px; }
-    ul.promo-group li ul, .col-lg-8 ul.promo-group li ul {
+    ul.promo-group li ul, .col-md-8 ul.promo-group li ul {
       display: none; } }
 
 @media (max-width: 600px) {
-  ul.promo-group li, .col-lg-8 ul.promo-group li {
+  ul.promo-group li, .col-md-8 ul.promo-group li {
     width: 100%; } }
 
 .alert {
