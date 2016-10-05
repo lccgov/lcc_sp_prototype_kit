@@ -7,6 +7,10 @@
         $('#main-img').attr('src', $(this).attr('src'));
     });
 
+        $("#gallery-ImCarousel li img").hover(function () {
+        $("#gallery-ImCarousel img[id$=imgTop]").attr('src', $(this).attr('src'));
+    });
+
     $(document).ready(function () {
         // bind a click event to the 'skip' link
         $(".scroll").click(function (event) {
