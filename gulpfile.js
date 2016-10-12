@@ -50,7 +50,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
     gulp.watch('app/assets/sass/**/*.scss', ['sass']);
     gulp.watch(['app/assets/**/*', '!app/assets/sass/**'], ['sync:assets']);
-});
+})
 
 gulp.task('nodemon', function () {
     nodemon({
