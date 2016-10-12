@@ -26,6 +26,16 @@ gulp.task('sync:lcc_frontend_toolkit', (done) => {
     }).catch((err) => { done(err);})
 });
 
+//Sync lcc_templates_nunjucks to app/templates
+gulp.task('sync:lcc_templates_nunjucks', (done) => {
+    syncy(['node_modules/lcc_templates_nunjucks/**'], 'app/lcc_templates_nunjucks', {
+            base: 'node_modules/lcc_templates_nunjucks',
+            updateAndDelete: true
+        }).then(() => { 
+            done();
+    }).catch((err) => { done(err);})
+})
+
 //Compile SASS into the respective CSS and copy to public folder
 gulp.task('sass', function () {
     return gulp.src('./app/assets/sass/**/*.scss', {base:'./app/assets/sass'})
@@ -51,5 +61,5 @@ gulp.task('nodemon', function () {
     })
 });
  
-gulp.task('generate-assets',  ['sync:assets', 'sync:lcc_frontend_toolkit', 'sass']);
+gulp.task('generate-assets',  ['sync:assets', 'sync:lcc_frontend_toolkit', 'sync:lcc_templates_nunjucks', 'sass']);
 gulp.task('default', ['generate-assets', 'watch', 'nodemon']);

@@ -30,7 +30,7 @@ if (env === 'production' && useAuth === 'true') {
 
 // Application settings
 app.set('view engine', 'html')
-app.set('views', [path.join(__dirname, '/app/views'), path.join(__dirname, '/lib/')])
+app.set('views', [path.join(__dirname, '/app/views'), path.join(__dirname, '/lib/'), path.join(__dirname, '/app/lcc_templates_nunjucks/views')])
 
 nunjucks.setup({
   autoescape: true,
@@ -51,7 +51,7 @@ nunjucks.ready(function (nj) {
 
 // Middleware to serve static assets
 app.use('/public', express.static(path.join(__dirname, '/public')))
-//app.use('/public', express.static(path.join(__dirname, '/lcc_modules/lcc_templates/assets')))
+app.use('/public', express.static(path.join(__dirname, '/app/lcc_templates_nunjucks/assets/stylesheets')))
 app.use('/public', express.static(path.join(__dirname, '/lcc_modules/lcc_frontend_toolkit')))
 //app.use('/public/images/icons', express.static(path.join(__dirname, '/lcc_modules/lcc_frontend_toolkit/images')))
 

@@ -1,232 +1,142 @@
-{% extends "page_layouts/layout_home.html" %}
+{% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
-  Leeds.gov.uk SharePoint prototype kit
-{% endblock %}
-
-{% block header %}Leeds.gov.uk Prototype{% endblock %}
-
-    {% block sectionOne %}
-                    
-        <div class="col-md-12 home-banner">
-            
-            <div class="col-lg-8 search-wrapper">
-
-                <div class="col-lg-8 search home-search no-padding">
-                    <div class="input-group">
-                        <label class="sr-only" for="searchWebsite">Search website</label>
-                        <input type="text" id="searchWebsite" class="form-control" placeholder="Search leeds.gov.uk">
-                        <span class="input-group-btn">
-                            <button class="btn" type="button"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span></button>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="col-lg-10 popular-links no-padding">
-                    <h2>Popular</h2>
-                    <ul>
-                        <li><a href="#">Check your bin day</a></li>
-                        <li><a href="examples/service-page.html">Council Tax</a></li>
-                        <li><a href="#">Housing</a></li>
-                        <li><a href="#">Online payments</a></li>
-                        <li><a href="#">Search for planning applications</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Elections and referendum</a></li>
-                        <li><a href="#">Housing Benefit</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="col-lg-4 online-links">
-                    <ul>
-                        <li class="title"><h2>Save Time, Do It <span>Online</span></h2></li>
-                        <li><a href="#" class="equal-item"><i class="fa fa-credit-card" aria-hidden="true"></i> <span class="sr-only">Make a </span>Payment <span>eg: Parking fine, Council Tax or Business rates</span></a></li>
-                        <li><a href="#" class="equal-item"><i class="fa fa-bullhorn" aria-hidden="true"></i> Report <span>eg: Missed bin, Pothole or Street lighting  fault</span></a></li>
-                        <li><a href="#" class="equal-item"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Apply <span>eg: Blue badge, Parking permit or Taxi licence</span></a></li>
-                        <li><a href="#" class="equal-item"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Request <span>eg: Bulky collection or A new Bin</span></a></li>
-                    </ul>
-            </div>
-            
-        </div>
-
-    {% endblock %}
-
-
-    {% block sectionTwo %}
-    <!-- POPULAR SERVICES -->   
-    <section class="sectionTwo home">
-        <div class="container-fluid">
-			<div class="row">
-                
-                <div class="services popular">
-                        <ul id ="popular-services">
-                            <li class="title equal-item"><h2>Popular <span>Services</span></h2></li>
-                            <li class="equal-item">
-                                <a href="examples/service-page.html">
-                                    <h3>Council Tax</h3>
-                                    <p>Includes bin collections, recycling and bulky collections</p>
-                                </a>
-                                <ul>
-                                    <li><a href="examples/service-page.html">Council Tax bands and charges</a></li>
-                                    <li><a href="examples/service-page.html">Pay by direct debit or online</a></li>
-                                    <li><a href="examples/service-page.html">View your account online</a></li>
-                                    <li><a class="more" href="examples/service-page.html">More from Council Tax</a></li>
-                                </ul>
-                            </li>
-                            <li class="equal-item">
-                                <a href="examples/service-page.html">
-                                    <h3>Roads, travel and parking</h3>
-                                    <p>Includes bin collections, recycling and bulky collections</p>
-                                </a>
-                                <ul>
-                                    <li><a href="examples/service-page.html">Parking action plan</a></li>
-                                    <li><a href="examples/service-page.html">Find parking spaces and prices</a></li>
-                                    <li><a href="examples/service-page.html">Pay a parking ticket</a></li>
-                                    <li><a class="more" href="examples/service-page.html">More from Roads, travel and parking</a></li>
-                                </ul>
-                            </li>
-                            <li class="equal-item">
-                                <a href="examples/service-page.html">
-                                    <h3>Council and democracy</h3>
-                                    <p>Includes bin collections, recycling and bulky collections</p>
-                                </a>
-                                <ul>
-                                    <li><a href="examples/service-page.html">How and when to vote</a></li>
-                                    <li><a href="examples/service-page.html">Read Council minutes / reports</a></li>
-                                    <li><a href="examples/service-page.html">Find your Councillor</a></li>
-                                    <li><a class="more" href="examples/service-page.html">More from Council and democracy</a></li>
-                                </ul>
-                            </li>
-                            <li class="equal-item">
-                                <a href="examples/service-page.html">
-                                    <h3>Bins and recycling</h3>
-                                    <p>Includes bin collections, recycling and bulky collections</p>
-                                </a>
-                                <ul>
-                                    <li><a href="examples/service-page.html">Find recycling and rubbish tips</a></li>
-                                    <li><a href="examples/service-page.html">Find bin collection days</a></li>
-                                    <li><a href="examples/service-page.html">Request recyclng box, bag or bin</a></li>
-                                    <li><a class="more" href="examples/service-page.html">More from Bins and recycling</a></li>
-                                </ul>
-                            </li>
-                            <li class="equal-item">
-                                <a href="examples/service-page.html">
-                                    <h3>Schools and learning</h3>
-                                    <p>Includes bin collections, recycling and bulky collections</p>
-                                </a>
-                                <ul>
-                                    <li><a href="examples/service-page.html">View scholl term dates</a></li>
-                                    <li><a href="examples/service-page.html">Find adult education</a></li>
-                                    <li><a href="examples/service-page.html">Apply for a school</a></li>
-                                    <li><a class="more" href="examples/service-page.html">More from Schools and learning</a></li>
-                                </ul>
-                            </li>
-                            <li class="equal-item">
-                                <a href="examples/service-page.html">
-                                    <h3>Libraries and archives</h3>
-                                    <p>Includes bin collections, recycling and bulky collections</p>
-                                </a>
-                                <ul>
-                                    <li><a href="examples/service-page.html">Search library catalogue</a></li>
-                                    <li><a href="examples/service-page.html">Renew book loans</a></li>
-                                    <li><a href="examples/service-page.html">Find library opening hours</a></li>
-                                    <li><a class="more" href="examples/service-page.html">More from Libraries and archives</a></li>
-                                </ul>
-                            </li>
-                            <li class="equal-item">
-                                <a href="examples/service-page.html">
-                                    <h3>Planning and building</h3>
-                                    <p>Includes bin collections, recycling and bulky collections</p>
-                                </a>
-                                <ul>
-                                    <li><a href="examples/service-page.html">Comment on a planning application</a></li>
-                                    <li><a href="examples/service-page.html">Apply for planning permission</a></li>
-                                    <li><a href="examples/service-page.html">Apply / view building warrant</a></li>
-                                    <li><a class="more" href="examples/service-page.html">More from Planning and building</a></li>
-                                </ul>
-                            </li>
-                            <li class="equal-item">
-                                <a href="examples/service-page.html">
-                                    <h3>Business</h3>
-                                    <p>Includes bin collections, recycling and bulky collections</p>
-                                </a>
-                                <ul>
-                                    <li><a href="examples/service-page.html">Support for business</a></li>
-                                    <li><a href="examples/service-page.html">Apply for a licence or permit</a></li>
-                                    <li><a href="examples/service-page.html">Information on business rates</a></li>
-                                    <li><a class="more" href="examples/service-page.html">More from Business</a></li>
-                                </ul>
-                            </li>
-                            <li class="equal-item">
-                                <a href="examples/service-page.html">
-                                    <h3>Jobs, training and volunteering</h3>
-                                    <p>Includes bin collections, recycling and bulky collections</p>
-                                </a>
-                                <ul>
-                                    <li><a href="examples/service-page.html">Current council vacancies</a></li>
-                                    <li><a href="examples/service-page.html">Work for us</a></li>
-                                    <li><a href="examples/service-page.html">Modern Apprenticeship opportunities</a></li>
-                                    <li><a class="more" href="examples/service-page.html">More from Jobs, training and volunteering</a></li>
-                                </ul>
-                            </li>
-                            <li class="equal-item">
-                                <a href="examples/service-page.html">
-                                    <h3>Housing</h3>
-                                    <p>Includes bin collections, recycling and bulky collections</p>
-                                </a>
-                                <ul>
-                                    <li><a href="examples/service-page.html">Pay your Council rent</a></li>
-                                    <li><a href="examples/service-page.html">Find help for first time buyers</a></li>
-                                    <li><a href="examples/service-page.html">Get advice on energy saving</a></li>
-                                    <li><a class="more" href="examples/service-page.html">More from Housing</a></li>
-                                </ul>
-                            </li>
-                            <li class="equal-item">
-                                <a href="examples/service-page.html">
-                                    <h3>Benefits and grants</h3>
-                                    <p>Includes bin collections, recycling and bulky collections</p>
-                                </a>
-                                <ul>
-                                    <li><a href="examples/service-page.html">Claim housing benefit</a></li>
-                                    <li><a href="examples/service-page.html">Read about housing benefit</a></li>
-                                    <li><a href="examples/service-page.html">Read about welfare reform</a></li>
-                                    <li><a class="more" href="examples/service-page.html">More from Benefits and grants</a></li>
-                                </ul>
-                            </li>
-                            <li class="equal-item">
-                                <a href="examples/service-page.html">
-                                    <h3>Social care and health</h3>
-                                    <p>Includes bin collections, recycling and bulky collections</p>
-                                </a>
-                                <ul>
-                                    <li><a href="examples/service-page.html">Adults and older people</a></li>
-                                    <li><a href="examples/service-page.html">Get equipment for the home</a></li>
-                                    <li><a href="examples/service-page.html">Adults with disabilities</a></li>
-                                    <li><a class="more" href="examples/service-page.html">More from Social care and health</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                </div>
-
-                <div class="services other">
-                    <ul id="other-services">
-                        <li class="title equal-item"><h2>Other <span>Services</span></h2></li>
-                        <li class="equal-item"><a href="examples/service-page.html"><h3>Births, marriages and deaths</h3><p>Including Registering a birth and Burials and Ceremonies</p></a></li>
-                        <li class="equal-item"><a href="examples/service-page.html"><h3>Events and venues</h3><p>Find out what events are happening throughout the City</p></a></li>
-                        <li class="equal-item"><a href="examples/service-page.html"><h3>Leisure, Sport and Culture </h3><p>Including Leisure centres, Museums and galleries and Parks</p></a></li>
-                        <li class="equal-item"><a href="examples/service-page.html"><h3>Emergencies, safety and crime</h3><p>Including Flooding, Street light problems and Antisocial behaviour</p></a></li>
-                        <li class="equal-item"><a href="examples/service-page.html"><h3>Have your say </h3><p>Including Petitions, Customer care standards and Council webcats</p></a></li>
-                        <li class="equal-item"><a href="examples/service-page.html"><h3>Statergy </h3><p>Council planing framework and Performance reports</p></a></li>
-                    </ul>
-                </div>
-                
-            </div>            
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.section -->
-  
+	Home Page
 {% endblock %}
 
 
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+{% endblock %}
+
+ {% block main_nav %}
+  {% include "includes/main_nav.html" %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+{% block sectionOneFullBottom %}{% endblock %}
+
+
+ {% block breadcrumb %}
+ {% endblock %}
+
+{% block sectionOneContent %}
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+   {% include "includes/footer_nav.html" %}
+ {% endblock %}

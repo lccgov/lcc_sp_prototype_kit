@@ -1,0 +1,46 @@
+{
+  "name": "lcc_templates_nunjucks",
+  "version": "1.0.11",
+  "description": "Nunjucks packaged version of the lcc templates",
+  "license": "MIT",
+  "author": {
+    "name": "Leeds City Council eServices"
+  },
+  "main": "views/lcc-template.html",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lccgov/lcc_templates_nunjucks.git"
+  },
+  "gitHead": "0eff46f87e1307833b13bbf934a3dcb6443e101d",
+  "bugs": {
+    "url": "https://github.com/lccgov/lcc_templates_nunjucks/issues"
+  },
+  "homepage": "https://github.com/lccgov/lcc_templates_nunjucks#readme",
+  "_id": "lcc_templates_nunjucks@1.0.11",
+  "scripts": {},
+  "_shasum": "0af4d895b4efe2660117ec1d639c7bc2de8d6372",
+  "_from": "lcc_templates_nunjucks@latest",
+  "_npmVersion": "3.10.8",
+  "_nodeVersion": "6.7.0",
+  "_npmUser": {
+    "name": "lccgov",
+    "email": "developer@leeds.gov.uk"
+  },
+  "dist": {
+    "shasum": "0af4d895b4efe2660117ec1d639c7bc2de8d6372",
+    "tarball": "https://registry.npmjs.org/lcc_templates_nunjucks/-/lcc_templates_nunjucks-1.0.11.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "lccgov",
+      "email": "developer@leeds.gov.uk"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/lcc_templates_nunjucks-1.0.11.tgz_1476207705375_0.22269164538010955"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/lcc_templates_nunjucks/-/lcc_templates_nunjucks-1.0.11.tgz",
+  "readme": "ERROR: No README data found!"
+}
