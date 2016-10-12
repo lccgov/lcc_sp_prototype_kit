@@ -31,6 +31,7 @@
     "serve-favicon": "2.3.0",
     "syncy": "^2.0.1",
     "gulp-livereload": "^3.8.1",
-    "gulp-nodemon": "^2.1.0"
+    "gulp-nodemon": "^2.1.0",
+     "lcc_templates_nunjucks": "^1.0.11"
   }
 }
