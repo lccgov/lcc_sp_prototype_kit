@@ -26,7 +26,7 @@ gulp.task('sync:lcc_frontend_toolkit', (done) => {
     }).catch((err) => { done(err);})
 });
 
-//Sync lcc_templates_nunjucks to app/templates
+//Sync lcc_templates_nunjucks to lcc_modules
 gulp.task('sync:lcc_templates_nunjucks', (done) => {
     syncy(['node_modules/lcc_templates_nunjucks/**'], 'lcc_modules/lcc_templates_nunjucks', {
             base: 'node_modules/lcc_templates_nunjucks',
