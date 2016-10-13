@@ -1,0 +1,182 @@
+/*********************************************
+Base.sass variables
+*********************************************/
+body {
+  font-size: 16px;
+  font-family: Arial;
+  color: #333;
+  background-color: #fff; }
+
+.ms-rtestate-field h1.ms-rteElement-H2, .ms-rtestate-field h2.ms-rteElement-H2, .ms-rtestate-field h3.ms-rteElement-H2, .ms-rtestate-field h4.ms-rteElement-H2, .ms-rtestate-field h5.ms-rteElement-H2 {
+  font-family: Arial;
+  color: #333; }
+
+.btn-primary, .button {
+  background: green;
+  box-shadow: inset 0 1px 1px #00b300; }
+  .btn-primary:hover, .button:hover {
+    background: #004d00; }
+
+.btn, .button {
+  border-color: green;
+  color: #fff; }
+  .btn.btn-default, .btn.alt, .button.btn-default, .button.alt {
+    border-color: green;
+    color: green; }
+    .btn.btn-default:hover, .btn.alt:hover, .button.btn-default:hover, .button.alt:hover {
+      background: #004d00;
+      color: #fff; }
+
+.container-fluid {
+  max-width: 1500px; }
+
+.sectionHeader {
+  background: white; }
+
+.sectionOne {
+  background: #f2f2f2; }
+
+.sectionTwo {
+  background: #e6e6e6; }
+
+.sectionThree {
+  background: white; }
+
+.sectionFour {
+  background: white; }
+
+.sectionFive {
+  background: #f2f2f2; }
+
+/*********************************************
+ End Base.sass variables
+*********************************************/
+/*********************************************
+ globhalSearch.sass variables
+*********************************************/
+.ms-srch-sb > .ms-srch-sb-searchLink {
+  color: #fff;
+  background: #337ab7; }
+
+/*********************************************
+ End globhalSearch.sass variables
+*********************************************/
+/*********************************************
+ Masterhead.sass variables
+*********************************************/
+.masterhead {
+  background: #f4f4f4; }
+
+/*********************************************
+ End Masterhead.sass variables
+*********************************************/
+/*********************************************
+ mainMenu.sass variables
+*********************************************/
+.ms-core-navigation {
+  font-family: Arial; }
+
+.ms-core-listMenu-item, .ms-core-listMenu-item:link, .ms-core-listMenu-item:visited, .ms-tv-item:link, .ms-tv-item:visited, .ms-tv-header:link, .ms-tv-header:visited {
+  color: #fff; }
+
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, a.ms-tv-item:hover, a.ms-tv-header:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
+  background-color: #103477;
+  color: #fff; }
+
+.main-nav {
+  background: #133E8D; }
+  .main-nav ul li a {
+    color: #fff; }
+  .main-nav ul li a:hover, .main-nav ul li a:focus {
+    background-color: #103477;
+    color: #fff; }
+  .main-nav ul li a.selected {
+    background: #11367b !important; }
+  .main-nav ul ul {
+    background-color: #103477;
+    background-color: #103477; }
+    .main-nav ul ul li {
+      border-bottom: 1px solid #0e2e69; }
+      .main-nav ul ul li:first-of-type {
+        border-top: 1px solid #0e2e69; }
+      .main-nav ul ul li a:hover {
+        background: #0e2e69; }
+
+/*********************************************
+ End mainMenu.sass variables
+*********************************************/
+/*********************************************
+ ResponsiveMenu.sass variables
+*********************************************/
+ul.menu li a:hover, ul.menu li a:focus {
+  background: white; }
+
+ul.menu li a.main-menu, ul.menu li a.search {
+  background: #fff; }
+
+ul.menu li a.search {
+  background: #cdcdcd; }
+
+ul.menu li a.search.active, ul.menu li a.search:hover, ul.menu li a.search:focus {
+  background: #bdc3c7; }
+
+ul.menu li a.main-menu {
+  background: #133E8D;
+  color: #fff; }
+
+ul.menu li a.main-menu:hover, ul.menu li a.main-menu:focus, ul.menu li a.main-menu.active {
+  background: #0e2e69; }
+
+/*********************************************
+ End ResponsiveMenu.sass variables
+*********************************************/
+/*********************************************
+ footer.sass variables
+*********************************************/
+footer.main {
+  background: #133E8D; }
+  footer.main p {
+    color: #fff; }
+  footer.main .footer {
+    background: #133E8D; }
+    footer.main .footer li a {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+      color: #fff !important; }
+    footer.main .footer li a:hover, footer.main .footer li a:focus {
+      background: rgba(0, 0, 0, 0.2); }
+    footer.main .footer li a.selected {
+      background-color: rgba(0, 0, 0, 0.2) !important; }
+    footer.main .footer li ul li:last-of-type {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    footer.main .footer li ul li a:hover, footer.main .footer li ul li a:focus {
+      background: rgba(0, 0, 0, 0.2);
+      color: #fff; }
+
+.socialBookmarks h2 {
+  color: #fff; }
+
+.socialBookmarks .facebook:after, .socialBookmarks .twitter:after, .socialBookmarks .youtube:after {
+  border: 1px solid #fff;
+  color: #fff; }
+
+.socialBookmarks a:hover:after {
+  background: #fff;
+  color: #133E8D; }
+
+.footerGlobal {
+  background: #11367b; }
+
+.footerGlobal nav ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px; }
+  .footerGlobal nav ul li {
+    display: inline-block; }
+  .footerGlobal nav ul li:after {
+    color: #fff; }
+  .footerGlobal nav ul a {
+    color: #fff; }
+
+/*********************************************
+ End footer.sass variables
+*********************************************/

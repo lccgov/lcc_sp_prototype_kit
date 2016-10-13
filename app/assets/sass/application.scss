@@ -1,7 +1,106 @@
+// available variables to change the brand colours as required
+// masterhead.scss
+
+//$head-background: #f4f4f4;
+
+
+// mainMenu.scss -- responsive icons color
+//$menu-link-color:#337ab7;
+
+
+//base.scss
+
+//$base-background-color:#fff;
+//$base-font-size:16px ;
+//$base-font-color:#333 ;
+//$base-link-color:#133E8D ;
+//$base-container-width:1500px ;
+//$btn-background-color:green ;
+//$font-primary: Arial ; // main font
+//$font-secondary: Arial ; // secondary font
+
+
+// global used on all partials to get a uniform spacing between elements
+//$base-margin-bottom:1.875em ;
+
+//headerTop
+//$search-link-background:#337ab7 ;
+//$search-link:#fff ;
+
+// mainNav.scss
+//$main-nav-background:#133E8D ;
+//$main-nav-link:#fff ;
+
+//footer.scss
+//$footer-font-color:#fff ;
+//$footer-nav-selected-link:#133E8D ;
+
+// sectionSubsite.scss - socialamedia.scss
+//$section-Background:#efefef ;
+
+//  socialamedia.scss
+//$social-link-color:#337ab7 ;
+
+//  sideNavigation.scss
+//$side-nav-active-background:#133E8D ;
+
+//  carousel.scss
+//$carousel-active-background:#000 ;
+//$carousel-indicators-active-background:#ccc ;
+//$carousel-caption-background: rgba(0,0,0,0.6) ;
+//$carousel-caption-font-color:#fff ;
+
+
+// blocklinks.scss
+
+//$block-link-back:#f6f6f6 ;
+//$block-link-back-hover:#3380A4 ;
+//$promo-group-border:1px solid #fff ; 
+//$promo-group-background:#EDF2F5 ; 
+//$promo-group-li-background:#EDF2F5 ;
+//$promo-group-link-color:#216486 ;
+
+
+//promolist webpart
+//$link-font-color:#fff;
+//$span-info-color:#222E3C;
+//$span-info-hover:#131A22;
+//$span-info-secondary-color:#E6CC26;
+//$span-arrow-base:#131A22;
+//$span-third-info-base:#fff;
+//$third-info-font-color:#333;
+
+// section backgrounds
+//$sectionHeader-background-color:lighten($base-background-color, 3%) ;
+//$sectionOne-background-color:darken($base-background-color, 5%) ;
+//$sectionTwo-background-color:darken($base-background-color, 10%) ;
+//$sectionThree-background-color:lighten($base-background-color, 3%) ;
+//$sectionFour-background-color:lighten($base-background-color, 5%) ;
+//$sectionFive-background-color:darken($base-background-color, 5%) ;
+
+
 
 @import 'mixins';
 @import 'variables';
 @import 'brandColors';
+
+// available sass files please un-comment out as required
+
+//@import 'mainMenuSubsites';
+//@import 'breadcrumb';
+//@import 'sectionSubsite';
+//@import 'promo';
+//@import 'carousel';
+//@import 'socialMedia';
+//@import 'sideNavigation';
+//@import 'blockLinks';
+//@import 'accordion';
+//@import 'promoGroup';
+//@import 'alerts';
+//@import 'promoListwebpart';
+//@import 'eventsWebparts';
+//@import 'accordion';
+
 
 
 
