@@ -68,27 +68,27 @@ body {
   color: #fff; }
 
 .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, a.ms-tv-item:hover, a.ms-tv-header:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
-  background-color: #e60000;
+  background-color: #103477;
   color: #fff; }
 
 .main-nav {
-  background: red; }
+  background: #133E8D; }
   .main-nav ul li a {
     color: #fff; }
   .main-nav ul li a:hover, .main-nav ul li a:focus {
-    background-color: #e60000;
+    background-color: #103477;
     color: #fff; }
   .main-nav ul li a.selected {
-    background: #eb0000 !important; }
+    background: #11367b !important; }
   .main-nav ul ul {
-    background-color: #e60000;
-    background-color: #e60000; }
+    background-color: #103477;
+    background-color: #103477; }
     .main-nav ul ul li {
-      border-bottom: 1px solid #d60000; }
+      border-bottom: 1px solid #0e2e69; }
       .main-nav ul ul li:first-of-type {
-        border-top: 1px solid #d60000; }
+        border-top: 1px solid #0e2e69; }
       .main-nav ul ul li a:hover {
-        background: #d60000; }
+        background: #0e2e69; }
 
 /*********************************************
  End mainMenu.sass variables
@@ -109,11 +109,11 @@ ul.menu li a.search.active, ul.menu li a.search:hover, ul.menu li a.search:focus
   background: #bdc3c7; }
 
 ul.menu li a.main-menu {
-  background: red;
+  background: #133E8D;
   color: #fff; }
 
 ul.menu li a.main-menu:hover, ul.menu li a.main-menu:focus, ul.menu li a.main-menu.active {
-  background: #d60000; }
+  background: #0e2e69; }
 
 /*********************************************
  End ResponsiveMenu.sass variables
@@ -122,11 +122,11 @@ ul.menu li a.main-menu:hover, ul.menu li a.main-menu:focus, ul.menu li a.main-me
  footer.sass variables
 *********************************************/
 footer.main {
-  background: red; }
+  background: #133E8D; }
   footer.main p {
     color: #fff; }
   footer.main .footer {
-    background: red; }
+    background: #133E8D; }
     footer.main .footer li a {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
       color: #fff !important; }
@@ -149,10 +149,10 @@ footer.main {
 
 .socialBookmarks a:hover:after {
   background: #fff;
-  color: red; }
+  color: #133E8D; }
 
 .footerGlobal {
-  background: #eb0000; }
+  background: #11367b; }
 
 .footerGlobal nav ul {
   list-style: none;
