@@ -85,13 +85,15 @@ body {
 
 .main-nav {
   background: #133E8D; }
-  .main-nav ul li a {
-    color: #fff; }
-  .main-nav ul li a:hover, .main-nav ul li a:focus {
-    background-color: #103477;
-    color: #fff; }
-  .main-nav ul li a.selected {
-    background: #11367b !important; }
+  .main-nav ul {
+    width: 100%; }
+    .main-nav ul li a {
+      color: #fff; }
+    .main-nav ul li a:hover, .main-nav ul li a:focus {
+      background-color: #103477;
+      color: #fff; }
+    .main-nav ul li a.selected {
+      background: #11367b !important; }
   .main-nav ul ul {
     background-color: #103477;
     background-color: #103477; }
@@ -108,24 +110,21 @@ body {
 /*********************************************
  ResponsiveMenu.sass variables
 *********************************************/
-ul.menu li a:hover, ul.menu li a:focus {
-  background: white; }
-
-ul.menu li a.main-menu, ul.menu li a.search {
-  background: #fff; }
-
-ul.menu li a.search {
-  background: #cdcdcd; }
-
-ul.menu li a.search.active, ul.menu li a.search:hover, ul.menu li a.search:focus {
-  background: #bdc3c7; }
-
-ul.menu li a.main-menu {
-  background: #133E8D;
-  color: #fff; }
-
-ul.menu li a.main-menu:hover, ul.menu li a.main-menu:focus, ul.menu li a.main-menu.active {
-  background: #0e2e69; }
+ul.menu li a {
+  color: #337ab7; }
+  ul.menu li a:hover, ul.menu li a:focus {
+    background: #133E8D !important; }
+  ul.menu li a.main-menu, ul.menu li a.search {
+    background: #fff; }
+  ul.menu li a.search {
+    background: #cdcdcd; }
+  ul.menu li a.search.active, ul.menu li a.search:hover, ul.menu li a.search:focus {
+    background: #bdc3c7 !important; }
+  ul.menu li a.main-menu {
+    background: #133E8D !important;
+    color: #fff; }
+  ul.menu li a.main-menu:hover, ul.menu li a.main-menu:focus, ul.menu li a.main-menu.active {
+    background: #0e2e69; }
 
 /*********************************************
  End ResponsiveMenu.sass variables
@@ -163,7 +162,7 @@ footer.main {
   background: #fff;
   color: #133E8D; }
 
-.footerGlobal {
+footer.main .footerGlobal {
   background: #11367b; }
 
 .footerGlobal nav ul {
