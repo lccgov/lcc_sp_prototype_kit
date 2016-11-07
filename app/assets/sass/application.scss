@@ -1,7 +1,7 @@
 // available variables to change the brand colours as required
 // masterhead.scss
 
-//$head-background: #f4f4f4;
+//$head-background: #ffffff;
 
 
 // mainMenu.scss -- responsive icons color
@@ -24,8 +24,8 @@
 //$base-margin-bottom:1.875em ;
 
 //headerTop
-//$search-link-background:#337ab7 ;
-//$search-link:#fff ;
+//$search-link-background:#F3F3F4 ;
+//$search-link:#333 ;
 
 // mainNav.scss
 //$main-nav-background:#133E8D ;
@@ -87,20 +87,24 @@
 // available sass files please un-comment out as required
 
 //@import 'mainMenuSubsites';
-//@import 'breadcrumb';
-//@import 'sectionSubsite';
-//@import 'promo';
-//@import 'carousel';
+@import 'breadcrumb';
+@import 'sectionSubsite';
+@import 'promo';
+@import 'carousel';
 //@import 'socialMedia';
 //@import 'sideNavigation';
 //@import 'blockLinks';
-//@import 'accordion';
-//@import 'promoGroup';
-//@import 'alerts';
+@import 'accordion';
+@import 'promoGroup';
+@import 'alerts';
 //@import 'promoListwebpart';
 //@import 'eventsWebparts';
-//@import 'accordion';
 
+hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
+    border-top: none;
+    display: block;
+    margin-bottom:1.875em;
+}
 
 
 

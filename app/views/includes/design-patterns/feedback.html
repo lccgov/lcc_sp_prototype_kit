@@ -1,0 +1,56 @@
+<section id="feedback-form">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">      
+                <a id="feedback" href="#feedback-form" class="scroll expand">Was this information helpful? <span class="sr-only">Click to expand</span></a>
+                <div id="feedback-form-content">
+                    <fieldset>
+                        <legend style="display: none;">Was this page helpful?</legend>                         
+                            <div class="form-group">
+                                <label for="helpful_yes">
+                                    <input type="radio" name="helpful" id="helpful_yes" value="1"> 
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" name="helpful" id="helpful_maybe" value="0"> <label for="helpful_maybe">It's good but</label>
+                                <div id="helpful_maybe_select">
+                                    <label class="hidden" for="reason1">Please select a reason</label>
+                                    <select class="form-control" name="reason1" id="reason1">
+                                        <option value="-1">Please select a reason</option>
+                                        <option value="1">there's a spelling mistake</option>
+                                        <option value="2">it's incorrect</option>
+                                        <option value="3">it needs updating</option>
+                                        <option value="4">it's hard to understand</option>
+                                        <option value="5">there's a broken link</option>
+                                        <option value="6">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="radio" name="helpful" value="-1" id="helpful_no"> <label for="helpful_no">No</label>
+                                <div id="helpful_no_select">
+                                    <label class="hidden" for="reason2">Please select a reason</label>
+                                    <select class="form-control" name="reason2" id="reason2">
+                                        <option value="-1">Please select a reason</option>
+                                        <option value="1">it didn't answer my question.</option>
+                                        <option value="2">it wasn't detailed enough</option>
+                                        <option value="3">it's hard to understand</option>
+                                        <option value="4">it's incorrect</option>
+                                        <option value="5">it needs updating</option>
+                                        <option value="6">I'm not sure what I need to do next</option>
+                                        <option value="7">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>   
+                        <div class="form-group">
+                            <label for="commentText">How can we make this section better?</label>
+                            <textarea class="form-control" id="commentText" name="comments" rows="5" cols="10"></textarea>
+                        </div>
+                        <input type="submit" name="sendDocFeedback" value="Send" class="btn btn-go">
+                </div>
+            </div>
+        </div>            
+    </div>
+</section>
