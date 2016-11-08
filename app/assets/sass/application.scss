@@ -99,15 +99,7 @@
 @import 'alerts';
 //@import 'promoListwebpart';
 //@import 'eventsWebparts';
-
-hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
-    border-top: none;
-    display: block;
-    margin-bottom:1.875em;
-}
-
-
-
+@import 'sharepointOverides';
 
 
 
