@@ -63,12 +63,16 @@
 
 //promolist webpart
 //$link-font-color:#fff;
-//$span-info-color:#222E3C;
+//$span-info-color:#133E8D;
 //$span-info-hover:#131A22;
-//$span-info-secondary-color:#E6CC26;
-//$span-arrow-base:#131A22;
-//$span-third-info-base:#fff;
+//$span-info-secondary-color:#fff;
+//$span-arrow-base:darken($span-info-color, 10%);
+//$span-third-info-base:#f6f6f6;
 //$third-info-font-color:#333;
+//$arrow-color:#fff;
+//$contentFontColor:#333;
+//$content-arrow-color:#133E8D;
+//$content-border-color:#ddd;
 
 // section backgrounds
 //$sectionHeader-background-color:lighten($base-background-color, 3%) ;
@@ -78,7 +82,12 @@
 //$sectionFour-background-color:lighten($base-background-color, 5%) ;
 //$sectionFive-background-color:darken($base-background-color, 5%) ;
 
+//iconlinks
+//$iconLinkIconColor:#FFC82E;
 
+//heroBanner
+//$heroFontBackground:rgba(0, 0, 0, 0.5); 
+//$heroFontcolor:#fff; 
 
 @import 'mixins';
 @import 'variables';
@@ -97,10 +106,11 @@
 @import 'accordion';
 @import 'promoGroup';
 @import 'alerts';
-//@import 'promoListwebpart';
+@import 'promoListwebpart';
 //@import 'eventsWebparts';
 @import 'sharepointOverides';
-
+@import 'iconLinks';
+@import 'heroBanner';
 
 
 
