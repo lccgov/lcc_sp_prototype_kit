@@ -1121,3 +1121,9 @@ ul.iconLinks {
           width: 100%;
           right: 0px;
           display: block; } }
+
+.masterhead.stick {
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  border-bottom: 1px solid #f6f6f6; }
