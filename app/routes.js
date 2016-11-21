@@ -1,5 +1,6 @@
-var express = require('express')
-var router = express.Router()
+var express = require('express');
+var router = express.Router();
+var util = require('util');
 
 router.get('/', function (req, res) {
   res.render('index')
@@ -29,5 +30,21 @@ router.get('/examples/over-18', function (req, res) {
 })
 
 // add your routes here
+router.post('/generators/webchat', function(req, res) {
+    var site_name = req.body.site_name,
+        eeid = req.body.eeid;  
+
+    res.redirect(util.format('/generators/webchat-result?site_name=%s&eeid=%s', site_name, eeid))
+});
+
+router.get('/generators/webchat-result', function(req, res) {
+    var site_name = req.query.site_name,
+        eeid = req.query.eeid;  
+
+    res.locals.site_name = site_name;
+    res.locals.eeid = eeid;
+
+    res.render('generators/webchat-result');
+});
 
 module.exports = router
