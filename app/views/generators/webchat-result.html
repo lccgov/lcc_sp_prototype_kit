@@ -76,25 +76,24 @@
 <hr class="ms-rteElement-spacer" />
 <p>Please copy and paste the code snippet into the application.js file</p>
 <textarea id="result" rows="20" cols="100">
-   'https:' == d.location.protocol ? window.ATGSvcs = { "eeid": '{{eeid}}', "CFG": {'-eeFlag': 's'} } :
-            ATGSvcs.setEEID("{{eeid}}");
-
-        (function() {
-            var l = "{{site_name}}.custhelp.com" ,
-                    d = document,
-                    ss = 'script',
-                    s = d.getElementsByTagName(ss)[0];
-            function r(u) {
-                var rn = d.createElement(ss);
-                rn.type = 'text/javascript';
-                rn.defer = rn.async = !0;
-                rn.src = ('https:' == d.location.protocol ? 'https://':'http://') + l + u;
-                s.parentNode.insertBefore(rn, s);
-            }
-            
-            r('/rnt/rnw/javascript/vs/1/vsapi.js');
-            r('/vs/1/vsopts.js');
-        })();
+(function(global) {
+    'https:' == global.location.protocol ? global.ATGSvcs = { "eeid": '{{eeid}}', "CFG": {'-eeFlag': 's'} } :
+      global.ATGSvcs.setEEID("{{eeid}}");
+    var l = {{site_name}}.custhelp.com" ,
+            d = global.document,
+            ss = 'script',
+            s = d.getElementsByTagName(ss)[0];
+    function r(u) {
+        var rn = d.createElement(ss);
+        rn.type = 'text/javascript';
+        rn.defer = rn.async = !0;
+        rn.src = ('https:' == d.location.protocol ? 'https://':'http://') + l + u;
+        s.parentNode.insertBefore(rn, s);
+    }
+    
+    r('/rnt/rnw/javascript/vs/1/vsapi.js');
+    r('/vs/1/vsopts.js');
+})(window);
 </textarea>
 {% endblock %}
 {% block sectionThreeContent %}
