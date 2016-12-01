@@ -147,7 +147,7 @@ footer.main {
 footer.main .socialBookmarks h2 {
   color: #fff; }
 
-footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after {
+footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after {
   border: 1px solid #fff;
   color: #fff; }
 
@@ -172,6 +172,21 @@ footer.main .footerGlobal {
 /*********************************************
  End footer.sass variables
 *********************************************/
+/** jquery ui datepicker overides ***/
+.ui-datepicker-header {
+  background: #000; }
+
+.ui-datepicker .ui-datepicker-prev-hover:hover,
+.ui-datepicker .ui-datepicker-next-hover:hover,
+.ui-datepicker .ui-datepicker-next:hover,
+.ui-datepicker .ui-datepicker-prev:hover {
+  background: black; }
+
+td .ui-state-active,
+td .ui-state-hover {
+  background: #000; }
+
+/** jquery ui datepicker overides ***/
 .breadcrumb {
   padding: 0;
   margin: 20px 0 0 0;
@@ -397,6 +412,9 @@ CAROUSEL BOOTSTRAP
   .carousel-control:focus .icon-prev {
     background: #000;
     color: #fff; } }
+
+.carousel #carouselButtons button {
+  background: #fff; }
 
 /*END CAROUSEL BOOTSTRAP*/
 ul.accordionWP {
@@ -835,6 +853,9 @@ ul.promo-group {
         height: auto; }
       .promoListWebpart .contentLink p strong {
         margin-top: 10px; } }
+  @media only screen and (max-width: 600px) {
+    .promoListWebpart .contentLink {
+      height: auto; } }
   .promoListWebpart .content {
     position: relative;
     font-weight: 100;
@@ -1012,6 +1033,9 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
+#DeltaWebPartAdderUpdatePanelContainer {
+  z-index: 1000; }
+
 /* iconLinks -----------------------------------------------------------------*/
 ul.iconLinks {
   text-align: center;
@@ -1122,13 +1146,6 @@ ul.iconLinks {
           right: 0px;
           display: block; } }
 
-<<<<<<< HEAD
-.masterhead.stick {
-  position: fixed;
-  top: 0px;
-  z-index: 1000;
-  border-bottom: 1px solid #f6f6f6; }
-=======
 /** Media Player CSS - needs to be moved to front end toolkit **/
 .media-container .media-player {
   display: block;
@@ -1326,4 +1343,3 @@ ul.iconLinks {
   left: -5000%; }
 
 /** end of media player ***/
->>>>>>> a295723e2b02f10a2c235b5de937cc210d6d7cec
