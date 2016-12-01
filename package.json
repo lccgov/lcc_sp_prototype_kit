@@ -25,8 +25,13 @@
     "gulp-notify": "^2.2.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
+<<<<<<< HEAD
     "lcc_frontend_toolkit": "^0.43.0",
     "lcc_templates_nunjucks": "1.0.74",
+=======
+    "lcc_frontend_toolkit": "^0.38.0",
+    "lcc_templates_nunjucks": "1.0.70",
+>>>>>>> 20e40fcdaeecee061831a54931e9a388765d3620
     "minimist": "0.0.8",
     "portscanner": "^1.0.0",
     "prompt": "^0.2.14",
