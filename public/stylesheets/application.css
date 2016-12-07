@@ -1036,6 +1036,12 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
 #DeltaWebPartAdderUpdatePanelContainer {
   z-index: 1000; }
 
+.ms-webpartzone-cell {
+  margin: 0px; }
+
+#pageStatusBar[class], .ms-status-msg {
+  margin-bottom: 0px; }
+
 /* iconLinks -----------------------------------------------------------------*/
 ul.iconLinks {
   text-align: center;
