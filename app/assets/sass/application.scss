@@ -89,6 +89,15 @@
 //$heroFontBackground:rgba(0, 0, 0, 0.5); 
 //$heroFontcolor:#fff; 
 
+//news
+//$news-button-background: #3498DB ;
+$news-pod-back:#ffffff ;
+$news-pod-border-color:#ddd;
+
+//accordion
+$accordion-color:green;
+//$accordion-border-color:#ECF0F1;
+
 @import 'mixins';
 @import 'variables';
 @import 'brandColors';
@@ -111,6 +120,8 @@
 @import 'sharepointOverides';
 @import 'iconLinks';
 @import 'heroBanner';
+@import 'news';
+
 
 
 /** Media Player CSS - needs to be moved to front end toolkit **/

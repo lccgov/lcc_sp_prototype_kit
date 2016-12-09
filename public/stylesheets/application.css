@@ -417,33 +417,32 @@ CAROUSEL BOOTSTRAP
   background: #fff; }
 
 /*END CAROUSEL BOOTSTRAP*/
-ul.accordionWP {
+ul.accordion {
   list-style: none;
   padding: 0px;
   margin: 0px 0 1.875em 0;
   border-top: 1px solid #dedede; }
-  ul.accordionWP li {
+  ul.accordion li {
     border-bottom: 1px solid #dedede; }
-    ul.accordionWP li h3.accordion {
-      margin: 0px;
+    ul.accordion li a.header {
+      display: block;
+      padding: 15px 40px 15px 15px;
+      position: relative;
       font-size: 20px; }
-      ul.accordionWP li h3.accordion a {
-        display: block;
-        padding: 15px 40px 15px 15px;
-        position: relative; }
-        ul.accordionWP li h3.accordion a:hover, ul.accordionWP li h3.accordion a:focus {
-          background: rgba(0, 0, 0, 0.05); }
-        ul.accordionWP li h3.accordion a:after {
-          font-family: FontAwesome;
-          font-size: 18px;
-          content: "\f078";
-          position: absolute;
-          right: 10px; }
-      ul.accordionWP li h3.accordion.active a:after {
-        content: "\f077"; }
-    ul.accordionWP li div div {
+      ul.accordion li a.header:hover, ul.accordion li a.header:focus {
+        background: rgba(0, 0, 0, 0.05); }
+      ul.accordion li a.header:after {
+        font-family: FontAwesome;
+        font-size: 18px;
+        content: "\f078";
+        position: absolute;
+        right: 10px;
+        color: green; }
+    ul.accordion li.active a:after {
+      content: "\f077"; }
+    ul.accordion li div div {
       padding: 15px; }
-      ul.accordionWP li div div li {
+      ul.accordion li div div li {
         border: none; }
 
 ul.promo-group {
@@ -480,12 +479,13 @@ ul.promo-group {
         background: #216486;
         color: #fff;
         border-color: #212d3a; }
-        ul.promo-group li a:hover p {
+        ul.promo-group li a:hover p, ul.promo-group li a:hover h3 {
           color: #fff; }
       ul.promo-group li a h3 {
         margin: 0 0 0.4em;
         font-weight: 600;
-        font-size: 1em; }
+        font-size: 1em;
+        color: #216486; }
       ul.promo-group li a p {
         color: #666666;
         font-size: 0.7em;
@@ -1151,6 +1151,92 @@ ul.iconLinks {
           width: 100%;
           right: 0px;
           display: block; } }
+
+.sectionSubsite.news h3 {
+  border: 0px; }
+
+.sectionSubsite.news input {
+  padding: 10px;
+  height: 50px;
+  border: 1px solid #ddd; }
+
+@media only screen and (max-width: 400px) {
+  .sectionSubsite.news input {
+    width: 150px; } }
+
+.sectionSubsite.news a.button {
+  display: inline-block;
+  background: green;
+  border: none;
+  margin-top: 0px; }
+  .sectionSubsite.news a.button:hover {
+    background: #001a00;
+    color: #fff;
+    text-decoration: none; }
+  .sectionSubsite.news a.button:after {
+    display: none; }
+
+.sectionSubsite.news .datePickerContainer {
+  float: left;
+  width: 250px; }
+  .sectionSubsite.news .datePickerContainer:first-of-type {
+    width: 150px; }
+  .sectionSubsite.news .datePickerContainer label {
+    width: 100%; }
+  .sectionSubsite.news .datePickerContainer input {
+    width: 120px;
+    margin-bottom: 10px; }
+  @media only screen and (max-width: 400px) {
+    .sectionSubsite.news .datePickerContainer input {
+      width: 150px; } }
+
+.sectionSubsite.news .accordion {
+  margin: 0px; }
+  .sectionSubsite.news .accordion a.header {
+    margin: 0px; }
+  .sectionSubsite.news .accordion li div div {
+    padding: 0px; }
+
+#paging h2 {
+  font-size: 40px;
+  color: #9B59B6;
+  padding: 10px 0px; }
+
+#paging .contentPod {
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  background: #ffffff;
+  font-size: 0.9em; }
+  #paging .contentPod h3 {
+    font-size: 1.4em;
+    margin: 0px;
+    line-height: 1.1em;
+    margin-bottom: 5px; }
+  #paging .contentPod a {
+    display: block;
+    width: 100%;
+    padding: 15px; }
+    #paging .contentPod a:hover, #paging .contentPod a:focus {
+      text-decoration: none;
+      background: #f2f2f2; }
+    #paging .contentPod a p.date {
+      text-transform: uppercase; }
+    #paging .contentPod a img {
+      margin: 0px 15px 0px 0px;
+      max-width: 300px; }
+  #paging .contentPod h2 {
+    font-size: 1.4em;
+    font-weight: normal !important; }
+
+#paging ul.content {
+  border: none;
+  margin: 0;
+  padding: 0px 0 0 0;
+  list-style: none;
+  clear: left; }
+  #paging ul.content li {
+    padding: 0; }
 
 /** Media Player CSS - needs to be moved to front end toolkit **/
 .media-container .media-player {
