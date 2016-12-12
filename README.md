@@ -8,27 +8,12 @@ The project was initially cloned from [govuk_prototype_kit](https://github.com/a
 
 The steps to create a new prototype from this repo are as follows:
 
-1. Clone this repo and rename to an appropriate name
-```bash
-git clone https://github.com/lccgov/lcc_subsites_prototype.git <appropriate name>  
-```
-
-2. Remove .git folder and initialize empty Git repo
-
-```bash
-git init
-```
-
+1. Clone this repo and rename to an appropriate name ```bash git clone https://github.com/lccgov/lcc_subsites_prototype.git <appropriate name> ```
+2. Remove .git folder and initialize empty Git repo ```bash git init ```
 3. Create new GitHub repo with the same name.
-
-4. Add remote repo created in step 3 to local Git repo:
-
-```bash
-git remote add origin https://github.com/lccgov/<GitHub repo>
-```
-
+4. Add remote repo created in step 3 to local Git repo: ```bash git remote add origin https://github.com/lccgov/<GitHub repo> ```
 5. Create a new app in [Heroku](https://heroku.com/) with the same name as the repo.  Also, add config variables for username and password so that the general public are unable to access it and to prevent Google from crawling the site.
-6. Update the .travis.yml file with the new Heroku app name and API key.  The API key must be encrypted using the [Travis CLI](https://docs.travis-ci.com/user/encryption-keys/) as it is being source controlled on GitHub publically.
+6. Update the .travis.yml file with the new Heroku app name and API key.  The API key must be encrypted using the [Travis CLI](https://docs.travis-ci.com/user/encryption-keys/) as it is being source controlled on GitHub publically.  More information can be found on the [lcc_designer_setup_documentation repo](https://github.com/lccgov/lcc_designer_setup_documentation).
 7. Log onto [Travis CI](https://travis-ci.org/profile/lccgov) and toggle the new repository so that Travis CI is aware when a push has taken place to that GitHub repository.
 8. Perform an initial commit and push to GitHub, which will kick of a Travis CI build which will deploy the site to Heroku accessible at [appname].herokuapp.com.
 
