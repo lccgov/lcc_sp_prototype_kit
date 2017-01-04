@@ -1472,7 +1472,8 @@ POLAROID WEBPART
 
 .blockLinks .listWebpart {
   background: transparent;
-  color: #555; }
+  color: #555;
+  padding: 0px; }
   .blockLinks .listWebpart h2 {
     color: #555; }
   .blockLinks .listWebpart a {
@@ -1481,54 +1482,52 @@ POLAROID WEBPART
     .blockLinks .listWebpart a:hover {
       background: transparent; }
   .blockLinks .listWebpart h2 {
-    border-bottom: 1px solid #dedede;
     display: block;
     padding-bottom: 15px; }
   .blockLinks .listWebpart ul {
     text-align: center; }
-    .blockLinks .listWebpart ul li {
-      padding: 5px; }
-      .col-lg-12 .blockLinks .listWebpart ul li {
-        width: 12.5%; }
-      .col-md-8 .blockLinks .listWebpart ul li {
-        width: 20%; }
-      .col-md-6 .blockLinks .listWebpart ul li {
-        width: 25%; }
-      .col-md-4 .blockLinks .listWebpart ul li {
-        width: 50%; }
-        .col-md-4 .blockLinks .listWebpart ul li a img {
-          width: 66%;
-          margin: 0 17% 15px; }
-      .blockLinks .listWebpart ul li a {
-        text-align: center;
-        font-size: 1em;
-        float: left;
-        width: 100%;
-        padding: 15px;
-        cursor: pointer;
-        border: none; }
-        .blockLinks .listWebpart ul li a img {
-          border: 0px;
-          width: 80%;
-          margin: 0 10% 15px; }
-        .blockLinks .listWebpart ul li a:hover {
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          background: rgba(0, 0, 0, 0.1); }
-      @media only screen and (max-width: 991px) {
-        .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-          width: 16.66%; }
-          .col-lg-12 .blockLinks .listWebpart ul li a img, .col-md-8 .blockLinks .listWebpart ul li a img, .col-md-6 .blockLinks .listWebpart ul li a img, .col-md-4 .blockLinks .listWebpart ul li a img {
-            width: 100%;
-            margin: 0 0 15px 0; } }
-      @media only screen and (max-width: 768px) {
-        .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-          width: 25%; } }
-      @media only screen and (max-width: 600px) {
-        .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-          width: 33.333%; } }
-      @media only screen and (max-width: 420px) {
-        .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-          width: 50%; } }
+    .col-lg-12 .blockLinks .listWebpart ul li {
+      width: 12.5%; }
+    .col-md-8 .blockLinks .listWebpart ul li {
+      width: 20%; }
+    .col-md-6 .blockLinks .listWebpart ul li {
+      width: 25%; }
+    .col-md-4 .blockLinks .listWebpart ul li {
+      width: 50%; }
+      .col-md-4 .blockLinks .listWebpart ul li a img {
+        width: 66%;
+        margin: 0 17% 15px; }
+    .blockLinks .listWebpart ul li a {
+      text-align: center;
+      font-size: 1em;
+      float: left;
+      width: 100%;
+      padding: 15px;
+      cursor: pointer;
+      border: none;
+      margin: 0px; }
+      .blockLinks .listWebpart ul li a img {
+        border: 0px;
+        width: 80%;
+        margin: 0 10% 15px; }
+      .blockLinks .listWebpart ul li a:hover {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        background: rgba(0, 0, 0, 0.1); }
+    @media only screen and (max-width: 991px) {
+      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
+        width: 16.66%; }
+        .col-lg-12 .blockLinks .listWebpart ul li a img, .col-md-8 .blockLinks .listWebpart ul li a img, .col-md-6 .blockLinks .listWebpart ul li a img, .col-md-4 .blockLinks .listWebpart ul li a img {
+          width: 100%;
+          margin: 0 0 15px 0; } }
+    @media only screen and (max-width: 768px) {
+      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
+        width: 25%; } }
+    @media only screen and (max-width: 600px) {
+      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
+        width: 33.333%; } }
+    @media only screen and (max-width: 420px) {
+      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
+        width: 50%; } }
 
 /*BLOCK LINK END*/
