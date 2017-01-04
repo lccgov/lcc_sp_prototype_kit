@@ -1348,13 +1348,22 @@ POLAROID WEBPART
       .col-md-4 .listWebpart ul li {
         width: 50%; }
       @media only screen and (max-width: 990px) {
-        .col-lg-12 .listWebpart ul li, .col-md-8 .listWebpart ul li, .col-md-6 .listWebpart ul li, .col-md-4 .listWebpart ul li {
+        .col-lg-12 .listWebpart ul li,
+        .col-md-8 .listWebpart ul li,
+        .col-md-6 .listWebpart ul li,
+        .col-md-4 .listWebpart ul li {
           width: 33.333%; } }
       @media only screen and (max-width: 700px) {
-        .col-lg-12 .listWebpart ul li, .col-md-8 .listWebpart ul li, .col-md-6 .listWebpart ul li, .col-md-4 .listWebpart ul li {
+        .col-lg-12 .listWebpart ul li,
+        .col-md-8 .listWebpart ul li,
+        .col-md-6 .listWebpart ul li,
+        .col-md-4 .listWebpart ul li {
           width: 50%; } }
       @media only screen and (max-width: 350px) {
-        .col-lg-12 .listWebpart ul li, .col-md-8 .listWebpart ul li, .col-md-6 .listWebpart ul li, .col-md-4 .listWebpart ul li {
+        .col-lg-12 .listWebpart ul li,
+        .col-md-8 .listWebpart ul li,
+        .col-md-6 .listWebpart ul li,
+        .col-md-4 .listWebpart ul li {
           width: 100%; } }
   .blockLinksGreen .listWebpart {
     background: #97BD0E;
