@@ -1253,7 +1253,8 @@ POLAROID WEBPART
       color: #293238;
       border-bottom: none;
       margin-bottom: 5px;
-      font-size: 1.1em;
+      font-size: 1.3em;
+      font-weight: bold;
       margin: 0px;
       padding: 0px;
       background: #fff;
@@ -1278,7 +1279,7 @@ POLAROID WEBPART
         -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
         transform: rotate(0deg) translate3d(0, 0, 0); }
       .polaroid .listWebpart li a span {
-        font-size: 0.8em;
+        font-size: 0.9em;
         line-height: 1.3em;
         font-weight: normal;
         margin: 0px;
@@ -1305,163 +1306,75 @@ POLAROID WEBPART
     margin: 10px 0; } }
 
 /*END POLAROID SECTION*/
-.listWebpart {
+.groupPromo .listWebpart {
   background: transparent;
   color: #333;
   max-width: 100%;
   padding: 15px 7.5px 0px; }
-  .listWebpart h2 {
+  .groupPromo .listWebpart h2 {
     color: #333; }
-  .listWebpart a {
+  .groupPromo .listWebpart a {
     background: rgba(18, 18, 18, 0);
     color: #333; }
-    .listWebpart a:hover {
+    .groupPromo .listWebpart a:hover {
       background: transparent; }
-  .listWebpart h2 {
+  .groupPromo .listWebpart h2 {
     margin: 0 7.5px 15px;
     display: inline-block; }
-  .listWebpart ul {
+  .groupPromo .listWebpart ul {
     list-style: none;
     margin: 0px;
     padding: 0px; }
-    .listWebpart ul li {
+    .groupPromo .listWebpart ul li {
       float: left; }
-      .listWebpart ul li a {
+      .groupPromo .listWebpart ul li a {
         margin: 0 7.5px 15px;
         padding: 15px;
         display: block;
         font-weight: bold;
         position: relative;
         width: auto; }
-        .listWebpart ul li a img {
+        .groupPromo .listWebpart ul li a img {
           width: 100%;
           max-width: 100%;
           margin-bottom: 15px; }
-        .listWebpart ul li a:hover {
+        .groupPromo .listWebpart ul li a:hover {
           text-decoration: none; }
-      .col-lg-12 .listWebpart ul li {
+      .col-lg-12 .groupPromo .listWebpart ul li {
         width: 20%; }
-      .col-md-8 .listWebpart ul li {
+      .col-md-8 .groupPromo .listWebpart ul li {
         width: 33.333%; }
-      .col-md-6 .listWebpart ul li {
+      .col-md-6 .groupPromo .listWebpart ul li {
         width: 25%; }
-      .col-md-4 .listWebpart ul li {
+      .col-md-4 .groupPromo .listWebpart ul li {
         width: 50%; }
       @media only screen and (max-width: 990px) {
-        .col-lg-12 .listWebpart ul li,
-        .col-md-8 .listWebpart ul li,
-        .col-md-6 .listWebpart ul li,
-        .col-md-4 .listWebpart ul li {
+        .col-lg-12 .groupPromo .listWebpart ul li,
+        .col-md-8 .groupPromo .listWebpart ul li,
+        .col-md-6 .groupPromo .listWebpart ul li,
+        .col-md-4 .groupPromo .listWebpart ul li {
           width: 33.333%; } }
       @media only screen and (max-width: 700px) {
-        .col-lg-12 .listWebpart ul li,
-        .col-md-8 .listWebpart ul li,
-        .col-md-6 .listWebpart ul li,
-        .col-md-4 .listWebpart ul li {
+        .col-lg-12 .groupPromo .listWebpart ul li,
+        .col-md-8 .groupPromo .listWebpart ul li,
+        .col-md-6 .groupPromo .listWebpart ul li,
+        .col-md-4 .groupPromo .listWebpart ul li {
           width: 50%; } }
       @media only screen and (max-width: 350px) {
-        .col-lg-12 .listWebpart ul li,
-        .col-md-8 .listWebpart ul li,
-        .col-md-6 .listWebpart ul li,
-        .col-md-4 .listWebpart ul li {
+        .col-lg-12 .groupPromo .listWebpart ul li,
+        .col-md-8 .groupPromo .listWebpart ul li,
+        .col-md-6 .groupPromo .listWebpart ul li,
+        .col-md-4 .groupPromo .listWebpart ul li {
           width: 100%; } }
-  .blockLinksGreen .listWebpart {
-    background: #97BD0E;
-    color: #fff; }
-    .blockLinksGreen .listWebpart h2 {
-      color: #fff; }
-    .blockLinksGreen .listWebpart a {
-      background: #b2de10;
-      color: #fff; }
-      .blockLinksGreen .listWebpart a:hover {
-        background: #718e0a; }
-  .blockLinksPurple .listWebpart {
-    background: #72286E;
-    color: #fff; }
-    .blockLinksPurple .listWebpart h2 {
-      color: #fff; }
-    .blockLinksPurple .listWebpart a {
-      background: #8c3188;
-      color: #fff; }
-      .blockLinksPurple .listWebpart a:hover {
-        background: #4c1b4a; }
-  .blockLinksPink .listWebpart {
-    background: #B10042;
-    color: #fff; }
-    .blockLinksPink .listWebpart h2 {
-      color: #fff; }
-    .blockLinksPink .listWebpart a {
-      background: #d5004f;
-      color: #fff; }
-      .blockLinksPink .listWebpart a:hover {
-        background: #7e002f; }
-  .midnightBlue .listWebpart {
-    background: transparent;
-    color: #fff; }
-    .midnightBlue .listWebpart h2 {
-      color: #fff; }
-    .midnightBlue .listWebpart a {
-      background: rgba(18, 18, 18, 0);
-      color: #fff; }
-      .midnightBlue .listWebpart a:hover {
-        background: transparent; }
-    .midnightBlue .listWebpart h2 {
-      color: #333; }
-    .midnightBlue .listWebpart a {
-      background: #2c3e50; }
-      .midnightBlue .listWebpart a:hover {
-        background: #161f29; }
-  .carrot .listWebpart {
-    background: transparent;
-    color: #fff; }
-    .carrot .listWebpart h2 {
-      color: #fff; }
-    .carrot .listWebpart a {
-      background: rgba(18, 18, 18, 0);
-      color: #fff; }
-      .carrot .listWebpart a:hover {
-        background: transparent; }
-    .carrot .listWebpart h2 {
-      color: #333; }
-    .carrot .listWebpart a {
-      background: #e67e22; }
-      .carrot .listWebpart a:hover {
-        background: #b66015; }
-  .white .listWebpart {
-    background: #fff;
-    color: #333; }
-    .white .listWebpart h2 {
-      color: #333; }
-    .white .listWebpart a {
-      background: white;
-      color: #333; }
-      .white .listWebpart a:hover {
-        background: #e6e6e6; }
-    .white .listWebpart a {
-      background: #f2f4f3; }
-  .default .listWebpart {
-    background: transparent;
-    color: #333; }
-    .default .listWebpart h2 {
-      color: #333; }
-    .default .listWebpart a {
-      background: rgba(18, 18, 18, 0);
-      color: #333; }
-      .default .listWebpart a:hover {
-        background: transparent; }
-    .default .listWebpart a {
-      border: 1px solid #ddd; }
-      .default .listWebpart a:hover {
-        background: #ddd; }
-  .listWebpart a.ask {
+  .groupPromo .listWebpart a.ask {
     background: #B10042;
     border-color: #B10042;
     color: #fff; }
-    .listWebpart a.ask:hover {
+    .groupPromo .listWebpart a.ask:hover {
       background: #7e002f; }
-  .listWebpart a.arrow {
+  .groupPromo .listWebpart a.arrow {
     padding-right: 30px; }
-    .listWebpart a.arrow:after {
+    .groupPromo .listWebpart a.arrow:after {
       font-family: FontAwesome;
       font-size: 25px;
       content: "\f105";
@@ -1469,6 +1382,101 @@ POLAROID WEBPART
       right: 10px;
       top: 42%;
       position: absolute; }
+
+.groupPromo.blockLinksGreen .listWebpart {
+  background: #97BD0E;
+  color: #fff; }
+  .groupPromo.blockLinksGreen .listWebpart h2 {
+    color: #fff; }
+  .groupPromo.blockLinksGreen .listWebpart a {
+    background: #b2de10;
+    color: #fff; }
+    .groupPromo.blockLinksGreen .listWebpart a:hover {
+      background: #718e0a; }
+
+.groupPromo.blockLinksPurple .listWebpart {
+  background: #72286E;
+  color: #fff; }
+  .groupPromo.blockLinksPurple .listWebpart h2 {
+    color: #fff; }
+  .groupPromo.blockLinksPurple .listWebpart a {
+    background: #8c3188;
+    color: #fff; }
+    .groupPromo.blockLinksPurple .listWebpart a:hover {
+      background: #4c1b4a; }
+
+.groupPromo.blockLinksPink .listWebpart {
+  background: #B10042;
+  color: #fff; }
+  .groupPromo.blockLinksPink .listWebpart h2 {
+    color: #fff; }
+  .groupPromo.blockLinksPink .listWebpart a {
+    background: #d5004f;
+    color: #fff; }
+    .groupPromo.blockLinksPink .listWebpart a:hover {
+      background: #7e002f; }
+
+.groupPromo.midnightBlue .listWebpart {
+  background: transparent;
+  color: #fff; }
+  .groupPromo.midnightBlue .listWebpart h2 {
+    color: #fff; }
+  .groupPromo.midnightBlue .listWebpart a {
+    background: rgba(18, 18, 18, 0);
+    color: #fff; }
+    .groupPromo.midnightBlue .listWebpart a:hover {
+      background: transparent; }
+  .groupPromo.midnightBlue .listWebpart h2 {
+    color: #333; }
+  .groupPromo.midnightBlue .listWebpart a {
+    background: #2c3e50; }
+    .groupPromo.midnightBlue .listWebpart a:hover {
+      background: #161f29; }
+
+.groupPromo.carrot .listWebpart {
+  background: transparent;
+  color: #fff; }
+  .groupPromo.carrot .listWebpart h2 {
+    color: #fff; }
+  .groupPromo.carrot .listWebpart a {
+    background: rgba(18, 18, 18, 0);
+    color: #fff; }
+    .groupPromo.carrot .listWebpart a:hover {
+      background: transparent; }
+  .groupPromo.carrot .listWebpart h2 {
+    color: #333; }
+  .groupPromo.carrot .listWebpart a {
+    background: #e67e22; }
+    .groupPromo.carrot .listWebpart a:hover {
+      background: #b66015; }
+
+.groupPromo.white .listWebpart {
+  background: #fff;
+  color: #333; }
+  .groupPromo.white .listWebpart h2 {
+    color: #333; }
+  .groupPromo.white .listWebpart a {
+    background: white;
+    color: #333; }
+    .groupPromo.white .listWebpart a:hover {
+      background: #e6e6e6; }
+  .groupPromo.white .listWebpart a {
+    background: #f2f4f3; }
+
+.groupPromo.default .listWebpart {
+  background: transparent;
+  color: #333; }
+  .groupPromo.default .listWebpart h2 {
+    color: #333; }
+  .groupPromo.default .listWebpart a {
+    background: rgba(18, 18, 18, 0);
+    color: #333; }
+    .groupPromo.default .listWebpart a:hover {
+      background: transparent; }
+  .groupPromo.default .listWebpart a {
+    border: 1px solid #ddd; }
+    .groupPromo.default .listWebpart a:hover {
+      background: #ddd; }
 
 .blockLinks .listWebpart {
   background: transparent;
@@ -1531,3 +1539,20 @@ POLAROID WEBPART
         width: 50%; } }
 
 /*BLOCK LINK END*/
+.contentLink ul {
+  margin: 0px;
+  list-style: none;
+  padding: 0px; }
+  .contentLink ul li div {
+    padding: 30px;
+    background: #ECF0F1;
+    text-align: center; }
+    .contentLink ul li div img {
+      max-width: 100%; }
+    .contentLink ul li div h2 {
+      font-size: 30px;
+      font-weight: bold; }
+    .contentLink ul li div p {
+      margin: 30px; }
+    .contentLink ul li div a {
+      width: 100%; }
