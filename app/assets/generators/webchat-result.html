@@ -1,0 +1,163 @@
+{% extends "layout_multi_sections.html" %}
+
+{% block page_title %}
+	Web Chat Script Generator
+{% endblock %}
+  {% block css_register %}
+      <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+{% block header %}
+	Web Chat Script Generator
+{% endblock %}
+
+ {% block main_nav %}
+  {% include "includes/main_nav.html" %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
+ {% endblock %}
+
+{% block sectionOneContent %}
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+<hr class="ms-rteElement-spacer" />
+<p>Please copy and paste the code snippet into the application.js file</p>
+<textarea id="result" rows="20" cols="100">
+(function(global) {
+    'https:' == global.location.protocol ? global.ATGSvcs = { "eeid": '{{eeid}}', "CFG": {'-eeFlag': 's'} } :
+      global.ATGSvcs.setEEID("{{eeid}}");
+    var l = "{{site_name}}.custhelp.com" ,
+            d = global.document,
+            ss = 'script',
+            s = d.getElementsByTagName(ss)[0];
+    function r(u) {
+        var rn = d.createElement(ss);
+        rn.type = 'text/javascript';
+        rn.defer = rn.async = !0;
+        rn.src = ('https:' == d.location.protocol ? 'https://':'http://') + l + u;
+        s.parentNode.insertBefore(rn, s);
+    }
+    
+    r('/rnt/rnw/javascript/vs/1/vsapi.js');
+    r('/vs/1/vsopts.js');
+})(window);
+</textarea>
+{% endblock %}
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+   {% include "includes/footer_nav.html" %}
+ {% endblock %}
