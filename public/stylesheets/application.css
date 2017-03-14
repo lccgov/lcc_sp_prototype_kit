@@ -267,23 +267,50 @@ form input[type=submit].submit {
   margin-bottom: 1.875em;
   position: relative;
   width: 100%;
-  min-height: 270px; }
-  .promo img {
-    max-width: 100%; }
-  .promo span {
-    background: #004f77;
-    padding: 4% 2%;
-    color: #fff;
-    border-radius: 0 3px 3px 0;
-    bottom: 17px;
-    color: #FFFFFF;
-    left: 0;
-    padding: 4% 2%;
-    position: absolute;
-    width: 89%; }
-  .promo a:hover img, .promo a:focus img {
-    opacity: 0.8;
-    filter: alpha(opacity=80); }
+  overflow: hidden; }
+  .promo a {
+    display: block;
+    min-height: 270px; }
+    .promo a span.image {
+      height: 100%;
+      width: 100%;
+      bottom: 0px;
+      transition: transform 1s;
+      background-size: cover !important; }
+      .promo a span.image:hover {
+        transform: scale(1.1); }
+      .promo a span.image:after {
+        display: none; }
+    .promo a span {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      color: #fff;
+      border-radius: 0 0px 0px 0;
+      bottom: 0px;
+      color: #FFFFFF;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      transition: all 0.5s ease; }
+      .promo a span:after {
+        content: '\f105';
+        font-family: FontAwesome;
+        position: absolute;
+        font-weight: normal;
+        bottom: -40px;
+        right: 0px;
+        height: 25px;
+        width: 25px;
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        transition: all 0.5s ease; }
+    .promo a:hover span {
+      width: 100%;
+      padding: 15px 15px 40px 15px; }
+      .promo a:hover span:after {
+        bottom: 10px;
+        right: 0px; }
 
 /*****************
 CAROUSEL BOOTSTRAP
@@ -426,6 +453,9 @@ CAROUSEL BOOTSTRAP
 .carousel #carouselButtons button {
   background: #fff; }
 
+.carousel-inner .item {
+  padding: 0px; }
+
 /*END CAROUSEL BOOTSTRAP*/
 ul.accordion {
   list-style: none;
@@ -444,12 +474,12 @@ ul.accordion {
       ul.accordion li a.header:after {
         font-family: FontAwesome;
         font-size: 18px;
-        content: "\f078";
+        content: "\f067";
         position: absolute;
         right: 10px;
         color: green; }
-    ul.accordion li.active a:after {
-      content: "\f077"; }
+      ul.accordion li a.header.active:after {
+        content: "\f068"; }
     ul.accordion li div div {
       padding: 15px; }
       ul.accordion li div div li {
@@ -1296,6 +1326,9 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
 #pageStatusBar[class], .ms-status-msg {
   margin-bottom: 0px; }
 
+.carousel-inner .item {
+  padding: 0px; }
+
 /* iconLinks -----------------------------------------------------------------*/
 .iconLinks ul {
   text-align: center;
@@ -1364,9 +1397,9 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
   background-size: cover !important; }
-  .heroBanner .container {
+  .heroBanner .container-fluid {
     position: relative; }
-    .heroBanner .container h1, .heroBanner .container p.lead {
+    .heroBanner .container-fluid h1, .heroBanner .container-fluid p.lead {
       font-size: 40px;
       font-weight: 100;
       color: #fff;
@@ -1375,7 +1408,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
       line-height: 48px;
       width: 40%;
       margin: 0 0 20px 0; }
-    .heroBanner .container p {
+    .heroBanner .container-fluid p {
       font-size: 20px;
       font-weight: 100;
       color: #fff;
@@ -1413,50 +1446,50 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
           right: 0px;
           display: block; } }
 
-.sectionSubsite.news h3 {
-  border: 0px; }
-
-.sectionSubsite.news input {
-  padding: 10px;
-  height: 50px;
-  border: 1px solid #ddd; }
-
-@media only screen and (max-width: 400px) {
+.sectionSubsite.news {
+  float: left; }
+  .sectionSubsite.news h3 {
+    border: 0px; }
   .sectionSubsite.news input {
-    width: 150px; } }
-
-.sectionSubsite.news a.button {
-  display: inline-block;
-  background: green;
-  border: none;
-  margin-top: 0px; }
-  .sectionSubsite.news a.button:hover {
-    background: #001a00;
-    color: #fff;
-    text-decoration: none; }
-  .sectionSubsite.news a.button:after {
-    display: none; }
-
-.sectionSubsite.news .datePickerContainer {
-  float: left;
-  width: 250px; }
-  .sectionSubsite.news .datePickerContainer:first-of-type {
-    width: 150px; }
-  .sectionSubsite.news .datePickerContainer label {
-    width: 100%; }
-  .sectionSubsite.news .datePickerContainer input {
-    width: 120px;
-    margin-bottom: 10px; }
+    padding: 10px;
+    height: 50px;
+    border: 1px solid #ddd;
+    float: left; }
   @media only screen and (max-width: 400px) {
-    .sectionSubsite.news .datePickerContainer input {
+    .sectionSubsite.news input {
       width: 150px; } }
-
-.sectionSubsite.news .accordion {
-  margin: 0px; }
-  .sectionSubsite.news .accordion a.header {
+  .sectionSubsite.news a.button {
+    display: inline-block;
+    background: green;
+    border: none;
+    margin-top: 0px;
+    float: left;
+    padding: 14px; }
+    .sectionSubsite.news a.button:hover {
+      background: #001a00;
+      color: #fff;
+      text-decoration: none; }
+    .sectionSubsite.news a.button:after {
+      display: none; }
+  .sectionSubsite.news .datePickerContainer {
+    float: left;
+    width: 250px; }
+    .sectionSubsite.news .datePickerContainer:first-of-type {
+      width: 150px; }
+    .sectionSubsite.news .datePickerContainer label {
+      width: 100%; }
+    .sectionSubsite.news .datePickerContainer input {
+      width: 120px;
+      margin-bottom: 10px; }
+    @media only screen and (max-width: 400px) {
+      .sectionSubsite.news .datePickerContainer input {
+        width: 150px; } }
+  .sectionSubsite.news .accordion {
     margin: 0px; }
-  .sectionSubsite.news .accordion li div div {
-    padding: 0px; }
+    .sectionSubsite.news .accordion a.header {
+      margin: 0px; }
+    .sectionSubsite.news .accordion li div div {
+      padding: 0px; }
 
 #paging h2 {
   font-size: 40px;
@@ -1595,6 +1628,9 @@ POLAROID WEBPART
         font-weight: bold;
         position: relative;
         width: auto; }
+        .groupPromo .listWebpart ul li a span {
+          font-size: 0.8em;
+          display: block; }
         .groupPromo .listWebpart ul li a img {
           width: 100%;
           max-width: 100%;
@@ -1929,7 +1965,45 @@ docsList
 .docList.one li {
   width: 100%;
   padding: 0;
-  margin-bottom: 30px; }
+  margin-bottom: 0px; }
+  .docList.one li a {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 15px 20px 40px;
+    margin: 0px; }
+    .docList.one li a:hover {
+      background: #ddd;
+      text-decoration: none; }
+      .docList.one li a:hover span.info, .docList.one li a:hover:before, .docList.one li a:hover span.thirdInfo {
+        background: transparent;
+        color: #333; }
+    .docList.one li a:before {
+      font-family: FontAwesome;
+      position: absolute;
+      font-weight: normal;
+      top: 17px;
+      left: 10px;
+      height: 25px;
+      margin-top: -5px;
+      width: 25px;
+      display: block;
+      padding: 0px;
+      font-size: 22px; }
+    .docList.one li a .info {
+      border: none;
+      padding: 0px;
+      margin: 0px;
+      display: inline;
+      margin: 0; }
+      .docList.one li a .info span.arrow {
+        display: none; }
+    .docList.one li a span.thirdInfo {
+      padding: 0px 25px;
+      padding: 0px 20px 0 10px;
+      display: inline;
+      position: relative;
+      top: 0px;
+      right: auto; }
 
 @media (max-width: 1200px) {
   .docList.four li, .docList.five li {
