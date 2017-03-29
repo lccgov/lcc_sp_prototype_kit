@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,300,700,500,100,800,900');
 // available variables to change the brand colours as required
 // masterhead.scss
 
@@ -16,8 +18,8 @@
 //$base-link-color:#133E8D ;
 //$base-container-width:1500px ;
 //$btn-background-color:green ;
-//$font-primary: Arial ; // main font
-//$font-secondary: Arial ; // secondary font
+$font-primary:'Montserrat', helvetica ; // main font
+$font-secondary:'Montserrat', helvetica  ; // secondary font
 
 
 // global used on all partials to get a uniform spacing between elements
@@ -28,7 +30,7 @@
 //$search-link:#333 ;
 
 // mainNav.scss
-//$main-nav-background:#133E8D ;
+//$main-nav-background:green ;
 //$main-nav-link:#fff ;
 
 //footer.scss
@@ -95,8 +97,22 @@ $news-pod-back:#ffffff ;
 $news-pod-border-color:#ddd;
 
 //accordion
-$accordion-color:green;
+//$accordion-color:green;
 //$accordion-border-color:#ECF0F1;
+
+
+//Block quote
+// $blockquoteBorderColor:#bbcada ;
+// $blockquoteQuoteColor:#333;
+// $blockquoteQuoteFooterColor:#000;
+
+ //highlighted box in content assets
+ //$highlighted-background-color:#333 !default;
+ //$highlighted-font-color:#fff !default;
+ //$highlighted-alt-background-color:#f6f6f6 !default;
+ //$highlighted-alt-font-color:#333 !default;
+
+
 
 @import 'mixins';
 @import 'variables';
@@ -126,6 +142,9 @@ $accordion-color:green;
 @import 'blocklinks';
 @import 'contentLink';
 @import 'docList';
+@import 'contentAssets';
+@import 'blockQuote';
+
 
 
 
