@@ -1,7 +1,7 @@
 {% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
-	Home Page
+	LEEDS.GOV.UK - Style guides
 {% endblock %}
 
 
@@ -12,7 +12,7 @@
  
 
 {% block header %}
-Design Patterns
+  Styleguide
 {% endblock %}
 
  {% block main_nav %}
@@ -39,8 +39,14 @@ Design Patterns
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-  <p class="lead">Patterns are a simple, reusable solution to a design problem.</p>
-  {% include "includes/design-patterns/group-promos-nav.html" %}
+  <div class="text">
+    <p class="lead">This guide shows how to add content to LEEDS.GOV.UK.</p>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+      {% include "includes/design-patterns/styleguide-nav-accordion.html" %}
+    </div>
+  </div>
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}

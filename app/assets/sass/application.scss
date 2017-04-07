@@ -6,23 +6,27 @@
 //$head-background: #ffffff;
 
 
-// mainMenu.scss -- responsive icons color
+//mainMenu.scss -- responsive icons color
 //$menu-link-color:#337ab7;
 
 
 //base.scss
 
 //$base-background-color:#fff;
-//$base-font-size:16px ;
-//$base-font-color:#333 ;
-//$base-link-color:#133E8D ;
-//$base-container-width:1500px ;
+$base-font-size:19px ;
+$base-font-color:#1A1A1A ;
+$base-link-color:#016D9E;
+$secondary-font-color:#606060;
+$border-grey:#d6d6d6;
+$brand-color:#016D9E;
+$light-grey:#F7F8F9;
+$base-container-width:1170px ;
 //$btn-background-color:green ;
-$font-primary:'Montserrat', helvetica ; // main font
-$font-secondary:'Montserrat', helvetica  ; // secondary font
+$font-primary:proxima-nova, sans-serif; // main font
+$font-secondary:proxima-nova, sans-serif; // secondary font
 
 
-// global used on all partials to get a uniform spacing between elements
+//global used on all partials to get a uniform spacing between elements
 //$base-margin-bottom:1.875em ;
 
 //headerTop
@@ -30,20 +34,20 @@ $font-secondary:'Montserrat', helvetica  ; // secondary font
 //$search-link:#333 ;
 
 // mainNav.scss
-//$main-nav-background:green ;
+$main-nav-background:darken($brand-color, 10%);
 //$main-nav-link:#fff ;
 
 //footer.scss
 //$footer-font-color:#fff ;
 //$footer-nav-selected-link:#133E8D ;
 
-// sectionSubsite.scss - socialamedia.scss
+//sectionSubsite.scss - socialamedia.scss
 //$section-Background:#efefef ;
 
-//  socialamedia.scss
+// socialamedia.scss
 //$social-link-color:#337ab7 ;
 
-//  sideNavigation.scss
+// sideNavigation.scss
 //$side-nav-active-background:#133E8D ;
 
 //  carousel.scss
@@ -77,8 +81,8 @@ $font-secondary:'Montserrat', helvetica  ; // secondary font
 //$content-border-color:#ddd;
 
 // section backgrounds
-//$sectionHeader-background-color:lighten($base-background-color, 3%) ;
-//$sectionOne-background-color:darken($base-background-color, 5%) ;
+$sectionHeader-background-color:$brand-color;
+$sectionOne-background-color:#fff;
 //$sectionTwo-background-color:darken($base-background-color, 10%) ;
 //$sectionThree-background-color:lighten($base-background-color, 3%) ;
 //$sectionFour-background-color:lighten($base-background-color, 5%) ;
@@ -145,6 +149,8 @@ $news-pod-border-color:#ddd;
 @import 'contentAssets';
 @import 'blockQuote';
 
-
-
-
+//custom style added by DH - needs to filed properly
+@import 'prism';
+@import 'typography-gds';
+@import 'swatch-gds';
+@import 'style-guide';
