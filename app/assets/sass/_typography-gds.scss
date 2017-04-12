@@ -1,4 +1,4 @@
-#main {
+body {
   font-family: $font-primary, sans-serif;
   font-weight: 400;
   text-transform: none;
@@ -8,7 +8,7 @@
 }
 
 @media (min-width: 641px) {
-  #main {
+  body {
     font-size: 19px;
     line-height: 1.3157894737;
   }

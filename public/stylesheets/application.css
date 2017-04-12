@@ -3,14 +3,14 @@
 Base.sass variables
 *********************************************/
 body {
-  font-size: 19px;
+  font-size: 16px;
   font-family: proxima-nova, sans-serif;
-  color: #1A1A1A;
+  color: #3D414A;
   background-color: #fff; }
 
 .ms-rtestate-field h1.ms-rteElement-H2, .ms-rtestate-field h2.ms-rteElement-H2, .ms-rtestate-field h3.ms-rteElement-H2, .ms-rtestate-field h4.ms-rteElement-H2, .ms-rtestate-field h5.ms-rteElement-H2 {
   font-family: proxima-nova, sans-serif;
-  color: #1A1A1A; }
+  color: #3D414A; }
 
 .btn-primary, .button {
   background: green;
@@ -29,7 +29,7 @@ body {
       color: #fff; }
 
 .container-fluid {
-  max-width: 1170px; }
+  max-width: 1400px; }
 
 .sectionHeader {
   background: #016D9E; }
@@ -74,29 +74,29 @@ body {
   color: #fff; }
 
 .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, a.ms-tv-item:hover, a.ms-tv-header:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
-  background-color: #013952;
+  background-color: #016694;
   color: #fff; }
 
 .main-nav {
-  background: #014a6b; }
+  background: #0177ad; }
   .main-nav ul {
     width: 100%; }
     .main-nav ul li a {
       color: #fff; }
     .main-nav ul li a:hover, .main-nav ul li a:focus {
-      background-color: #013952;
+      background-color: #016694;
       color: #fff; }
     .main-nav ul li a.selected {
-      background: #013c57 !important; }
+      background: #016a99 !important; }
   .main-nav ul ul {
-    background-color: #013952;
-    background-color: #013952; }
+    background-color: #016694;
+    background-color: #016694; }
     .main-nav ul ul li {
-      border-bottom: 1px solid #002e43; }
+      border-bottom: 1px solid #015c85; }
       .main-nav ul ul li:first-of-type {
-        border-top: 1px solid #002e43; }
+        border-top: 1px solid #015c85; }
       .main-nav ul ul li a:hover {
-        background: #002e43; }
+        background: #015c85; }
 
 /*********************************************
  End mainMenu.sass variables
@@ -107,7 +107,7 @@ body {
 ul.menu li a {
   color: #337ab7; }
   ul.menu li a:hover, ul.menu li a:focus {
-    background: #014a6b !important; }
+    background: #0177ad !important; }
   ul.menu li a.main-menu, ul.menu li a.search {
     background: #fff; }
   ul.menu li a.search {
@@ -115,10 +115,10 @@ ul.menu li a {
   ul.menu li a.search.active, ul.menu li a.search:hover, ul.menu li a.search:focus {
     background: #bdc3c7 !important; }
   ul.menu li a.main-menu {
-    background: #014a6b !important;
+    background: #0177ad !important;
     color: #fff; }
   ul.menu li a.main-menu:hover, ul.menu li a.main-menu:focus, ul.menu li a.main-menu.active {
-    background: #002e43; }
+    background: #015c85; }
 
 /*********************************************
  End ResponsiveMenu.sass variables
@@ -127,11 +127,11 @@ ul.menu li a {
  footer.sass variables
 *********************************************/
 footer.main {
-  background: #014a6b; }
+  background: #0177ad; }
   footer.main p {
     color: #fff; }
   footer.main .footer {
-    background: #014a6b; }
+    background: #0177ad; }
     footer.main .footer ul li a {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
       color: #fff !important; }
@@ -154,10 +154,10 @@ footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twit
 
 footer.main .socialBookmarks a:hover:after {
   background: #fff;
-  color: #014a6b; }
+  color: #0177ad; }
 
 footer.main .footerGlobal {
-  background: #013c57; }
+  background: #016a99; }
 
 .footerGlobal nav ul {
   list-style: none;
@@ -750,7 +750,7 @@ ul.promo-group {
           max-width: 100%;
           text-align: center;
           line-height: 60px;
-          font-size: 22.8px; }
+          font-size: 19.2px; }
       .promoListWebpart ul li a[rel="xl"]:after,
       .promoListWebpart ul li a[rel="pdf"]:after,
       .promoListWebpart ul li a[rel="doc"]:after,
@@ -773,32 +773,32 @@ ul.promo-group {
         width: 100%;
         min-width: 100%; }
   .promoListWebpart li.six a span.info {
-    font-size: 47.5px; }
+    font-size: 40px; }
   .promoListWebpart .six a span.secondaryInfo {
-    font-size: 24.7px;
+    font-size: 20.8px;
     display: block; }
   .promoListWebpart .two a span.info,
   .promoListWebpart .three a span.info,
   .promoListWebpart .four a span.info,
   .promoListWebpart .quarter a span.info {
-    font-size: 28.5px;
+    font-size: 24px;
     padding: 20px 100px 20px 20px; }
   .promoListWebpart .two a span.secondaryInfo,
   .promoListWebpart .three a span.secondaryInfo,
   .promoListWebpart .four a span.secondaryInfo,
   .promoListWebpart .quarter a span.secondaryInfo {
-    font-size: 19px; }
+    font-size: 16px; }
   .promoListWebpart .four.heightTwo a {
-    font-size: 43.7px; }
+    font-size: 36.8px; }
   @media screen and (max-width: 1000px) {
     .promoListWebpart a span.info,
     .promoListWebpart li.four.heightTwo a span.info,
     .promoListWebpart li.six a span.info {
-      font-size: 28.5px; }
+      font-size: 24px; }
     .promoListWebpart a span.secondaryInfo,
     .promoListWebpart li.four.heightTwo a span.secondaryInfo,
     .promoListWebpart li.six a span.secondaryInfo {
-      font-size: 22.8px; } }
+      font-size: 19.2px; } }
   @media screen and (min-width: 1000px) {
     .promoListWebpart li.six a span.info,
     .promoListWebpart li.four a span.info {
@@ -834,7 +834,7 @@ ul.promo-group {
     padding-bottom: 100px;
     height: 200px; }
     .promoListWebpart .contentLink h2 {
-      font-size: 41.8px; }
+      font-size: 35.2px; }
     .promoListWebpart .contentLink a {
       color: #333; }
       .promoListWebpart .contentLink a .arrow:after {
@@ -1096,12 +1096,12 @@ ul.promo-group {
       color: #fff; }
 
 .promoListWebpart ul li.green a .info {
-  background: #009999;
+  background: #00823B;
   color: #fff; }
   .promoListWebpart ul li.green a .info .secondaryInfo {
     color: #fff; }
   .promoListWebpart ul li.green a .info .arrow {
-    background: teal; }
+    background: #00692f; }
     .promoListWebpart ul li.green a .info .arrow:after {
       color: #fff; }
 
@@ -1188,7 +1188,7 @@ ul.promo-group {
     .promoListWebpart .contentLink.purple a span.info {
       border-top: 1px solid #fff; }
   .promoListWebpart .contentLink.green {
-    background: #009999; }
+    background: #00823B; }
     .promoListWebpart .contentLink.green h2,
     .promoListWebpart .contentLink.green h3,
     .promoListWebpart .contentLink.green p {
@@ -1260,7 +1260,7 @@ Sharepoint overides
 ********************/
 h1, h2, h3, h4, h5, ul, ol, p, input {
   font-family: proxima-nova, sans-serif;
-  color: #1A1A1A; }
+  color: #3D414A; }
 
 h1, h2, h3, h4, h5 {
   font-weight: 400; }
@@ -1268,7 +1268,7 @@ h1, h2, h3, h4, h5 {
 .ms-rtestate-field h1, .ms-rtestate-field h2, .ms-rtestate-field h3, .ms-rtestate-field h4, .ms-rtestate-field h5 {
   font-weight: 400;
   font-family: proxima-nova, sans-serif;
-  color: #1A1A1A; }
+  color: #3D414A; }
 
 input[type=button], input[type=reset], input[type=submit], button {
   min-width: 1em; }
@@ -2046,7 +2046,7 @@ docsList
     font-weight: 800;
     display: block; }
   .highlighted a.btn {
-    font-size: 19px;
+    font-size: 16px;
     border-color: #fff;
     color: #fff;
     background: transparent;
@@ -2215,9 +2215,9 @@ pre[class*="language-"] {
 
 pre {
   border-radius: 0;
-  border-color: #d6d6d6; }
+  border-color: #DCDEE1; }
 
-#main {
+body {
   font-family: proxima-nova, sans-serif, sans-serif;
   font-weight: 400;
   text-transform: none;
@@ -2226,7 +2226,7 @@ pre {
   -webkit-font-smoothing: antialiased; }
 
 @media (min-width: 641px) {
-  #main {
+  body {
     font-size: 19px;
     line-height: 1.3157894737; } }
 
@@ -2710,7 +2710,8 @@ body {
 .logo {
   height: auto;
   width: auto;
-  background: none; }
+  background: none;
+  display: inline-block; }
   .logo:after {
     content: 'LCC Digital';
     font-size: 40px;
@@ -2720,12 +2721,10 @@ body {
   .logo:hover {
     color: #e6e6e6; }
 
-.sectionOne {
-  padding-bottom: 50px; }
-
 .main-nav ul li a {
   font-size: 18px;
-  padding: 12px; }
+  padding: 12px;
+  text-decoration: none; }
 
 .breadcrumb {
   padding: 0 0 20px;
@@ -2751,6 +2750,7 @@ h3,
 h4,
 h5 {
   font-family: proxima-nova, sans-serif, sans-serif;
+  color: #212224;
   font-weight: 700; }
 
 h1,
@@ -2775,14 +2775,40 @@ h5,
 
 .text-description {
   margin-bottom: 0;
-  color: #606060;
   font-size: 18px;
-  font-weight: 400; }
+  font-weight: 300; }
 
-#main a {
+.text-highlight {
+  border-left: 10px solid #DCDEE1;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 20px; }
+  .text-highlight p {
+    margin: 0; }
+  .text-highlight.text-highlight-blue {
+    border-color: #016D9E;
+    background: rgba(1, 109, 158, 0.1); }
+  .text-highlight.text-highlight-green {
+    border-color: #00823B;
+    background: rgba(0, 130, 59, 0.1); }
+
+.notice {
+  position: relative; }
+  .notice i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    font-size: 30px; }
+  .notice strong {
+    display: block;
+    padding-left: 55px;
+    margin-left: -15px; }
+
+a {
   color: #016D9E;
   text-decoration: underline; }
-  #main a:hover {
+  a:hover {
     color: #013952;
     text-decoration: underline; }
 
@@ -2791,16 +2817,20 @@ a[rel="external"] {
   a[rel="external"]:after {
     position: absolute; }
 
+a:focus, input[type=submit]:focus {
+  background: #FFBF47 !important;
+  color: #3D414A !important;
+  text-decoration: none; }
+
 ul.accordion {
   margin: 1.4em 0; }
   ul.accordion li {
-    border-color: #d6d6d6;
-    border-bottom: 1px solid #d6d6d6; }
+    border-color: #DCDEE1;
+    border-bottom: 1px solid #DCDEE1; }
     ul.accordion li a.header {
       border: none !important;
       font-weight: 700;
-      padding: 15px 40px 15px 0;
-      font-size: 24px;
+      padding: 20px 40px 20px 0;
       text-decoration: none !important; }
       ul.accordion li a.header:after {
         font-family: FontAwesome;
@@ -2811,6 +2841,8 @@ ul.accordion {
         top: 50%;
         margin-top: -14px;
         color: #016D9E; }
+  ul.accordion .list a {
+    text-decoration: none; }
 
 ul.promo-group {
   background: #fff;
@@ -2824,7 +2856,7 @@ ul.promo-group {
     ul.promo-group {
       margin: 0 0 20px; } }
   ul.promo-group li {
-    background: #F7F8F9;
+    background: #DCDEE1;
     border: 0;
     width: calc(100% * (1/4) - 5px);
     margin: 5px 0 0 5px; }
@@ -2840,8 +2872,9 @@ ul.promo-group {
         margin: 5px 0 0; } }
     ul.promo-group li a {
       min-height: 165px;
-      background: #F7F8F9;
-      padding: 30px; }
+      background: #DCDEE1;
+      padding: 30px;
+      text-decoration: none !important; }
       @media (max-width: 600px) {
         ul.promo-group li a {
           min-height: 0; } }
@@ -2857,7 +2890,7 @@ ul.promo-group {
           position: absolute;
           top: 30px;
           right: 30px;
-          color: #d6d6d6; }
+          color: #DCDEE1; }
 
 ul,
 ol {
@@ -2885,10 +2918,26 @@ ol {
 .list-contents {
   font-size: 16px; }
 
+footer.main .container-fluid {
+  padding: 0; }
+
+.footerGlobal {
+  padding: 50px 0;
+  background: #016D9E !important;
+  font-size: 16px; }
+  .footerGlobal nav {
+    padding-bottom: 50px; }
+
+.logo-footer span {
+  margin: 0 0 1.25em 0; }
+
+footer.main p {
+  margin-bottom: 0; }
+
 .example {
   position: relative;
   overflow: hidden;
-  border: 1px solid #d6d6d6;
+  border: 1px solid #DCDEE1;
   margin-top: 15px;
   margin-bottom: 15px;
   padding-top: 30px;
@@ -2934,3 +2983,56 @@ ol {
   @media (min-width: 641px) {
     .example-grid p {
       height: 60px; } }
+
+.exampleCode {
+  padding-top: 15px; }
+
+@media (max-width: 990px) {
+  .example-images img {
+    margin: 15px 0 15px 0; } }
+
+hr {
+  margin-top: 2.5em;
+  border-color: rgba(220, 222, 225, 0.5); }
+
+.btn {
+  border-radius: 4px;
+  text-decoration: none !important;
+  font-size: 19px; }
+  .btn.btn-noarrow {
+    padding-right: 20px; }
+    .btn.btn-noarrow:after {
+      display: none; }
+    .btn.btn-noarrow.btn-small {
+      font-size: 16px;
+      padding: 10px; }
+  .btn.btn-secondary {
+    background: #016D9E;
+    box-shadow: none !important;
+    color: #fff !important;
+    border: none !important; }
+    .btn.btn-secondary:hover {
+      background: #014a6b; }
+  .btn.btn-outline {
+    background: transparent;
+    color: #016D9E;
+    border: 1px solid #016D9E; }
+
+#sticky {
+  padding: 20px 0 0; }
+
+#sticky.stick {
+  margin-top: 0 !important;
+  position: fixed;
+  top: 0;
+  padding: 20px 0 0;
+  z-index: 10000; }
+  @media (max-width: 990px) {
+    #sticky.stick {
+      position: relative;
+      top: auto;
+      padding: 0;
+      z-index: 1; } }
+
+.secondary-nav .heading-contents {
+  margin-top: 0; }

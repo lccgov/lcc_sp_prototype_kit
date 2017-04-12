@@ -11,16 +11,29 @@
 
 
 //base.scss
+$blue:#016D9E;
+$dark-blue: darken(#016D9E, 20%);
+$light-blue: lighten(#016D9E, 20%);
+$green:#00823B;
+$black:#212224;
+$light-black:#3D414A;
+$dark-grey:#666B76;
+$grey:#9DA5B2;
+$light-grey:#DCDEE1;
+$lighter-grey:#F6F7FA;
+$white:#FFFFFF;
+$focus-color:#FFBF47;
+
 
 //$base-background-color:#fff;
-$base-font-size:19px ;
-$base-font-color:#1A1A1A ;
-$base-link-color:#016D9E;
-$secondary-font-color:#606060;
-$border-grey:#d6d6d6;
-$brand-color:#016D9E;
-$light-grey:#F7F8F9;
-$base-container-width:1170px ;
+$base-font-size:16px ;
+$base-font-color:$light-black;
+$header-font-color:$black;
+$base-link-color:$blue;
+$secondary-font-color:$dark-grey;
+$border-grey:$light-grey;
+$brand-color:$blue;
+$base-container-width:1400px ;
 //$btn-background-color:green ;
 $font-primary:proxima-nova, sans-serif; // main font
 $font-secondary:proxima-nova, sans-serif; // secondary font
@@ -34,7 +47,7 @@ $font-secondary:proxima-nova, sans-serif; // secondary font
 //$search-link:#333 ;
 
 // mainNav.scss
-$main-nav-background:darken($brand-color, 10%);
+$main-nav-background:lighten( $brand-color, 3% );
 //$main-nav-link:#fff ;
 
 //footer.scss

@@ -29,6 +29,7 @@ body{
     height: auto;
     width: auto;
     background: none;
+    display:inline-block;
 
     &:after{
         content:'LCC Digital';
@@ -43,17 +44,13 @@ body{
     }
 }
 
-//section
-.sectionOne{
-  padding-bottom:50px;
-}
-
 //nav
 .main-nav ul li {
 
     a{
       font-size:18px;
       padding:12px;
+      text-decoration:none;
     }
 }
 
@@ -89,7 +86,8 @@ h3,
 h4,
 h5{
     font-family: $font-primary, sans-serif;
-    font-weight:700;
+    color: $header-font-color;
+    font-weight: 700;
 }
 
 h1,
@@ -119,13 +117,51 @@ h5,
 
 .text-description{
   margin-bottom:0;
-  color:$secondary-font-color;
   font-size:18px;
-  font-weight:400;
+  font-weight:300;
 }
 
+.text-highlight{
+  border-left: 10px solid $border-grey;
+  padding:15px;
+  width:100%;
+  margin-bottom:20px;
+
+  p{
+    margin:0;
+  }
+
+  &.text-highlight-blue{
+    border-color:$brand-color;
+    background:rgba($brand-color, 0.1);
+  }
+
+  &.text-highlight-green{
+    border-color:$green;
+    background:rgba($green, 0.1);
+  }
+}
+
+//typography - notice
+.notice{
+  position:relative;
+
+  i{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    font-size:30px;
+  }
+
+  strong {
+    display: block;
+    padding-left: 55px;
+    margin-left: -15px;
+  }
+}
 //links
-#main a {
+a {
     color: $base-link-color;
     text-decoration: underline;
 
@@ -143,19 +179,24 @@ a[rel="external"]{
   }
 }
 
+a:focus, input[type=submit]:focus{
+    background:$focus-color !important;
+    color:$base-font-color !important;
+    text-decoration:none;
+}
+
 //accordion
 ul.accordion {
   margin:1.4em 0;
 
   li {
-    border-color:#d6d6d6;
-    border-bottom:1px solid #d6d6d6;
+    border-color:$border-grey;
+    border-bottom:1px solid $border-grey;
 
     a.header {
       border:none !important;
       font-weight:700;
-      padding: 15px 40px 15px 0;
-      font-size:24px;
+      padding: 20px 40px 20px 0;
       text-decoration:none !important;
 
       &:after {
@@ -168,6 +209,12 @@ ul.accordion {
       margin-top:-14px;
       color: $base-link-color;
       }
+    }
+  }
+
+  .list{
+    a{
+      text-decoration:none;
     }
   }
 }
@@ -205,6 +252,7 @@ ul.promo-group {
             min-height:165px;
             background:$light-grey;
             padding:30px;
+            text-decoration:none !important;
                 @media (max-width: 600px) {
                     min-height:0;
                 }
@@ -222,7 +270,7 @@ ul.promo-group {
                         position: absolute;
                         top: 30px;
                         right: 30px;
-                        color:#d6d6d6;
+                        color:$border-grey;
                     }
             }
         }
@@ -264,11 +312,33 @@ ol {
     font-size:16px;
 }
 
+//footer
+footer.main{
+  .container-fluid{
+    padding:0;
+  }
+}
+.footerGlobal{
+  padding:50px 0;
+  background:$base-link-color !important;
+  font-size:16px;
+
+  nav{
+    padding-bottom:50px;
+  }
+}
+.logo-footer span {
+    margin: 0 0 1.25em 0;
+}
+footer.main p {
+    margin-bottom: 0;
+}
+
 //style example
 .example {
   position: relative;
   overflow: hidden;
-  border: 1px solid #d6d6d6;
+  border: 1px solid $border-grey;
   margin-top: 15px;
   margin-bottom: 15px;
   padding-top: 30px;
@@ -323,6 +393,87 @@ ol {
 
   @media (min-width: 641px) {
       height: 60px;
+  }
+}
+
+//code example
+.exampleCode{
+  padding-top:15px;
+}
+
+@media (max-width: 990px) {
+  .example-images{
+    img{
+      margin:15px 0 15px 0;
+    }
+  }
+}
+//hr
+hr{
+  margin-top:2.5em;
+  border-color:rgba( $border-grey, .5 );
+}
+
+//buttons
+.btn{
+  border-radius:4px;
+  text-decoration:none!important;
+  font-size:19px;
+
+  &.btn-noarrow{
+    padding-right:20px;
+
+    &:after{
+      display:none;
+    }
+
+    &.btn-small{
+      font-size:16px;
+      padding:10px;
+    }
+  }
+
+  &.btn-secondary{
+    background: $base-link-color;
+    box-shadow: none !important;
+    color:#fff !important;
+    border:none !important;
+
+      &:hover{
+      background: darken($base-link-color, 10%); }
+  }
+
+  &.btn-outline{
+    background:transparent;
+    color:$base-link-color;
+    border:1px solid $base-link-color;
+  }
+
+}
+
+//sticky
+#sticky{
+  padding:20px 0 0;
+}
+#sticky.stick {
+    margin-top: 0 !important;
+    position: fixed;
+    top: 0;
+    padding:20px 0 0;
+    z-index: 10000;
+    
+    @media (max-width: 990px) {
+      position: relative;
+      top: auto;
+      padding:0;
+      z-index: 1;
+    }
+}
+
+//secondary-nav
+.secondary-nav{
+  .heading-contents{
+    margin-top:0;
   }
 }
 
