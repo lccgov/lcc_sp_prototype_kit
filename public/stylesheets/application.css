@@ -2129,8 +2129,8 @@ blockquote {
         font-family: FontAwesome;
         content: "\f054";
         position: absolute;
-        right: 15px;
-        bottom: 15px;
+        right: 20px;
+        bottom: 20px;
         color: white;
         font-size: 24px; }
         @media (max-width: 500px) {
@@ -2163,11 +2163,11 @@ blockquote {
           background-size: cover; }
       .mega-promo .mega-promo__item a .mega-promo__content {
         display: block;
-        padding: 15px 50px 15px 15px; }
+        padding: 20px 60px 20px 20px; }
         @media (max-width: 500px) {
           .mega-promo .mega-promo__item a .mega-promo__content {
             position: relative;
-            padding: 15px 40px 15px 15px; }
+            padding: 15px 60px 15px 15px; }
             .mega-promo .mega-promo__item a .mega-promo__content:after {
               font-family: FontAwesome;
               content: "\f054";
@@ -2180,12 +2180,14 @@ blockquote {
               color: white; } }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header {
           color: white;
-          margin: 0 0 10px;
-          font-size: 24px; }
+          margin: 0 0 5px;
+          font-size: 24px;
+          line-height: 30px; }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary {
           color: white;
           margin: 0;
-          font-size: 18px; }
+          font-size: 18px;
+          line-height: 24px; }
       .mega-promo .mega-promo__item a .mega-promo__highlight {
         background: #7f8c8d;
         color: white;
@@ -2196,6 +2198,10 @@ blockquote {
         padding: 10px; }
     .mega-promo .mega-promo__item.full {
       width: 100% !important; }
+      @media (min-width: 500px) {
+        .mega-promo .mega-promo__item.full .mega-promo__header {
+          font-size: 40px !important;
+          line-height: 48px !important; } }
       @media (min-width: 990px) {
         .mega-promo .mega-promo__item.full a:after {
           right: 30px;
@@ -2212,9 +2218,7 @@ blockquote {
           float: right;
           display: inline-block;
           width: 33.33%;
-          padding: 30px; }
-          .mega-promo .mega-promo__item.full a .mega-promo__content .mega-promo__header {
-            font-size: 40px; }
+          padding: 40px; }
         .mega-promo .mega-promo__item.full a .mega-promo__highlight {
           right: auto;
           left: 0; } }
@@ -2250,6 +2254,11 @@ blockquote {
       @media (max-width: 500px) {
         .mega-promo .mega-promo__item.quarter {
           width: 100% !important; } }
+    @media (min-width: 767px) {
+      .mega-promo .mega-promo__item.third a, .mega-promo .mega-promo__item.quarter a {
+        padding-bottom: 50px; }
+        .mega-promo .mega-promo__item.third a .mega-promo__content, .mega-promo .mega-promo__item.quarter a .mega-promo__content {
+          padding: 20px; } }
 
 code[class*="language-"],
 pre[class*="language-"] {

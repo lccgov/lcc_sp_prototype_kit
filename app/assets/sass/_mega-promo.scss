@@ -32,8 +32,8 @@
                 font-family: FontAwesome;
                 content: "\f054";
                 position: absolute;
-                right: 15px;
-                bottom: 15px;
+                right: 20px;
+                bottom: 20px;
                 color:white;
                 font-size:24px;
 
@@ -76,11 +76,11 @@
             }
             .mega-promo__content{
                 display:block;
-                padding:15px 50px 15px 15px;
+                padding:20px 60px 20px 20px;
 
                 @media (max-width: 500px) {
                     position:relative;
-                    padding:15px 40px 15px 15px;
+                    padding:15px 60px 15px 15px;
 
                     &:after{
                         font-family: FontAwesome;
@@ -97,14 +97,16 @@
 
                 .mega-promo__header{
                     color:white;
-                    margin:0 0 10px;
+                    margin:0 0 5px;
                     font-size:24px;
+                    line-height:30px;
                 }
 
                 .mega-promo__secondary{
                     color:white;
                     margin:0;
                     font-size:18px;
+                    line-height:24px;
                 }
             }
 
@@ -121,6 +123,13 @@
 
         &.full{
             width:100% !important;
+
+            @media (min-width: 500px) {
+                .mega-promo__header{
+                    font-size:40px !important;
+                    line-height:48px !important;
+                }
+            }
 
             @media (min-width: 990px) {
 
@@ -146,11 +155,7 @@
                         float:right;
                         display:inline-block;
                         width:33.33%;
-                        padding:30px;
-
-                        .mega-promo__header{
-                            font-size:40px;
-                        }
+                        padding:40px;
                     }
 
                     .mega-promo__highlight{
@@ -193,6 +198,7 @@
 
         &.third{
             width:33.33% !important;
+
             @media (max-width: 767px) {
                 width:100% !important;
             }
@@ -200,11 +206,26 @@
 
         &.quarter{
             width:25% !important;
+
             @media (max-width: 767px) {
                 width:50% !important;
             }
             @media (max-width: 500px) {
                 width:100% !important;
+            }
+        }
+
+        @media (min-width: 767px){
+
+            &.third,
+            &.quarter{
+                a{
+                    padding-bottom:50px;
+
+                    .mega-promo__content{
+                        padding:20px;
+                    }
+                }
             }
         }
     }
