@@ -124,7 +124,7 @@ $news-pod-border-color:#ddd;
 //$highlighted-alt-font-color:#333 !default;
 
 //mega-promo
-$promo-background-color:$dark-grey;
+$promo-background-color:darken($blue, 15%);
 $promo-arrow-color:$grey;
 $promo-header-color:$white;
 $promo-secondary-color:$white;
