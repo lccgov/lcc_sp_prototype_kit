@@ -1095,12 +1095,12 @@ ul.promo-group {
       color: #fff; }
 
 .promoListWebpart ul li.green a .info {
-  background: #00823B;
+  background: #53A762;
   color: #fff; }
   .promoListWebpart ul li.green a .info .secondaryInfo {
     color: #fff; }
   .promoListWebpart ul li.green a .info .arrow {
-    background: #00692f; }
+    background: #4b9658; }
     .promoListWebpart ul li.green a .info .arrow:after {
       color: #fff; }
 
@@ -1187,7 +1187,7 @@ ul.promo-group {
     .promoListWebpart .contentLink.purple a span.info {
       border-top: 1px solid #fff; }
   .promoListWebpart .contentLink.green {
-    background: #00823B; }
+    background: #53A762; }
     .promoListWebpart .contentLink.green h2,
     .promoListWebpart .contentLink.green h3,
     .promoListWebpart .contentLink.green p {
@@ -2105,10 +2105,10 @@ blockquote {
     color: #212224; }
 
 .btn-green {
-  background-color: #00823B;
+  background-color: #53A762;
   color: #FFFFFF; }
   .btn-green:hover {
-    background: #00692f;
+    background: #4b9658;
     color: #FFFFFF; }
 
 .mega-promo {
@@ -2284,6 +2284,7 @@ blockquote {
           padding: 20px; } }
 
 .hero-lcc-wrapper {
+  background-image: url("/public/images/hero-image-1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -2292,15 +2293,15 @@ blockquote {
   background-size: cover;
   z-index: -2; }
   .hero-lcc-wrapper .hero-lcc {
-    background: #18516d;
+    background: #016d9e;
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#016d9e, rgba(1, 109, 158, 0));
+    background: -webkit-linear-gradient(#016d9e, rgba(1, 109, 158, 0.1));
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#016d9e, rgba(1, 109, 158, 0));
+    background: -o-linear-gradient(#016d9e, rgba(1, 109, 158, 0.1));
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#016d9e, rgba(1, 109, 158, 0));
+    background: -moz-linear-gradient(#016d9e, rgba(1, 109, 158, 0.1));
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#016d9e, rgba(1, 109, 158, 0));
+    background: linear-gradient(#016d9e, rgba(1, 109, 158, 0.1));
     /* Standard syntax */
     z-index: -1;
     height: 100%;
@@ -2430,7 +2431,8 @@ blockquote {
               margin: 0;
               font-size: 18px;
               padding: 15px 40px 15px 15px;
-              font-weight: 600; }
+              font-weight: 600;
+              background: #017eb7; }
         @media (max-width: 767px) {
           .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
             padding: 10px 10px 0; }
@@ -3142,8 +3144,8 @@ h5,
     border-color: #016D9E;
     background: rgba(1, 109, 158, 0.1); }
   .text-highlight.text-highlight-green {
-    border-color: #00823B;
-    background: rgba(0, 130, 59, 0.1); }
+    border-color: #53A762;
+    background: rgba(83, 167, 98, 0.1); }
 
 .notice {
   position: relative; }

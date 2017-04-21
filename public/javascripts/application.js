@@ -28,3 +28,18 @@ var MIN_TOP = 200;
 var MAX_TOP = 350;
 
 $('main').scrollspy({ target: '#sidebar-nav' })
+
+function randomImage(){
+  var images = [
+   '/public/images/hero-image-2.jpg',
+   '/public/images/hero-image-3.jpg',
+   '/public/images/hero-image-4.jpg'];
+  var size = images.length;
+  var x = Math.floor(size * Math.random());
+  console.log(x);
+  var element = document.getElementsByClassName('hero-lcc-wrapper');
+  console.log(element);
+  element[0].style["background-image"] = "url("+ images[x] + ")";
+}
+
+document.addEventListener("DOMContentLoaded", randomImage);
