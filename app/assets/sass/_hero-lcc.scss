@@ -13,11 +13,11 @@
     }
 
     .hero-lcc{
-        background: rgba(1,109,158,1.0); /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(rgba(1,109,158,1.0), rgba(1,109,158,0.25)); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(rgba(1,109,158,1.0), rgba(1,109,158,0.25)); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(rgba(1,109,158,1.0), rgba(1,109,158,0.25)); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(rgba(1,109,158,1.0), rgba(1,109,158,0.25)); /* Standard syntax */
+        background: rgba(9,59,81,0.6); /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(rgba(9,59,81,0.6), rgba(9,59,81,0.6)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgba(9,59,81,0.6), rgba(9,59,81,0.6)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgba(9,59,81,0.6), rgba(9,59,81,0.6)); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgba(9,59,81,0.6), rgba(9,59,81,0.6)); /* Standard syntax */
         z-index:-1;
         height:100%;
         display: flex;
@@ -190,7 +190,7 @@
                             font-size:16px;
                             padding:15px 40px 15px 15px;
                             font-weight:400;
-                            background:$blue;
+                            background:lighten($blue,5%);
 
                             @media (min-width: 600px) {
                                 font-size:18px;

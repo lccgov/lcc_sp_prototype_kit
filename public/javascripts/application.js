@@ -34,7 +34,9 @@ function randomImage(){
    '/public/images/hero-image-1.jpg',
    '/public/images/hero-image-2.jpg',
    '/public/images/hero-image-3.jpg',
-   '/public/images/hero-image-4.jpg'];
+   '/public/images/hero-image-4.jpg',
+   '/public/images/hero-image-5.jpg',
+   '/public/images/hero-image-6.jpg'];
   var size = images.length;
   var x = Math.floor(size * Math.random());
   console.log(x);
