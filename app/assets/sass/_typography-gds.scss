@@ -365,6 +365,10 @@ p {
   text-transform: none;
   font-size: 18px;
   line-height: 1.2;
+
+  &.header{
+    margin-bottom:50px;
+  }
 }
 
 @media (min-width: 641px) {

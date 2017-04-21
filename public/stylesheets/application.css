@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,300,700,500,100,800,900");
 /*********************************************
 Base.sass variables
 *********************************************/
@@ -38,7 +37,7 @@ body {
   background: #fff; }
 
 .sectionTwo {
-  background: #e6e6e6; }
+  background: #F6F7FA; }
 
 .sectionThree {
   background: white; }
@@ -2105,7 +2104,7 @@ blockquote {
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: -15px; }
+  margin: 20px 0 5px -15px; }
   .mega-promo .mega-promo__item {
     padding-left: 15px;
     display: -ms-flexbox;
@@ -2121,8 +2120,7 @@ blockquote {
       display: block;
       width: 100%;
       box-sizing: border-box;
-      overflow: hidden;
-      background: #7f8c8d;
+      background: #666B76;
       position: relative;
       text-decoration: none; }
       .mega-promo .mega-promo__item a:after {
@@ -2131,21 +2129,23 @@ blockquote {
         position: absolute;
         right: 20px;
         bottom: 20px;
-        color: white;
+        color: #9DA5B2;
         font-size: 24px; }
         @media (max-width: 500px) {
           .mega-promo .mega-promo__item a:after {
             display: none; } }
       .mega-promo .mega-promo__item a:hover {
-        background: #424a4a;
+        background: #5a5f68;
         text-decoration: none; }
         .mega-promo .mega-promo__item a:hover .mega-promo__img {
           opacity: 0.8; }
+        .mega-promo .mega-promo__item a:hover .mega-promo__header {
+          text-decoration: underline; }
       .mega-promo .mega-promo__item a .mega-promo__img-wrapper {
         display: block;
         position: relative;
         z-index: 1;
-        background-color: #DEDEDE;
+        background-color: #a8acb4;
         padding-bottom: 56.25%;
         float: none;
         margin: 0;
@@ -2160,6 +2160,9 @@ blockquote {
           padding-bottom: 56.25%;
           background-repeat: no-repeat;
           background-position: top center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
           background-size: cover; }
       .mega-promo .mega-promo__item a .mega-promo__content {
         display: block;
@@ -2167,7 +2170,7 @@ blockquote {
         @media (max-width: 500px) {
           .mega-promo .mega-promo__item a .mega-promo__content {
             position: relative;
-            padding: 15px 60px 15px 15px; }
+            padding: 15px 40px 15px 15px; }
             .mega-promo .mega-promo__item a .mega-promo__content:after {
               font-family: FontAwesome;
               content: "\f054";
@@ -2177,88 +2180,195 @@ blockquote {
               right: 15px;
               margin-top: -9px;
               font-size: 18px;
-              color: white; } }
+              color: #9DA5B2; } }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header {
-          color: white;
+          color: #FFFFFF;
           margin: 0 0 5px;
           font-size: 24px;
           line-height: 30px; }
+          @media (max-width: 500px) {
+            .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header {
+              font-size: 21px;
+              line-height: 26px; } }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary {
-          color: white;
+          color: #FFFFFF;
           margin: 0;
           font-size: 18px;
           line-height: 24px; }
+          @media (max-width: 500px) {
+            .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary {
+              font-size: 16px;
+              line-height: 20px; } }
       .mega-promo .mega-promo__item a .mega-promo__highlight {
-        background: #7f8c8d;
-        color: white;
+        background: #DCDEE1;
+        color: #666B76;
         position: absolute;
         top: 0;
         right: 0;
         z-index: 2;
         padding: 10px; }
-    .mega-promo .mega-promo__item.full {
+    .mega-promo .mega-promo__item.featured {
       width: 100% !important; }
       @media (min-width: 500px) {
-        .mega-promo .mega-promo__item.full .mega-promo__header {
+        .mega-promo .mega-promo__item.featured .mega-promo__header {
+          font-size: 32px !important;
+          line-height: 36px !important;
+          margin-bottom: 10px !important; }
+        .mega-promo .mega-promo__item.featured .mega-promo__highlight {
+          font-size: 20px !important; } }
+      @media (min-width: 767px) {
+        .mega-promo .mega-promo__item.featured .mega-promo__header {
           font-size: 40px !important;
-          line-height: 48px !important; } }
+          line-height: 44px !important; } }
       @media (min-width: 990px) {
-        .mega-promo .mega-promo__item.full a:after {
+        .mega-promo .mega-promo__item.featured a:after {
           right: 30px;
           bottom: 30px;
           font-size: 32px; }
-        .mega-promo .mega-promo__item.full a .mega-promo__img-wrapper {
+        .mega-promo .mega-promo__item.featured a .mega-promo__img-wrapper {
           display: inline-block;
           width: 66.66%;
           float: left;
           padding-bottom: 37.5%; }
-          .mega-promo .mega-promo__item.full a .mega-promo__img-wrapper .mega-promo__img {
+          .mega-promo .mega-promo__item.featured a .mega-promo__img-wrapper .mega-promo__img {
             padding-bottom: 37.5%; }
-        .mega-promo .mega-promo__item.full a .mega-promo__content {
+        .mega-promo .mega-promo__item.featured a .mega-promo__content {
           float: right;
           display: inline-block;
           width: 33.33%;
-          padding: 40px; }
-        .mega-promo .mega-promo__item.full a .mega-promo__highlight {
+          padding: 30px; }
+        .mega-promo .mega-promo__item.featured a .mega-promo__highlight {
           right: auto;
           left: 0; } }
     .mega-promo .mega-promo__item.two-thirds {
       width: 66.66% !important; }
-      @media (max-width: 767px) {
-        .mega-promo .mega-promo__item.two-thirds {
-          width: 100% !important; } }
-      @media (min-width: 767px) {
-        .mega-promo .mega-promo__item.two-thirds .mega-promo__header {
-          font-size: 32px !important; } }
     .mega-promo .mega-promo__item.half {
       width: 50% !important; }
-      @media (max-width: 767px) {
-        .mega-promo .mega-promo__item.half {
-          width: 100% !important; } }
-      @media (max-width: 500px) {
-        .mega-promo .mega-promo__item.half {
-          width: 100% !important; } }
-      @media (min-width: 767px) {
-        .mega-promo .mega-promo__item.half .mega-promo__header {
-          font-size: 32px !important; } }
+    @media (min-width: 767px) {
+      .mega-promo .mega-promo__item.two-thirds .mega-promo__header, .mega-promo .mega-promo__item.half .mega-promo__header {
+        font-size: 32px !important; } }
     .mega-promo .mega-promo__item.third {
       width: 33.33% !important; }
-      @media (max-width: 767px) {
-        .mega-promo .mega-promo__item.third {
-          width: 100% !important; } }
     .mega-promo .mega-promo__item.quarter {
       width: 25% !important; }
+      .mega-promo .mega-promo__item.quarter .mega-promo__header {
+        font-size: 21px !important;
+        line-height: 26px !important; }
       @media (max-width: 767px) {
         .mega-promo .mega-promo__item.quarter {
           width: 50% !important; } }
       @media (max-width: 500px) {
         .mega-promo .mega-promo__item.quarter {
           width: 100% !important; } }
+    @media (max-width: 767px) {
+      .mega-promo .mega-promo__item.two-thirds, .mega-promo .mega-promo__item.half, .mega-promo .mega-promo__item.third {
+        width: 100% !important; } }
     @media (min-width: 767px) {
       .mega-promo .mega-promo__item.third a, .mega-promo .mega-promo__item.quarter a {
         padding-bottom: 50px; }
         .mega-promo .mega-promo__item.third a .mega-promo__content, .mega-promo .mega-promo__item.quarter a .mega-promo__content {
           padding: 20px; } }
+
+.hero-lcc-wrapper {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 75vh;
+  z-index: -2; }
+  .hero-lcc-wrapper .hero-lcc {
+    background: red;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+    /* Standard syntax */
+    z-index: -1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px; }
+      @media (max-width: 400px) {
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
+          padding: 30px 15px; } }
+      .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro {
+        text-align: center;
+        text-shadow: 2px 2px 2px black; }
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
+          color: #fff;
+          margin: 0 0 10px;
+          font-size: 52px; }
+          @media (max-width: 400px) {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
+              font-size: 32px;
+              margin: 0 0 5px; } }
+          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header span {
+            display: block;
+            font-size: 24px;
+            font-weight: 400;
+            margin: 0 0 10px; }
+            @media (max-width: 400px) {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header span {
+                font-size: 19px;
+                margin: 0 0 5px; } }
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
+          margin: 0 0 20px;
+          color: #fff;
+          font-size: 24px;
+          font-weight: 400; }
+          @media (max-width: 400px) {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
+              font-size: 19px;
+              margin: 0 0 10px; } }
+      .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        padding: 10px; }
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular {
+          padding: 0;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+          width: 100%;
+          margin: 0 0 0 -15px; }
+          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: stretch;
+            align-items: stretch;
+            -ms-flex: 1 1 auto;
+            -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+            width: 33.33% !important;
+            padding-left: 15px; }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn {
+              width: 100%;
+              text-align: left;
+              margin: 0; }
+        @media (max-width: 767px) {
+          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
+            padding: 10px 10px 0; }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular {
+              margin: 0; }
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
+                width: 100% !important;
+                padding-left: 0;
+                padding-bottom: 10px; } }
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -2673,6 +2783,8 @@ p {
   text-transform: none;
   font-size: 18px;
   line-height: 1.2; }
+  .lead.header {
+    margin-bottom: 50px; }
 
 @media (min-width: 641px) {
   .lead {
@@ -2873,13 +2985,17 @@ body {
   height: auto;
   width: auto;
   background: none;
-  display: inline-block; }
+  display: inline-block;
+  margin: 10px 0; }
   .logo:after {
     content: 'LCC Digital';
     font-size: 40px;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff; }
+    @media (max-width: 767px) {
+      .logo:after {
+        font-size: 30px; } }
   .logo:hover {
     color: #e6e6e6; }
 
@@ -3018,7 +3134,7 @@ ul.promo-group {
     ul.promo-group {
       margin: 0 0 20px; } }
   ul.promo-group li {
-    background: #DCDEE1;
+    background: #F6F7FA;
     border: 0;
     width: calc(100% * (1/4) - 5px);
     margin: 5px 0 0 5px; }
@@ -3034,7 +3150,7 @@ ul.promo-group {
         margin: 5px 0 0; } }
     ul.promo-group li a {
       min-height: 165px;
-      background: #DCDEE1;
+      background: #F6F7FA;
       padding: 30px;
       text-decoration: none !important; }
       @media (max-width: 600px) {

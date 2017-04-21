@@ -30,6 +30,7 @@ body{
     width: auto;
     background: none;
     display:inline-block;
+    margin:10px 0;
 
     &:after{
         content:'LCC Digital';
@@ -37,6 +38,10 @@ body{
         text-transform:uppercase;
         font-weight:700;
         color: #fff;
+
+        @media (max-width: 767px) {
+              font-size:30px;
+          }
     }
 
     &:hover{
@@ -233,7 +238,7 @@ ul.promo-group {
         }
 
     li {
-        background:$light-grey;
+        background:$lighter-grey;
         border: 0;
         width: calc(100% * (1/4) - 5px);
         margin:5px 0 0 5px;
@@ -250,7 +255,7 @@ ul.promo-group {
 
         a{
             min-height:165px;
-            background:$light-grey;
+            background:$lighter-grey;
             padding:30px;
             text-decoration:none !important;
                 @media (max-width: 600px) {

@@ -1,12 +1,12 @@
-{% extends "layout_multi_sections.html" %}
+{% extends "layout_multi_sections_home.html" %}
 
 {% block page_title %}
-	Mega Promo
+	Home Page
 {% endblock %}
 
 
   {% block css_register %}
-        <script src="https://use.typekit.net/pws7qio.js"></script>
+  <script src="https://use.typekit.net/pws7qio.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
          <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
    {% endblock %}
@@ -14,24 +14,27 @@
  
 
 {% block header %}
-Mega Promo
 {% endblock %}
 
  {% block main_nav %}
-  {% include "includes/main_nav.html" %}
  {% endblock %}
 
 
 
- {% block sectionOneTop %}
+{% block sectionOneTop %}
+    {% include "includes/design-patterns/hero-lcc.html" %}
 {% endblock %} 
 
 {% block sectionOneFull%}
 {% endblock %}
 
+{% block sectionOneFullBottom %}
+    {% include "includes/design-patterns/group-promos-lcc-home.html" %}
+    {% include "includes/design-patterns/promo-lcc-home.html" %}
+{% endblock %}
+
 
  {% block breadcrumb %}
-  {% include "includes/breadcrumb_sp.html" %}
  {% endblock %}
 
 {% block sectionOneContent %}
@@ -40,10 +43,7 @@ Mega Promo
 {% block pageContent %}
 {% endblock %}
 
-{% block sectionOneFullBottom %}
-      <p class="lead header">A promo is a snippet of content which links to a full piece of content elsewhere on www.leeds.gov.uk.</p>
-        {% include "includes/design-patterns/mega-promo.html" %}
-{% endblock %}
+
 
 {% block sectionOneRightHandColumn %}
 {% endblock %}
@@ -68,7 +68,6 @@ Mega Promo
 {% endblock %}
 
 {% block sectionTwoRightHandColumn %}
-      {% include "includes/design-patterns/promo-single.html" %}
 {% endblock %}
 
 {% block sectionTwoThirdCol1 %}
@@ -107,7 +106,6 @@ Mega Promo
 {% endblock %} 
 
 {% block sectionFourFull%}
-
 {% endblock %}
 
 {% block sectionFourContent %}
@@ -152,6 +150,6 @@ Mega Promo
   {% block footer_nav %}
  {% endblock %}
 
-  {% block reuserblecontent_footer %}
+ {% block reuserblecontent_footer %}
      {% include "includes/re-userble-content-footer.html" %}
  {% endblock %}

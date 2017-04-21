@@ -1,16 +1,14 @@
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,300,700,500,100,800,900');
 // available variables to change the brand colours as required
 // masterhead.scss
 
 //$head-background: #ffffff;
 
-
 //mainMenu.scss -- responsive icons color
 //$menu-link-color:#337ab7;
 
-
 //base.scss
+
+//base colours
 $blue:#016D9E;
 $dark-blue: darken(#016D9E, 20%);
 $light-blue: lighten(#016D9E, 20%);
@@ -24,7 +22,6 @@ $lighter-grey:#F6F7FA;
 $white:#FFFFFF;
 $focus-color:#FFBF47;
 
-
 //$base-background-color:#fff;
 $base-font-size:16px ;
 $base-font-color:$light-black;
@@ -37,7 +34,6 @@ $base-container-width:1400px ;
 //$btn-background-color:green ;
 $font-primary:proxima-nova, sans-serif; // main font
 $font-secondary:proxima-nova, sans-serif; // secondary font
-
 
 //global used on all partials to get a uniform spacing between elements
 //$base-margin-bottom:1.875em ;
@@ -57,20 +53,20 @@ $main-nav-background:lighten( $brand-color, 3% );
 //sectionSubsite.scss - socialamedia.scss
 //$section-Background:#efefef ;
 
-// socialamedia.scss
+//socialamedia.scss
 //$social-link-color:#337ab7 ;
 
-// sideNavigation.scss
+//sideNavigation.scss
 //$side-nav-active-background:#133E8D ;
 
-//  carousel.scss
+//carousel.scss
 //$carousel-active-background:#000 ;
 //$carousel-indicators-active-background:#ccc ;
 //$carousel-caption-background: rgba(0,0,0,0.6) ;
 //$carousel-caption-font-color:#fff ;
 
 
-// blocklinks.scss
+//blocklinks.scss
 
 //$block-link-back:#f6f6f6 ;
 //$block-link-back-hover:#3380A4 ;
@@ -78,7 +74,6 @@ $main-nav-background:lighten( $brand-color, 3% );
 //$promo-group-background:#EDF2F5 ; 
 //$promo-group-li-background:#EDF2F5 ;
 //$promo-group-link-color:#216486 ;
-
 
 //promolist webpart
 //$link-font-color:#fff;
@@ -93,10 +88,10 @@ $main-nav-background:lighten( $brand-color, 3% );
 //$content-arrow-color:#133E8D;
 //$content-border-color:#ddd;
 
-// section backgrounds
+//section backgrounds
 $sectionHeader-background-color:$brand-color;
 $sectionOne-background-color:#fff;
-//$sectionTwo-background-color:darken($base-background-color, 10%) ;
+$sectionTwo-background-color:$lighter-grey;
 //$sectionThree-background-color:lighten($base-background-color, 3%) ;
 //$sectionFour-background-color:lighten($base-background-color, 5%) ;
 //$sectionFive-background-color:darken($base-background-color, 5%) ;
@@ -117,25 +112,30 @@ $news-pod-border-color:#ddd;
 //$accordion-color:green;
 //$accordion-border-color:#ECF0F1;
 
-
 //Block quote
 // $blockquoteBorderColor:#bbcada ;
 // $blockquoteQuoteColor:#333;
 // $blockquoteQuoteFooterColor:#000;
 
- //highlighted box in content assets
- //$highlighted-background-color:#333 !default;
- //$highlighted-font-color:#fff !default;
- //$highlighted-alt-background-color:#f6f6f6 !default;
- //$highlighted-alt-font-color:#333 !default;
+//highlighted box in content assets
+//$highlighted-background-color:#333 !default;
+//$highlighted-font-color:#fff !default;
+//$highlighted-alt-background-color:#f6f6f6 !default;
+//$highlighted-alt-font-color:#333 !default;
 
-
+//mega-promo
+$promo-background-color:$dark-grey;
+$promo-arrow-color:$grey;
+$promo-header-color:$white;
+$promo-secondary-color:$white;
+$promo-highlight-background-color:$light-grey;
+$promo-highlight-color:$dark-grey;
 
 @import 'mixins';
 @import 'variables';
 @import 'brandColors';
 
-// available sass files please un-comment out as required
+//available sass files please un-comment out as required
 
 //@import 'mainMenuSubsites';
 @import 'breadcrumb';
@@ -164,6 +164,7 @@ $news-pod-border-color:#ddd;
 
 //custom style added by DH - needs to filed properly
 @import 'mega-promo';
+@import 'hero-lcc';
 @import 'prism';
 @import 'typography-gds';
 @import 'swatch-gds';
