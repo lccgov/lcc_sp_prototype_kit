@@ -128,8 +128,8 @@ $promo-background-color:$dark-grey;
 $promo-arrow-color:$grey;
 $promo-header-color:$white;
 $promo-secondary-color:$white;
-$promo-highlight-background-color:$light-grey;
-$promo-highlight-color:$dark-grey;
+$promo-highlight-background-color:lighten($blue, 15%);
+$promo-highlight-color:$white;
 
 @import 'mixins';
 @import 'variables';
