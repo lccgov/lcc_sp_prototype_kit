@@ -2294,13 +2294,13 @@ blockquote {
   .hero-lcc-wrapper .hero-lcc {
     background: #18516d;
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#18516d, rgba(24, 81, 109, 0));
+    background: -webkit-linear-gradient(#016d9e, rgba(1, 109, 158, 0));
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#18516d, rgba(24, 81, 109, 0));
+    background: -o-linear-gradient(#016d9e, rgba(1, 109, 158, 0));
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#18516d, rgba(24, 81, 109, 0));
+    background: -moz-linear-gradient(#016d9e, rgba(1, 109, 158, 0));
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#18516d, rgba(24, 81, 109, 0));
+    background: linear-gradient(#016d9e, rgba(1, 109, 158, 0));
     /* Standard syntax */
     z-index: -1;
     height: 100%;
@@ -2428,12 +2428,9 @@ blockquote {
               width: 100%;
               text-align: left;
               margin: 0;
-              font-size: 16px;
+              font-size: 18px;
               padding: 15px 40px 15px 15px;
               font-weight: 600; }
-              @media (min-width: 767px) {
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn {
-                  font-size: 18px; } }
         @media (max-width: 767px) {
           .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
             padding: 10px 10px 0; }
@@ -3207,11 +3204,11 @@ ul.promo-group {
   -webkit-flex-direction: row;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 30px 0 30px -6px; }
+  margin: 30px 0 30px -6px;
+  width: auto; }
   @media (max-width: 600px) {
     ul.promo-group {
-      margin: 0 -15px 20px -15px;
-      width: auto; } }
+      margin: 0 -15px 20px -15px; } }
   ul.promo-group li {
     background: #F6F7FA;
     border: 0;
@@ -3243,6 +3240,9 @@ ul.promo-group {
         font-size: 21px;
         color: #016D9E;
         padding-right: 30px; }
+        @media (max-width: 600px) {
+          ul.promo-group li a h3 {
+            font-size: 19px; } }
         ul.promo-group li a h3:after {
           content: '\f105';
           font-family: FontAwesome;
