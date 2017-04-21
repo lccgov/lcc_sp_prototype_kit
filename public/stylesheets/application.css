@@ -2306,7 +2306,8 @@ blockquote {
           padding: 20px; } }
 
 .hero-lcc-wrapper {
-  background-image: url("/public/images/hero-image-1.jpg");
+  background-image: none;
+  background-color: #093b51;
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
