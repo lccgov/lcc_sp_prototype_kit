@@ -80,7 +80,7 @@
             }
 
             .hero-lcc__actions{
-                background:rgba(38,50,56,0.4);
+                background:rgba(38,50,56,0.25);
                 border-radius:4px;
                 padding:10px;
 
@@ -122,7 +122,7 @@
                             height:55px;
                             border:0;
                             padding:10px 25px;
-                            background:lighten($blue,5%);
+                            background:$green;
                             font-size:21px;
 
                             &:after{
@@ -130,7 +130,7 @@
                             }
 
                             i{
-                                font-size:24px;
+                                font-size:32px;
 
                                 @media (min-width: 767px) {
                                     display:none;
@@ -139,7 +139,7 @@
 
                             @media (max-width: 767px) {
 
-                                padding:15px;
+                                padding:5px 10px;
 
                                 span{
                                     position: absolute;
@@ -186,7 +186,7 @@
                             font-size:16px;
                             padding:15px 40px 15px 15px;
                             font-weight:400;
-                            background:$green;
+                            background:$blue;
 
                             @media (min-width: 600px) {
                                 font-size:18px;

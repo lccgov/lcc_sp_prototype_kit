@@ -2374,7 +2374,7 @@ blockquote {
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
               font-size: 19px; } }
       .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
-        background: rgba(38, 50, 56, 0.4);
+        background: rgba(38, 50, 56, 0.25);
         border-radius: 4px;
         padding: 10px; }
         .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper {
@@ -2407,18 +2407,18 @@ blockquote {
               height: 55px;
               border: 0;
               padding: 10px 25px;
-              background: #017eb7;
+              background: #53A762;
               font-size: 21px; }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:after {
                 display: none; }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i {
-                font-size: 24px; }
+                font-size: 32px; }
                 @media (min-width: 767px) {
                   .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i {
                     display: none; } }
               @media (max-width: 767px) {
                 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn {
-                  padding: 15px; }
+                  padding: 5px 10px; }
                   .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn span {
                     position: absolute;
                     width: 1px;
@@ -2456,7 +2456,7 @@ blockquote {
               font-size: 16px;
               padding: 15px 40px 15px 15px;
               font-weight: 400;
-              background: #53A762; }
+              background: #016D9E; }
               @media (min-width: 600px) {
                 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn {
                   font-size: 18px; } }
@@ -3239,8 +3239,8 @@ ul.promo-group {
     ul.promo-group {
       margin: 0 -15px 20px -15px; } }
   ul.promo-group li {
-    background: #FFFFFF;
-    border: 2px solid #F6F7FA;
+    background: #F6F7FA;
+    border: 0;
     width: calc(100% * (1/4) - 5px);
     margin: 5px 0 0 5px; }
     @media (max-width: 990px) {
@@ -3249,11 +3249,9 @@ ul.promo-group {
     @media (max-width: 600px) {
       ul.promo-group li {
         width: calc(100%);
-        margin: 5px 0 0;
-        border-left: 0;
-        border-right: 0; } }
+        margin: 5px 0 0; } }
     ul.promo-group li a {
-      background: #FFFFFF;
+      background: #F6F7FA;
       padding: 30px;
       text-decoration: none !important;
       height: 100%; }

@@ -245,8 +245,8 @@ ul.promo-group {
         }
 
     li {
-        background:$white;
-        border:2px solid $lighter-grey;
+        background:$lighter-grey;
+        border: 0;
         width: calc(100% * (1/4) - 5px);
         margin:5px 0 0 5px;
             @media (max-width: 990px) {
@@ -255,12 +255,10 @@ ul.promo-group {
             @media (max-width: 600px) {
                 width: calc(100%);
                 margin:5px 0 0;
-                border-left:0;
-                border-right:0;
             }
 
         a{
-            background:$white;
+            background:$lighter-grey;
             padding:30px;
             text-decoration:none !important;
             height:100%;
