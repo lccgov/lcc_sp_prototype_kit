@@ -2099,7 +2099,8 @@ blockquote {
 
 .btn {
   font-weight: 700;
-  font-size: 20px; }
+  font-size: 20px;
+  border: 0; }
   .btn:focus {
     background: #FFCC33;
     color: #212224; }
@@ -2109,6 +2110,13 @@ blockquote {
   color: #FFFFFF; }
   .btn-green:hover {
     background: #4b9658;
+    color: #FFFFFF; }
+
+.btn-blue {
+  background-color: #016D9E;
+  color: #FFFFFF; }
+  .btn-blue:hover {
+    background: #015c85;
     color: #FFFFFF; }
 
 .mega-promo {
@@ -2223,11 +2231,25 @@ blockquote {
         padding: 10px; }
     .mega-promo .mega-promo__item.featured {
       width: 100% !important; }
+      .mega-promo .mega-promo__item.featured a {
+        background: #013952; }
+        .mega-promo .mega-promo__item.featured a:after {
+          color: #9DA5B2; }
+        .mega-promo .mega-promo__item.featured a .mega-promo__content:after {
+          color: #9DA5B2; }
+        .mega-promo .mega-promo__item.featured a .mega-promo__content .mega-promo__header {
+          color: #FFFFFF; }
+        .mega-promo .mega-promo__item.featured a .mega-promo__content .mega-promo__secondary {
+          color: #FFFFFF; }
+        .mega-promo .mega-promo__item.featured a .mega-promo__content .mega-promo__highlight {
+          color: #FFFFFF;
+          background: #01a1ea; }
       @media (min-width: 500px) {
         .mega-promo .mega-promo__item.featured .mega-promo__header {
           font-size: 32px !important;
           line-height: 36px !important;
-          margin-bottom: 10px !important; }
+          margin-bottom: 10px !important;
+          color: #FFFFFF; }
         .mega-promo .mega-promo__item.featured .mega-promo__highlight {
           font-size: 20px !important; } }
       @media (min-width: 767px) {
@@ -2295,13 +2317,13 @@ blockquote {
   .hero-lcc-wrapper .hero-lcc {
     background: #016d9e;
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#016d9e, rgba(1, 109, 158, 0.1));
+    background: -webkit-linear-gradient(#016d9e, rgba(1, 109, 158, 0.25));
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#016d9e, rgba(1, 109, 158, 0.1));
+    background: -o-linear-gradient(#016d9e, rgba(1, 109, 158, 0.25));
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#016d9e, rgba(1, 109, 158, 0.1));
+    background: -moz-linear-gradient(#016d9e, rgba(1, 109, 158, 0.25));
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#016d9e, rgba(1, 109, 158, 0.1));
+    background: linear-gradient(#016d9e, rgba(1, 109, 158, 0.25));
     /* Standard syntax */
     z-index: -1;
     height: 100%;
@@ -2328,9 +2350,9 @@ blockquote {
         text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); }
         .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
           color: #fff;
-          margin: 0 0 10px;
+          margin: 0 0 7px;
           font-size: 52px; }
-          @media (max-width: 400px) {
+          @media (max-width: 500px) {
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
               font-size: 36px;
               margin: 0 0 5px; } }
@@ -2338,8 +2360,8 @@ blockquote {
             display: block;
             font-size: 24px;
             font-weight: 400;
-            margin: 0 0 10px; }
-            @media (max-width: 400px) {
+            margin: 0 0 7px; }
+            @media (max-width: 500px) {
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header span {
                 font-size: 19px;
                 margin: 0 0 5px; } }
@@ -2348,7 +2370,7 @@ blockquote {
           color: #fff;
           font-size: 24px;
           font-weight: 400; }
-          @media (max-width: 400px) {
+          @media (max-width: 500px) {
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
               font-size: 19px; } }
       .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
@@ -2384,7 +2406,9 @@ blockquote {
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn {
               height: 55px;
               border: 0;
-              padding: 15px 25px; }
+              padding: 10px 25px;
+              background: #017eb7;
+              font-size: 21px; }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:after {
                 display: none; }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i {
@@ -2429,10 +2453,13 @@ blockquote {
               width: 100%;
               text-align: left;
               margin: 0;
-              font-size: 18px;
+              font-size: 16px;
               padding: 15px 40px 15px 15px;
-              font-weight: 600;
-              background: #017eb7; }
+              font-weight: 400;
+              background: #53A762; }
+              @media (min-width: 600px) {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn {
+                  font-size: 18px; } }
         @media (max-width: 767px) {
           .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
             padding: 10px 10px 0; }
@@ -3212,8 +3239,8 @@ ul.promo-group {
     ul.promo-group {
       margin: 0 -15px 20px -15px; } }
   ul.promo-group li {
-    background: #F6F7FA;
-    border: 0;
+    background: #FFFFFF;
+    border: 2px solid #F6F7FA;
     width: calc(100% * (1/4) - 5px);
     margin: 5px 0 0 5px; }
     @media (max-width: 990px) {
@@ -3222,9 +3249,11 @@ ul.promo-group {
     @media (max-width: 600px) {
       ul.promo-group li {
         width: calc(100%);
-        margin: 5px 0 0; } }
+        margin: 5px 0 0;
+        border-left: 0;
+        border-right: 0; } }
     ul.promo-group li a {
-      background: #F6F7FA;
+      background: #FFFFFF;
       padding: 30px;
       text-decoration: none !important;
       height: 100%; }

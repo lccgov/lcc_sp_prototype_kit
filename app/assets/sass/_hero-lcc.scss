@@ -10,10 +10,10 @@
 
     .hero-lcc{
         background: rgba(1,109,158,1.0); /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(rgba(1,109,158,1.0), rgba(1,109,158,0.1)); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(rgba(1,109,158,1.0), rgba(1,109,158,0.1%)); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(rgba(1,109,158,1.0), rgba(1,109,158,0.1)); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(rgba(1,109,158,1.0), rgba(1,109,158,0.1)); /* Standard syntax */
+        background: -webkit-linear-gradient(rgba(1,109,158,1.0), rgba(1,109,158,0.25)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgba(1,109,158,1.0), rgba(1,109,158,0.25)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgba(1,109,158,1.0), rgba(1,109,158,0.25)); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgba(1,109,158,1.0), rgba(1,109,158,0.25)); /* Standard syntax */
         z-index:-1;
         height:100%;
         display: flex;
@@ -45,10 +45,10 @@
 
                 .hero-lcc__intro-header{
                     color:#fff;
-                    margin:0 0 10px;
+                    margin:0 0 7px;
                     font-size:52px;
 
-                    @media (max-width: 400px) {
+                    @media (max-width: 500px) {
                         font-size:36px;
                         margin:0 0 5px;
                     }
@@ -57,9 +57,9 @@
                         display:block;
                         font-size:24px;
                         font-weight:400;
-                        margin:0 0 10px;
+                        margin:0 0 7px;
 
-                        @media (max-width: 400px) {
+                        @media (max-width: 500px) {
                             font-size:19px;
                             margin:0 0 5px;
                         }
@@ -72,7 +72,7 @@
                     font-size:24px;
                     font-weight:400;
 
-                    @media (max-width: 400px) {
+                    @media (max-width: 500px) {
                         font-size:19px;
                     }
                     
@@ -121,7 +121,9 @@
                         .btn{
                             height:55px;
                             border:0;
-                            padding:15px 25px;
+                            padding:10px 25px;
+                            background:lighten($blue,5%);
+                            font-size:21px;
 
                             &:after{
                                 display:none;
@@ -181,10 +183,14 @@
                             width:100%;
                             text-align:left;
                             margin:0;
-                            font-size:18px;
+                            font-size:16px;
                             padding:15px 40px 15px 15px;
-                            font-weight:600;
-                            background:lighten($blue,5%);
+                            font-weight:400;
+                            background:$green;
+
+                            @media (min-width: 600px) {
+                                font-size:18px;
+                            }
                         }
                     }
                 }

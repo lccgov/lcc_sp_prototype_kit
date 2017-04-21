@@ -130,6 +130,12 @@ $promo-header-color:$white;
 $promo-secondary-color:$white;
 $promo-highlight-background-color:lighten($blue, 15%);
 $promo-highlight-color:$white;
+$promo-feature-background-color:darken($blue, 15%);
+$promo-feature-arrow-color:$grey;
+$promo-feature-header-color:$white;
+$promo-feature-secondary-color:$white;
+$promo-feature-highlight-background-color:lighten($blue, 15%);
+$promo-feature-highlight-color:$white;
 
 @import 'mixins';
 @import 'variables';

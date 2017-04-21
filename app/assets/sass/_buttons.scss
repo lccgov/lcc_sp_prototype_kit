@@ -1,6 +1,7 @@
 .btn{
     font-weight:700;
     font-size:20px;
+    border:0;
 
     &:focus{
         background:$yellow;
@@ -16,5 +17,14 @@
         background:darken($green, 5%);
         color:$white;
     }
+}
 
+.btn-blue{
+    background-color:$blue;
+    color:$white;
+
+    &:hover{
+        background:darken($blue, 5%);
+        color:$white;
+    }
 }

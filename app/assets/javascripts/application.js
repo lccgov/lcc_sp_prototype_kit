@@ -31,6 +31,7 @@ $('main').scrollspy({ target: '#sidebar-nav' })
 
 function randomImage(){
   var images = [
+   '/public/images/hero-image-1.jpg',
    '/public/images/hero-image-2.jpg',
    '/public/images/hero-image-3.jpg',
    '/public/images/hero-image-4.jpg'];
