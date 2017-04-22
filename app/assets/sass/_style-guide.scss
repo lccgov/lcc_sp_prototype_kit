@@ -276,9 +276,13 @@ ul.promo-group {
             h3 {
                 margin: 0 0 0.5em;
                 font-weight: 600;
-                font-size: 21px;
+                font-size: 24px;
                 color: $base-link-color;
                 padding-right:30px;
+
+                @media (max-width: 767px) {
+                    font-size: 21px;
+                }
 
                 @media (max-width: 600px) {
                     font-size: 19px;
@@ -290,7 +294,7 @@ ul.promo-group {
                         position: absolute;
                         top: 30px;
                         right: 30px;
-                        color:$border-grey;
+                        color:$light-grey;
 
                         @media (max-width: 767px) {
                           top: 20px;

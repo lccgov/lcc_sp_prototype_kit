@@ -10,7 +10,7 @@
     z-index:-2;
 
     @media (min-width: 767px) {
-        height:75vh;
+        height:70vh;
     }
 
     .hero-lcc{
@@ -24,14 +24,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding:100px 0 130px 0;
+        padding:130px 0;
 
         @media (max-width: 767px) {
-            padding:50px 0 70px 0;
+            padding:70px 0;
         }
 
         @media (max-width: 500px) {
-            padding:30px 0 40px 0;
+            padding:40px 0;
         }
     
         .hero-lcc__content{
@@ -119,7 +119,7 @@
 
                             @media (min-width: 767px) {
                                 padding-left:60px;
-                                font-size:18px;
+                                font-size:20px;
                             }
                         }
 
@@ -191,10 +191,10 @@
                             font-size:16px;
                             padding:15px 40px 15px 15px;
                             font-weight:400;
-                            background:lighten($blue,5%);
+                            background:$blue;
 
                             @media (min-width: 600px) {
-                                font-size:18px;
+                                font-size:20px;
                             }
                         }
                     }
