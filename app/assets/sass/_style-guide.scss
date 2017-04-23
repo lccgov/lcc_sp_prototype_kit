@@ -37,6 +37,7 @@ body{
     background: none;
     display:inline-block;
     margin:10px 0;
+    text-decoration:none;
 
     &:after{
         content:'LCC Digital';
@@ -245,23 +246,29 @@ ul.promo-group {
         }
 
     li {
-        background:$lighter-grey;
+        background:$white;
         border: 0;
         width: calc(100% * (1/4) - 5px);
         margin:5px 0 0 5px;
+
+          @media (max-width: 1200px) {
+                width: calc(100% * (1/3) - 5px);
+            }
+
             @media (max-width: 990px) {
                 width: calc(100% * (1/2) - 5px);
             }
             @media (max-width: 600px) {
                 width: calc(100%);
-                margin:5px 0 0;
+                margin:0 0 -1px;
             }
 
         a{
-            background:$lighter-grey;
+            background:$white;
             padding:30px;
             text-decoration:none !important;
             height:100%;
+            border:1px solid $light-grey;
 
                 @media (max-width: 767px) {
                     min-height:0;
@@ -270,21 +277,19 @@ ul.promo-group {
 
                 @media (max-width: 600px) {
                     min-height:0;
-                    padding:15px;
+                    padding:20px 15px;
+                    border-left:0;
+                    border-right:0;
                 }
             
             h3 {
-                margin: 0 0 0.5em;
+                margin: 0;
                 font-weight: 600;
                 font-size: 24px;
                 color: $base-link-color;
                 padding-right:30px;
 
                 @media (max-width: 767px) {
-                    font-size: 21px;
-                }
-
-                @media (max-width: 600px) {
                     font-size: 19px;
                 }
 
@@ -310,6 +315,11 @@ ul.promo-group {
             }
 
             p{
+              font-size:18px;
+              font-weight:300;
+              margin-top: 0.3125em;
+              margin-bottom:0;
+
               @media (max-width: 600px) {
                 padding-right:30px;
               }

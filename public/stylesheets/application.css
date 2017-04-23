@@ -2314,10 +2314,11 @@ blockquote {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: -2; }
+  z-index: -2;
+  margin-top: -65px; }
   @media (min-width: 767px) {
     .hero-lcc-wrapper {
-      height: 70vh; } }
+      height: 75vh; } }
   .hero-lcc-wrapper .hero-lcc {
     background: rgba(9, 59, 81, 0.6);
     /* For browsers that do not support gradients */
@@ -2333,14 +2334,13 @@ blockquote {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 130px 0; }
+    justify-content: center; }
     @media (max-width: 767px) {
       .hero-lcc-wrapper .hero-lcc {
-        padding: 70px 0; } }
+        padding: 145px 0 80px 0; } }
     @media (max-width: 500px) {
       .hero-lcc-wrapper .hero-lcc {
-        padding: 40px 0; } }
+        padding: 115px 0 50px 0; } }
     .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
       max-width: 900px;
       width: 100%;
@@ -2348,7 +2348,7 @@ blockquote {
       padding: 15px; }
       @media (max-width: 500px) {
         .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
-          padding: 30px 15px; } }
+          padding: 0px 15px; } }
       .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro {
         text-align: center;
         text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); }
@@ -2383,6 +2383,9 @@ blockquote {
         padding: 10px; }
         .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper {
           margin: 0 0 10px; }
+          @media (max-width: 767px) {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper {
+              margin: 0 0 5px; } }
           .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search {
             position: relative; }
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search:before {
@@ -2400,23 +2403,28 @@ blockquote {
                 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search:before {
                   display: none; } }
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
-              height: 55px;
+              height: 45px;
               border-radius: 4px 0 0 4px;
               font-size: 16px; }
               @media (min-width: 767px) {
                 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
                   padding-left: 60px;
-                  font-size: 20px; } }
+                  font-size: 20px;
+                  height: 55px; } }
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn {
               height: 55px;
               border: 0;
               padding: 10px 25px;
               background: #53A762;
               font-size: 21px; }
+              @media (max-width: 767px) {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn {
+                  width: 45px;
+                  height: 45px; } }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:after {
                 display: none; }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i {
-                font-size: 32px; }
+                font-size: 26px; }
                 @media (min-width: 767px) {
                   .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i {
                     display: none; } }
@@ -2458,21 +2466,37 @@ blockquote {
               text-align: left;
               margin: 0;
               font-size: 16px;
-              padding: 15px 40px 15px 15px;
+              padding: 10px 40px 10px 10px;
               font-weight: 400;
               background: #016D9E; }
-              @media (min-width: 600px) {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:after {
+                font-size: 22px;
+                line-height: 55px;
+                content: "\f105";
+                padding: 0 !important;
+                width: 55px;
+                text-align: center; }
+                @media (max-width: 767px) {
+                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:after {
+                    font-size: 22px;
+                    line-height: 40px;
+                    content: "\f105";
+                    padding: 0 !important;
+                    width: 45px;
+                    text-align: center; } }
+              @media (min-width: 767px) {
                 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn {
-                  font-size: 20px; } }
+                  font-size: 19px;
+                  padding: 15px 40px 15px 15px; } }
         @media (max-width: 767px) {
           .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
-            padding: 10px 10px 0; }
+            padding: 10px 10px 5px; }
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular {
               margin: 0; }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
                 width: 100% !important;
                 padding-left: 0;
-                padding-bottom: 10px; } }
+                padding-bottom: 5px; } }
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -3094,7 +3118,8 @@ body {
   width: auto;
   background: none;
   display: inline-block;
-  margin: 10px 0; }
+  margin: 10px 0;
+  text-decoration: none; }
   .logo:after {
     content: 'LCC Digital';
     font-size: 36px;
@@ -3243,22 +3268,26 @@ ul.promo-group {
     ul.promo-group {
       margin: 0 -15px 20px -15px; } }
   ul.promo-group li {
-    background: #F6F7FA;
+    background: #FFFFFF;
     border: 0;
     width: calc(100% * (1/4) - 5px);
     margin: 5px 0 0 5px; }
+    @media (max-width: 1200px) {
+      ul.promo-group li {
+        width: calc(100% * (1/3) - 5px); } }
     @media (max-width: 990px) {
       ul.promo-group li {
         width: calc(100% * (1/2) - 5px); } }
     @media (max-width: 600px) {
       ul.promo-group li {
         width: calc(100%);
-        margin: 5px 0 0; } }
+        margin: 0 0 -1px; } }
     ul.promo-group li a {
-      background: #F6F7FA;
+      background: #FFFFFF;
       padding: 30px;
       text-decoration: none !important;
-      height: 100%; }
+      height: 100%;
+      border: 1px solid #DCDEE1; }
       @media (max-width: 767px) {
         ul.promo-group li a {
           min-height: 0;
@@ -3266,17 +3295,16 @@ ul.promo-group {
       @media (max-width: 600px) {
         ul.promo-group li a {
           min-height: 0;
-          padding: 15px; } }
+          padding: 20px 15px;
+          border-left: 0;
+          border-right: 0; } }
       ul.promo-group li a h3 {
-        margin: 0 0 0.5em;
+        margin: 0;
         font-weight: 600;
         font-size: 24px;
         color: #016D9E;
         padding-right: 30px; }
         @media (max-width: 767px) {
-          ul.promo-group li a h3 {
-            font-size: 21px; } }
-        @media (max-width: 600px) {
           ul.promo-group li a h3 {
             font-size: 19px; } }
         ul.promo-group li a h3:after {
@@ -3295,9 +3323,14 @@ ul.promo-group {
               top: 50%;
               right: 15px;
               margin-top: -10px; } }
-      @media (max-width: 600px) {
-        ul.promo-group li a p {
-          padding-right: 30px; } }
+      ul.promo-group li a p {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 0.3125em;
+        margin-bottom: 0; }
+        @media (max-width: 600px) {
+          ul.promo-group li a p {
+            padding-right: 30px; } }
 
 ul,
 ol {
