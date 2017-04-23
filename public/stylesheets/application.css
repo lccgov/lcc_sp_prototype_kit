@@ -2142,7 +2142,7 @@ blockquote {
       display: block;
       width: 100%;
       box-sizing: border-box;
-      background: #016D9E;
+      background: #FFFFFF;
       position: relative;
       text-decoration: none; }
       .mega-promo .mega-promo__item a:after {
@@ -2151,13 +2151,13 @@ blockquote {
         position: absolute;
         right: 20px;
         bottom: 20px;
-        color: #9DA5B2;
+        color: #DCDEE1;
         font-size: 24px; }
         @media (max-width: 500px) {
           .mega-promo .mega-promo__item a:after {
             display: none; } }
       .mega-promo .mega-promo__item a:hover {
-        background: #015c85;
+        background: #f2f2f2;
         text-decoration: none; }
         .mega-promo .mega-promo__item a:hover .mega-promo__img {
           opacity: 0.8; }
@@ -2167,7 +2167,7 @@ blockquote {
         display: block;
         position: relative;
         z-index: 1;
-        background-color: #21b9fe;
+        background-color: white;
         padding-bottom: 56.25%;
         float: none;
         margin: 0;
@@ -2202,9 +2202,9 @@ blockquote {
               right: 15px;
               margin-top: -9px;
               font-size: 18px;
-              color: #9DA5B2; } }
+              color: #DCDEE1; } }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header {
-          color: #FFFFFF;
+          color: #016D9E;
           margin: 0 0 5px;
           font-size: 24px;
           line-height: 30px; }
@@ -2213,10 +2213,11 @@ blockquote {
               font-size: 21px;
               line-height: 26px; } }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary {
-          color: #FFFFFF;
+          color: #212224;
           margin: 0;
           font-size: 18px;
-          line-height: 24px; }
+          line-height: 24px;
+          font-weight: 300; }
           @media (max-width: 500px) {
             .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary {
               font-size: 16px;
@@ -3256,14 +3257,15 @@ ul.accordion {
     text-decoration: none; }
 
 ul.promo-group {
-  background: #fff;
+  background: transparent;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 30px 0 30px -6px;
-  width: auto; }
+  width: auto;
+  border: 0; }
   @media (max-width: 600px) {
     ul.promo-group {
       margin: 0 -15px 20px -15px; } }
@@ -3271,7 +3273,8 @@ ul.promo-group {
     background: #FFFFFF;
     border: 0;
     width: calc(100% * (1/4) - 5px);
-    margin: 5px 0 0 5px; }
+    margin: 5px 0 0 5px;
+    border: 0; }
     @media (max-width: 1200px) {
       ul.promo-group li {
         width: calc(100% * (1/3) - 5px); } }
@@ -3281,13 +3284,12 @@ ul.promo-group {
     @media (max-width: 600px) {
       ul.promo-group li {
         width: calc(100%);
-        margin: 0 0 -1px; } }
+        margin: 5px 0 0; } }
     ul.promo-group li a {
       background: #FFFFFF;
       padding: 30px;
       text-decoration: none !important;
-      height: 100%;
-      border: 1px solid #DCDEE1; }
+      height: 100%; }
       @media (max-width: 767px) {
         ul.promo-group li a {
           min-height: 0;
@@ -3295,13 +3297,11 @@ ul.promo-group {
       @media (max-width: 600px) {
         ul.promo-group li a {
           min-height: 0;
-          padding: 20px 15px;
-          border-left: 0;
-          border-right: 0; } }
+          padding: 20px 15px; } }
       ul.promo-group li a h3 {
         margin: 0;
         font-weight: 600;
-        font-size: 24px;
+        font-size: 21px;
         color: #016D9E;
         padding-right: 30px; }
         @media (max-width: 767px) {
@@ -3327,7 +3327,8 @@ ul.promo-group {
         font-size: 18px;
         font-weight: 300;
         margin-top: 0.3125em;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        color: #212224; }
         @media (max-width: 600px) {
           ul.promo-group li a p {
             padding-right: 30px; } }
