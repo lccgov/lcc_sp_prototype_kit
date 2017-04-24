@@ -36,7 +36,7 @@ body{
     width: auto;
     background: none;
     display:inline-block;
-    margin:10px 0;
+    margin:9px 0;
     text-decoration:none;
 
     &:after{
@@ -143,12 +143,12 @@ h5,
     margin:0;
   }
 
-  &.text-highlight-blue{
+  &.text-highlight--blue{
     border-color:$brand-color;
     background:rgba($brand-color, 0.1);
   }
 
-  &.text-highlight-green{
+  &.text-highlight--green{
     border-color:$green;
     background:rgba($green, 0.1);
   }
@@ -191,10 +191,12 @@ a[rel="external"]{
   }
 }
 
-a:focus, input[type=submit]:focus{
+a:focus, 
+input[type=submit]:focus, 
+.btn:focus{
     background:$focus-color !important;
     color:$base-font-color !important;
-    text-decoration:none;
+    text-decoration:none;   
 }
 
 //accordion
@@ -503,6 +505,11 @@ hr{
 }
 
 //sticky
+#sticky-anchor{
+  @media (max-width: 990px) {
+    display:none;
+  }
+}
 #sticky{
   padding:20px 0 0;
 }

@@ -44,37 +44,32 @@ Buttons
 <h2 class="heading-medium" id="button-text">Button text</h2>
 <p class="text">Button text should be short and describe the action the button performs.</p>
 <div class="example">
-  <input class="button" type="submit" value="Save and continue">
+  <div class="row">
+    <div class="col-lg-12">
+      <a class="btn btn-primary">Primary button</a>
+      <a class="btn btn-secondary">Secondary button</a>
+      <a class="btn btn-outline">Outlined button</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <a class="btn btn-primary btn-noarrow">Primary no arrow</a>
+      <a class="btn btn-secondary btn-noarrow">Secondary no arrow</a>
+      <a class="btn btn-outline btn-noarrow">Outlined no arrow</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <a class="btn btn-primary btn-noarrow btn-small">Primary small</a>
+      <a class="btn btn-secondary btn-noarrow btn-small">Secondary small</a>
+      <a class="btn btn-outline btn-noarrow btn-small">Outlined small</a>
+    </div>
+  </div>
 </div>
 <a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#buttonsButtonText" aria-expanded="false" aria-controls="buttonsButtonText">
 Show code
 </a>
 <div class="collapse exampleCode" id="buttonsButtonText">
-    <pre>
-        <code class="line-numbers language-markup">
-        &lt;blockquote>
-            &lt;span class="open-quote">&lt;/span>
-            &lt;p>I had the opportunity to work with a number of partners on this project and engaged with a number of senior managers across the authority.&lt;/p>
-            &lt;footer class="blockquote-footer">
-                &lt;cite title="Source Title">Headteacher - Calverley Church of England Primary School&lt;/cite>
-            &lt;/footer>
-        &lt;/blockquote>
-        </code>
-    </pre>
-</div>
-<hr>
-  <h2 class="heading-medium" id="button-start-now">Start now button</h2>
-  <p class="text">
-    Launch your service with a Start now button.
-  </p>
-
-<div class="example">
-  <a class="button button-start" href="#" role="button">Start now</a>
-</div>
-<a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#buttonsButtonStartNowCode" aria-expanded="false" aria-controls="buttonsButtonStartNowCode">
-Show code
-</a>
-<div class="collapse exampleCode" id="buttonsButtonStartNowCode">
     <pre>
         <code class="line-numbers language-markup">
         &lt;blockquote>
@@ -97,36 +92,10 @@ Show code
         <input type="text" class="form-control" id="form-email-address-1">
       </div>
       <div class="form-group">
-        <button class="button">Save and continue</button>
+        <button class="btn btn-primary">Save and continue</button>
       </div>
     </form>
   </div>
-  <h2 class="heading-medium" id="button-disabled">Disabled buttons</h2>
-  <ul class="list list-bullet text">
-    <li>don’t disable buttons, unless there’s a good reason to</li>
-    <li>if you have to disable buttons, make sure they look like you can’t click them (use 50% opacity)</li>
-    <li>an example of a useful disabled option is a calendar with greyed out days where no bookings are available</li>
-    <li>provide another way for the user to continue, add an error message or text to explain why the button is disabled</li>
-  </ul>
-<div class="example">
-  <button class="button" disabled="disabled">Disabled primary button</button>
-</div>
-<a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#buttonsDisabledPrimaryButtonCode" aria-expanded="false" aria-controls="buttonsDisabledPrimaryButtonCode">
-Show code
-</a>
-<div class="collapse exampleCode" id="buttonsDisabledPrimaryButtonCode">
-    <pre>
-        <code class="line-numbers language-markup">
-        &lt;blockquote>
-            &lt;span class="open-quote">&lt;/span>
-            &lt;p>I had the opportunity to work with a number of partners on this project and engaged with a number of senior managers across the authority.&lt;/p>
-            &lt;footer class="blockquote-footer">
-                &lt;cite title="Source Title">Headteacher - Calverley Church of England Primary School&lt;/cite>
-            &lt;/footer>
-        &lt;/blockquote>
-        </code>
-    </pre>
-</div>
 <hr>
 <h2 class="heading-medium" id="creating-buttons">Creating buttons</h2>
   <p class="text">
@@ -137,7 +106,7 @@ Show code
     <div class="grid-row">
       <div class="column-one-third">
 
-        <button class="button">Save and continue</button>
+        <button class="btn btn-primary">Save and continue</button>
 
       </div>
       <div class="column-one-third">
@@ -184,7 +153,6 @@ Show code
     <h3 class="heading-xsmall heading-contents">Contents:</h2>
     <ul class="list list-contents">
         <li><a href="#button-text">Button text</a></li>
-        <li><a href="#button-start-now">Start now button</a></li>
         <li><a href="#button-alignment">Button alignment</a></li>
         <li><a href="#button-disabled">Disabled buttons</a></li>
         <li><a href="#creating-buttons">Creating buttons</a></li>

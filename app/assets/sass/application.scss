@@ -12,7 +12,7 @@
 $blue:#016D9E;
 $dark-blue: darken(#016D9E, 20%);
 $light-blue: lighten(#016D9E, 20%);
-$green:#53A762;
+$green:#008000;
 $black:#212224;
 $light-black:#3D414A;
 $dark-grey:#666B76;
@@ -131,11 +131,19 @@ $promo-secondary-color:$black;
 $promo-highlight-background-color:lighten($blue, 15%);
 $promo-highlight-color:$white;
 $promo-feature-background-color:$blue;
-$promo-feature-arrow-color:$grey;
+$promo-feature-arrow-color:$white;
 $promo-feature-header-color:$white;
 $promo-feature-secondary-color:$white;
 $promo-feature-highlight-background-color:lighten($blue, 15%);
 $promo-feature-highlight-color:$white;
+
+//button colours
+$primary-button-background-color:$green;
+$primary-button-color:$white;
+$secondary-button-background-color:$blue;
+$secondary-button-color:$white;
+$outline-button-border-color:$blue;
+$outline-button-color:$blue;
 
 @import 'mixins';
 @import 'variables';
@@ -169,6 +177,7 @@ $promo-feature-highlight-color:$white;
 @import 'blockQuote';
 
 //custom style added by DH - needs to filed properly
+@import 'forms';
 @import 'buttons';
 @import 'mega-promo';
 @import 'hero-lcc';
