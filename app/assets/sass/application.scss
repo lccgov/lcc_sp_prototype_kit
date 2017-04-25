@@ -124,18 +124,12 @@ $news-pod-border-color:#ddd;
 //$highlighted-alt-font-color:#333 !default;
 
 //mega-promo
-$promo-background-color:$white;
-$promo-arrow-color:$light-grey;
-$promo-header-color:$blue;
-$promo-secondary-color:$black;
-$promo-highlight-background-color:lighten($blue, 15%);
-$promo-highlight-color:$white;
-$promo-feature-background-color:$blue;
-$promo-feature-arrow-color:$white;
-$promo-feature-header-color:$white;
-$promo-feature-secondary-color:$white;
-$promo-feature-highlight-background-color:lighten($blue, 15%);
-$promo-feature-highlight-color:$white;
+$promo-background-color:#3D414A;
+$promo-arrow-color:#fff;
+$promo-header-color:#fff;
+$promo-secondary-color:#fff;
+$promo-highlight-background-color:lighten(#3D414A, 15%);
+$promo-highlight-color:#fff;
 
 //button colours
 $primary-button-background-color:$green;
@@ -177,12 +171,17 @@ $outline-button-color:$blue;
 @import 'blockQuote';
 
 //custom style added by DH - needs to filed properly
+@import 'group-promo-lcc';
 @import 'forms';
 @import 'sub-section-nav';
 @import 'buttons';
 @import 'mega-promo';
 @import 'hero-lcc';
 @import 'prism';
-@import 'typography-gds';
-@import 'swatch-gds';
-@import 'style-guide';
+@import 'typography-lcc';
+@import 'swatch-lcc';
+@import 'code-example';
+@import 'sticky';
+@import 'accessibility';
+@import 'footer-lcc';
+@import 'lcc-digital';

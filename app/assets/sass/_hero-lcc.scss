@@ -86,7 +86,7 @@
 
             .hero-lcc__actions{
                 background:rgba(38,50,56,0.25);
-                border-radius:4px;
+                @include border-radius(4px);
                 padding:10px;
 
                 .hero-lcc__search-wrapper{
@@ -239,7 +239,7 @@
                 }
 
                 @media (max-width: 767px) {
-                    padding:10px 10px 5px;
+                    padding:5px 5px 0px;
 
                     .hero-lcc__most-popular{
                         margin:0;

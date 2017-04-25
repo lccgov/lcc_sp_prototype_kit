@@ -27,6 +27,13 @@
             position:relative;
             text-decoration:none;
 
+            &:focus{
+                .mega-promo__header,
+                .mega-promo__secondary{
+                    color:$black !important;
+                }
+            }
+
             &:after {
                 font-family: FontAwesome;
                 content: "\f054";
@@ -86,19 +93,7 @@
 
                 @media (max-width: 500px) {
                     position:relative;
-                    padding:15px 40px 15px 15px;
-
-                    &:after{
-                        font-family: FontAwesome;
-                        content: "\f054";
-                        position: absolute;
-                        bottom: auto;
-                        top: 50%;
-                        right:15px;
-                        margin-top:-9px;
-                        font-size:18px;
-                        color:$promo-arrow-color;
-                    }
+                    padding:15px;
                 }
 
                 .mega-promo__header{
@@ -143,44 +138,12 @@
         &.featured{
             width:100% !important;
 
-            a{
-                background:$promo-feature-background-color;
-
-                &:hover{
-                    background:darken($promo-feature-background-color,5%);
-                }
-
-                &:after{
-                        color:$promo-feature-arrow-color;
-                    }
-
-                .mega-promo__content{
-
-                    &:after{
-                        color:$promo-feature-arrow-color;
-                    }
-
-                    .mega-promo__header{
-                        color:$promo-feature-header-color;
-                    }
-
-                    .mega-promo__secondary{
-                        color:$promo-feature-secondary-color;
-                    }
-
-                    .mega-promo__highlight{
-                        color:$promo-feature-highlight-color;
-                        background:$promo-feature-highlight-background-color;
-                    }
-                }
-            }
-
             @media (min-width: 500px) {
                 .mega-promo__header{
                     font-size:32px !important;
                     line-height:36px !important;
                     margin-bottom:10px !important;
-                    color:$promo-feature-header-color;
+                    color:$promo-header-color;
                 }
 
                 .mega-promo__highlight{
@@ -291,6 +254,88 @@
                     }
                 }
             }
+        }
+
+        &.no-img{
+            &.third,
+            &.quarter {
+                a{
+                    padding-bottom:0 !important;
+                }
+            }
+
+            a{
+                &:after{
+                    display:none;
+                }
+            }
+
+            .mega-promo__img-wrapper{
+                display:none;
+            }
+
+            .mega-promo__header{
+                font-size:32px !important;
+                line-height:36px !important;
+
+                @media (max-width: 500px) {
+                    font-size:24px !important;
+                    line-height:30px !important;
+                }
+            }
+            .mega-promo__highlight{
+                position:relative;
+                top:auto;
+                right:auto;
+                padding:10px;
+                display:inline-block;
+                margin:-5px 0 20px 20px;
+            }
+        }
+    }
+}
+
+//colors
+@mixin mega-promo-colors($promo-background-color, $promo-header-color, $promo-secondary-color, $promo-arrow-color, $promo-highlight-background-color, $promo-highlight-color) {
+    a{
+        background:$promo-background-color;
+
+        &:after {
+            color:$promo-arrow-color;
+        }
+
+        &:hover{
+            background:darken($promo-background-color, 5%);
+        }
+
+        .mega-promo__content{
+
+            @media (max-width: 500px) {
+                &:after{
+                    color:$promo-arrow-color;
+                }
+            }
+
+            .mega-promo__header{
+                color:$promo-header-color;
+            }
+
+            .mega-promo__secondary{
+                color:$promo-secondary-color;
+            }
+        }
+
+        .mega-promo__highlight{
+            background:$promo-highlight-background-color;
+            color:$promo-highlight-color;
+        }
+    }
+}
+
+.mega-promo{
+    .mega-promo__item{
+         &.blue{
+            @include mega-promo-colors($blue, $white, $white, $white, $promo-highlight-background-color, $promo-highlight-color);
         }
     }
 }

@@ -2,32 +2,64 @@
     font-weight:600;
     font-size:19px;
     border:0;
+    @include border-radius(4px);
     white-space: normal;
     border:1px solid $grey;
     box-shadow:none;
     margin-top: 0.2631578947em;
     margin-bottom: 1.0526315789em;
+    text-decoration:none!important;
+    padding:15px 20px;
+    text-align:left;
+
+    @media (max-width: 767px) {
+        padding:10px 15px;
+        font-size:16px;
+    }
+
+    &:after{
+      display:none;
+    }
 
     &:focus{
         background:$yellow;
         color:$black;
     }
 
-    &:after{
-        font-family: FontAwesome;
-        content: "\f105";
-        position: absolute;
-        right: 0px;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.1);
-        padding: 0 13px !important;
-        top: 0px;
-        font-size: 22px;
-        content: "\f105";
-        padding: 0 13px;
-        text-align: center;
-        line-height:54px;
+    &.btn-arrow{
+        padding-right:50px;
+
+        &:after{
+            display:block;
+            font-family: FontAwesome;
+            content: "\f105";
+            position: absolute;
+            right: 0px;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.1);
+            padding: 0 13px !important;
+            top: 0px;
+            font-size: 22px;
+            content: "\f105";
+            padding: 0 13px;
+            text-align: center;
+            line-height:54px;
+
+            @media (max-width: 767px) {
+                line-height:42px;
+            }
+        }
     }
+
+    &.btn-small{
+        font-size:16px;
+        padding:10px;
+
+        @media (max-width: 767px) {
+            font-size:14px;
+        }
+    }
+
 }
 
 .btn-default{
@@ -55,6 +87,7 @@
 .btn-secondary{
     background-color:$secondary-button-background-color;
     color:$secondary-button-color;
+    border-color:$secondary-button-background-color;
 
     &:hover{
         background:darken($secondary-button-background-color, 5%);
@@ -76,4 +109,5 @@
     &:after{
         background: rgba(0, 0, 0, 0.05);
     }
+
 }
