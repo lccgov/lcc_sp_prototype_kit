@@ -151,6 +151,11 @@
                 }
             }
 
+            @media (max-width: 600px) {
+                margin-left:-15px;
+                margin-right:-15px;
+            }
+
             @media (min-width: 767px) {
                 .mega-promo__header{
                     font-size:40px !important;

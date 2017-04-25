@@ -11,6 +11,9 @@
 }
 
 //logo
+.header-left{
+  padding:0;
+}
 .logo {
     height: auto;
     width: auto;
@@ -51,6 +54,11 @@
     padding: 0 0 20px;
     margin: 10px 0 0;
     font-size: 16px;
+
+    @media (max-width: 600px) {
+        padding: 0 0 10px;
+        font-size: 14px;
+    }
 
         a{
           position:relative;
