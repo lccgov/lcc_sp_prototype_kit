@@ -24,8 +24,13 @@ The steps to create a new prototype from this repo are as follows:
     ```bash 
     git remote add origin https://github.com/lccgov/<GitHub repo> 
     ```
-5. Create a new app in [Heroku](https://heroku.com/) with the same name as the repo.  Also, add config variables for username and password so that the general public are unable to access it and to prevent Google from crawling the site.
-6. Update the .travis.yml file with the new Heroku app name and API key.  The API key must be encrypted using the [Travis CLI](https://docs.travis-ci.com/user/encryption-keys/) as it is being source controlled on GitHub publically.  More information can be found on the [lcc_designer_setup_documentation repo](https://github.com/lccgov/lcc_designer_setup_documentation).
+5. Create a new app in [Heroku](https://heroku.com/) with the same name as the repo.  Also, add config variables for username and password so that the general public are unable to access it and to prevent Google from crawling the site. N.B. The USERNAME and PASSWORD keys need to be UPPERCASE!
+6. Update the .travis.yml file with the new Heroku app name and API key.  The API key must be encrypted using the [Travis CLI](https://docs.travis-ci.com/user/encryption-keys/) as it is being source controlled on GitHub publically.  The API Key can be found under Account Settings > API Key (scroll down) on the Heroku site. Open a the command line window inside your project directory run the following command (You may to have disconnect from the corporate network to run this) 
+
+    ``` bash
+    travis encrypt <api key> --add deploy.api_key 
+    ```
+    More information can be found on the [lcc_designer_setup_documentation repo](https://github.com/lccgov/lcc_designer_setup_documentation).
 7. Log onto [Travis CI](https://travis-ci.org/profile/lccgov) and toggle the new repository so that Travis CI is aware when a push has taken place to that GitHub repository.
 8. Perform an initial commit and push to GitHub, which will kick of a Travis CI build which will deploy the site to Heroku accessible at [appname].herokuapp.com.
 
