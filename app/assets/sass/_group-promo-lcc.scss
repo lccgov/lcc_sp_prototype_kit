@@ -36,7 +36,8 @@ ul.promo-group{
             text-decoration:none !important;
             height:100%;
 
-            &:hover{
+            &:hover,
+            &:active{
                 background:$blue !important;
 
                 h3,
