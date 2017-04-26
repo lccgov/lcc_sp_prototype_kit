@@ -1,9 +1,7 @@
 .sub-section-nav{
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
     margin:0 0 0 -50px;
     width:auto;
     padding:30px 0;

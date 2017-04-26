@@ -467,6 +467,7 @@ h5{
 a {
     color: $base-link-color;
     text-decoration: underline;
+    cursor:pointer;
 
     &:hover{
          color:darken($base-link-color, 15%);

@@ -3,11 +3,9 @@ ul.promo-group{
 
   &.lcc {
     background: transparent;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
     margin:10px 0 30px -6px;
     width:auto;
     border:0;

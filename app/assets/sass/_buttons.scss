@@ -27,7 +27,19 @@
     }
 
     &.btn-arrow{
-        padding-right:50px;
+        padding-right:60px;
+
+        &:before{
+            height:100%;
+            width:36px;
+            position:absolute;
+            background: rgba(0, 0, 0, 0.1);
+            right: 0px;
+            top: 0px;
+            z-index:5;
+            display:block;
+            content:"";
+        }
 
         &:after{
             display:block;
@@ -35,19 +47,20 @@
             content: "\f105";
             position: absolute;
             right: 0px;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.1);
-            padding: 0 13px !important;
-            top: 0px;
+            height: auto;
+            background: transparent;
+            padding: 0;
+            top: 50%;
             font-size: 22px;
             content: "\f105";
-            padding: 0 13px;
+            padding: 0;
             text-align: center;
-            line-height:54px;
+            line-height:0;
+            width:36px;
+        }
 
-            @media (max-width: 767px) {
-                line-height:42px;
-            }
+        @media (max-width: 767px) {
+            padding-right:50px;
         }
     }
 
