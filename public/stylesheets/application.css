@@ -3292,10 +3292,10 @@ h5 {
   font-weight: 300; }
 
 .text-highlight {
-  border-left: 10px solid #DCDEE1;
-  padding: 15px;
+  border-left: 15px solid #DCDEE1;
+  padding: 20px;
   width: 100%;
-  margin-bottom: 20px; }
+  margin: 30px 0; }
   .text-highlight p {
     margin: 0; }
   .text-highlight.text-highlight--blue {
@@ -3306,7 +3306,8 @@ h5 {
     background: rgba(0, 128, 0, 0.1); }
 
 .notice {
-  position: relative; }
+  position: relative;
+  margin: 30px 0; }
   .notice i {
     position: absolute;
     left: 0;
@@ -3344,8 +3345,7 @@ ol {
 
 .list-bullet {
   list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 45px; }
+  padding-left: 20px; }
 
 .list-number {
   list-style-type: decimal;
@@ -3536,7 +3536,8 @@ ol {
   padding-top: 30px;
   padding-right: 15px;
   padding-bottom: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  margin-top: 45px; }
   @media (min-width: 641px) {
     .example {
       padding-top: 45px;
@@ -3686,7 +3687,7 @@ footer.main .socialBookmarks ul li:first-of-type {
   text-decoration: none; }
 
 .breadcrumb {
-  padding: 0 0 20px;
+  padding: 0 0 10px;
   margin: 10px 0 0;
   font-size: 16px; }
   @media (max-width: 600px) {

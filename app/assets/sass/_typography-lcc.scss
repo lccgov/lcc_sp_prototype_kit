@@ -424,10 +424,10 @@ h5{
 }
 
 .text-highlight{
-  border-left: 10px solid $border-grey;
-  padding:15px;
+  border-left: 15px solid $border-grey;
+  padding:20px;
   width:100%;
-  margin-bottom:20px;
+  margin:30px 0;
 
   p{
     margin:0;
@@ -447,6 +447,7 @@ h5{
 //typography - notice
 .notice{
   position:relative;
+  margin:30px 0;
 
   i{
     position: absolute;
@@ -502,8 +503,8 @@ ol {
 .list-bullet {
   list-style-type: disc;
   padding-left: 20px;
-  margin-bottom: 45px;
 }
+
 
 .list-number {
   list-style-type: decimal;
