@@ -6,6 +6,8 @@
 
 
   {% block css_register %}
+  <script src="https://use.typekit.net/pws7qio.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
          <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
    {% endblock %}
 
@@ -22,12 +24,11 @@
 
  {% block sectionOneTop %}
  <div class="highlighted alt alignCenter section">
-        <p>WELCOME TO</p>
-  
+    <p>WELCOME TO</p>
     <em>LCC DIGITAL</em>
     <p><strong>DESIGN PATTERNS</strong></p>
     <P>Here you will find all our patterns and features available to all LCC DIGITAL sites and applications</P><br/>
-    <a class="btn" href="/design-patterns-pages/design-patterns.html">FIND OUT MORE</a>
+    <a class="btn btn-default" href="/design-patterns-pages/styleguide.html">FIND OUT MORE</a>
 </div>
 {% endblock %} 
 
@@ -151,7 +152,6 @@
  {% endblock %}
 
   {% block footer_nav %}
-   {% include "includes/footer_nav.html" %}
  {% endblock %}
 
  {% block reuserblecontent_footer %}

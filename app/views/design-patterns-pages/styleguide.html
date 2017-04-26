@@ -1,18 +1,20 @@
 {% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
-	Accordion
+	LEEDS.GOV.UK - Style guides
 {% endblock %}
 
 
   {% block css_register %}
+  <script src="https://use.typekit.net/pws7qio.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
          <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
    {% endblock %}
 
  
 
 {% block header %}
-Accordion
+  Styleguide
 {% endblock %}
 
  {% block main_nav %}
@@ -29,7 +31,6 @@ Accordion
 
 
  {% block breadcrumb %}
-  {% include "includes/breadcrumb_sp.html" %}
  {% endblock %}
 
 {% block sectionOneContent %}
@@ -39,9 +40,15 @@ Accordion
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-<p class="lead">Accordion can be used on any page</p>
+  <div class="text">
+    <p class="lead">This guide shows how to add content to LEEDS.GOV.UK.</p>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      {% include "includes/design-patterns/styleguide-nav-accordion.html" %}
+    </div>
+  </div>
 {% endblock %}
-
 
 {% block sectionOneRightHandColumn %}
 {% endblock %}
@@ -82,8 +89,6 @@ Accordion
 {% endblock %} 
 
 {% block sectionThreeFull%}
-<hr class="ms-rteElement-spacer" />
-  {% include "includes/design-patterns/accordion.html" %}
 {% endblock %}
 
 {% block sectionThreeContent %}
@@ -149,7 +154,6 @@ Accordion
  {% endblock %}
 
   {% block footer_nav %}
-   {% include "includes/footer_nav.html" %}
  {% endblock %}
 
   {% block reuserblecontent_footer %}

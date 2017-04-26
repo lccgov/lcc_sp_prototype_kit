@@ -1,0 +1,270 @@
+{% extends "layout_multi_sections.html" %}
+
+{% block page_title %}
+	Colour
+{% endblock %}
+
+
+  {% block css_register %}
+  <script src="https://use.typekit.net/pws7qio.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+    Colour
+{% endblock %}
+
+ {% block main_nav %}
+  {% include "includes/main_nav.html" %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
+ {% endblock %}
+
+{% block sectionOneContent %}
+{% endblock %}
+
+{% block pageContent %}
+<div class="text">
+    <p class="lead">Always use the LEEDS.GOV.UK colour palette.</p>
+</div>
+<h2 class="heading-medium" id="colour-contrast">Colour contrast</h2>
+<p class="text">The colour contrast ratio for text and interactive elements should be at least 4.5:1 <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" rel="external">as recommended by the W3C</a>. Test your service to meet this standard.</p>
+<hr>
+<h2 class="heading-medium" id="colour-sass-variables">Sass variables</h2>
+<p class="text">Use Sass variables in case colour values need to be updated – find these in the GOV.UK frontend toolkit <a href="https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_colours.scss" rel="external">colours.scss</a> file.</p>
+<div class="example">
+
+<div class="swatch-wrapper">
+    <h4 class="heading-small">Text</h4>
+
+    <div class="swatch swatch-text-colour"></div>
+    <ul>
+    <li><b>#0B0C0C</b></li>
+    <li>$text-colour</li>
+    </ul>
+
+    <div class="swatch swatch-text-secondary"></div>
+    <ul>
+    <li><b>#6F777B</b></li>
+    <li>$secondary-text-colour</li>
+    </ul>
+
+    <div class="swatch swatch-page-colour"></div>
+
+    <ul>
+    <li><b>#FFFFFF</b></li>
+    <li>$page-colour</li>
+    </ul>
+</div>
+
+<div class="swatch-wrapper">
+    <h4 class="heading-small">Links</h4>
+
+    <div class="swatch swatch-link-colour"></div>
+    <ul>
+    <li><b>#005ea5</b></li>
+    <li>$link-colour</li>
+    </ul>
+
+    <div class="swatch swatch-link-colour-hover"></div>
+    <ul>
+    <li><b>#2b8cc4</b></li>
+    <li>$link-hover-colour</li>
+    </ul>
+
+    <div class="swatch swatch-link-colour-visited"></div>
+    <ul>
+    <li><b>#4c2c92</b></li>
+    <li>$link-visited-colour</li>
+    </ul>
+</div>
+
+<div class="swatch-wrapper">
+    <h4 class="heading-small">Backgrounds</h4>
+
+    <div class="swatch swatch-border-colour"></div>
+    <ul>
+    <li><b>#BFC1C3</b></li>
+    <li>$border-colour</li>
+    </ul>
+
+    <div class="swatch swatch-panel-colour"></div>
+    <ul>
+    <li><b>#DEE0E2</b></li>
+    <li>$panel-colour</li>
+    </ul>
+
+    <div class="swatch swatch-highlight-colour"></div>
+    <ul>
+    <li><b>#F8F8F8</b></li>
+    <li>$highlight-colour</li>
+    </ul>
+</div>
+
+<div class="swatch-wrapper">
+    <h4 class="heading-small">Buttons</h4>
+
+    <div class="swatch swatch-button-colour"></div>
+    <ul>
+    <li><b>#00823B</b></li>
+    <li>$button-colour</li>
+    </ul>
+
+    <div class="swatch swatch-green"></div>
+    <ul>
+    <li><b>#006435</b></li>
+    <li>$green (hover colour)</li>
+    </ul>
+</div>
+
+<div class="swatch-wrapper">
+    <h4 class="heading-small">Focus</h4>
+    <div class="swatch swatch-yellow"></div>
+    <ul>
+    <li><b>#FFBF47</b></li>
+    <li>$focus-colour</li>
+    </ul>
+</div>
+
+</div>
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+<div id="sticky-anchor"></div>
+<div id="sticky">
+    <h2 class="heading-xsmall heading-contents">Contents:</h2>
+    <ul class="list list-contents">
+        <li><a href="#colour-contrast">Colour contrast</a></li>
+        <li><a href="#colour-sass-variables">Sass variables</a></li>
+        <li><a href="#colour-status-colours">Status colours</a></li>
+        <li><a href="#colour-greyscale-palette">Greyscale palette</a></li>
+        <li><a href="#colour-extended-palette">Extended palette</a></li>
+        <li><a href="#examples">Examples</a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+    {% include "includes/re-userble-content-footer.html" %}
+ {% endblock %}

@@ -1,0 +1,208 @@
+{% extends "layout_multi_sections.html" %}
+
+{% block page_title %}
+	Buttons
+{% endblock %}
+
+
+  {% block css_register %}
+  <script src="https://use.typekit.net/pws7qio.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+Buttons
+{% endblock %}
+
+ {% block main_nav %}
+  {% include "includes/main_nav.html" %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
+ {% endblock %}
+
+{% block sectionOneContent %}
+{% endblock %}
+
+{% block pageContent %}
+<div class="text">
+    <p class="lead">Use buttons to move though a transaction, aim to use only one button per page.</p>
+</div>
+<h2 class="heading-medium" id="button-text">Button text</h2>
+<p class="text">Button text should be short and describe the action the button performs.</p>
+<div class="example">
+  <div class="row">
+    <div class="col-lg-12">
+      <a class="btn btn-primary">Primary button</a>
+      <a class="btn btn-secondary">Secondary button</a>
+      <a class="btn btn-outline">Outlined button</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <a class="btn btn-primary btn-arrow">Primary arrow</a>
+      <a class="btn btn-secondary btn-arrow">Secondary arrow</a>
+      <a class="btn btn-outline btn-arrow">Outlined arrow</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <a class="btn btn-primary btn-small">Primary small</a>
+      <a class="btn btn-secondary btn-small">Secondary small</a>
+      <a class="btn btn-outline btn-small">Outlined small</a>
+    </div>
+  </div>
+</div>
+<a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#buttonsButtonText" aria-expanded="false" aria-controls="buttonsButtonText">
+Show code
+</a>
+<div class="collapse exampleCode" id="buttonsButtonText">
+    <pre>
+        <code class="line-numbers language-markup">
+          &lt;a class="btn btn-primary">Primary button&lt;/a>
+          &lt;a class="btn btn-secondary">Secondary button&lt;/a>
+          &lt;a class="btn btn-outline">Outlined button&lt;/a>
+          &lt;a class="btn btn-primary btn-arrow">Primary no arrow&lt;/a>
+          &lt;a class="btn btn-secondary btn-arrow">Secondary no arrow&lt;/a>
+          &lt;a class="btn btn-outline btn-arrow">Outlined no arrow&lt;/a>
+          &lt;a class="btn btn-primary btn-small">Primary small&lt;/a>
+          &lt;a class="btn btn-secondary btn-small">Secondary small&lt;/a>
+          &lt;a class="btn btn-outline btn-small">Outlined small&lt;/a>
+        </code>
+    </pre>
+</div>
+<hr>
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+<div id="sticky-anchor"></div>
+<div id="sticky" class="secondary-nav">
+    <h3 class="heading-xsmall heading-contents">Contents:</h2>
+    <ul class="list list-contents">
+        <li><a href="#button-text">Button text</a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+     {% include "includes/re-userble-content-footer.html" %}
+ {% endblock %}

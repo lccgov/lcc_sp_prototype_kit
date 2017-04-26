@@ -1,0 +1,460 @@
+{% extends "layout_multi_sections.html" %}
+
+{% block page_title %}
+	Typography
+{% endblock %}
+
+
+  {% block css_register %}
+  <script src="https://use.typekit.net/pws7qio.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+Typography
+{% endblock %}
+
+ {% block main_nav %}
+  {% include "includes/main_nav.html" %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
+ {% endblock %}
+
+{% block sectionOneContent %}
+{% endblock %}
+
+{% block pageContent %}
+<div class="text">
+    <p class="lead">For Leeds.gov.uk domains, always use the Proxima Nova Website font in Regular, SemiBold and Bold.</p>
+</div>
+<div class="text">
+    <h2 class="heading-medium" id="typography-headings">Headings</h2>
+    <ul class="list list-bullet text">
+        <li>use Proxima Nova Bold</li>
+        <li>use sentence case for headings</li>
+        <li>use headings consistently to create a clear hierarchy</li>
+    </ul>
+</div>
+<div class="example">
+    <h1 class="heading-xlarge">A 50px bold xlarge heading</h1>
+    <h2 class="heading-large">A 32px bold large heading</h2>
+    <h3 class="heading-medium">A 24px bold medium heading</h3>
+    <h4 class="heading-small">A 21px bold small heading</h4>
+    <h5 class="heading-xsmall">A 19px bold xsmall heading</h4>
+</div>
+<a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#typographyHeadingsCode" aria-expanded="false" aria-controls="typographyHeadingsCode">
+Show code
+</a>
+<div class="collapse exampleCode" id="typographyHeadingsCode">
+    <pre>
+        <code class="line-numbers language-markup">
+            &lt;h1 class="heading-xlarge">A 50px bold xlarge heading&lt;/h1>
+
+            &lt;h2 class="heading-large">A 32px bold large heading&lt;/h2>
+
+            &lt;h3 class="heading-medium">A 24px bold medium heading&lt;/h3>
+
+            &lt;h4 class="heading-small">A 21px bold small heading&lt;/h4>
+
+            &lt;h5 class="heading-xsmall">A 19px bold xsmall heading&lt;/h5>
+        </code>
+    </pre>
+</div>
+<hr>
+<div class="text">
+<h2 class="heading-medium" id="typography-lead-paragraph">
+    Lead paragraph
+</h2>
+
+<ul class="list list-bullet">
+    <li>use 24px for a lead paragraph</li>
+    <li>there should only be one lead paragraph per page</li>
+</ul>
+</div>
+<div class="example">
+<div class="text">
+    <p class="lead">A 24px</em> lead paragraph, maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    <p>A 19px</em> body copy paragraph, maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+</div>
+</div>
+<a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#typographyLeadParagraphCode" aria-expanded="false" aria-controls="typographyLeadParagraphCode">
+Show code
+</a>
+<div class="collapse exampleCode" id="typographyLeadParagraphCode">
+    <pre>
+        <code class="line-numbers language-markup">
+            &lt;p class="lead">A 24px lead paragraph, maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/p>
+            
+            &lt;p>A 19px body copy paragraph, maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/p>
+        </code>
+    </pre>
+</div>
+<hr>
+<div class="text">
+<h2 class="heading-medium" id="typography-body-copy">Body copy</h2>
+<ul class="list list-bullet text">
+    <li>use Proxima Nova Regular</li>
+    <li>avoid using bold and italics</li>
+    <li>use 19px for body copy – 16px for smaller screens</li>
+    <li>use smaller sizes only if there’s a user need (eg 16px, 14px, 12px)</li>
+    <li>make sure lines of text don’t exceed 75 characters, as they become harder to read beyond that point</li>
+</ul>
+</div>
+<div class="example">
+<div class="text">
+    <p>A 19px body copy paragraph. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p class="font-xsmall">A 16px supporting text paragraph. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.</p>
+</div>
+</div>
+<a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#typographyBodyCopyCode" aria-expanded="false" aria-controls="typographyBodyCopyCode">
+Show code
+</a>
+<div class="collapse exampleCode" id="typographyBodyCopyCode">
+    <pre>
+        <code class="line-numbers language-markup">
+            &lt;div class="text">
+                &lt;p>A 19px body copy paragraph. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.&lt;/p>
+            
+                &lt;p class="font-xsmall">A 16px supporting text paragraph. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.&lt;/p>
+            &lt;div>
+        </code>
+    </pre>
+</div>
+<hr>
+<div class="text">
+<h2 class="heading-medium" id="typography-links">Links</h2>
+<ul class="list list-bullet text">
+    <li>links within body copy should be blue and underlined</li>
+    <li>links without surrounding text should not have a full stop at the end</li>
+    <li>link colours can be found in the <a href="/colour">colour palette</a></li>
+</ul>
+</div>
+<div class="example">
+    <div class="text">
+        <p><a href="#">A 19px link without surrounding text</a></p>
+        <p><a href="#">A 19px body copy link</a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p>A 19px body copy <a href="#" rel="external">external link</a>. Fusce dapibus, tellus ac cursus commodo.</p>
+        <a href="#" class="link-back">Back</a>
+    </div>
+</div>
+<a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#typographyLinksCode" aria-expanded="false" aria-controls="typographyLinksCode">Show code</a>
+<div class="collapse exampleCode" id="typographyLinksCode">
+    <pre>
+        <code class="line-numbers language-markup">
+            &lt;p>&lt;a href="#">A 19px link without surrounding text&lt;/a>&lt;/p>
+            
+            &lt;p>&lt;a href="#">A 19px body copy link&lt;/a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p>
+
+            &lt;p>A 19px body copy &lt;a href="#" rel="external">external link&lt;/a>. Fusce dapibus, tellus ac cursus commodo.&lt;/p>
+            
+            &lt;a href="#" class="link-back">Back&lt;/a>
+        </code>
+    </pre>
+</div>
+<hr>
+<div class="text">
+<h2 class="heading-medium" id="typography-lists">Lists</h2>
+<p class="text">
+    List items start with a lowercase letter and have no full stop at the end.
+</p>
+</div>
+<div class="example">
+    <ul class="list list-bullet">
+        <li>here is a bulleted list</li>
+        <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
+        <li>vestibulum id ligula porta felis euismod semper</li>
+        <li>integer posuere erat a ante venenatis dapibus posuere velit aliquet</li>
+    </ul>
+
+    <ol class="list list-number">
+        <li>here is a numbered list</li>
+        <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
+        <li>vestibulum id ligula porta felis euismod semper</li>
+        <li>integer posuere erat a ante venenatis dapibus posuere velit aliquet</li>
+    </ol>
+
+    <ul class="list">
+        <li><a href="#">Related link</a></li>
+        <li><a href="#">Related link</a></li>
+        <li><a href="#">Related link</a></li>
+        <li><a href="#" class="bold-xsmall">More</a></li>
+    </ul>
+</div>
+<a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#typographyListsCode" aria-expanded="false" aria-controls="typographyListsCode">
+Show code
+</a>
+<div class="collapse exampleCode" id="typographyListsCode">
+    <pre>
+        <code class="line-numbers language-markup">
+            &lt;ul class="list list-bullet">
+                &lt;li>here is a bulleted list&lt;/li>
+                &lt;li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor&lt;/li>
+                &lt;li>vestibulum id ligula porta felis euismod semper&lt;/li>
+                &lt;li>integer posuere erat a ante venenatis dapibus posuere velit aliquet&lt;/li>
+            &lt;/ul>
+
+            &lt;ol class="list list-number">
+                &lt;li>here is a numbered list&lt;/li>
+                &lt;li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor&lt;/li>
+                &lt;li>vestibulum id ligula porta felis euismod semper&lt;/li>
+                &lt;li>integer posuere erat a ante venenatis dapibus posuere velit aliquet&lt;/li>
+            &lt;/ol>
+
+            &lt;ul class="list">
+                &lt;li>&lt;a href="#">Related link&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Related link&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Related link&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#" class="bold-xsmall">More&lt;/a>&lt;/li>
+            &lt;/ul>
+        </code>
+    </pre>
+</div>
+<hr>
+<div class="text">
+    <h2 class="heading-medium" id="typography-inset-text">Inset text</h2>
+    <p class="text">
+        Use bordered inset text to draw attention to important content on the page.
+    </p>
+</div>
+<div class="example">
+    <div class="text">
+        <div class="text-highlight">
+            <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
+        </div>
+        <div class="text-highlight text-highlight--blue">
+            <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
+        </div>
+        <div class="text-highlight text-highlight--green">
+            <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
+        </div>
+    </div>
+</div>
+<a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#typographyInsetTextCode" aria-expanded="false" aria-controls="typographyInsetTextCode">
+Show code
+</a>
+<div class="collapse exampleCode" id="typographyInsetTextCode">
+    <pre>
+        <code class="line-numbers language-markup">
+        &lt;div class="text-highlight">
+            &lt;p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.&lt;/p>
+        &lt;/div>
+        &lt;div class="text-highlight text-highlight--blue">
+            &lt;p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.&lt;/p>
+        &lt;/div>
+        &lt;div class="text-highlight text-highlight--green">
+            &lt;p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.&lt;/p>
+        &lt;/div>
+        </code>
+    </pre>
+</div>
+<hr>
+<div class="text">
+    <h2 class="heading-medium" id="typography-legal-text">Legal text</h2>
+    <p class="text">
+    Use bold text with an exclamation icon if there are legal consequences - for example, a fine or prison sentence.
+    </p>
+</div>
+<div class="example">
+    <div class="text">
+        <div class="notice">
+            <i class="fa fa-exclamation-triangle" aria-hidden="true">
+                <span class="sr-only">Warning</span>
+            </i>
+            <strong class="bold-small">
+            You can be fined up to £5,000 if you don’t register.
+            </strong>
+        </div>
+    </div>
+</div>
+<a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#typographyLegalTextCode" aria-expanded="false" aria-controls="typographyLegalTextCode">
+Show code
+</a>
+<div class="collapse exampleCode" id="typographyLegalTextCode">
+    <pre>
+        <code class="line-numbers language-markup">
+        &lt;div class="notice">
+            &lt;i class="fa fa-exclamation-triangle" aria-hidden="true">
+                &lt;span class="sr-only">Warning&lt;/span>
+            &lt;/i>
+            &lt;strong class="bold-small">You can be fined up to £5,000 if you don’t register.&lt;/strong>
+        &lt;/div>
+        </code>
+    </pre>
+</div>
+<hr>
+<div class="text">
+    <h3 class="heading-medium" id="typography-blockquote">Blockquote</h3>
+    <p class="text">
+        Use bordered inset text to draw attention to important content on the page.
+    </p>
+</div>
+<div class="example">
+    <blockquote>
+        <span class="open-quote"></span>
+        <p>I had the opportunity to work with a number of partners on this project and engaged with a number of senior managers across the authority.</p>
+        <footer class="blockquote-footer">
+            <cite title="Source Title">Headteacher - Calverley Church of England Primary School</cite>
+        </footer>
+    </blockquote>
+</div>
+<a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#typographyBlockquoteCode" aria-expanded="false" aria-controls="typographyBlockquoteCode">
+Show code
+</a>
+<div class="collapse exampleCode" id="typographyBlockquoteCode">
+    <pre>
+        <code class="line-numbers language-markup">
+        &lt;blockquote>
+            &lt;span class="open-quote">&lt;/span>
+            &lt;p>I had the opportunity to work with a number of partners on this project and engaged with a number of senior managers across the authority.&lt;/p>
+            &lt;footer class="blockquote-footer">
+                &lt;cite title="Source Title">Headteacher - Calverley Church of England Primary School&lt;/cite>
+            &lt;/footer>
+        &lt;/blockquote>
+        </code>
+    </pre>
+</div>
+<hr>
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+<div id="sticky-anchor"></div>
+<div id="sticky" class="secondary-nav">
+    <h3 class="heading-xsmall heading-contents">Contents:</h2>
+    <ul class="list list-contents">
+        <li><a href="#typography-headings">Headings</a></li>
+        <li><a href="#typography-lead-paragraph">Lead paragraph</a></li>
+        <li><a href="#typography-body-copy">Body copy</a></li>
+        <li><a href="#typography-links">Links</a></li>
+        <li><a href="#typography-lists">Lists</a></li>
+        <li><a href="#typography-inset-text">Inset text</a></li>
+        <li><a href="#typography-legal-text">Legal text</a></li>
+        <li><a href="#typography-blockquote">Blockquote</a></li>
+        <li><a href="#typography-hidden-text">Hidden text (progressive disclosure)</a></li>
+        <li><a href="#examples">Examples</a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+     {% include "includes/re-userble-content-footer.html" %}
+ {% endblock %}

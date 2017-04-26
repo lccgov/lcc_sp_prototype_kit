@@ -1,7 +1,7 @@
 {% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
-	Home Page
+	Accordion
 {% endblock %}
 
 
@@ -12,7 +12,7 @@
  
 
 {% block header %}
-Design Patterns
+Accordion
 {% endblock %}
 
  {% block main_nav %}
@@ -39,9 +39,10 @@ Design Patterns
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-  <p class="lead">Patterns are a simple, reusable solution to a design problem.</p>
-  {% include "includes/design-patterns/group-promos-nav.html" %}
+  <p class="lead">Accordion can be used on any page</p>
+  {% include "includes/design-patterns/accordion.html" %}
 {% endblock %}
+
 
 {% block sectionOneRightHandColumn %}
 {% endblock %}
@@ -147,7 +148,6 @@ Design Patterns
  {% endblock %}
 
   {% block footer_nav %}
-   {% include "includes/footer_nav.html" %}
  {% endblock %}
 
   {% block reuserblecontent_footer %}

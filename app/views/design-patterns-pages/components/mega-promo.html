@@ -1,18 +1,20 @@
 {% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
-	Home Page
+	Mega Promo
 {% endblock %}
 
 
   {% block css_register %}
+        <script src="https://use.typekit.net/pws7qio.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
          <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
    {% endblock %}
 
  
 
 {% block header %}
-Design Patterns
+Mega Promo
 {% endblock %}
 
  {% block main_nav %}
@@ -39,8 +41,9 @@ Design Patterns
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-  <p class="lead">Patterns are a simple, reusable solution to a design problem.</p>
-  {% include "includes/design-patterns/group-promos-nav.html" %}
+      <p class="lead header">A promo is a snippet of content which links to a full piece of content elsewhere on www.leeds.gov.uk.</p>
+        {% include "includes/design-patterns/mega-promo.html" %}
+        {% include "includes/design-patterns/mega-promo-no-images.html" %}
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
@@ -66,6 +69,7 @@ Design Patterns
 {% endblock %}
 
 {% block sectionTwoRightHandColumn %}
+      {% include "includes/design-patterns/promo-single.html" %}
 {% endblock %}
 
 {% block sectionTwoThirdCol1 %}
@@ -147,7 +151,6 @@ Design Patterns
  {% endblock %}
 
   {% block footer_nav %}
-   {% include "includes/footer_nav.html" %}
  {% endblock %}
 
   {% block reuserblecontent_footer %}
