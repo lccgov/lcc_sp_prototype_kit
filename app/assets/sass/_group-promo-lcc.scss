@@ -3,11 +3,9 @@ ul.promo-group{
 
   &.lcc {
     background: transparent;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
     margin:10px 0 30px -6px;
     width:auto;
     border:0;
@@ -38,7 +36,8 @@ ul.promo-group{
             text-decoration:none !important;
             height:100%;
 
-            &:hover{
+            &:hover,
+            &:active{
                 background:$blue !important;
 
                 h3,
