@@ -139,6 +139,12 @@ $secondary-button-color:$white;
 $outline-button-border-color:$blue;
 $outline-button-color:$blue;
 
+//group promo colours
+$group-promo-background-color: $lighter-grey;
+$group-promo-header-color: $blue;
+$group-promo-description-color: $black;
+$group-promo-arrow-color: $grey;
+
 @import 'mixins';
 @import 'variables';
 @import 'brandColors';
@@ -194,4 +200,49 @@ $outline-button-color:$blue;
 
 .docList.one .listWebpart ul li {
   float:none;
+}
+
+.hero-lcc-wrapper .hero-lcc{
+    width:100%;
+}
+
+.groupPromo{
+    &.lcc{
+        &.home{
+
+            ul{
+                margin:30px 0 30px -6px;
+
+                @media (max-width: 600px) {
+                    margin:0 -15px 15px -15px;
+                }
+                li{
+                    background:$white;
+
+                    a{
+                        background:$white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//override group promo hover styles
+.groupPromo.lcc ul li a{
+
+    &:hover{
+        background:$blue;
+
+        h3,
+        p{
+            color:$white;
+        }
+
+        h3{
+            &:after{
+                color:$white;
+            }
+        }
+    }
 }

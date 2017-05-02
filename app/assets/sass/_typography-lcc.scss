@@ -6,339 +6,172 @@ body {
   line-height: 1.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-@media (min-width: 641px) {
-  body {
+  @media (min-width: 641px) {
     font-size: 19px;
     line-height: 1.3157894737;
-  }
-}
-
-.font-xxlarge {
-  font-family: $font-primary, sans-serif;
-  font-weight: 400;
-  text-transform: none;
-  font-size: 53px;
-  line-height: 1.0377358491;
-}
-
-@media (min-width: 641px) {
-  .font-xxlarge {
-    font-size: 80px;
-    line-height: 1;
   }
 }
 
 h1,
-.font-xlarge {
-  font-family: $font-primary, sans-serif;
-  font-weight: 400;
-  text-transform: none;
-  font-size: 32px;
-  line-height: 1.09375;
-}
-
-@media (min-width: 641px) {
-  h1, 
-  .font-xlarge {
-    font-size: 48px;
-    line-height: 1.0416666667;
-  }
-}
-
 h2,
-.font-large {
+h3,
+h4,
+h5,
+.heading-xlarge,
+.heading-large,
+.heading-medium,
+.heading-small,
+.heading-xsmall,
+.font-xxlarge,
+.font-xlarge,
+.font-large,
+.font-medium,
+.font-small,
+.font-xsmall,
+.bold-xlarge,
+.bold-large,
+.bold-medium,
+.bold-small,
+.bold-xsmall,
+.lead{
   font-family: $font-primary, sans-serif;
   font-weight: 400;
   text-transform: none;
-  font-size: 24px;
-  line-height: 1.0416666667;
 }
 
-@media (min-width: 641px) {
-  h2,
-  .font-large {
-    font-size: 36px;
-    line-height: 1.1111111111;
-  }
-}
-
+h1,
+h2,
 h3,
-.font-medium {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 400;
-  text-transform: none;
-  font-size: 18px;
-  line-height: 1.2;
-}
-
-@media (min-width: 641px) {
-  h3,
-  .font-medium {
-    font-size: 24px;
-    line-height: 1.25;
-  }
-}
-
 h4,
-.font-small {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 400;
-  text-transform: none;
-  font-size: 16px;
-  line-height: 1.25;
-}
-
-@media (min-width: 641px) {
-  h4,
-  .font-small {
-    font-size: 19px;
-    line-height: 1.3157894737;
-  }
-}
-
 h5,
-.font-xsmall {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 400;
-  text-transform: none;
-  font-size: 14px;
-  line-height: 1.1428571429;
-}
-
-@media (min-width: 641px) {
-  h5,
-  .font-xsmall {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-}
-
-.bold-xxlarge {
-  font-family: $font-primary, Arial, sans-serif;
+.heading-xlarge,
+.heading-large,
+.heading-medium,
+.heading-small,
+.heading-xsmall,
+.bold-xlarge,
+.bold-large,
+.bold-medium,
+.bold-small,
+.bold-xsmall{
   font-weight: 700;
-  text-transform: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.heading-xlarge,
+.heading-large,
+.heading-medium,
+.heading-small,
+.heading-xsmall{
+  font-weight: 700;
+}
+
+//sizes - line-height - margins
+.font-xxlarge {
   font-size: 53px;
   line-height: 1.0377358491;
-}
 
-@media (min-width: 641px) {
-  .bold-xxlarge {
+  @media (min-width: 641px) {
     font-size: 80px;
     line-height: 1;
   }
 }
 
-.bold-xlarge {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: none;
+.font-xlarge {
   font-size: 32px;
   line-height: 1.09375;
-}
 
-@media (min-width: 641px) {
-  .bold-xlarge {
+  @media (min-width: 641px) {
     font-size: 48px;
     line-height: 1.0416666667;
   }
 }
 
-.bold-large {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: none;
+.font-large {
   font-size: 24px;
   line-height: 1.0416666667;
+
+  @media (min-width: 641px) {
+      font-size: 36px;
+      line-height: 1.1111111111;
+    }
 }
 
-@media (min-width: 641px) {
-  .bold-large {
-    font-size: 36px;
-    line-height: 1.1111111111;
-  }
-}
-
-.bold-medium {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: none;
+.font-medium {
   font-size: 18px;
   line-height: 1.2;
-}
 
-@media (min-width: 641px) {
-  .bold-medium {
+  @media (min-width: 641px) {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
-.bold-small {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: none;
+.font-small {
   font-size: 16px;
   line-height: 1.25;
-}
 
-@media (min-width: 641px) {
-  .bold-small {
+  @media (min-width: 641px) {
     font-size: 19px;
     line-height: 1.3157894737;
   }
 }
 
-.bold-xsmall {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: none;
+.font-xsmall {
   font-size: 14px;
   line-height: 1.1428571429;
-}
 
-@media (min-width: 641px) {
-  .bold-xsmall {
+  @media (min-width: 641px) {
     font-size: 16px;
     line-height: 1.25;
   }
-}
-
-.bold {
-  font-weight: 700;
 }
 
 h1,
 .heading-xlarge {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: none;
   font-size: 32px;
   line-height: 1.09375;
   margin-top: 0.46875em;
   margin-bottom: 0.9375em;
-}
 
-@media (min-width: 641px) {
-  h1,
-  .heading-xlarge {
+  @media (min-width: 641px) {
     font-size: 50px;
     line-height: 1.0416666667;
-  }
-}
-
-@media (min-width: 641px) {
-  h1,
-  .heading-xlarge {
     margin-top: 0.46875em;
     margin-bottom: 0.9375em;
   }
 }
 
-.heading-xlarge .heading-secondary {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 400;
-  text-transform: none;
-  font-size: 20px;
-  line-height: 1.1111111111;
-  display: block;
-  padding-top: 8px;
-  padding-bottom: 7px;
-  display: block;
-  color: #6f777b;
-}
-
-@media (min-width: 641px) {
-  .heading-xlarge .heading-secondary {
-    font-size: 27px;
-    line-height: 1.1111111111;
-  }
-}
-
-@media (min-width: 641px) {
-  .heading-xlarge .heading-secondary {
-    padding-top: 4px;
-    padding-bottom: 6px;
-  }
-}
-
 h2,
 .heading-large {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: none;
   font-size: 24px;
   line-height: 1.0416666667;
   margin-top: 1.0416666667em;
   margin-bottom: 0.4166666667em;
-}
 
-@media (min-width: 641px) {
-  h2,
-  .heading-large {
+  @media (min-width: 641px) {
     font-size: 36px;
     line-height: 1.1111111111;
-  }
-}
-
-@media (min-width: 641px) {
-  h2,
-  .heading-large {
     margin-top: 1.25em;
     margin-bottom: 0.5555555556em;
   }
 }
 
-.heading-large .heading-secondary {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 400;
-  text-transform: none;
-  font-size: 18px;
-  line-height: 1.2;
-  display: block;
-  padding-top: 9px;
-  padding-bottom: 6px;
-  display: block;
-  color: #6f777b;
-}
-
-@media (min-width: 641px) {
-  .heading-large .heading-secondary {
-    font-size: 24px;
-    line-height: 1.25;
-  }
-}
-
-@media (min-width: 641px) {
-  .heading-large .heading-secondary {
-    padding-top: 6px;
-    padding-bottom: 4px;
-  }
-}
-
 h3,
 .heading-medium {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: none;
   font-size: 18px;
   line-height: 1.2;
   margin-top: 1.25em;
   margin-bottom: 0.5em;
-}
 
-@media (min-width: 641px) {
-  h3,
-  .heading-medium {
+  @media (min-width: 641px) {
     font-size: 24px;
     line-height: 1.25;
-  }
-}
-
-@media (min-width: 641px) {
-  h3,
-  .heading-medium {
     margin-top: 1.875em;
     margin-bottom: 0.8333333333em;
   }
@@ -346,26 +179,14 @@ h3,
 
 h4,
 .heading-small {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: none;
   font-size: 16px;
   line-height: 1.25;
   margin-top: 0.625em;
   margin-bottom: 0.3125em;
-}
 
-@media (min-width: 641px) {
-  h4,
-  .heading-small {
+  @media (min-width: 641px) {
     font-size: 19px;
     line-height: 1.3157894737;
-  }
-}
-
-@media (min-width: 641px) {
-  h4,
-  .heading-small {
     margin-top: 1.0526315789em;
   }
 }
@@ -373,19 +194,14 @@ h4,
 p {
   margin-top: 0.3125em;
   margin-bottom: 1.25em;
-}
 
-@media (min-width: 641px) {
-  p {
+  @media (min-width: 641px) {
     margin-top: 0.2631578947em;
     margin-bottom: 1.0526315789em;
   }
 }
 
 .lead {
-  font-family: $font-primary, Arial, sans-serif;
-  font-weight: 400;
-  text-transform: none;
   font-size: 18px;
   line-height: 1.2;
 
@@ -394,27 +210,9 @@ p {
   }
 }
 
-@media (min-width: 641px) {
-  .lead {
-    font-size: 24px;
-    line-height: 1.25;
-  }
-}
-
+//text-wrapper for usability reasons (recommeneded max 75 characters)
 .text {
   max-width: 35em;
-}
-
-
-//typography
-h1,
-h2,
-h3,
-h4,
-h5{
-    font-family: $font-primary, sans-serif;
-    color: $header-font-color;
-    font-weight: 700;
 }
 
 .text-description{
@@ -423,6 +221,7 @@ h5{
   font-weight:300;
 }
 
+//text-highlight
 .text-highlight{
   border-left: 15px solid $border-grey;
   padding:20px;
@@ -504,7 +303,6 @@ ol {
   list-style-type: disc;
   padding-left: 20px;
 }
-
 
 .list-number {
   list-style-type: decimal;
