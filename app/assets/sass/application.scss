@@ -124,12 +124,12 @@ $news-pod-border-color:#ddd;
 //$highlighted-alt-font-color:#333 !default;
 
 //mega-promo
-$promo-background-color:#3D414A;
-$promo-arrow-color:#fff;
-$promo-header-color:#fff;
-$promo-secondary-color:#fff;
-$promo-highlight-background-color:lighten(#3D414A, 15%);
-$promo-highlight-color:#fff;
+$promo-background-color:$white;
+$promo-arrow-color:$grey;
+$promo-header-color:$blue;
+$promo-secondary-color:$black;
+$promo-highlight-background-color:lighten($blue, 15%);
+$promo-highlight-color:$white;
 
 //button colours
 $primary-button-background-color:$green;
@@ -204,6 +204,9 @@ $group-promo-arrow-color: $grey;
 
 .hero-lcc-wrapper .hero-lcc{
     width:100%;
+    @media (min-width: 767px) {
+        padding:65px 0 0;
+    }
 }
 
 .groupPromo{
@@ -245,4 +248,11 @@ $group-promo-arrow-color: $grey;
             }
         }
     }
+}
+
+//mega promo arrow
+@media (min-width: 767px){
+.mega-promo .mega-promo__item.third a, .mega-promo .mega-promo__item.quarter a {
+    padding-bottom: 20px;
+}
 }

@@ -2241,7 +2241,7 @@ input[type=submit]:focus,
       display: block;
       width: 100%;
       box-sizing: border-box;
-      background: #3D414A;
+      background: #FFFFFF;
       position: relative;
       text-decoration: none; }
       @media (max-width: 500px) {
@@ -2256,10 +2256,10 @@ input[type=submit]:focus,
         position: absolute;
         right: 20px;
         bottom: 20px;
-        color: #fff;
+        color: #9DA5B2;
         font-size: 24px; }
       .mega-promo .mega-promo__item a:hover {
-        background: #31353c;
+        background: #f2f2f2;
         text-decoration: none; }
         .mega-promo .mega-promo__item a:hover .mega-promo__img {
           opacity: 0.8; }
@@ -2269,7 +2269,7 @@ input[type=submit]:focus,
         display: block;
         position: relative;
         z-index: 1;
-        background-color: #777f8f;
+        background-color: white;
         padding-bottom: 56.25%;
         float: none;
         margin: 0;
@@ -2296,7 +2296,7 @@ input[type=submit]:focus,
             position: relative;
             padding: 15px; } }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header {
-          color: #fff;
+          color: #016D9E;
           margin: 0 0 5px;
           font-size: 24px;
           line-height: 30px;
@@ -2306,7 +2306,7 @@ input[type=submit]:focus,
               font-size: 21px;
               line-height: 26px; } }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary {
-          color: #fff;
+          color: #212224;
           margin: 0;
           font-size: 18px;
           line-height: 24px;
@@ -2316,8 +2316,8 @@ input[type=submit]:focus,
               font-size: 16px;
               line-height: 20px; } }
       .mega-promo .mega-promo__item a .mega-promo__highlight {
-        background: #606674;
-        color: #fff;
+        background: #01a1ea;
+        color: #FFFFFF;
         position: absolute;
         top: 0;
         right: 0;
@@ -2329,7 +2329,7 @@ input[type=submit]:focus,
         font-size: 32px !important;
         line-height: 36px !important;
         margin-bottom: 10px !important;
-        color: #fff; }
+        color: #016D9E; }
       @media (min-width: 600px) {
         .mega-promo .mega-promo__item.featured .mega-promo__highlight {
           font-size: 20px !important; } }
@@ -2426,8 +2426,8 @@ input[type=submit]:focus,
   .mega-promo .mega-promo__item.blue a .mega-promo__content .mega-promo__secondary {
     color: #FFFFFF; }
   .mega-promo .mega-promo__item.blue a .mega-promo__highlight {
-    background: #606674;
-    color: #fff; }
+    background: #01a1ea;
+    color: #FFFFFF; }
 
 .hero-lcc-wrapper {
   background-image: none;
@@ -2623,7 +2623,7 @@ input[type=submit]:focus,
               text-align: left;
               margin: 0;
               font-size: 16px;
-              padding: 10px 100px 10px 10px;
+              padding: 12px 100px 12px 12px;
               font-weight: 400;
               background: #016D9E;
               border: 0;
@@ -3515,14 +3515,14 @@ footer.main .socialBookmarks ul li:first-of-type {
   margin: 9px 0;
   text-decoration: none; }
   .logo:after {
-    content: 'LCC Digital';
+    content: 'LEEDS.GOV.UK';
     font-size: 36px;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff; }
     @media (max-width: 767px) {
       .logo:after {
-        font-size: 30px; } }
+        font-size: 26px; } }
   .logo:hover {
     color: #e6e6e6; }
 
@@ -3592,6 +3592,9 @@ hr {
 
 .hero-lcc-wrapper .hero-lcc {
   width: 100%; }
+  @media (min-width: 767px) {
+    .hero-lcc-wrapper .hero-lcc {
+      padding: 65px 0 0; } }
 
 .groupPromo.lcc.home ul {
   margin: 30px 0 30px -6px; }
@@ -3610,3 +3613,7 @@ hr {
     color: #FFFFFF; }
   .groupPromo.lcc ul li a:hover h3:after {
     color: #FFFFFF; }
+
+@media (min-width: 767px) {
+  .mega-promo .mega-promo__item.third a, .mega-promo .mega-promo__item.quarter a {
+    padding-bottom: 20px; } }
