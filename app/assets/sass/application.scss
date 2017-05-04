@@ -202,6 +202,7 @@ $group-promo-arrow-color: $grey;
   float:none;
 }
 
+//hero-lcc
 .hero-lcc-wrapper .hero-lcc{
     width:100%;
     @media (min-width: 767px) {
@@ -209,31 +210,24 @@ $group-promo-arrow-color: $grey;
     }
 }
 
-.groupPromo{
-    &.lcc{
-        &.home{
+//group promo
+.groupPromo.home ul{
+    margin:30px 0 30px -6px;
 
-            ul{
-                margin:30px 0 30px -6px;
+    @media (max-width: 600px) {
+        margin:0 -15px 15px -15px;
+    }
+    li{
+        background:$white;
 
-                @media (max-width: 600px) {
-                    margin:0 -15px 15px -15px;
-                }
-                li{
-                    background:$white;
-
-                    a{
-                        background:$white;
-                    }
-                }
-            }
+        a{
+            background:$white;
         }
     }
 }
 
 //override group promo hover styles
-.groupPromo.lcc ul li a{
-
+.groupPromo ul li a{
     &:hover{
         background:$blue;
 
@@ -250,9 +244,11 @@ $group-promo-arrow-color: $grey;
     }
 }
 
-//mega promo arrow
-@media (min-width: 767px){
-.mega-promo .mega-promo__item.third a, .mega-promo .mega-promo__item.quarter a {
-    padding-bottom: 20px;
-}
+//custom mega-promo
+.mega-promo{
+    .mega-promo__item{
+         &.blue{
+            @include mega-promo-colors($blue, $white, $white, $white, $promo-highlight-background-color, $promo-highlight-color);
+        }
+    }
 }

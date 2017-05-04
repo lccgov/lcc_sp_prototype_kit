@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*********************************************
 Base.sass variables
 *********************************************/
@@ -1329,6 +1330,49 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
 .carousel-inner .item {
   padding: 0px; }
 
+.col-md-8 .ms-srch-item {
+  width: 100%;
+  overflow: visible;
+  margin: 10px 0px 10px 0px; }
+
+.col-md-8 h3.ms-srch-ellipsis {
+  white-space: normal;
+  overflow: visible;
+  display: inline; }
+
+.col-md-8 #SearchBox {
+  border: 1px solid #ddd;
+  padding: 10px 10px 0 10px;
+  width: 100%;
+  max-width: 600px; }
+  .col-md-8 #SearchBox .ms-srch-sbLarge > .ms-srch-sb-searchLink {
+    float: right; }
+
+.col-md-8 .ms-srch-item-body {
+  overflow: visible;
+  display: inline-block;
+  width: 100%; }
+
+.col-md-8 .ms-srch-item-icon {
+  margin-bottom: 10px; }
+
+.col-md-8 #UpScopeLinkTop {
+  width: 100% !important; }
+
+.col-md-8 .ms-srch-item-path {
+  width: 100%; }
+
+.col-md-8 .ms-promlink-button-image {
+  margin: -9px 0 9px -5px; }
+
+.col-md-8 .ms-srch-sbLarge-fullWidth {
+  width: 80%;
+  max-width: 500px; }
+
+@media (max-width: 1024px) {
+  .col-md-8 .col-md-8 .ms-srch-hover-outerContainer {
+    display: none !important; } }
+
 /* iconLinks -----------------------------------------------------------------*/
 .iconLinks ul {
   text-align: center;
@@ -1601,185 +1645,10 @@ POLAROID WEBPART
 
 /*END POLAROID SECTION*/
 .groupPromo .listWebpart {
-  background: transparent;
-  color: #333;
-  max-width: 100%;
-  padding: 15px 7.5px 0px; }
-  .groupPromo .listWebpart h2 {
-    color: #333; }
-  .groupPromo .listWebpart a {
-    background: rgba(18, 18, 18, 0);
-    color: #333; }
-    .groupPromo .listWebpart a:hover {
-      background: transparent; }
-  .groupPromo .listWebpart h2 {
-    margin: 0 7.5px 15px;
-    display: inline-block; }
-  .groupPromo .listWebpart ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px; }
-    .groupPromo .listWebpart ul li {
-      float: left; }
-      .groupPromo .listWebpart ul li a {
-        margin: 0 7.5px 15px;
-        padding: 15px;
-        display: block;
-        font-weight: bold;
-        position: relative;
-        width: auto; }
-        .groupPromo .listWebpart ul li a span {
-          font-size: 0.8em;
-          display: block; }
-        .groupPromo .listWebpart ul li a img {
-          width: 100%;
-          max-width: 100%;
-          margin-bottom: 15px; }
-        .groupPromo .listWebpart ul li a:hover {
-          text-decoration: none; }
-      .col-lg-12 .groupPromo .listWebpart ul li {
-        width: 20%; }
-      .col-md-8 .groupPromo .listWebpart ul li {
-        width: 33.333%; }
-      .col-md-6 .groupPromo .listWebpart ul li {
-        width: 25%; }
-      .col-md-4 .groupPromo .listWebpart ul li {
-        width: 50%; }
-      @media only screen and (max-width: 990px) {
-        .col-lg-12 .groupPromo .listWebpart ul li,
-        .col-md-8 .groupPromo .listWebpart ul li,
-        .col-md-6 .groupPromo .listWebpart ul li,
-        .col-md-4 .groupPromo .listWebpart ul li {
-          width: 33.333%; } }
-      @media only screen and (max-width: 700px) {
-        .col-lg-12 .groupPromo .listWebpart ul li,
-        .col-md-8 .groupPromo .listWebpart ul li,
-        .col-md-6 .groupPromo .listWebpart ul li,
-        .col-md-4 .groupPromo .listWebpart ul li {
-          width: 50%; } }
-      @media only screen and (max-width: 350px) {
-        .col-lg-12 .groupPromo .listWebpart ul li,
-        .col-md-8 .groupPromo .listWebpart ul li,
-        .col-md-6 .groupPromo .listWebpart ul li,
-        .col-md-4 .groupPromo .listWebpart ul li {
-          width: 100%; } }
-  .groupPromo .listWebpart a.ask {
-    background: #B10042;
-    border-color: #B10042;
-    color: #fff; }
-    .groupPromo .listWebpart a.ask:hover {
-      background: #7e002f; }
-  .groupPromo .listWebpart a.arrow {
-    padding-right: 30px; }
-    .groupPromo .listWebpart a.arrow:after {
-      font-family: FontAwesome;
-      font-size: 25px;
-      content: "\f105";
-      display: inline-block;
-      right: 10px;
-      top: 42%;
-      position: absolute; }
-
-.groupPromo.blockLinksGreen .listWebpart {
-  background: #97BD0E;
-  color: #fff; }
-  .groupPromo.blockLinksGreen .listWebpart h2 {
-    color: #fff; }
-  .groupPromo.blockLinksGreen .listWebpart a {
-    background: #b2de10;
-    color: #fff; }
-    .groupPromo.blockLinksGreen .listWebpart a:hover {
-      background: #718e0a; }
-
-.groupPromo.blockLinksPurple .listWebpart {
-  background: #72286E;
-  color: #fff; }
-  .groupPromo.blockLinksPurple .listWebpart h2 {
-    color: #fff; }
-  .groupPromo.blockLinksPurple .listWebpart a {
-    background: #8c3188;
-    color: #fff; }
-    .groupPromo.blockLinksPurple .listWebpart a:hover {
-      background: #4c1b4a; }
-
-.groupPromo.blockLinksPink .listWebpart {
-  background: #B10042;
-  color: #fff; }
-  .groupPromo.blockLinksPink .listWebpart h2 {
-    color: #fff; }
-  .groupPromo.blockLinksPink .listWebpart a {
-    background: #d5004f;
-    color: #fff; }
-    .groupPromo.blockLinksPink .listWebpart a:hover {
-      background: #7e002f; }
-
-.groupPromo.midnightBlue .listWebpart {
-  background: transparent;
-  color: #fff; }
-  .groupPromo.midnightBlue .listWebpart h2 {
-    color: #fff; }
-  .groupPromo.midnightBlue .listWebpart a {
-    background: rgba(18, 18, 18, 0);
-    color: #fff; }
-    .groupPromo.midnightBlue .listWebpart a:hover {
-      background: transparent; }
-  .groupPromo.midnightBlue .listWebpart h2 {
-    color: #333; }
-  .groupPromo.midnightBlue .listWebpart a {
-    background: #2c3e50; }
-    .groupPromo.midnightBlue .listWebpart a:hover {
-      background: #161f29; }
-
-.groupPromo.carrot .listWebpart {
-  background: transparent;
-  color: #fff; }
-  .groupPromo.carrot .listWebpart h2 {
-    color: #fff; }
-  .groupPromo.carrot .listWebpart a {
-    background: rgba(18, 18, 18, 0);
-    color: #fff; }
-    .groupPromo.carrot .listWebpart a:hover {
-      background: transparent; }
-  .groupPromo.carrot .listWebpart h2 {
-    color: #333; }
-  .groupPromo.carrot .listWebpart a {
-    background: #e67e22; }
-    .groupPromo.carrot .listWebpart a:hover {
-      background: #b66015; }
-
-.groupPromo.white .listWebpart {
-  background: #fff;
-  color: #333; }
-  .groupPromo.white .listWebpart h2 {
-    color: #333; }
-  .groupPromo.white .listWebpart a {
-    background: white;
-    color: #333; }
-    .groupPromo.white .listWebpart a:hover {
-      background: #e6e6e6; }
-  .groupPromo.white .listWebpart a {
-    background: #f2f4f3; }
-
-.groupPromo.default .listWebpart {
-  background: transparent;
-  color: #333; }
-  .groupPromo.default .listWebpart h2 {
-    color: #333; }
-  .groupPromo.default .listWebpart a {
-    background: rgba(18, 18, 18, 0);
-    color: #333; }
-    .groupPromo.default .listWebpart a:hover {
-      background: transparent; }
-  .groupPromo.default .listWebpart a {
-    border: 1px solid #ddd; }
-    .groupPromo.default .listWebpart a:hover {
-      background: #ddd; }
-
-.groupPromo .listWebpart {
   margin: 0;
   padding: 0; }
 
-.groupPromo.lcc ul {
+.groupPromo ul {
   background: transparent;
   display: -webkit-box;
   display: -moz-box;
@@ -1800,82 +1669,177 @@ POLAROID WEBPART
   width: auto;
   border: 0; }
   @media (max-width: 600px) {
-    .groupPromo.lcc ul {
+    .groupPromo ul {
       margin: 10px 0 30px; } }
-  .groupPromo.lcc ul li {
+  .groupPromo ul li {
     background: #F6F7FA;
     border: 0;
     width: calc(100% * (1/4) - 5px) !important;
     margin: 5px 0 0 5px;
     border: 0; }
+    .col-md-8 .groupPromo ul li {
+      width: calc(100% * (1/3) - 5px) !important; }
+    .col-md-6 .groupPromo ul li {
+      width: calc(100% * (1/2) - 5px) !important; }
+    .col-md-4 .groupPromo ul li {
+      width: calc(100% * (1/2) - 5px) !important; }
     @media (max-width: 1200px) {
-      .groupPromo.lcc ul li {
+      .groupPromo ul li {
+        width: calc(100% * (1/2) - 5px) !important; }
+        .col-md-8 .groupPromo ul li, .col-md-6 .groupPromo ul li {
+          width: calc(100% * (1/2) - 5px) !important; }
+        .col-md-4 .groupPromo ul li {
+          width: calc(100%) !important; } }
+    @media (max-width: 990px) and (min-width: 601px) {
+      .col-md-4 .groupPromo ul li {
         width: calc(100% * (1/2) - 5px) !important; } }
     @media (max-width: 600px) {
-      .groupPromo.lcc ul li {
+      .groupPromo ul li {
         width: calc(100%) !important;
-        margin: 5px 0 0; } }
-    .groupPromo.lcc ul li a {
+        margin: 5px 0 0; }
+        .col-md-8 .groupPromo ul li, .col-md-6 .groupPromo ul li, .col-md-4 .groupPromo ul li {
+          width: calc(100%) !important; } }
+    .groupPromo ul li a {
       background: #F6F7FA;
       padding: 30px;
       text-decoration: none !important;
       height: 100%;
-      margin: 0; }
-      .groupPromo.lcc ul li a:hover, .groupPromo.lcc ul li a:active {
+      margin: 0;
+      display: block;
+      position: relative;
+      width: auto; }
+      .groupPromo ul li a img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px; }
+      .groupPromo ul li a:hover, .groupPromo ul li a:active {
         background: #e6e8f1; }
-        .groupPromo.lcc ul li a:hover h3, .groupPromo.lcc ul li a:active h3 {
-          color: #017eb7; }
-          .groupPromo.lcc ul li a:hover h3:after, .groupPromo.lcc ul li a:active h3:after {
-            color: #abb2bd; }
-        .groupPromo.lcc ul li a:hover p, .groupPromo.lcc ul li a:active p {
-          color: #2d2f31; }
       @media (max-width: 767px) {
-        .groupPromo.lcc ul li a {
+        .groupPromo ul li a {
           min-height: 0;
           padding: 20px; } }
       @media (max-width: 600px) {
-        .groupPromo.lcc ul li a {
+        .groupPromo ul li a {
           min-height: 0;
           padding: 20px 15px; } }
-      .groupPromo.lcc ul li a h3 {
+      .groupPromo ul li a h3 {
         margin: 0;
         font-weight: 600;
         font-size: 24px;
         color: #016D9E;
         padding-right: 30px;
-        line-height: 28px; }
+        line-height: 28px;
+        position: relative; }
         @media (max-width: 767px) {
-          .groupPromo.lcc ul li a h3 {
+          .groupPromo ul li a h3 {
             font-size: 19px;
             line-height: 24px; } }
-        .groupPromo.lcc ul li a h3:after {
+        .groupPromo ul li a h3:after {
           content: '\f105';
           font-family: FontAwesome;
           position: absolute;
-          top: 30px;
-          right: 30px;
+          top: 0px;
+          right: 0px;
           color: #9DA5B2; }
           @media (max-width: 767px) {
-            .groupPromo.lcc ul li a h3:after {
+            .groupPromo ul li a h3:after {
               top: 20px;
               right: 20px; } }
           @media (max-width: 600px) {
-            .groupPromo.lcc ul li a h3:after {
+            .groupPromo ul li a h3:after {
               top: 50%;
               right: 15px;
               margin-top: -10px;
               font-size: 34px; } }
-      .groupPromo.lcc ul li a p {
+      .groupPromo ul li a p {
         font-size: 18px;
         font-weight: 300;
         margin-top: 10px;
         margin-bottom: 0;
         color: #212224; }
         @media (max-width: 600px) {
-          .groupPromo.lcc ul li a p {
+          .groupPromo ul li a p {
             padding-right: 30px;
             font-size: 16px;
             margin-top: 5px; } }
+
+.groupPromo.blockLinksGreen .listWebpart ul li {
+  background: #97BD0E; }
+  .groupPromo.blockLinksGreen .listWebpart ul li a {
+    background: #97BD0E; }
+    .groupPromo.blockLinksGreen .listWebpart ul li a:hover, .groupPromo.blockLinksGreen .listWebpart ul li a:active {
+      background: #84a50c; }
+    .groupPromo.blockLinksGreen .listWebpart ul li a h3 {
+      color: #fff; }
+      .groupPromo.blockLinksGreen .listWebpart ul li a h3:after {
+        color: #fff; }
+    .groupPromo.blockLinksGreen .listWebpart ul li a p {
+      color: #fff; }
+
+.groupPromo.blockLinksPurple .listWebpart ul li {
+  background: #72286E; }
+  .groupPromo.blockLinksPurple .listWebpart ul li a {
+    background: #72286E; }
+    .groupPromo.blockLinksPurple .listWebpart ul li a:hover, .groupPromo.blockLinksPurple .listWebpart ul li a:active {
+      background: #5f215c; }
+    .groupPromo.blockLinksPurple .listWebpart ul li a h3 {
+      color: #fff; }
+      .groupPromo.blockLinksPurple .listWebpart ul li a h3:after {
+        color: #fff; }
+    .groupPromo.blockLinksPurple .listWebpart ul li a p {
+      color: #fff; }
+
+.groupPromo.blockLinksPink .listWebpart ul li {
+  background: #B10042; }
+  .groupPromo.blockLinksPink .listWebpart ul li a {
+    background: #B10042; }
+    .groupPromo.blockLinksPink .listWebpart ul li a:hover, .groupPromo.blockLinksPink .listWebpart ul li a:active {
+      background: #980038; }
+    .groupPromo.blockLinksPink .listWebpart ul li a h3 {
+      color: #fff; }
+      .groupPromo.blockLinksPink .listWebpart ul li a h3:after {
+        color: #fff; }
+    .groupPromo.blockLinksPink .listWebpart ul li a p {
+      color: #fff; }
+
+.groupPromo.midnightBlue .listWebpart ul li {
+  background: #2c3e50; }
+  .groupPromo.midnightBlue .listWebpart ul li a {
+    background: #2c3e50; }
+    .groupPromo.midnightBlue .listWebpart ul li a:hover, .groupPromo.midnightBlue .listWebpart ul li a:active {
+      background: #233140; }
+    .groupPromo.midnightBlue .listWebpart ul li a h3 {
+      color: #fff; }
+      .groupPromo.midnightBlue .listWebpart ul li a h3:after {
+        color: #fff; }
+    .groupPromo.midnightBlue .listWebpart ul li a p {
+      color: #fff; }
+
+.groupPromo.carrot .listWebpart ul li {
+  background: #e67e22; }
+  .groupPromo.carrot .listWebpart ul li a {
+    background: #e67e22; }
+    .groupPromo.carrot .listWebpart ul li a:hover, .groupPromo.carrot .listWebpart ul li a:active {
+      background: #d67118; }
+    .groupPromo.carrot .listWebpart ul li a h3 {
+      color: #fff; }
+      .groupPromo.carrot .listWebpart ul li a h3:after {
+        color: #fff; }
+    .groupPromo.carrot .listWebpart ul li a p {
+      color: #fff; }
+
+.groupPromo.white .listWebpart ul li {
+  background: #fff; }
+  .groupPromo.white .listWebpart ul li a {
+    background: #fff; }
+    .groupPromo.white .listWebpart ul li a:hover, .groupPromo.white .listWebpart ul li a:active {
+      background: #f2f2f2; }
+    .groupPromo.white .listWebpart ul li a h3 {
+      color: #333; }
+      .groupPromo.white .listWebpart ul li a h3:after {
+        color: #333; }
+    .groupPromo.white .listWebpart ul li a p {
+      color: #333; }
 
 .blockLinks .listWebpart {
   background: transparent;
@@ -2237,6 +2201,9 @@ input[type=submit]:focus,
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     margin-bottom: 15px; }
+    .mega-promo .mega-promo__item.external a:after {
+      content: "\f08e";
+      font-size: 24px; }
     .mega-promo .mega-promo__item a {
       display: block;
       width: 100%;
@@ -2249,10 +2216,10 @@ input[type=submit]:focus,
           padding-bottom: 30px; } }
       .mega-promo .mega-promo__item a:focus .mega-promo__header,
       .mega-promo .mega-promo__item a:focus .mega-promo__secondary {
-        color: #212224 !important; }
+        color: #333 !important; }
       .mega-promo .mega-promo__item a:after {
         font-family: FontAwesome;
-        content: "\f054";
+        content: "";
         position: absolute;
         right: 20px;
         bottom: 20px;
@@ -2411,23 +2378,6 @@ input[type=submit]:focus,
       padding: 10px;
       display: inline-block;
       margin: -5px 0 20px 20px; }
-
-.mega-promo .mega-promo__item.blue a {
-  background: #016D9E; }
-  .mega-promo .mega-promo__item.blue a:after {
-    color: #FFFFFF; }
-  .mega-promo .mega-promo__item.blue a:hover {
-    background: #015c85; }
-  @media (max-width: 500px) {
-    .mega-promo .mega-promo__item.blue a .mega-promo__content:after {
-      color: #FFFFFF; } }
-  .mega-promo .mega-promo__item.blue a .mega-promo__content .mega-promo__header {
-    color: #FFFFFF; }
-  .mega-promo .mega-promo__item.blue a .mega-promo__content .mega-promo__secondary {
-    color: #FFFFFF; }
-  .mega-promo .mega-promo__item.blue a .mega-promo__highlight {
-    background: #01a1ea;
-    color: #FFFFFF; }
 
 .hero-lcc-wrapper {
   background-image: none;
@@ -2623,7 +2573,7 @@ input[type=submit]:focus,
               text-align: left;
               margin: 0;
               font-size: 16px;
-              padding: 12px 100px 12px 12px;
+              padding: 10px 100px 10px 10px;
               font-weight: 400;
               background: #016D9E;
               border: 0;
@@ -2765,9 +2715,6 @@ input[type=submit]:focus,
   .btn-outline:after {
     background: rgba(0, 0, 0, 0.05); }
 
-input[type="text"] :focus {
-  border: 4px solid #FFCC33 !important; }
-
 .form-control {
   width: 100%;
   height: 45px;
@@ -2778,6 +2725,9 @@ input[type="text"] :focus {
 
 .form-group .btn {
   margin: 0; }
+
+input[type="text"]:focus {
+  border: 4px solid #FFCC33 !important; }
 
 .sub-section-nav {
   display: -webkit-box;
@@ -3130,8 +3080,13 @@ p {
       margin-bottom: 1.0526315789em; } }
 
 .lead {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.2; }
+  @media (min-width: 641px) {
+    .lead {
+      font-size: 24px;
+      line-height: 1.3157894737;
+      margin-top: 1.0526315789em; } }
   .lead.header {
     margin-bottom: 50px; }
 
@@ -3596,24 +3551,37 @@ hr {
     .hero-lcc-wrapper .hero-lcc {
       padding: 65px 0 0; } }
 
-.groupPromo.lcc.home ul {
+.groupPromo.home ul {
   margin: 30px 0 30px -6px; }
   @media (max-width: 600px) {
-    .groupPromo.lcc.home ul {
+    .groupPromo.home ul {
       margin: 0 -15px 15px -15px; } }
-  .groupPromo.lcc.home ul li {
+  .groupPromo.home ul li {
     background: #FFFFFF; }
-    .groupPromo.lcc.home ul li a {
+    .groupPromo.home ul li a {
       background: #FFFFFF; }
 
-.groupPromo.lcc ul li a:hover {
+.groupPromo ul li a:hover {
   background: #016D9E; }
-  .groupPromo.lcc ul li a:hover h3,
-  .groupPromo.lcc ul li a:hover p {
+  .groupPromo ul li a:hover h3,
+  .groupPromo ul li a:hover p {
     color: #FFFFFF; }
-  .groupPromo.lcc ul li a:hover h3:after {
+  .groupPromo ul li a:hover h3:after {
     color: #FFFFFF; }
 
-@media (min-width: 767px) {
-  .mega-promo .mega-promo__item.third a, .mega-promo .mega-promo__item.quarter a {
-    padding-bottom: 20px; } }
+.mega-promo .mega-promo__item.blue a {
+  background: #016D9E; }
+  .mega-promo .mega-promo__item.blue a:after {
+    color: #FFFFFF; }
+  .mega-promo .mega-promo__item.blue a:hover {
+    background: #015c85; }
+  @media (max-width: 500px) {
+    .mega-promo .mega-promo__item.blue a .mega-promo__content:after {
+      color: #FFFFFF; } }
+  .mega-promo .mega-promo__item.blue a .mega-promo__content .mega-promo__header {
+    color: #FFFFFF; }
+  .mega-promo .mega-promo__item.blue a .mega-promo__content .mega-promo__secondary {
+    color: #FFFFFF; }
+  .mega-promo .mega-promo__item.blue a .mega-promo__highlight {
+    background: #01a1ea;
+    color: #FFFFFF; }
