@@ -15,6 +15,16 @@ footer.main{
     li{
       margin-bottom:10px;
 
+      a{
+        @include link-border-bottom($white,0.3);
+        font-size:18px;
+        font-weight:300;
+
+        &:hover{
+          @include link-border-bottom($white,1);
+        }
+      }
+
       @media (max-width: 500px) {
           width:100%;
           text-align:center;
@@ -30,6 +40,8 @@ footer.main{
 }
 .logo-footer span {
     margin: 0 0 1.25em 0;
+    width: 220px;
+    height: 66px;
 
     @media (max-width: 500px) {
           margin:0 auto 20px;
@@ -37,6 +49,7 @@ footer.main{
 }
 footer.main p {
     margin-bottom: 0;
+    font-weight:300;
 
     @media (max-width: 500px) {
           text-align:center;
@@ -53,4 +66,23 @@ footer.main .text-right {
     padding-top:50px;
     text-align:center;
   }
+}
+
+footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after {
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    padding-top: 15px;
+}
+
+footer.main .socialBookmarks ul li {
+    margin: 0 10px 0 0;
+
+    a{
+
+      &:hover{
+        text-decoration:none;
+      }
+
+    }
 }

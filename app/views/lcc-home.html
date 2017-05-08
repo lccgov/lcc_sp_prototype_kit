@@ -22,22 +22,23 @@
 
 
 {% block sectionOneTop %}
+    <!--{% include "includes/design-patterns/alerts/alert-warning.html" %}-->
     {% include "includes/lcc-components/hero-lcc.html" %}
 {% endblock %} 
 
 {% block sectionOneFull%}
 <style>
-    .sectionHeader {
-        background: rgba(1, 109, 158, 0.85);
-    }
     .sectionOne{
         background:#F6F7FA;
+    }
+    .atoz{
+        background:#ffffff;
     }
 </style>
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-    {% include "includes/lcc-components/group-promos-lcc-home.html" %}
+    {% include "includes/lcc-components/group-promos-lcc-home-alternate.html" %}
     {% include "includes/lcc-components/promo-lcc-home.html" %}
     <div id="header-right"></div>
 {% endblock %}
@@ -135,6 +136,7 @@
 
 
 {% block sectionFiveTop %}
+{% include "includes/lcc-components/atoz.html" %}
 {% endblock %} 
 
 {% block sectionFiveFull%}

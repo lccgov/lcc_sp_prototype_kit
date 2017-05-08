@@ -63,6 +63,7 @@
         a{
           position:relative;
           margin-left:16px;
+          @include link-border-bottom($blue,0.3);
 
             &:after {
                 position:absolute;

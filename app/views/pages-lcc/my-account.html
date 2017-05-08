@@ -1,7 +1,7 @@
 {% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
-	Content Page Example
+	My Account
 {% endblock %}
 
 
@@ -14,7 +14,7 @@
  
 
 {% block header %}
-    Pay Council Tax by Direct Debit
+    My Account
 {% endblock%}
 
  {% block main_nav %}
@@ -38,51 +38,7 @@
  {% endblock %}
 
 {% block sectionOneContent %}
-<div class="text">
-    <p>The easiest and safest way to pay council tax is by Direct Debit. Please complete and submit the online Direct Debit form and we will do the rest.</p>
-    <p>You will need the following items before you start:</p>
-
-    <ul class="list list-bullet">
-        <li>Your Council Tax billing reference number</li>
-        <li>Your bank account number and sort code — you must be the holder of the bank account and authorised to set up a Direct Debit.</li>
-    </ul>
-
-    <a href="#" class="btn btn-primary btn-arrow">Submit a Direct Debit instruction</a>
-
-    <h2 class="heading-large">Large heading</h2>
-
-    <p>For more information consult the <a href="#" rel="external">Direct Debit website</a> directly.</p>
-
-    <div class="notice">
-        <i class="fa fa-exclamation-triangle" aria-hidden="true">
-            <span class="sr-only">Warning</span>
-        </i>
-        <strong class="bold-small">If you do not pay, we'll be forced to send Rod round.</strong>
-    </div>
-
-    <h3 class="heading-medium">Medium heading</h3>
-
-    <p>Council Tax is usually split into 10 equal monthly payments. However, you can now choose to spread the payments over 12 months.</p>
-
-    <div role="note" aria-label="Information" class="text-highlight">
-        <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
-    </div>
-
-    <p>If you already pay by Direct Debit and want to spread your payments email the Council Tax team.</p>
-
-    <h3 class="heading-large">Large heading</h3>
-
-    <p>Council Tax is usually split into 10 equal monthly payments. However, you can now choose to spread the payments over 12 months.</p>
-
-    <h3 class="heading-small">Small heading</h3>
-
-    <p>Council Tax is usually split into 10 equal monthly payments. However, you can now choose to spread the payments over 12 months.</p>
-
-    <a href="#" class="btn btn-secondary">Pay by credit / debit card</a>
-
-    <p>If you already pay by Direct Debit and want to spread your payments email the Council Tax team.</p>
-
-</div>
+    
 {% endblock %}
 
 {% block pageContent %}
@@ -90,6 +46,19 @@
 {% endblock %}
 
 {% block sectionOneFullBottom %}
+<h2 class="heading-medium top">Choose the service you need</h2>
+<ul class="list list-nav">
+    <li><a href="#">Council Tax</a></li>
+    <li><a href="#">Tenants</a></li>
+    <li><a href="#">Housing Benefits</a></li>
+    <li><a href="#">Business rates</a></li>
+    <li><a href="#">Parking permits</a></li>
+</ul>
+<h3 class="heading-medium">Other accounts</h2>
+<ul class="list list-nav">
+    <li><a href="#">Libraries</a></li>
+    <li><a href="#">Leeds City Council jobs</a></li>
+</ul>
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
@@ -175,7 +144,7 @@
 
 {% block sectionFiveTop %}
 {% include "includes/lcc-components/atoz.html" %}
-{% endblock %} 
+{% endblock %}  
 
 {% block sectionFiveFull%}
 {% endblock %}
