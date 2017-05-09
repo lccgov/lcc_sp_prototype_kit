@@ -75,6 +75,23 @@ h5,
   font-weight: 700;
 }
 
+//h1 to h5 sizes - fallback for migration of old content
+h1{
+  @extend .heading-xlarge;
+}
+
+h2{
+  @extend .heading-large;
+}
+
+h3{
+  @extend .heading-medium;
+}
+
+h4{
+  @extend .heading-small;
+}
+
 //sizes - line-height - margins
 .font-xxlarge {
   font-size: 53px;
@@ -136,7 +153,6 @@ h5,
   }
 }
 
-h1,
 .heading-xlarge {
   font-size: 32px;
   line-height: 1.09375;
@@ -151,7 +167,6 @@ h1,
   }
 }
 
-h2,
 .heading-large {
   font-size: 24px;
   line-height: 1.0416666667;
@@ -166,7 +181,6 @@ h2,
   }
 }
 
-h3,
 .heading-medium {
   font-size: 18px;
   line-height: 1.2;
@@ -181,7 +195,6 @@ h3,
   }
 }
 
-h4,
 .heading-small {
   font-size: 16px;
   line-height: 1.25;

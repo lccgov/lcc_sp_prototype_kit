@@ -184,7 +184,31 @@ $group-promo-arrow-color: $grey;
 @mixin link-border-bottom($color,$opacity){
     border-bottom:1px solid rgba($color,$opacity);
     text-decoration:none;
-    padding-bottom:2px;
+}
+
+@mixin column-count($val) {
+    -webkit-column-count: $val;
+    -moz-column-count: $val;
+    column-count: $val;
+}
+
+@mixin column-gap($val) {
+    -webkit-column-gap: $val;
+    -moz-column-gap: $val;
+    column-gap: $val;
+}
+
+.three-columns{
+    @include column-count(3);
+    @include column-gap(30px);
+
+    @media (max-width: 990px) {
+        @include column-count(2);
+    }
+
+    @media (max-width: 767px) {
+        @include column-count(1);
+    }
 }
 
 //custom style added by DH - needs to filed properly
@@ -250,30 +274,5 @@ $group-promo-arrow-color: $grey;
          &.blue{
             @include mega-promo-colors($blue, $white, $white, $white, $promo-highlight-background-color, $promo-highlight-color);
         }
-    }
-}
-
-@mixin column-count($val) {
-    -webkit-column-count: $val;
-    -moz-column-count: $val;
-    column-count: $val;
-}
-
-@mixin column-gap($val) {
-    -webkit-column-gap: $val;
-    -moz-column-gap: $val;
-    column-gap: $val;
-}
-
-.three-columns{
-    @include column-count(3);
-    @include column-gap(30px);
-
-    @media (max-width: 990px) {
-        @include column-count(2);
-    }
-
-    @media (max-width: 767px) {
-        @include column-count(1);
     }
 }
