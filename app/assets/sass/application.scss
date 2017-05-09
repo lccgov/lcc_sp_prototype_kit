@@ -253,18 +253,22 @@ $group-promo-arrow-color: $grey;
 //override group promo hover styles
 .groupPromo ul li a{
     &:hover{
-        background:$blue;
+        background:$blue !important;
 
         h3,
         p{
-            color:$white;
+            color:$white !important;
         }
 
         h3{
             &:after{
-                color:$white;
+                color:$white !important;
             }
         }
+    }
+
+    &:active{
+        background:darken($blue,5%) !important;
     }
 }
 
