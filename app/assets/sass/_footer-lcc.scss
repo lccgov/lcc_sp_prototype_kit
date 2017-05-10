@@ -16,13 +16,9 @@ footer.main{
       margin-bottom:10px;
 
       a{
-        @include link-border-bottom($white,0.3);
+        @include link-border-bottom($white,0.3,$white);
         font-size:18px;
         font-weight:300;
-
-        &:hover{
-          @include link-border-bottom($white,1);
-        }
       }
 
       @media (max-width: 500px) {

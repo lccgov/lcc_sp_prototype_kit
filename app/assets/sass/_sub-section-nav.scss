@@ -43,14 +43,6 @@
         .list{
             li{
                 margin-bottom: 15px;
-
-                a{
-                    @include link-border-bottom($blue,0);
-
-                    &:hover{
-                        text-decoration:underline;
-                    }
-                }
             }
         }
 

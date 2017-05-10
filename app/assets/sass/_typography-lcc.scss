@@ -288,14 +288,7 @@ p {
 
 //links
 a {
-    color: $base-link-color;
-    text-decoration: underline;
-    cursor:pointer;
-
-    &:hover{
-         color:darken($base-link-color, 15%);
-         text-decoration:underline;
-    }
+    @include link-border-bottom($base-link-color,0.2,$base-link-color-visited);
 }
 
 a[rel="external"]{
@@ -319,10 +312,6 @@ ol {
 
   li {
     margin-bottom: 10px;
-
-    a{
-      @include link-border-bottom($blue,0.2);
-    }
     }
 }
 
@@ -355,9 +344,5 @@ ol {
 
   li{
     margin-bottom: 15px;
-
-    a{
-      text-decoration:none;
-    }
   }
 }

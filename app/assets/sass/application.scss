@@ -27,6 +27,7 @@ $base-font-size:16px ;
 $base-font-color:$light-black;
 $header-font-color:$black;
 $base-link-color:$blue;
+$base-link-color-visited:#4C2C92;
 $secondary-font-color:$dark-grey;
 $border-grey:$light-grey;
 $brand-color:$blue;
@@ -177,13 +178,26 @@ $group-promo-arrow-color: $grey;
 @import 'blockQuote';
 @import 'accessibility';
 @import 'mega-promo';
-@import 'hero-lcc';
 @import 'buttons';
 
 //mixins
-@mixin link-border-bottom($color,$opacity){
+@mixin link-border-bottom($color,$opacity,$visited-color){
+    color:$color;
     border-bottom:1px solid rgba($color,$opacity);
     text-decoration:none;
+    cursor:pointer;
+
+    &:hover{
+        color:darken($color,10%);
+        border-color:darken($color,10%);
+        text-decoration:none;
+    }
+
+    &:visited{
+        color:$visited-color;
+        border-color:rgba($visited-color,$opacity);
+        text-decoration:none;
+    }
 }
 
 @mixin column-count($val) {
@@ -211,12 +225,36 @@ $group-promo-arrow-color: $grey;
     }
 }
 
+@mixin background-size($val) {
+    -webkit-background-size: $val;
+    -moz-background-size: $val;
+    -o-background-size: $val;
+    background-size: $val;
+}
+
+@mixin background-size($val) {
+    -webkit-background-size: $val;
+    -moz-background-size: $val;
+    -o-background-size: $val;
+    background-size: $val;
+}
+
+@mixin background-radial($top,$bottom,$base) {
+    background: $base;
+    background: -webkit-radial-gradient($top, $bottom); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient($top, $bottom); /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient($top, $bottom); /* For Firefox 3.6 to 15 */
+    background: radial-gradient($top, $bottom); /* Standard syntax */
+}
+ 
+
 //custom style added by DH - needs to filed properly
+@import 'hero-lcc';
 @import 'easy-autocomplete';
+@import 'typography-lcc';
 @import 'forms';
 @import 'sub-section-nav';
 @import 'prism';
-@import 'typography-lcc';
 @import 'swatch-lcc';
 @import 'code-example';
 @import 'sticky';
@@ -236,17 +274,23 @@ $group-promo-arrow-color: $grey;
 }
 
 //group promo
-.groupPromo.home ul{
-    margin:30px 0 30px -6px;
-
-    @media (max-width: 600px) {
-        margin:0 -15px 15px -15px;
+.groupPromo{
+    a{
+        border:0;
     }
-    li{
-        background:$white;
 
-        a{
+    &.home ul{
+        margin:30px 0 30px -6px;
+
+        @media (max-width: 600px) {
+            margin:0 -15px 15px -15px;
+        }
+        li{
             background:$white;
+
+            a{
+                background:$white;
+            }
         }
     }
 }
@@ -279,5 +323,32 @@ $group-promo-arrow-color: $grey;
          &.blue{
             @include mega-promo-colors($blue, $white, $white, $white, $promo-highlight-background-color, $promo-highlight-color);
         }
+    }
+}
+
+//anchor border bottom stye overrides
+
+.carousel .carousel-caption a,
+.mega-promo a,
+.groupPromo a,
+.promoListWebpart a,
+.main-nav ul li a,
+.promo-group a,
+#paging .contentPod a{
+    border:0;
+}
+
+//doclist
+.docList.one li a:before {
+    top: 22px;
+
+    @media (max-width: 641px) {
+        top: 20px;
+    }
+}
+
+.docList li {
+    @media (max-width: 600px) {
+        padding: 5px 0;
     }
 }

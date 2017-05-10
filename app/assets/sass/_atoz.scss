@@ -5,27 +5,18 @@
     width:100%;
     text-transform:uppercase;
 
-    a {
+    .atoz__header{
         display:inline-block;
-        
-        h3{
-            display:inline-block;
-            margin:0;
-            font-size:21px;
-            font-weight:800;
-            line-height:1em;
-            padding:10px 0;
-        }
-
-        &:hover h3{
-            text-decoration:underline;
-        }
-
+        margin:0;
+        font-size:21px;
+        font-weight:800;
+        line-height:1em;
+        padding:10px 0;
     }
 
     ul{
         float:right;
-        padding:10px 0;
+        padding:5px 0;
         margin:0;
 
         li{
@@ -35,16 +26,11 @@
             font-weight:600;
             line-height:1em;
             text-align:center;
-
-            &:last-child{
-                margin-right:0 !important;
-            }
+            padding:5px 0;
+            width:40px;
 
             a{
                 padding:0;
-                @include link-border-bottom($blue,0.3);
-                margin-right:25px;
-
 
                 &:hover{
                     background:$blue;
@@ -53,10 +39,8 @@
             }
 
             &.inactive{
-                color:#ccc;
-                padding:0;
-                @include link-border-bottom($blue,0);
-                margin-right:25px;
+                padding:5px 0;
+                color:$grey;
             }
         }
     }
