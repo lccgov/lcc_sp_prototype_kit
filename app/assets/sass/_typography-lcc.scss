@@ -34,7 +34,8 @@ h5,
 .bold-medium,
 .bold-small,
 .bold-xsmall,
-.lead{
+.lead,
+.part-title{
   font-family: $font-primary, sans-serif;
   font-weight: 400;
   text-transform: none;
@@ -58,20 +59,8 @@ h5,
 .bold-large,
 .bold-medium,
 .bold-small,
-.bold-xsmall{
-  font-weight: 700;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-.heading-xlarge,
-.heading-large,
-.heading-medium,
-.heading-small,
-.heading-xsmall{
+.bold-xsmall,
+.part-title{
   font-weight: 700;
 }
 
@@ -182,7 +171,7 @@ h4{
 }
 
 .heading-medium {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.2;
   margin-top: 1.25em;
   margin-bottom: 0.5em;
@@ -207,6 +196,19 @@ h4{
     margin-top: 1.0526315789em;
   }
 }
+
+.part-title{
+    font-size: 20px;
+    line-height: 1.11111;
+    margin-bottom: 15px;
+
+  @media (min-width: 641px) {
+    font-size: 27px;
+    line-height: 1.11111;
+    margin-bottom: 20px;
+  }
+
+}   
 
 p {
   margin-top: 0.3125em;
@@ -288,7 +290,9 @@ p {
 
 //links
 a {
-    @include link-border-bottom($base-link-color,0.2,$base-link-color-visited);
+    /*@include link-border-bottom($base-link-color,0.5,$base-link-color-visited);*/
+    text-decoration:underline;
+    color:$base-link-color;
 }
 
 a[rel="external"]{
@@ -338,11 +342,18 @@ ol {
     width:100%;
 
     @media (min-width: 641px) {
-      font-size:19px;
-      
+      font-size:19px;  
   }
 
   li{
     margin-bottom: 15px;
+
+    a{
+      text-decoration:none;
+
+      &:hover{
+        text-decoration:underline;
+      }
+    }
   }
 }

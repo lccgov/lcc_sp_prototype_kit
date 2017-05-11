@@ -78,11 +78,14 @@
 
     <p>Council Tax is usually split into 10 equal monthly payments. However, you can now choose to spread the payments over 12 months.</p>
 
-    <a href="#" class="btn btn-secondary">Pay by credit / debit card</a>
+    <a href="#" class="btn btn-secondary btn-small">Pay by credit / debit card</a>
 
     <p>If you already pay by Direct Debit and want to spread your payments email the Council Tax team.</p>
 
 </div>
+
+<h2 class="heading-large">Definition list</h2>
+{% include "includes/design-patterns/list-definition.html" %}
 {% endblock %}
 
 {% block pageContent %}
@@ -93,6 +96,7 @@
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
+{% include "includes/design-patterns/side-nav.html" %}
 {% endblock %}
 
 {% block sectionOneThirdCol1 %}

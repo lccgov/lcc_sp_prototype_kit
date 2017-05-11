@@ -1,12 +1,12 @@
-{% extends "layout_multi_sections_home.html" %}
+{% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
-	Home Page
+	Part Nav Example
 {% endblock %}
 
 
   {% block css_register %}
-  <script src="https://use.typekit.net/pws7qio.js"></script>
+        <script src="https://use.typekit.net/pws7qio.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
          <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
    {% endblock %}
@@ -14,48 +14,51 @@
  
 
 {% block header %}
-{% endblock %}
+    Who can get Council Tax support
+{% endblock%}
 
  {% block main_nav %}
  {% endblock %}
 
 
 
-{% block sectionOneTop %}
-    <!--{% include "includes/design-patterns/alerts/alert-warning.html" %}-->
-    {% include "includes/lcc-components/hero-lcc.html" %}
+ {% block sectionOneTop %}
 {% endblock %} 
 
 {% block sectionOneFull%}
-<style>
-    .sectionOne{
-        background:#F6F7FA;
-    }
-    .atoz{
-        background:#ffffff;
-    }
-</style>
-{% endblock %}
-
-{% block sectionOneFullBottom %}
-    {% include "includes/lcc-components/group-promos-lcc-home.html" %}
-    {% include "includes/lcc-components/promo-lcc-home.html" %}
-    <div id="header-right"></div>
 {% endblock %}
 
 
  {% block breadcrumb %}
+  <div class ="breadcrumb">
+    <span sitemapproviders="SPSiteMapProvider,SPXmlContentMapProvider" hideinteriorrootnodes="true"><!--<a href="index" width="0" height="0" style="border-width:0px;"></a>--><span><a class="bc-root" href="/lcc-home.html">Home</a></span><span>
+        <img id="ctl00_PlaceHolderMain_ctl00_ctl01_Image1" src="/_catalogs/masterpage/images/breadcrumb_line.png">
+    </span><a href="/pages-lcc/service-page-example.html">Council Tax</a></span>
+    </div>
  {% endblock %}
 
 {% block sectionOneContent %}
+{% include "includes/design-patterns/part-nav.html" %}
+<h1 class="part-title">Deductions for adults in the household</h1>
+<p>Council Tax Support entitlement may change if you have other adults (apart from your partner) living with you.</p>
+
+<p>Deductions can be made from the amount of Council Tax Support you get if you share your home with any adults who are not dependant on you – for example, adult children, relatives or friends. These deductions are made because these people should pay something towards your council tax. If you are in this position you may already be aware that these are called non dependant deductions.</p>
+
+<p>The amount deducted from your Council Tax Support entitlement is based on the weekly gross income of the non-dependant.</p>
+
+<p>If you are experiencing extreme financial difficulty you may be able to get temporary help in certain circumstances.</p>
+{% include "includes/design-patterns/pagination.html" %}
 {% endblock %}
 
 {% block pageContent %}
+
 {% endblock %}
 
-
+{% block sectionOneFullBottom %}
+{% endblock %}
 
 {% block sectionOneRightHandColumn %}
+{% include "includes/design-patterns/side-nav.html" %}
 {% endblock %}
 
 {% block sectionOneThirdCol1 %}
@@ -116,6 +119,7 @@
 {% endblock %} 
 
 {% block sectionFourFull%}
+
 {% endblock %}
 
 {% block sectionFourContent %}
@@ -161,6 +165,6 @@
   {% block footer_nav %}
  {% endblock %}
 
- {% block reuserblecontent_footer %}
+  {% block reuserblecontent_footer %}
      {% include "includes/re-userble-content-footer.html" %}
  {% endblock %}

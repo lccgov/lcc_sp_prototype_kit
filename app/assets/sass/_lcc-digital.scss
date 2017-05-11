@@ -21,6 +21,7 @@
     display:inline-block;
     margin:9px 0;
     text-decoration:none;
+    border:0;
 
     &:after{
         content:'LEEDS.GOV.UK';
@@ -35,7 +36,7 @@
     }
 
     &:hover{
-      color:darken(#fff, 10%);
+      color:$light-grey;
     }
 }
 

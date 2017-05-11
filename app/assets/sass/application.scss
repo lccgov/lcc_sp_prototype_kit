@@ -24,7 +24,7 @@ $focus-color:#FFBF47;
 
 //$base-background-color:#fff;
 $base-font-size:16px ;
-$base-font-color:$light-black;
+$base-font-color:$black;
 $header-font-color:$black;
 $base-link-color:$blue;
 $base-link-color-visited:#4C2C92;
@@ -225,6 +225,15 @@ $group-promo-arrow-color: $grey;
     }
 }
 
+.two-columns{
+    @include column-count(2);
+    @include column-gap(30px);
+
+    @media (max-width: 767px) {
+        @include column-count(1);
+    }
+}
+
 @mixin background-size($val) {
     -webkit-background-size: $val;
     -moz-background-size: $val;
@@ -260,6 +269,9 @@ $group-promo-arrow-color: $grey;
 @import 'sticky';
 @import 'footer-lcc';
 @import 'atoz';
+@import 'side-nav';
+@import 'pagination';
+@import 'part-nav';
 @import 'lcc-digital';
 
 //Rm quick add to be removed when we consolidate group promo styling
@@ -351,4 +363,38 @@ $group-promo-arrow-color: $grey;
     @media (max-width: 600px) {
         padding: 5px 0;
     }
+}
+
+//description-list
+.list-definition__heading {
+    border-top: 1px solid $light-grey;
+    clear: left;
+    font-weight: bold;
+    padding-top: 1rem;
+
+    @media (min-width: 767px) {
+        float: left;
+        padding: 1rem .75rem;
+        text-align: right;
+        width: 25%;
+    }
+}
+.list-definition__content {
+    margin: 0;
+    padding-bottom: 1rem;
+    padding-top: .25rem;
+
+    @media (min-width: 767px) {
+        border-top: 1px solid $light-grey;
+        float: left;
+        padding: 1rem .75rem;
+        width: 75%;
+    }
+}
+
+//accessibility
+a:focus, 
+input[type=submit]:focus, 
+.btn:focus{
+    outline:0;  
 }

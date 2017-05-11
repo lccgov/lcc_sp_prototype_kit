@@ -1,12 +1,12 @@
-{% extends "layout_multi_sections_home.html" %}
+{% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
-	Home Page
+	Schools, education and childcare
 {% endblock %}
 
 
   {% block css_register %}
-  <script src="https://use.typekit.net/pws7qio.js"></script>
+        <script src="https://use.typekit.net/pws7qio.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
          <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
    {% endblock %}
@@ -14,46 +14,39 @@
  
 
 {% block header %}
-{% endblock %}
+    Schools, education and childcare
+{% endblock%}
 
  {% block main_nav %}
  {% endblock %}
 
 
 
-{% block sectionOneTop %}
-    <!--{% include "includes/design-patterns/alerts/alert-warning.html" %}-->
-    {% include "includes/lcc-components/hero-lcc.html" %}
+ {% block sectionOneTop %}
 {% endblock %} 
 
 {% block sectionOneFull%}
-<style>
-    .sectionOne{
-        background:#F6F7FA;
-    }
-    .atoz{
-        background:#ffffff;
-    }
-</style>
-{% endblock %}
-
-{% block sectionOneFullBottom %}
-    {% include "includes/lcc-components/group-promos-lcc-home.html" %}
-    {% include "includes/lcc-components/promo-lcc-home.html" %}
-    <div id="header-right"></div>
 {% endblock %}
 
 
  {% block breadcrumb %}
+  <div class ="breadcrumb">
+    <span sitemapproviders="SPSiteMapProvider,SPXmlContentMapProvider" hideinteriorrootnodes="true"><!--<a href="index" width="0" height="0" style="border-width:0px;"></a>--><span><a class="bc-root" href="/lcc-pages/lcc-home.html">Home</a></span><span>
+        <img id="ctl00_PlaceHolderMain_ctl00_ctl01_Image1" src="/_catalogs/masterpage/images/breadcrumb_line.png">
+    </div>
  {% endblock %}
 
 {% block sectionOneContent %}
 {% endblock %}
 
 {% block pageContent %}
+
 {% endblock %}
 
-
+{% block sectionOneFullBottom %}
+    {% include "includes/lcc-components/group-promos-lcc-schools.html" %}
+    {% include "includes/lcc-components/sub-section-nav-schools.html" %}
+{% endblock %}
 
 {% block sectionOneRightHandColumn %}
 {% endblock %}
@@ -116,6 +109,7 @@
 {% endblock %} 
 
 {% block sectionFourFull%}
+
 {% endblock %}
 
 {% block sectionFourContent %}
@@ -161,6 +155,6 @@
   {% block footer_nav %}
  {% endblock %}
 
- {% block reuserblecontent_footer %}
+  {% block reuserblecontent_footer %}
      {% include "includes/re-userble-content-footer.html" %}
  {% endblock %}
