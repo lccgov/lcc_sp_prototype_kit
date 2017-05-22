@@ -2168,8 +2168,7 @@ input[type=submit]:focus,
 .btn:focus {
   background: #FFBF47 !important;
   color: #212224 !important;
-  text-decoration: none;
-  outline: 0; }
+  text-decoration: none; }
 
 .mega-promo {
   display: -webkit-box;
@@ -2567,7 +2566,6 @@ input[type=submit]:focus,
     .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
       max-width: 900px;
       width: 100%;
-      margin: 0 auto;
       padding: 15px; }
       @media (max-width: 500px) {
         .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
