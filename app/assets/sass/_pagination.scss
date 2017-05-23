@@ -1,7 +1,8 @@
 .pagination-nav {
     display: block;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 50px 0;
+    border-top: 2px solid $lighter-grey;
+    border-bottom: 2px solid $lighter-grey;
 
     ul{
         margin: 0;
@@ -28,7 +29,7 @@
                     &:before{
                         content: '\f104';
                         left: 7px;
-                        top: -7px;
+                        top: 0;
                     }
                 }
 
@@ -45,7 +46,7 @@
                     &:before{
                         content: '\f105';
                         right: 7px;
-                        top: -7px;
+                        top: 0;
                     }
                 }
             }
@@ -89,7 +90,7 @@
                 }
 
                 .pagination-nav__label{
-                    color:$dark-grey;
+                    color:$blue;
                 }
             }
         }

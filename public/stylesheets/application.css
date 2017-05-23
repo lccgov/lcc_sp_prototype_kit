@@ -3942,8 +3942,9 @@ footer.main .socialBookmarks ul li {
 
 .pagination-nav {
   display: block;
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin: 50px 0;
+  border-top: 2px solid #F6F7FA;
+  border-bottom: 2px solid #F6F7FA; }
   .pagination-nav ul {
     margin: 0;
     padding: 0; }
@@ -3964,7 +3965,7 @@ footer.main .socialBookmarks ul li {
           .pagination-nav ul li.pagination-nav__previous-page a:before {
             content: '\f104';
             left: 7px;
-            top: -7px; }
+            top: 0; }
       .pagination-nav ul li.pagination-nav__next-page {
         float: right;
         text-align: right; }
@@ -3974,7 +3975,7 @@ footer.main .socialBookmarks ul li {
           .pagination-nav ul li.pagination-nav__next-page a:before {
             content: '\f105';
             right: 7px;
-            top: -7px; }
+            top: 0; }
       @media (max-width: 640px) {
         .pagination-nav ul li.pagination-nav__previous-page, .pagination-nav ul li.pagination-nav__next-page {
           float: none;
@@ -4002,13 +4003,13 @@ footer.main .socialBookmarks ul li {
               font-size: 27px;
               line-height: 1.25; } }
         .pagination-nav ul li a .pagination-nav__label {
-          color: #666B76; }
+          color: #016D9E; }
 
 .part-navigation__container {
   margin-top: 30px;
   padding-bottom: 8px;
   margin-bottom: 45px;
-  border-bottom: 5px solid #F6F7FA; }
+  border-bottom: 2px solid #F6F7FA; }
   @media (max-width: 640px) {
     .part-navigation__container {
       padding-bottom: 3px;
@@ -4074,7 +4075,8 @@ footer.main .socialBookmarks ul li {
       display: inline-block;
       content: "/";
       font-size: 16px;
-      padding: 0 8px; }
+      padding: 0 8px;
+      text-decoration: none !important; }
 
 /*could be coded better*/
 .breadcrumb a:first-child {
