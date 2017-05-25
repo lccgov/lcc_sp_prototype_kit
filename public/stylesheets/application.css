@@ -1031,12 +1031,12 @@ ul.promo-group {
       color: #fff; }
 
 .promoListWebpart ul li.green a .info {
-  background: #008000;
+  background: #1E824C;
   color: #fff; }
   .promoListWebpart ul li.green a .info .secondaryInfo {
     color: #fff; }
   .promoListWebpart ul li.green a .info .arrow {
-    background: #006700; }
+    background: #196d40; }
     .promoListWebpart ul li.green a .info .arrow:after {
       color: #fff; }
 
@@ -1123,7 +1123,7 @@ ul.promo-group {
     .promoListWebpart .contentLink.purple a span.info {
       border-top: 1px solid #fff; }
   .promoListWebpart .contentLink.green {
-    background: #008000; }
+    background: #1E824C; }
     .promoListWebpart .contentLink.green h2,
     .promoListWebpart .contentLink.green h3,
     .promoListWebpart .contentLink.green p {
@@ -2385,13 +2385,13 @@ input[type=submit]:focus,
     color: #FFFFFF; }
 
 .btn-primary {
-  background-color: #008000;
+  background-color: #1E824C;
   color: #FFFFFF;
-  border-color: #008000; }
+  border-color: #1E824C; }
   .btn-primary:hover {
-    background: #006700;
+    background: #196d40;
     color: #FFFFFF !important;
-    border-color: #006700; }
+    border-color: #196d40; }
 
 .btn-secondary {
   background-color: #016D9E;
@@ -2574,11 +2574,11 @@ input[type=submit]:focus,
               height: 55px;
               border: 0;
               padding: 10px 25px;
-              background: #008000;
+              background: #1E824C;
               font-size: 21px;
               margin: 0; }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:hover {
-                background: #006700;
+                background: #196d40;
                 color: #FFFFFF; }
               @media (max-width: 766px) {
                 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn {
@@ -3262,8 +3262,8 @@ p {
     border-color: #016D9E;
     background: rgba(1, 109, 158, 0.1); }
   .text-highlight.text-highlight--green {
-    border-color: #008000;
-    background: rgba(0, 128, 0, 0.1); }
+    border-color: #1E824C;
+    background: rgba(30, 130, 76, 0.1); }
 
 .notice {
   position: relative;
