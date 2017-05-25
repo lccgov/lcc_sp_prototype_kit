@@ -35,6 +35,11 @@ Alerts
  {% endblock %}
 
 {% block sectionOneContent %}
+<p class="lead">Alerts can be used on any page</p>
+<h2 class="heading-medium">Emergency message</h2>
+{% include "includes/design-patterns/alerts/alert-warning.html" %}
+<h2 class="heading-medium">Announcement</h2>
+{% include "includes/design-patterns/alerts/alert-info.html" %}
 {% endblock %}
 
 {% block pageContent %}
@@ -42,7 +47,6 @@ Alerts
 
 
 {% block sectionOneFullBottom %}
-<p class="lead">Alerts can be used on any page</p>
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
@@ -84,15 +88,6 @@ Alerts
 {% endblock %} 
 
 {% block sectionThreeFull%}
-<hr class="ms-rteElement-spacer" />
-  {% include "includes/design-patterns/alerts/alert-info.html" %}
-  <hr class="ms-rteElement-spacer" />
-   {% include "includes/design-patterns/alerts/alert-warning.html" %}
-     <hr class="ms-rteElement-spacer" />
-   {% include "includes/design-patterns/alerts/alert-success.html" %}
-     <hr class="ms-rteElement-spacer" />
-   {% include "includes/design-patterns/alerts/alert-danger.html" %}
-        <hr class="ms-rteElement-spacer" />
 {% endblock %}
 
 {% block sectionThreeContent %}
@@ -158,7 +153,6 @@ Alerts
  {% endblock %}
 
   {% block footer_nav %}
-   {% include "includes/footer_nav.html" %}
  {% endblock %}
 
   {% block reuserblecontent_footer %}

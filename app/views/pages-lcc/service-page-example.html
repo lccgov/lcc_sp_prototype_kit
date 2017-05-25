@@ -23,6 +23,7 @@
 
 
  {% block sectionOneTop %}
+ {% include "includes/lcc-components/emergency-message.html" %}
 {% endblock %} 
 
 {% block sectionOneFull%}
@@ -43,6 +44,7 @@
 {% endblock %}
 
 {% block sectionOneFullBottom %}
+    {% include "includes/lcc-components/announcement-dismissable.html" %}
     {% include "includes/lcc-components/group-promos-lcc-service-page.html" %}
     {% include "includes/design-patterns/sub-section-nav.html" %}
 {% endblock %}
