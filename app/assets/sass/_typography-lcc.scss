@@ -2,7 +2,7 @@ body {
   font-family: $font-primary, sans-serif;
   font-weight: 400;
   text-transform: none;
-  font-size: 16px;
+  font-size: $base-font-size;
   line-height: 1.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
