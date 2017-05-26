@@ -28,6 +28,10 @@
     ul.menu li a{
         cursor:pointer;
 
+        &:hover{
+            background:darken($blue,10%) !important;
+        }
+
         &.my-account{
             color:#ffffff;
             text-decoration:none;
@@ -35,7 +39,7 @@
             padding:7px 15px;
             margin:5px 0;
             min-height:0;
-            background:lighten($blue,5%);
+            background:lighten($blue,10%);
 
             &:before {
                 font-family: "FontAwesome";
@@ -54,7 +58,7 @@
             text-decoration:none;
             background:transparent;
             color:#ffffff;
-            background:lighten($blue,5%);
+            background:lighten($blue,10%);
             width:60px;
             margin:0;
 
@@ -115,4 +119,8 @@
         z-index: 10;
         display: none;
     }
+}
+
+#nav-search {
+    margin: 5px;
 }
