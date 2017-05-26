@@ -3993,6 +3993,8 @@ table th, table td {
 /*temporarily hide masterhead*/
 .masterhead {
   display: none; }
+  .masterhead.lcc {
+    display: block; }
 
 .header-left {
   padding: 0; }
@@ -4085,6 +4087,103 @@ hr {
 
 .secondary-nav .heading-contents {
   margin-top: 0; }
+
+@media screen and (max-width: 400px) {
+  .highlighted a.btn {
+    width: auto; } }
+
+.header-lcc .logo {
+  height: auto;
+  width: auto;
+  background: none;
+  display: inline-block;
+  margin: 9px 0;
+  text-decoration: none;
+  border: 0;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff; }
+  @media (max-width: 767px) {
+    .header-lcc .logo {
+      font-size: 26px; } }
+  .header-lcc .logo:after {
+    display: none; }
+  .header-lcc .logo:hover {
+    color: #DCDEE1; }
+
+.header-lcc ul.menu li a {
+  cursor: pointer; }
+  .header-lcc ul.menu li a.my-account {
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    padding: 7px 15px;
+    margin: 5px 0;
+    min-height: 0;
+    background: #017eb7; }
+    .header-lcc ul.menu li a.my-account:before {
+      font-family: "FontAwesome";
+      content: "\f007";
+      margin-right: 5px; }
+  @media (max-width: 767px) {
+    .header-lcc ul.menu li a {
+      font-size: 8px;
+      padding: 10px 5px;
+      line-height: 1;
+      min-height: 0;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      background: transparent;
+      color: #ffffff;
+      background: #017eb7;
+      width: 60px;
+      margin: 0; } }
+  @media (max-width: 767px) and (max-width: 350px) {
+    .header-lcc ul.menu li a {
+      font-size: 7px;
+      padding: 10px 3px;
+      width: 45px; }
+      .header-lcc ul.menu li a:before {
+        font-size: 16px; } }
+  @media (max-width: 767px) {
+      .header-lcc ul.menu li a:before {
+        font-family: "FontAwesome";
+        display: block;
+        width: 100%;
+        margin-bottom: 3px;
+        font-size: 20px;
+        float: none; }
+      .header-lcc ul.menu li a.my-account {
+        margin: 0 1px 0 0;
+        padding: 10px 5px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        border-radius: 0px; } }
+    @media (max-width: 767px) and (max-width: 350px) {
+      .header-lcc ul.menu li a.my-account {
+        padding: 10px 3px; } }
+  @media (max-width: 767px) {
+        .header-lcc ul.menu li a.my-account:before {
+          content: "\f007"; } }
+
+@media (max-width: 767px) {
+  #nav-search {
+    position: absolute;
+    top: 62px;
+    left: 0px;
+    background: #bdc3c7;
+    padding: 15px;
+    margin: 0px;
+    height: auto;
+    width: 100%;
+    z-index: 10;
+    display: none; } }
 
 .sub-section-heading {
   border-bottom: 1px solid #DCDEE1;
@@ -4252,7 +4351,7 @@ input[type=submit]:focus,
     border-color: white;
     background: rgba(255, 255, 255, 0);
     position: relative;
-    padding: 7px 12px 7px;
+    padding: 10px 15px;
     font-weight: bold;
     color: #fff;
     margin: 5px 0 7px;

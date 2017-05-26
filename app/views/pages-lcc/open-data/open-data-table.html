@@ -1,7 +1,7 @@
 {% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
-	Service Page Example
+	Open data information
 {% endblock %}
 
 
@@ -14,7 +14,7 @@
  
 
 {% block header %}
-    Council Tax
+    Outline Business Cases (PPPU)
 {% endblock%}
 
  {% block main_nav %}
@@ -23,8 +23,6 @@
 
 
  {% block sectionOneTop %}
- {% include "includes/lcc-components/alerts/emergency-message.html" %}
- {% include "includes/lcc-components/header-lcc.html" %}
 {% endblock %} 
 
 {% block sectionOneFull%}
@@ -45,9 +43,7 @@
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-    {% include "includes/lcc-components/alerts/announcement-dismissable.html" %}
-    {% include "includes/lcc-components/group-promos-lcc-service-page.html" %}
-    {% include "includes/design-patterns/sub-section-nav.html" %}
+    {% include "includes/lcc-components/open-data/open-data-table.html" %}
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}

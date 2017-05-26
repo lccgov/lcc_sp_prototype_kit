@@ -1,0 +1,118 @@
+.header-lcc{
+    .logo {
+        height: auto;
+        width: auto;
+        background: none;
+        display:inline-block;
+        margin:9px 0;
+        text-decoration:none;
+        border:0;
+        font-size:36px;
+        text-transform:uppercase;
+        font-weight:700;
+        color: #fff;
+
+        @media (max-width: 767px) {
+            font-size:26px;
+        }
+
+        &:after{
+            display:none;
+        }
+
+        &:hover{
+            color:$light-grey;
+        }
+    }
+
+    ul.menu li a{
+        cursor:pointer;
+
+        &.my-account{
+            color:#ffffff;
+            text-decoration:none;
+            @include border-radius(4px);
+            padding:7px 15px;
+            margin:5px 0;
+            min-height:0;
+            background:lighten($blue,5%);
+
+            &:before {
+                font-family: "FontAwesome";
+                content: "\f007"; 
+                margin-right:5px;
+            }
+        }
+
+           @media (max-width: 767px) {
+            font-size: 8px;
+            padding: 10px 5px;
+            line-height: 1;
+            min-height: 0;
+            display: block;
+            text-align:center;
+            text-decoration:none;
+            background:transparent;
+            color:#ffffff;
+            background:lighten($blue,5%);
+            width:60px;
+            margin:0;
+
+            @media (max-width: 350px) {
+                font-size: 7px;
+                padding: 10px 3px;
+                width:45px;
+
+                &:before{
+                    font-size:16px;
+                }
+            }
+
+            &:before{
+                font-family: "FontAwesome";
+                display:block;
+                width:100%;
+                margin-bottom:3px;
+                font-size:20px;
+                float:none;
+            }
+
+            &.search{
+
+            }
+
+            &.my-account{
+                margin:0 1px 0 0;
+                padding: 10px 5px;
+                @include border-radius(0px);
+
+                @media (max-width: 350px) {
+                    padding: 10px 3px;
+                }
+
+                &:before {
+                    content: "\f007";
+                }
+            }
+        }
+    }
+}
+
+ 
+
+
+
+@media (max-width: 767px){
+   #nav-search {
+        position: absolute;
+        top: 62px;
+        left: 0px;
+        background: #bdc3c7;
+        padding: 15px;
+        margin: 0px;
+        height: auto;
+        width: 100%;
+        z-index: 10;
+        display: none;
+    }
+}

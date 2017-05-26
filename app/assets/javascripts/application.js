@@ -56,7 +56,7 @@ function randomImage(){
 document.addEventListener("DOMContentLoaded", randomImage);
 
 //contentful js
-function load_accordion() {
+/*function load_accordion() {
     var deferred = $.Deferred();
  
     $.ajax({
@@ -89,7 +89,7 @@ function load_accordion() {
     });
  
     return deferred.promise();
-}
+}*/
 
 function load_carousel() {
     var deferred = $.Deferred();
@@ -178,7 +178,7 @@ function load_group_promo() {
  
 $(function() {
     load_accordion().then(function() {
-        LCC.modules.start($("#accordion-container"), true);
+        LCC.modules.start($("#accordion-contentful"), true);
     });
 
     load_carousel().then(function() {
