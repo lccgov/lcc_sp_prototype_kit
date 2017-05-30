@@ -23,6 +23,12 @@
 
 
  {% block sectionOneTop %}
+ {% include "includes/lcc-components/atoz.html" %}
+ <style>
+     .atoz:first-child{
+        margin-top:0;
+     }
+ </style>
 {% endblock %} 
 
 {% block sectionOneFull%}
@@ -30,11 +36,6 @@
 
 
  {% block breadcrumb %}
-  <div class ="breadcrumb">
-    <span sitemapproviders="SPSiteMapProvider,SPXmlContentMapProvider" hideinteriorrootnodes="true"><!--<a href="index" width="0" height="0" style="border-width:0px;"></a>--><span><a class="bc-root" href="/lcc-home.html">Home</a></span><span>
-        <img id="ctl00_PlaceHolderMain_ctl00_ctl01_Image1" src="/_catalogs/masterpage/images/breadcrumb_line.png">
-    </span><a href="/pages-lcc/service-page-example.html">Council Tax</a></span>
-    </div>
  {% endblock %}
 
 {% block sectionOneContent %}
@@ -46,7 +47,7 @@
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-    {% include "includes/lcc-components/list-nav-atoz.html" %}
+    {% include "includes/lcc-components/atoz-list-a.html" %}
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}

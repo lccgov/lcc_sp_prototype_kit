@@ -28,12 +28,17 @@
 {% endblock %} 
 
 {% block sectionOneFull%}
+<!-- Bespoke style for leeds.gov.uk home page -->
 <style>
-    .sectionOne{
+    body, .sectionOne{
         background:#F6F7FA;
     }
     .atoz{
         background:#ffffff;
+    }
+
+    .atoz ul li a, .atoz ul li.inactive{
+        border-color:#F6F7FA;
     }
 </style>
 {% endblock %}
@@ -41,7 +46,6 @@
 {% block sectionOneFullBottom %}
     {% include "includes/lcc-components/home-page/group-promos-lcc-home.html" %}
     {% include "includes/lcc-components/home-page/promo-lcc-home.html" %}
-    <div id="header-right"></div>
 {% endblock %}
 
 
