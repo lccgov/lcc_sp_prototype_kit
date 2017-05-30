@@ -27,10 +27,17 @@
 
     ul.menu li a{
         cursor:pointer;
+        color:#ffffff !important;
 
-        &:hover{
+        &:hover,
+        &.active{
             background:darken($blue,10%) !important;
         }
+
+        &:active{
+            background:darken($blue,15%) !important;
+        }
+
 
         &.my-account{
             color:#ffffff;
@@ -83,6 +90,11 @@
 
             &.search{
 
+                &.active{
+                    background:darken($blue,15%) !important;
+                    color:#ffffff !important;
+                }
+
             }
 
             &.my-account{
@@ -102,10 +114,6 @@
     }
 }
 
- 
-
-
-
 @media (max-width: 767px){
    #nav-search {
         position: absolute;
@@ -123,4 +131,24 @@
 
 #nav-search {
     margin: 5px;
+
+    .ms-srch-sb > input{
+        outline:0 !important;
+    }
+}
+
+@media (max-width: 767px){
+
+#nav-search{
+    margin:0;
+    background:darken($blue,15%) !important;
+    top:50px;
+
+    .ms-srch-sb-searchLink:before{
+        font-size:34px;
+        content: "\f002";
+        margin:0;
+    }
+}
+
 }

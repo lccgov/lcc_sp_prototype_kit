@@ -4224,9 +4224,12 @@ hr {
     color: #DCDEE1; }
 
 .header-lcc ul.menu li a {
-  cursor: pointer; }
-  .header-lcc ul.menu li a:hover {
+  cursor: pointer;
+  color: #ffffff !important; }
+  .header-lcc ul.menu li a:hover, .header-lcc ul.menu li a.active {
     background: #014a6b !important; }
+  .header-lcc ul.menu li a:active {
+    background: #013952 !important; }
   .header-lcc ul.menu li a.my-account {
     color: #ffffff;
     text-decoration: none;
@@ -4271,6 +4274,9 @@ hr {
         margin-bottom: 3px;
         font-size: 20px;
         float: none; }
+      .header-lcc ul.menu li a.search.active {
+        background: #013952 !important;
+        color: #ffffff !important; }
       .header-lcc ul.menu li a.my-account {
         margin: 0 1px 0 0;
         padding: 10px 5px;
@@ -4300,6 +4306,18 @@ hr {
 
 #nav-search {
   margin: 5px; }
+  #nav-search .ms-srch-sb > input {
+    outline: 0 !important; }
+
+@media (max-width: 767px) {
+  #nav-search {
+    margin: 0;
+    background: #013952 !important;
+    top: 50px; }
+    #nav-search .ms-srch-sb-searchLink:before {
+      font-size: 34px;
+      content: "\f002";
+      margin: 0; } }
 
 .sub-section-heading {
   border-bottom: 1px solid #DCDEE1;
