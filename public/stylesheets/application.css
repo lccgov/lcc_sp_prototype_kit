@@ -3789,10 +3789,9 @@ footer.main .container-fluid {
           color: #FFFFFF;
           border-color: rgba(255, 255, 255, 0.3);
           text-decoration: none; }
-      @media (max-width: 500px) {
+      @media (max-width: 400px) {
         .footerGlobal nav ul li {
-          width: 100%;
-          text-align: center; }
+          width: 100%; }
           .footerGlobal nav ul li:after {
             display: none; } }
 
@@ -3802,23 +3801,19 @@ footer.main .container-fluid {
   height: 66px; }
   @media (max-width: 500px) {
     .logo-footer span {
-      margin: 0 auto 20px; } }
+      margin: 0 0 20px; } }
 
 footer.main p {
   margin-bottom: 0;
   font-weight: 300; }
-  @media (max-width: 500px) {
-    footer.main p {
-      text-align: center; } }
 
 footer.main .socialBookmarks ul li:first-of-type {
   display: inline-block;
   padding-bottom: 0.65em; }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   footer.main .text-right {
-    padding-top: 50px;
-    text-align: center; } }
+    padding-top: 50px; } }
 
 footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after {
   font-size: 30px;
@@ -3830,6 +3825,9 @@ footer.main .socialBookmarks ul li {
   margin: 0 10px 0 0; }
   footer.main .socialBookmarks ul li a:hover {
     text-decoration: none; }
+
+footer.main .socialBookmarks {
+  margin: 0; }
 
 .atoz {
   background: #F6F7FA;
@@ -4350,6 +4348,12 @@ hr {
 
 .groupPromo ul li a:active {
   background: #015c85 !important; }
+
+.mega-promo .mega-promo__item a:hover {
+  background: #015c85; }
+  .mega-promo .mega-promo__item a:hover .mega-promo__header,
+  .mega-promo .mega-promo__item a:hover .mega-promo__secondary, .mega-promo .mega-promo__item a:hover:after {
+    color: #FFFFFF; }
 
 .mega-promo .mega-promo__item.blue a {
   background: #016D9E; }

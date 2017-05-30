@@ -336,6 +336,20 @@ $group-promo-arrow-color: $grey;
 //custom mega-promo
 .mega-promo{
     .mega-promo__item{
+         a:hover{
+             background:darken($blue,5%);
+
+             .mega-promo__header,
+             .mega-promo__secondary,
+             &:after{
+                color:$white;
+             }
+         }
+    }
+}
+
+.mega-promo{
+    .mega-promo__item{
          &.blue{
             @include mega-promo-colors($blue, $white, $white, $white, $promo-highlight-background-color, $promo-highlight-color);
         }

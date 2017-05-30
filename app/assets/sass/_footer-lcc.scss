@@ -11,27 +11,27 @@ footer.main{
 
   nav{
     padding-bottom:50px;
-  ul{
-    li{
-      margin-bottom:10px;
 
-      a{
-        @include link-border-bottom($white,0.3,$white);
-        font-size:18px;
-        font-weight:300;
+    ul{
+      li{
+        margin-bottom:10px;
+
+        a{
+          @include link-border-bottom($white,0.3,$white);
+          font-size:18px;
+          font-weight:300;
+        }
+
+        @media (max-width: 400px) {
+            width:100%;
+
+            &:after{
+              display:none;
+            }
+        }
+
       }
-
-      @media (max-width: 500px) {
-          width:100%;
-          text-align:center;
-
-          &:after{
-            display:none;
-          }
-      }
-
-      }
-  }
+    }
   }
 }
 .logo-footer span {
@@ -40,16 +40,12 @@ footer.main{
     height: 66px;
 
     @media (max-width: 500px) {
-          margin:0 auto 20px;
-      }
+        margin:0 0 20px;
+    }
 }
 footer.main p {
     margin-bottom: 0;
     font-weight:300;
-
-    @media (max-width: 500px) {
-          text-align:center;
-      }
 }
 
 footer.main .socialBookmarks ul li:first-of-type {
@@ -58,9 +54,9 @@ footer.main .socialBookmarks ul li:first-of-type {
 }
 
 footer.main .text-right {
-  @media (max-width: 500px) {
+
+  @media (max-width: 767px) {
     padding-top:50px;
-    text-align:center;
   }
 }
 
@@ -81,4 +77,8 @@ footer.main .socialBookmarks ul li {
       }
 
     }
+}
+
+footer.main .socialBookmarks {
+    margin: 0;
 }
