@@ -48,28 +48,20 @@
                         <section class="sectionHeader">
                             <div class="container-fluid">
                                 <a href="/" title="Go to the LEEDS.GOV.UK homepage" class="logo">LEEDS.GOV.UK</a>
-                                <div class="pull-right">
-                                    <ul class="menu">
-                                        <li>
-                                            <a class="my-account" href="/pages-lcc/my-account.html">My Account</a>
-                                        </li>
-                                        <li>
-                                            <div class="nav-search" id="nav-search">
-                                                <div class="input-group">
-                                                    <!--sharepoint search-->
-                                                    <div data-name="search_box">
-                                                            {% include "includes/search_global.html" %}                                          
-                                                    </div>
-                                                    <!-- end sharepoint search -->
-                                                </div>
+                                <div class="header-nav">
+                                    <a class="my-account" href="/pages-lcc/my-account.html">My Account</a>
+                                    <a class="search" href="#">
+                                        <span class="sr-only">Toggle website</span> Search
+                                    </a>
+                                    <div class="nav-search" id="nav-search">
+                                        <div class="input-group">
+                                            <!--sharepoint search-->
+                                            <div data-name="search_box">
+                                                    {% include "includes/search_global.html" %}                                          
                                             </div>
-                                        </li>
-                                        <li>
-                                            <a class="search" href="#">
-                                                <span class="sr-only">Toggle website</span> Search
-                                            </a>
-                                        </li>
-                                    </ul>
+                                            <!-- end sharepoint search -->
+                                        </div>
+                                    </div>   
                                 </div>
                             </div>
                         </section>
