@@ -42,7 +42,7 @@
             }
 
             &:hover{
-                background:lighten($secondary-link-color,15%) !important;
+                background:lighten($secondary-link-color,5%) !important;
             }
 
             &:focus{
@@ -51,11 +51,11 @@
             }
 
             &.active{
-                background:darken($secondary-link-color,20%) !important;
+                background:darken($secondary-link-color,5%) !important;
                 color:#fff !important;
 
                 &:hover{
-                    background:lighten($secondary-link-color,5%) !important;
+                    background:lighten($secondary-link-color,7%) !important;
                 }
             }
 
@@ -160,11 +160,12 @@
         z-index: 10;
         display: none;
         margin:0;
-        background:darken($secondary-link-color,20%) !important;
+        background:darken($secondary-link-color,5%) !important;
 
         .ms-srch-sb-searchLink{
             padding:0;
             line-height:55px;
+            background:$green;
         
             &:before{
                 font-size:34px;

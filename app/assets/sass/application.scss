@@ -9,9 +9,9 @@
 //base.scss
 
 //base colours
-$blue:#016D9E;
-$dark-blue: darken(#016D9E, 15%);
-$light-blue: lighten(#016D9E, 10%);
+$blue:#007FAA;
+$dark-blue: darken($blue, 15%);
+$light-blue: lighten($blue, 10%);
 $bluey-green: #1f847e;
 $green:#1E824C;
 $black:#212224;
@@ -30,7 +30,7 @@ $header-font-color:$black;
 $base-link-color:$blue;
 $base-link-hover-color:lighten($blue,10%);
 $base-link-visited-color:#4C2C92;
-$secondary-link-color:$light-blue;
+$secondary-link-color:#004f6a;
 $secondary-font-color:$dark-grey;
 $border-color:$light-grey;
 $panel-color:$lighter-grey;
@@ -509,7 +509,7 @@ input[type=submit]:focus,
     }
 
     &.alert-info{
-        background:#1f847e;
+        background:#005051;
 
         a{
             color:#ffffff;
