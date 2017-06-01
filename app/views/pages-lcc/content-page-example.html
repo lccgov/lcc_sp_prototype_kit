@@ -1,4 +1,4 @@
-{% extends "layout_multi_sections.html" %}
+{% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
 	Content Page Example
@@ -30,11 +30,18 @@
 
 
  {% block breadcrumb %}
-  <div class ="breadcrumb">
-    <span sitemapproviders="SPSiteMapProvider,SPXmlContentMapProvider" hideinteriorrootnodes="true"><!--<a href="index" width="0" height="0" style="border-width:0px;"></a>--><span><a class="bc-root" href="/lcc-home.html">Home</a></span><span>
-        <img id="ctl00_PlaceHolderMain_ctl00_ctl01_Image1" src="/_catalogs/masterpage/images/breadcrumb_line.png">
-    </span><a href="/pages-lcc/service-page-example.html">Council Tax</a></span>
-    </div>
+<ul>
+    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+        <a href="/lcc-home.html">Home</a>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span><a href="/pages-lcc/service-page-example.html">Council Tax</a>
+                <ul class="">
+                    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span><span class="">Pay Council Tax by Direct Debit</span></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
  {% endblock %}
 
 {% block sectionOneContent %}

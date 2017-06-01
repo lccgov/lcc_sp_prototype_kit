@@ -124,13 +124,18 @@
                             height:55px;
                             border:0;
                             padding:10px 25px;
-                            background:$green;
+                            background:$button-color;
                             font-size:21px;
                             margin:0;
 
                             &:hover{
-                                background:darken($green,5%);
+                                background:$button-hover-color;
                                 color:$white;
+                            }
+
+                            &:active{
+                                background:darken($button-color,10%) !important;
+                                color:#fff !important;
                             }
 
                             @media (max-width: 766px) {
@@ -200,8 +205,13 @@
 
 
                             &:hover{
-                                background:darken($blue,5%);
+                                background:$base-link-hover-color;
                                 color:$white;
+                            }
+
+                            &:active{
+                                background:darken($base-link-color,10%) !important;
+                                color:#fff !important;
                             }
 
                             &:after,

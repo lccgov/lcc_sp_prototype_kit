@@ -45,7 +45,7 @@
 <p class="text">The colour contrast ratio for text and interactive elements should be at least 4.5:1 <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" rel="external">as recommended by the W3C</a>. Test your service to meet this standard.</p>
 <hr>
 <h2 class="heading-medium" id="colour-sass-variables">Sass variables</h2>
-<p class="text">Use Sass variables in case colour values need to be updated – find these in the GOV.UK frontend toolkit <a href="https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_colours.scss" rel="external">colours.scss</a> file.</p>
+<p class="text">Use Sass variables in case colour values need to be updated.</p>
 <div class="example">
 
 <div class="swatch-wrapper">
@@ -53,14 +53,14 @@
 
     <div class="swatch swatch-text-colour"></div>
     <ul>
-    <li><b>#0B0C0C</b></li>
-    <li>$text-colour</li>
+    <li><b>#212224</b></li>
+    <li>$base-font-color</li>
     </ul>
 
     <div class="swatch swatch-text-secondary"></div>
     <ul>
-    <li><b>#6F777B</b></li>
-    <li>$secondary-text-colour</li>
+    <li><b>#666B76</b></li>
+    <li>$secondary-font-color</li>
     </ul>
 
     <div class="swatch swatch-page-colour"></div>
@@ -76,20 +76,20 @@
 
     <div class="swatch swatch-link-colour"></div>
     <ul>
-    <li><b>#005ea5</b></li>
-    <li>$link-colour</li>
+    <li><b>#016D9E</b></li>
+    <li>$base-link-color</li>
     </ul>
 
     <div class="swatch swatch-link-colour-hover"></div>
     <ul>
-    <li><b>#2b8cc4</b></li>
-    <li>$link-hover-colour</li>
+    <li><b>#0190d1</b></li>
+    <li>$base-link-hover-color</li>
     </ul>
 
     <div class="swatch swatch-link-colour-visited"></div>
     <ul>
-    <li><b>#4c2c92</b></li>
-    <li>$link-visited-colour</li>
+    <li><b>#4C2C92</b></li>
+    <li>$base-link-visited-color</li>
     </ul>
 </div>
 
@@ -98,21 +98,16 @@
 
     <div class="swatch swatch-border-colour"></div>
     <ul>
-    <li><b>#BFC1C3</b></li>
+    <li><b>#DCDEE1</b></li>
     <li>$border-colour</li>
     </ul>
 
     <div class="swatch swatch-panel-colour"></div>
     <ul>
-    <li><b>#DEE0E2</b></li>
+    <li><b>#F6F7FA</b></li>
     <li>$panel-colour</li>
     </ul>
 
-    <div class="swatch swatch-highlight-colour"></div>
-    <ul>
-    <li><b>#F8F8F8</b></li>
-    <li>$highlight-colour</li>
-    </ul>
 </div>
 
 <div class="swatch-wrapper">
@@ -120,20 +115,20 @@
 
     <div class="swatch swatch-button-colour"></div>
     <ul>
-    <li><b>#00823B</b></li>
+    <li><b>#1E824C</b></li>
     <li>$button-colour</li>
     </ul>
 
-    <div class="swatch swatch-green"></div>
+    <div class="swatch swatch-button-hover-colour "></div>
     <ul>
-    <li><b>#006435</b></li>
-    <li>$green (hover colour)</li>
+    <li><b>#2cc070</b></li>
+    <li>$button-hover-colour</li>
     </ul>
 </div>
 
 <div class="swatch-wrapper">
     <h4 class="heading-small">Focus</h4>
-    <div class="swatch swatch-yellow"></div>
+    <div class="swatch swatch-focus"></div>
     <ul>
     <li><b>#FFBF47</b></li>
     <li>$focus-colour</li>
@@ -150,14 +145,13 @@
 {% block sectionOneRightHandColumn %}
 <div id="sticky-anchor"></div>
 <div id="sticky">
-    <h2 class="heading-xsmall heading-contents">Contents:</h2>
+    <h3 class="heading-xsmall heading-contents">Contents:</h3>
     <ul class="list list-contents">
         <li><a href="#colour-contrast">Colour contrast</a></li>
         <li><a href="#colour-sass-variables">Sass variables</a></li>
         <li><a href="#colour-status-colours">Status colours</a></li>
         <li><a href="#colour-greyscale-palette">Greyscale palette</a></li>
         <li><a href="#colour-extended-palette">Extended palette</a></li>
-        <li><a href="#examples">Examples</a></li>
     </ul>
 </div>
 {% endblock %}

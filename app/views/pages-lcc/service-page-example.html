@@ -1,4 +1,4 @@
-{% extends "layout_multi_sections.html" %}
+{% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
 	Service Page Example
@@ -24,7 +24,6 @@
 
  {% block sectionOneTop %}
  {% include "includes/lcc-components/alerts/emergency-message.html" %}
- {% include "includes/lcc-components/header-lcc.html" %}
 {% endblock %} 
 
 {% block sectionOneFull%}
@@ -32,9 +31,14 @@
 
 
  {% block breadcrumb %}
-  <div class ="breadcrumb">
-    <span sitemapproviders="SPSiteMapProvider,SPXmlContentMapProvider" hideinteriorrootnodes="true"><!--<a href="index" width="0" height="0" style="border-width:0px;"></a>--><span><a class="bc-root" href="/lcc-home.html">Home</a></span>
-    </div>
+<ul>
+    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+        <a href="/lcc-home.html">Home</a>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Council Tax</li>
+        </ul>
+    </li>
+</ul>
  {% endblock %}
 
 {% block sectionOneContent %}

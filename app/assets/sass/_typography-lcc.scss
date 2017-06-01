@@ -248,7 +248,7 @@ p {
 
 //text-highlight
 .text-highlight{
-  border-left: 15px solid $border-grey;
+  border-left: 15px solid $border-color;
   padding:20px;
   width:100%;
   margin:30px 0;
@@ -293,6 +293,10 @@ a {
     /*@include link-border-bottom($base-link-color,0.5,$base-link-color-visited);*/
     text-decoration:underline;
     color:$base-link-color;
+
+    &:hover{
+      color:$base-link-hover-color;
+    }
 }
 
 a[rel="external"]{

@@ -34,8 +34,14 @@
             background:darken($blue,10%) !important;
         }
 
+        &:focus{
+            background:$focus-color !important;
+            color:$base-font-color !important;
+        }
+
         &:active{
             background:darken($blue,15%) !important;
+            color:#fff !important;
         }
 
 
