@@ -7,11 +7,11 @@
     z-index:-2;
 
     @media (min-width: 767px) {
-        height:65vh;
+        height:75vh;
     }
 
     .hero-lcc{
-        @include background-radial(rgba(9,59,81,0.8),rgba(9,59,81,0.2),rgba(9,59,81,0.5));
+        @include background-radial(rgba(9,59,81,0.8),rgba(9,59,81,0.2),rgba(9,59,81,0.3));
         z-index:-1;
         height:100%;
         @include flexbox();
@@ -124,9 +124,10 @@
                             height:55px;
                             border:0;
                             padding:10px 25px;
-                            background:$button-color;
+                            background:$primary-button-background-color;
                             font-size:21px;
                             margin:0;
+                            border-bottom:2px solid darken($primary-button-background-color,5%);
 
                             &:hover{
                                 background:$button-hover-color;
@@ -203,6 +204,7 @@
                             @include flexbox();
                             @include justify-content(center);
                             @include flex-direction(column);
+                            border-bottom:2px solid darken($secondary-button-background-color,5%);
 
 
                             &:hover{

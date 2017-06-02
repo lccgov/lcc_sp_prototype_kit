@@ -10,10 +10,10 @@
 
 //base colours
 $blue:#007FAA;
-$dark-blue: darken($blue, 15%);
-$light-blue: lighten($blue, 10%);
+$dark-blue: #003F55;
+$light-blue: #3399BB;
 $bluey-green: #1f847e;
-$green:#1E824C;
+$green:#008000;
 $black:#212224;
 $light-black:#3D414A;
 $dark-grey:#666B76;
@@ -28,15 +28,15 @@ $base-font-size:16px ;
 $base-font-color:$black;
 $header-font-color:$black;
 $base-link-color:$blue;
-$base-link-hover-color:#3399BB;
+$base-link-hover-color:$light-blue;
 $base-link-visited-color:#4C2C92;
-$secondary-link-color:#003F55;
+$secondary-link-color:$dark-blue;
 $secondary-font-color:$dark-grey;
 $border-color:$light-grey;
 $panel-color:$lighter-grey;
 $brand-color:$blue;
 $button-color:$green;
-$button-hover-color:lighten($green,15%);
+$button-hover-color:lighten($green,5%);
 $focus-color:$yellow;
 $base-container-width:1400px ;
 //$btn-background-color:green ;
@@ -461,7 +461,7 @@ input[type=submit]:focus,
     color:#fff;
 
     h1, h2, h3, h4, p {
-        color:#fff;
+        color:#212224;
     }
 
     a{
@@ -481,30 +481,20 @@ input[type=submit]:focus,
     &.alert-warning{
         background:#FFBF47;
 
-        h1, h2, h3, h4, p {
-            color:#212224;
-        }
-
         a:focus{
             background:darken($focus-color,15%) !important;
-        }
-
-        .btn-default{
-            border-color:#212224;
-            color:#212224;
-
-            &:hover{
-                background:rgba(255,255,255,0.5);
-                border-color:transparent;
-            }
         }
     }
 
     &.alert-info{
         background:#B3D9E6;
 
-        h1, h2, h3, h4, p {
-            color:#212224;
+        a{
+            color:$secondary-link-color;
+
+            &:hover{
+                color:lighten($secondary-link-color,5%);
+            }
         }
     }
 
@@ -514,6 +504,7 @@ input[type=submit]:focus,
         top:0;
         right:0;
         color:#212224;
+        text-shadow:none;
 
         &:hover{
             color:lighten(#212224,10%);
@@ -538,17 +529,13 @@ input[type=submit]:focus,
         }
     }
 
-    .close{
-        text-shadow:none;
-    }
-
     .btn-default{
-        border-color:rgba(255,255,255,1);
-        background:rgba(255,255,255,0);
+        border-color:#212224;
+        color:#212224;
+        background:transparent;
         position:relative;
         padding:10px 15px;
         font-weight:bold;
-        color:#fff;
         margin:5px 0 7px;
         font-size:16px;
 
@@ -557,8 +544,9 @@ input[type=submit]:focus,
         }
 
         &:hover{
-            background:rgba(0,0,0,0.5);
+            background:rgba(0,0,0,0.1);
             border-color:transparent;
+            color:#212224;
         }
     }
 }
@@ -651,4 +639,12 @@ input[type=submit]:focus,
             clear:both;
         }
     }
+}
+
+//buttons
+.btn-primary{
+    border-bottom:2px solid darken($primary-button-background-color,5%);
+}
+.btn-secondary{
+    border-bottom:2px solid darken($secondary-button-background-color,5%);
 }
