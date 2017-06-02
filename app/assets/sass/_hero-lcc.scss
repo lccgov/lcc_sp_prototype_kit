@@ -180,6 +180,7 @@
                     @include flex-wrap(wrap);
                     margin:0 0 0 -10px;
 
+
                     .hero-lcc__most-popular-item{
                         @include flexbox();
                         @include flex(1 1 auto);
@@ -244,6 +245,49 @@
                         padding-bottom:5px;
                     }
                 }
+                }
+            }
+        }
+    }
+}
+
+//no flexbox fallback
+.no-flexbox .hero-lcc-wrapper{
+    .hero-lcc{   
+        display:table;
+        width:100%;
+        background:rgba(9,59,81,0.7);
+
+        .hero-lcc__content{
+            margin:0 auto;
+            display: table-cell;
+	        vertical-align: middle;
+            padding:0 15em;
+
+            @media (max-width: 1400px) {
+                padding:0 10em;
+            }
+
+            @media (max-width: 1200px) {
+                padding:0 5em;
+            }
+
+            @media (max-width: 990px) {
+                padding:0;
+            }
+
+            .hero-lcc__actions{
+                .hero-lcc__most-popular{
+                    width:100%;
+                    display:table;
+
+                    .hero-lcc__most-popular-item{
+                        display:table-cell;
+
+                        @media (max-width: 767px) {
+                            display:block;
+                        }
+                    }
                 }
             }
         }
