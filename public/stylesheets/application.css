@@ -2477,6 +2477,17 @@ input[type=submit]:focus,
   .btn-outline:after {
     background: rgba(0, 0, 0, 0.05); }
 
+.browser-alert {
+  background: black; }
+  .browser-alert span {
+    color: white;
+    padding: 15px 0;
+    display: block; }
+    .browser-alert span:before {
+      font-family: "FontAwesome";
+      content: "\f071";
+      margin-right: 10px; }
+
 .hero-lcc-wrapper {
   background-image: none;
   background-color: #093b51;
@@ -4276,6 +4287,29 @@ table th, table td {
         content: "\f002";
         margin: 0; } }
 
+.ie8 .container-fluid {
+  max-width: 980px; }
+
+.ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
+  padding: 80px 15em; }
+  .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
+    height: 55px; }
+  .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i {
+    display: none; }
+  .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular {
+    width: 100%;
+    display: table; }
+    .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
+      display: table-cell; }
+      @media (max-width: 767px) {
+        .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
+          display: block; } }
+
+.ie8 .groupPromo ul li {
+  width: 100%; }
+  .ie8 .groupPromo ul li a {
+    width: 100%; }
+
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
   padding-right: 15px;
   padding-left: 15px; }
@@ -4597,3 +4631,21 @@ input[type=submit]:focus,
 
 .btn-secondary {
   border-bottom: 2px solid #006c91; }
+
+a.skip {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999; }
+
+a.skip:focus, a.skip:active {
+  left: 0.625em;
+  top: 0.625em;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  z-index: 999;
+  padding: 0.625em; }
