@@ -2272,7 +2272,7 @@ input[type=submit]:focus,
               font-size: 16px;
               line-height: 20px; } }
       .mega-promo .mega-promo__item a .mega-promo__highlight {
-        background: #00b8f7;
+        background: #003F55;
         color: #FFFFFF;
         position: absolute;
         top: 0;
@@ -3417,6 +3417,13 @@ ol {
       .list-nav li a:hover {
         text-decoration: underline; }
 
+blockquote {
+  border-left: 15px solid #3399BB; }
+  blockquote span.open-quote:after {
+    color: #DCDEE1; }
+  blockquote footer {
+    color: #212224; }
+
 .form-control {
   width: 100%;
   height: 45px;
@@ -4318,6 +4325,11 @@ hr {
 
 .groupPromo a {
   border: 0; }
+  @media (max-width: 767px) {
+    .groupPromo a h3:after {
+      top: 0 !important;
+      right: 0 !important;
+      margin: 0 !important; } }
   .groupPromo a:focus h3,
   .groupPromo a:focus h3:after,
   .groupPromo a:focus p {
@@ -4364,7 +4376,7 @@ hr {
   .mega-promo .mega-promo__item.blue a .mega-promo__content .mega-promo__secondary {
     color: #FFFFFF; }
   .mega-promo .mega-promo__item.blue a .mega-promo__highlight {
-    background: #00b8f7;
+    background: #003F55;
     color: #FFFFFF; }
 
 .carousel .carousel-caption a,

@@ -361,3 +361,16 @@ ol {
     }
   }
 }
+
+//blockquote
+blockquote {
+    border-left: 15px solid $base-link-hover-color;
+
+  span.open-quote:after {
+    color: $light-grey;
+  }
+
+  footer {
+    color: $base-font-color;
+  }
+}

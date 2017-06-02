@@ -136,7 +136,7 @@ $promo-background-color:$white;
 $promo-arrow-color:$grey;
 $promo-header-color:$blue;
 $promo-secondary-color:$black;
-$promo-highlight-background-color:lighten($blue, 15%);
+$promo-highlight-background-color:$dark-blue;
 $promo-highlight-color:$white;
 
 //button colours
@@ -266,6 +266,14 @@ hr{
 .groupPromo{
     a{
         border:0;
+
+        @media (max-width: 767px){
+            h3:after {
+                top: 0 !important;
+                right: 0 !important;
+                margin:0 !important;
+            }
+        }
 
         &:focus{
             h3,
