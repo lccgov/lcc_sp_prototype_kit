@@ -2623,10 +2623,10 @@ input[type=submit]:focus,
               font-size: 21px;
               margin: 0; }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:hover {
-                background: #009a00;
+                background: #009A00;
                 color: #FFFFFF; }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:active {
-                background: #004d00 !important;
+                background: #006700 !important;
                 color: #fff !important; }
               @media (max-width: 766px) {
                 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn {
@@ -3792,6 +3792,9 @@ footer.main .container-fluid {
   font-size: 16px; }
   .footerGlobal nav {
     padding-bottom: 50px; }
+    @media (max-width: 767px) {
+      .footerGlobal nav {
+        padding-bottom: 30px; } }
     .footerGlobal nav ul li {
       margin-bottom: 10px; }
       .footerGlobal nav ul li a {
@@ -3831,23 +3834,56 @@ footer.main .socialBookmarks ul li:first-of-type {
   display: inline-block;
   padding-bottom: 0.65em; }
 
-@media (max-width: 767px) {
-  footer.main .text-right {
-    padding-top: 50px; } }
+footer.main .text-right {
+  float: right; }
+  @media (max-width: 767px) {
+    footer.main .text-right {
+      padding-bottom: 30px;
+      float: none; } }
 
-footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after {
+footer.main .socialBookmarks .facebook:after,
+footer.main .socialBookmarks .twitter:after,
+footer.main .socialBookmarks .youtube:after,
+footer.main .socialBookmarks .email:after,
+footer.main .socialBookmarks .instagram:after {
   font-size: 30px;
   width: 70px;
   height: 70px;
   padding-top: 15px; }
 
-footer.main .socialBookmarks ul li {
-  margin: 0 10px 0 0; }
-  footer.main .socialBookmarks ul li a:hover {
-    text-decoration: none; }
+footer.main .socialBookmarks {
+  float: right;
+  padding-top: 25px; }
+  footer.main .socialBookmarks ul li {
+    margin: 0 10px 0 0; }
+    footer.main .socialBookmarks ul li a:hover {
+      text-decoration: none; }
+  @media (max-width: 500px) {
+    footer.main .socialBookmarks {
+      float: none;
+      padding-top: 30px; } }
 
 footer.main .socialBookmarks {
   margin: 0; }
+
+.footer-bsl-logo {
+  display: inline-block;
+  background: url(../images/logo-bsl.svg) no-repeat;
+  height: 100px;
+  width: 100px;
+  margin-right: 20px; }
+  .footer-bsl-logo:focus {
+    background: url(../images/logo-bsl.svg) no-repeat !important;
+    outline: 5px solid #FFBF47; }
+  .footer-bsl-logo:hover {
+    opacity: 0.8; }
+  .footer-bsl-logo:active {
+    opacity: 0.6; }
+
+.ie8 .footer-bsl-logo {
+  background: url(../images/logo-bsl.png) no-repeat; }
+  .ie8 .footer-bsl-logo:focus {
+    background: url(../images/logo-bsl.png) no-repeat !important; }
 
 .atoz {
   background: #F6F7FA;
@@ -4048,7 +4084,7 @@ table th, table td {
   text-decoration: none;
   border: 0; }
   .logo:after {
-    content: 'LEEDS.GOV.UK';
+    content: 'LCC DIGITAL';
     font-size: 36px;
     text-transform: uppercase;
     font-weight: 700;
@@ -4197,15 +4233,17 @@ table th, table td {
       border-color: #00526f; }
     .header-lcc .header-nav a:focus {
       background: #FFBF47 !important;
-      color: #212224 !important; }
+      color: #212224 !important;
+      border-color: #FFBF47 !important; }
     .header-lcc .header-nav a.active {
-      background: #002c3c !important;
+      background: #003446 !important;
       color: #fff !important; }
       .header-lcc .header-nav a.active:hover {
-        background: #005979 !important; }
+        background: #005674 !important; }
     .header-lcc .header-nav a:active {
-      background: black !important;
-      color: #fff !important; }
+      background: #004a64 !important;
+      color: #fff !important;
+      border-color: #004a64 !important; }
     .header-lcc .header-nav a.my-account {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
@@ -4282,6 +4320,11 @@ table th, table td {
       padding: 0;
       line-height: 55px;
       background: #008000; }
+      #nav-search .ms-srch-sb-searchLink:hover {
+        background: #009A00 !important; }
+      #nav-search .ms-srch-sb-searchLink:active {
+        background: #006700 !important;
+        color: #fff !important; }
       #nav-search .ms-srch-sb-searchLink:before {
         font-size: 34px;
         content: "\f002";

@@ -53,20 +53,22 @@
             &:focus{
                 background:$focus-color !important;
                 color:$base-font-color !important;
+                border-color:$focus-color !important;
             }
 
             &.active{
-                background:darken($secondary-link-color,5%) !important;
+                background:darken($secondary-link-color,3%) !important;
                 color:#fff !important;
 
                 &:hover{
-                    background:lighten($secondary-link-color,7%) !important;
+                    background:lighten($secondary-link-color,6%) !important;
                 }
             }
 
             &:active{
-                background:darken($secondary-link-color,25%) !important;
+                background:lighten($secondary-link-color,3%) !important;
                 color:#fff !important;
+                border-color:lighten($secondary-link-color,3%) !important;
             }
 
             &.my-account{
@@ -171,6 +173,15 @@
             padding:0;
             line-height:55px;
             background:$green;
+
+            &:hover{
+                background:$light-green !important;
+            }
+
+            &:active{
+                background:darken($button-color,5%) !important;
+                color:#fff !important;
+            }
         
             &:before{
                 font-size:34px;
