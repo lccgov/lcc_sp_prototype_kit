@@ -9,7 +9,7 @@
 //base.scss
 
 //base colours
-$blue:#007FAA;
+$blue:#007299;
 $dark-blue: #003F55;
 $light-blue: #3399BB;
 $bluey-green: #1f847e;
@@ -519,6 +519,10 @@ input[type=submit]:focus,
         &:hover{
             color:lighten(#212224,10%);
         }
+
+        &:focus span{
+            background:$focus-color;
+        }
     }
 
     h2{
@@ -671,11 +675,17 @@ a.skip {
 }
 
 a.skip:focus, a.skip:active{
-    left: 0.625em;
-    top: 0.625em;
+    left: 8px;
+    top: 8px;
     width:auto;
     height: auto;
     overflow:auto;
     z-index:999;
     padding:0.625em;
+}
+
+//back to top (focus fix)
+.cd-top:focus{
+    background:$focus-color url("images/cd-top-arrow.svg") no-repeat center 50% !important;
+    opacity:1;
 }
