@@ -3498,15 +3498,13 @@ input[type=file] {
   color: #212224;
   background-color: #fff;
   background-image: none;
-  border: 2px solid #b3b7be !important;
+  border: 2px solid #DCDEE1 !important;
   box-shadow: none;
   font-size: 19px;
   padding: 5px !important; }
   @media (min-width: 641px) {
     .form-control {
       width: 50% !important; } }
-  .form-control:focus {
-    border-color: transparent !important; }
 
 .form-hint {
   display: block;
@@ -3567,7 +3565,7 @@ input[type=file] {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-    border-color: #b3b7be; }
+    border-color: #DCDEE1; }
   .multiple-choice [type=radio] + label::after {
     content: "";
     border: 10px solid;
@@ -3593,7 +3591,7 @@ input[type=file] {
     position: absolute;
     top: 0;
     left: 0;
-    border-color: #b3b7be; }
+    border-color: #DCDEE1; }
   .multiple-choice [type=checkbox] + label::after {
     content: "";
     border: solid;
