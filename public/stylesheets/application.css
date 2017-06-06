@@ -2603,7 +2603,8 @@ blockquote {
               border-radius: 4px 0 0 4px;
               font-size: 16px;
               width: 100% !important;
-              border: 0 !important; }
+              border: 0 !important;
+              padding: 6px 12px !important; }
               @media (min-width: 767px) {
                 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
                   padding-left: 60px !important;
@@ -3492,6 +3493,10 @@ input[type=file] {
         margin-top: 10px;
         margin-bottom: 0; }
 
+input.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
 .form-control {
   width: 100% !important;
   height: 45px;
@@ -3501,9 +3506,7 @@ input[type=file] {
   border: 2px solid #DCDEE1 !important;
   box-shadow: none;
   font-size: 19px;
-  padding: 5px !important;
-  -webkit-appearance: none;
-  -moz-appearance: none; }
+  padding: 5px !important; }
   @media (min-width: 641px) {
     .form-control {
       width: 50% !important; } }
