@@ -1,48 +1,5 @@
-//container
-.ie8 .container-fluid{
-    max-width:980px;
-}
-
-//hero-lcc
-.ie8 .hero-lcc-wrapper{
-    .hero-lcc{   
-        .hero-lcc__content{
-            padding:80px 15em;
-
-            .hero-lcc__actions{
-                .hero-lcc__search-wrapper .hero-lcc__search {
-
-                    .hero-lcc__search-input{
-                        height:55px;
-                    }
-                
-                    .btn i{
-                        display:none;
-                    }
-                }
-
-                .hero-lcc__most-popular{
-                    width:100%;
-                    display:table;
-
-                    .hero-lcc__most-popular-item{
-                        display:table-cell;
-
-                        @media (max-width: 767px) {
-                            display:block;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-//group promo
-.ie8 .groupPromo ul li{
-    width:100%;
-
-    a{
-        width:100%;
+.ie8 {
+    .container-fluid{
+        max-width:980px;
     }
 }

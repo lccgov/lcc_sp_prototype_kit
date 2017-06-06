@@ -141,7 +141,13 @@
     float:right;
 
     .ms-srch-sb > input{
-        outline:0 !important;
+        outline:0;
+        
+        &:focus{
+            -webkit-box-shadow: 0 0 0 4px $focus-color !important;
+            -moz-box-shadow: 0 0 0 4px $focus-color !important;
+            box-shadow: 0 0 0 4px $focus-color !important;
+        }
     }
 
     .ms-srch-sb-searchLink{

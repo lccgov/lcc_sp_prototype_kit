@@ -9,7 +9,10 @@
     <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
    {% endblock %}
 
- 
+<!-- TEMPORARY FIX TO ALLOW CONTENTFUL CMS -->
+{% block additional_page_scripts %}
+    <script src="{{ asset_path }}javascripts/contentful.js"></script>
+{% endblock %}  
 
 {% block header %}
 Carousel
