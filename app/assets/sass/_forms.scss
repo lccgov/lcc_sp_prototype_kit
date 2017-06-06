@@ -90,6 +90,9 @@ input[type=file]{
     box-shadow:none;
     font-size:19px;
     padding:5px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
 
     @media (min-width: 641px) {
         width:50% !important;
