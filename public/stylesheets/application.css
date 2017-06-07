@@ -4916,3 +4916,10 @@ a.skip:focus, a.skip:active {
 
 .btn {
   font-weight: 400; }
+
+@media (min-width: 990px) {
+  #main .col-md-8 {
+    padding-right: 60px; } }
+
+.media-container {
+  margin: 30px 0; }
