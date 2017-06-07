@@ -2151,6 +2151,14 @@ blockquote {
     font-size: 1em;
     color: #000; }
 
+a:focus,
+input[type=submit]:focus,
+.btn:focus {
+  background: #FFBF47 !important;
+  color: #212224 !important;
+  text-decoration: none;
+  outline: 0; }
+
 .mega-promo {
   display: -webkit-box;
   display: -moz-box;
@@ -4905,3 +4913,6 @@ a.skip:focus, a.skip:active {
 .cd-top:focus {
   background: #FFBF47 url("images/cd-top-arrow.svg") no-repeat center 50% !important;
   opacity: 1; }
+
+.btn {
+  font-weight: 400; }
