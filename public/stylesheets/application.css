@@ -3931,12 +3931,12 @@ pre {
   overflow: hidden;
   border: 1px solid #DCDEE1;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   padding-top: 30px;
   padding-right: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
-  margin-top: 45px; }
+  margin-top: 30px; }
   @media (min-width: 641px) {
     .example {
       padding-top: 45px;
@@ -4602,7 +4602,6 @@ ul.accordion {
     text-decoration: none; }
 
 hr {
-  margin-top: 2.5em;
   border-color: rgba(220, 222, 225, 0.5); }
 
 .sub-section-heading {
@@ -4919,7 +4918,11 @@ a.skip:focus, a.skip:active {
 
 @media (min-width: 990px) {
   #main .col-md-8 {
-    padding-right: 60px; } }
+    padding-right: 30px; } }
+
+@media (min-width: 990px) {
+  #main .col-md-4 {
+    padding-left: 30px; } }
 
 .media-container {
   margin: 30px 0; }

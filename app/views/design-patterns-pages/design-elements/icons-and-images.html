@@ -1,20 +1,22 @@
 {% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
-	Icons and images
+	Icons, images and videos
 {% endblock %}
 
 
   {% block css_register %}
-  <script src="https://use.typekit.net/pws7qio.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>
-         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+    <script src="https://use.typekit.net/pws7qio.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
    {% endblock %}
 
- 
+ {% block additional_page_scripts %}
+    <script src="/public/javascripts/prism.js" type="text/javascript"></script>  
+{% endblock %}  
 
 {% block header %}
-Icons and images
+    Icons, images and videos
 {% endblock %}
 
  {% block main_nav %}
@@ -90,6 +92,18 @@ Show code
   </div>
 </div>
 <p>You can check the images aspect ratio with this <a href="http://calculateaspectratio.com/" rel="external">online calculator</a>.</p>
+<hr>
+<h2 class="heading-medium" id="videos">Videos</h2>
+<p>Only YouTube videos can be embedded on to LEEDS.GOV.UK pages. You embed the video directly into your page using the code below.</p>
+<div class="example">
+    {% include "includes/design-patterns/accessible-player.html" %}
+</div>
+<hr>
+<h2 class="heading-medium" id="videos-captions">Videos with captions</h2>
+<div class="example">
+    {% include "includes/design-patterns/accessible-player-with-captions.html" %}
+</div>
+<hr>
 {% endblock %}
 
 {% block sectionOneFullBottom %}
@@ -102,6 +116,8 @@ Show code
     <ul class="list list-contents">
         <li><a href="#icons">Icons</a></li>
         <li><a href="#images">Images</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#videos-captions">Videos with captions</a></li>
     </ul>
 </div>
 {% endblock %}
