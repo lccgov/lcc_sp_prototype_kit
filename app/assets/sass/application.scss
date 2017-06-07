@@ -718,9 +718,16 @@ a.skip:focus, a.skip:active{
 }
 
 //page content
-#main .col-md-8{
-    @media (min-width: 990px){
-        padding-right:60px;
+#main {
+    .col-md-8{
+        @media (min-width: 990px){
+            padding-right:30px;
+        }
+    }
+    .col-md-4{
+        @media (min-width: 990px){
+            padding-left:30px;
+        }
     }
 }
 
