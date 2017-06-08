@@ -34,7 +34,11 @@
     <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
         <a href="/lcc-home.html">Home</a>
         <ul class="">
-            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Current page</li>
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span><a href="/pages-lcc/open-data/open-data.html">Open data</a>
+                <ul class="">
+                    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span><span class="">Open data information</span></li>
+                </ul>
+            </li>
         </ul>
     </li>
 </ul>
@@ -48,7 +52,7 @@
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-    {% include "includes/lcc-components/open-data/open-data-table.html" %}
+    {% include "includes/lcc-components/open-data/open-data-dl.html" %}
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}

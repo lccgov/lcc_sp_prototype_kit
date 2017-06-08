@@ -1,7 +1,7 @@
 {% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
-	Service Page Example
+	Open data
 {% endblock %}
 
 
@@ -14,7 +14,7 @@
  
 
 {% block header %}
-    Council Tax
+    Council data and information listings
 {% endblock%}
 
  {% block main_nav %}
@@ -34,7 +34,7 @@
     <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
         <a href="/lcc-home.html">Home</a>
         <ul class="">
-            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Current page</li>
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Open data</li>
         </ul>
     </li>
 </ul>
@@ -44,12 +44,16 @@
 {% endblock %}
 
 {% block pageContent %}
-
+    <p>The Publication Scheme provides easy access to all of the council's data and information.</p>
+    <h2 class="heading-medium"><span class="heading-list-number">1</span> How we make decisions</h2>
+    {% include "includes/lcc-components/open-data/open-data-accordion-1.html" %}
+    <h2 class="heading-medium"><span class="heading-list-number">2</span> List and registrars</h2>
+    {% include "includes/lcc-components/open-data/open-data-accordion-1.html" %}
+    <h2 class="heading-medium"><span class="heading-list-number">3</span> Our policies and procedures</h2>
+    {% include "includes/lcc-components/open-data/open-data-accordion-1.html" %}
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-    {% include "includes/lcc-components/group-promos-lcc-service-page.html" %}
-    {% include "includes/design-patterns/sub-section-nav.html" %}
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}

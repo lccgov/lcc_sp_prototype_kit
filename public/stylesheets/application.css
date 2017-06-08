@@ -3357,8 +3357,11 @@ p {
 
 .text-description {
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 186x;
   font-weight: 300; }
+  @media (min-width: 641px) {
+    .text-description {
+      font-size: 18px; } }
 
 .text-highlight {
   border-left: 15px solid #DCDEE1;
@@ -3700,7 +3703,7 @@ textarea.form-control {
     width: calc(100% * (1/3) - 51px);
     margin: 30px 0 30px 50px;
     border: 0; }
-    @media (max-width: 990px) {
+    @media (max-width: 1200px) {
       .sub-section-nav .sub-section {
         width: calc(100% * (1/2) - 51px);
         margin: 25px 0 25px 50px; } }
@@ -4558,6 +4561,39 @@ table th, table td {
 .ie8 .container-fluid {
   max-width: 980px; }
 
+.open-data {
+  padding: 0; }
+  .open-data a {
+    text-decoration: underline !important; }
+  .open-data li {
+    border-bottom: 1px solid #DCDEE1 !important;
+    margin-top: 20px;
+    position: relative; }
+    .open-data li:last-child {
+      border: 0 !important; }
+    @media (min-width: 767px) {
+      .open-data li .heading-small, .open-data li h4 {
+        padding-right: 180px; } }
+    @media (min-width: 767px) {
+      .open-data li .open-data__link {
+        position: absolute;
+        right: 0;
+        top: 0; } }
+    .open-data li .open-data__info {
+      margin: 10px 0 20px; }
+      .open-data li .open-data__info .open-data__info-cost,
+      .open-data li .open-data__info .open-data__info-contact,
+      .open-data li .open-data__info .open-data__info-format {
+        border: 0 !important;
+        font-size: 16px;
+        margin: 5px 0 0; }
+        @media (min-width: 767px) {
+          .open-data li .open-data__info .open-data__info-cost,
+          .open-data li .open-data__info .open-data__info-contact,
+          .open-data li .open-data__info .open-data__info-format {
+            float: left;
+            margin: 0 25px 0 0; } }
+
 .input-focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input:focus, .form-control:focus, .multiple-choice [type=radio]:focus + label::before, .multiple-choice [type=checkbox]:focus + label::before {
   -webkit-box-shadow: 0 0 0 4px #FFBF47;
   -moz-box-shadow: 0 0 0 4px #FFBF47;
@@ -4568,7 +4604,7 @@ table th, table td {
   padding-left: 15px; }
 
 ul.accordion {
-  margin: 1.4em 0; }
+  margin: 1.4em 0 2.4em; }
   ul.accordion li {
     border-color: #DCDEE1;
     border-bottom: 1px solid #DCDEE1; }
@@ -4580,7 +4616,8 @@ ul.accordion {
       border: none !important;
       font-weight: 700;
       padding: 20px 40px 20px 0;
-      text-decoration: none !important; }
+      text-decoration: none !important;
+      font-size: 19px; }
       ul.accordion li a.header:hover {
         color: #004c66;
         border-color: #004c66;
@@ -4589,6 +4626,9 @@ ul.accordion {
         color: #007299;
         border-color: rgba(0, 114, 153, 0);
         text-decoration: none; }
+      @media (max-width: 641px) {
+        ul.accordion li a.header {
+          font-size: 16px; } }
       ul.accordion li a.header:after {
         font-family: FontAwesome;
         font-size: 24px;
@@ -4926,3 +4966,6 @@ a.skip:focus, a.skip:active {
 
 .media-container {
   margin: 30px 0; }
+
+.clear {
+  padding: 0 !important; }

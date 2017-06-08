@@ -242,8 +242,12 @@ p {
 
 .text-description{
   margin-bottom:0;
-  font-size:18px;
+  font-size:186x;
   font-weight:300;
+
+  @media (min-width: 641px) {
+    font-size: 18px;
+  }
 }
 
 //text-highlight

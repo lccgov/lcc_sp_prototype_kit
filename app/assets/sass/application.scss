@@ -214,6 +214,7 @@ $input-border-color:$grey;
 @import 'search-lcc';
 @import 'header-lcc';
 @import 'ie-support';
+@import 'open-data';
 
 //mixins
 .input-focus{
@@ -230,7 +231,7 @@ $input-border-color:$grey;
 
 //accordion
 ul.accordion {
-  margin:1.4em 0;
+  margin:1.4em 0 2.4em;
 
   li {
     border-color:$border-color;
@@ -242,6 +243,11 @@ ul.accordion {
       font-weight:700;
       padding: 20px 40px 20px 0;
       text-decoration:none !important;
+      font-size:19px;
+
+      @media (max-width: 641px){
+        font-size:16px;
+      }
 
       &:after {
       font-family: FontAwesome;
@@ -733,4 +739,9 @@ a.skip:focus, a.skip:active{
 //video container
 .media-container{
     margin:30px 0;
+}
+
+//clear
+.clear{
+    padding:0 !important;
 }
