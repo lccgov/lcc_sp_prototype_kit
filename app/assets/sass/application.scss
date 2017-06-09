@@ -37,7 +37,6 @@ $secondary-font-color:$dark-grey;
 $border-color:$light-grey;
 $panel-color:$lighter-grey;
 $brand-color:$blue;
-$highlight-text-color:$pale-blue;
 $button-color:$green;
 $button-hover-color:lighten($green,5%);
 $focus-color:$yellow;
@@ -745,4 +744,55 @@ a.skip:focus, a.skip:active{
 //clear
 .clear{
     padding:0 !important;
+}
+
+.highlight-box{
+    padding:30px;
+    margin:5px 0 20px;
+    background:$panel-color;
+
+    @media (max-width: 641px){
+            padding: 15px;
+        }
+
+    h1, h2, h3, h4{
+        margin-bottom:10px;
+    }
+
+    p:last-child{
+        margin-bottom:0;
+    }
+
+    &.highlight-box__blue{
+        background:$pale-blue;
+    }
+}
+
+//images
+.img-content{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding:5px 0 20px;
+
+    &.img-right{
+        float:right;
+        padding:5px 0 20px 30px;
+    }
+
+    &.img-left{
+        float:left;
+        padding:5px 30px 20px 0;
+    }
+
+    &.img-right,
+    &.img-left{
+        width:50%;
+
+        @media (max-width: 641px){
+            width:100%;
+            float:none;
+            padding:5px 0 20px;
+        }
+    }
 }

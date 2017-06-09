@@ -4969,3 +4969,36 @@ a.skip:focus, a.skip:active {
 
 .clear {
   padding: 0 !important; }
+
+.highlight-box {
+  padding: 30px;
+  margin: 5px 0 20px;
+  background: #F6F7FA; }
+  @media (max-width: 641px) {
+    .highlight-box {
+      padding: 15px; } }
+  .highlight-box h1, .highlight-box h2, .highlight-box h3, .highlight-box h4 {
+    margin-bottom: 10px; }
+  .highlight-box p:last-child {
+    margin-bottom: 0; }
+  .highlight-box.highlight-box__blue {
+    background: #b3d9e6; }
+
+.img-content {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 5px 0 20px; }
+  .img-content.img-right {
+    float: right;
+    padding: 5px 0 20px 30px; }
+  .img-content.img-left {
+    float: left;
+    padding: 5px 30px 20px 0; }
+  .img-content.img-right, .img-content.img-left {
+    width: 50%; }
+    @media (max-width: 641px) {
+      .img-content.img-right, .img-content.img-left {
+        width: 100%;
+        float: none;
+        padding: 5px 0 20px; } }
