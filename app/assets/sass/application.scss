@@ -1,3 +1,7 @@
+//default sharpoint css - REMOVE BEFORE UPLOADING
+@import 'sharepoint_core_15';
+@import 'sharepoint_search_15';
+
 // available variables to change the brand colours as required
 // masterhead.scss
 
@@ -215,6 +219,8 @@ $input-border-color:$grey;
 @import 'header-lcc';
 @import 'ie-support';
 @import 'open-data';
+@import 'search-results';
+@import 'sharepoint_2010_style_fallback';
 
 //mixins
 .input-focus{
