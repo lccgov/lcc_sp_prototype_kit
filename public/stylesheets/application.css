@@ -4041,6 +4041,8 @@ footer.main .container-fluid {
           width: 100%; }
           .footerGlobal nav ul li:after {
             display: none; } }
+      .footerGlobal nav ul li:last-child:after {
+        display: none; }
 
 .logo-footer span {
   margin: 0 0 1.25em 0;

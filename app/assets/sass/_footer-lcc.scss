@@ -34,6 +34,10 @@ footer.main{
             }
         }
 
+        &:last-child:after{
+          display:none;
+        }
+
       }
     }
   }
