@@ -5,7 +5,7 @@
         @extend .form-control;
         @include border-radius(4px); 
         width:100% !important;
-        max-width: 35em !important;
+        //max-width: 35em !important;
         padding:0 !important;
 
         .ms-srch-sbLarge{
@@ -62,7 +62,7 @@
         .ms-srch-group-content{
                 display:inline-block;
                 width:100%;
-                max-width: 35em;
+                //max-width: 35em;
 
             .ms-srch-item{
                 padding:8px 0;
@@ -119,18 +119,6 @@
 
     //paging
     .ms-srch-Paging{
-        a{
-            color:$base-link-color !important;
-            padding:8px 15px !important;
-            background:white !important;
-            border:1px solid $border-color !important;
-            cursor:pointer !important;
-
-            &:hover{
-                background:$base-link-color !important;
-                color:white !important;
-            }
-        }
         #PagingImageLink{
             a{}
             .ms-promlink-button-image{
@@ -155,6 +143,23 @@
         #PagingLink{
 
         }
+
+        a{
+            color:$base-link-color !important;
+            padding:8px 15px !important;
+            background:white !important;
+            border:1px solid $border-color !important;
+            cursor:pointer !important;
+
+            &:hover{
+                background:$base-link-color !important;
+                color:white !important;
+            }
+            &:focus{
+                background:$focus-color !important;
+                color:$base-font-color !important;
+            }
+        }
     }
 
 }
@@ -162,7 +167,6 @@
 .col-md-4{
     .ms-ref-ctrl{
         .ms-ref-refiner{
-            margin-top:120px;
             padding:0;
 
             #Container{
@@ -173,8 +177,8 @@
                     background: $panel-color;
                     padding:15px;
                     width:100%;
-                    font-size:21px;
-                    font-weight:700;
+                    font-size:19px;
+                    font-weight:400;
                     position:relative;
                     
                     .ms-displayInlineBlock{
@@ -218,7 +222,7 @@
                 .ms-ref-allSec{
                     border-left:3px solid $panel-color;
                     border-right:3px solid $panel-color;
-                    padding:0 15px;
+                    padding:0;
                     color:$base-link-color;
 
                     div{
@@ -227,7 +231,7 @@
                         a{
                             width:100%;
                             color:$base-link-color;
-                            padding:10px 0;
+                            padding:10px 15px;
                         }
                     }
                 }
@@ -236,7 +240,7 @@
                     border-left:3px solid $panel-color;
                     border-right:3px solid $panel-color;;
                     border-top:0;
-                    padding:0 15px;
+                    padding:0;
 
                         div{
                             width:100% !important;
@@ -245,7 +249,7 @@
                             a{
                                 text-decoration:none;
                                 width:100%;
-                                padding:10px 0;
+                                padding:10px 15px;
 
                                 .ms-ref-name{
                                     color:$base-link-color;
@@ -268,3 +272,47 @@
         color:$base-link-color;
     }
 }
+
+//paging previous and next arrows
+.sectionOne,
+.sectionTwo {
+    #PageLinkNext,
+    #PageLinkPrev{
+
+        @include border-radius(50%);
+        height:40px;
+        width:40px;
+
+        .ms-promlink-button-image{
+            position: relative;
+            display: inline;
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            margin:0;
+    
+            &::before {
+                font-family: FontAwesome;
+                position: relative;
+                top: -1px;
+                left: -3px;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+    }
+
+    #PageLinkNext .ms-promlink-button-image::before {
+        content: "\f061";
+    }
+
+    #PageLinkPrev .ms-promlink-button-image::before {
+        content: "\f060";
+    }
+}
+
+.ms-srch-resultFooter{
+    color:$secondary-font-color;
+    font-weight:300;
+}
+

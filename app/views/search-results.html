@@ -40,6 +40,46 @@
 
 {% block sectionOneContent %}
 
+<!-- custom style for search results page -->
+<style>
+    h1{display:none}
+    .heading-search-results{display:block; margin-bottom:10px;}
+    .breadcrumb{margin-bottom:25px}
+</style>
+
+
+{% endblock %}
+
+{% block pageContent %}
+
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+<h1 class="heading-medium top heading-search-results">Search results for</h1>
+
 <!-- search box -->
 <div id="MSOZoneCell_WebPartWPQ5" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth ">
     <div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
@@ -79,14 +119,8 @@ Toggle main menu
 		</div>
 {% endblock %}
 
-{% block pageContent %}
-
-{% endblock %}
-
-{% block sectionOneFullBottom %}
-{% endblock %}
-
-{% block sectionOneRightHandColumn %}
+{% block sectionTwoRightHandColumn %}
+<h2 class="heading-medium top heading-search-results">Filter by</h2>
 <div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
 			<div webpartid="e494c506-cdfd-4bc6-aa1f-d441519f3263" haspers="false" id="WebPartWPQ6" width="100%" class="ms-WPBody noindex " allowdelete="false" style=""><div style="display: none;"></div><div componentid="ctl00_ctl47_g_e494c506_cdfd_4bc6_aa1f_d441519f3263_csr" id="ctl00_ctl47_g_e494c506_cdfd_4bc6_aa1f_d441519f3263_csr">        <div class="ms-ref-ctrl" id="Refinement" name="Control">                            <div class="ms-ref-refiner" id="ctl00_ctl47_g_e494c506_cdfd_4bc6_aa1f_d441519f3263_csr1" name="Group" refinername="FileType">          <div id="Container">            <a class=" ms-ref-refinername" href="javascript: {}" onclick="EnsureScriptParams('SearchUI.js', 'Srch.SU.toggleRefCategory', this.parentNode, 'FileType')" onmouseup="this.blur();">
                     <div class="ms-displayInlineBlock" id="ctl00_ctl47_g_e494c506_cdfd_4bc6_aa1f_d441519f3263_csr_RefinerHeading_FileType">Result type</div>
@@ -95,28 +129,6 @@ Toggle main menu
 
 			</div><div class="ms-clear"></div></div>
 		</div>
-{% endblock %}
-
-{% block sectionOneThirdCol1 %}
- {% endblock %}
-
- {% block sectionOneThirdCol2 %}
- {% endblock %}
-
-{% block sectionOneThirdCol3 %}
- {% endblock %}
-
-
-{% block sectionTwoTop %}
-{% endblock %} 
-
-{% block sectionTwoFull%} 
-{% endblock %}
-
-{% block sectionTwoContent %}
-{% endblock %}
-
-{% block sectionTwoRightHandColumn %}
 {% endblock %}
 
 {% block sectionTwoThirdCol1 %}
