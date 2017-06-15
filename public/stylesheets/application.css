@@ -19213,6 +19213,8 @@ table th,
 table td,
 table.styledTable th,
 table.styledTable td,
+.ms-rteTable-default th,
+.ms-rteTable-default td,
 .font-xsmall,
 .bold-xlarge,
 .bold-large,
@@ -19246,6 +19248,8 @@ table.styledTable td,
   .font-small.top,
   table th.top,
   table td.top,
+  .ms-rteTable-default th.top,
+  .ms-rteTable-default td.top,
   .font-xsmall.top,
   .bold-xlarge.top,
   .bold-large.top,
@@ -19254,7 +19258,42 @@ table.styledTable td,
   .bold-xsmall.top,
   .lead.top,
   .part-title.top {
-    margin-top: 0; }
+    margin-top: 0;
+    padding-top: 0; }
+  h1.bottom,
+  h2.bottom,
+  h3.bottom,
+  h4.bottom,
+  h5.bottom,
+  .heading-xlarge.bottom,
+  h1.bottom,
+  .heading-large.bottom,
+  h2.bottom,
+  .heading-medium.bottom,
+  h3.bottom,
+  .list-atoz li h2.bottom,
+  .heading-small.bottom,
+  h4.bottom,
+  .heading-xsmall.bottom,
+  .font-xxlarge.bottom,
+  .font-xlarge.bottom,
+  .font-large.bottom,
+  .font-medium.bottom,
+  .font-small.bottom,
+  table th.bottom,
+  table td.bottom,
+  .ms-rteTable-default th.bottom,
+  .ms-rteTable-default td.bottom,
+  .font-xsmall.bottom,
+  .bold-xlarge.bottom,
+  .bold-large.bottom,
+  .bold-medium.bottom,
+  .bold-small.bottom,
+  .bold-xsmall.bottom,
+  .lead.bottom,
+  .part-title.bottom {
+    padding-bottom: 0;
+    margin-bottom: 0; }
 
 h1,
 h2,
@@ -19279,6 +19318,16 @@ h4,
 .bold-xsmall,
 .part-title {
   font-weight: 700; }
+
+p.top,
+ul.top {
+  margin-top: 0 !important;
+  padding-top: 0 !important; }
+
+p.bottom,
+ul.bottom {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important; }
 
 .font-xxlarge {
   font-size: 53px;
@@ -19312,11 +19361,17 @@ h4,
       font-size: 24px;
       line-height: 1.25; } }
 
-.font-small, table th, table td, table.styledTable th, table.styledTable td {
+.font-small, table th, table td, table.styledTable th,
+table.styledTable td,
+.ms-rteTable-default th,
+.ms-rteTable-default td {
   font-size: 16px;
   line-height: 1.25; }
   @media (min-width: 641px) {
-    .font-small, table th, table td, table.styledTable th, table.styledTable td {
+    .font-small, table th, table td, table.styledTable th,
+    table.styledTable td,
+    .ms-rteTable-default th,
+    .ms-rteTable-default td {
       font-size: 19px;
       line-height: 1.3157894737; } }
 
@@ -19459,11 +19514,13 @@ ul,
 ol {
   list-style-type: none; }
 
-.list, .freeContentArea ul {
+.list, .freeContentArea ul, .freeContentArea ul.list {
   padding: 0;
   margin-top: 5px;
-  margin-bottom: 20px; }
-  .list li, .freeContentArea ul li {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%; }
+  .list li, .freeContentArea ul li, .freeContentArea ul.list li {
     margin-bottom: 10px; }
 
 .list-bullet, .freeContentArea ul {
@@ -19499,6 +19556,20 @@ blockquote {
     color: #DCDEE1; }
   blockquote footer {
     color: #212224; }
+
+.panel {
+  background: #eceef5;
+  padding: 20px;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0;
+  margin-top: 0.3125em;
+  margin-bottom: 1.25em;
+  display: inline-block;
+  width: 100%; }
+  @media (min-width: 641px) {
+    .panel {
+      padding: 30px; } }
 
 .form-group {
   margin-top: 0;
@@ -19952,7 +20023,7 @@ pre {
   background-color: #DCDEE1; }
 
 .swatch-panel-colour {
-  background-color: #F6F7FA; }
+  background-color: #eceef5; }
 
 .swatch-focus {
   background-color: #FFBF47; }
@@ -20756,10 +20827,10 @@ table th, table td {
 .col-md-4 .ms-ref-ctrl .ms-ref-refiner {
   padding: 0; }
   .col-md-4 .ms-ref-ctrl .ms-ref-refiner #Container {
-    border-bottom: 3px solid #F6F7FA;
+    border-bottom: 3px solid #eceef5;
     padding: 0; }
     .col-md-4 .ms-ref-ctrl .ms-ref-refiner #Container .ms-ref-refinername {
-      background: #F6F7FA;
+      background: #eceef5;
       padding: 15px;
       width: 100%;
       font-size: 19px;
@@ -20790,8 +20861,8 @@ table th, table td {
         .col-md-4 .ms-ref-ctrl .ms-ref-refiner #Container .ms-ref-refinername .ms-ref-downarrow:after {
           content: "\f067"; }
     .col-md-4 .ms-ref-ctrl .ms-ref-refiner #Container .ms-ref-allSec {
-      border-left: 3px solid #F6F7FA;
-      border-right: 3px solid #F6F7FA;
+      border-left: 3px solid #eceef5;
+      border-right: 3px solid #eceef5;
       padding: 0;
       color: #007299; }
       .col-md-4 .ms-ref-ctrl .ms-ref-refiner #Container .ms-ref-allSec div {
@@ -20802,8 +20873,8 @@ table th, table td {
           padding: 10px 15px; }
     .col-md-4 .ms-ref-ctrl .ms-ref-refiner #Container .ms-ref-unselSec,
     .col-md-4 .ms-ref-ctrl .ms-ref-refiner #Container .ms-ref-selSec {
-      border-left: 3px solid #F6F7FA;
-      border-right: 3px solid #F6F7FA;
+      border-left: 3px solid #eceef5;
+      border-right: 3px solid #eceef5;
       border-top: 0;
       padding: 0; }
       .col-md-4 .ms-ref-ctrl .ms-ref-refiner #Container .ms-ref-unselSec div,
@@ -20915,6 +20986,9 @@ p.ms-rteElement-P {
       margin-top: 0.2631578947em;
       margin-bottom: 1.0526315789em; } }
 
+.freeContentArea ul, .freeContentArea ul.list {
+  list-style: none; }
+
 table.styledTable {
   font-size: 1em;
   margin: 20px 0;
@@ -20949,13 +21023,27 @@ table.styledTable {
   margin-top: 5px;
   margin-bottom: 20px; }
 
-table.styledTable th {
-  font-weight: 700; }
+table.styledTable th,
+.ms-rteTableHeaderRow-default th {
+  font-weight: 700 !important;
+  color: #212224 !important; }
 
-table.styledTable th, table.styledTable td {
+.ms-rteTable-default,
+.ms-rteTable-default > tbody > tr > td,
+.ms-rteTable-default > tbody > tr > th,
+td.ms-rteTable-default,
+th.ms-rteTable-default,
+.ms-rtetablecells {
+  border: 0;
+  color: #212224 !important; }
+
+table.styledTable th,
+table.styledTable td,
+.ms-rteTable-default th,
+.ms-rteTable-default td {
   padding: 0.63158em 1.05263em 0.47368em 0;
   text-align: left;
-  border-bottom: 1px solid #DCDEE1; }
+  border-bottom: 1px solid #DCDEE1 !important; }
 
 .input-focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input:focus, .form-control:focus, .col-md-8 #SearchBox:focus, .multiple-choice [type=radio]:focus + label::before, .multiple-choice [type=checkbox]:focus + label::before, .col-md-8 #SearchBox .ms-srch-sbLarge input:focus {
   -webkit-box-shadow: 0 0 0 4px #FFBF47;
@@ -21338,7 +21426,7 @@ a.skip:focus, a.skip:active {
 .highlight-box {
   padding: 30px;
   margin: 5px 0 20px;
-  background: #F6F7FA; }
+  background: #eceef5; }
   @media (max-width: 641px) {
     .highlight-box {
       padding: 15px; } }

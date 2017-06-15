@@ -42,6 +42,12 @@ h5,
 
   &.top{
     margin-top:0;
+    padding-top:0;
+  }
+
+  &.bottom{
+    padding-bottom:0;
+    margin-bottom:0;
   }
 }
 
@@ -62,6 +68,19 @@ h5,
 .bold-xsmall,
 .part-title{
   font-weight: 700;
+}
+
+p,
+ul{
+  &.top{
+    margin-top:0 !important;
+    padding-top:0 !important;
+  }
+
+  &.bottom{
+    padding-bottom:0 !important;
+    margin-bottom:0 !important;
+  }
 }
 
 //h1 to h5 sizes - fallback for migration of old content
@@ -321,10 +340,12 @@ ol {
   padding: 0;
   margin-top: 5px;
   margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
 
   li {
     margin-bottom: 10px;
-    }
+  }
 }
 
 .list-bullet {
@@ -378,3 +399,22 @@ blockquote {
     color: $base-font-color;
   }
 }
+
+//panels
+.panel{
+  background:$panel-color;
+  padding:20px;
+  box-shadow:none;
+  border-radius:0;
+  border:0;
+  margin-top: 0.3125em;
+  margin-bottom: 1.25em;
+  display:inline-block;
+  width:100%;
+
+  @media (min-width: 641px) {
+      padding:30px;  
+  }
+}
+
+

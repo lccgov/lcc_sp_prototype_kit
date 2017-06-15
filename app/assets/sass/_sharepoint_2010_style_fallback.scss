@@ -63,6 +63,11 @@ p.ms-rteElement-P {
     @extend .list-bullet;
 }
 
+.freeContentArea ul.list{
+    @extend .list;
+    list-style:none;
+}
+
 //tables
 table.styledTable {
   font-size: 1em;
@@ -107,13 +112,28 @@ table.styledTable {
     margin-bottom: 20px;
 }
 
-table.styledTable th {
-    font-weight: 700;
+table.styledTable th,
+.ms-rteTableHeaderRow-default th{
+    font-weight: 700 !important;
+    color:$base-font-color !important;
 }
 
-table.styledTable th, table.styledTable td {
+.ms-rteTable-default, 
+.ms-rteTable-default > tbody > tr > td, 
+.ms-rteTable-default > tbody > tr > th, 
+td.ms-rteTable-default, 
+th.ms-rteTable-default, 
+.ms-rtetablecells{
+    border:0;
+    color:$base-font-color !important;
+}
+
+table.styledTable th, 
+table.styledTable td,
+.ms-rteTable-default th,
+.ms-rteTable-default td {
     @extend .font-small;
     padding: 0.63158em 1.05263em 0.47368em 0;
     text-align: left;
-    border-bottom: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey !important;
 }

@@ -1,6 +1,6 @@
 //default sharpoint css - REMOVE BEFORE UPLOADING
-//@import 'sharepoint_core_15';
-//@import 'sharepoint_search_15';
+@import 'sharepoint_core_15';
+@import 'sharepoint_search_15';
 
 // available variables to change the brand colours as required
 // masterhead.scss
@@ -39,7 +39,7 @@ $base-link-visited-color:#4C2C92;
 $secondary-link-color:$dark-blue;
 $secondary-font-color:$dark-grey;
 $border-color:$light-grey;
-$panel-color:$lighter-grey;
+$panel-color:darken($lighter-grey,3%);
 $brand-color:$blue;
 $button-color:$green;
 $button-hover-color:lighten($green,5%);
