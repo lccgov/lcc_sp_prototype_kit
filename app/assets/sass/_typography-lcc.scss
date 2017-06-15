@@ -132,7 +132,7 @@ h4{
 }
 
 .font-medium {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.2;
 
   @media (min-width: 641px) {
@@ -367,11 +367,11 @@ ol {
 }
 
 .list-nav{
-    font-size:16px;
+    font-size:19px;
     width:100%;
 
     @media (min-width: 641px) {
-      font-size:19px;  
+      font-size:21px;  
   }
 
   li{
@@ -414,6 +414,8 @@ blockquote {
 
   @media (min-width: 641px) {
       padding:30px;  
+      margin-top: 0.2631578947em;
+      margin-bottom: 1.0526315789em;
   }
 
   h2:first-child,

@@ -223,6 +223,11 @@ $input-border-color:$grey;
 @import 'venue-details';
 @import 'sharepoint_2010_style_fallback';
 
+//site background
+html{
+    background-color:$blue;
+}
+
 //mixins
 .input-focus{
     -webkit-box-shadow: 0 0 0 4px $focus-color;

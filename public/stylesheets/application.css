@@ -19354,7 +19354,7 @@ ul.bottom {
       line-height: 1.1111111111; } }
 
 .font-medium {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.2; }
   @media (min-width: 641px) {
     .font-medium {
@@ -19538,11 +19538,11 @@ ol {
   font-size: 16px; }
 
 .list-nav {
-  font-size: 16px;
+  font-size: 19px;
   width: 100%; }
   @media (min-width: 641px) {
     .list-nav {
-      font-size: 19px; } }
+      font-size: 21px; } }
   .list-nav li {
     margin-bottom: 15px; }
     .list-nav li a {
@@ -19569,7 +19569,9 @@ blockquote {
   width: 100%; }
   @media (min-width: 641px) {
     .panel {
-      padding: 30px; } }
+      padding: 30px;
+      margin-top: 0.2631578947em;
+      margin-bottom: 1.0526315789em; } }
   .panel h2:first-child,
   .panel h3:first-child,
   .panel h4:first-child {
@@ -20146,7 +20148,7 @@ footer.main .container-fluid {
   padding: 0; }
 
 .footerGlobal {
-  padding: 50px 0;
+  padding: 30px 0;
   background: #007299 !important;
   font-size: 16px; }
   .footerGlobal nav {
@@ -21089,6 +21091,9 @@ table.styledTable td,
   padding: 0.63158em 1.05263em 0.47368em 0;
   text-align: left;
   border-bottom: 1px solid #DCDEE1 !important; }
+
+html {
+  background-color: #007299; }
 
 .input-focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input:focus, .form-control:focus, .col-md-8 #SearchBox:focus, .multiple-choice [type=radio]:focus + label::before, .multiple-choice [type=checkbox]:focus + label::before, .col-md-8 #SearchBox .ms-srch-sbLarge input:focus {
   -webkit-box-shadow: 0 0 0 4px #FFBF47;
