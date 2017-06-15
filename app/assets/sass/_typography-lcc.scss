@@ -415,6 +415,13 @@ blockquote {
   @media (min-width: 641px) {
       padding:30px;  
   }
+
+  h2:first-child,
+  h3:first-child,
+  h4:first-child{
+    margin-top:0;
+  }
+
 }
 
 

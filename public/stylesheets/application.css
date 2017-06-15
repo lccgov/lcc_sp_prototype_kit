@@ -19514,13 +19514,13 @@ ul,
 ol {
   list-style-type: none; }
 
-.list, .freeContentArea ul, .freeContentArea ul.list {
+.list, .freeContentArea ul.list, .freeContentArea ul {
   padding: 0;
   margin-top: 5px;
   margin-bottom: 20px;
   display: inline-block;
   width: 100%; }
-  .list li, .freeContentArea ul li, .freeContentArea ul.list li {
+  .list li, .freeContentArea ul.list li, .freeContentArea ul li {
     margin-bottom: 10px; }
 
 .list-bullet, .freeContentArea ul {
@@ -19570,6 +19570,10 @@ blockquote {
   @media (min-width: 641px) {
     .panel {
       padding: 30px; } }
+  .panel h2:first-child,
+  .panel h3:first-child,
+  .panel h4:first-child {
+    margin-top: 0; }
 
 .form-group {
   margin-top: 0;
@@ -20942,6 +20946,44 @@ table th, table td {
   color: #666B76;
   font-weight: 300; }
 
+.venue-details {
+  margin: 10px 0 30px; }
+  .venue-details .venue-details__item {
+    border-bottom: 1px solid #DCDEE1; }
+    .venue-details .venue-details__item h3 {
+      font-size: 19px;
+      margin: 0;
+      padding-top: 1rem; }
+      @media (min-width: 641px) {
+        .venue-details .venue-details__item h3 {
+          float: left;
+          width: 25%;
+          padding: 1rem .75rem; } }
+    .venue-details .venue-details__item .venue-details__item-content {
+      margin: 0;
+      padding-bottom: 1rem;
+      padding-top: .25rem; }
+      @media (min-width: 641px) {
+        .venue-details .venue-details__item .venue-details__item-content {
+          float: left;
+          width: 75%;
+          padding: 1rem .75rem; } }
+      .venue-details .venue-details__item .venue-details__item-content p:last-child,
+      .venue-details .venue-details__item .venue-details__item-content ul:last-child,
+      .venue-details .venue-details__item .venue-details__item-content li:last-child,
+      .venue-details .venue-details__item .venue-details__item-content .text-highlight:last-child {
+        margin-bottom: 0; }
+      @media (min-width: 641px) {
+        .venue-details .venue-details__item .venue-details__item-content p:first-child,
+        .venue-details .venue-details__item .venue-details__item-content ul:first-child,
+        .venue-details .venue-details__item .venue-details__item-content li:first-child,
+        .venue-details .venue-details__item .venue-details__item-content .text-highlight:first-child {
+          margin-top: 0; } }
+      .venue-details .venue-details__item .venue-details__item-content p {
+        margin-bottom: 10px; }
+      .venue-details .venue-details__item .venue-details__item-content .text-highlight {
+        margin: 10px 0; }
+
 .limitedrte-Style-BUTTON {
   display: inline-block;
   cursor: pointer; }
@@ -20986,8 +21028,11 @@ p.ms-rteElement-P {
       margin-top: 0.2631578947em;
       margin-bottom: 1.0526315789em; } }
 
-.freeContentArea ul, .freeContentArea ul.list {
+.freeContentArea ul.list, .freeContentArea ul {
   list-style: none; }
+
+.freeContentArea ul {
+  list-style-type: disc; }
 
 table.styledTable {
   font-size: 1em;
@@ -21440,6 +21485,7 @@ a.skip:focus, a.skip:active {
 .img-content {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
   padding: 5px 0 20px; }
   .img-content.img-right {

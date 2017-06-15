@@ -220,6 +220,7 @@ $input-border-color:$grey;
 @import 'ie-support';
 @import 'open-data';
 @import 'search-results';
+@import 'venue-details';
 @import 'sharepoint_2010_style_fallback';
 
 //mixins
@@ -778,6 +779,7 @@ a.skip:focus, a.skip:active{
 .img-content{
     display: block;
     max-width: 100%;
+    width:100%;
     height: auto;
     padding:5px 0 20px;
 

@@ -58,14 +58,15 @@ p.ms-rteElement-P {
 }
 
 //lists
-.freeContentArea ul{
-    @extend .list;
-    @extend .list-bullet;
-}
-
 .freeContentArea ul.list{
     @extend .list;
     list-style:none;
+}
+
+.freeContentArea ul{
+    @extend .list;
+    @extend .list-bullet;
+    list-style-type: disc;
 }
 
 //tables
