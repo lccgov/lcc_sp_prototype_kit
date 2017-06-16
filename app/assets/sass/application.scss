@@ -138,7 +138,7 @@ $news-pod-border-color:#ddd;
 //$highlighted-alt-font-color:#333 !default;
 
 //mega-promo
-$promo-background-color:$white;
+$promo-background-color:$lighter-grey;
 $promo-arrow-color:$grey;
 $promo-header-color:$blue;
 $promo-secondary-color:$black;
@@ -374,6 +374,19 @@ hr{
          &.blue{
             @include mega-promo-colors($blue, $white, $white, $white, $promo-highlight-background-color, $promo-highlight-color);
         }
+    }
+}
+
+.col-md-8{
+    @media (min-width: 767px){
+        .mega-promo .mega-promo__item.two-thirds .mega-promo__header, 
+        .mega-promo .mega-promo__item.half .mega-promo__header {
+            font-size: 24px !important;
+        }
+    }
+    .mega-promo .mega-promo__item.featured .mega-promo__header {
+        font-size: 32px !important;
+        line-height: 36px !important;
     }
 }
 

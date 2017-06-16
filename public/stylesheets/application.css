@@ -18247,7 +18247,7 @@ input[type=submit]:focus,
       display: block;
       width: 100%;
       box-sizing: border-box;
-      background: #FFFFFF;
+      background: #F6F7FA;
       position: relative;
       text-decoration: none; }
       @media (max-width: 500px) {
@@ -18265,7 +18265,7 @@ input[type=submit]:focus,
         color: #9DA5B2;
         font-size: 24px; }
       .mega-promo .mega-promo__item a:hover {
-        background: #f2f2f2;
+        background: #e6e8f1;
         text-decoration: none; }
         .mega-promo .mega-promo__item a:hover .mega-promo__img {
           opacity: 0.8; }
@@ -21205,6 +21205,15 @@ hr {
   .mega-promo .mega-promo__item.blue a .mega-promo__highlight {
     background: #003F55;
     color: #FFFFFF; }
+
+@media (min-width: 767px) {
+  .col-md-8 .mega-promo .mega-promo__item.two-thirds .mega-promo__header,
+  .col-md-8 .mega-promo .mega-promo__item.half .mega-promo__header {
+    font-size: 24px !important; } }
+
+.col-md-8 .mega-promo .mega-promo__item.featured .mega-promo__header {
+  font-size: 32px !important;
+  line-height: 36px !important; }
 
 .carousel .carousel-caption a,
 .mega-promo a,
