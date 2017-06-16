@@ -21552,3 +21552,8 @@ a.skip:focus, a.skip:active {
     position: absolute;
     right: -50px;
     top: 12px; }
+    @media (max-width: 767px) {
+      .logo .alpha {
+        top: 7px;
+        font-size: 10px;
+        right: -40px; } }
