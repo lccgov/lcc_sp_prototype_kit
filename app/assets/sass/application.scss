@@ -822,3 +822,54 @@ a.skip:focus, a.skip:active{
         }
     }
 }
+
+//self service custom
+.header-actions{
+    position:absolute;
+    top:-110px;
+    right:15px;
+
+    @media (max-width: 641px){
+        position:relative;
+        top:auto;
+        right:auto;
+        margin-bottom:20px;
+    }
+}
+
+//group promo external link
+.groupPromo{
+    li{
+        a[rel="external"],
+        a.external{
+            &:after{
+                display:none;
+            }
+
+            h3{
+                &:after{
+                    content: "\f08e";
+                    color:$base-link-color;
+                }
+            }
+        }
+    }
+}
+
+.logo{
+    position:relative;
+
+    .alpha{
+        font-size:12px;
+        padding:4px;
+        @include border-radius(4px);
+        background:white;
+        color:$blue;
+        text-transform:none;
+        font-weight:700;
+        position:absolute;
+        right:-50px;
+        top:12px;
+    }
+
+}

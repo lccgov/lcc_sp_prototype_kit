@@ -1,0 +1,319 @@
+{% extends "layout_multi_sections-lcc.html" %}
+
+{% block page_title %}
+	Self service
+{% endblock %}
+
+
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+    Self service
+{% endblock%}
+
+ {% block main_nav %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+ <!-- Bespoke style for leeds.gov.uk home page -->
+<style>
+    .header-nav a.search,
+    #nav-search{
+        display:none;
+    }
+    @media (max-width: 767px){
+        .header-lcc .header-nav a.my-account {
+            width:65px;
+        }
+    }
+</style>
+
+ <!-- alert -->
+<div class="alert-wrapper" xmlns:ddwrt2="urn:frontpage:internal">
+  <div class="alert alert-warning" role="alert">
+    <div class="container-fluid">
+      <div class="alertInner">
+        <h2>Register to vote</h2>
+        <p>To vote in an election or referendum, you must be on the electoral register. Everyone who is eligible to vote is responsible for registering themselves.</p>
+        <a class="btn btn-default" href="#">Register now</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} 
+
+{% block sectionOneFull%}
+
+{% endblock %}
+
+
+ {% block breadcrumb %}
+
+ {% endblock %}
+
+{% block sectionOneContent %}
+
+{% endblock %}
+
+{% block pageContent %}
+
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+
+<!-- bespoke actions -->
+<div class="header-actions">
+    <a class="btn btn-secondary"><i class="fa fa-laptop" aria-hidden="true" style="margin-right:7px;"></i>Book your next computer session</a>
+</div>
+
+<!-- group promos -->
+<div class="groupPromo">
+  <div class="listWebpart">
+      <ul>
+            <li>
+                <a href="#">
+                    <h3>Apply for a job at Leeds City Council</h3>
+                    <p>Jobs</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Benefits calculator</h3>
+                    <p>Benefits</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Bid for a Council house</h3>
+                    <p>Housing</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Council Tax change of address</h3>
+                    <p>Council Tax</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Create a Council Tax account</h3>
+                    <p>Council Tax</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Land searches</h3>
+                    <p>Planning</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Live job vacancies</h3>
+                    <p>Jobs</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Make a online payment</h3>
+                    <p>Payments</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Planning applications online</h3>
+                    <p>Planning</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Search the Library catalogue</h3>
+                    <p>Libraries</p>
+                </a>
+            </li>
+        </ul>
+  </div>
+</div>
+
+<!-- promos -->
+<div class="mega-promo">
+    <div class="mega-promo__item third blue">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(/public/images/ss-promo-lightnight.jpg)"></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Light Night 2017</h3>
+                <p class="mega-promo__secondary">​Light Night Leeds is an annual free multi-arts and light festival which takes over Leeds City Centre on two nights in early October</p>
+            </div>
+            <span class="mega-promo__highlight">Thur 5th / Fri 6th Oct 2017</span>
+        </a>
+    </div>
+    <div class="mega-promo__item third blue">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(/public/images/ss-promo-fireworks.jpg)"></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Fireworks at Roundhay Park</h3>
+                <p class="mega-promo__secondary">This is the description for the promo</p>
+            </div>
+            <span class="mega-promo__highlight">3 Nov 2017</span>
+        </a>
+    </div>
+    <div class="mega-promo__item third blue">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(/public/images/ss-promo-ghost.jpg)"></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Halloween Ghost Hunt at Leeds City Museum</h3>
+                <p class="mega-promo__secondary">Join Sean and Bex and the ghost dimension team for a night of pure ghost hunting</p>
+            </div>
+            <span class="mega-promo__highlight">28 Oct 2017</span>
+        </a>
+    </div>
+</div>
+
+<!-- sub section -->
+
+<h2 class="heading-large top">Visit a website</h2>
+
+<div class="groupPromo">
+  <div class="listWebpart">
+      <ul>
+            <li>
+                <a rel="external" href="#">
+                    <h3>Google</h3>
+                    <p>Search the internet via Google</p>
+                </a>
+            </li>
+            <li>
+                <a rel="external" href="#">
+                    <h3>DWP</h3>
+                    <p>Go to the DWP (Department for Work and Pensions) website</p>
+                </a>
+            </li>
+        </ul>
+  </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% include "includes/lcc-components/atoz.html" %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+     {% include "includes/re-userble-content-footer.html" %}
+ {% endblock %}

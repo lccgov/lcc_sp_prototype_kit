@@ -21515,3 +21515,40 @@ a.skip:focus, a.skip:active {
         width: 100%;
         float: none;
         padding: 5px 0 20px; } }
+
+.header-actions {
+  position: absolute;
+  top: -110px;
+  right: 15px; }
+  @media (max-width: 641px) {
+    .header-actions {
+      position: relative;
+      top: auto;
+      right: auto;
+      margin-bottom: 20px; } }
+
+.groupPromo li a[rel="external"]:after,
+.groupPromo li a.external:after {
+  display: none; }
+
+.groupPromo li a[rel="external"] h3:after,
+.groupPromo li a.external h3:after {
+  content: "\f08e";
+  color: #007299; }
+
+.logo {
+  position: relative; }
+  .logo .alpha {
+    font-size: 12px;
+    padding: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    background: white;
+    color: #007299;
+    text-transform: none;
+    font-weight: 700;
+    position: absolute;
+    right: -50px;
+    top: 12px; }
