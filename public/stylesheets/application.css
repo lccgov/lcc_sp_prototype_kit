@@ -18262,7 +18262,7 @@ input[type=submit]:focus,
         position: absolute;
         right: 20px;
         bottom: 20px;
-        color: #9DA5B2;
+        color: #007299;
         font-size: 24px; }
       .mega-promo .mega-promo__item a:hover {
         background: #e6e8f1;
@@ -18668,6 +18668,9 @@ input[type=submit]:focus,
                   padding-left: 60px !important;
                   font-size: 20px !important;
                   height: 55px; } }
+              @media (max-width: 350px) {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
+                  font-size: 14px; } }
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON {
               height: 55px;
               border: 0;
@@ -20986,6 +20989,26 @@ table th, table td {
       .venue-details .venue-details__item .venue-details__item-content .text-highlight {
         margin: 10px 0; }
 
+.phase-banner {
+  padding: 7px 0;
+  background: rgba(255, 191, 71, 0.5); }
+  .phase-banner p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6; }
+    @media (max-width: 641px) {
+      .phase-banner p {
+        font-size: 14px; } }
+    .phase-banner p strong {
+      background: #007299;
+      color: white;
+      padding: 3px 5px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+      margin-right: 3px; }
+
 .limitedrte-Style-BUTTON {
   display: inline-block;
   cursor: pointer; }
@@ -21536,24 +21559,11 @@ a.skip:focus, a.skip:active {
   content: "\f08e";
   color: #007299; }
 
-.logo {
-  position: relative; }
-  .logo .alpha {
-    font-size: 12px;
-    padding: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
-    background: white;
-    color: #007299;
-    text-transform: none;
-    font-weight: 700;
-    position: absolute;
-    right: -50px;
-    top: 12px; }
-    @media (max-width: 767px) {
-      .logo .alpha {
-        top: 7px;
-        font-size: 10px;
-        right: -40px; } }
+@media (min-width: 767px) {
+  .mega-promo .mega-promo__item a .mega-promo__content {
+    display: block;
+    padding: 20px; }
+  .mega-promo .mega-promo__item a {
+    padding-bottom: 50px; }
+  .mega-promo .mega-promo__item.featured a {
+    padding-bottom: 0px; } }

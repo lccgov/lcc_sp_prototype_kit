@@ -121,6 +121,10 @@
                                 height:55px;
                             }
 
+                            @media (max-width: 350px) {
+                                font-size:14px;
+                            }
+
                             &:focus{
                                 @extend .input-focus;
                             }
