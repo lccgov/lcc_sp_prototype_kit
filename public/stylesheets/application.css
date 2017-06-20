@@ -19629,8 +19629,7 @@ input[type=file] {
     .form-group .panel.panel-border-narrow {
       border-left-width: 5px;
       float: left;
-      width: 100%;
-      padding-bottom: 0; }
+      width: 100%; }
       .form-group .panel.panel-border-narrow:first-child {
         margin-top: 10px; }
       .form-group .panel.panel-border-narrow::last-child {
