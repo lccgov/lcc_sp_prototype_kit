@@ -56,3 +56,20 @@
 
     }
 }
+
+//no flexbox fallback - sub-section
+.no-flexbox .sub-section-nav {
+    .sub-section{
+        float:left;
+    }
+    .sub-section:nth-child(4){
+        @media (min-width: 990px){
+            clear:both;
+        }
+    }
+    .sub-section:nth-child(3){
+        @media (min-width: 767px) and (max-width: 990px){
+            clear:both;
+        }
+    }
+}
