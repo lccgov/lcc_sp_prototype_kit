@@ -27,7 +27,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
-    "lcc_frontend_toolkit": "^0.104.0",
+    "lcc_frontend_toolkit": "^0.105.0",
     "lcc_templates_nunjucks": "1.1.65",
     "minimist": "0.0.8",
     "portscanner": "^1.0.0",

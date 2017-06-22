@@ -84,104 +84,145 @@
                         margin:0 0 5px;
                     }
 
-                    //bootstrap style
+                    //sharepoint input mark-up style
                     .hero-lcc__search{
                         position:relative;
+                        display:block;
 
-                            &:before{
-                                font-family: FontAwesome;
-                                content: "\f002";
-                                position: absolute;
-                                left: 15px;
-                                top: 50%;
-                                margin-top:-17px;
-                                font-size:30px;
-                                line-height:1;
-                                color:$dark-grey;
-                                z-index:4;
+                        #SearchBox{
+                            float:none;
+                        
+                            .ms-srch-sbLarge{
+                                background:none;
+                                position:relative;
+                                width:100%;
+                                display:table;
+                                border-collapse: separate;
 
-                                @media (max-width: 766px) {
-                                    display:none;
-                                }
-                            }
-
-                        .hero-lcc__search-input{
-                            height:45px;
-                            -webkit-border-radius:4px 0 0 4px;
-                            -moz-border-radius:4px 0 0 4px;
-                            -ms-border-radius:4px 0 0 4px;
-                            border-radius:4px 0 0 4px;
-                            font-size:16px;
-                            width:100% !important;
-                            border:0 !important;
-                            padding: 6px 12px !important;
-
-                            @media (min-width: 767px) {
-                                padding-left:60px !important;
-                                font-size:20px !important;
-                                height:55px;
-                            }
-
-                            @media (max-width: 350px) {
-                                font-size:14px;
-                            }
-
-                            &:focus{
-                                @extend .input-focus;
-                            }
-                        }
-
-                        .btn{
-                            height:55px;
-                            border:0;
-                            padding:10px 25px;
-                            background:$primary-button-background-color;
-                            font-size:21px;
-                            margin:0;
-
-                            &:hover{
-                                background:$light-green;
-                                color:$white;
-                            }
-
-                            &:active{
-                                background:darken($button-color,5%) !important;
-                                color:#fff !important;
-                            }
-
-                            @media (max-width: 766px) {
-                                width:45px;
-                                height:45px;
-                            }
-
-                            &:after{
-                                display:none;
-                            }
-
-                            i{
-                                font-size:26px;
-
-                                @media (min-width: 767px) {
-                                    display:none;
-                                }
-                            }
-
-                            @media (max-width: 766px) {
-
-                                padding:5px 10px;
-
-                                span{
+                                &:before{
+                                    font-family: FontAwesome;
+                                    content: "\f002";
                                     position: absolute;
-                                    width: 1px;
-                                    height: 1px;
-                                    padding: 0;
-                                    margin: -1px;
-                                    overflow: hidden;
-                                    clip: rect(0,0,0,0);
-                                    border: 0;
+                                    left: 15px;
+                                    top: 50%;
+                                    margin-top:-17px;
+                                    font-size:30px;
+                                    line-height:1;
+                                    color:$dark-grey;
+                                    z-index:4;
+
+                                    @media (max-width: 766px) {
+                                        display:none;
+                                    }
+                                }
+
+                                input[type=text]{
+                                    height:45px;
+                                    -webkit-border-radius:4px 0 0 4px;
+                                    -moz-border-radius:4px 0 0 4px;
+                                    -ms-border-radius:4px 0 0 4px;
+                                    border-radius:4px 0 0 4px;
+                                    font-size:16px;
+                                    width:100% !important;
+                                    border:0 !important;
+                                    padding: 6px 12px !important;
+                                    background:white;
+                                    margin:0;
+                                    display:table-cell;
+                                    position: relative;
+                                    z-index: 2;
+                                    float: none;
+
+                                    @media (min-width: 767px) {
+                                        padding-left:60px !important;
+                                        font-size:20px !important;
+                                        height:55px;
+                                    }
+
+                                    @media (max-width: 350px) {
+                                        font-size:14px;
+                                    }
+
+                                    &:focus{
+                                        @extend .input-focus;
+                                    }
+                                }
+
+                                .ms-srch-sb-searchLink{
+                                    height:55px;
+                                    border:0;
+                                    padding:10px 25px;
+                                    background:$primary-button-background-color;
+                                    font-size:21px;
+                                    margin:0;
+                                    display:table-cell;
+                                    position:relative;
+                                    color:white;
+                                    text-decoration:none;
+                                    -webkit-border-radius:0 4px 4px 0;
+                                    -moz-border-radius:0 4px 4px 0;
+                                    -ms-border-radius:0 4px 4px 0;
+                                    border-radius:0 4px 4px 0;
+                                    line-height:35px;
+
+                                    &:before{
+                                        content:"Search";
+
+                                        @media (max-width: 766px){
+                                            font-family: FontAwesome;
+                                            content: "\f002";
+                                            position: absolute;
+                                            top: 50%;
+                                            margin-top:-15px;
+                                            margin-left:-1px;
+                                            font-size:30px;
+                                            line-height:1;
+                                            color:white;
+                                            text-align:center;
+                                            z-index:4;
+                                        }
+                                    }
+
+                                    img{
+                                        display:none;
+                                    }
+
+                                    &:hover{
+                                        background:$light-green;
+                                        color:$white;
+                                    }
+
+                                    &:active{
+                                        background:darken($button-color,5%) !important;
+                                        color:#fff !important;
+                                    }
+
+                                    @media (max-width: 766px) {
+                                        width:45px;
+                                        height:45px;
+                                    }
+
+
+                                    @media (max-width: 766px) {
+
+                                        padding:5px 10px;
+
+                                        span{
+                                            position: absolute;
+                                            width: 1px;
+                                            height: 1px;
+                                            padding: 0;
+                                            margin: -1px;
+                                            overflow: hidden;
+                                            clip: rect(0,0,0,0);
+                                            border: 0;
+                                        }
+                                    }
                                 }
                             }
+
                         }
+
                     }
                 }
 
