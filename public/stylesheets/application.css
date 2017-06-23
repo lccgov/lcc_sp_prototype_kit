@@ -21356,6 +21356,9 @@ hr {
     .groupPromo.home ul li a {
       background: #FFFFFF; }
 
+.groupPromo ul {
+  margin-top: 0; }
+
 .groupPromo ul li a:hover {
   background: #007299 !important; }
   .groupPromo ul li a:hover h3,
@@ -21555,7 +21558,7 @@ hr {
 .groupPromo li a[rel="external"] h3:after,
 .groupPromo li a.external h3:after {
   content: "\f08e";
-  color: #007299; }
+  color: #9DA5B2; }
 
 @media (min-width: 767px) {
   .mega-promo .mega-promo__item a .mega-promo__content {
