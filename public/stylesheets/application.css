@@ -21117,42 +21117,42 @@ table th, table td {
   color: #666B76;
   font-weight: 300; }
 
-.venue-details {
+.description-list {
   margin: 10px 0 30px; }
-  .venue-details .venue-details__item {
+  .description-list .description-list__item {
     border-bottom: 1px solid #DCDEE1; }
-    .venue-details .venue-details__item h3 {
+    .description-list .description-list__item h3 {
       font-size: 19px;
       margin: 0;
       padding-top: 1rem; }
       @media (min-width: 641px) {
-        .venue-details .venue-details__item h3 {
+        .description-list .description-list__item h3 {
           float: left;
           width: 25%;
           padding: 1rem .75rem; } }
-    .venue-details .venue-details__item .venue-details__item-content {
+    .description-list .description-list__item .description-list__item-content {
       margin: 0;
       padding-bottom: 1rem;
       padding-top: .25rem; }
       @media (min-width: 641px) {
-        .venue-details .venue-details__item .venue-details__item-content {
+        .description-list .description-list__item .description-list__item-content {
           float: left;
           width: 75%;
           padding: 1rem .75rem; } }
-      .venue-details .venue-details__item .venue-details__item-content p:last-child,
-      .venue-details .venue-details__item .venue-details__item-content ul:last-child,
-      .venue-details .venue-details__item .venue-details__item-content li:last-child,
-      .venue-details .venue-details__item .venue-details__item-content .text-highlight:last-child {
+      .description-list .description-list__item .description-list__item-content p:last-child,
+      .description-list .description-list__item .description-list__item-content ul:last-child,
+      .description-list .description-list__item .description-list__item-content li:last-child,
+      .description-list .description-list__item .description-list__item-content .text-highlight:last-child {
         margin-bottom: 0; }
       @media (min-width: 641px) {
-        .venue-details .venue-details__item .venue-details__item-content p:first-child,
-        .venue-details .venue-details__item .venue-details__item-content ul:first-child,
-        .venue-details .venue-details__item .venue-details__item-content li:first-child,
-        .venue-details .venue-details__item .venue-details__item-content .text-highlight:first-child {
+        .description-list .description-list__item .description-list__item-content p:first-child,
+        .description-list .description-list__item .description-list__item-content ul:first-child,
+        .description-list .description-list__item .description-list__item-content li:first-child,
+        .description-list .description-list__item .description-list__item-content .text-highlight:first-child {
           margin-top: 0; } }
-      .venue-details .venue-details__item .venue-details__item-content p {
+      .description-list .description-list__item .description-list__item-content p {
         margin-bottom: 10px; }
-      .venue-details .venue-details__item .venue-details__item-content .text-highlight {
+      .description-list .description-list__item .description-list__item-content .text-highlight {
         margin: 10px 0; }
 
 .phase-banner {
@@ -21187,7 +21187,12 @@ table th, table td {
 .ms-rtestate-field h1,
 h1.ms-rteElement-H1,
 .ms-rtestate-field h2,
-h2.ms-rteElement-H2 {
+h2.ms-rteElement-H2,
+.ms-rtestate-field h1,
+.ms-rtestate-field h2,
+.ms-rtestate-field h3,
+.ms-rtestate-field h4,
+.ms-rtestate-field h5 {
   font-weight: 700;
   padding: 0;
   display: block; }

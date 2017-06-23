@@ -15,7 +15,12 @@
 .ms-rtestate-field h1, 
 h1.ms-rteElement-H1, 
 .ms-rtestate-field h2, 
-h2.ms-rteElement-H2{
+h2.ms-rteElement-H2,
+.ms-rtestate-field h1, 
+.ms-rtestate-field h2, 
+.ms-rtestate-field h3, 
+.ms-rtestate-field h4, 
+.ms-rtestate-field h5{
     font-weight:700;
     padding:0;
     display:block;
@@ -42,9 +47,6 @@ h2.ms-rteElement-H2{
 .ms-rtestate-field h5.ms-rteElement-H2{
     line-height: 1.1428571429;
 }
-
-
-
 
 .ms-rtestate-field p, 
 p.ms-rteElement-P {

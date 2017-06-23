@@ -1,7 +1,7 @@
-.venue-details{
+.description-list{
     margin:10px 0 30px;
 
-    .venue-details__item{
+    .description-list__item{
         border-bottom:1px solid $border-color;
 
         h3{
@@ -16,7 +16,7 @@
             }
         }
 
-        .venue-details__item-content{
+        .description-list__item-content{
             margin: 0;
             padding-bottom: 1rem;
             padding-top: .25rem;
