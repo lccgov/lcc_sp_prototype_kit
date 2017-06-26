@@ -240,7 +240,8 @@ html{
 
 //accordion
 ul.accordion {
-  margin:1.4em 0 2.4em;
+  margin-top: 0.2631578947em;
+    margin-bottom: 1.0526315789em;
 
   li {
     border-color:$border-color;
@@ -250,7 +251,7 @@ ul.accordion {
       @include link-border-bottom($base-link-color,0,$base-link-color);
       border:none !important;
       font-weight:700;
-      padding: 20px 40px 20px 0;
+      padding: 20px 60px 20px 20px;
       text-decoration:none !important;
       font-size:19px;
 
@@ -259,15 +260,23 @@ ul.accordion {
       }
 
       &:after {
-      font-family: FontAwesome;
-      font-size: 24px;
-      content: "\f067";
-      position: absolute;
-      right: 0;
-      top:50%;
-      margin-top:-14px;
-      color: $base-link-color;
+        font-family: FontAwesome;
+        font-size: 24px;
+        content: "\f067";
+        position: absolute;
+        right: 20px;
+        top:50%;
+        margin-top:-14px;
+        color: $base-link-color;
       }
+    }
+
+    div{
+        padding:0 !important;
+    }
+
+    div.content-block{
+        padding:20px !important;
     }
   }
 
@@ -640,4 +649,69 @@ hr{
     .mega-promo .mega-promo__item.featured a {
         padding-bottom: 0px;
     }
+}
+
+//panels
+.panel-group .panel{
+    @include border-radius(0);
+    padding:0;
+
+    .panel-heading {
+        padding:30px;
+
+        .panel-title{
+            font-size:21px;
+        }
+    }
+
+    .panel-body{
+        padding:30px;
+    }
+}
+
+.panel-default>.panel-heading {
+    color: $base-font-color;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.panel-outline {
+    color: $base-font-color;
+    background-color: white;
+    border-color: $blue;  
+}
+
+.panel-group .panel+.panel {
+    margin-top: -1px;
+}
+
+.panel-group {
+    border-bottom:1px solid $blue;
+
+    .panel-outline{
+        padding:0;
+        border-top:1px solid $blue;
+
+        .panel-heading {
+            padding:15px 0;
+
+            a{
+                text-decoration:none;
+            }
+
+            .panel-title{
+                font-size:21px;
+            }
+        }
+        .panel-body{
+            padding:15px 0;
+        }
+    }
+}
+
+//badges
+.badge{
+    margin:0;
+    display:inline-block;
+    width:auto;
 }

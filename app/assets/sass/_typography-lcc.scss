@@ -322,6 +322,12 @@ a {
     }
 }
 
+.link{
+  @extend a;
+  border:0 !important;
+  padding:0 !important;
+}
+
 a[rel="external"]{
   margin-right:25px;
 

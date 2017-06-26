@@ -29,3 +29,9 @@
         }
     }
 }
+
+//refiners
+.nearestLayer-feature-count,
+.nearestItem-feature-marker{
+    @extend .badge;
+}

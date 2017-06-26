@@ -42,7 +42,7 @@
 {% endblock %}
 
 {% block pageContent %}
-    {% include "includes/lcc-components/where-i-live-new.html" %}
+
 {% endblock %}
 
 {% block sectionOneFullBottom %}
@@ -54,7 +54,6 @@
 {% endblock %}
 
 {% block sectionOneThirdCol1 %}
-{% include "includes/lcc-components/where-i-live-new.html" %}
  {% endblock %}
 
  {% block sectionOneThirdCol2 %}
@@ -73,9 +72,12 @@
 {% endblock %}
 
 {% block sectionTwoContent %}
+    <!--{% include "includes/lcc-components/where-i-live/where-i-live_map.html" %}-->
+    {% include "includes/lcc-components/where-i-live/where-i-live-new.html" %}
 {% endblock %}
 
 {% block sectionTwoRightHandColumn %}
+{% include "includes/lcc-components/where-i-live/where-i-live_refiners.html" %}
 {% endblock %}
 
 {% block sectionTwoThirdCol1 %}
