@@ -1,7 +1,7 @@
 {% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
-	Service Page Example
+	Contact us
 {% endblock %}
 
 
@@ -12,7 +12,7 @@
  
 
 {% block header %}
-    Council Tax
+    Contact us
 {% endblock%}
 
  {% block main_nav %}
@@ -21,7 +21,6 @@
 
 
  {% block sectionOneTop %}
- {% include "includes/lcc-components/alerts/emergency-message.html" %}
 {% endblock %} 
 
 {% block sectionOneFull%}
@@ -33,13 +32,37 @@
     <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
         <a href="/lcc-home.html">Home</a>
         <ul class="">
-            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Council Tax</li>
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Contact us</li>
         </ul>
     </li>
 </ul>
  {% endblock %}
 
 {% block sectionOneContent %}
+{% include "includes/lcc-components/alerts/announcement-dismissable.html" %}
+<div class="text">
+    <h2>Ways to contact us</h2>
+    <p>You can contact the team in a number of different ways. Most people find it easiest to get in touch online.</p>
+    <h3>Live chat</h3>
+    <p>Chat online now with one of our dedicated customer care advisers and receive assistance with your query straight away.</p>
+    {% include "includes/lcc-components/webchat/webchat-available.html" %}
+    {% include "includes/lcc-components/webchat/webchat-busy.html" %}
+    <h3>Phone</h3>
+    <p>You can call our automated phone line to get support at any time. This can transfer you through to an advisor during office hours, or let you leave a message at other times. We aim to respond to messages within 2 days.</p>
+    <p><strong>0113 469 5000</strong></p>
+    <p>We are open:</p>
+    <ul class="list list-bullet">
+        <li>Monday, Wednesday and Thursday from 8.30am - 5pm</li>
+        <li>Tuesday from 10am - 5pm</li>
+        <li>Friday from 8.30am - 3.40pm</li>
+    </ul>
+    <p>Calls are charged at the local rate.</p>
+    <h3>Post</h3>
+    <p>Council Tax Team, <br>PO Box 657 <br>LS1 9BS</p>
+    <h3>In person</h3>
+    <p>At our One Stop Centres we provide advice on a range of council services. We work with a variety of partners to help bring you the services that you need locally.</p>
+    <a href="#" class="btn btn-primary">Find our nearest One Stop Centre</a>
+</div>
 {% endblock %}
 
 {% block pageContent %}
@@ -47,12 +70,10 @@
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-    {% include "includes/lcc-components/alerts/announcement-dismissable.html" %}
-    {% include "includes/lcc-components/group-promos-lcc-service-page.html" %}
-    {% include "includes/design-patterns/sub-section-nav.html" %}
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
+{% include "includes/design-patterns/side-nav.html" %}
 {% endblock %}
 
 {% block sectionOneThirdCol1 %}
