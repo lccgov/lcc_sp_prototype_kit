@@ -32,6 +32,10 @@ input[type=file]{
     width: 100%;
     margin-bottom:30px;
 
+    @media (max-width: 641px) {
+        margin-bottom:20px;
+    }
+
     .btn{
         margin:0;
     }
@@ -94,13 +98,14 @@ textarea.form-control{
     background-image: none;
     border: 1px solid $input-border-color !important;
     box-shadow:none;
-    font-size:19px;
+    font-size:16px;
     padding:5px !important;
     background:white !important;
     font-family: $font-primary !important;
 
     @media (min-width: 641px) {
         width:50% !important;
+        font-size:19px;
     }
 
     &:focus{
@@ -290,3 +295,29 @@ input[type=submit], button{
     font-family: $font-primary !important;
 }
 
+
+//form button styles
+input[type=button]{
+    @extend .btn;
+    @extend .btn-primary;
+    margin:0 !important;
+}
+
+input[type=button].btn-secondary{
+    @extend .btn-secondary;
+}
+
+input[type=button].btn-outline{
+    @extend .btn-outline;
+}
+
+input[type=button].btn-small{
+    @extend .btn-small;
+}
+
+.col-md-4,
+.col-md-6{
+    .form-control{
+        width:100% !important;
+    }
+}

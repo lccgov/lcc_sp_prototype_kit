@@ -195,7 +195,6 @@ $input-border-color:$grey;
 @import 'blockQuote';
 @import 'accessibility';
 @import 'mega-promo';
-@import 'buttons';
 
 //custom style added by DH - needs to filed properly
 @import 'browser-alert';
@@ -222,9 +221,11 @@ $input-border-color:$grey;
 @import 'open-data';
 @import 'search-results';
 @import 'webchat';
+@import 'buttons';
 @import 'description_list_accessible';
 @import 'phase-banner';
 @import 'sharepoint_2010_style_fallback';
+@import 'where-i-live';
 
 //site background
 html{
@@ -519,7 +520,7 @@ hr{
 }
 
 //page content
-#main {
+/*#main {
     .col-md-8{
         @media (min-width: 990px){
             padding-right:30px;
@@ -530,7 +531,7 @@ hr{
             padding-left:30px;
         }
     }
-}
+}*/
 
 //video container
 .media-container{
