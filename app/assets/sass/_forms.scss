@@ -50,9 +50,10 @@ input[type=file]{
         border-bottom:0;
         border-left-style: solid;
         border-color: $border-color;
-        padding: 0.78947em;
-        margin-bottom: 0.78947em;
+        padding: 20px;
+        margin-bottom: 30px;
         @include border-radius(0); 
+        background:none;
 
         &:first-child {
             margin-top: 0; 
@@ -327,4 +328,64 @@ input[type=button].btn-small{
     .form-group:first-of-type{
         margin-bottom:10px;
     }
+}
+
+//block label
+.block-label {
+  display: block;
+  float: none;
+  clear: left;
+  position: relative;
+  background: #F6F7FA;
+  border: 1px solid #F6F7FA;
+  padding: 18px 25px 15px 54px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  @include border-radius(4px);
+}
+
+@media (min-width: 641px) {
+  .block-label {
+    float: left;
+  }
+}
+
+.block-label {
+    input {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        cursor: pointer;
+        margin: 0;
+        width: 29px;
+        height: 29px;
+    }
+
+    &.active{
+        border-color: #9DA5B2;
+        background:white;
+    }
+}
+
+.block-label.active + .panel{
+    display:block;
+    visibility:visible;
+}
+
+.block-label:hover {
+  border-color: #9DA5B2;
+}
+
+.inline{
+    .block-label {
+        display:inline;
+        float:none;
+        margin-right:10px;
+    }
+}
+
+//fieldset
+legend {
+    @extend .heading-medium;
+    border-bottom: 0;
 }
