@@ -660,7 +660,11 @@ hr{
         padding:30px;
 
         .panel-title{
-            font-size:21px;
+            font-size:19px;
+
+            @media (max-width: 641px){
+                font-size:19px;
+            }
         }
     }
 
@@ -668,32 +672,21 @@ hr{
         padding:30px;
     }
 }
-
-.panel-default>.panel-heading {
-    color: $base-font-color;
-    background-color: transparent;
-    border-color: transparent;
-}
-
-.panel-outline {
-    color: $base-font-color;
-    background-color: white;
-    border-color: $blue;  
-}
-
 .panel-group .panel+.panel {
     margin-top: -1px;
 }
 
-.panel-group {
-    border-bottom:1px solid $blue;
+.panel-group.panel-group-outline {
+    border-bottom:1px solid $border-color;
 
-    .panel-outline{
+    .panel{
         padding:0;
-        border-top:1px solid $blue;
+        border-top:1px solid $border-color;
+        background:transparent;
 
         .panel-heading {
             padding:15px 0;
+            background:transparent;
 
             a{
                 text-decoration:none;
@@ -704,9 +697,14 @@ hr{
             }
         }
         .panel-body{
-            padding:15px 0;
+            padding:15px;
+            background:transparent;
         }
     }
+}
+
+.panel_blue{
+    background:rgba($blue,0.1);
 }
 
 //badges

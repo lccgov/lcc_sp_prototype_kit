@@ -1,5 +1,6 @@
 #findMyNearestSearch{
     @extend .panel;
+    @extend .panel_blue;
     padding-bottom:10px;
 
     h2{
@@ -31,7 +32,68 @@
 }
 
 //refiners
-.nearestLayer-feature-count,
-.nearestItem-feature-marker{
-    @extend .badge;
+.nearestItem-search-features-inner{
+    a{
+        text-decoration:none !important;
+
+        .nearestItem-showonmap-link{
+            display:block !important;
+            width:100%;
+
+            .btn-link{
+                @extend a;
+                border:0;
+                padding:0;
+                text-decoration:underline !important;
+                margin:0;
+                font-size:16px;
+            }
+        }
+
+    }
 }
+
+.nearestLayer-heading-container{
+    position:relative;
+
+    .nearestLayer-title {
+        padding-left:50px;
+    }
+}
+
+.nearestLayer-feature-count{
+    @extend .badge;
+    background:$green;
+    color:white;
+    font-size:17px;
+    position:absolute;
+    left:0;
+    top:50%;
+    margin-top:-13px !important;
+}
+
+.nearestLayer-details-body{
+
+    .nearestLayer-results{
+        font-size:14px;
+        margin:0;
+    }
+
+    .nearestItem-feature-marker{
+        @extend .badge;
+        @extend .nearestLayer-feature-count;
+        position:relative;
+        top:auto;
+        left:auto;
+        margin-right:15px !important;
+        margin-top:0 !important;
+    }
+
+    .nearestItem-text-place-details{
+        color:$base-font-color;
+        text-decoration:none !important;
+        padding-left:50px;
+        margin-top:10px;
+    }
+}
+

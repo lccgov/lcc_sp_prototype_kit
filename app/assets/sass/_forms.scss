@@ -321,3 +321,10 @@ input[type=button].btn-small{
         width:100% !important;
     }
 }
+
+//custom class for lookup address button
+.form-group-button{
+    .form-group:first-of-type{
+        margin-bottom:10px;
+    }
+}
