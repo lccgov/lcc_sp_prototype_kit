@@ -19860,6 +19860,12 @@ blockquote {
     width: auto;
     max-width: 100%; }
 
+input[type=password], input[type=text], input[type=file], select, input, textarea {
+  border: 0;
+  padding: 0;
+  width: auto;
+  max-width: 100%; }
+
 form {
   width: 100%;
   display: inline-block; }
@@ -20103,8 +20109,8 @@ input[type=button] {
   float: none;
   clear: left;
   position: relative;
-  background: #F6F7FA;
-  border: 1px solid #F6F7FA;
+  background: #DCDEE1;
+  border: 1px solid #DCDEE1;
   padding: 18px 25px 15px 54px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -20254,7 +20260,7 @@ code[class*="language-"] ::selection {
 pre[class*="language-"] {
   border: 1px solid #bfc1c3;
   padding: 1em;
-  margin: 0 0 30px 0;
+  margin: 0;
   overflow: auto; }
 
 :not(pre) > code[class*="language-"],
@@ -20782,7 +20788,7 @@ table th, table td {
     display: block; }
 
 .header-left {
-  padding: 0; }
+  padding: 0 !important; }
 
 .logo {
   height: auto;
@@ -21718,7 +21724,13 @@ ul.accordion {
   margin-bottom: 1.0526315789em; }
   ul.accordion li {
     border-color: #DCDEE1;
-    border-bottom: 1px solid #DCDEE1; }
+    border-bottom: 1px solid #DCDEE1;
+    border-left: 5px solid transparent !important; }
+    ul.accordion li:hover {
+      border-left: 5px solid #007299 !important; }
+    ul.accordion li ul li,
+    ul.accordion li ul li:hover {
+      border: 0 !important; }
     ul.accordion li a.header, ul.accordion li .header.link, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link {
       color: #007299;
       border-bottom: 1px solid rgba(0, 114, 153, 0);
@@ -21726,7 +21738,7 @@ ul.accordion {
       cursor: pointer;
       border: none !important;
       font-weight: 700;
-      padding: 20px 60px 20px 20px;
+      padding: 20px 20px 20px 59px;
       text-decoration: none !important;
       font-size: 19px; }
       ul.accordion li a.header:hover, ul.accordion li .header.link:hover, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link:hover {
@@ -21739,20 +21751,31 @@ ul.accordion {
         text-decoration: none; }
       @media (max-width: 641px) {
         ul.accordion li a.header, ul.accordion li .header.link, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link {
-          font-size: 16px; } }
+          font-size: 16px;
+          padding: 10px 10px 10px 39px; } }
       ul.accordion li a.header:after, ul.accordion li .header.link:after, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link:after {
         font-family: FontAwesome;
-        font-size: 24px;
+        font-size: 19px;
         content: "\f067";
         position: absolute;
-        right: 20px;
-        top: 50%;
-        margin-top: -14px;
-        color: #007299; }
+        right: auto;
+        left: 20px;
+        top: 20px;
+        margin-top: 0;
+        color: #007299;
+        font-weight: 400; }
+        @media (max-width: 641px) {
+          ul.accordion li a.header:after, ul.accordion li .header.link:after, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link:after {
+            font-size: 16px;
+            left: 10px;
+            top: 10px; } }
     ul.accordion li div {
       padding: 0 !important; }
     ul.accordion li div.content-block {
-      padding: 20px !important; }
+      padding: 20px 20px 20px 60px !important; }
+      @media (max-width: 641px) {
+        ul.accordion li div.content-block {
+          padding: 10px 10px 10px 39px !important; } }
   ul.accordion .list a, ul.accordion .freeContentArea ul a, .freeContentArea ul.accordion ul a, ul.accordion .list .link, ul.accordion .freeContentArea ul .link, .freeContentArea ul.accordion ul .link, ul.accordion .list .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion .list .btn-link, ul.accordion .freeContentArea ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion .freeContentArea ul .btn-link, .freeContentArea ul.accordion ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .freeContentArea ul.accordion ul .btn-link {
     text-decoration: none; }
 
@@ -22082,3 +22105,6 @@ hr {
   margin: 0;
   display: inline-block;
   width: auto; }
+
+.btn:focus, input[type=button]:focus, .col-md-8 #SearchBox .ms-srch-sb-searchLink:focus, #myChatLinkContainer #myChatLink a #myChatLinkInfo:focus, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo:focus, .limitedrte-Style-BUTTON:focus {
+  border-color: #FFBF47 !important; }

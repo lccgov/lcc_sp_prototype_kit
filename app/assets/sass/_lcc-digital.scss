@@ -9,7 +9,7 @@
 
 //logo
 .header-left{
-  padding:0;
+  padding:0 !important;
 }
 .logo {
     height: auto;
@@ -39,7 +39,6 @@
 
 //nav
 .main-nav ul li {
-
     a{
       font-size:18px;
       padding:12px;

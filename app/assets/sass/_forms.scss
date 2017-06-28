@@ -1,6 +1,4 @@
-//needs to be deleted once merging into frontend toolkit
-.form-group
-{
+.form-group{
   margin-top:0;
   margin-bottom:20px;
 
@@ -9,14 +7,19 @@
     }
 
     input[type=password], input[type=text], input[type=file], select, input, textarea {
-
         border:0;
         padding:0;
         width:auto;
         max-width:100%;
     }
 }
-//end
+
+input[type=password], input[type=text], input[type=file], select, input, textarea {
+    border:0;
+    padding:0;
+    width:auto;
+    max-width:100%;
+}
 
 form{
     width:100%;
@@ -336,8 +339,8 @@ input[type=button].btn-small{
   float: none;
   clear: left;
   position: relative;
-  background: #F6F7FA;
-  border: 1px solid #F6F7FA;
+  background: #DCDEE1;
+  border: 1px solid #DCDEE1;
   padding: 18px 25px 15px 54px;
   margin-bottom: 10px;
   cursor: pointer;
