@@ -15,10 +15,13 @@
 }
 
 input[type=password], input[type=text], input[type=file], select, input, textarea {
-    border:0;
-    padding:0;
     width:auto;
     max-width:100%;
+
+    &:focus{
+        @extend .input-focus;
+        outline:0;
+    }
 }
 
 form{
@@ -392,3 +395,88 @@ legend {
     @extend .heading-medium;
     border-bottom: 0;
 }
+
+//date input
+.form-date {
+    .form-group {
+        float: left;
+        width: 50px;
+        margin-right: 20px;
+        margin-bottom: 0;
+        clear: none; 
+
+        label {
+            display: block;
+            padding-bottom: 2px; 
+        }
+
+        input {
+            width: 100% !important; 
+        }
+    }
+
+    .form-group-year {
+        width: 70px; 
+    }
+}
+
+//form errors
+.form-group-error {
+  margin-right: 15px;
+  border-left: 4px solid #b10e1e;
+  padding-left: 10px; }
+  @media (min-width: 641px) {
+    .form-group-error {
+      border-left: 5px solid #b10e1e;
+      padding-left: 15px; } }
+
+.form-control-error {
+  border: 4px solid #b10e1e; }
+
+.error-message {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #b10e1e;
+  display: block;
+  clear: both;
+  margin: 0;
+  padding: 2px 0; }
+  @media (min-width: 641px) {
+    .error-message {
+      font-size: 19px;
+      line-height: 1.31579; } }
+
+.form-label .error-message,
+.form-label-bold .error-message {
+  padding-top: 4px;
+  padding-bottom: 0; }
+
+.error-summary {
+  border: 4px solid #b10e1e;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px 10px; }
+  @media (min-width: 641px) {
+    .error-summary {
+      border: 5px solid #b10e1e;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 20px 15px 15px; } }
+  .error-summary:focus {
+    outline: 3px solid #ffbf47; }
+  .error-summary .error-summary-heading {
+    margin-top: 0; }
+  .error-summary p {
+    margin-bottom: 10px; }
+  .error-summary .error-summary-list {
+    padding-left: 0; }
+    @media (min-width: 641px) {
+      .error-summary .error-summary-list li {
+        margin-bottom: 5px; } }
+    .error-summary .error-summary-list a {
+      color: #b10e1e;
+      font-weight: bold;
+      text-decoration: underline; }

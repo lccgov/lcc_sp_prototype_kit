@@ -47,15 +47,25 @@
 }
 
 //secondary-nav
-.secondary-nav{
   .heading-contents{
-    margin-top:0;
+    margin-top:0.46875em;
   }
-}
 
 @media screen and (max-width: 400px){
   .highlighted a.btn {
       width: auto;
+  }
+}
+
+//hr
+hr {
+    margin-top: 40px;
+}
+
+.copyright{
+  @media (min-width: 767px){
+      text-align:right !important;
+      margin-top:50px;
   }
 }
 

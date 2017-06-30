@@ -254,6 +254,10 @@ p {
   }
 }
 
+.lead-in{
+  margin-bottom:0;
+}
+
 //text-wrapper for usability reasons (recommeneded max 75 characters)
 .text {
   max-width: 35em;
@@ -333,6 +337,22 @@ a[rel="external"]{
 
     &:after {
       position: absolute;
+  }
+}
+
+.text-link.reveal{
+  text-decoration: none;
+
+  &:before{
+    font-family: FontAwesome;
+    content: "\f0d7";
+  }
+
+  &.collapsed{
+
+    &:before{
+      content: "\f0da";
+    }
   }
 }
 
