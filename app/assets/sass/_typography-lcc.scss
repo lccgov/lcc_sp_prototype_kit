@@ -229,7 +229,10 @@ h4{
 
 }   
 
-p {
+p,
+.link-back,
+.hidden-text,
+.text-link.reveal {
   margin-top: 0.3125em;
   margin-bottom: 1.25em;
 
@@ -356,6 +359,18 @@ a[rel="external"]{
   }
 }
 
+.link-back{
+  text-decoration:none !important;
+  border-bottom:1px solid $base-link-color;
+  display:inline-block;
+
+   &:before{
+    font-family: FontAwesome;
+    content: "\f0d9";
+    margin-right:5px;
+  }
+}
+
 //lists
 ul,
 ol {
@@ -437,6 +452,11 @@ blockquote {
   margin-bottom: 1.25em;
   display:inline-block;
   width:100%;
+
+  &.panel-border{
+    background:white;
+    border-left: 10px solid $border-color;
+  }
 
   @media (min-width: 641px) {
       padding:30px;  

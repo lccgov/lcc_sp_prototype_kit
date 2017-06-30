@@ -43,7 +43,7 @@
 <div class="text">
   <p class="lead">Avoid unnecessary decoration - only use icons and images if there’s a real user need.</p>
 </div>
-<h2 class="heading-medium" id="icons">Icons</h2>
+<h2 class="heading-large" id="icons">Icons</h2>
 <ul class="list list-bullet text">
   <li>if icons are needed ensure they are clear, simple and accompanied by relevant text</li>
   <li>don’t hide functionality under icons</li>
@@ -63,23 +63,25 @@
         </div>
     </div>
 </div>
-<a class="btn btn-secondary btn-noarrow btn-small" role="button" data-toggle="collapse" href="#typographyLegalTextCode" aria-expanded="false" aria-controls="typographyLegalTextCode">
-Show code
-</a>
-<div class="collapse exampleCode" id="typographyLegalTextCode">
-    <pre>
-        <code class="line-numbers language-markup">
-        &lt;div class="notice">
-            &lt;i class="fa fa-exclamation-triangle" aria-hidden="true">
-                &lt;span class="sr-only">Warning&lt;/span>
-            &lt;/i>
-            &lt;strong class="bold-small">You can be fined up to £5,000 if you don’t register.&lt;/strong>
-        &lt;/div>
-        </code>
-    </pre>
+<div class="code-reveal">
+    <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#icons-reveal" aria-expanded="false" aria-controls="icons-reveal">
+    Show code
+    </a>
+    <div class="collapse exampleCode" id="icons-reveal">
+        <pre>
+            <code class="line-numbers language-markup">
+            &lt;div class="notice">
+                &lt;i class="fa fa-exclamation-triangle" aria-hidden="true">
+                    &lt;span class="sr-only">Warning&lt;/span>
+                &lt;/i>
+                &lt;strong class="bold-small">You can be fined up to £5,000 if you don’t register.&lt;/strong>
+            &lt;/div>
+            </code>
+        </pre>
+    </div>
 </div>
-<hr>
-<h2 class="heading-medium" id="images">Images</h2>
+
+<h2 class="heading-large" id="images">Images</h2>
 <p>If images are needed they should be landscape, 16:9 aspect ratio.</p>
 <div class="example example-images">
   <div class="row">
@@ -92,18 +94,62 @@ Show code
   </div>
 </div>
 <p>You can check the images aspect ratio with this <a href="http://calculateaspectratio.com/" rel="external">online calculator</a>.</p>
-<hr>
-<h2 class="heading-medium" id="videos">Videos</h2>
+
+<h2 class="heading-large" id="videos">Videos</h2>
 <p>Only YouTube videos can be embedded on to LEEDS.GOV.UK pages. You embed the video directly into your page using the code below.</p>
 <div class="example">
     {% include "includes/design-patterns/accessible-player.html" %}
 </div>
-<hr>
-<h2 class="heading-medium" id="videos-captions">Videos with captions</h2>
+<div class="code-reveal">
+    <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#media-player-reveal" aria-expanded="false" aria-controls="media-player-reveal">
+    Show code
+    </a>
+    <div class="collapse exampleCode" id="media-player-reveal">
+        <pre>
+            <code class="line-numbers language-markup">
+                &lt;div class="media-container">
+                    &lt;p>
+                        &lt;a rel="external" href="http://www.youtube.com/watch?v=kXiGXcq4pqY">Order of content by Emily Coward&lt;/a>
+                    &lt;/p>
+                &lt;/div>
+            </code>
+        </pre>
+    </div>
+</div>
+<div class="text">
+    <div role="note" aria-label="Information" class="text-highlight">
+    <h4 class="heading-small top">For SharePoint:</h4> 
+        <ol class="list list-number">
+            <li>save the code in a .txt file</li>
+            <li>upload the file to SharePoint</li>
+            <li>add to the page a content editor webpart</li>
+            <li>edit the webpart and add the file URL to content link</li>
+        </ol>
+    </div>
+</div>
+
+<h2 class="heading-medium" id="videos-captions">Videos with captions</h3>
 <div class="example">
     {% include "includes/design-patterns/accessible-player-with-captions.html" %}
 </div>
-<hr>
+<div class="code-reveal">
+    <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#media-player-captions-reveal" aria-expanded="false" aria-controls="media-player-captions-reveal">
+    Show code
+    </a>
+    <div class="collapse exampleCode" id="media-player-captions-reveal">
+        <pre>
+            <code class="line-numbers language-markup">
+                &lt;div class="media-container">
+                    &lt;p>
+                        &lt;a rel="external" href="http://www.youtube.com/watch?v=kXiGXcq4pqY">Order of content by Emily Coward&lt;/a>
+                        &lt;a class="captions" href="/public/captions/captions-order-of-content.xml" style="display:none;">Captions&lt;/a>
+                    &lt;/p>
+                &lt;/div>
+            </code>
+        </pre>
+    </div>
+</div>
+
 {% endblock %}
 
 {% block sectionOneFullBottom %}

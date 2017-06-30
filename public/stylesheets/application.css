@@ -19708,11 +19708,17 @@ table.styledTable td,
       line-height: 1.11111;
       margin-bottom: 20px; } }
 
-p {
+p,
+.link-back,
+.hidden-text,
+.text-link.reveal {
   margin-top: 0.3125em;
   margin-bottom: 1.25em; }
   @media (min-width: 641px) {
-    p {
+    p,
+    .link-back,
+    .hidden-text,
+    .text-link.reveal {
       margin-top: 0.2631578947em;
       margin-bottom: 1.0526315789em; } }
 
@@ -19793,6 +19799,15 @@ a[rel="external"], [rel="external"].link, .nearestItem-search-features-inner a .
   .text-link.reveal.collapsed:before {
     content: "\f0da"; }
 
+.link-back {
+  text-decoration: none !important;
+  border-bottom: 1px solid #007299;
+  display: inline-block; }
+  .link-back:before {
+    font-family: FontAwesome;
+    content: "\f0d9";
+    margin-right: 5px; }
+
 ul,
 ol {
   list-style-type: none; }
@@ -19850,6 +19865,9 @@ blockquote {
   margin-bottom: 1.25em;
   display: inline-block;
   width: 100%; }
+  .panel.panel-border, .panel-border#findMyNearestSearch {
+    background: white;
+    border-left: 10px solid #DCDEE1; }
   @media (min-width: 641px) {
     .panel, #findMyNearestSearch {
       padding: 30px;
