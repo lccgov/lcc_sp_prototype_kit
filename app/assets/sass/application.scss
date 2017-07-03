@@ -214,7 +214,7 @@ $input-border-color:$grey;
 @import 'pagination';
 @import 'part-nav';
 @import 'tables';
-@import 'lcc-digital';
+
 @import 'search-lcc';
 @import 'header-lcc';
 @import 'ie-support';
@@ -226,6 +226,8 @@ $input-border-color:$grey;
 @import 'phase-banner';
 @import 'sharepoint_2010_style_fallback';
 @import 'where-i-live';
+
+@import 'lcc-digital';
 
 //site background
 html{

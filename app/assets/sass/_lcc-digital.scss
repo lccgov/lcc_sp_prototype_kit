@@ -69,3 +69,23 @@ hr {
   }
 }
 
+.lcc-digital-header{
+  background:$lighter-grey;
+  padding:60px 0;
+
+  h1,
+  p{
+    width:50%;
+  }
+
+  h1{
+    margin:0 0 20px;
+  }
+
+  p{
+    font-size:24px;
+    margin:0;
+  }
+
+}
+

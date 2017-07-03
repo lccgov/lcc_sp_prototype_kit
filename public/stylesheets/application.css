@@ -17687,6 +17687,20 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   .col-md-8 .col-md-8 .ms-srch-hover-outerContainer {
     display: none !important; } }
 
+.limitedrte-Style-image-left {
+  -ms-name: "IMAGE LEFT ALIGN";
+  float: left;
+  margin: 10px 20px 10px 0 !important; }
+
+.limitedrte-Style-image-right {
+  -ms-name: "IMAGE RIGHT ALIGN";
+  float: right;
+  margin: 10px 0px 10px 20px !important; }
+
+@media (max-width: 768px) {
+  .limitedrte-Style-image-left, .limitedrte-Style-image-right {
+    margin: 10px 0px 10px 0px !important; } }
+
 /* iconLinks -----------------------------------------------------------------*/
 .iconLinks ul {
   text-align: center;
@@ -17707,8 +17721,8 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   .iconLinks li a, .iconLinks li .link, .iconLinks li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .iconLinks li .btn-link {
     text-indent: -3000em;
     display: inline-block;
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     position: relative;
     -webkit-transition: -webkit-transform 0.8s ease-in-out;
     transition: transform 0.8s ease-in-out;
@@ -17717,6 +17731,8 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
       -webkit-transform: rotate(360deg);
       -moz-transform: rotate(360deg);
       transform: rotate(360deg); }
+    .iconLinks li a:focus, .iconLinks li .link:focus, .iconLinks li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link .iconLinks li .btn-link:focus {
+      border-radius: 50%; }
   .iconLinks li.facebook a:after, .iconLinks li.facebook .link:after, .iconLinks li.facebook .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .iconLinks li.facebook .btn-link:after, .iconLinks li.twitter a:after, .iconLinks li.twitter .link:after, .iconLinks li.twitter .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .iconLinks li.twitter .btn-link:after, .iconLinks li.youtube a:after, .iconLinks li.youtube .link:after, .iconLinks li.youtube .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .iconLinks li.youtube .btn-link:after, .iconLinks li.instagram a:after, .iconLinks li.instagram .link:after, .iconLinks li.instagram .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .iconLinks li.instagram .btn-link:after, .iconLinks li.email a:after, .iconLinks li.email .link:after, .iconLinks li.email .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .iconLinks li.email .btn-link:after, .iconLinks li.linkedin a:after, .iconLinks li.linkedin .link:after, .iconLinks li.linkedin .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .iconLinks li.linkedin .btn-link:after {
     font-family: FontAwesome;
     font-size: 45px;
@@ -18456,7 +18472,7 @@ docsList
     margin: 0px; }
   .highlighted.alignCenter {
     text-align: center; }
-  .highlighted h2, .highlighted h3, .highlighted h4 {
+  .highlighted h2:first-of-type, .highlighted h3:first-of-type, .highlighted h4:first-of-type {
     margin-top: 0px; }
   .highlighted h2, .highlighted h3, .highlighted h4, .highlighted p, .highlighted ul, .highlighted ol, .highlighted em {
     color: #fff; }
@@ -18494,27 +18510,38 @@ docsList
     .highlighted {
       padding: 1.5em 1em; } }
 
-.imgRight {
-  float: right;
-  margin: 0 0 30px 30px;
-  max-width: 50%; }
-  @media screen and (max-width: 500px) {
-    .imgRight {
-      max-width: 100%;
-      margin: 0px 0 30px 0; } }
-
-.imgLeft {
-  float: left;
-  margin: 0 30px 30px 0px;
-  max-width: 50%; }
-  @media screen and (max-width: 500px) {
-    .imgLeft {
-      max-width: 100%;
-      margin: 0px 0 30px 0; } }
-
 @media (max-width: 768px) {
   .lead {
     font-size: 21px; } }
+
+a.arrow, .arrow.link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .arrow.btn-link {
+  padding: 15px;
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #bbcada; }
+  a.arrow:first-of-type, .arrow.link:first-of-type, .nearestItem-search-features-inner a .nearestItem-showonmap-link .arrow.btn-link:first-of-type {
+    border-top: 1px solid #bbcada; }
+  a.arrow:after, .arrow.link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .arrow.btn-link:after {
+    content: '\f105';
+    font-family: FontAwesome;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 2px 0 0 2px;
+    margin: -18px 5px 0 0;
+    color: #333;
+    display: inline-block;
+    right: 0px;
+    position: absolute;
+    top: 50%; }
+  a.arrow:hover, .arrow.link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .arrow.btn-link:hover {
+    background: #f2f2f2; }
+    a.arrow:hover:after, .arrow.link:hover:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .arrow.btn-link:hover:after {
+      background: #333;
+      color: #fff; }
 
 blockquote {
   padding: 30px 60px 30px 80px;
@@ -18550,11 +18577,52 @@ input[type=button]:focus,
 #myChatLinkContainer #myChatLink a #myChatLinkInfo:focus,
 #myChatLinkContainer #myChatLink .link #myChatLinkInfo:focus,
 .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo:focus,
-.limitedrte-Style-BUTTON:focus {
-  background: #FFBF47 !important;
-  color: #212224 !important;
+.limitedrte-Style-BUTTON:focus,
+.button:focus,
+.ms-srch-sb > .ms-srch-sb-searchLink:focus,
+.main-nav ul li a.selected:focus,
+.main-nav ul li .selected.link:focus,
+.main-nav ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .selected.btn-link:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.main-nav ul li .selected.btn-link:focus,
+.promoListWebpart ul li a:focus .info,
+.promoListWebpart ul li .link:focus .info,
+.promoListWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus .info, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.promoListWebpart ul li .btn-link:focus .info,
+.promoListWebpart ul li a:focus .info .arrow,
+.promoListWebpart ul li .link:focus .info .arrow,
+.promoListWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus .info .arrow, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.promoListWebpart ul li .btn-link:focus .info .arrow,
+.promoListWebpart ul li a:focus .secondaryInfo,
+.promoListWebpart ul li .link:focus .secondaryInfo,
+.promoListWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus .secondaryInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.promoListWebpart ul li .btn-link:focus .secondaryInfo,
+.promoListWebpart a:focus .info .arrow:after,
+.promoListWebpart .link:focus .info .arrow:after,
+.promoListWebpart .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus .info .arrow:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.promoListWebpart .btn-link:focus .info .arrow:after,
+a:focus .eventsContentPod, .link:focus .eventsContentPod, .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus .eventsContentPod, a:focus .venuesContentPod, .link:focus .venuesContentPod, .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus .venuesContentPod,
+a:focus .eventsContentPod h3, .link:focus .eventsContentPod h3, .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus .eventsContentPod h3, a:focus .venuesContentPod h3, .link:focus .venuesContentPod h3, .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus .venuesContentPod h3,
+a:focus .eventsContentPod:after, .link:focus .eventsContentPod:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus .eventsContentPod:after, a:focus .venuesContentPod:after, .link:focus .venuesContentPod:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus .venuesContentPod:after,
+a:focus .eventsContentPod .additionaldates, .link:focus .eventsContentPod .additionaldates, .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus .eventsContentPod .additionaldates,
+.promo a:focus span,
+.promo .link:focus span,
+.promo .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus span, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.promo .btn-link:focus span,
+.sideNav ul li:first-of-type a:focus,
+.sideNav ul li:first-of-type .link:focus,
+.sideNav ul li:first-of-type .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.sideNav ul li:first-of-type .btn-link:focus, .sideNav ul li:first-of-type a.active:focus, .sideNav ul li:first-of-type .active.link:focus, .sideNav ul li:first-of-type .nearestItem-search-features-inner a .nearestItem-showonmap-link .active.btn-link:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sideNav ul li:first-of-type .active.btn-link:focus,
+.iconLinks li a:focus:after,
+.iconLinks li .link:focus:after,
+.iconLinks li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.iconLinks li .btn-link:focus:after {
+  background-color: #FFBF47 !important;
+  color: #212224  !important;
   text-decoration: none;
   outline: 0; }
+
+.promo a:focus, .promo .link:focus, .promo .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link .promo .btn-link:focus {
+  background: transparent !important; }
 
 a.skip, .skip.link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .skip.btn-link {
   left: -999px;
@@ -18573,6 +18641,13 @@ a.skip:focus, .skip.link:focus, .nearestItem-search-features-inner a .nearestIte
   overflow: auto;
   z-index: 999;
   padding: 0.625em; }
+
+.ms-srch-sb > input, input[type=text], select, input.mapIcon, input[type=checkbox], input[type=radio], .footerLogos a:focus, .footerLogos .link:focus, .footerLogos .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link .footerLogos .btn-link:focus {
+  outline: 0; }
+  .ms-srch-sb > input:focus, input[type=text]:focus, select:focus, input.mapIcon:focus, input[type=checkbox]:focus, input[type=radio]:focus, .footerLogos a:focus:focus, .footerLogos .link:focus:focus, .footerLogos .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link .footerLogos .btn-link:focus:focus {
+    -webkit-box-shadow: 0 0 0 4px #FFBF47 !important;
+    -moz-box-shadow: 0 0 0 4px #FFBF47 !important;
+    box-shadow: 0 0 0 4px #FFBF47 !important; }
 
 .mega-promo {
   display: -webkit-box;
@@ -19877,6 +19952,8 @@ blockquote {
   .panel h3:first-child, #findMyNearestSearch h3:first-child,
   .panel h4:first-child, #findMyNearestSearch h4:first-child {
     margin-top: 0; }
+  .panel .media-container, #findMyNearestSearch .media-container {
+    margin: 0; }
 
 .form-group {
   margin-top: 0;
@@ -20897,55 +20974,6 @@ table th, table td {
   text-align: left;
   border-bottom: 1px solid #DCDEE1; }
 
-/*temporarily hide masterhead*/
-.masterhead {
-  display: none; }
-  .masterhead.lcc {
-    display: block; }
-
-.header-left {
-  padding: 0 !important; }
-
-.logo {
-  height: auto;
-  width: auto;
-  background: none;
-  display: inline-block;
-  margin: 9px 0;
-  text-decoration: none;
-  border: 0; }
-  .logo:after {
-    content: 'LCC DIGITAL';
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #fff; }
-    @media (max-width: 767px) {
-      .logo:after {
-        font-size: 26px; } }
-  .logo:hover {
-    color: #DCDEE1; }
-
-.main-nav ul li a, .main-nav ul li .link, .main-nav ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .main-nav ul li .btn-link {
-  font-size: 18px;
-  padding: 12px;
-  text-decoration: none; }
-
-.heading-contents {
-  margin-top: 0.46875em; }
-
-@media screen and (max-width: 400px) {
-  .highlighted a.btn, .highlighted .btn.link, .highlighted input.link[type=button], .highlighted .col-md-8 #SearchBox .link.ms-srch-sb-searchLink, .col-md-8 #SearchBox .highlighted .link.ms-srch-sb-searchLink, .highlighted #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted .link#myChatLinkInfo, .highlighted .link.limitedrte-Style-BUTTON, .highlighted .col-md-8 #SearchBox a.ms-srch-sb-searchLink, .col-md-8 #SearchBox .highlighted a.ms-srch-sb-searchLink, .highlighted .col-md-8 #SearchBox .nearestItem-search-features-inner a .nearestItem-showonmap-link .ms-srch-sb-searchLink.btn-link, .col-md-8 #SearchBox .nearestItem-search-features-inner a .nearestItem-showonmap-link .highlighted .ms-srch-sb-searchLink.btn-link, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link .col-md-8 #SearchBox .ms-srch-sb-searchLink.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .col-md-8 #SearchBox .highlighted .ms-srch-sb-searchLink.btn-link, .highlighted #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted a#myChatLinkInfo, .highlighted #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .highlighted a#myChatLinkInfo, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link a#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .highlighted a#myChatLinkInfo, .highlighted #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .highlighted #myChatLinkInfo.link, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo.link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .highlighted #myChatLinkInfo.link, .highlighted #myChatLinkContainer #myChatLink .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkInfo.btn-link, #myChatLinkContainer #myChatLink .nearestItem-search-features-inner a .nearestItem-showonmap-link .highlighted #myChatLinkInfo.btn-link, .highlighted .nearestItem-search-features-inner #myChatLinkContainer #myChatLink a .nearestItem-showonmap-link #myChatLinkInfo.btn-link, .nearestItem-search-features-inner #myChatLinkContainer #myChatLink a .nearestItem-showonmap-link .highlighted #myChatLinkInfo.btn-link, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .link #myChatLinkInfo.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .link .highlighted #myChatLinkInfo.btn-link, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .highlighted #myChatLinkInfo.btn-link, .highlighted a.limitedrte-Style-BUTTON, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link .limitedrte-Style-BUTTON.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .highlighted .limitedrte-Style-BUTTON.btn-link, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .highlighted .btn.btn-link, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link input.btn-link[type=button], .nearestItem-search-features-inner a .nearestItem-showonmap-link .highlighted input.btn-link[type=button] {
-    width: auto; } }
-
-hr {
-  margin-top: 40px; }
-
-@media (min-width: 767px) {
-  .copyright {
-    text-align: right !important;
-    margin-top: 50px; } }
-
 .ms-srch-sb > input {
   -webkit-border-radius: 4px !important;
   -moz-border-radius: 4px !important;
@@ -21835,6 +21863,67 @@ table.styledTable td,
   text-decoration: none !important;
   padding-left: 50px;
   margin-top: 10px; }
+
+/*temporarily hide masterhead*/
+.masterhead {
+  display: none; }
+  .masterhead.lcc {
+    display: block; }
+
+.header-left {
+  padding: 0 !important; }
+
+.logo {
+  height: auto;
+  width: auto;
+  background: none;
+  display: inline-block;
+  margin: 9px 0;
+  text-decoration: none;
+  border: 0; }
+  .logo:after {
+    content: 'LCC DIGITAL';
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff; }
+    @media (max-width: 767px) {
+      .logo:after {
+        font-size: 26px; } }
+  .logo:hover {
+    color: #DCDEE1; }
+
+.main-nav ul li a, .main-nav ul li .link, .main-nav ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .main-nav ul li .btn-link {
+  font-size: 18px;
+  padding: 12px;
+  text-decoration: none; }
+
+.heading-contents {
+  margin-top: 0.46875em; }
+
+@media screen and (max-width: 400px) {
+  .highlighted a.btn, .highlighted .btn.link, .highlighted input.link[type=button], .highlighted .col-md-8 #SearchBox .link.ms-srch-sb-searchLink, .col-md-8 #SearchBox .highlighted .link.ms-srch-sb-searchLink, .highlighted #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted .link#myChatLinkInfo, .highlighted .link.limitedrte-Style-BUTTON, .highlighted .col-md-8 #SearchBox a.ms-srch-sb-searchLink, .col-md-8 #SearchBox .highlighted a.ms-srch-sb-searchLink, .highlighted .col-md-8 #SearchBox .nearestItem-search-features-inner a .nearestItem-showonmap-link .ms-srch-sb-searchLink.btn-link, .col-md-8 #SearchBox .nearestItem-search-features-inner a .nearestItem-showonmap-link .highlighted .ms-srch-sb-searchLink.btn-link, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link .col-md-8 #SearchBox .ms-srch-sb-searchLink.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .col-md-8 #SearchBox .highlighted .ms-srch-sb-searchLink.btn-link, .highlighted #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted a#myChatLinkInfo, .highlighted #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .highlighted a#myChatLinkInfo, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link a#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .highlighted a#myChatLinkInfo, .highlighted #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .highlighted #myChatLinkInfo.link, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo.link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .highlighted #myChatLinkInfo.link, .highlighted #myChatLinkContainer #myChatLink .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkInfo.btn-link, #myChatLinkContainer #myChatLink .nearestItem-search-features-inner a .nearestItem-showonmap-link .highlighted #myChatLinkInfo.btn-link, .highlighted .nearestItem-search-features-inner #myChatLinkContainer #myChatLink a .nearestItem-showonmap-link #myChatLinkInfo.btn-link, .nearestItem-search-features-inner #myChatLinkContainer #myChatLink a .nearestItem-showonmap-link .highlighted #myChatLinkInfo.btn-link, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .link #myChatLinkInfo.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .link .highlighted #myChatLinkInfo.btn-link, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .highlighted #myChatLinkInfo.btn-link, .highlighted a.limitedrte-Style-BUTTON, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link .limitedrte-Style-BUTTON.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .highlighted .limitedrte-Style-BUTTON.btn-link, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .highlighted .btn.btn-link, .highlighted .nearestItem-search-features-inner a .nearestItem-showonmap-link input.btn-link[type=button], .nearestItem-search-features-inner a .nearestItem-showonmap-link .highlighted input.btn-link[type=button] {
+    width: auto; } }
+
+hr {
+  margin-top: 40px; }
+
+@media (min-width: 767px) {
+  .copyright {
+    text-align: right !important;
+    margin-top: 50px; } }
+
+.lcc-digital-header {
+  background: #F6F7FA;
+  padding: 60px 0; }
+  .lcc-digital-header h1,
+  .lcc-digital-header p {
+    width: 50%; }
+  .lcc-digital-header h1 {
+    margin: 0 0 20px; }
+  .lcc-digital-header p {
+    font-size: 24px;
+    margin: 0; }
 
 html {
   background-color: #007299; }
