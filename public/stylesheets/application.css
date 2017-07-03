@@ -22321,3 +22321,19 @@ hr {
 
 .btn:focus, input[type=button]:focus, .col-md-8 #SearchBox .ms-srch-sb-searchLink:focus, #myChatLinkContainer #myChatLink a #myChatLinkInfo:focus, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo:focus, .limitedrte-Style-BUTTON:focus {
   border-color: #FFBF47 !important; }
+
+#paging .contentPod a, #paging .contentPod .link, #paging .contentPod .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link {
+  text-decoration: none !important; }
+  #paging .contentPod a:hover, #paging .contentPod .link:hover, #paging .contentPod .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link:hover {
+    background: #F6F7FA; }
+  #paging .contentPod a p.date, #paging .contentPod .link p.date, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link p.date {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 700; }
+  #paging .contentPod a h3, #paging .contentPod .link h3, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link h3 {
+    color: #007299;
+    margin-bottom: 10px;
+    text-decoration: underline; }
+
+#archive .content-block {
+  padding: 20px 0 !important; }

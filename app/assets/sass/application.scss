@@ -744,3 +744,33 @@ hr{
 .btn:focus{
     border-color:$focus-color !important;
 }
+
+//news
+#paging {
+    .contentPod {
+        a{
+            text-decoration:none !important;
+
+            &:hover{
+                background:$lighter-grey;
+            }
+
+            p.date{
+                margin-top:0;
+                font-size:14px;
+                font-weight:700;
+            }
+
+            h3{
+                color:$blue;
+                margin-bottom:10px;
+                text-decoration:underline;
+            }
+        }
+    }
+}
+#archive{
+    .content-block{
+        padding:20px 0 !important;
+    }
+}
