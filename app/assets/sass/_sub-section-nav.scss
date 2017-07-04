@@ -4,7 +4,7 @@
     @include flex-wrap(wrap);
     margin:0 0 0 -50px;
     width:auto;
-    padding:30px 0;
+    padding:15px 0;
 
     @media (max-width: 990px) {
         padding:15px 0;
@@ -17,23 +17,22 @@
     .sub-section{
         padding-bottom:10px;
         width: calc(100% * (1/3) - 51px);
-        margin:30px 0 30px 50px;
+        margin:15px 0 0 50px;
         border:0;
 
         @media (max-width: 1200px) {
             width: calc(100% * (1/2) - 51px);
-            margin:25px 0 25px 50px;
         }
 
         @media (max-width: 600px) {
             width: 100%;
-            margin:15px 0 15px 50px;
         }
 
         .sub-section-heading{
             border-bottom:1px solid $light-grey;
-            margin:0 0 20px;
+            margin:0 0 10px;
             padding-bottom:10px;
+            font-size:24px;
 
             @media (max-width: 767px) {
                 font-size:19px;

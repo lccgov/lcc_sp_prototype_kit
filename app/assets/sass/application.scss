@@ -774,3 +774,20 @@ hr{
         padding:20px 0 !important;
     }
 }
+
+//group-promo
+.groupPromo h3{
+    padding-right: 25px !important;
+}
+
+.groupPromo ul li a p,
+.mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary{
+    color:$secondary-font-color;
+    font-weight:400;
+}
+
+.groupPromo h3,
+.mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header{
+    font-weight:700 !important;
+}
+
