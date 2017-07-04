@@ -24,7 +24,7 @@ $light-black:#3D414A;
 $dark-grey:#666B76;
 $grey:#9DA5B2;
 $light-grey:#DCDEE1;
-$lighter-grey:#F6F7FA;
+$lighter-grey:#F7FBFC;
 $white:#FFFFFF;
 $yellow:#FFBF47;
 $dark-yellow:#FAA300;
@@ -391,6 +391,12 @@ hr{
 }
 
 //custom mega-promo
+.groupPromo ul li a p,
+.mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary{
+    color:$secondary-font-color;
+    font-weight:400;
+}
+
 .mega-promo{
     .mega-promo__item{
          a:hover{
@@ -399,7 +405,8 @@ hr{
              .mega-promo__header,
              .mega-promo__secondary,
              &:after{
-                color:$white;
+                text-decoration:none !important;
+                color:$white !important;
              }
          }
     }
@@ -778,12 +785,6 @@ hr{
 //group-promo
 .groupPromo h3{
     padding-right: 25px !important;
-}
-
-.groupPromo ul li a p,
-.mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary{
-    color:$secondary-font-color;
-    font-weight:400;
 }
 
 .groupPromo h3,
