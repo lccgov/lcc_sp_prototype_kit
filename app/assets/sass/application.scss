@@ -24,7 +24,7 @@ $light-black:#3D414A;
 $dark-grey:#666B76;
 $grey:#9DA5B2;
 $light-grey:#DCDEE1;
-$lighter-grey:#F7FBFC;
+$lighter-grey:#F6F7FA;
 $white:#FFFFFF;
 $yellow:#FFBF47;
 $dark-yellow:#FAA300;
@@ -139,7 +139,7 @@ $news-pod-border-color:#ddd;
 
 //mega-promo
 $promo-background-color:$lighter-grey;
-$promo-arrow-color:$blue;
+$promo-arrow-color:#9DA5B2;
 $promo-header-color:$blue;
 $promo-secondary-color:$black;
 $promo-highlight-background-color:$dark-blue;
@@ -226,6 +226,7 @@ $input-border-color:$grey;
 @import 'phase-banner';
 @import 'sharepoint_2010_style_fallback';
 @import 'where-i-live';
+@import 'images';
 
 @import 'lcc-digital';
 
@@ -433,6 +434,13 @@ hr{
     }
 }
 
+@media (max-width: 600px){
+    .mega-promo .mega-promo__item.featured {
+        width: auto !important;
+    }
+}
+
+
 //anchor border bottom stye overrides
 
 .carousel .carousel-caption a,
@@ -607,36 +615,6 @@ hr{
     }
 }
 
-//images
-.img-content{
-    display: block;
-    max-width: 100%;
-    width:100%;
-    height: auto;
-    padding:5px 0 20px;
-
-    &.img-right{
-        float:right;
-        padding:5px 0 20px 30px;
-    }
-
-    &.img-left{
-        float:left;
-        padding:5px 30px 20px 0;
-    }
-
-    &.img-right,
-    &.img-left{
-        width:50%;
-
-        @media (max-width: 641px){
-            width:100%;
-            float:none;
-            padding:5px 0 20px;
-        }
-    }
-}
-
 //self service custom
 .header-actions{
     position:absolute;
@@ -783,8 +761,40 @@ hr{
 }
 
 //group-promo
-.groupPromo h3{
-    padding-right: 25px !important;
+.groupPromo ul{
+    li{
+        &:hover{
+            background:none !important;
+        }
+        a{
+            border-bottom:5px solid transparent;
+
+            h3{
+                padding-right: 25px !important;
+            }
+            p{
+
+            }
+
+            &:hover{
+                border-color:$blue;
+                background:rgba(white,0) !important;
+
+                h3{
+                    color:$blue !important;
+
+                    &:after{
+                        color:$blue !important;
+                    }
+                }
+                p{
+                    color:$base-font-color !important;
+                }
+            }
+        }
+
+        
+    }
 }
 
 .groupPromo h3,
