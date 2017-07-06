@@ -22355,19 +22355,21 @@ hr {
 .groupPromo ul li:hover {
   background: none !important; }
 
-.groupPromo ul li a, .groupPromo ul li .link, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link {
-  border-bottom: 5px solid transparent; }
-  .groupPromo ul li a h3, .groupPromo ul li .link h3, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link h3, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link h3 {
-    padding-right: 25px !important; }
-  .groupPromo ul li a:hover, .groupPromo ul li .link:hover, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link:hover {
-    border-color: #007299;
-    background: rgba(255, 255, 255, 0) !important; }
-    .groupPromo ul li a:hover h3, .groupPromo ul li .link:hover h3, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover h3, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link:hover h3 {
+.groupPromo ul li a h3, .groupPromo ul li .link h3, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link h3, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link h3 {
+  padding-right: 25px !important; }
+
+.groupPromo ul li a:hover, .groupPromo ul li .link:hover, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link:hover {
+  background: #eff1f6 !important; }
+  .groupPromo ul li a:hover h3, .groupPromo ul li .link:hover h3, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover h3, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link:hover h3 {
+    color: #007299 !important;
+    text-decoration: underline; }
+    .groupPromo ul li a:hover h3:after, .groupPromo ul li .link:hover h3:after, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover h3:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link:hover h3:after {
       color: #007299 !important; }
-      .groupPromo ul li a:hover h3:after, .groupPromo ul li .link:hover h3:after, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover h3:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link:hover h3:after {
-        color: #007299 !important; }
-    .groupPromo ul li a:hover p, .groupPromo ul li .link:hover p, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover p, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link:hover p {
-      color: #212224 !important; }
+  .groupPromo ul li a:hover p, .groupPromo ul li .link:hover p, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover p, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link:hover p {
+    color: #212224 !important; }
+
+.groupPromo.home ul li a:hover, .groupPromo.home ul li .link:hover, .groupPromo.home ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo.home ul li .btn-link:hover {
+  background: rgba(255, 255, 255, 0.4) !important; }
 
 .groupPromo h3,
 .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header,
