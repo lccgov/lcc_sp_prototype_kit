@@ -19826,9 +19826,16 @@ p,
   border-left: 15px solid #DCDEE1;
   padding: 20px;
   width: 100%;
-  margin: 30px 0; }
-  .text-highlight p {
-    margin: 0; }
+  margin-top: 0.2631578947em;
+  margin-bottom: 1.0526315789em; }
+  @media (min-width: 641px) {
+    .text-highlight {
+      margin-top: 0.2631578947em;
+      margin-bottom: 1.0526315789em; } }
+  .text-highlight p:first-of-type {
+    margin-top: 0; }
+  .text-highlight p:last-of-type {
+    margin-bottom: 0; }
   .text-highlight.text-highlight--blue {
     border-color: #007299;
     background: rgba(0, 114, 153, 0.1); }
