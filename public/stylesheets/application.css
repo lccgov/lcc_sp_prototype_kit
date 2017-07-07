@@ -19108,7 +19108,7 @@ table.styledTable td,
       font-size: 36px;
       line-height: 1.1111111111;
       margin-top: 40px;
-      margin-bottom: 0.5555555556em; } }
+      margin-bottom: 0.6em; } }
 
 .heading-medium, h3, legend, .list-atoz li h2, .sideNav h3 {
   font-size: 19px;
@@ -19119,8 +19119,8 @@ table.styledTable td,
     .heading-medium, h3, legend, .list-atoz li h2, .sideNav h3 {
       font-size: 24px;
       line-height: 1.25;
-      margin-top: 1.875em;
-      margin-bottom: 0.8333333333em; } }
+      margin-top: 40px;
+      margin-bottom: 0.5em; } }
 
 .heading-small, h4 {
   font-size: 16px;
@@ -19267,7 +19267,7 @@ ol {
   width: 100%; }
   @media (min-width: 641px) {
     .list, .freeContentArea ul.list, .freeContentArea ul {
-      margin-bottom: 20px; } }
+      margin-bottom: 17px; } }
   .list li, .freeContentArea ul.list li, .freeContentArea ul li {
     margin-bottom: 7px; }
     .list li:last-of-type, .freeContentArea ul li:last-of-type {
