@@ -19087,10 +19087,10 @@ table.styledTable td,
       line-height: 1.25; } }
 
 .heading-xlarge, h1 {
-  font-size: 32px;
+  font-size: 40px;
   line-height: 1.09375;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
   @media (min-width: 641px) {
     .heading-xlarge, h1 {
       font-size: 50px;
@@ -19113,7 +19113,7 @@ table.styledTable td,
 .heading-medium, h3, legend, .list-atoz li h2, .sideNav h3 {
   font-size: 19px;
   line-height: 1.2;
-  margin-top: 1.25em;
+  margin-top: 1.5em;
   margin-bottom: 0.5em; }
   @media (min-width: 641px) {
     .heading-medium, h3, legend, .list-atoz li h2, .sideNav h3 {
@@ -19147,8 +19147,8 @@ p,
 .link-back,
 .hidden-text,
 .text-link.reveal {
-  margin-top: 0.3125em;
-  margin-bottom: 1.25em; }
+  margin-top: 0.25em;
+  margin-bottom: 1em; }
   @media (min-width: 641px) {
     p,
     .link-back,
@@ -19187,14 +19187,10 @@ p,
   border-left: 15px solid #B3D9E6;
   padding: 20px;
   width: 100%;
-  margin-top: 0;
-  margin-bottom: 20px;
-  display: inline-block;
-  width: 100%; }
+  margin: 30px 0; }
   @media (min-width: 641px) {
     .text-highlight, .text-block {
-      margin-top: 5px;
-      margin-bottom: 30px; } }
+      margin: 40px 0; } }
   .text-highlight p:first-of-type, .text-block p:first-of-type {
     margin-top: 0; }
   .text-highlight p:last-of-type, .text-block p:last-of-type {
@@ -19266,11 +19262,14 @@ ol {
 .list, .freeContentArea ul.list, .freeContentArea ul {
   padding: 0;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: inline-block;
   width: 100%; }
+  @media (min-width: 641px) {
+    .list, .freeContentArea ul.list, .freeContentArea ul {
+      margin-bottom: 20px; } }
   .list li, .freeContentArea ul.list li, .freeContentArea ul li {
-    margin-bottom: 10px; }
+    margin-bottom: 7px; }
     .list li:last-of-type, .freeContentArea ul li:last-of-type {
       margin: 0; }
 
@@ -19334,7 +19333,7 @@ blockquote {
     margin: 0; }
 
 .col-md-8 .btn, .col-md-8 input[type=button], .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .col-md-8 #myChatLinkInfo, .col-md-8 #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .col-md-8 #myChatLinkInfo, .col-md-8 .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .col-md-8 #myChatLinkInfo, .col-md-8 .limitedrte-Style-BUTTON {
-  margin: 0 0 15px !important; }
+  margin: 5px 0 20px !important; }
 
 .hero-lcc-wrapper {
   background-image: none;

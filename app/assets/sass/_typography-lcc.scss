@@ -162,7 +162,7 @@ h4{
 }
 
 .heading-xlarge {
-  font-size: 32px;
+  font-size: 40px;
   line-height: 1.09375;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -192,7 +192,7 @@ h4{
 .heading-medium {
   font-size: 19px;
   line-height: 1.2;
-  margin-top: 1.25em;
+  margin-top: 1.5em;
   margin-bottom: 0.5em;
 
   @media (min-width: 641px) {
@@ -233,8 +233,8 @@ p,
 .link-back,
 .hidden-text,
 .text-link.reveal {
-  margin-top: 0.3125em;
-  margin-bottom: 1.25em;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
 
   @media (min-width: 641px) {
     margin-top: 0.2631578947em;
@@ -282,14 +282,10 @@ p,
   border-left: 15px solid #B3D9E6;
   padding:20px;
   width:100%;
-  margin-top: 0;
-  margin-bottom: 20px;
-  display:inline-block;
-  width:100%;
+  margin: 30px 0;
 
   @media (min-width: 641px){
-    margin-top: 5px;
-    margin-bottom: 30px;
+    margin: 40px 0;
   }
 
   p:first-of-type{
@@ -402,12 +398,16 @@ ol {
 .list {
   padding: 0;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: inline-block;
   width: 100%;
 
+  @media (min-width: 641px){
+    margin-bottom: 20px;
+  }
+
   li {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 
     &:last-of-type{
       margin:0;
@@ -505,6 +505,6 @@ blockquote {
 //temp button margin fix
 .col-md-8{
   .btn{
-      margin:0 0 15px !important;
+      margin:5px 0 20px !important;
   }
 }
