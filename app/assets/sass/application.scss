@@ -198,10 +198,10 @@ $input-border-color:$grey;
 
 //custom style added by DH - needs to filed properly
 @import 'browser-alert';
+@import 'typography-lcc';
 //@import 'hero-lcc-sharepoint';
 @import 'hero-lcc';
 @import 'easy-autocomplete';
-@import 'typography-lcc';
 @import 'forms';
 @import 'sub-section-nav';
 @import 'prism';
@@ -512,12 +512,12 @@ hr{
 
 //breadcrumb
 .breadcrumb {
-    padding: 0 0 12px;
+    padding: 0;
     margin: 10px 0 0;
     font-size: 16px;
 
     @media (max-width: 767px) {
-        padding: 0 0 10px;
+        padding: 0;
         font-size: 14px;
     }
 
@@ -789,7 +789,7 @@ hr{
                         }
                     }
                     p{
-                        color:$base-font-color !important;
+                        color:$secondary-font-color !important;
                     }
                 }
             }
@@ -810,4 +810,3 @@ hr{
 .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header{
     font-weight:700 !important;
 }
-
