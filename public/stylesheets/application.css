@@ -19107,7 +19107,7 @@ table.styledTable td,
     .heading-large, h2 {
       font-size: 36px;
       line-height: 1.1111111111;
-      margin-top: 1.5em;
+      margin-top: 40px;
       margin-bottom: 0.5555555556em; } }
 
 .heading-medium, h3, legend, .list-atoz li h2, .sideNav h3 {
@@ -19333,7 +19333,8 @@ blockquote {
     margin: 0; }
 
 .col-md-8 .btn, .col-md-8 input[type=button], .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .col-md-8 #myChatLinkInfo, .col-md-8 #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .col-md-8 #myChatLinkInfo, .col-md-8 .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .col-md-8 #myChatLinkInfo, .col-md-8 .limitedrte-Style-BUTTON {
-  margin: 5px 0 20px !important; }
+  margin: 5px 0 20px !important;
+  font-size: 19px !important; }
 
 .hero-lcc-wrapper {
   background-image: none;
