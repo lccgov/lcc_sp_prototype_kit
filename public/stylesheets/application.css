@@ -19087,7 +19087,7 @@ table.styledTable td,
       line-height: 1.25; } }
 
 .heading-xlarge, h1 {
-  font-size: 40px;
+  font-size: 36px;
   line-height: 1.09375;
   margin-top: 30px;
   margin-bottom: 30px; }
@@ -20880,7 +20880,7 @@ nav:first-of-type .sideNav {
   padding: 0; }
   .sideNav h3 {
     margin-top: 0.4em;
-    margin-bottom: 0.4em; }
+    margin-bottom: 15px; }
   .sideNav ul {
     margin: 0;
     padding: 0; }
