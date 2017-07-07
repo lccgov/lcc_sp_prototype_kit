@@ -406,7 +406,6 @@ hr{
              .mega-promo__header,
              .mega-promo__secondary,
              &:after{
-                text-decoration:none !important;
                 color:$white !important;
              }
          }

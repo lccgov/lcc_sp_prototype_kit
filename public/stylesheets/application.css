@@ -22104,7 +22104,6 @@ hr {
   .mega-promo .mega-promo__item .link:hover .mega-promo__secondary,
   .mega-promo .mega-promo__item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover .mega-promo__secondary, .nearestItem-search-features-inner a .nearestItem-showonmap-link
   .mega-promo .mega-promo__item .btn-link:hover .mega-promo__secondary, .mega-promo .mega-promo__item a:hover:after, .mega-promo .mega-promo__item .link:hover:after, .mega-promo .mega-promo__item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link:hover:after {
-    text-decoration: none !important;
     color: #FFFFFF !important; }
 
 .mega-promo .mega-promo__item.blue a, .mega-promo .mega-promo__item.blue .link, .mega-promo .mega-promo__item.blue .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item.blue .btn-link {
