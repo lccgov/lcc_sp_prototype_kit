@@ -19095,19 +19095,19 @@ table.styledTable td,
     .heading-xlarge, h1 {
       font-size: 50px;
       line-height: 1.0416666667;
-      margin-top: 40px;
-      margin-bottom: 40px; } }
+      margin-top: 50px;
+      margin-bottom: 50px; } }
 
 .heading-large, h2 {
   font-size: 24px;
   line-height: 1.0416666667;
-  margin-top: 1.5em;
+  margin-top: 30px;
   margin-bottom: 0.75em; }
   @media (min-width: 641px) {
     .heading-large, h2 {
-      font-size: 36px;
+      font-size: 32px;
       line-height: 1.1111111111;
-      margin-top: 40px;
+      margin-top: 50px;
       margin-bottom: 0.6em; } }
 
 .heading-medium, h3, legend, .list-atoz li h2, .sideNav h3 {
@@ -19190,7 +19190,7 @@ p,
   margin: 30px 0; }
   @media (min-width: 641px) {
     .text-highlight, .text-block {
-      margin: 40px 0; } }
+      margin: 30px 0; } }
   .text-highlight p:first-of-type, .text-block p:first-of-type {
     margin-top: 0; }
   .text-highlight p:last-of-type, .text-block p:last-of-type {
@@ -19333,9 +19333,12 @@ blockquote {
     margin: 0; }
 
 .col-md-8 .btn, .col-md-8 input[type=button], .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .col-md-8 #myChatLinkInfo, .col-md-8 #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .col-md-8 #myChatLinkInfo, .col-md-8 .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .col-md-8 #myChatLinkInfo, .col-md-8 .limitedrte-Style-BUTTON {
-  margin: 5px 0 20px !important;
+  margin: 0 0 20px !important;
   font-weight: 600 !important;
   line-height: 1.2em !important; }
+  @media (max-width: 641px) {
+    .col-md-8 .btn, .col-md-8 input[type=button], .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .col-md-8 #myChatLinkInfo, .col-md-8 #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .col-md-8 #myChatLinkInfo, .col-md-8 .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .col-md-8 #myChatLinkInfo, .col-md-8 .limitedrte-Style-BUTTON {
+      margin: 0 0 15px !important; } }
 
 .hero-lcc-wrapper {
   background-image: none;
