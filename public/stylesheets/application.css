@@ -20999,6 +20999,10 @@ table th, table td {
   text-align: left;
   border-bottom: 1px solid #DCDEE1; }
 
+table th.numeric,
+table td.numeric {
+  text-align: right; }
+
 .ms-srch-sb > input {
   -webkit-border-radius: 4px !important;
   -moz-border-radius: 4px !important;
