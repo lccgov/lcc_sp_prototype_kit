@@ -19240,6 +19240,8 @@ a[rel="external"], [rel="external"].link, .nearestItem-search-features-inner a .
 
 .text-link.reveal {
   text-decoration: none; }
+  .text-link.reveal.collapsed span {
+    border-bottom: 1px solid #007299; }
   .text-link.reveal:before {
     font-family: FontAwesome;
     content: "\f0d7"; }
@@ -19308,7 +19310,7 @@ blockquote {
     color: #212224; }
 
 .panel, #findMyNearestSearch {
-  background: #eceef5;
+  background: #B3D9E6;
   padding: 20px;
   box-shadow: none;
   border-radius: 0;
@@ -19319,7 +19321,7 @@ blockquote {
   width: 100%; }
   .panel.panel-border, .panel-border#findMyNearestSearch {
     background: white;
-    border-left: 10px solid #DCDEE1; }
+    border-left: 10px solid #B3D9E6; }
   @media (min-width: 641px) {
     .panel, #findMyNearestSearch {
       padding: 30px;
@@ -19333,12 +19335,12 @@ blockquote {
     margin: 0; }
 
 .col-md-8 .btn, .col-md-8 input[type=button], .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .col-md-8 #myChatLinkInfo, .col-md-8 #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .col-md-8 #myChatLinkInfo, .col-md-8 .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .col-md-8 #myChatLinkInfo, .col-md-8 .limitedrte-Style-BUTTON {
-  margin: 0 0 20px !important;
+  margin: 10px 0 20px !important;
   font-weight: 600 !important;
   line-height: 1.2em !important; }
   @media (max-width: 641px) {
     .col-md-8 .btn, .col-md-8 input[type=button], .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .col-md-8 #myChatLinkInfo, .col-md-8 #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .col-md-8 #myChatLinkInfo, .col-md-8 .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .col-md-8 #myChatLinkInfo, .col-md-8 .limitedrte-Style-BUTTON {
-      margin: 0 0 15px !important; } }
+      margin: 5px 0 15px !important; } }
 
 .hero-lcc-wrapper {
   background-image: none;

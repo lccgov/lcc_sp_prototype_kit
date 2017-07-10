@@ -364,6 +364,12 @@ a[rel="external"]{
 .text-link.reveal{
   text-decoration: none;
 
+  &.collapsed{
+    span{
+      border-bottom:1px solid $base-link-color;
+    }
+  }
+
   &:before{
     font-family: FontAwesome;
     content: "\f0d7";
@@ -469,7 +475,7 @@ blockquote {
 
 //panels
 .panel{
-  background:$panel-color;
+  background:#B3D9E6;
   padding:20px;
   box-shadow:none;
   border-radius:0;
@@ -481,7 +487,7 @@ blockquote {
 
   &.panel-border{
     background:white;
-    border-left: 10px solid $border-color;
+    border-left: 10px solid #B3D9E6;
   }
 
   @media (min-width: 641px) {
@@ -505,12 +511,12 @@ blockquote {
 //temp button margin fix
 .col-md-8{
   .btn{
-      margin:0 0 20px !important;
+      margin:10px 0 20px !important;
       font-weight:600 !important;
       line-height:1.2em !important;
 
        @media (max-width: 641px) {
-        margin:0 0 15px !important;
+        margin:5px 0 15px !important;
       }
   }
 }
