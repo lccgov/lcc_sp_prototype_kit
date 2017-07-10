@@ -777,14 +777,14 @@ hr{
                 }
 
                 &:hover{
-                    background:darken($lighter-grey,2%) !important;
+                    background:$lighter-grey !important;
 
                     h3{
-                        color:$blue !important;
+                        color:$light-blue !important;
                         text-decoration:underline;
 
                         &:after{
-                            color:$blue !important;
+                            color:$light-blue !important;
                         }
                     }
                     p{
@@ -799,7 +799,7 @@ hr{
 
     &.home ul li a{
         &:hover{
-            background:rgba(white,0.4) !important;
+            background:white !important;
         }
     }
 
