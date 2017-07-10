@@ -19334,7 +19334,8 @@ blockquote {
 
 .col-md-8 .btn, .col-md-8 input[type=button], .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .col-md-8 #myChatLinkInfo, .col-md-8 #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .col-md-8 #myChatLinkInfo, .col-md-8 .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .col-md-8 #myChatLinkInfo, .col-md-8 .limitedrte-Style-BUTTON {
   margin: 5px 0 20px !important;
-  font-size: 19px !important; }
+  font-weight: 600 !important;
+  line-height: 1.2em !important; }
 
 .hero-lcc-wrapper {
   background-image: none;
@@ -20874,14 +20875,18 @@ footer.main .socialBookmarks {
 nav:first-of-type .sideNav {
   border-top: 10px solid #F6F7FA;
   padding: 10px 0 0;
-  margin-top: 25px; }
+  margin-top: 40px; }
 
 .sideNav {
   margin-top: 15px;
   padding: 0; }
   .sideNav h3 {
     margin-top: 0.4em;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-size: 24px; }
+    @media (max-width: 641px) {
+      .sideNav h3 {
+        font-size: 21px; } }
   .sideNav ul {
     margin: 0;
     padding: 0; }
