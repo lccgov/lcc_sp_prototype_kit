@@ -22419,3 +22419,11 @@ hr {
 .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__header, .nearestItem-search-features-inner a .nearestItem-showonmap-link
 .mega-promo .mega-promo__item .btn-link .mega-promo__content .mega-promo__header {
   font-weight: 700 !important; }
+
+.docList.one, .docList.two, .docList.three, .docList.four, .docList.five {
+  margin: 30px 0; }
+  .docList.one ul li a, .docList.one ul li .link, .docList.one ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one ul li .btn-link, .docList.two ul li a, .docList.two ul li .link, .docList.two ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.two ul li .btn-link, .docList.three ul li a, .docList.three ul li .link, .docList.three ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.three ul li .btn-link, .docList.four ul li a, .docList.four ul li .link, .docList.four ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.four ul li .btn-link, .docList.five ul li a, .docList.five ul li .link, .docList.five ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.five ul li .btn-link {
+    border-bottom: 1px solid #DCDEE1; }
+
+.docList.one ul li:first-of-type a, .docList.one ul li:first-of-type .link, .docList.one ul li:first-of-type .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one ul li:first-of-type .btn-link {
+  border-top: 1px solid #DCDEE1; }

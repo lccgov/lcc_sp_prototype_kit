@@ -809,3 +809,24 @@ hr{
 .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header{
     font-weight:700 !important;
 }
+
+//doc list
+.docList{
+    &.one, 
+    &.two, 
+    &.three, 
+    &.four, 
+    &.five {
+        margin: 30px 0;
+
+        ul li a{
+            border-bottom: 1px solid $border-color;
+        }
+    }
+
+    &.one{
+        ul li:first-of-type a{
+            border-top: 1px solid $border-color;
+        }
+    }
+}
