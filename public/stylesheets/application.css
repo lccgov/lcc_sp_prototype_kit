@@ -19108,7 +19108,7 @@ table.styledTable td,
       font-size: 32px;
       line-height: 1.1111111111;
       margin-top: 50px;
-      margin-bottom: 0.6em; } }
+      margin-bottom: 0.5em; } }
 
 .heading-medium, h3, legend, .list-atoz li h2, .sideNav h3 {
   font-size: 19px;
@@ -19290,7 +19290,7 @@ ol {
   font-size: 16px; }
 
 .list-nav {
-  font-size: 19px;
+  font-size: 16px;
   width: 100%; }
   @media (min-width: 641px) {
     .list-nav {
@@ -19335,11 +19335,10 @@ blockquote {
     margin: 0; }
 
 .col-md-8 .btn, .col-md-8 input[type=button], .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .col-md-8 #myChatLinkInfo, .col-md-8 #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .col-md-8 #myChatLinkInfo, .col-md-8 .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .col-md-8 #myChatLinkInfo, .col-md-8 .limitedrte-Style-BUTTON {
-  margin: 10px 0 20px !important;
+  margin: 0 0 20px !important;
   font-weight: 600 !important;
   line-height: 1.3em !important;
-  padding: 20px 25px;
-  font-size: 19px; }
+  padding: 20px 25px; }
   @media (max-width: 641px) {
     .col-md-8 .btn, .col-md-8 input[type=button], .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .col-md-8 #myChatLinkInfo, .col-md-8 #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .col-md-8 #myChatLinkInfo, .col-md-8 .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .col-md-8 #myChatLinkInfo, .col-md-8 .limitedrte-Style-BUTTON {
       margin: 5px 0 15px !important; } }
@@ -20882,7 +20881,7 @@ footer.main .socialBookmarks {
     margin-top: 0; }
 
 nav:first-of-type .sideNav {
-  border-top: 10px solid #007299;
+  border-top: 10px solid #DCDEE1;
   padding: 10px 0 0;
   margin-top: 50px; }
 
