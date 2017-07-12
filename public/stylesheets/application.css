@@ -18900,6 +18900,7 @@ h2,
 h3,
 legend,
 .list-atoz li h2,
+.sideNav h2,
 .sideNav h3,
 .heading-small,
 h4,
@@ -18939,6 +18940,7 @@ table.styledTable td,
   h3.top,
   legend.top,
   .list-atoz li h2.top,
+  .sideNav h2.top,
   .heading-small.top,
   h4.top,
   .heading-xsmall.top,
@@ -18974,6 +18976,7 @@ table.styledTable td,
   h3.bottom,
   legend.bottom,
   .list-atoz li h2.bottom,
+  .sideNav h2.bottom,
   .heading-small.bottom,
   h4.bottom,
   .heading-xsmall.bottom,
@@ -19010,6 +19013,7 @@ h2,
 h3,
 legend,
 .list-atoz li h2,
+.sideNav h2,
 .sideNav h3,
 .heading-small,
 h4,
@@ -19110,17 +19114,19 @@ table.styledTable td,
       margin-top: 50px;
       margin-bottom: 0.5em; } }
 
-.heading-medium, h3, legend, .list-atoz li h2, .sideNav h3 {
+.heading-medium, h3, legend, .list-atoz li h2, .sideNav h2,
+.sideNav h3 {
   font-size: 19px;
   line-height: 1.2;
   margin-top: 30px;
   margin-bottom: 0.5em; }
   @media (min-width: 641px) {
-    .heading-medium, h3, legend, .list-atoz li h2, .sideNav h3 {
+    .heading-medium, h3, legend, .list-atoz li h2, .sideNav h2,
+    .sideNav h3 {
       font-size: 24px;
       line-height: 1.25;
       margin-top: 40px;
-      margin-bottom: 0.5em; } }
+      margin-bottom: 0.7em; } }
 
 .heading-small, h4 {
   font-size: 16px;
@@ -20889,11 +20895,13 @@ nav:first-of-type .sideNav {
 .sideNav {
   margin-top: 15px;
   padding: 10px 0 0; }
+  .sideNav h2,
   .sideNav h3 {
     margin-top: 0.4em;
     margin-bottom: 15px;
     font-size: 24px; }
     @media (max-width: 641px) {
+      .sideNav h2,
       .sideNav h3 {
         font-size: 21px;
         margin-bottom: 15px; } }
