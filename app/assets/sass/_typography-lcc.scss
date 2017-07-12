@@ -192,7 +192,7 @@ h4{
 .heading-medium {
   font-size: 19px;
   line-height: 1.2;
-  margin-top: 1.5em;
+  margin-top: 30px;
   margin-bottom: 0.5em;
 
   @media (min-width: 641px) {
@@ -206,13 +206,13 @@ h4{
 .heading-small {
   font-size: 16px;
   line-height: 1.25;
-  margin-top: 0.625em;
+  margin-top: 30px;
   margin-bottom: 0.3125em;
 
   @media (min-width: 641px) {
     font-size: 19px;
     line-height: 1.3157894737;
-    margin-top: 1.0526315789em;
+    margin-top: 40px;
   }
 }
 
@@ -475,15 +475,12 @@ blockquote {
 
 //panels
 .panel{
-  background:#B3D9E6;
+  background:$light-grey;
   padding:20px;
   box-shadow:none;
   border-radius:0;
   border:0;
-  margin-top: 0.3125em;
-  margin-bottom: 1.25em;
-  display:inline-block;
-  width:100%;
+  margin:30px 0;
 
   &.panel-border{
     background:white;
@@ -492,8 +489,7 @@ blockquote {
 
   @media (min-width: 641px) {
       padding:30px;  
-      margin-top: 0.2631578947em;
-      margin-bottom: 1.0526315789em;
+      margin:30px 0;
   }
 
   h2:first-child,
@@ -504,6 +500,10 @@ blockquote {
 
   .media-container{
     margin:0;
+  }
+
+  p:last-child{
+    margin-bottom:0;
   }
 
 }
@@ -518,10 +518,15 @@ blockquote {
 
        @media (max-width: 641px) {
         margin:5px 0 15px !important;
+        padding:15px 20px;
       }
 
       &.btn-arrow{
         padding-right:60px !important;
+      }
+
+      &.bottom{
+        margin-bottom:0 !important;
       }
   }
 }
