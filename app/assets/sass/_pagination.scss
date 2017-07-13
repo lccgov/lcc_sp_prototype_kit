@@ -1,8 +1,8 @@
 .pagination-nav {
     display: block;
     margin: 50px 0;
-    border-top: 2px solid $lighter-grey;
-    border-bottom: 2px solid $lighter-grey;
+    border-top: 2px solid #F6F7FA;
+    border-bottom: 2px solid #F6F7FA;
 
     ul{
         margin: 0;
@@ -73,7 +73,7 @@
                 &:before{
                     font-family: FontAwesome;
                     position: absolute;
-                    color: lighten($blue,10%);
+                    color: lighten($base-font-color,10%);
                     font-size:60px;
                 }
 
@@ -90,7 +90,7 @@
                 }
 
                 .pagination-nav__label{
-                    color:$blue;
+                    color:$base-font-color;
                 }
             }
         }

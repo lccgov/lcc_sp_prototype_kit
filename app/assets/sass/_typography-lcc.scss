@@ -303,13 +303,13 @@ p,
   }
 
   &.text-highlight--blue{
-    border-color:$brand-color;
-    background:rgba($brand-color, 0.1);
+    border-color:$base-link-color;
+    background:rgba($base-link-color, 0.1);
   }
 
   &.text-highlight--green{
-    border-color:$green;
-    background:rgba($green, 0.1);
+    border-color:$primary-button-background-color;
+    background:rgba($primary-button-background-color, 0.1);
   }
 }
 
@@ -344,12 +344,15 @@ p,
 
 //links
 a {
-    /*@include link-border-bottom($base-link-color,0.5,$base-link-color-visited);*/
     text-decoration:underline;
     color:$base-link-color;
 
     &:hover{
       color:$base-link-hover-color;
+    }
+
+    &:visited{
+      text-decoration:underline;
     }
 }
 
@@ -467,7 +470,7 @@ blockquote {
     border-left: 15px solid $base-link-hover-color;
 
   span.open-quote:after {
-    color: $light-grey;
+    color: $border-color;
   }
 
   footer {
@@ -510,7 +513,7 @@ blockquote {
 
 }
 
-//temp button margin fix
+//temp button margin fix - needs to be filed in buttons
 .col-md-8{
   .btn{
       margin:0 0 20px !important;

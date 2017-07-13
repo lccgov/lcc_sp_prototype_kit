@@ -55,7 +55,7 @@ input[type=file]{
         border-right:0;
         border-bottom:0;
         border-left-style: solid;
-        border-color: $border-color;
+        border-color: #E5F1F5;
         padding: 20px;
         margin-bottom: 30px;
         @include border-radius(0); 
@@ -109,6 +109,7 @@ textarea.form-control{
     padding:5px !important;
     background:white !important;
     font-family: $font-primary !important;
+    @include border-radius(4px);
 
     @media (min-width: 641px) {
         width:50% !important;
@@ -480,3 +481,9 @@ legend {
       color: #b10e1e;
       font-weight: bold;
       text-decoration: underline; }
+
+      .form-group{
+          .panel{
+              margin-top:10px;
+          }
+      }

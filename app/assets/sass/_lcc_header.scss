@@ -4,17 +4,19 @@
         width: auto;
         background: none;
         display:inline-block;
-        margin:9px 0;
+        margin:10px 0;
         text-decoration:none;
         border:0;
         font-size:36px;
         text-transform:uppercase;
         font-weight:700;
         color: #fff;
-        line-height:1.2;
+        line-height:1.3;
 
         @media (max-width: 767px) {
             font-size:26px;
+            line-height:1.2;
+            margin:9px 0;
         }
 
         &:after{
