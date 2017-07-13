@@ -19132,7 +19132,7 @@ table.styledTable td,
   font-size: 16px;
   line-height: 1.25;
   margin-top: 30px;
-  margin-bottom: 0.3125em; }
+  margin-bottom: 0.7em; }
   @media (min-width: 641px) {
     .heading-small, h4 {
       font-size: 19px;
@@ -19278,8 +19278,6 @@ ol {
       margin-bottom: 17px; } }
   .list li, .freeContentArea ul.list li, .freeContentArea ul li {
     margin-bottom: 7px; }
-    .list li:last-of-type, .freeContentArea ul li:last-of-type {
-      margin: 0; }
 
 .list-bullet, .freeContentArea ul {
   list-style-type: disc;
