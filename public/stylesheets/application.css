@@ -19967,12 +19967,28 @@ legend {
   text-decoration: none !important; }
   #myChatLinkContainer #myChatLink a #myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo:before {
     color: white; }
+  #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo:after {
+    display: block;
+    font-family: FontAwesome;
+    content: "\f105";
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    top: 50%;
+    margin-top: -13px; }
   #myChatLinkContainer #myChatLink a #myChatLinkInfo h4, #myChatLinkContainer #myChatLink .link #myChatLinkInfo h4, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo h4 {
     color: white;
     text-decoration: none !important; }
   #myChatLinkContainer #myChatLink a #myChatLinkInfo span, #myChatLinkContainer #myChatLink .link #myChatLinkInfo span, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo span {
     color: white;
-    text-decoration: none !important; }
+    text-decoration: none !important;
+    display: inline-block;
+    width: 100%; }
+  #myChatLinkContainer #myChatLink a #myChatLinkInfo h4, #myChatLinkContainer #myChatLink .link #myChatLinkInfo h4, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo h4,
+  #myChatLinkContainer #myChatLink a #myChatLinkInfo span,
+  #myChatLinkContainer #myChatLink .link #myChatLinkInfo span, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+  #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo span {
+    padding-right: 50px; }
 
 .rn_SyndicatedChatQuestionDiv {
   width: 280px;
