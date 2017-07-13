@@ -242,6 +242,12 @@ p,
   }
 }
 
+.hidden-text{
+  .panel{
+    margin-top:10px;
+  }
+}
+
 .lead {
   font-size: 19px;
   line-height: 1.4;
@@ -471,7 +477,7 @@ blockquote {
 
 //panels
 .panel{
-  background:$light-grey;
+  background:#E5F1F5;
   padding:20px;
   box-shadow:none;
   border-radius:0;
@@ -480,7 +486,7 @@ blockquote {
 
   &.panel-border{
     background:white;
-    border: 10px solid #B3D9E6;
+    border: 10px solid #E5F1F5;
   }
 
   @media (min-width: 641px) {
