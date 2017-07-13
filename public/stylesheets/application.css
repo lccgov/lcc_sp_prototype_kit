@@ -20058,18 +20058,20 @@ legend {
       margin-right: 3px; }
 
 nav:first-of-type .sideNav {
-  border-top: 10px solid #DCDEE1;
+  /*border-top:10px solid $border-color;*/
   padding: 10px 0 0;
   margin-top: 50px; }
 
 .sideNav {
-  margin-top: 15px;
+  margin-top: 30px;
   padding: 10px 0 0; }
   .sideNav h2,
   .sideNav h3 {
-    margin-top: 0.4em;
+    margin-top: 0;
     margin-bottom: 15px;
-    font-size: 24px; }
+    padding-bottom: 10px;
+    font-size: 24px;
+    border-bottom: 5px solid #F6F7FA; }
     @media (max-width: 641px) {
       .sideNav h2,
       .sideNav h3 {
@@ -20083,7 +20085,10 @@ nav:first-of-type .sideNav {
       font-size: 16px; }
       @media (max-width: 641px) {
         .sideNav ul li {
-          margin-bottom: 10px; } }
+          margin-bottom: 10px;
+          font-size: 16px; } }
+      .sideNav ul li:last-of-type {
+        margin-bottom: 0; }
       .sideNav ul li a, .sideNav ul li .link, .sideNav ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sideNav ul li .btn-link {
         padding: 0;
         display: inline-block; }
@@ -20212,8 +20217,8 @@ nav:first-of-type .sideNav {
       .sub-section-nav .sub-section {
         width: 100%; } }
     .sub-section-nav .sub-section .sub-section-heading {
-      border-bottom: 1px solid #DCDEE1;
-      margin: 0 0 10px;
+      border-bottom: 5px solid #F6F7FA;
+      margin: 0 0 15px;
       padding-bottom: 10px;
       font-size: 24px; }
       @media (max-width: 767px) {
