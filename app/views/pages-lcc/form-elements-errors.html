@@ -1,7 +1,7 @@
 {% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
-	A to Z Page Example
+	Form elements error handling
 {% endblock %}
 
 
@@ -12,7 +12,7 @@
  
 
 {% block header %}
-    A to Z of Services
+    Form elements error handling
 {% endblock%}
 
  {% block main_nav %}
@@ -21,7 +21,6 @@
 
 
  {% block sectionOneTop %}
- {% include "includes/lcc-components/atoz.html" %}
 {% endblock %} 
 
 {% block sectionOneFull%}
@@ -29,10 +28,18 @@
 
 
  {% block breadcrumb %}
+<ul>
+    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+        <a href="/lcc-home.html">Home</a>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Form elements error handling</li>
+        </ul>
+    </li>
+</ul>
  {% endblock %}
 
 {% block sectionOneContent %}
-    
+{% include "includes/lcc-components/form-elements-errors.html" %}
 {% endblock %}
 
 {% block pageContent %}
@@ -40,7 +47,6 @@
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-    {% include "includes/lcc-components/atoz-list-a.html" %}
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
@@ -126,7 +132,7 @@
 
 {% block sectionFiveTop %}
 {% include "includes/lcc-components/atoz.html" %}
-{% endblock %}  
+{% endblock %} 
 
 {% block sectionFiveFull%}
 {% endblock %}

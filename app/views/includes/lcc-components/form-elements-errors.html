@@ -1,0 +1,402 @@
+<h2>Example: input type="text" and error</h2>
+
+<div class="form-group">
+  <label class="form-label" for="full-name-f1">This is the label text</label>
+  <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+</div>
+
+<div class="form-group form-group-error">
+  <label class="form-label" for="full-name-f1">This is the label text</label>
+  <span class="error-message">Error message goes here</span>
+  <input class="form-control form-control-error" id="full-name-f1" type="text" name="full-name-f1">
+</div>
+
+<h2>Example: input type="text" with hint text and error</h2>
+
+<div class="form-group">
+  <label class="form-label" for="ni-number">
+    This is the label text
+    <span class="form-hint">
+      This is hint text
+    </span>
+  </label>
+  <input class="form-control" id="ni-number" type="text" name="ni-number">
+</div>
+
+<div class="form-group form-group-error">
+  <label class="form-label" for="ni-number">
+    This is the label text
+    <span class="form-hint">
+      This is hint text
+    </span>
+  </label>
+  <span class="error-message">Error message goes here</span>
+  <input class="form-control form-control-error" id="ni-number" type="text" name="ni-number">
+</div>
+
+<h2>Example: textarea and error</h2>
+
+<div class="form-group">
+    <label class="form-label" for="textarea">
+    This is the label text
+    </label>
+    <textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="5"></textarea>
+</div>
+
+<div class="form-group form-group-error">
+    <label class="form-label" for="textarea">
+    This is the label text
+    </label>
+    <span class="error-message">Error message goes here</span>
+    <textarea class="form-control form-control-3-4 form-control-error" name="textarea" id="textarea" rows="5"></textarea>
+</div>
+
+<h2>Example: input type="file" and error</h2>
+
+<div class="form-group">
+  <label class="form-label" for="file-input">
+    Upload a file
+  </label>
+  <input type="file" id="file-input">
+</div>
+
+<div class="form-group form-group-error">
+  <label class="form-label" for="file-input">
+    Upload a file
+  </label>
+  <span class="error-message">Error message goes here</span>
+  <input type="file" id="file-input">
+</div>
+
+<h2>Example: select and error</h2>
+
+<div class="form-group">
+  <label class="form-label" for="select-box">This is the label text</label>
+  <select class="form-control" id="select-box" name="select-box">
+    <option>LEEDS.GOV.UK elements option 1</option>
+    <option>LEEDS.GOV.UK elements option 2</option>
+    <option>LEEDS.GOV.UK elements option 3</option>
+  </select>     
+</div>
+
+<div class="form-group form-group-error">
+  <label class="form-label" for="select-box">This is the label text</label>
+  <span class="error-message">Error message goes here</span>
+  <select class="form-control form-control-error" id="select-box" name="select-box">
+    <option>LEEDS.GOV.UK elements option 1</option>
+    <option>LEEDS.GOV.UK elements option 2</option>
+    <option>LEEDS.GOV.UK elements option 3</option>
+  </select>     
+</div>
+
+<h2>Example: radio buttons and error</h2>
+
+<h1 class="heading-medium">Where do you live?</h1>
+
+<form>
+  <div class="form-group">
+    <fieldset>
+
+      <legend class="sr-only">Where do you live?</legend>
+
+        <label class="block-label" for="radio-1" data-target="radio-1">
+          <input type="radio" id="radio-1" name="radio-group" value="Northern Ireland" aria-controls="radio-1" aria-expanded="false">
+          Northern Ireland
+        </label>
+        <label class="block-label" for="radio-2" data-target="radio-2">
+          <input type="radio" id="radio-2" name="radio-group" value="Isle of Man or the Channel Islands" aria-controls="radio-2" aria-expanded="false">
+          Isle of Man or the Channel Islands
+        </label>
+        <label class="block-label" for="radio-3" data-target="radio-3">
+          <input type="radio" id="radio-3" name="radio-group" value="I am a British citizen living abroad" aria-controls="radio-3" aria-expanded="false">
+          I am a British citizen living abroad
+        </label>
+      
+    </fieldset>
+  </div>
+</form>
+
+<h1 class="heading-medium top">Where do you live?</h1>
+
+<form>
+  <div class="form-group form-group-error">
+    <fieldset>
+
+      <legend class="sr-only">Where do you live?</legend>
+      <span class="error-message">Choose an answer</span>
+
+        <label class="block-label" for="radio-1-error" data-target="radio-1-error">
+          <input type="radio" id="radio-1-error" name="radio-group" value="Northern Ireland" aria-controls="radio-1-error" aria-expanded="false">
+          Northern Ireland
+        </label>
+        <label class="block-label" for="radio-2-error" data-target="radio-2-error">
+          <input type="radio" id="radio-2-error" name="radio-group" value="Isle of Man or the Channel Islands" aria-controls="radio-2-error" aria-expanded="false">
+          Isle of Man or the Channel Islands
+        </label>
+        <label class="block-label" for="radio-3-error" data-target="radio-3-error">
+          <input type="radio" id="radio-3-error" name="radio-group" value="I am a British citizen living abroad" aria-controls="radio-3-error" aria-expanded="false">
+          I am a British citizen living abroad
+        </label>
+      
+    </fieldset>
+  </div>
+</form>
+
+<h2>Example: checkboxes and error</h2>
+
+<h3 class="heading-medium">Which types of waste do you transport regularly?</h3>
+<p>Select all that apply</p>
+
+<form>
+  <div class="form-group">
+    <fieldset>
+
+      <legend class="sr-only">Which types of waste do you transport regularly?</legend>
+
+        <label class="block-label" for="waste-type-1" data-target="waste-type-1">
+          <input type="checkbox" id="waste-type-1" name="waste-types" value="Waste from animal carcasses" aria-controls="waste-type-1" aria-expanded="false">
+          Waste from animal carcasses
+        </label>
+        <label class="block-label" for="waste-type-2" data-target="waste-type-2">
+          <input type="checkbox" id="waste-type-2" name="waste-types" value="Waste from animal carcasses" aria-controls="waste-type-2" aria-expanded="false">
+          Waste from mines or quarries
+        </label>
+        <label class="block-label" for="waste-type-3" data-target="waste-type-3">
+          <input type="checkbox" id="waste-type-3" name="waste-types" value="Waste from animal carcasses" aria-controls="waste-type-3" aria-expanded="false">
+          Farm or agricultural waste
+        </label>
+
+    </fieldset>
+  </div>
+</form>
+
+<h3 class="heading-medium top">Which types of waste do you transport regularly?</h3>
+<p>Select all that apply</p>
+
+<form>
+  <div class="form-group form-group-error">
+    <fieldset>
+
+      <legend class="sr-only">Which types of waste do you transport regularly?</legend>
+      <span class="error-message">Choose an answer</span>
+
+        <label class="block-label" for="waste-type-1-error" data-target="waste-type-1-error">
+          <input type="checkbox" id="waste-type-1-error" name="waste-types" value="Waste from animal carcasses" aria-controls="waste-type-1-error" aria-expanded="false">
+          Waste from animal carcasses
+        </label>
+        <label class="block-label" for="waste-type-2-error" data-target="waste-type-2-error">
+          <input type="checkbox" id="waste-type-2-error" name="waste-types" value="Waste from animal carcasses" aria-controls="waste-type-2-error" aria-expanded="false">
+          Waste from mines or quarries
+        </label>
+        <label class="block-label" for="waste-type-3-error" data-target="waste-type-3-error">
+          <input type="checkbox" id="waste-type-3-error" name="waste-types" value="Waste from animal carcasses" aria-controls="waste-type-3-error" aria-expanded="false">
+          Farm or agricultural waste
+        </label>
+
+    </fieldset>
+  </div>
+</form>
+
+<h2>Example: Conditionally revealing content and errors</h2>
+
+<h1 class="heading-medium">
+  How do you want to be contacted?
+</h1>
+
+<form>
+  <div class="form-group">
+    <fieldset>
+
+      <legend class="sr-only">How do you want to be contacted?</legend>
+
+      <label class="block-label" for="contact-by-email" data-target="contact-by-email">
+          <input type="radio" id="contact-by-email" name="radio-contact-group" value="Email" aria-controls="contact-by-email" aria-expanded="false">
+          Email
+      </label>
+      <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+        <div class="form-group">
+          <label class="form-label" for="contact-email">Email address</label>
+          <input class="form-control" name="contact-email" type="text" id="contact-email">
+        </div>
+      </div>
+
+      <label class="block-label" for="contact-by-phone" data-target="contact-by-phone">
+          <input type="radio" id="contact-by-phone" name="radio-contact-group" value="phone" aria-controls="contact-by-phone" aria-expanded="false">
+          Phone
+      </label>
+      <div class="panel panel-border-narrow js-hidden" id="contact-by-phone">
+        <div class="form-group">
+          <label class="form-label" for="contact-phone">Phone number</label>
+          <input class="form-control" name="contact-phone" type="text" id="contact-phone">
+        </div>
+      </div>
+
+      <label class="block-label" for="contact-by-text" data-target="contact-by-text">
+          <input type="radio" id="contact-by-text" name="radio-contact-group" value="text message" aria-controls="contact-by-text" aria-expanded="false">
+          Text message
+      </label>
+      <div class="panel panel-border-narrow js-hidden" id="contact-by-text">
+        <div class="form-group">
+          <label class="form-label" for="contact-text-message">Mobile phone number</label>
+          <input class="form-control" name="contact-text-message" type="text" id="contact-text-message">
+        </div>
+      </div>
+
+    </fieldset>
+  </div>
+</form>
+
+<h1 class="heading-medium top">
+  How do you want to be contacted?
+</h1>
+
+<form>
+  <div class="form-group form-group-error">
+    <fieldset>
+
+      <legend class="sr-only">How do you want to be contacted?</legend>
+      <span class="error-message">Choose an answer</span>
+
+      <label class="block-label" for="contact-by-email-error" data-target="contact-by-email-error">
+          <input type="radio" id="contact-by-email-error" name="radio-contact-group-error" value="Email" aria-controls="contact-by-email-error" aria-expanded="false">
+          Email
+      </label>
+      <div class="panel panel-border-narrow js-hidden" id="contact-by-email-error">
+        <div class="form-group form-group-error">
+          <label class="form-label" for="contact-email-error">Email address</label>
+          <span class="error-message">Error message goes here</span>
+          <input class="form-control form-control-error" name="contact-email"-error type="text" id="contact-email-error">
+        </div>
+      </div>
+
+      <label class="block-label" for="contact-by-phone-error" data-target="contact-by-phone-error">
+          <input type="radio" id="contact-by-phone-error" name="radio-contact-group-error" value="phone" aria-controls="contact-by-phone"-error aria-expanded="false">
+          Phone
+      </label>
+      <div class="panel panel-border-narrow js-hidden" id="contact-by-phone-error">
+        <div class="form-group form-group-error">
+          <label class="form-label" for="contact-phone-error">Phone number</label>
+          <span class="error-message">Error message goes here</span>
+          <input class="form-control form-control-error" name="contact-phone-error" type="text" id="contact-phone-error">
+        </div>
+      </div>
+
+      <label class="block-label" for="contact-by-text-error" data-target="contact-by-text-error">
+          <input type="radio" id="contact-by-text-error" name="radio-contact-group-error" value="text message" aria-controls="contact-by-text-error" aria-expanded="false">
+          Text message
+      </label>
+      <div class="panel panel-border-narrow js-hidden" id="contact-by-text-error">
+        <div class="form-group form-group-error">
+          <label class="form-label" for="contact-text-message-error">Mobile phone number</label>
+          <span class="error-message">Error message goes here</span>
+          <input class="form-control form-control-error" name="contact-text-message-error" type="text" id="contact-text-message-error">
+        </div>
+      </div>
+
+    </fieldset>
+  </div>
+</form>
+
+<h2>Example: Date and error</h2>
+<form>
+    <div class="form-group">
+        <fieldset>
+            <legend>
+                <span class="form-label-bold">What is your date of birth?</span>
+                <span class="form-hint">For example, 31 3 1980</span>
+            </legend>
+            <div class="form-date">
+                <div class="form-group form-group-day">
+                <label class="form-label" for="dob-day">Day</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+                </div>
+                <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Month</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                </div>
+                <div class="form-group form-group-year">
+                <label class="form-label" for="dob-year">Year</label>
+                <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</form>
+
+<form>
+    <div class="form-group from-group-error">
+        <fieldset>
+            <legend>
+                <span class="form-label-bold">What is your date of birth?</span>
+                <span class="form-hint">For example, 31 3 1980</span>
+            </legend>
+            <span class="error-message">Error message goes here</span>
+            <div class="form-date">
+                <div class="form-group form-group-day">
+                <label class="form-label" for="dob-day">Day</label>
+                <input class="form-control form-control-error" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+                </div>
+                <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Month</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                </div>
+                <div class="form-group form-group-year">
+                <label class="form-label" for="dob-year">Year</label>
+                <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</form>
+
+<form>
+    <div class="form-group from-group-error">
+        <fieldset>
+            <legend>
+                <span class="form-label-bold">What is your date of birth?</span>
+                <span class="form-hint">For example, 31 3 1980</span>
+            </legend>
+            <span class="error-message">Error message goes here</span>
+            <div class="form-date">
+                <div class="form-group form-group-day">
+                <label class="form-label" for="dob-day">Day</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+                </div>
+                <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Month</label>
+                <input class="form-control form-control-error" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                </div>
+                <div class="form-group form-group-year">
+                <label class="form-label" for="dob-year">Year</label>
+                <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</form>
+
+<form>
+    <div class="form-group from-group-error">
+        <fieldset>
+            <legend>
+                <span class="form-label-bold">What is your date of birth?</span>
+                <span class="form-hint">For example, 31 3 1980</span>
+            </legend>
+            <span class="error-message">Error message goes here</span>
+            <div class="form-date">
+                <div class="form-group form-group-day">
+                <label class="form-label" for="dob-day">Day</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+                </div>
+                <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Month</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                </div>
+                <div class="form-group form-group-year">
+                <label class="form-label" for="dob-year">Year</label>
+                <input class="form-control form-control-error" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</form>

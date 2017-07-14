@@ -19564,11 +19564,14 @@ input[type=file] {
     .form-group .panel.panel-border-narrow, .form-group .panel-border-narrow#findMyNearestSearch {
       border-left-width: 5px;
       float: left;
-      width: 100%; }
+      width: 100%;
+      margin: 10px 0 30px; }
       .form-group .panel.panel-border-narrow:first-child, .form-group .panel-border-narrow#findMyNearestSearch:first-child {
         margin-top: 10px; }
-      .form-group .panel.panel-border-narrow::last-child, .form-group .panel-border-narrow#findMyNearestSearch::last-child {
+      .form-group .panel.panel-border-narrow:last-child, .form-group .panel-border-narrow#findMyNearestSearch:last-child {
         margin-top: 10px;
+        margin-bottom: 0; }
+      .form-group .panel.panel-border-narrow .form-group, .form-group .panel-border-narrow#findMyNearestSearch .form-group {
         margin-bottom: 0; }
 
 input.form-control, .col-md-8 input#SearchBox,
@@ -19811,6 +19814,9 @@ input[type=button] {
 legend {
   border-bottom: 0; }
 
+form legend {
+  margin-bottom: 0; }
+
 .form-date .form-group {
   float: left;
   width: 50px;
@@ -19828,75 +19834,36 @@ legend {
 
 .form-group-error {
   margin-right: 15px;
-  border-left: 4px solid #b10e1e;
+  border-left: 4px solid #cc0000;
   padding-left: 10px; }
-
-@media (min-width: 641px) {
-  .form-group-error {
-    border-left: 5px solid #b10e1e;
-    padding-left: 15px; } }
+  @media (min-width: 641px) {
+    .form-group-error {
+      border-left: 5px solid #cc0000;
+      padding-left: 15px; } }
 
 .form-control-error {
-  border: 4px solid #b10e1e; }
+  border: 4px solid #cc0000 !important; }
 
 .error-message {
-  font-family: "nta", Arial, sans-serif;
-  font-weight: 700;
-  text-transform: none;
   font-size: 16px;
-  line-height: 1.25;
-  color: #b10e1e;
+  color: #cc0000;
   display: block;
   clear: both;
-  margin: 0;
-  padding: 2px 0; }
-
-@media (min-width: 641px) {
-  .error-message {
-    font-size: 19px;
-    line-height: 1.31579; } }
+  margin: 0 0 5px;
+  padding: 2px 0;
+  font-weight: 700; }
+  @media (min-width: 641px) {
+    .error-message {
+      font-size: 19px; } }
+  .error-message:before {
+    font-family: FontAwesome;
+    content: "\F071";
+    margin-right: 5px; }
 
 .form-label .error-message,
 .form-label-bold .error-message {
   padding-top: 4px;
   padding-bottom: 0; }
-
-.error-summary {
-  border: 4px solid #b10e1e;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 15px 10px; }
-
-@media (min-width: 641px) {
-  .error-summary {
-    border: 5px solid #b10e1e;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 20px 15px 15px; } }
-
-.error-summary:focus {
-  outline: 3px solid #ffbf47; }
-
-.error-summary .error-summary-heading {
-  margin-top: 0; }
-
-.error-summary p {
-  margin-bottom: 10px; }
-
-.error-summary .error-summary-list {
-  padding-left: 0; }
-
-@media (min-width: 641px) {
-  .error-summary .error-summary-list li {
-    margin-bottom: 5px; } }
-
-.error-summary .error-summary-list a, .error-summary .error-summary-list .link, .error-summary .error-summary-list .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .error-summary .error-summary-list .btn-link {
-  color: #b10e1e;
-  font-weight: bold;
-  text-decoration: underline; }
-
-.form-group .panel, .form-group #findMyNearestSearch {
-  margin-top: 10px; }
 
 .img-content {
   display: block;
