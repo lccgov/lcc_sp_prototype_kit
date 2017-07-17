@@ -210,6 +210,7 @@ $input-border-color:$grey;
 @import 'sub-section-nav';
 @import 'atoz';
 @import 'lcc_breadcrumb';
+@import 'lcc_search';
 
 //CUSTOM SASS FILES FOR STYLE GUIDE
 @import 'prism';
@@ -233,7 +234,6 @@ $input-border-color:$grey;
 @import 'lcc_news';
 @import 'ie-support';
 @import 'sharepoint_2010_style_fallback';
-@import 'lcc_search';
 
 //in front end toolkit
 @import 'lcc_footer';
