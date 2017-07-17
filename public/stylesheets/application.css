@@ -16724,6 +16724,9 @@ a.arrow, .arrow.link, .nearestItem-search-features-inner a .nearestItem-showonma
       background: #333;
       color: #fff; }
 
+li a.arrow:first-of-type, li .arrow.link:first-of-type, li .nearestItem-search-features-inner a .nearestItem-showonmap-link .arrow.btn-link:first-of-type, .nearestItem-search-features-inner a .nearestItem-showonmap-link li .arrow.btn-link:first-of-type {
+  border-top: none; }
+
 /*******************
 POLAROID WEBPART
 ********************/

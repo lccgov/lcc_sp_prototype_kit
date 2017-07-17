@@ -167,6 +167,8 @@ $input-border-color:$grey;
 @import 'variables';
 @import 'brandColors';
 
+//FRONT END TOOLKIT SASS FILES
+
 //available sass files please un-comment out as required
 @import 'sharepointOverides';
 //@import 'mainMenuSubsites'; //subsites only
@@ -195,8 +197,6 @@ $input-border-color:$grey;
 @import 'mega-promo';
 @import 'buttons';
 @import 'browser-alert';
-
-//will eventually need adding to the front-end toolkit
 @import 'typography-lcc';
 @import 'tables';
 @import 'form_elements';
@@ -210,14 +210,14 @@ $input-border-color:$grey;
 @import 'sub-section-nav';
 @import 'atoz';
 
-//custom styles for style guide
+//CUSTOM SASS FILES FOR STYLE GUIDE
 @import 'prism';
 @import 'styleguide_digital';
 @import 'styleguide_code-example';
 @import 'styleguide_sticky';
 @import 'styleguide_swatch';
 
-//custom styles for leeds.gov.uk
+//CUSTOM SASS FILES FOR LEEDS.GOV.UK
 @import 'lcc_breadcrumb';
 @import 'easy-autocomplete';
 @import 'search-results';
@@ -234,6 +234,8 @@ $input-border-color:$grey;
 @import 'ie-support';
 @import 'sharepoint_2010_style_fallback';
 @import 'lcc_search';
+
+//in front end toolkit
 @import 'lcc_footer';
 @import 'lcc_header';
 
