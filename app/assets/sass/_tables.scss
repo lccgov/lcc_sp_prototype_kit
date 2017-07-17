@@ -24,7 +24,7 @@ table td.numeric{
 
 //description-list
 .list-definition__heading {
-    border-top: 1px solid $light-grey;
+    border-top: 1px solid $border-color;
     clear: left;
     font-weight: bold;
     padding-top: 1rem;
@@ -42,7 +42,7 @@ table td.numeric{
     padding-top: .25rem;
 
     @media (min-width: 767px) {
-        border-top: 1px solid $light-grey;
+        border-top: 1px solid $border-color;
         float: left;
         padding: 1rem .75rem;
         width: 75%;

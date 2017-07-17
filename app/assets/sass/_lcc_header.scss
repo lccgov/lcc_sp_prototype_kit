@@ -181,14 +181,14 @@
         .ms-srch-sb-searchLink{
             padding:0;
             line-height:55px;
-            background:$green;
+            background:$button-color;
 
             &:hover{
-                background:$light-green !important;
+                background:$button-hover-color !important;
             }
 
             &:active{
-                background:darken($button-color,5%) !important;
+                background:darken($button-color,8%) !important;
                 color:#fff !important;
             }
         

@@ -42,7 +42,7 @@ $border-color:$light-grey;
 $panel-color:darken($lighter-grey,3%);
 $brand-color:$blue;
 $button-color:$green;
-$button-hover-color:lighten($green,5%);
+$button-hover-color:lighten($button-color,5%);
 $focus-color:$yellow;
 $base-container-width:1400px ;
 //$btn-background-color:green ;
@@ -238,6 +238,7 @@ $input-border-color:$grey;
 @import 'lcc_header';
 
 
+//CUSTOM STYLES FOR LEEDS.GOV.UK
 
 //site background
 html{
@@ -306,11 +307,4 @@ hr{
         right:auto;
         margin-bottom:20px;
     }
-}
-
-//badges
-.badge{
-    margin:0;
-    display:inline-block;
-    width:auto;
 }
