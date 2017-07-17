@@ -209,6 +209,7 @@ $input-border-color:$grey;
 @import 'part-nav';
 @import 'sub-section-nav';
 @import 'atoz';
+@import 'lcc_breadcrumb';
 
 //CUSTOM SASS FILES FOR STYLE GUIDE
 @import 'prism';
@@ -218,7 +219,6 @@ $input-border-color:$grey;
 @import 'styleguide_swatch';
 
 //CUSTOM SASS FILES FOR LEEDS.GOV.UK
-@import 'lcc_breadcrumb';
 @import 'easy-autocomplete';
 @import 'search-results';
 @import 'panel';
