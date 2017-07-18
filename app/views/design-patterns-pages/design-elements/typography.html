@@ -6,8 +6,6 @@
 
 
   {% block css_register %}
-  <script src="https://use.typekit.net/pws7qio.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>
          <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
    {% endblock %}
 
@@ -41,21 +39,22 @@ Typography
 
 {% block pageContent %}
 <div class="text">
-    <p class="lead">For Leeds.gov.uk domains, always use the Proxima Nova Website font in Regular, SemiBold and Bold.</p>
+    <p class="lead">For Leeds.gov.uk domains, always use the <a href="https://fonts.google.com/specimen/Open+Sans" rel="external">Open Sans</a> font in Regular for body text, and <a href="https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat" rel="external">Montserrat</a> in Semi-Bold for headings.</p>
 </div>
 <div class="text">
     <h2 class="heading-large" id="typography-headings">Headings</h2>
     <ul class="list list-bullet text">
-        <li>use Proxima Nova Bold</li>
+        <li>use Montserrat semi-bold</li>
         <li>use sentence case for headings</li>
         <li>use headings consistently to create a clear hierarchy</li>
+        <li>use semantic headings and structure. <a href="http://www.webpagemistakes.ca/heading-structure-heading-tag/" rel="external">Read article on heading structure</a></li>
     </ul>
 </div>
 <div class="example">
-    <h1 class="heading-xlarge">A 50px bold xlarge heading</h1>
-    <h2 class="heading-large">A 32px bold large heading</h2>
-    <h3 class="heading-medium">A 24px bold medium heading</h3>
-    <h4 class="heading-small">A 21px bold small heading</h4>
+    <h1 class="heading-xlarge">A xlarge heading</h1>
+    <h2 class="heading-large">A large heading</h2>
+    <h3 class="heading-medium">A medium heading</h3>
+    <h4 class="heading-small">A small heading</h4>
 </div>
 <div class="code-reveal">
     <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyHeadingsCode" aria-expanded="false" aria-controls="typographyHeadingsCode">
@@ -89,8 +88,8 @@ Typography
 </div>
 <div class="example">
 <div class="text">
-    <p class="lead">A 24px</em> lead paragraph, maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-    <p>A 19px</em> body copy paragraph, maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    <p class="lead">This is a lead paragraph. Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.</p>
+    <p>This is a body copy paragraph. Felis at varius tincidunt, turpis dui finibus risus, ac varius libero eros ac dolor.</p>
 </div>
 </div>
 <div class="code-reveal">
@@ -100,9 +99,9 @@ Typography
     <div class="collapse exampleCode" id="typographyLeadParagraphCode">
         <pre>
             <code class="line-numbers language-markup">
-                &lt;p class="lead">A 24px lead paragraph, maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/p>
+                &lt;p class="lead">This is a lead paragraph. Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.&lt;/p>
                 
-                &lt;p>A 19px body copy paragraph, maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/p>
+                &lt;p>This is a body copy paragraph. Felis at varius tincidunt, turpis dui finibus risus, ac varius libero eros ac dolor.&lt;/p>
             </code>
         </pre>
     </div>
@@ -111,17 +110,16 @@ Typography
 <div class="text">
 <h2 class="heading-large" id="typography-body-copy">Body copy</h2>
 <ul class="list list-bullet text">
-    <li>use Proxima Nova Regular</li>
+    <li>use Open Sans Regular</li>
     <li>avoid using bold and italics</li>
     <li>use 19px for body copy – 16px for smaller screens</li>
-    <li>use smaller sizes only if there’s a user need (eg 16px, 14px, 12px)</li>
     <li>make sure lines of text don’t exceed 75 characters, as they become harder to read beyond that point</li>
 </ul>
 </div>
 <div class="example">
 <div class="text">
-    <p>A 19px body copy paragraph. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p class="font-xsmall">A 16px supporting text paragraph. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p>This is a body copy paragraph. Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.</p>
+    <p class="font-xsmall">A supporting text paragraph. Felis at varius tincidunt, turpis dui finibus risus, ac varius libero eros ac dolor.</p>
 </div>
 </div>
 <div class="code-reveal">
@@ -132,9 +130,9 @@ Typography
         <pre>
             <code class="line-numbers language-markup">
                 &lt;div class="text">
-                    &lt;p>A 19px body copy paragraph. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.&lt;/p>
+                    &lt;p>This is a body copy paragraph. Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.&lt;/p>
                 
-                    &lt;p class="font-xsmall">A 16px supporting text paragraph. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.&lt;/p>
+                    &lt;p class="font-xsmall">A supporting text paragraph. Felis at varius tincidunt, turpis dui finibus risus, ac varius libero eros ac dolor.&lt;/p>
                 &lt;div>
             </code>
         </pre>
@@ -146,14 +144,13 @@ Typography
 <ul class="list list-bullet text">
     <li>links within body copy should be blue and underlined</li>
     <li>links without surrounding text should not have a full stop at the end</li>
-    <li>link colours can be found in the <a href="/design-patterns-pages/design-elements/colour">colour palette</a></li>
 </ul>
 </div>
 <div class="example">
     <div class="text">
-        <p><a href="#">A 19px link without surrounding text</a></p>
-        <p><a href="#">A 19px body copy link</a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p>A 19px body copy <a href="#" rel="external">external link</a>. Fusce dapibus, tellus ac cursus commodo.</p>
+        <p><a href="#">A link without surrounding text</a></p>
+        <p><a href="#">A body copy link</a>. Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.</p>
+        <p>A body copy <a href="#" rel="external">external link</a>. Fusce dapibus, tellus ac cursus commodo.</p>
         <a href="#" class="link-back">Back</a>
     </div>
 </div>
@@ -163,11 +160,11 @@ Typography
     <div class="collapse exampleCode" id="typographyLinksCode">
         <pre>
             <code class="line-numbers language-markup">
-                &lt;p>&lt;a href="#">A 19px link without surrounding text&lt;/a>&lt;/p>
+                &lt;p>&lt;a href="#">A link without surrounding text&lt;/a>&lt;/p>
                 
-                &lt;p>&lt;a href="#">A 19px body copy link&lt;/a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p>
+                &lt;p>&lt;a href="#">A body copy link&lt;/a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p>
 
-                &lt;p>A 19px body copy &lt;a href="#" rel="external">external link&lt;/a>. Fusce dapibus, tellus ac cursus commodo.&lt;/p>
+                &lt;p>A body copy &lt;a href="#" rel="external">external link&lt;/a>. Fusce dapibus, tellus ac cursus commodo.&lt;/p>
                 
                 &lt;a href="#" class="link-back">Back&lt;/a>
             </code>
@@ -184,16 +181,16 @@ Typography
 <div class="example">
     <ul class="list list-bullet">
         <li>here is a bulleted list</li>
-        <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
-        <li>vestibulum id ligula porta felis euismod semper</li>
-        <li>integer posuere erat a ante venenatis dapibus posuere velit aliquet</li>
+        <li>in tincidunt dolor volutpat</li>
+        <li>est non tempus malesuada</li>
+        <li>imperdiet lorem consequat sit amet</li>
     </ul>
 
     <ol class="list list-number">
         <li>here is a numbered list</li>
-        <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
-        <li>vestibulum id ligula porta felis euismod semper</li>
-        <li>integer posuere erat a ante venenatis dapibus posuere velit aliquet</li>
+        <li>in tincidunt dolor volutpat</li>
+        <li>est non tempus malesuada</li>
+        <li>imperdiet lorem consequat sit amet</li>
     </ol>
 
     <ul class="list">
@@ -212,16 +209,16 @@ Typography
             <code class="line-numbers language-markup">
                 &lt;ul class="list list-bullet">
                     &lt;li>here is a bulleted list&lt;/li>
-                    &lt;li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor&lt;/li>
-                    &lt;li>vestibulum id ligula porta felis euismod semper&lt;/li>
-                    &lt;li>integer posuere erat a ante venenatis dapibus posuere velit aliquet&lt;/li>
+                    &lt;li>in tincidunt dolor volutpat&lt;/li>
+                    &lt;li>est non tempus malesuada&lt;/li>
+                    &lt;li>imperdiet lorem consequat sit amet&lt;/li>
                 &lt;/ul>
 
                 &lt;ol class="list list-number">
                     &lt;li>here is a numbered list&lt;/li>
-                    &lt;li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor&lt;/li>
-                    &lt;li>vestibulum id ligula porta felis euismod semper&lt;/li>
-                    &lt;li>integer posuere erat a ante venenatis dapibus posuere velit aliquet&lt;/li>
+                    &lt;li>in tincidunt dolor volutpat&lt;/li>
+                    &lt;li>est non tempus malesuada&lt;/li>
+                    &lt;li>imperdiet lorem consequat sit amet&lt;/li>
                 &lt;/ol>
 
                 &lt;ul class="list">
@@ -269,6 +266,63 @@ Typography
             &lt;/div>
             &lt;div role="note" aria-label="Information" class="text-highlight text-highlight--green">
                 &lt;p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.&lt;/p>
+            &lt;/div>
+            </code>
+        </pre>
+    </div>
+</div>
+<div class="text">
+    <h2 class="heading-large" id="typography-text-block">Text block</h2>
+    <p class="text">
+    Use text block to highlight information. For example: phone numbers, addresses and banking information.
+    </p>
+</div>
+<div class="example">
+    <p>Complete and return your form by post to:</p>
+    <div class="text-block">
+        <p>Leeds City Council<br>
+        PO BOX 60<br>
+        Leeds<br>
+        LS2 8JR</p>
+    </div>
+    <p>You can call us on:</p>
+    <div class="text-block">
+        <p>0113 456 7676</p>
+    </div>
+    <p>You will need the following information:</p>
+    <div class="text-block">
+        <p><strong>Name of organisation:</strong>&nbsp;Leeds City Council<br>
+        <strong>Bank and branch name:</strong> National Westminster Bank, 8 Park Row, Leeds LS1 1QS <br>
+        <strong>Branch address:</strong> Head Office Collection<br>
+        <strong>Account number:</strong> 00000000<br>
+        <strong>Sort code:</strong> 57-12-72</p>
+    </div>
+</div>
+<div class="code-reveal">
+    <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyTextBlockCode" aria-expanded="false" aria-controls="typographyTextBlockCode">
+    Show code
+    </a>
+    <div class="collapse exampleCode" id="typographyTextBlockCode">
+        <pre>
+            <code class="line-numbers language-markup">
+            &lt;p>Complete and return your form by post to:&lt;/p>
+            &lt;div class="text-block">
+                &lt;p>Leeds City Council&lt;br>
+                PO BOX 60&lt;br>
+                Leeds&lt;br>
+                LS2 8JR&lt;/p>
+            &lt;/div>
+            &lt;p>You can call us on:&lt;/p>
+            &lt;div class="text-block">
+                &lt;p>0113 456 7676&lt;/p>
+            &lt;/div>
+            &lt;p>You will need the following information:&lt;/p>
+            &lt;div class="text-block">
+                &lt;p>&lt;strong>Name of organisation:&lt;/strong>&nbsp;Leeds City Council&lt;br>
+                &lt;strong>Bank and branch name:&lt;/strong> National Westminster Bank, 8 Park Row, Leeds LS1 1QS &lt;br>
+                &lt;strong>Branch address:&lt;/strong> Head Office Collection&lt;br>
+                &lt;strong>Account number:&lt;/strong> 00000000&lt;br>
+                &lt;strong>Sort code:&lt;/strong> 57-12-72&lt;/p>
             &lt;/div>
             </code>
         </pre>
@@ -399,6 +453,7 @@ Typography
         <li><a href="#typography-links">Links</a></li>
         <li><a href="#typography-lists">Lists</a></li>
         <li><a href="#typography-inset-text">Inset text</a></li>
+        <li><a href="#typography-text-block">Text block</a></li>
         <li><a href="#typography-legal-text">Legal text</a></li>
         <li><a href="#typography-blockquote">Blockquote</a></li>
         <li><a href="#hidden-text">Hidden text (progressive disclosure)</a></li>

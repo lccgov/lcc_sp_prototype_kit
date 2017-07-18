@@ -46,8 +46,8 @@ $button-hover-color:lighten($button-color,5%);
 $focus-color:$yellow;
 $base-container-width:1400px ;
 //$btn-background-color:green ;
-$font-primary:proxima-nova, sans-serif; // main font
-$font-secondary:proxima-nova, sans-serif; // secondary font
+$font-primary:'Open Sans', sans-serif; // main font
+$font-secondary:'Montserrat', sans-serif; // secondary font used for headings
 
 //global used on all partials to get a uniform spacing between elements
 //$base-margin-bottom:1.875em ;
@@ -309,4 +309,9 @@ hr{
         right:auto;
         margin-bottom:20px;
     }
+}
+
+//to be added to front end tookit
+.lead a[rel="external"] {
+    margin-right: 32px;
 }

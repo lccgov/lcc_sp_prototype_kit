@@ -9,7 +9,7 @@
 
                 h3{
                     padding-right: 25px;
-                    font-weight:700;
+                    font-weight:600;
 
                     &:after{
                         @media (max-width: 767px){
@@ -23,6 +23,10 @@
                 p{
                     font-weight:400;
                     color:$secondary-font-color;
+
+                    @media (max-width: 767px){
+                        font-size:16px;
+                    }
                 }
 
                 &:focus{
