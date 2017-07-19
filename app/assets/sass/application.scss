@@ -39,7 +39,6 @@ $base-link-visited-color:#4C2C92;
 $secondary-link-color:$dark-blue;
 $secondary-font-color:$dark-grey;
 $border-color:$light-grey;
-$panel-color:darken($lighter-grey,3%);
 $brand-color:$blue;
 $button-color:$green;
 $button-hover-color:lighten($button-color,5%);
@@ -48,6 +47,11 @@ $base-container-width:1400px ;
 //$btn-background-color:green ;
 $font-primary:'Open Sans', sans-serif; // main font
 $font-secondary:'Montserrat', sans-serif; // secondary font used for headings
+//$header-font-weight: 600;
+
+//panel colours
+$panel-color:#E5F1F5;
+$panel-color-secondary:#DCDEE1;
 
 //global used on all partials to get a uniform spacing between elements
 //$base-margin-bottom:1.875em ;
@@ -209,7 +213,6 @@ $input-border-color:$grey;
 @import 'part-nav';
 @import 'sub-section-nav';
 @import 'atoz';
-@import 'lcc_breadcrumb';
 @import 'lcc_search';
 
 //CUSTOM SASS FILES FOR STYLE GUIDE
@@ -222,7 +225,6 @@ $input-border-color:$grey;
 //CUSTOM SASS FILES FOR LEEDS.GOV.UK
 @import 'easy-autocomplete';
 @import 'search-results';
-@import 'panel';
 @import 'where-i-live';
 @import 'open-data';
 //@import 'hero-lcc-sharepoint';
