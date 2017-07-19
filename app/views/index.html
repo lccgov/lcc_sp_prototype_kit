@@ -23,13 +23,6 @@
 
 
  {% block sectionOneTop %}
- <div class="highlighted alt alignCenter section">
-    <p>WELCOME TO</p>
-    <em>LCC DIGITAL</em>
-    <p><strong>DESIGN PATTERNS</strong></p>
-    <P>Here you will find all our patterns and features available to all LCC DIGITAL sites and applications</P><br/>
-    <a class="btn btn-default" href="/design-patterns-pages/styleguide.html">FIND OUT MORE</a>
-</div>
 
 <!--<div class="lcc-digital-header">
     <div class="container-fluid">
@@ -47,7 +40,13 @@
 {% block sectionOneFull%}
 {% endblock %}
 
-{% block sectionOneFullBottom %}{% endblock %}
+{% block sectionOneFullBottom %}
+<div class="intro">
+<h1><span>WELCOME TO </span>LCC DIGITAL</h1>
+    <p class="lead">Here you will find all our patterns and features available to all LEEDS.GOV.UK sites and applications</p>
+    <a class="btn btn-primary btn-arrow" href="/design-patterns-pages/styleguide.html">Style guide and design patterns</a>
+</div>
+{% endblock %}
 
 
  {% block breadcrumb %}

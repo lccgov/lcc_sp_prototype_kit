@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* _lcid="1033" _version="15.0.4841"
 _LocalBinding */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,700");
 body,
 .ms-core-defaultFont,
 #pageStatusBar,
@@ -22191,3 +22192,26 @@ hr {
 
 .lead a[rel="external"], .lead [rel="external"].link, .lead .nearestItem-search-features-inner a .nearestItem-showonmap-link [rel="external"].btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .lead [rel="external"].btn-link {
   margin-right: 32px; }
+
+.intro {
+  text-align: center;
+  max-width: 35em;
+  margin: 70px auto; }
+  @media (max-width: 641px) {
+    .intro {
+      margin: 40px auto; } }
+  .intro h1 {
+    font-size: 70px;
+    margin: 0 0 25px; }
+    @media (max-width: 641px) {
+      .intro h1 {
+        font-size: 40px;
+        margin: 0 0 20px; } }
+    .intro h1 span {
+      font-size: 20px;
+      display: block; }
+  .intro p.lead {
+    margin: 0 0 40px; }
+    @media (max-width: 641px) {
+      .intro p.lead {
+        margin: 0 0 30px; } }
