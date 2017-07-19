@@ -39,9 +39,54 @@
  {% endblock %}
 
 {% block sectionOneContent %}
-{% include "includes/lcc-components/alerts/announcement-dismissable.html" %}
+<h2>Alerts</h2>
+<h3 class="top">Emergency message</h3>
+<div class="alert-wrapper" xmlns:ddwrt2="urn:frontpage:internal">
+  <div class="alert alert-warning alert-dismissible" role="alert">
+    <div class="container-fluid">
+      <div class="alertInner"><button href="#" type="button" class="close" data-dismiss="alert" aria-label="Close"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        <h2>Emergency message header</h2>
+        <p>Here's where the information goes</p>
+        <a class="btn btn-default" href="#">Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Announcement</h3>
+<div class="alert-wrapper" xmlns:ddwrt2="urn:frontpage:internal">
+  <div class="alert alert-info alert-dismissible" role="alert">
+    <div class="container-fluid">
+      <div class="alertInner"><button href="#" type="button" class="close" data-dismiss="alert" aria-label="Close"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        <h2>Announcement header</h2>
+        <p>Here's where the information goes</p>
+        <a class="btn btn-default" href="#">Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="text">
-    <p>The easiest and safest way to pay council tax is by Direct Debit. Please complete and submit the online Direct Debit form and we will do the rest.</p>
+
+    <h2>Typography</h2>
+    <p class="lead">Lead paragraph. The easiest and safest way to pay council tax is by Direct Debit. Please complete and submit the online Direct Debit form and we will do the rest.</p>
+
+    <p>Body paragraph. The easiest and safest way to pay council tax is by Direct Debit. Please complete and submit the online Direct Debit form and we will do the rest.</p>
+
+    <p>For more information consult the <a href="#" rel="external">Direct Debit website</a> directly.</p>
+
+    <p><a href="#">A link without surrounding text</a></p>
+
+    <h3>Medium heading</h3>
+
+    <p><a href="#">A body copy link</a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+    <p>A body copy <a href="#" rel="external">external link</a>. Fusce dapibus, tellus ac cursus commodo.</p>
+
+    <h4>Small heading</h4>
+
+    <a href="#" class="link-back">Back</a>
+
     <p>You will need the following items before you start:</p>
 
     <ul class="list list-bullet">
@@ -49,12 +94,26 @@
         <li>Your bank account number and sort code — you must be the holder of the bank account and authorised to set up a Direct Debit.</li>
     </ul>
 
-    <a href="#" class="btn btn-primary btn-arrow">Submit a Direct Debit instruction</a>
+    <ol class="list list-number">
+        <li>here is a numbered list</li>
+        <li>in tincidunt dolor volutpat</li>
+        <li>est non tempus malesuada</li>
+        <li>imperdiet lorem consequat sit amet</li>
+    </ol>
 
+    <ul class="list">
+        <li><a href="#">Related link</a></li>
+        <li><a href="#">Related link</a></li>
+        <li><a href="#">Related link</a></li>
+        <li><a href="#" class="bold-xsmall">More</a></li>
+    </ul>
 
-    <h2 class="heading-large">Large heading</h2>
-
-    <p>For more information consult the <a href="#" rel="external">Direct Debit website</a> directly.</p>
+    <p><a href="#" class="btn btn-primary btn-arrow">Button primary with arrow</a></p>
+    <p><a href="#" class="btn btn-primary">Button primary</a></p>
+    <p><a href="#" class="btn btn-primary btn-small">Button primary small</a></p>
+    <p><a href="#" class="btn btn-secondary btn-arrow">Button secondary with arrow</a></p>
+    <p><a href="#" class="btn btn-secondary">Button secondary</a></p> 
+    <p><a href="#" class="btn btn-secondary btn-small">Button secondary small</a></p>
 
     <div class="notice">
         <i class="fa fa-exclamation-triangle" aria-hidden="true">
@@ -63,57 +122,158 @@
         <strong class="bold-small">If you do not pay, we'll be forced to send Rod round.</strong>
     </div>
 
-    <h3 class="heading-medium">Medium heading</h3>
-
-    <p>Council Tax is usually split into 10 equal monthly payments. However, you can now choose to spread the payments over 12 months.</p>
-
     <div role="note" aria-label="Information" class="text-highlight">
         <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
     </div>
+    <div role="note" aria-label="Information" class="text-highlight text-highlight--blue">
+        <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
+    </div>
+    <div role="note" aria-label="Information" class="text-highlight text-highlight--green">
+        <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
+    </div>
 
-    <p>If you already pay by Direct Debit and want to spread your payments email the Council Tax team.</p>
-
-    <h3 class="heading-large">Large heading</h3>
-
-    <p>Council Tax is usually split into 10 equal monthly payments. However, you can now choose to spread the payments over 12 months.</p>
-
-    <h3 class="heading-small">Small heading</h3>
-
-    <p>Council Tax is usually split into 10 equal monthly payments. However, you can now choose to spread the payments over 12 months.</p>
-
-    <a href="#" class="btn btn-secondary btn-small">Pay by credit / debit card</a>
-
-    <p>If you already pay by Direct Debit and want to spread your payments email the Council Tax team.</p>
-
+    <p>Complete and return your form by post to:</p>
+    <div class="text-block">
+        <p>Leeds City Council<br>
+        PO BOX 60<br>
+        Leeds<br>
+        LS2 8JR</p>
+    </div>
+    <p>You can call us on:</p>
+    <div class="text-block">
+        <p>0113 456 7676</p>
+    </div>
 </div>
 
-<h2 class="heading-large">Definition list</h2>
-{% include "includes/design-patterns/list-definition.html" %}
+    <p>You will need the following information:</p>
+    <div class="text-block">
+        <p><strong>Name of organisation:</strong> Leeds City Council<br>
+        <strong>Bank and branch name:</strong> National Westminster Bank, 8 Park Row, Leeds LS1 1QS <br>
+        <strong>Branch address:</strong> Head Office Collection<br>
+        <strong>Account number:</strong> 00000000<br>
+        <strong>Sort code:</strong> 57-12-72</p>
+    </div>
+
+    <blockquote>
+        <span class="open-quote"></span>
+        <p>I had the opportunity to work with a number of partners on this project and engaged with a number of senior managers across the authority.</p>
+        <footer class="blockquote-footer">
+            <cite title="Source Title">Headteacher - Calverley Church of England Primary School</cite>
+        </footer>
+    </blockquote>
+    
+<div class="text">
+    <div class="hidden-text">
+        <a class="text-link reveal collapsed" role="button" data-toggle="collapse" href="#hidden-text-example" aria-expanded="false" aria-controls="hidden-text-example">
+        Help with nationality
+        </a>
+        <div class="collapse" id="hidden-text-example">
+            <div class="panel panel-border">
+                <p> If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.</p>
+                <p>We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 class="heading-large">Accessible definition list</h2>
+<div class="description-list">
+    <div class="description-list__item">
+        <h3>Name</h3>
+        <div class="description-list__item-content">
+            <p>Ardsley and Tingley library</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="description-list__item">
+        <h3>Address</h3>
+        <div class="description-list__item-content">
+            <p>213a Bradford Road, <br>Tingley, <br>WF3 2DL</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="description-list__item">
+        <h3>Telephone</h3>
+        <div class="description-list__item-content">
+            <p>0113 253 9025</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="description-list__item">
+        <h3>Email</h3>
+        <div class="description-list__item-content">
+            <p><a href="mailto:libraryenquiries@leeds.gov.uk">libraryenquiries@leeds.gov.uk</a></p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
 <h2 class="heading-large">Data table</h2>
-{% include "includes/design-patterns/table-data.html" %}
-<h2 class="heading-large">Numeric tabular data</h2>
-{% include "includes/design-patterns/table-data-numeric.html" %}
-<h2 class="heading-large">Highlight box</h2>
-<div class="panel">
-    <h3 class="heading-medium top">Highlight box title</h3>
-    <p class="bottom">This is a paragraph within the highlighted box content</p>
-</div>
-<div class="highlight-box highlight-box__blue">
-    <h3 class="heading-medium top">Highlight box blue title</h3>
-    <p>This is a paragraph within the highlighted box content</p>
-</div>
-<h2 class="heading-large">Images</h2>
-<h3 class="heading-medium top">Image full width</h3>
-<img class="img-content" src="/public/images/16-9-image-leeds.jpg" alt="" />
-<h3 class="heading-medium">Image right</h3>
-<img class="img-content img-right" src="/public/images/16-9-image-leeds.jpg" alt="" />
-<p>If you already pay by Direct Debit and want to spread your payments email the Council Tax team.</p>
-<div class="clear"></div>
-<h3 class="heading-medium">Image left</h3>
-<img class="img-content img-left" src="/public/images/16-9-image-leeds.jpg" alt="" />
-<p>If you already pay by Direct Debit and want to spread your payments email the Council Tax team.</p>
-<div class="clear"></div>
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Dates and amounts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First 6 weeks</td>
+      <td>£109.80 per week</td>
+    </tr>
+    <tr>
+      <td>Next 33 weeks</td>
+      <td>£109.80 per week</td>
+    </tr>
+    <tr>
+     <td>Total estimated pay</td>
+      <td>£4,282.20</td>
+    </tr>
+    <tr>
+      <td>Tell the mother’s employer</td>
+      <td>28 days before they want to start maternity pay</td>
+    </tr>
+  </tbody>
+</table>
 
+<h2 class="heading-large">Numeric tabular data</h2>
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th class="numeric" scope="col">Paper form</th>
+      <th class="numeric" scope="col">Digital</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>25 November to 1 December 2013</td>
+      <td class="numeric">2,763</td>
+      <td class="numeric">1,792</td>
+    </tr>
+    <tr>
+      <td>2 to 8 December 2013</td>
+      <td class="numeric">2,850</td>
+      <td class="numeric">1,740</td>
+    </tr>
+    <tr>
+     <td>9 to 15 December 2013</td>
+      <td class="numeric">2,388</td>
+      <td class="numeric">1,683</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="heading-large">Panel</h2>
+<div class="panel">
+    <h3 class="heading-medium top">Panel header</h3>
+    <p class="bottom">This is a paragraph within the panel</p>
+</div>
+<div class="panel panel-secondary">
+    <h3 class="heading-medium top">Panel header secondary</h3>
+    <p>This is a paragraph within the panel secondary</p>
+</div>
+
+<h3>Panel with a video</h3>
 <div class="panel">
     <div class="row">
         <div class="col-md-6">
@@ -129,6 +289,109 @@
         </div>
     </div>
 </div>
+
+<h2 class="heading-large">Images</h2>
+<h3 class="heading-medium top">Image full width</h3>
+<img class="img-content" src="https://lcc-prototype-kit.herokuapp.com/public/images/16-9-image-leeds.jpg" alt="" />
+<h3 class="heading-medium">Image right</h3>
+<img class="img-content img-right" src="https://lcc-prototype-kit.herokuapp.com/public/images/16-9-image-leeds.jpg" alt="" />
+<p>If you already pay by Direct Debit and want to spread your payments email the Council Tax team.</p>
+<div class="clear"></div>
+<h3 class="heading-medium">Image left</h3>
+<img class="img-content img-left" src="https://lcc-prototype-kit.herokuapp.com/public/images/16-9-image-leeds.jpg" alt="" />
+<p>If you already pay by Direct Debit and want to spread your payments email the Council Tax team.</p>
+<div class="clear"></div>
+
+<h2>Accordion</h2>
+<ul class="accordion" data-module="accordion">
+    <li>
+        <div class="accordion-drawer">
+            <a href="#" class="header"><span class="sr-only">Click to expand</span>Item one</a>
+            <div style="display: none;" class="content-block">
+                <p>Here's where the content goes, this is a <a href="#">hyperlink</a></p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="accordion-drawer">
+            <a href="#" class="header"><span class="sr-only">Click to expand</span>Item two</a>
+            <div style="display: none;" class="content-block">
+                <p>An accordion item with a list:</p>
+                <ul class="list list-bullet">
+                    <li>List item one</li>
+                    <li>List item one</li>
+                </ul>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<h2>Document list</h2>
+<div class="docList one">
+  <div class="listWebpart">
+    <ul>
+      <li class="xl equal-item" style="height: 94px;"><a href="/professionals/Documents/Checklist%20of%20Sexual%20Behaviour%20in%20Nursery%20Primary%20Children.pdf"><span class="info">Checklist of sexual behaviour in children, and response for nursery and primary age<span class="arrow"></span></span><span class="thirdInfo">PDF 326 KB</span></a></li>
+      <li class="external equal-item" style="height: 93px;"><a href="/professionals/Documents/Children%20Missing%20from%20Services,%200-5%20years.pdf"><span class="info">Children missing from services, 0-5 years, Good Practice Guidance for Early Years Settings<span class="arrow"></span></span><span class="thirdInfo">External link</span></a></li>
+      <li class="word equal-item" style="height: 67px;"><a href="/professionals/Documents/LSCB-Bruising-Protocol-2016.pdf"><span class="info">LSCB multi-agency bruising protocol<span class="arrow"></span></span><span class="thirdInfo">WORD 119 KB</span></a></li>
+      <li class="pdf equal-item" style="height: 67px;"><a href="/professionals/Documents/E%20safety%20guidance%202015.pdf"><span class="info">LSCB E-Safety Guidance 2015<span class="arrow"></span></span><span class="thirdInfo">PDF 712 KB</span></a></li>
+      <li class="pp equal-item" style="height: 67px;"><a href="/professionals/Documents/E%20safety%20guidance%202015.pdf"><span class="info">LSCB E-Safety Guidance 2015<span class="arrow"></span></span><span class="thirdInfo">Powerpoint 712 KB</span></a></li>
+    </ul>
+  </div>
+ </div>
+
+<h2>Group promos</h2>
+<div class="groupPromo">
+    <div class="listWebpart">
+        <ul>
+            <li><a href="#"><h3>Header</h3><p>This is the description text.</p></a></li>
+            <li><a href="#"><h3>Header</h3><p>This is the description text.</p></a></li>
+            <li><a href="#"><h3>Header</h3><p>This is the description text.</p></a></li>
+            <li><a href="#"><h3>Header</h3><p>This is the description text.</p></a></li>
+            <li><a href="#"><h3>Header</h3><p>This is the description text.</p></a></li>
+        </ul>
+    </div>
+</div>
+
+<h2>Mega promos</h2>
+<div class="mega-promo">
+    <div class="mega-promo__item third">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(https://lcc-prototype-kit.herokuapp.com/public/images/16-9-image-leeds.jpg)"></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Full Council Meeting Webcast</h3>
+                <p class="mega-promo__secondary">This is the description for the promo. You need to add a class of full to make it full width.</p>
+            </div>
+            <span class="mega-promo__highlight">LIVE</span>
+        </a>
+    </div>
+    <div class="mega-promo__item third">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(https://lcc-prototype-kit.herokuapp.com/public/images/16-9-image-leeds.jpg)"></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Leeds Indie Food Fest</h3>
+                <p class="mega-promo__secondary">This is the description for the promo. You need to add a class of full to make it full width.</p>
+            </div>
+            <!--<span class="mega-promo__highlight">Highlight text</span>-->
+        </a>
+    </div>
+    <div class="mega-promo__item third">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(https://lcc-prototype-kit.herokuapp.com/public/images/16-9-image-leeds.jpg)"></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Leeds Pride</h3>
+                <p class="mega-promo__secondary">This is the description for the promo. You need to add a class of full to make it full width.</p>
+            </div>
+            <!--<span class="mega-promo__highlight">Highlight text</span>-->
+        </a>
+    </div>
+</div>
+
 {% endblock %}
 
 {% block pageContent %}
