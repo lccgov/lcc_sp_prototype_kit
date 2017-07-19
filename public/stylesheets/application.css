@@ -20500,9 +20500,9 @@ hr {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 30px 0 60px -30px; }
-  @media (max-width: 400px) {
+  @media (max-width: 641px) {
     .swatch {
-      margin: 15px 0; } }
+      margin: 15px 0 15px -15px; } }
   .swatch .swatch-item-wrapper {
     width: calc(100% * (1/4) - 30px) !important;
     margin: 30px 0 0 30px;
@@ -20510,15 +20510,18 @@ hr {
     float: left; }
     @media (max-width: 641px) {
       .swatch .swatch-item-wrapper {
-        width: calc(100% * (1/2) - 30px) !important; } }
-    @media (max-width: 400px) {
-      .swatch .swatch-item-wrapper {
-        width: 100% !important;
-        margin: 15px 0 0; } }
+        width: calc(100% * (1/2) - 15px) !important;
+        margin: 15px 0 0 15px; } }
     .swatch .swatch-item-wrapper .swatch-item .colour {
       background: #DCDEE1;
       display: block;
-      height: 100px; }
+      height: 100px;
+      width: 100px;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      border-radius: 100%;
+      margin: 0 auto; }
       .swatch .swatch-item-wrapper .swatch-item .colour.text {
         background: #212224; }
       .swatch .swatch-item-wrapper .swatch-item .colour.text-secondary {
@@ -20543,7 +20546,8 @@ hr {
       .swatch .swatch-item-wrapper .swatch-item .colour.border {
         background: #DCDEE1; }
       .swatch .swatch-item-wrapper .swatch-item .colour.background {
-        background: #F6F7FA; }
+        background: #F6F7FA;
+        border: 1px solid #DCDEE1; }
     .swatch .swatch-item-wrapper .swatch-item .colour-details {
       padding: 15px; }
       .swatch .swatch-item-wrapper .swatch-item .colour-details h3 {
