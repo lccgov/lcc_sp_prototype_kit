@@ -19007,6 +19007,7 @@ legend,
 .list-atoz li h2,
 .heading-small,
 h4,
+.swatch .swatch-item-wrapper .swatch-item .colour-details h3,
 .heading-xsmall,
 .font-xxlarge,
 .font-xlarge,
@@ -19046,6 +19047,7 @@ table.styledTable td,
   .list-atoz li h2.top,
   .heading-small.top,
   h4.top,
+  .swatch .swatch-item-wrapper .swatch-item .colour-details h3.top,
   .heading-xsmall.top,
   .font-xxlarge.top,
   .font-xlarge.top,
@@ -19082,6 +19084,7 @@ table.styledTable td,
   .list-atoz li h2.bottom,
   .heading-small.bottom,
   h4.bottom,
+  .swatch .swatch-item-wrapper .swatch-item .colour-details h3.bottom,
   .heading-xsmall.bottom,
   .font-xxlarge.bottom,
   .font-xlarge.bottom,
@@ -19120,6 +19123,7 @@ legend,
 .list-atoz li h2,
 .heading-small,
 h4,
+.swatch .swatch-item-wrapper .swatch-item .colour-details h3,
 .heading-xsmall,
 .bold-xlarge,
 .bold-large,
@@ -19230,13 +19234,13 @@ table.styledTable td,
       margin-top: 40px;
       margin-bottom: 0.7em; } }
 
-.heading-small, h4 {
+.heading-small, h4, .swatch .swatch-item-wrapper .swatch-item .colour-details h3 {
   font-size: 16px;
   line-height: 1.25;
   margin-top: 25px;
   margin-bottom: 0.7em; }
   @media (min-width: 641px) {
-    .heading-small, h4 {
+    .heading-small, h4, .swatch .swatch-item-wrapper .swatch-item .colour-details h3 {
       font-size: 19px;
       line-height: 1.3157894737;
       margin-top: 30px; } }
@@ -20480,89 +20484,78 @@ hr {
       z-index: 1; } }
 
 .swatch {
-  width: 60px;
-  height: 60px;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  border-radius: 100%; }
-
-@media (max-width: 640px) {
-  .swatch {
-    clear: both;
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 15px; } }
-
-@media (min-width: 641px) {
-  .swatch {
-    margin: 0 auto 15px auto; } }
-
-.swatch-text-colour {
-  background-color: #212224; }
-
-.swatch-text-secondary {
-  background-color: #666B76; }
-
-.swatch-page-colour {
-  background-color: #fff;
-  border: 1px solid #DCDEE1; }
-
-.swatch-button-colour {
-  background-color: #008000; }
-
-.swatch-button-hover-colour {
-  background-color: #009a00; }
-
-.swatch-link-colour {
-  background-color: #007299; }
-
-.swatch-link-colour-visited {
-  background-color: #4C2C92; }
-
-.swatch-link-colour-hover {
-  background-color: #3399BB; }
-
-.swatch-border-colour {
-  background-color: #DCDEE1; }
-
-.swatch-panel-colour {
-  background-color: #E5F1F5; }
-
-.swatch-focus {
-  background-color: #FFBF47; }
-
-@media (min-width: 641px) {
-  .swatch-wrapper {
-    float: left;
-    width: 20%;
-    text-align: center; } }
-
-.swatch-wrapper .heading-small, .swatch-wrapper h4 {
-  margin-bottom: 0.5263157895em; }
-
-.swatch-wrapper ul {
-  list-style-type: none;
-  padding-bottom: 15px;
-  padding-left: 0; }
-
-@media (max-width: 640px) {
-  .swatch-wrapper ul {
-    min-height: 50px;
-    padding-top: 10px; } }
-
-.swatch-wrapper li {
-  font-size: 14px;
-  line-height: 1.1428571429; }
-
-@media (min-width: 641px) {
-  .swatch-wrapper li {
-    font-size: 16px;
-    line-height: 1.25; } }
-
-.swatch-wrapper b {
-  font-weight: bold;
-  text-transform: uppercase; }
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-direction: row;
+  -moz-box-flex-direction: row;
+  -ms-flex-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex-wrap: wrap;
+  -moz-box-flex-wrap: wrap;
+  -ms-flex-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 30px 0 60px -30px; }
+  @media (max-width: 400px) {
+    .swatch {
+      margin: 15px 0; } }
+  .swatch .swatch-item-wrapper {
+    width: calc(100% * (1/4) - 30px) !important;
+    margin: 30px 0 0 30px;
+    text-align: center;
+    float: left; }
+    @media (max-width: 641px) {
+      .swatch .swatch-item-wrapper {
+        width: calc(100% * (1/2) - 30px) !important; } }
+    @media (max-width: 400px) {
+      .swatch .swatch-item-wrapper {
+        width: 100% !important;
+        margin: 15px 0 0; } }
+    .swatch .swatch-item-wrapper .swatch-item .colour {
+      background: #DCDEE1;
+      display: block;
+      height: 100px; }
+      .swatch .swatch-item-wrapper .swatch-item .colour.text {
+        background: #212224; }
+      .swatch .swatch-item-wrapper .swatch-item .colour.text-secondary {
+        background: #666B76; }
+      .swatch .swatch-item-wrapper .swatch-item .colour.link-colour {
+        background: #007299; }
+      .swatch .swatch-item-wrapper .swatch-item .colour.link-hover {
+        background: #3399BB; }
+      .swatch .swatch-item-wrapper .swatch-item .colour.link-visited {
+        background: #4C2C92; }
+      .swatch .swatch-item-wrapper .swatch-item .colour.focus {
+        background: #FFBF47; }
+      .swatch .swatch-item-wrapper .swatch-item .colour.button-colour {
+        background: #008000; }
+      .swatch .swatch-item-wrapper .swatch-item .colour.button-hover {
+        background: #009a00; }
+      .swatch .swatch-item-wrapper .swatch-item .colour.panel-colour {
+        background: #E5F1F5; }
+      .swatch .swatch-item-wrapper .swatch-item .colour.page-colour {
+        background: #FFFFFF;
+        border: 1px solid #DCDEE1; }
+      .swatch .swatch-item-wrapper .swatch-item .colour.border {
+        background: #DCDEE1; }
+      .swatch .swatch-item-wrapper .swatch-item .colour.background {
+        background: #F6F7FA; }
+    .swatch .swatch-item-wrapper .swatch-item .colour-details {
+      padding: 15px; }
+      .swatch .swatch-item-wrapper .swatch-item .colour-details h3 {
+        margin-top: 0;
+        margin-bottom: 10px; }
+      .swatch .swatch-item-wrapper .swatch-item .colour-details .hex {
+        color: #666B76;
+        margin-bottom: 10px; }
+      .swatch .swatch-item-wrapper .swatch-item .colour-details .variable {
+        font-size: 14px;
+        margin-bottom: 0;
+        color: #666B76; }
 
 /*
  * easy-autocomplete
@@ -21239,7 +21232,7 @@ hr {
     .open-data li:last-child {
       border: 0 !important; }
     @media (min-width: 767px) {
-      .open-data li .heading-small, .open-data li h4 {
+      .open-data li .heading-small, .open-data li h4, .open-data li .swatch .swatch-item-wrapper .swatch-item .colour-details h3, .swatch .swatch-item-wrapper .swatch-item .colour-details .open-data li h3 {
         padding-right: 180px; } }
     @media (min-width: 767px) {
       .open-data li .open-data__link {
