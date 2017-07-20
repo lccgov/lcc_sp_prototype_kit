@@ -221,12 +221,12 @@ $input-border-color:$grey;
 //CUSTOM SASS FILES FOR STYLE GUIDE
 //@import 'prism';
 @import 'styleguide_digital';
-//@import 'styleguide_code-example';
-//@import 'styleguide_sticky';
-//@import 'styleguide_swatch';
+@import 'styleguide_code-example';
+@import 'styleguide_sticky';
+@import 'styleguide_swatch';
 
 //CUSTOM SASS FILES FOR LEEDS.GOV.UK
-//@import 'easy-autocomplete';
+@import 'easy-autocomplete';
 @import 'search-results';
 @import 'where-i-live';
 @import 'open-data';
