@@ -16403,6 +16403,9 @@ form input[type=submit].submit {
   background: green; }
 
 /**End  main button color for forms and comments **/
+/**********************
+Sharepoint overides
+********************/
 body {
   overflow: scroll; }
 
@@ -16413,27 +16416,119 @@ ul.cbs-List {
 .ms-webpart-zone, .ms-webpart-chrome-vertical, .ms-webpart-cell-vertical {
   display: block; }
 
-.ms-rtestate-field h1.ms-rteElement-H2, .ms-rtestate-field h2.ms-rteElement-H2, .ms-rtestate-field h3.ms-rteElement-H2, .ms-rtestate-field h4.ms-rteElement-H2, .ms-rtestate-field h5.ms-rteElement-H2 {
-  font-weight: 400; }
-
 #s4-bodyContainer {
   padding-bottom: 0px; }
 
-/**********************
-Sharepoint overides
-********************/
-h1, h2, h3, h4, h5, ul, ol, p, input {
-  font-family: "Open Sans", sans-serif;
-  color: #212224; }
+.ms-rtestate-field h1,
+.ms-rtestate-field h2,
+.ms-rtestate-field h3,
+.ms-rtestate-field h4,
+.ms-rtestate-field h5,
+.ms-rtestate-field .heading-xlarge,
+.ms-rtestate-field h1,
+.ms-rtestate-field .heading-large,
+.ms-rtestate-field h2,
+.ms-rtestate-field .heading-medium,
+.ms-rtestate-field h3,
+.ms-rtestate-field legend,
+.ms-rtestate-field .sideNav h2, .sideNav
+.ms-rtestate-field h2,
+.ms-rtestate-field
+.sideNav h3,
+.sideNav
+.ms-rtestate-field h3,
+.ms-rtestate-field .list-atoz li h2, .list-atoz li
+.ms-rtestate-field h2,
+.ms-rtestate-field .heading-small,
+.ms-rtestate-field h4,
+.ms-rtestate-field .swatch .swatch-item-wrapper .swatch-item .colour-details h3, .swatch .swatch-item-wrapper .swatch-item .colour-details
+.ms-rtestate-field h3,
+.ms-rtestate-field .heading-xsmall,
+.ms-rtestate-field .bold-xlarge,
+.ms-rtestate-field .bold-large,
+.ms-rtestate-field .bold-medium,
+.ms-rtestate-field .bold-small,
+.ms-rtestate-field .bold-xsmall,
+.ms-rtestate-field .part-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #212224;
+  padding: 0;
+  display: block; }
 
-.ms-rtestate-field h1, .ms-rtestate-field h2, .ms-rtestate-field h3, .ms-rtestate-field h4, .ms-rtestate-field h5, .ms-rtestate-field p {
-  font-family: "Open Sans", sans-serif;
-  color: #212224; }
+.ms-rtestate-field h1,
+.ms-rtestate-field h1.ms-rteElement-H2 {
+  font-size: 36px;
+  line-height: 1.15;
+  margin: 30px 0; }
+  @media (min-width: 641px) {
+    .ms-rtestate-field h1,
+    .ms-rtestate-field h1.ms-rteElement-H2 {
+      font-size: 50px;
+      line-height: 1.15;
+      margin: 50px 0; } }
 
-input[type=button], input[type=reset], input[type=submit], button {
+.ms-rtestate-field h2,
+.ms-rtestate-field h2.ms-rteElement-H2 {
+  font-size: 24px;
+  line-height: 1.25;
+  margin-top: 30px;
+  margin-bottom: 0.5em; }
+  @media (min-width: 641px) {
+    .ms-rtestate-field h2,
+    .ms-rtestate-field h2.ms-rteElement-H2 {
+      font-size: 32px;
+      line-height: 1.25;
+      margin-top: 50px;
+      margin-bottom: 0.7em; } }
+
+.ms-rtestate-field h3,
+.ms-rtestate-field h3.ms-rteElement-H2 {
+  font-size: 19px;
+  line-height: 1.2;
+  margin-top: 30px;
+  margin-bottom: 0.5em; }
+  @media (min-width: 641px) {
+    .ms-rtestate-field h3,
+    .ms-rtestate-field h3.ms-rteElement-H2 {
+      font-size: 24px;
+      line-height: 1.25;
+      margin-top: 40px;
+      margin-bottom: 0.7em; } }
+
+.ms-rtestate-field h4,
+.ms-rtestate-field h4.ms-rteElement-H2 {
+  font-size: 16px;
+  line-height: 1.25;
+  margin-top: 25px;
+  margin-bottom: 0.7em; }
+  @media (min-width: 641px) {
+    .ms-rtestate-field h4,
+    .ms-rtestate-field h4.ms-rteElement-H2 {
+      font-size: 19px;
+      line-height: 1.3157894737;
+      margin-top: 30px; } }
+
+.ms-rtestate-field p,
+.ms-rtestate-field p.ms-rteElement-P {
+  margin-top: 0.3125em;
+  margin-bottom: 1.25em;
+  line-height: 1.4; }
+  @media (min-width: 641px) {
+    .ms-rtestate-field p,
+    .ms-rtestate-field p.ms-rteElement-P {
+      margin-top: 0.2631578947em;
+      margin-bottom: 1.0526315789em; } }
+
+input[type=button],
+input[type=reset],
+input[type=submit],
+button {
   min-width: 1em; }
 
-hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
+hr.ms-rteElement-spacer,
+hr.spacerTop,
+hr.spacerBottom {
   border-top: none;
   padding-bottom: 1.875em;
   margin: 0px;
@@ -17593,13 +17688,13 @@ ul.promo-group {
   padding: 20px;
   width: 100%;
   background: #efefef; }
-  .sectionSubsite h2 {
+  .sectionSubsite h2, .sectionSubsite h3 {
     margin-top: 0;
     font-size: 22px; }
-    .sectionSubsite h2 img {
+    .sectionSubsite h2 img, .sectionSubsite h3 img {
       float: left;
       padding: 0 10px 10px 0; }
-    .sectionSubsite h2 i {
+    .sectionSubsite h2 i, .sectionSubsite h3 i {
       font-family: FontAwesome;
       font-size: 20px;
       border-radius: 50%;
@@ -17873,31 +17968,58 @@ CAROUSEL BOOTSTRAP
 ul.accordion {
   list-style: none;
   padding: 0px;
-  margin: 0px 0 1.875em 0;
-  border-top: 1px solid #dedede; }
+  margin: 30px 0;
+  border-top: 1px solid #DCDEE1; }
   ul.accordion li {
-    border-bottom: 1px solid #dedede; }
+    border-color: #DCDEE1;
+    border-bottom: 1px solid #DCDEE1;
+    border-left: 5px solid transparent !important; }
+    ul.accordion li:hover {
+      border-left: 5px solid #007299 !important; }
+    ul.accordion li ul li,
+    ul.accordion li ul li:hover {
+      border: 0 !important; }
     ul.accordion li a.header, ul.accordion li .header.link, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link {
       display: block;
-      padding: 15px 40px 15px 15px;
       position: relative;
-      font-size: 20px;
-      text-decoration: none !important; }
+      border: none !important;
+      font-weight: 700;
+      padding: 20px 20px 20px 60px;
+      text-decoration: none !important;
+      font-size: 19px; }
+      @media (max-width: 641px) {
+        ul.accordion li a.header, ul.accordion li .header.link, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link {
+          padding: 15px 15px 15px 35px;
+          font-size: 16px; } }
       ul.accordion li a.header:hover, ul.accordion li .header.link:hover, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link:hover, ul.accordion li a.header:focus, ul.accordion li .header.link:focus, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link:focus {
         background: rgba(0, 0, 0, 0.05); }
       ul.accordion li a.header:after, ul.accordion li .header.link:after, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link:after {
         font-family: FontAwesome;
-        font-size: 18px;
+        font-size: 19px;
         content: "\f067";
         position: absolute;
-        right: 10px;
-        color: blue; }
+        right: auto;
+        left: 20px;
+        top: 21px;
+        margin-top: 0;
+        color: #007299;
+        font-weight: 400; }
+        @media (max-width: 641px) {
+          ul.accordion li a.header:after, ul.accordion li .header.link:after, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link:after {
+            font-size: 16px;
+            left: 10px;
+            top: 16px; } }
       ul.accordion li a.header.active:after, ul.accordion li .header.active.link:after, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.active.btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.active.btn-link:after {
         content: "\f068"; }
-    ul.accordion li div div {
-      padding: 15px; }
-      ul.accordion li div div li {
-        border: none; }
+    ul.accordion li div {
+      padding: 0 !important; }
+    ul.accordion li div.content-block {
+      padding: 15px 20px 5px 60px !important; }
+      @media (max-width: 641px) {
+        ul.accordion li div.content-block {
+          padding: 10px 10px 5px 35px !important; } }
+  ul.accordion .list a, ul.accordion .freeContentArea ul a, .freeContentArea ul.accordion ul a, ul.accordion .list .link, ul.accordion .freeContentArea ul .link, .freeContentArea ul.accordion ul .link, ul.accordion .list .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion .list .btn-link, ul.accordion .freeContentArea ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion .freeContentArea ul .btn-link, .freeContentArea ul.accordion ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .freeContentArea ul.accordion ul .btn-link {
+    text-decoration: none; }
 
 .alert {
   padding: 0px;
@@ -19030,7 +19152,8 @@ table.styledTable td,
 .part-title {
   font-family: "Open Sans", sans-serif, sans-serif;
   font-weight: 400;
-  text-transform: none; }
+  text-transform: none;
+  color: #212224; }
   h1.top,
   h2.top,
   h3.top,
@@ -19256,6 +19379,7 @@ table.styledTable td,
       margin-bottom: 20px; } }
 
 p,
+p.sharepoint,
 .link-back,
 .hidden-text,
 .text-link.reveal {
@@ -19263,6 +19387,7 @@ p,
   margin-bottom: 1em; }
   @media (min-width: 641px) {
     p,
+    p.sharepoint,
     .link-back,
     .hidden-text,
     .text-link.reveal {
@@ -19289,7 +19414,8 @@ p,
 .text-description {
   margin-bottom: 0;
   font-size: 16px;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #666B76; }
   @media (min-width: 641px) {
     .text-description {
       font-size: 19px; } }
@@ -19331,7 +19457,7 @@ p,
     font-size: 30px; }
   .notice strong {
     display: block;
-    padding-left: 55px;
+    padding-left: 55px !important;
     margin-left: -15px; }
 
 a, .link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link {
@@ -19415,10 +19541,18 @@ ol {
 
 blockquote {
   border-left: 15px solid #3399BB; }
+  blockquote p {
+    font-size: 24px !important; }
+    @media (max-width: 641px) {
+      blockquote p {
+        font-size: 19px !important; } }
   blockquote span.open-quote:after {
     color: #DCDEE1; }
   blockquote footer {
     color: #212224; }
+    @media (max-width: 641px) {
+      blockquote footer {
+        font-size: 16px !important; } }
 
 .panel, #findMyNearestSearch {
   background: #E5F1F5;
