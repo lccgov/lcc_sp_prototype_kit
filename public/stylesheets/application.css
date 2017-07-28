@@ -20453,6 +20453,29 @@ hr {
     font-size: 24px;
     margin: 0; }
 
+.intro {
+  text-align: center;
+  max-width: 35em;
+  margin: 70px auto; }
+  @media (max-width: 641px) {
+    .intro {
+      margin: 40px auto; } }
+  .intro h1 {
+    font-size: 70px;
+    margin: 0 0 25px; }
+    @media (max-width: 641px) {
+      .intro h1 {
+        font-size: 40px;
+        margin: 0 0 20px; } }
+    .intro h1 span {
+      font-size: 20px;
+      display: block; }
+  .intro p.lead {
+    margin: 0 0 40px; }
+    @media (max-width: 641px) {
+      .intro p.lead {
+        margin: 0 0 30px; } }
+
 .example {
   position: relative;
   overflow: hidden;
@@ -21618,6 +21641,117 @@ hr {
   .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo i, #myChatLinkContainer #myChatLink a .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo i, #myChatLinkContainer #myChatLink .link .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo i, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink i, .col-md-8 #SearchBox .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON i {
     display: none; }
 
+#paging .contentPod a, #paging .contentPod .link, #paging .contentPod .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link {
+  text-decoration: none !important; }
+  #paging .contentPod a:hover, #paging .contentPod .link:hover, #paging .contentPod .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link:hover {
+    background: #F6F7FA; }
+  #paging .contentPod a p.date, #paging .contentPod .link p.date, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link p.date {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 700; }
+  #paging .contentPod a h3, #paging .contentPod .link h3, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link h3 {
+    color: #007299;
+    margin-bottom: 10px;
+    text-decoration: underline; }
+
+#archive .content-block {
+  padding: 20px 0 !important; }
+
+.ie8 .container-fluid {
+  max-width: 980px; }
+
+.limitedrte-Style-BUTTON {
+  display: inline-block;
+  cursor: pointer; }
+
+.freeContentArea ul.list, .freeContentArea ul {
+  list-style: none; }
+
+.freeContentArea ul {
+  list-style-type: disc; }
+
+table.styledTable {
+  font-size: 1em;
+  margin: 20px 0;
+  background: transparent;
+  border-collapse: collapse;
+  width: 100%; }
+  table.styledTable th {
+    padding: 8px;
+    text-align: left;
+    border: 0;
+    background: transparent;
+    margin: 0px; }
+  table.styledTable tr.resultsAlternatingRowStyle td {
+    background: #f6f6f6; }
+  table.styledTable td {
+    padding: 8px;
+    border: 0;
+    margin: 0px;
+    background: #fff; }
+  table.styledTable tbody th {
+    background: #fff; }
+  table.styledTable img {
+    margin: 0 30%; }
+  table.styledTable p {
+    font-size: 1em;
+    padding: 0 0 10px 0; }
+
+table.styledTable {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px; }
+
+table.styledTable th,
+.ms-rteTableHeaderRow-default th {
+  font-weight: 700 !important;
+  color: #212224 !important; }
+
+.ms-rteTable-default,
+.ms-rteTable-default > tbody > tr > td,
+.ms-rteTable-default > tbody > tr > th,
+td.ms-rteTable-default,
+th.ms-rteTable-default,
+.ms-rtetablecells {
+  border: 0;
+  color: #212224 !important; }
+
+table.styledTable th,
+table.styledTable td,
+.ms-rteTable-default th,
+.ms-rteTable-default td {
+  padding: 0.63158em 1.05263em 0.47368em 0;
+  text-align: left;
+  border-bottom: 1px solid #DCDEE1 !important; }
+
+@media (max-width: 600px) {
+  .docList .listWebpart ul li {
+    padding: 5px 0; } }
+
+.docList .listWebpart ul li a, .docList .listWebpart ul li .link, .docList .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .listWebpart ul li .btn-link {
+  text-decoration: none;
+  border-color: #DCDEE1; }
+  .docList .listWebpart ul li a span.thirdInfo, .docList .listWebpart ul li .link span.thirdInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .listWebpart ul li .btn-link span.thirdInfo {
+    font-weight: 300;
+    color: #666B76; }
+
+.docList.one .listWebpart ul li {
+  float: none; }
+  .docList.one .listWebpart ul li a:before, .docList.one .listWebpart ul li .link:before, .docList.one .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one .listWebpart ul li .btn-link:before {
+    top: 22px; }
+    @media (max-width: 641px) {
+      .docList.one .listWebpart ul li a:before, .docList.one .listWebpart ul li .link:before, .docList.one .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one .listWebpart ul li .btn-link:before {
+        top: 20px; } }
+  .docList.one .listWebpart ul li:first-of-type a, .docList.one .listWebpart ul li:first-of-type .link, .docList.one .listWebpart ul li:first-of-type .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one .listWebpart ul li:first-of-type .btn-link {
+    border-top: 1px solid #DCDEE1; }
+
+.docList.one, .docList.two, .docList.three, .docList.four, .docList.five {
+  margin: 30px 0; }
+  .docList.one ul li a, .docList.one ul li .link, .docList.one ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one ul li .btn-link, .docList.two ul li a, .docList.two ul li .link, .docList.two ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.two ul li .btn-link, .docList.three ul li a, .docList.three ul li .link, .docList.three ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.three ul li .btn-link, .docList.four ul li a, .docList.four ul li .link, .docList.four ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.four ul li .btn-link, .docList.five ul li a, .docList.five ul li .link, .docList.five ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.five ul li .btn-link {
+    border-bottom: 1px solid #DCDEE1; }
+
 .groupPromo ul {
   margin-top: 0; }
   .groupPromo ul li a, .groupPromo ul li .link, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link {
@@ -21737,117 +21871,6 @@ hr {
     padding-bottom: 50px; }
   .mega-promo .mega-promo__item.featured a, .mega-promo .mega-promo__item.featured .link, .mega-promo .mega-promo__item.featured .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item.featured .btn-link {
     padding-bottom: 0px; } }
-
-@media (max-width: 600px) {
-  .docList .listWebpart ul li {
-    padding: 5px 0; } }
-
-.docList .listWebpart ul li a, .docList .listWebpart ul li .link, .docList .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .listWebpart ul li .btn-link {
-  text-decoration: none;
-  border-color: #DCDEE1; }
-  .docList .listWebpart ul li a span.thirdInfo, .docList .listWebpart ul li .link span.thirdInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .listWebpart ul li .btn-link span.thirdInfo {
-    font-weight: 300;
-    color: #666B76; }
-
-.docList.one .listWebpart ul li {
-  float: none; }
-  .docList.one .listWebpart ul li a:before, .docList.one .listWebpart ul li .link:before, .docList.one .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one .listWebpart ul li .btn-link:before {
-    top: 22px; }
-    @media (max-width: 641px) {
-      .docList.one .listWebpart ul li a:before, .docList.one .listWebpart ul li .link:before, .docList.one .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one .listWebpart ul li .btn-link:before {
-        top: 20px; } }
-  .docList.one .listWebpart ul li:first-of-type a, .docList.one .listWebpart ul li:first-of-type .link, .docList.one .listWebpart ul li:first-of-type .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one .listWebpart ul li:first-of-type .btn-link {
-    border-top: 1px solid #DCDEE1; }
-
-.docList.one, .docList.two, .docList.three, .docList.four, .docList.five {
-  margin: 30px 0; }
-  .docList.one ul li a, .docList.one ul li .link, .docList.one ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one ul li .btn-link, .docList.two ul li a, .docList.two ul li .link, .docList.two ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.two ul li .btn-link, .docList.three ul li a, .docList.three ul li .link, .docList.three ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.three ul li .btn-link, .docList.four ul li a, .docList.four ul li .link, .docList.four ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.four ul li .btn-link, .docList.five ul li a, .docList.five ul li .link, .docList.five ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.five ul li .btn-link {
-    border-bottom: 1px solid #DCDEE1; }
-
-#paging .contentPod a, #paging .contentPod .link, #paging .contentPod .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link {
-  text-decoration: none !important; }
-  #paging .contentPod a:hover, #paging .contentPod .link:hover, #paging .contentPod .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link:hover {
-    background: #F6F7FA; }
-  #paging .contentPod a p.date, #paging .contentPod .link p.date, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link p.date {
-    margin-top: 0;
-    font-size: 14px;
-    font-weight: 700; }
-  #paging .contentPod a h3, #paging .contentPod .link h3, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link h3 {
-    color: #007299;
-    margin-bottom: 10px;
-    text-decoration: underline; }
-
-#archive .content-block {
-  padding: 20px 0 !important; }
-
-.ie8 .container-fluid {
-  max-width: 980px; }
-
-.limitedrte-Style-BUTTON {
-  display: inline-block;
-  cursor: pointer; }
-
-.freeContentArea ul.list, .freeContentArea ul {
-  list-style: none; }
-
-.freeContentArea ul {
-  list-style-type: disc; }
-
-table.styledTable {
-  font-size: 1em;
-  margin: 20px 0;
-  background: transparent;
-  border-collapse: collapse;
-  width: 100%; }
-  table.styledTable th {
-    padding: 8px;
-    text-align: left;
-    border: 0;
-    background: transparent;
-    margin: 0px; }
-  table.styledTable tr.resultsAlternatingRowStyle td {
-    background: #f6f6f6; }
-  table.styledTable td {
-    padding: 8px;
-    border: 0;
-    margin: 0px;
-    background: #fff; }
-  table.styledTable tbody th {
-    background: #fff; }
-  table.styledTable img {
-    margin: 0 30%; }
-  table.styledTable p {
-    font-size: 1em;
-    padding: 0 0 10px 0; }
-
-table.styledTable {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  margin-top: 5px;
-  margin-bottom: 20px; }
-
-table.styledTable th,
-.ms-rteTableHeaderRow-default th {
-  font-weight: 700 !important;
-  color: #212224 !important; }
-
-.ms-rteTable-default,
-.ms-rteTable-default > tbody > tr > td,
-.ms-rteTable-default > tbody > tr > th,
-td.ms-rteTable-default,
-th.ms-rteTable-default,
-.ms-rtetablecells {
-  border: 0;
-  color: #212224 !important; }
-
-table.styledTable th,
-table.styledTable td,
-.ms-rteTable-default th,
-.ms-rteTable-default td {
-  padding: 0.63158em 1.05263em 0.47368em 0;
-  text-align: left;
-  border-bottom: 1px solid #DCDEE1 !important; }
 
 footer.main {
   margin-top: 50px; }
@@ -22100,11 +22123,6 @@ html {
 hr {
   border-color: rgba(220, 222, 225, 0.5); }
 
-.sub-section-heading {
-  border-bottom: 1px solid #DCDEE1;
-  margin: 0 0 20px;
-  padding-bottom: 10px; }
-
 .btn-primary, input[type=button], #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .col-md-8 #SearchBox .ms-srch-sb-searchLink, .limitedrte-Style-BUTTON {
   border-bottom: 2px solid #006700; }
 
@@ -22139,26 +22157,3 @@ hr {
 
 .lead a[rel="external"], .lead [rel="external"].link, .lead .nearestItem-search-features-inner a .nearestItem-showonmap-link [rel="external"].btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .lead [rel="external"].btn-link {
   margin-right: 32px; }
-
-.intro {
-  text-align: center;
-  max-width: 35em;
-  margin: 70px auto; }
-  @media (max-width: 641px) {
-    .intro {
-      margin: 40px auto; } }
-  .intro h1 {
-    font-size: 70px;
-    margin: 0 0 25px; }
-    @media (max-width: 641px) {
-      .intro h1 {
-        font-size: 40px;
-        margin: 0 0 20px; } }
-    .intro h1 span {
-      font-size: 20px;
-      display: block; }
-  .intro p.lead {
-    margin: 0 0 40px; }
-    @media (max-width: 641px) {
-      .intro p.lead {
-        margin: 0 0 30px; } }
