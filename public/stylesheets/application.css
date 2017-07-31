@@ -20241,6 +20241,10 @@ nav:first-of-type .sideNav {
   .list-atoz li:first-child h2 {
     margin-top: 0; }
 
+#DeltaPlaceHolderMain .atoz {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 .ms-srch-sb > input {
   -webkit-border-radius: 4px !important;
   -moz-border-radius: 4px !important;
@@ -21852,12 +21856,14 @@ footer.main {
               display: none; } }
         footer.main .footerGlobal nav ul li:last-child:after {
           display: none; }
-    footer.main .footerGlobal .logo-footer span {
+    footer.main .footerGlobal .logo-footer span,
+    footer.main .footerGlobal .logo-footer img {
       margin: 0 0 1.25em 0;
       width: 220px;
       height: 66px; }
       @media (max-width: 500px) {
-        footer.main .footerGlobal .logo-footer span {
+        footer.main .footerGlobal .logo-footer span,
+        footer.main .footerGlobal .logo-footer img {
           margin: 0 0 20px; } }
     footer.main .footerGlobal .socialBookmarks {
       float: right;
@@ -22094,3 +22100,6 @@ hr {
 
 .lead a[rel="external"], .lead [rel="external"].link, .lead .nearestItem-search-features-inner a .nearestItem-showonmap-link [rel="external"].btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .lead [rel="external"].btn-link {
   margin-right: 32px; }
+
+.atoz ul li:last-of-type a, .atoz ul li:last-of-type .link, .atoz ul li:last-of-type .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .atoz ul li:last-of-type .btn-link {
+  width: 74px; }
