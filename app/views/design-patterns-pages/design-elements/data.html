@@ -40,19 +40,71 @@
 {% endblock %}
 
 {% block pageContent %}
-<div class="text">
-    <p class="lead">Consider putting content into tables to make it easier to scan.</p>
-</div>
 <h2 class="heading-medium" id="data-table-numeric">Numeric tabular data</h2>
-<ul class="text list list-bullet">
-    <li>when comparing rows of numbers, align numbers to the right in table cells</li>
-    <li>use the GOV.UK frontend toolkit’s <a href="https://github.com/alphagov/govuk_frontend_toolkit/blob/master/docs/mixins.md#tabular-numbers" rel="external">tabular numbers</a> to allow numbers of the same width to be more easily compared</li>
-  </ul>
   <div class="example">
-      {% include "includes/design-patterns/table-data-numeric.html" %}
+      <table>
+        <thead>
+            <tr>
+            <th scope="col">Date</th>
+            <th class="numeric" scope="col">Paper form</th>
+            <th class="numeric" scope="col">Digital</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>25 November to 1 December 2013</td>
+            <td class="numeric">2,763</td>
+            <td class="numeric">1,792</td>
+            </tr>
+            <tr>
+            <td>2 to 8 December 2013</td>
+            <td class="numeric">2,850</td>
+            <td class="numeric">1,740</td>
+            </tr>
+            <tr>
+            <td>9 to 15 December 2013</td>
+            <td class="numeric">2,388</td>
+            <td class="numeric">1,683</td>
+            </tr>
+        </tbody>
+    </table>
   </div>
-<hr>
-
+  <div class="code-reveal">
+    <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#data-table-numeric-reveal" aria-expanded="false" aria-controls="data-table-numeric-reveal">
+    Show code
+    </a>
+    <div class="collapse exampleCode" id="data-table-numeric-reveal">
+        <pre>
+            <code class="line-numbers language-markup">
+            &lt;table>
+            &lt;thead>
+                &lt;tr>
+                    &lt;th scope="col">Date&lt;/th>
+                    &lt;th class="numeric" scope="col">Paper form&lt;/th>
+                    &lt;th class="numeric" scope="col">Digital&lt;/th>
+                &lt;/tr>
+            &lt;/thead>
+            &lt;tbody>
+                &lt;tr>
+                    &lt;td>25 November to 1 December 2013&lt;/td>
+                    &lt;td class="numeric">2,763&lt;/td>
+                    &lt;td class="numeric">1,792&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>2 to 8 December 2013&lt;/td>
+                    &lt;td class="numeric">2,850&lt;/td>
+                    &lt;td class="numeric">1,740&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>9 to 15 December 2013&lt;/td>
+                    &lt;td class="numeric">2,388&lt;/td>
+                    &lt;td class="numeric">1,683&lt;/td>
+                &lt;/tr>
+            &lt;/tbody>
+            &lt;/table>
+            </code>
+        </pre>
+    </div>
 </div>
 {% endblock %}
 

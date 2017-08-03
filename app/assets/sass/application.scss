@@ -315,3 +315,59 @@ hr{
 .atoz ul li:last-of-type a{
     width:74px;
 }
+
+//promo
+.promo a{
+    span {
+        background: $base-link-color;
+        font-family:$font-secondary;
+        font-weight:600;
+        padding: 20px;
+
+        &:after{
+            bottom:17px;
+            right: 20px;
+            font-size:26px;
+            height:auto;
+            width:auto;
+        }
+    }
+
+    &:hover span{
+        padding: 20px 20px 30px 20px;
+        background: rgba($base-link-color,0.95);
+        text-decoration:underline;
+
+        &:after{       
+            bottom:27px;
+            right: 20px;
+            text-decoration:none;
+        }
+    }
+}
+
+.promoListWebpart {
+    ol, ul{
+        margin:0;
+        padding:0;
+    }
+}
+
+//right hand column top margin
+aside.col-md-4{
+    margin-top:50px;
+
+    @media (max-width: 990px) {
+        margin-top:30px;
+    }
+}
+
+.btn[rel=external] {
+    @extend .btn-arrow;
+    margin: 0 0 20px;
+
+    &:after{
+        content: "\f08e";
+        width: 41px;
+    }
+}
