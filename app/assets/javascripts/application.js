@@ -1,3 +1,11 @@
+//removes top margin frpm right hand column if empty
+function isEmpty( el ){
+      return !$.trim(el.html())
+  }
+  if (isEmpty($('aside.col-md-4'))) {
+      $('aside.col-md-4').addClass('empty');
+  }
+
 //reveal text swap
 $('.reveal-code').click(function(){
 		var $this = $(this);

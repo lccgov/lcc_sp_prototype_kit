@@ -269,14 +269,6 @@ hr{
     border-bottom:2px solid darken($secondary-button-background-color,5%);
 }
 
-.btn{
-    font-weight:400;
-
-    &:focus{
-        border-color:$focus-color !important;
-    }
-}
-
 //back to top (focus fix)
 .cd-top:focus{
     background:$focus-color url("images/cd-top-arrow.svg") no-repeat center 50% !important;
@@ -360,14 +352,23 @@ aside.col-md-4{
     @media (max-width: 990px) {
         margin-top:30px;
     }
+
+    &.empty{
+        margin-top:0 !important;
+    }
 }
 
-.btn[rel=external] {
-    @extend .btn-arrow;
-    margin: 0 0 20px;
 
-    &:after{
-        content: "\f08e";
-        width: 41px;
+//need adding to front-end toolkit
+.list-atoz{
+    padding:0;
+    float:none;
+
+    li{
+        padding:0;
+
+        h2{
+            margin:20px 0;
+        }
     }
 }
