@@ -1,7 +1,7 @@
 {% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
-	Report a change of name
+	Tell us if we need to change your name
 {% endblock %}
 
 
@@ -51,62 +51,91 @@
 
     <p class="lead">It is important that you tell us straight away if the name on your account needs changing.</p>
 
-    <h2>Name change due to marriage or divorce</h2>
-    <p>Provide us with your:</p>
-    <ul class="list list-bullet bottom">
-        <li>council tax reference number</li>
-        <li>previous and current names</li>
-        <li>full address</li>
+    <ul class="accordion" data-module="accordion">
+        <li>
+            <div class="accordion-drawer">
+                <a href="#" class="header"><span class="sr-only">Click to expand </span>Changing your name if you claim housing benefit or council tax support</a>
+                <div style="display: none;" class="content-block">
+                <p>Print a copy of the Change in circumstances form. Complete section 3, sign it and hand it in at your nearest <a href="http://www.leeds.gov.uk/residents/Pages/one-stop-centres.aspx">One Stop Centre</a>. You can also post it to:</p>
+                <div class="text-block">
+                    <p>Welfare and Benefits<br/>
+                    Selectapost 15<br/>
+                    Leeds<br/>
+                    LS2 8BA</p>
+                </div>
+                <div class="docList one">
+                    <div class="listWebpart">
+                        <ul>
+                            <li class="pdf"><a href="http://www.leeds.gov.uk/docs/Change of Circumstances Form.pdf"><span class="info">Change in circumstances form<span class="arrow"></span></span><span class="thirdInfo">(PDF, 27MB)</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="accordion-drawer">
+                <a href="#" class="header"><span class="sr-only">Click to expand </span>Name change due to marriage or divorce</a>
+                <div style="display: none;" class="content-block">
+                <p>Provide us with your:</p>
+                <ul class="list list-bullet">
+                    <li>council tax account number</li>
+                    <li>name as it appears on your bill at the moment</li>
+                    <li>what your name needs changing to</li>
+                    <li>full address</li>
+                </ul>
+                <div class="text-block">
+                    <strong>Telephone:</strong> 0113 222 4404 (Monday to Friday, 9am to 5pm)<br/>
+                    <strong>Email:</strong> <a href="mailto:council.tax@leeds.gov.uk">council.tax@leeds.gov.uk</a>
+                </div>
+            </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="accordion-drawer">
+                <a href="#" class="header"><span class="sr-only">Click to expand </span>Name on your bill is incorrect</a>
+                <div style="display: none;" class="content-block">
+                <p>Provide us with your:</p>
+                <ul class="list list-bullet">
+                    <li>council tax account number</li>
+                    <li>name as it appears on your bill at the moment</li>
+                    <li>what your name needs changing to</li>
+                    <li>full address</li>
+                </ul>
+                <div class="text-block">
+                    <strong>Telephone:</strong> 0113 222 4404 (Monday to Friday, 9am to 5pm)<br/>
+                    <strong>Email:</strong> <a href="mailto:council.tax@leeds.gov.uk">council.tax@leeds.gov.uk</a>
+                </div>
+            </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="accordion-drawer">
+                <a href="#" class="header"><span class="sr-only">Click to expand </span>Name change by deed poll</a>
+                <div style="display: none;" class="content-block">
+                <p>If you have changed your name by deed poll, you will need to provide us with the following:</p>
+                <ul class="list list-bullet">
+                    <li>council tax account number</li>
+                    <li>name as it appears on your bill at the moment</li>
+                    <li>what your name needs changing to</li>
+                    <li>copy of your deed poll certificate</li>
+                    <li>full address</li>
+                </ul>
+                <p>You can bring this to your nearest <a href="http://www.leeds.gov.uk/residents/Pages/one-stop-centres.aspx">One Stop Centre</a>, or post it to:</p>
+                <div class="text-block">
+                    <p>Leeds City Council<br/>
+                    PO Box 60<br/>
+                    Leeds<br/>
+                    LS2 8JR</p>
+                </div>
+            </div>
+            </div>
+        </li>
     </ul>
-
-    <h2>Name on your account is incorrect</h2>
-    <p>Provide us with your:</p>
-    <ul class="list list-bullet bottom">
-        <li>council tax reference number</li>
-        <li>full name and the name as it appears on your current account</li>
-        <li>full address</li>
-    </ul>
-
-    <div class="text-block">
-        <p><strong>Telephone:</strong> 0113 222 4404 (Monday to Friday, 9am to 5pm)<br/>
-        <strong>Email:</strong> <a href="mailto:council.tax@leeds.gov.uk">council.tax@leeds.gov.uk</a></p>
-    </div>
-
-    <h2>Name change by deed poll</h2>
-    <p>If you have changed your name by deed poll, you will need to provide us with the following:</p>
-    <ul class="list list-bullet">
-        <li>your previous and current name</li>
-        <li>full address </li>
-        <li>council tax reference number</li>
-        <li>copy of your deed poll certificate</li>
-    </ul>
-
-    <p>You can hand these in to a <a href="http://www.leeds.gov.uk/residents/Pages/one-stop-centres.aspx">One Stop Centre</a> or post them to:</p>
-
-    <div class="text-block">
-        <p>Leeds City Council<br/>
-        PO BOX 60<br/>
-        Leeds<br/>
-        LS2 8JR</p>
-    </div>
-
-    <h2>Changing your name if you claim housing benefit or council tax support</h2>
-    <p>Print a copy of the Change in circumstances form. Complete section 3, sign and hand it in at your nearest <a href="http://www.leeds.gov.uk/residents/Pages/one-stop-centres.aspx">One Stop Centre</a> or post it to us at:<?p>
-    <div class="text-block">
-        <p>Welfare and Benefits<br/>
-        Selectapost 15<br/>
-        Leeds<br/>
-        LS2 8BA</p>
-    </div>
-
-    <div class="docList one">
-        <div class="listWebpart">
-            <ul>
-                <li class="pdf"><a href="http://www.leeds.gov.uk/docs/Change of Circumstances Form.pdf"><span class="info">Change in circumstances form<span class="arrow"></span></span><span class="thirdInfo">(PDF, 0.9MB)</span></a></li>
-            </ul>
-        </div>
-    </div>
-
+ 
 </div>
 
 {% endblock %}
@@ -123,7 +152,9 @@
     <div class="sideNav">
         <h3>Council Tax</h3> 	    	
         <ul class="nav">
-            <li><a class="item" href="/pages-lcc/council-tax/report-a-change/change-in-circumstances.html" title="" id="">Change in circumstances</a></li>	        	    
+            <li><a class="item" href="/pages-lcc/council-tax/discounts-and-exemptions/discounts-and-exemptions" title="" id="">Discounts and exemptions</a></li>
+            <li><a class="item" href="/pages-lcc/council-tax/report-a-change/report-a-change-of-address" title="" id="">Tell us about your change of address</a></li>
+            <li><a class="item" href="pages-lcc/council-tax/report-a-change/other-changes" title="" id="">Other changes you need to tell us about</a></li> 	        	    
             <li class="sideNav__more">
                 <a href="/pages-lcc/council-tax/council-tax.html">More <span class="sr-only">in Council Tax</span></a>            
             </li>                                                            	        
