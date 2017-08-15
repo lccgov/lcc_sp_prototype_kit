@@ -16428,6 +16428,8 @@ ul.cbs-List {
 .ms-rtestate-field h1,
 .ms-rtestate-field .heading-large, .ms-rtestate-field h2.ms-rteElement-H2, .ms-rtestate-field h1.heading-large, .ms-rtestate-field h2.heading-large, .ms-rtestate-field h3.heading-large, .ms-rtestate-field h4.heading-large,
 .ms-rtestate-field h2,
+.ms-rtestate-field .part-content .part-title, .part-content
+.ms-rtestate-field .part-title,
 .ms-rtestate-field .heading-medium, .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium, .ms-rtestate-field h2.heading-medium, .ms-rtestate-field h3.heading-medium, .ms-rtestate-field h4.heading-medium,
 .ms-rtestate-field h3,
 .ms-rtestate-field legend,
@@ -19134,6 +19136,7 @@ h1,
 .ms-rtestate-field h3.heading-large,
 .ms-rtestate-field h4.heading-large,
 h2,
+.part-content .part-title,
 .heading-medium,
 .ms-rtestate-field h3,
 .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium,
@@ -19195,6 +19198,7 @@ table.styledTable td,
   .ms-rtestate-field h3.top.heading-large,
   .ms-rtestate-field h4.top.heading-large,
   h2.top,
+  .part-content .top.part-title,
   .heading-medium.top,
   .ms-rtestate-field h3.ms-rteElement-H2 h1.top.heading-medium,
   .ms-rtestate-field h2.top.heading-medium,
@@ -19248,6 +19252,7 @@ table.styledTable td,
   .ms-rtestate-field h3.bottom.heading-large,
   .ms-rtestate-field h4.bottom.heading-large,
   h2.bottom,
+  .part-content .bottom.part-title,
   .heading-medium.bottom,
   .ms-rtestate-field h3.ms-rteElement-H2 h1.bottom.heading-medium,
   .ms-rtestate-field h2.bottom.heading-medium,
@@ -19304,6 +19309,7 @@ h1,
 .ms-rtestate-field h3.heading-large,
 .ms-rtestate-field h4.heading-large,
 h2,
+.part-content .part-title,
 .heading-medium,
 .ms-rtestate-field h3,
 .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium,
@@ -19417,7 +19423,7 @@ table.styledTable td,
 .ms-rtestate-field h1.heading-large,
 .ms-rtestate-field h2.heading-large,
 .ms-rtestate-field h3.heading-large,
-.ms-rtestate-field h4.heading-large, h2 {
+.ms-rtestate-field h4.heading-large, h2, .part-content .part-title {
   font-size: 24px;
   line-height: 1.25;
   margin-top: 30px;
@@ -19428,7 +19434,7 @@ table.styledTable td,
     .ms-rtestate-field h1.heading-large,
     .ms-rtestate-field h2.heading-large,
     .ms-rtestate-field h3.heading-large,
-    .ms-rtestate-field h4.heading-large, h2 {
+    .ms-rtestate-field h4.heading-large, h2, .part-content .part-title {
       font-size: 32px;
       line-height: 1.25;
       margin-top: 50px;
@@ -19527,7 +19533,7 @@ p.sharepoint,
   .lead a[rel="external"], .lead [rel="external"].link, .lead .nearestItem-search-features-inner a .nearestItem-showonmap-link [rel="external"].btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .lead [rel="external"].btn-link {
     margin-right: 32px; }
 
-.text {
+.text, .part-content {
   max-width: 35em; }
 
 .text-description {
@@ -19707,7 +19713,7 @@ ul + .heading-large, .ms-rtestate-field ul + h2,
 .ms-rtestate-field ul + h1.heading-large,
 .ms-rtestate-field ul + h2.heading-large,
 .ms-rtestate-field ul + h3.heading-large,
-.ms-rtestate-field ul + h4.heading-large, ul + h2 {
+.ms-rtestate-field ul + h4.heading-large, ul + h2, .part-content ul + .part-title {
   margin-top: 26px; }
   @media (max-width: 641px) {
     ul + .heading-large, .ms-rtestate-field ul + h2,
@@ -19715,7 +19721,7 @@ ul + .heading-large, .ms-rtestate-field ul + h2,
     .ms-rtestate-field ul + h1.heading-large,
     .ms-rtestate-field ul + h2.heading-large,
     .ms-rtestate-field ul + h3.heading-large,
-    .ms-rtestate-field ul + h4.heading-large, ul + h2 {
+    .ms-rtestate-field ul + h4.heading-large, ul + h2, .part-content ul + .part-title {
       margin-top: 6px; } }
 
 ul + .heading-medium, .ms-rtestate-field ul + h3,
@@ -21659,7 +21665,7 @@ hr {
       -ms-border-radius: 100%;
       border-radius: 100%;
       margin: 0 auto; }
-      .swatch .swatch-item-wrapper .swatch-item .colour.text {
+      .swatch .swatch-item-wrapper .swatch-item .colour.text, .swatch .swatch-item-wrapper .swatch-item .colour.part-content {
         background: #212224; }
       .swatch .swatch-item-wrapper .swatch-item .colour.text-secondary {
         background: #666B76; }
@@ -23270,3 +23276,13 @@ aside.col-md-4 {
 
 p + .panel, .sub-section-nav.panels p + .sub-section, p + #findMyNearestSearch {
   margin: 50px 0; }
+
+.pagination-nav ul li.pagination-nav__previous-page a:before, .pagination-nav ul li.pagination-nav__previous-page .link:before, .pagination-nav ul li.pagination-nav__previous-page .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .pagination-nav ul li.pagination-nav__previous-page .btn-link:before,
+.pagination-nav ul li.pagination-nav__next-page a:before,
+.pagination-nav ul li.pagination-nav__next-page .link:before,
+.pagination-nav ul li.pagination-nav__next-page .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.pagination-nav ul li.pagination-nav__next-page .btn-link:before {
+  color: #3399BB; }
+
+.text-highlight p + ul, .text-block p + ul {
+  margin-top: 15px; }

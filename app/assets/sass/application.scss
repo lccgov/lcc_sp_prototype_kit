@@ -376,3 +376,23 @@ aside.col-md-4{
 p + .panel{
     margin:50px 0;
 }
+
+.part-content{
+    @extend .text;
+
+    .part-title {
+        @extend .heading-large;
+    }
+}
+
+
+.pagination-nav ul li.pagination-nav__previous-page a:before,
+.pagination-nav ul li.pagination-nav__next-page a:before{
+    color:$light-blue;
+}
+
+.text-highlight {
+    p + ul{
+        margin-top:15px;
+    }
+}
