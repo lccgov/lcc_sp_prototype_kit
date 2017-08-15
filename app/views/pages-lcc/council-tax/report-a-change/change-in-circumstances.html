@@ -1,7 +1,7 @@
 {% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
-	Change in circumstances
+	Report a change
 {% endblock %}
 
 
@@ -12,7 +12,7 @@
  
 
 {% block header %}
-    Change in circumstances
+    Report a change
 {% endblock%}
 
  {% block main_nav %}
@@ -34,7 +34,7 @@
         <ul class="">
             <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span><a href="/pages-lcc/council-tax/council-tax.html">Council Tax</a>
                 <ul class="">
-                    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Change in circumstances</li>
+                    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Report a change</li>
                 </ul>
             </li>
         </ul>
@@ -52,7 +52,8 @@
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-{% include "includes/lcc-components/council-tax/pods-report-a-change.html" %}
+{% include "includes/lcc-components/council-tax/pods-report-a-change.html" %} 
+{% include "includes/lcc-components/council-tax/subsection-report-a-change.html" %}
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
