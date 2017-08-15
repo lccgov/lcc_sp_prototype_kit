@@ -396,3 +396,18 @@ p + .panel{
         margin-top:15px;
     }
 }
+
+h2 + h3{
+    margin-top:0;
+}
+
+.btn + h2,
+.btn + h3,
+.btn + .heading-medium,
+.btn + .heading-small{
+    margin-top:50px;
+
+    @media (max-width: 641px) {
+        margin-top:30px;
+    }
+}
