@@ -411,3 +411,14 @@ h2 + h3{
         margin-top:30px;
     }
 }
+
+.groupPromo .listWebpart ul li a{
+    &:active,
+    &:focus{
+        h3,
+        h3:after,
+        p{
+            color:black !important;
+        }
+    }
+} 
