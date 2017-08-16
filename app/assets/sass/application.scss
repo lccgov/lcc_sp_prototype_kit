@@ -383,6 +383,10 @@ p + .panel{
     .part-title {
         @extend .heading-large;
     }
+
+    h2{
+        @extend .heading-medium;
+    }
 }
 
 
@@ -422,3 +426,11 @@ h2 + h3{
         }
     }
 } 
+
+.part-navigation__container nav ol li {
+    font-size: 14px;
+
+    @media (min-width: 641px){
+        font-size: 16px;
+    }
+}
