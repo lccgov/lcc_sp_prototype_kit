@@ -24144,3 +24144,6 @@ h2 + h3 {
   @media (min-width: 641px) {
     .part-navigation__container nav ol li {
       font-size: 16px; } }
+
+.part-navigation__container {
+  border-bottom: 5px solid #F6F7FA; }
