@@ -39,6 +39,52 @@
  {% endblock %}
 
 {% block sectionOneContent %}
+<h2>Accordion - accessible</h2>
+<ul class="accordion">
+    <li>
+        <div class="accordion-drawer">
+            <a href="#Itemone" role="button" class="header" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">Item one</a>
+            <div id="Itemone" class="content-block collapse">
+                <p>Here's where the content goes, this is a <a href="#">hyperlink</a></p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="accordion-drawer">
+            <a href="#Itemtwo" role="button" class="header" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">Item two</a>
+            <div id="Itemtwo" class="content-block collapse">
+                <p>An accordion item with a list:</p>
+                <ul class="list list-bullet">
+                    <li>List item one</li>
+                    <li>List item one</li>
+                </ul>
+            </div>
+        </div>
+    </li>
+</ul>
+<h2>Accordion</h2>
+<ul class="accordion" data-module="accordion">
+    <li>
+        <div class="accordion-drawer">
+            <a href="#" class="header"><span class="sr-only">Click to expand</span>Item one</a>
+            <div style="display: none;" class="content-block">
+                <p>Here's where the content goes, this is a <a href="#">hyperlink</a></p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="accordion-drawer">
+            <a href="#" class="header"><span class="sr-only">Click to expand</span>Item two</a>
+            <div style="display: none;" class="content-block">
+                <p>An accordion item with a list:</p>
+                <ul class="list list-bullet">
+                    <li>List item one</li>
+                    <li>List item one</li>
+                </ul>
+            </div>
+        </div>
+    </li>
+</ul>
 <h2>Alerts</h2>
 <h3 class="top">Emergency message</h3>
 <div class="alert-wrapper" xmlns:ddwrt2="urn:frontpage:internal">
@@ -445,6 +491,7 @@
 {% endblock %}
 
 {% block sectionThreeContent %}
+
 {% endblock %}
 
 {% block sectionThreeRightHandColumn %}
@@ -464,7 +511,7 @@
 {% endblock %} 
 
 {% block sectionFourFull%}
-
+{% include "includes/lcc-components/survey.html" %}
 {% endblock %}
 
 {% block sectionFourContent %}
