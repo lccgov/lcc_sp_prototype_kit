@@ -1,0 +1,88 @@
+<div data-module="Survey" class="survey">
+    <h3>Did you find what you were looking for?</h3>
+    <form>
+        <div class="form-group">
+            <fieldset>
+                <!-- panelSurvey -->
+                <div id="panelSurvey">
+                    <!-- panelFind -->        
+                    <div id="panelFind">
+                                    
+                        <legend class="sr-only">Did you find what you were looking for?</legend>
+                        
+                        <label for="yesFind" class="block-label" data-target="yesFind">
+                            <input value="Yes" name="find" type="radio" id="yesFind" title="RadFind" />Yes</label>
+                            
+                            <div class="panel panel-border-narrow js-hidden" id="yesFind">                               
+                                <!-- panelEasy -->  
+                                <div id="panelEasy">
+                                            
+                                        <h4>How easy was it to get the help you wanted today?</h4>
+
+                                        <label for="veryEasy" class="block-label" data-target="veryEasy">
+                                            <input value="1" name="RadEasy" type="radio" id="veryEasy" class="radEasy" onclick="document.getElementById(&#39;lblEasyError&#39;).innerHTML = &#39;&#39;; return true" />Very easy</label>                       
+                                        <label for="easy" class="block-label" data-target="easy">
+                                            <input value="2" name="RadEasy" type="radio" id="easy" class="radEasy" onclick="document.getElementById(&#39;lblEasyError&#39;).innerHTML = &#39;&#39;; return true" />Easy</label>                       
+                                        <label for="neither" class="block-label" data-target="neither">
+                                            <input value="3" name="RadEasy" type="radio" id="neither" class="radEasy" onclick="document.getElementById(&#39;lblEasyError&#39;).innerHTML = &#39;&#39;; return true" />Neither</label>                        
+                                        <label for="difficult" class="block-label" data-target="difficult">
+                                            <input value="4" name="RadEasy" type="radio" id="difficult" class="radEasy" onclick="document.getElementById(&#39;lblEasyError&#39;).innerHTML = &#39;&#39;; return true" />Difficult</label>                       
+                                        <label for="veryDifficult" class="block-label" data-target="veryDifficult">
+                                            <input value="5" name="RadEasy" type="radio" id="veryDifficult" class="radEasy" onclick="document.getElementById(&#39;lblEasyError&#39;).innerHTML = &#39;&#39;; return true" />Very difficult</label> 
+
+                                    <label id="lblEasyError" style="color: red"></label>
+                                
+                                </div>
+                                <!--/. panelEasy -->
+                            </div>
+
+                        <label for="noFind" class="block-label" data-target="noFind">
+                            <input value="No" name="find" type="radio" id="noFind" title="RadFind" />No</label>                
+                    
+                    </div>
+                    <!--/. panelFind -->
+
+                    <!-- panelMain -->  
+                    <div id="panelMain">                                   
+                        <div>
+
+                            <!-- panelInfo -->  
+                            <div id="panelInfo">
+                                        
+                                <div class="form-group">                                  
+                                    <label id="ctl00_ctl47_g_44ace314_91f9_4976_85df_e894f9d982e5_lblQuestion3" class="form-label">What information were you looking for?
+                                        <span class="form-hint">We are collecting this information to help us improve our web pages. <br>
+                                        If you have an enquiry that you would like us to respond to please use contact us instead.</span>
+                                    </label>
+                                    <textarea name="ctl00$ctl47$g_44ace314_91f9_4976_85df_e894f9d982e5$txtLookingFor" rows="4" cols="20" id="txtLookingFor" title="LookingFor" class="form-control"></textarea>
+                                    <span class="scopeNote" id="lfScopeNote"></span>
+                                </div>
+
+                                <div class="form-group">                                  
+                                    <label id="ctl00_ctl47_g_44ace314_91f9_4976_85df_e894f9d982e5_lblQuestion4" class="form-label">Any further comments?</span>
+                                    <textarea name="ctl00$ctl47$g_44ace314_91f9_4976_85df_e894f9d982e5$txtFurtherComments" rows="4" cols="20" id="txtFurtherComments" title="FurtherComments" class="form-control"></textarea>
+                                    <span class="scopeNote" id="fcScopeNote"></span>
+                                </div>
+
+                                <div id="ctl00_ctl47_g_44ace314_91f9_4976_85df_e894f9d982e5_divRecaptcha" class="recaptcha">
+                                    <div class="g-recaptcha" data-sitekey=""></div>
+                                    <label id="ctl00_ctl47_g_44ace314_91f9_4976_85df_e894f9d982e5_lblErrorMessage" style="color: red"></label>
+                                </div>
+                            
+                            </div>
+                            <!--/. panelInfo -->  
+                            
+                            <!-- panelButton -->  
+                            <div id="panelButton">
+                                <input onclick="if (LCC.Modules.Survey.ValidateForm()) { return true; } else { return false; } if (typeof(Page_ClientValidate) == 'function') Page_ClientValidate(''); " name="ctl00$ctl47$g_44ace314_91f9_4976_85df_e894f9d982e5$ctl00" type="submit" value="Submit" class="btn btn-primary" title="Submit this survey form." />
+                            </div>
+                            <!--/. panelButton -->  
+                        </div>
+                    </div>
+                    <!--/. panelMain --> 
+                </div>
+                <!--/. panelSurvey -->
+            </fieldset>
+        </div>
+    </form>
+</div>
