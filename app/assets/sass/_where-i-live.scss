@@ -60,10 +60,10 @@
     width:auto;
 }
 
-#findMyNearestSearch{
+.findMyNearest{
     @extend .panel;
-    @extend .panel_blue;
     padding-bottom:10px;
+    margin-top:0;
 
     h2{
         margin:0 0 30px;
@@ -94,6 +94,10 @@
 }
 
 //refiners
+.nearestItem{
+    margin-top:20px;
+}
+
 .nearestItem-search-features-inner{
     a{
         text-decoration:none !important;
@@ -113,6 +117,10 @@
         }
 
     }
+}
+
+.nearestLayer{
+    margin-top:0 !important;
 }
 
 .nearestLayer-heading-container{
@@ -159,3 +167,15 @@
     }
 }
 
+//map
+#map{
+    margin-bottom:30px;
+}
+
+.panel-group-outline{
+    margin-bottom:30px !important;
+}
+
+.panel-group.panel-group-outline .panel .panel-body{
+    padding:20px !important;
+}

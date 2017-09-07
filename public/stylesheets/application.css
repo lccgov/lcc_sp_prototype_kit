@@ -19544,7 +19544,7 @@ p.sharepoint,
       margin-top: 0.2631578947em;
       margin-bottom: 1.0526315789em; } }
 
-.hidden-text .panel, .hidden-text .sub-section-nav.panels .sub-section, .sub-section-nav.panels .hidden-text .sub-section, .hidden-text #findMyNearestSearch {
+.hidden-text .panel, .hidden-text .sub-section-nav.panels .sub-section, .sub-section-nav.panels .hidden-text .sub-section, .hidden-text .findMyNearest {
   margin-top: 10px; }
 
 .lead {
@@ -19709,27 +19709,27 @@ blockquote {
       blockquote footer {
         font-size: 16px !important; } }
 
-.panel, .sub-section-nav.panels .sub-section, #findMyNearestSearch {
+.panel, .sub-section-nav.panels .sub-section, .findMyNearest {
   background: #E5F1F5;
   padding: 20px;
   box-shadow: none;
   border-radius: 0;
   border: 0;
   margin: 30px 0; }
-  .panel.panel-border, .sub-section-nav.panels .panel-border.sub-section, .panel-border#findMyNearestSearch {
+  .panel.panel-border, .sub-section-nav.panels .panel-border.sub-section, .panel-border.findMyNearest {
     background: white;
     border: 10px solid #E5F1F5; }
   @media (min-width: 641px) {
-    .panel, .sub-section-nav.panels .sub-section, #findMyNearestSearch {
+    .panel, .sub-section-nav.panels .sub-section, .findMyNearest {
       padding: 30px;
       margin: 30px 0; } }
-  .panel h2:first-child, .sub-section-nav.panels .sub-section h2:first-child, #findMyNearestSearch h2:first-child,
-  .panel h3:first-child, .sub-section-nav.panels .sub-section h3:first-child, #findMyNearestSearch h3:first-child,
-  .panel h4:first-child, .sub-section-nav.panels .sub-section h4:first-child, #findMyNearestSearch h4:first-child {
+  .panel h2:first-child, .sub-section-nav.panels .sub-section h2:first-child, .findMyNearest h2:first-child,
+  .panel h3:first-child, .sub-section-nav.panels .sub-section h3:first-child, .findMyNearest h3:first-child,
+  .panel h4:first-child, .sub-section-nav.panels .sub-section h4:first-child, .findMyNearest h4:first-child {
     margin-top: 0; }
-  .panel .media-container, .sub-section-nav.panels .sub-section .media-container, #findMyNearestSearch .media-container {
+  .panel .media-container, .sub-section-nav.panels .sub-section .media-container, .findMyNearest .media-container {
     margin: 0; }
-  .panel p:last-child, .sub-section-nav.panels .sub-section p:last-child, #findMyNearestSearch p:last-child {
+  .panel p:last-child, .sub-section-nav.panels .sub-section p:last-child, .findMyNearest p:last-child {
     margin-bottom: 0; }
 
 ul + .text-highlight, ul + .text-block {
@@ -20635,7 +20635,7 @@ h2 + h3 {
 .text-highlight p + ul, .text-block p + ul {
   margin-top: 15px; }
 
-p + .panel, .sub-section-nav.panels p + .sub-section, p + #findMyNearestSearch {
+p + .panel, .sub-section-nav.panels p + .sub-section, p + .findMyNearest {
   margin: 50px 0; }
 
 table {
@@ -20697,7 +20697,7 @@ form {
     border: 0; }
   .form-group .btn, .form-group input[type=button], .form-group input.btn.btn-primary, .form-group input.limitedrte-Style-BUTTON, .form-group #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group #myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group #myChatLinkInfo, .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group #myChatLinkInfo, .form-group .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .form-group .ms-srch-sb-searchLink, .form-group .limitedrte-Style-BUTTON {
     margin: 0; }
-  .form-group .panel, .form-group .sub-section-nav.panels .sub-section, .sub-section-nav.panels .form-group .sub-section, .form-group #findMyNearestSearch {
+  .form-group .panel, .form-group .sub-section-nav.panels .sub-section, .sub-section-nav.panels .form-group .sub-section, .form-group .findMyNearest {
     display: inline-block;
     width: 100%;
     box-shadow: none;
@@ -20714,23 +20714,23 @@ form {
     -ms-border-radius: 0;
     border-radius: 0;
     background: none; }
-    .form-group .panel:first-child, .form-group .sub-section-nav.panels .sub-section:first-child, .sub-section-nav.panels .form-group .sub-section:first-child, .form-group #findMyNearestSearch:first-child {
+    .form-group .panel:first-child, .form-group .sub-section-nav.panels .sub-section:first-child, .sub-section-nav.panels .form-group .sub-section:first-child, .form-group .findMyNearest:first-child {
       margin-top: 0; }
-    .form-group .panel:only-child, .form-group .sub-section-nav.panels .sub-section:only-child, .sub-section-nav.panels .form-group .sub-section:only-child, .form-group #findMyNearestSearch:only-child, .form-group .panel:last-child, .form-group .sub-section-nav.panels .sub-section:last-child, .sub-section-nav.panels .form-group .sub-section:last-child, .form-group #findMyNearestSearch:last-child {
+    .form-group .panel:only-child, .form-group .sub-section-nav.panels .sub-section:only-child, .sub-section-nav.panels .form-group .sub-section:only-child, .form-group .findMyNearest:only-child, .form-group .panel:last-child, .form-group .sub-section-nav.panels .sub-section:last-child, .sub-section-nav.panels .form-group .sub-section:last-child, .form-group .findMyNearest:last-child {
       margin-bottom: 0; }
-    .form-group .panel.panel-border-wide, .form-group .sub-section-nav.panels .panel-border-wide.sub-section, .sub-section-nav.panels .form-group .panel-border-wide.sub-section, .form-group .panel-border-wide#findMyNearestSearch {
+    .form-group .panel.panel-border-wide, .form-group .sub-section-nav.panels .panel-border-wide.sub-section, .sub-section-nav.panels .form-group .panel-border-wide.sub-section, .form-group .panel-border-wide.findMyNearest {
       border-left-width: 10px; }
-    .form-group .panel.panel-border-narrow, .form-group .sub-section-nav.panels .panel-border-narrow.sub-section, .sub-section-nav.panels .form-group .panel-border-narrow.sub-section, .form-group .panel-border-narrow#findMyNearestSearch {
+    .form-group .panel.panel-border-narrow, .form-group .sub-section-nav.panels .panel-border-narrow.sub-section, .sub-section-nav.panels .form-group .panel-border-narrow.sub-section, .form-group .panel-border-narrow.findMyNearest {
       border-left-width: 5px;
       float: left;
       width: 100%;
       margin: 10px 0 30px; }
-      .form-group .panel.panel-border-narrow:first-child, .form-group .sub-section-nav.panels .panel-border-narrow.sub-section:first-child, .sub-section-nav.panels .form-group .panel-border-narrow.sub-section:first-child, .form-group .panel-border-narrow#findMyNearestSearch:first-child {
+      .form-group .panel.panel-border-narrow:first-child, .form-group .sub-section-nav.panels .panel-border-narrow.sub-section:first-child, .sub-section-nav.panels .form-group .panel-border-narrow.sub-section:first-child, .form-group .panel-border-narrow.findMyNearest:first-child {
         margin-top: 10px; }
-      .form-group .panel.panel-border-narrow:last-child, .form-group .sub-section-nav.panels .panel-border-narrow.sub-section:last-child, .sub-section-nav.panels .form-group .panel-border-narrow.sub-section:last-child, .form-group .panel-border-narrow#findMyNearestSearch:last-child {
+      .form-group .panel.panel-border-narrow:last-child, .form-group .sub-section-nav.panels .panel-border-narrow.sub-section:last-child, .sub-section-nav.panels .form-group .panel-border-narrow.sub-section:last-child, .form-group .panel-border-narrow.findMyNearest:last-child {
         margin-top: 10px;
         margin-bottom: 0; }
-      .form-group .panel.panel-border-narrow .form-group, .form-group .sub-section-nav.panels .panel-border-narrow.sub-section .form-group, .sub-section-nav.panels .form-group .panel-border-narrow.sub-section .form-group, .form-group .panel-border-narrow#findMyNearestSearch .form-group {
+      .form-group .panel.panel-border-narrow .form-group, .form-group .sub-section-nav.panels .panel-border-narrow.sub-section .form-group, .sub-section-nav.panels .form-group .panel-border-narrow.sub-section .form-group, .form-group .panel-border-narrow.findMyNearest .form-group {
         margin-bottom: 0; }
   .form-group input[type=button] {
     margin: 0 !important; }
@@ -20844,7 +20844,7 @@ input[type=submit], button {
   border-color: #9DA5B2;
   background: white; }
 
-.block-label.active + .panel, .sub-section-nav.panels .block-label.active + .sub-section, .block-label.active + #findMyNearestSearch {
+.block-label.active + .panel, .sub-section-nav.panels .block-label.active + .sub-section, .block-label.active + .findMyNearest {
   display: block;
   visibility: visible; }
 
@@ -22302,43 +22302,43 @@ hr {
   color: #666B76;
   font-weight: 300; }
 
-.panel-group .panel, .panel-group .sub-section-nav.panels .sub-section, .sub-section-nav.panels .panel-group .sub-section, .panel-group #findMyNearestSearch {
+.panel-group .panel, .panel-group .sub-section-nav.panels .sub-section, .sub-section-nav.panels .panel-group .sub-section, .panel-group .findMyNearest {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
   padding: 0; }
-  .panel-group .panel .panel-heading, .panel-group .sub-section-nav.panels .sub-section .panel-heading, .sub-section-nav.panels .panel-group .sub-section .panel-heading, .panel-group #findMyNearestSearch .panel-heading {
+  .panel-group .panel .panel-heading, .panel-group .sub-section-nav.panels .sub-section .panel-heading, .sub-section-nav.panels .panel-group .sub-section .panel-heading, .panel-group .findMyNearest .panel-heading {
     padding: 30px; }
-    .panel-group .panel .panel-heading .panel-title, .panel-group .sub-section-nav.panels .sub-section .panel-heading .panel-title, .sub-section-nav.panels .panel-group .sub-section .panel-heading .panel-title, .panel-group #findMyNearestSearch .panel-heading .panel-title {
+    .panel-group .panel .panel-heading .panel-title, .panel-group .sub-section-nav.panels .sub-section .panel-heading .panel-title, .sub-section-nav.panels .panel-group .sub-section .panel-heading .panel-title, .panel-group .findMyNearest .panel-heading .panel-title {
       font-size: 19px; }
       @media (max-width: 641px) {
-        .panel-group .panel .panel-heading .panel-title, .panel-group .sub-section-nav.panels .sub-section .panel-heading .panel-title, .sub-section-nav.panels .panel-group .sub-section .panel-heading .panel-title, .panel-group #findMyNearestSearch .panel-heading .panel-title {
+        .panel-group .panel .panel-heading .panel-title, .panel-group .sub-section-nav.panels .sub-section .panel-heading .panel-title, .sub-section-nav.panels .panel-group .sub-section .panel-heading .panel-title, .panel-group .findMyNearest .panel-heading .panel-title {
           font-size: 19px; } }
-  .panel-group .panel .panel-body, .panel-group .sub-section-nav.panels .sub-section .panel-body, .sub-section-nav.panels .panel-group .sub-section .panel-body, .panel-group #findMyNearestSearch .panel-body {
+  .panel-group .panel .panel-body, .panel-group .sub-section-nav.panels .sub-section .panel-body, .sub-section-nav.panels .panel-group .sub-section .panel-body, .panel-group .findMyNearest .panel-body {
     padding: 30px; }
 
-.panel-group .panel + .panel, .panel-group .sub-section-nav.panels .sub-section + .panel, .sub-section-nav.panels .panel-group .sub-section + .panel, .panel-group #findMyNearestSearch + .panel, .panel-group .sub-section-nav.panels .panel + .sub-section, .sub-section-nav.panels .panel-group .panel + .sub-section, .panel-group .sub-section-nav.panels .sub-section + .sub-section, .sub-section-nav.panels .panel-group .sub-section + .sub-section, .panel-group .sub-section-nav.panels #findMyNearestSearch + .sub-section, .sub-section-nav.panels .panel-group #findMyNearestSearch + .sub-section, .panel-group .panel + #findMyNearestSearch, .panel-group .sub-section-nav.panels .sub-section + #findMyNearestSearch, .sub-section-nav.panels .panel-group .sub-section + #findMyNearestSearch, .panel-group #findMyNearestSearch + #findMyNearestSearch {
+.panel-group .panel + .panel, .panel-group .sub-section-nav.panels .sub-section + .panel, .sub-section-nav.panels .panel-group .sub-section + .panel, .panel-group .findMyNearest + .panel, .panel-group .sub-section-nav.panels .panel + .sub-section, .sub-section-nav.panels .panel-group .panel + .sub-section, .panel-group .sub-section-nav.panels .sub-section + .sub-section, .sub-section-nav.panels .panel-group .sub-section + .sub-section, .panel-group .sub-section-nav.panels .findMyNearest + .sub-section, .sub-section-nav.panels .panel-group .findMyNearest + .sub-section, .panel-group .panel + .findMyNearest, .panel-group .sub-section-nav.panels .sub-section + .findMyNearest, .sub-section-nav.panels .panel-group .sub-section + .findMyNearest, .panel-group .findMyNearest + .findMyNearest {
   margin-top: -1px; }
 
 .panel-group.panel-group-outline {
   border-bottom: 1px solid #DCDEE1; }
-  .panel-group.panel-group-outline .panel, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section, .panel-group.panel-group-outline #findMyNearestSearch {
+  .panel-group.panel-group-outline .panel, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section, .panel-group.panel-group-outline .findMyNearest {
     padding: 0;
     border-top: 1px solid #DCDEE1;
     background: transparent; }
-    .panel-group.panel-group-outline .panel .panel-heading, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-heading, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-heading, .panel-group.panel-group-outline #findMyNearestSearch .panel-heading {
+    .panel-group.panel-group-outline .panel .panel-heading, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-heading, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-heading, .panel-group.panel-group-outline .findMyNearest .panel-heading {
       padding: 15px 0;
       background: transparent; }
-      .panel-group.panel-group-outline .panel .panel-heading a, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-heading a, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-heading a, .panel-group.panel-group-outline #findMyNearestSearch .panel-heading a, .panel-group.panel-group-outline .panel .panel-heading .link, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-heading .link, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-heading .link, .panel-group.panel-group-outline #findMyNearestSearch .panel-heading .link, .panel-group.panel-group-outline .panel .panel-heading .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .panel-group.panel-group-outline .panel .panel-heading .btn-link, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-heading .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-heading .btn-link, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-heading .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-heading .btn-link, .panel-group.panel-group-outline #findMyNearestSearch .panel-heading .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .panel-group.panel-group-outline #findMyNearestSearch .panel-heading .btn-link {
+      .panel-group.panel-group-outline .panel .panel-heading a, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-heading a, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-heading a, .panel-group.panel-group-outline .findMyNearest .panel-heading a, .panel-group.panel-group-outline .panel .panel-heading .link, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-heading .link, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-heading .link, .panel-group.panel-group-outline .findMyNearest .panel-heading .link, .panel-group.panel-group-outline .panel .panel-heading .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .panel-group.panel-group-outline .panel .panel-heading .btn-link, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-heading .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-heading .btn-link, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-heading .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-heading .btn-link, .panel-group.panel-group-outline .findMyNearest .panel-heading .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .panel-group.panel-group-outline .findMyNearest .panel-heading .btn-link {
         text-decoration: none; }
-      .panel-group.panel-group-outline .panel .panel-heading .panel-title, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-heading .panel-title, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-heading .panel-title, .panel-group.panel-group-outline #findMyNearestSearch .panel-heading .panel-title {
+      .panel-group.panel-group-outline .panel .panel-heading .panel-title, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-heading .panel-title, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-heading .panel-title, .panel-group.panel-group-outline .findMyNearest .panel-heading .panel-title {
         font-size: 21px; }
-    .panel-group.panel-group-outline .panel .panel-body, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-body, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-body, .panel-group.panel-group-outline #findMyNearestSearch .panel-body {
+    .panel-group.panel-group-outline .panel .panel-body, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-body, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-body, .panel-group.panel-group-outline .findMyNearest .panel-body {
       padding: 15px;
       background: transparent; }
 
-.panel_blue, #findMyNearestSearch {
+.panel_blue {
   background: rgba(0, 114, 153, 0.1); }
 
 .badge, .nearestLayer-feature-count, .nearestLayer-details-body .nearestItem-feature-marker {
@@ -22346,27 +22346,31 @@ hr {
   display: inline-block;
   width: auto; }
 
-#findMyNearestSearch {
-  padding-bottom: 10px; }
-  #findMyNearestSearch h2 {
+.findMyNearest {
+  padding-bottom: 10px;
+  margin-top: 0; }
+  .findMyNearest h2 {
     margin: 0 0 30px; }
     @media (max-width: 641px) {
-      #findMyNearestSearch h2 {
+      .findMyNearest h2 {
         margin: 0 0 20px; } }
-    #findMyNearestSearch h2 span {
+    .findMyNearest h2 span {
       display: block;
       font-size: 24px;
       margin-top: 10px;
       color: #212224;
       font-weight: 400; }
       @media (max-width: 641px) {
-        #findMyNearestSearch h2 span {
+        .findMyNearest h2 span {
           font-size: 19px;
           line-height: 1.2; } }
-    #findMyNearestSearch h2:before {
+    .findMyNearest h2:before {
       font-family: FontAwesome;
       content: "\f041";
       margin-right: 10px; }
+
+.nearestItem {
+  margin-top: 20px; }
 
 .nearestItem-search-features-inner a, .nearestItem-search-features-inner .link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link {
   text-decoration: none !important; }
@@ -22379,6 +22383,9 @@ hr {
       text-decoration: underline !important;
       margin: 0;
       font-size: 16px; }
+
+.nearestLayer {
+  margin-top: 0 !important; }
 
 .nearestLayer-heading-container {
   position: relative; }
@@ -22410,6 +22417,15 @@ hr {
   text-decoration: none !important;
   padding-left: 50px;
   margin-top: 10px; }
+
+#map {
+  margin-bottom: 30px; }
+
+.panel-group-outline {
+  margin-bottom: 30px !important; }
+
+.panel-group.panel-group-outline .panel .panel-body, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-body, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-body, .panel-group.panel-group-outline .findMyNearest .panel-body {
+  padding: 20px !important; }
 
 .open-data {
   padding: 0; }
@@ -23319,3 +23335,9 @@ aside.col-md-4 {
 
 ul.accordion div.text-highlight, ul.accordion div.text-block {
   padding: 20px !important; }
+
+.section-title {
+  display: block;
+  font-size: 24px;
+  color: #666B76;
+  font-weight: 400; }
