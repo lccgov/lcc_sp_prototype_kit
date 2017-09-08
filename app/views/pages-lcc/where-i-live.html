@@ -1,4 +1,4 @@
-{% extends "layout_multi_sections-lcc.html" %}
+{% extends "layout_multi_sections_home-lcc.html" %}
 
 {% block page_title %}
 	Where I live
@@ -7,12 +7,12 @@
 
   {% block css_register %}
          <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+         <link href="{{ asset_path }}stylesheets/esri.css" rel="stylesheet">
    {% endblock %}
 
  
 
 {% block header %}
-    Parish Town Councils
 {% endblock%}
 
  {% block main_nav %}
@@ -46,7 +46,156 @@
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-    
+    <div id="pageSummaryContainer" style="display: block" widgetid="pageSummaryContainer">
+        <h1><span class="section-title">Where I Live</span> One stop centres</h1>
+        <p><strong>Near:</strong> 1 RAWLING WAY, MEANWOOD, LEEDS, LS6 2SB</p>
+    </div>
+
+<div class="row">
+        <div class="col-md-8">
+                <!-- MAP -->
+                <div id="map" class="map" data-basemap="topo" data-zoom="13" data-scale="72223.819286" data-loaded="" style="height: 400px;"><div id="map_root" class="container" style="width: 1170px; height: 400px; direction: ltr;"><div id="map_container" class="container" style="position: absolute; cursor: default; clip: auto;"><div id="map_layers" class="layersDiv"><div id="map_layer0" style="position: absolute; width: 1170px; height: 400px; overflow: visible; transform: translate(0px, 0px); display: block;"><div style="position: absolute; width: 1170px; height: 400px; overflow: visible; transition: -webkit-transform 500ms ease;"><img id="map_layer0_tile_13_0_0" class="layerTile" src="https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/13/2636/4058" style="width: 256px; height: 256px; visibility: visible; transform: translate(-51px, -102px);"><img id="map_layer0_tile_13_1_0" class="layerTile" src="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/13/2637/4058" style="width: 256px; height: 256px; visibility: visible; transform: translate(-51px, 154px);"><img id="map_layer0_tile_13_0_1" class="layerTile" src="https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/13/2636/4059" style="width: 256px; height: 256px; visibility: visible; transform: translate(205px, -102px);"><img id="map_layer0_tile_13_1_1" class="layerTile" src="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/13/2637/4059" style="width: 256px; height: 256px; visibility: visible; transform: translate(205px, 154px);"><img id="map_layer0_tile_13_0_2" class="layerTile" src="https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/13/2636/4060" style="width: 256px; height: 256px; visibility: visible; transform: translate(461px, -102px);"><img id="map_layer0_tile_13_1_2" class="layerTile" src="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/13/2637/4060" style="width: 256px; height: 256px; visibility: visible; transform: translate(461px, 154px);"><img id="map_layer0_tile_13_0_3" class="layerTile" src="https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/13/2636/4061" style="width: 256px; height: 256px; visibility: visible; transform: translate(717px, -102px);"><img id="map_layer0_tile_13_1_3" class="layerTile" src="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/13/2637/4061" style="width: 256px; height: 256px; visibility: visible; transform: translate(717px, 154px);"><img id="map_layer0_tile_13_0_4" class="layerTile" src="https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/13/2636/4062" style="width: 256px; height: 256px; visibility: visible; transform: translate(973px, -102px);"><img id="map_layer0_tile_13_1_4" class="layerTile" src="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/13/2637/4062" style="width: 256px; height: 256px; visibility: visible; transform: translate(973px, 154px);"></div></div><svg overflow="hidden" width="1170" height="400" id="map_gc" style="overflow: visible; position: absolute;"><defs></defs><g id="map_graphics_layer" transform="matrix(1.00000000,0.00000000,0.00000000,1.00000000,0.00000000,0.00000000)" style="display: block;"><g></g><image fill-opacity="0" stroke="none" stroke-opacity="0" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" x="569" y="168" width="32" height="64" preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/Style%20Library/mapPin.png" transform="matrix(1.00000000,0.00000000,0.00000000,1.00000000,0.00000000,0.00000000)"></image></g></svg></div></div><div class="esriControlsBR"><span class="esriAttribution" style="max-width: 526px; cursor: default;"><span class="esriAttributionList"><span class="esriAttributionLastItem" style="display: inline;">DoBH, OS, Esri, HERE, Garmin, INCREMENT P, USGS, METI/NASA, NGA<span class="esriAttributionDelim"> | </span></span></span></span><div class="logo-med"></div></div><div class="esriPopup" style="visibility: hidden; z-index: 40;"><div class="esriPopupWrapper" style="position: absolute;"><div class="sizer"><div class="titlePane" style="user-select: none;"><div class="spinner hidden" title="Searching..."></div><div class="title"></div><div class="titleButton prev hidden" title="Previous feature"></div><div class="titleButton next hidden" title="Next feature"></div><div class="titleButton maximize" title="Maximize"></div><div class="titleButton close" title="Close"></div></div></div><div class="sizer content"><div class="contentPane"></div></div><div class="sizer"><div class="actionsPane"><div class="actionList hidden"><a title="Zoom" to="" class="action zoomTo" href="javascript:void(0);"><span>Zoom to</span></a></div></div></div><div class="pointer hidden"></div></div><div class="outerPointer hidden"></div></div><div id="map_zoom_slider" class="esriSimpleSlider esriSimpleSliderVertical esriSimpleSliderTL" style="z-index: 30;"><div class="esriSimpleSliderIncrementButton"><span>+</span></div><div class="esriSimpleSliderDecrementButton"><span>–</span></div></div></div></div><!-- /. MAP -->
+				
+        </div>
+        <div class="col-md-4">
+
+                <!-- NEAREST -->
+                <div class="nearest" id="singleNearest" widgetid="singleNearest">
+    <div data-dojo-attach-point="_layers" class="panel-group panel-group-outline" id="singleNearest_layers" role="tablist" aria-multiselectable="true"><div class="panel panel-default nearestLayer" id="dijit__WidgetsInTemplateMixin_0" widgetid="dijit__WidgetsInTemplateMixin_0">
+    <!--Header row-->
+    <div class="nearestLayer-heading-container panel-heading" data-dojo-attach-point="showList" role="tab">
+        <a data-toggle="collapse" href="#Amenities_3317-Amenities_3317" data-parent="#singleNearest_layers" aria-expanded="false" class="nearestLayer-expandable" aria-controls="Amenities_3317-Amenities_3317">
+            <!--Number of features-->
+            <span class="nearestLayer-feature-count label pull-left" style="margin-right: 6px; display: block">2</span>
+            <!--Header-->
+            <h4 class="nearestLayer-title panel-title">
+                One Stop Centres
+            </h4>
+        </a>
+    </div>
+    <div id="Amenities_3317-Amenities_3317" class="nearestLayer-details-container panel-collapse collapse ">
+        <div class="nearestLayer-details-body panel-body">
+
+            <p class="nearestLayer-results" style="display: block">Showing closest 2 within 5 miles</p>
+
+            <!-- Main section of row-->
+            <div data-dojo-attach-point="_features" class="nearestLayer-features-list" style="height: auto;">
+        
+            <div id="dijit__WidgetsInTemplateMixin_1" class="nearestItem" widgetid="dijit__WidgetsInTemplateMixin_1">
+    <!--container for feature row-->
+    <div class="nearestItem-search-features">
+        <!--Actual feature row-->
+        <div id="search-features-inner-The-Reginald-Centre-1-Amenities_3317-Amenities_3317" class="nearestItem-search-features-inner">
+            <!--Make whole row clickable-->
+            <a href="#" title="Toggles the display of the feature fields" class="nearestItem-text-place-summary-details">
+                <!--index-->
+                <span class="nearestItem-feature-marker label pull-left" style="display: block">1</span>
+                <!--div for infor-->
+                <div class="nearestItem-text-place-details">
+                    <!--feature name-->
+                    <h4 id="The-Reginald-Centre-1-Amenities_3317-Amenities_3317-feature-name" class="nearestItem-text-place-title">The Reginald Centre</h4>
+                    
+				    <!-- other fields-->
+                    <div id="The-Reginald-Centre-1-Amenities_3317-Amenities_3317-field-values" class="nearestItem-text-place-basic-details">
+                        <div class="nearestItem-details" data-dojo-attach-point="featureDetails"><div class="mainSection"><div class="header" dojoattachpoint="_title"></div><div class="hzLine"></div><div dojoattachpoint="_description">The Reginald Centre, 263 Chapeltown Road, Leeds, LS7 3EX</div><div class="break"></div></div><div class="attachmentsSection hidden"><div>Attachments:</div><ul dojoattachpoint="_attachmentsList"></ul><div class="break"></div></div><div class="mediaSection hidden"><div class="header" dojoattachpoint="_mediaTitle"></div><div class="hzLine"></div><div class="caption" dojoattachpoint="_mediaCaption"></div><div class="gallery" dojoattachpoint="_gallery"><div class="mediaHandle prev" dojoattachpoint="_prevMedia" dojoattachevent="onclick: _goToPrevMedia" title="Previous media"></div><div class="mediaHandle next" dojoattachpoint="_nextMedia" dojoattachevent="onclick: _goToNextMedia" title="Next media"></div><ul class="summary"><li class="image mediaCount hidden" dojoattachpoint="_imageCount">0</li><li class="image mediaIcon hidden"></li><li class="chart mediaCount hidden" dojoattachpoint="_chartCount">0</li><li class="chart mediaIcon hidden"></li></ul><div class="frame" dojoattachpoint="_mediaFrame"></div></div></div><div class="editSummarySection hidden" dojoattachpoint="_editSummarySection"><div class="break"></div><div class="break hidden" dojoattachpoint="_mediaBreak"></div><div class="editSummary" dojoattachpoint="_editSummary"></div></div></div>
+                    </div>
+                    <span class="nearestItem-item-distance" style="display: inline-block">1.95&nbsp;miles</span>
+                    <span class="nearestItem-showonmap-link" style="display: inline-block">
+                        <button data-dojo-attach-point="mapButton" type="button" class="btn btn-link" title="Show this feature on the map">Show on map</button>
+                    </span>
+                </div>
+                
+            </a>
+            
+        </div>
+    </div>
+</div><div id="dijit__WidgetsInTemplateMixin_2" class="nearestItem" widgetid="dijit__WidgetsInTemplateMixin_2">
+    <!--container for feature row-->
+    <div class="nearestItem-search-features">
+        <!--Actual feature row-->
+        <div id="search-features-inner-City-Centre-One-Stop-Centre-2-Amenities_3317-Amenities_3317" class="nearestItem-search-features-inner">
+            <!--Make whole row clickable-->
+            <a href="#" title="Toggles the display of the feature fields" class="nearestItem-text-place-summary-details">
+                <!--index-->
+                <span class="nearestItem-feature-marker label pull-left" style="display: block">2</span>
+                <!--div for infor-->
+                <div class="nearestItem-text-place-details">
+                    <!--feature name-->
+                    <h4 id="City-Centre-One-Stop-Centre-2-Amenities_3317-Amenities_3317-feature-name" class="nearestItem-text-place-title">City Centre One Stop Centre</h4>
+                    
+				    <!-- other fields-->
+                    <div id="City-Centre-One-Stop-Centre-2-Amenities_3317-Amenities_3317-field-values" class="nearestItem-text-place-basic-details">
+                        <div class="nearestItem-details" data-dojo-attach-point="featureDetails"><div class="mainSection"><div class="header" dojoattachpoint="_title"></div><div class="hzLine"></div><div dojoattachpoint="_description">City Centre One Stop Centre, 2 Great George Street, Leeds, LS2 8BA</div><div class="break"></div></div><div class="attachmentsSection hidden"><div>Attachments:</div><ul dojoattachpoint="_attachmentsList"></ul><div class="break"></div></div><div class="mediaSection hidden"><div class="header" dojoattachpoint="_mediaTitle"></div><div class="hzLine"></div><div class="caption" dojoattachpoint="_mediaCaption"></div><div class="gallery" dojoattachpoint="_gallery"><div class="mediaHandle prev" dojoattachpoint="_prevMedia" dojoattachevent="onclick: _goToPrevMedia" title="Previous media"></div><div class="mediaHandle next" dojoattachpoint="_nextMedia" dojoattachevent="onclick: _goToNextMedia" title="Next media"></div><ul class="summary"><li class="image mediaCount hidden" dojoattachpoint="_imageCount">0</li><li class="image mediaIcon hidden"></li><li class="chart mediaCount hidden" dojoattachpoint="_chartCount">0</li><li class="chart mediaIcon hidden"></li></ul><div class="frame" dojoattachpoint="_mediaFrame"></div></div></div><div class="editSummarySection hidden" dojoattachpoint="_editSummarySection"><div class="break"></div><div class="break hidden" dojoattachpoint="_mediaBreak"></div><div class="editSummary" dojoattachpoint="_editSummary"></div></div></div>
+                    </div>
+                    <span class="nearestItem-item-distance" style="display: inline-block">2.50&nbsp;miles</span>
+                    <span class="nearestItem-showonmap-link" style="display: inline-block">
+                        <button data-dojo-attach-point="mapButton" type="button" class="btn btn-link" title="Show this feature on the map">Show on map</button>
+                    </span>
+                </div>
+                
+            </a>
+            
+        </div>
+    </div>
+</div></div>
+        </div>
+    </div>
+</div></div>
+</div>
+<!-- \.. NEAREST -->
+        </div>
+</div>
+
+<div class="row">
+        <div class="col-md-8">
+			<!-- POSTCODE LOOKUP -->
+            <div id="postcodeLookup" class="findMyNearest" widgetid="postcodeLookup">
+    <h2><!--Where I Live-->Where I Live <span><!--Enter a postcode to find local services and information.-->Find local services and information.</span></h2>
+    <!-- Have added a form and a fieldset for accessibility -->
+    <form>
+        <fieldset>
+            <legend class="sr-only"><!--Where I Live-->Where I Live <span><!--Enter a postcode to find local services and information.-->Find local services and information.</span></legend>
+            <div class="searchControl">
+                <div class="form-group">
+                    <label class="form-label" for="services">Select a service</label>
+                    <select id="services" name="services" class="select-service form-control">
+                             <option value="0">Select address...</option>
+                    <option value="Parish Town Councils">Parish Town Councils</option><option value="Parliamentary Constituency">Parliamentary Constituency</option><option value="Ward Councillors">Ward Councillors</option><option value="Grit bins">Grit bins</option><option value="Libraries">Libraries</option><option value="Mobile Library stops for community">Mobile Library stops for community</option><option value="Mobile Library stops for older people">Mobile Library stops for older people</option><option value="Mobile Library stops for children">Mobile Library stops for children</option><option value="Sport centres">Sport centres</option><option value="Golf courses">Golf courses</option><option value="Recycling sites">Recycling sites</option><option value="Recycling bring sites">Recycling bring sites</option><option value="Jobshops">Jobshops</option><option value="Smoke control areas">Smoke control areas</option><option value="Community Committees">Community Committees</option><option value="Community centres">Community centres</option><option value="One stop centres">One stop centres</option><option value="Registry Offices">Registry Offices</option><option value="Check my bin day">Check my bin day</option></select>
+                </div>
+                <div id="lh-locatorhub" class="jquery-locatorhub-container form-group-button">
+                    <div class="form-group ">
+                        <label class="form-label" for="postcode">Enter your postcode <span class="form-hint">For example, ‘LS6 2SB’.</span></label>
+                        <!-- Have removed the value for accessibility -->
+                        <input id="postcode" class="jquery-locatorhub-searchtext  form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="addressLookup">Lookup Address</label>            
+                        <input id="addressLookup" type="button" class="jquery-locatorhub-searchbutton btn btn-secondary btn-small" value="Lookup Address">
+                    </div>
+                </div>
+                <div id="address-container" style="display:none">
+                    <div class="form-group">
+                        <label class="form-label" for="addressSelect">Select an address</label>
+                        <select id="addressSelect" class="form-control" name="addressSelect">
+                             <option value="0">Select address...</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="findMyNearestSearch-submit" style="display:none">
+                    <div class="form-group">
+                        <label class="sr-only" for="go">Go</label>
+                        <input id="go" type="button" class="jquery-locatorhub-searchbutton btn btn-primary" value="Go">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<!-- /. POSTCODE LOOKUP -->
+
+</div>
+</div>
+
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
@@ -72,12 +221,11 @@
 {% endblock %}
 
 {% block sectionTwoContent %}
-    <!--{% include "includes/lcc-components/where-i-live/where-i-live_map.html" %}-->
-    {% include "includes/lcc-components/where-i-live/where-i-live-new.html" %}
+
 {% endblock %}
 
 {% block sectionTwoRightHandColumn %}
-{% include "includes/lcc-components/where-i-live/where-i-live_refiners.html" %}
+
 {% endblock %}
 
 {% block sectionTwoThirdCol1 %}
