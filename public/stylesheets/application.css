@@ -17756,7 +17756,7 @@ ul.promo-group {
         font-family: FontAwesome;
         position: absolute;
         font-weight: normal;
-        bottom: -40px;
+        bottom: 17px;
         right: 0px;
         height: 25px;
         width: 25px;
@@ -17767,9 +17767,55 @@ ul.promo-group {
     .promo a:hover span, .promo .link:hover span, .promo .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover span, .nearestItem-search-features-inner a .nearestItem-showonmap-link .promo .btn-link:hover span {
       width: 100%;
       padding: 15px 15px 40px 15px; }
-      .promo a:hover span:after, .promo .link:hover span:after, .promo .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover span:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .promo .btn-link:hover span:after {
-        bottom: 10px;
-        right: 0px; }
+
+.two .listWebpart ul .promo {
+  width: 48% !important; }
+
+.three .listWebpart ul .promo {
+  width: 31.33% !important; }
+
+.four .listWebpart ul .promo {
+  width: 23% !important; }
+
+.two .listWebpart ul,
+.three .listWebpart ul,
+.four .listWebpart ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -moz-box-flex-wrap: wrap;
+  -ms-flex-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 0 0 -2%; }
+  @media (max-width: 600px) {
+    .two .listWebpart ul,
+    .three .listWebpart ul,
+    .four .listWebpart ul {
+      margin: 0; } }
+  .two .listWebpart ul .promo,
+  .three .listWebpart ul .promo,
+  .four .listWebpart ul .promo {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align-items: stretch;
+    -moz-box-align-items: stretch;
+    -ms-flex-align-items: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    margin: 0 0 2% 2%; }
+    @media (max-width: 600px) {
+      .two .listWebpart ul .promo,
+      .three .listWebpart ul .promo,
+      .four .listWebpart ul .promo {
+        margin: 0 0 15px;
+        width: 100% !important; } }
 
 /*****************
 CAROUSEL BOOTSTRAP
@@ -18019,7 +18065,7 @@ ul.accordion {
 ul.accordion div.text-block {
   padding: 0 20px !important; }
 
-ul.accordion div.text-hghlight {
+ul.accordion div.text-highlight, ul.accordion div.text-block {
   padding: 20px !important; }
 
 .alert {
