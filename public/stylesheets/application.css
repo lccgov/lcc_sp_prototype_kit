@@ -18105,6 +18105,8 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
     text-shadow: none; }
     .alert .close:hover {
       color: #393b3f; }
+      .alert .close:hover span {
+        background: transparent; }
     .alert .close:focus span {
       background: #FFBF47; }
   .alert h2 {
@@ -21260,14 +21262,14 @@ form legend {
   .part-navigation__container nav ol {
     padding: 0; }
     .part-navigation__container nav ol li {
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 12px;
       list-style: decimal;
       margin-left: 1.5em;
       padding-left: 0.3em; }
       @media (min-width: 641px) {
         .part-navigation__container nav ol li {
-          font-size: 16px; } }
+          font-size: 19px; } }
 
 .sub-section-nav {
   display: -webkit-box;
