@@ -391,3 +391,12 @@ footer.main {
 .atoz {
     margin-bottom: 0 !important;;
 }
+
+.atoz ul li a,
+.atoz ul li.inactive{
+    width:30px;
+}
+
+.atoz ul li:last-of-type a{
+    width:60px;
+}
