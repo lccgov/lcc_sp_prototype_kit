@@ -1,6 +1,5 @@
 <div id="check-your-bin-day" class="findMyNearest check-your-bin-day">
     <h2>Find your bin collection dates</h2>
-    <!-- Have added a form and a fieldset for accessibility -->
     <form>
         <fieldset>
             <legend class="sr-only">Find your bin collection dates</legend>
@@ -16,7 +15,7 @@
                             <input id="addressLookup" type="button" class="jquery-locatorhub-searchbutton btn btn-secondary btn-small" value="Lookup Address">
                         </div>
                     </div>
-                    <div id="address-container">
+                    <div id="address-container" style="display:none">
                         <div class="form-group">
                             <label class="form-label" for="addressSelect">Select an address</label>
                             <select id="addressSelect" class="form-control" name="addressSelect">
@@ -41,7 +40,7 @@
                     </div>
                 </div>
                 
-                <div id="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_BinResultsDetails">
+                <div id="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_BinResultsDetails" style="display:none">
                     <div class="bin-results">
                         <div class="selectedContainer">
                             <h3><img src="/public/images/bins_black.svg" alt="">Black bin collection days</h3>
