@@ -46,7 +46,7 @@ $brand-color:$blue;
 $button-color:$green;
 $button-hover-color:lighten($button-color,5%);
 $focus-color:$yellow;
-$base-container-width:1400px ;
+$base-container-width:1280px ;
 //$btn-background-color:green ;
 $font-primary:'Open Sans', sans-serif; // main font
 $font-secondary:'Montserrat', sans-serif; // secondary font used for headings
@@ -382,4 +382,21 @@ ul.accordion div.text-highlight {
     font-size:24px;
     color:$secondary-font-color;
     font-weight:400;
+}
+
+footer.main {
+    margin-top: 0;
+}
+
+.atoz {
+    margin-bottom: 0 !important;;
+}
+
+.atoz ul li a,
+.atoz ul li.inactive{
+    width:30px;
+}
+
+.atoz ul li:last-of-type a{
+    width:60px;
 }

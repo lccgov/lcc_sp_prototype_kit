@@ -16239,7 +16239,7 @@ body {
       color: #fff; }
 
 .container-fluid {
-  max-width: 1400px; }
+  max-width: 1280px; }
 
 .sectionHeader {
   background: #007299; }
@@ -18059,7 +18059,7 @@ ul.accordion {
       @media (max-width: 641px) {
         ul.accordion li div.content-block {
           padding: 10px 10px 5px 35px !important; } }
-  ul.accordion .list a, ul.accordion .freeContentArea ul a, .freeContentArea ul.accordion ul a, ul.accordion .list .link, ul.accordion .freeContentArea ul .link, .freeContentArea ul.accordion ul .link, ul.accordion .list .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion .list .btn-link, ul.accordion .freeContentArea ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion .freeContentArea ul .btn-link, .freeContentArea ul.accordion ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .freeContentArea ul.accordion ul .btn-link {
+  ul.accordion .list a, ul.accordion .binCollectionTimesList a, ul.accordion .freeContentArea ul a, .freeContentArea ul.accordion ul a, ul.accordion .list .link, ul.accordion .binCollectionTimesList .link, ul.accordion .freeContentArea ul .link, .freeContentArea ul.accordion ul .link, ul.accordion .list .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion .list .btn-link, ul.accordion .binCollectionTimesList .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion .binCollectionTimesList .btn-link, ul.accordion .freeContentArea ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion .freeContentArea ul .btn-link, .freeContentArea ul.accordion ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .freeContentArea ul.accordion ul .btn-link {
     text-decoration: none; }
 
 ul.accordion div.text-block {
@@ -19703,19 +19703,19 @@ ul,
 ol {
   list-style-type: none; }
 
-.list, .freeContentArea ul.list, .freeContentArea ul {
+.list, .binCollectionTimesList, .freeContentArea ul.list, .freeContentArea ul {
   padding: 0;
   margin-top: 0;
   margin-bottom: 15px;
   display: inline-block;
   width: 100%; }
   @media (min-width: 641px) {
-    .list, .freeContentArea ul.list, .freeContentArea ul {
+    .list, .binCollectionTimesList, .freeContentArea ul.list, .freeContentArea ul {
       margin-bottom: 17px; } }
-  .list li, .freeContentArea ul.list li, .freeContentArea ul li {
+  .list li, .binCollectionTimesList li, .freeContentArea ul.list li, .freeContentArea ul li {
     margin-bottom: 7px; }
 
-.list-bullet, .freeContentArea ul {
+.list-bullet, .binCollectionTimesList, .freeContentArea ul {
   list-style-type: disc;
   padding-left: 20px; }
 
@@ -21315,11 +21315,11 @@ form legend {
       @media (max-width: 767px) {
         .sub-section-nav .sub-section .sub-section-heading, .sub-section-nav.panels .sub-section a .sub-section-heading, .sub-section-nav.panels .sub-section .link .sub-section-heading, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav.panels .sub-section .btn-link .sub-section-heading {
           font-size: 19px; } }
-    .sub-section-nav .sub-section .list li, .sub-section-nav .sub-section .freeContentArea ul li, .freeContentArea .sub-section-nav .sub-section ul li {
+    .sub-section-nav .sub-section .list li, .sub-section-nav .sub-section .binCollectionTimesList li, .sub-section-nav .sub-section .freeContentArea ul li, .freeContentArea .sub-section-nav .sub-section ul li {
       margin-bottom: 15px; }
-      .sub-section-nav .sub-section .list li a, .sub-section-nav .sub-section .freeContentArea ul li a, .freeContentArea .sub-section-nav .sub-section ul li a, .sub-section-nav .sub-section .list li .link, .sub-section-nav .sub-section .freeContentArea ul li .link, .freeContentArea .sub-section-nav .sub-section ul li .link, .sub-section-nav .sub-section .list li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav .sub-section .list li .btn-link, .sub-section-nav .sub-section .freeContentArea ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav .sub-section .freeContentArea ul li .btn-link, .freeContentArea .sub-section-nav .sub-section ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .freeContentArea .sub-section-nav .sub-section ul li .btn-link {
+      .sub-section-nav .sub-section .list li a, .sub-section-nav .sub-section .binCollectionTimesList li a, .sub-section-nav .sub-section .freeContentArea ul li a, .freeContentArea .sub-section-nav .sub-section ul li a, .sub-section-nav .sub-section .list li .link, .sub-section-nav .sub-section .binCollectionTimesList li .link, .sub-section-nav .sub-section .freeContentArea ul li .link, .freeContentArea .sub-section-nav .sub-section ul li .link, .sub-section-nav .sub-section .list li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav .sub-section .list li .btn-link, .sub-section-nav .sub-section .binCollectionTimesList li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav .sub-section .binCollectionTimesList li .btn-link, .sub-section-nav .sub-section .freeContentArea ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav .sub-section .freeContentArea ul li .btn-link, .freeContentArea .sub-section-nav .sub-section ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .freeContentArea .sub-section-nav .sub-section ul li .btn-link {
         text-decoration: none; }
-        .sub-section-nav .sub-section .list li a:hover, .sub-section-nav .sub-section .freeContentArea ul li a:hover, .freeContentArea .sub-section-nav .sub-section ul li a:hover, .sub-section-nav .sub-section .list li .link:hover, .sub-section-nav .sub-section .freeContentArea ul li .link:hover, .freeContentArea .sub-section-nav .sub-section ul li .link:hover, .sub-section-nav .sub-section .list li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav .sub-section .list li .btn-link:hover, .sub-section-nav .sub-section .freeContentArea ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav .sub-section .freeContentArea ul li .btn-link:hover, .freeContentArea .sub-section-nav .sub-section ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .freeContentArea .sub-section-nav .sub-section ul li .btn-link:hover {
+        .sub-section-nav .sub-section .list li a:hover, .sub-section-nav .sub-section .binCollectionTimesList li a:hover, .sub-section-nav .sub-section .freeContentArea ul li a:hover, .freeContentArea .sub-section-nav .sub-section ul li a:hover, .sub-section-nav .sub-section .list li .link:hover, .sub-section-nav .sub-section .binCollectionTimesList li .link:hover, .sub-section-nav .sub-section .freeContentArea ul li .link:hover, .freeContentArea .sub-section-nav .sub-section ul li .link:hover, .sub-section-nav .sub-section .list li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav .sub-section .list li .btn-link:hover, .sub-section-nav .sub-section .binCollectionTimesList li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav .sub-section .binCollectionTimesList li .btn-link:hover, .sub-section-nav .sub-section .freeContentArea ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav .sub-section .freeContentArea ul li .btn-link:hover, .freeContentArea .sub-section-nav .sub-section ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .freeContentArea .sub-section-nav .sub-section ul li .btn-link:hover {
           text-decoration: underline; }
 
 .no-flexbox .sub-section-nav .sub-section {
@@ -21348,7 +21348,7 @@ form legend {
     .sub-section-nav.panels .sub-section a .sub-section-heading, .sub-section-nav.panels .sub-section .link .sub-section-heading, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav.panels .sub-section .btn-link .sub-section-heading {
       border: 0;
       margin-bottom: 10px !important; }
-    .sub-section-nav.panels .sub-section .list.list-nav li a, .sub-section-nav.panels .sub-section .freeContentArea ul.list-nav li a, .freeContentArea .sub-section-nav.panels .sub-section ul.list-nav li a, .sub-section-nav.panels .sub-section .list.list-nav li .link, .sub-section-nav.panels .sub-section .freeContentArea ul.list-nav li .link, .freeContentArea .sub-section-nav.panels .sub-section ul.list-nav li .link, .sub-section-nav.panels .sub-section .list.list-nav li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav.panels .sub-section .list.list-nav li .btn-link, .sub-section-nav.panels .sub-section .freeContentArea ul.list-nav li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav.panels .sub-section .freeContentArea ul.list-nav li .btn-link, .freeContentArea .sub-section-nav.panels .sub-section ul.list-nav li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .freeContentArea .sub-section-nav.panels .sub-section ul.list-nav li .btn-link {
+    .sub-section-nav.panels .sub-section .list.list-nav li a, .sub-section-nav.panels .sub-section .list-nav.binCollectionTimesList li a, .sub-section-nav.panels .sub-section .freeContentArea ul.list-nav li a, .freeContentArea .sub-section-nav.panels .sub-section ul.list-nav li a, .sub-section-nav.panels .sub-section .list.list-nav li .link, .sub-section-nav.panels .sub-section .list-nav.binCollectionTimesList li .link, .sub-section-nav.panels .sub-section .freeContentArea ul.list-nav li .link, .freeContentArea .sub-section-nav.panels .sub-section ul.list-nav li .link, .sub-section-nav.panels .sub-section .list.list-nav li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav.panels .sub-section .list.list-nav li .btn-link, .sub-section-nav.panels .sub-section .list-nav.binCollectionTimesList li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav.panels .sub-section .list-nav.binCollectionTimesList li .btn-link, .sub-section-nav.panels .sub-section .freeContentArea ul.list-nav li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav.panels .sub-section .freeContentArea ul.list-nav li .btn-link, .freeContentArea .sub-section-nav.panels .sub-section ul.list-nav li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .freeContentArea .sub-section-nav.panels .sub-section ul.list-nav li .btn-link {
       text-decoration: underline; }
     .sub-section-nav.panels .sub-section li.contact {
       margin: 20px 0 0 !important; }
@@ -21673,7 +21673,7 @@ hr {
   .example .highlight {
     font-style: normal;
     color: #0076c0; }
-  .example .list-bullet, .example .freeContentArea ul, .freeContentArea .example ul {
+  .example .list-bullet, .example .binCollectionTimesList, .example .freeContentArea ul, .freeContentArea .example ul {
     margin-bottom: 20px; }
 
 .example-grid p {
@@ -22438,7 +22438,9 @@ hr {
 .nearestLayer-heading-container {
   position: relative; }
   .nearestLayer-heading-container .nearestLayer-title {
-    padding-left: 50px; }
+    padding-left: 50px;
+    margin: 0;
+    color: #007299; }
 
 .nearestLayer-feature-count, .nearestLayer-details-body .nearestItem-feature-marker {
   background: #008000;
@@ -22474,6 +22476,37 @@ hr {
 
 .panel-group.panel-group-outline .panel .panel-body, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-body, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-body, .panel-group.panel-group-outline .findMyNearest .panel-body {
   padding: 20px !important; }
+
+.check-your-bin-day h2:before {
+  content: "\f073"; }
+
+.check-your-bin-day .selectedContainer {
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 20px 0 0 140px;
+  position: relative; }
+  @media (max-width: 641px) {
+    .check-your-bin-day .selectedContainer {
+      padding: 20px 0 0 100px; } }
+  @media (max-width: 450px) {
+    .check-your-bin-day .selectedContainer {
+      padding: 20px 0 0; } }
+  .check-your-bin-day .selectedContainer h3 img {
+    position: absolute;
+    left: 20px;
+    top: 25px; }
+    @media (max-width: 641px) {
+      .check-your-bin-day .selectedContainer h3 img {
+        width: 65px;
+        left: 10px; } }
+    @media (max-width: 450px) {
+      .check-your-bin-day .selectedContainer h3 img {
+        width: 13px;
+        top: 0;
+        left: 0; } }
+  @media (max-width: 450px) {
+    .check-your-bin-day .selectedContainer h3 {
+      position: relative;
+      padding-left: 25px; } }
 
 .open-data {
   padding: 0; }
@@ -22842,7 +22875,7 @@ hr {
   display: inline-block;
   cursor: pointer; }
 
-.freeContentArea ul.list, .freeContentArea ul {
+.freeContentArea ul.binCollectionTimesList, .freeContentArea ul.list, .freeContentArea ul {
   list-style: none; }
 
 .freeContentArea ul {
@@ -23389,3 +23422,9 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
   font-size: 24px;
   color: #666B76;
   font-weight: 400; }
+
+footer.main {
+  margin-top: 0; }
+
+.atoz {
+  margin-bottom: 0 !important; }
