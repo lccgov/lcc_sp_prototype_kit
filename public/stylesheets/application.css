@@ -23435,3 +23435,10 @@ footer.main {
 
 .atoz ul li:last-of-type a, .atoz ul li:last-of-type .link, .atoz ul li:last-of-type .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .atoz ul li:last-of-type .btn-link {
   width: 60px; }
+
+.ElginRoadworksWidget {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  @media (max-width: 450px) {
+    .ElginRoadworksWidget {
+      height: 400px !important; } }
