@@ -22482,14 +22482,14 @@ hr {
 
 .check-your-bin-day .selectedContainer {
   border-top: 1px solid rgba(255, 255, 255, 0.8);
-  padding: 20px 0 0 140px;
+  padding: 20px 0 20px 140px;
   position: relative; }
   @media (max-width: 641px) {
     .check-your-bin-day .selectedContainer {
-      padding: 20px 0 0 100px; } }
+      padding: 20px 0 20px 100px; } }
   @media (max-width: 450px) {
     .check-your-bin-day .selectedContainer {
-      padding: 20px 0 0; } }
+      padding: 20px 0; } }
   .check-your-bin-day .selectedContainer h3 img {
     position: absolute;
     left: 20px;
@@ -23428,3 +23428,10 @@ footer.main {
 
 .atoz {
   margin-bottom: 0 !important; }
+
+.atoz ul li a, .atoz ul li .link, .atoz ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .atoz ul li .btn-link,
+.atoz ul li.inactive {
+  width: 30px; }
+
+.atoz ul li:last-of-type a, .atoz ul li:last-of-type .link, .atoz ul li:last-of-type .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .atoz ul li:last-of-type .btn-link {
+  width: 60px; }

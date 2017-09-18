@@ -192,15 +192,15 @@
 
     .selectedContainer{
         border-top:1px solid rgba(white,0.8);
-        padding:20px 0 0 140px;
+        padding:20px 0 20px 140px;
         position:relative;
 
         @media (max-width: 641px){
-            padding:20px 0 0 100px;
+            padding:20px 0 20px 100px;
         }
 
         @media (max-width: 450px){
-            padding:20px 0 0;
+            padding:20px 0;
         }
 
         h3{
