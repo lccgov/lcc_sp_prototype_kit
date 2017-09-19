@@ -6,9 +6,10 @@
             <div class="searchControl">
                 <div class="form-group">
                     <div id="postcode-lookup-container" class="form-group-button">
-                        <div class="form-group ">
+                        <div class="form-group form-group-error">
                             <label class="form-label" for="postcode">Enter your postcode <span class="form-hint">For example, ‘LS6 2SB’.</span></label>
-                            <input id="postcode" class="jquery-locatorhub-searchtext  form-control" type="text">
+                            <span class="error-message">This isn't a valid postcode. Check it and enter it again.</span>
+                            <input id="postcode" class="jquery-locatorhub-searchtext form-control form-control-error" type="text">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="addressLookup">Lookup Address</label>            
@@ -119,11 +120,12 @@
                             </div>
                         </div>
                     </div>
-                    <h3>Print calendar</h3>
+                    <h3>Print a bin collection calendar</h3>
+                    <p>It includes the next 13 bin collection dates for all bin types.</p>
                     <div role="note" aria-label="Information" class="text-highlight">
-                        <p>To download a calendar with your bin days on please ensure your browser is not blocking pop-ups from this site.</p>
+                        <p>Please ensure your browser is not blocking pop-ups from this site.</p>
                     </div>
-                    <p><a class="btn btn-primary print" href="#">Print a calendar</a></p>
+                    <button class="btn btn-primary btn-print" type="button" id="btnPrintCalender" tooltip="Print calendar." onclick="Print()">Print a calendar</button>
                 </div>
             </div>
         </fieldset>
