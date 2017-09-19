@@ -22477,6 +22477,16 @@ hr {
 .panel-group.panel-group-outline .panel .panel-body, .panel-group.panel-group-outline .sub-section-nav.panels .sub-section .panel-body, .sub-section-nav.panels .panel-group.panel-group-outline .sub-section .panel-body, .panel-group.panel-group-outline .findMyNearest .panel-body {
   padding: 20px !important; }
 
+.check-your-bin-day #postcode-lookup-container {
+  margin-bottom: -40px; }
+
+.check-your-bin-day #address-container {
+  margin-top: 40px;
+  margin-bottom: -40px; }
+
+.check-your-bin-day .bin-results {
+  margin-top: 20px; }
+
 .check-your-bin-day h2:before {
   content: "\f073"; }
 
@@ -22484,6 +22494,8 @@ hr {
   border-top: 1px solid rgba(255, 255, 255, 0.8);
   padding: 20px 0 20px 140px;
   position: relative; }
+  .check-your-bin-day .selectedContainer:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8); }
   @media (max-width: 641px) {
     .check-your-bin-day .selectedContainer {
       padding: 20px 0 20px 100px; } }
@@ -22507,6 +22519,14 @@ hr {
     .check-your-bin-day .selectedContainer h3 {
       position: relative;
       padding-left: 25px; } }
+
+.binCollectionTimesList {
+  margin-bottom: 10px; }
+
+.bin-calendar-print {
+  padding-top: 30px; }
+  .bin-calendar-print .btn-print {
+    margin-bottom: 0; }
 
 .open-data {
   padding: 0; }

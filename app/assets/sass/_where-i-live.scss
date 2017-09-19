@@ -184,6 +184,20 @@
 
 //check your bin day
 .check-your-bin-day{
+
+    #postcode-lookup-container{
+        margin-bottom:-40px;
+    }
+
+    #address-container{
+        margin-top:40px;
+        margin-bottom:-40px;
+    }
+
+    .bin-results{
+        margin-top:20px;
+    }
+
     h2{
         &:before{
             content: "\f073";
@@ -194,6 +208,10 @@
         border-top:1px solid rgba(white,0.8);
         padding:20px 0 20px 140px;
         position:relative;
+
+        &:last-child{
+            border-bottom:1px solid rgba(white,0.8);
+        }
 
         @media (max-width: 641px){
             padding:20px 0 20px 100px;
@@ -232,5 +250,14 @@
 .binCollectionTimesList{
     @extend .list;
     @extend .list-bullet;
+    margin-bottom:10px;
+}
+
+.bin-calendar-print{
+    padding-top:30px;
+    
+    .btn-print{
+        margin-bottom:0;
+    }
 }
 
