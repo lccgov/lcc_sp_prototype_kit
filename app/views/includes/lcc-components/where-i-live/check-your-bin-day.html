@@ -1,14 +1,18 @@
 <div id="check-your-bin-day" class="findMyNearest check-your-bin-day">
-    <h2>Find your bin collection dates</h2>
     <form>
         <fieldset>
             <legend class="sr-only">Find your bin collection dates</legend>
             <div class="searchControl">
                 <div class="form-group">
                     <div id="postcode-lookup-container" class="form-group-button">
-                        <div class="form-group ">
+                        <div class="form-group">
                             <label class="form-label" for="postcode">Enter your postcode <span class="form-hint">For example, ‘LS6 2SB’.</span></label>
-                            <input id="postcode" class="jquery-locatorhub-searchtext  form-control" type="text">
+                            <input id="postcode" class="jquery-locatorhub-searchtext form-control" type="text">
+                        </div>
+                        <div class="form-group" style="display:none">
+                            <label class="form-label" for="postcode">Enter your postcode <span class="form-hint">For example, ‘LS6 2SB’.</span></label>
+                            <span class="error-message">This isn't a valid postcode. Check it and enter it again.</span>
+                            <input id="postcode" class="jquery-locatorhub-searchtext form-control form-control-error" type="text">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="addressLookup">Lookup Address</label>            
@@ -119,11 +123,14 @@
                             </div>
                         </div>
                     </div>
-                    <h3>Print calendar</h3>
-                    <div role="note" aria-label="Information" class="text-highlight">
-                        <p>To download a calendar with your bin days on please ensure your browser is not blocking pop-ups from this site.</p>
+                    <div class="bin-calendar-print text">
+                        <h3>Print a bin collection calendar</h3>
+                        <p>It includes the next 13 bin collection dates for all bin types.</p>
+                        <button class="btn btn-primary btn-print" type="button" id="btnPrintCalender" tooltip="Print calendar." onclick="Print()">Print a calendar</button>
+                        <div role="note" aria-label="Information" class="text-highlight">
+                            <p>To print a calendar, please ensure your browser is not blocking pop-ups from this site.</p>
+                        </div>
                     </div>
-                    <p><a class="btn btn-primary print" href="#">Print a calendar</a></p>
                 </div>
             </div>
         </fieldset>
