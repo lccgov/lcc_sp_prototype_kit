@@ -1,70 +1,130 @@
-<div>
-            <fieldset class="formContainerOuter">
-                <legend>Search bin collection day</legend>
-                <div class="lcc-formContainer">
-                    <p>Please enter your postcode to find your property</p>
+<div id="check-your-bin-day" class="findMyNearest check-your-bin-day">
+    <form>
+        <fieldset>
+            <legend class="sr-only">Find your bin collection dates</legend>
+            
+            <asp:Label ID="lblErrorAddressSearch" CssClass="errorMessage" runat="server" Display="Dynamic" Text=""></asp:Label>
+
+            <div id="postcode-lookup-container" class="form-group-button">
+                <div class="form-group">
+                    <asp:Label ID="lblPostCode" runat="server" Text="Label" AssociatedControlID="txtPostCode">Enter your postcode <span class="form-hint">For example, ‘LS6 2SB’.</span></asp:Label>
+                    <asp:TextBox ID="txtPostCode" runat="server" CssClass="form-control" MaxLength="10"></asp:TextBox>
+                </div>
+                <div class="form-group">
+                    <asp:Button ID="btnSearchAddress" class="btn btn-secondary btn-small" runat="server" Text="Lookup address" OnClick="btnSearchAddress_Click" />
+                </div>
+            </div>
+
+            <asp:Panel ID="pnlAddressList" Visible="false" runat="server">
+
+                <div id="address-container" style="display:block">
+                    <div class="form-group">
+                        <asp:Label ID="lblAddressList" runat="server" Text="Label" AssociatedControlID="ddlAddressList">Select an address.</asp:Label>
+                        <asp:DropDownList ID="ddlAddressList"  Visible="false" CssClass="form-control" runat="server"
+                            OnSelectedIndexChanged="ddlAddressList_SelectedIndexChanged" AppendDataBoundItems="true"
+                            AutoPostBack="True">
+                            <asp:ListItem Selected="True"></asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+
+                <div id="BinResultsDetails" runat="server">
+
+                    <div class="selectedContainer">
+                        <h3><img src="/public/images/bins_black.svg" alt="">Black bin collection days</h3>
+                        <div id="divBlackBin">
+                            <ul class="binCollectionTimesList">
+                                <li class="">Monday 25 Sep 2017</li>
+                                <li class="">Monday 9 Oct 2017</li>
+                                <li class="">Monday 23 Oct 2017</li>
+                                <li class="sr-only">Monday 6 Nov 2017</li>
+                                <li class="sr-only">Monday 20 Nov 2017</li>
+                                <li class="sr-only">Monday 4 Dec 2017</li>
+                                <li class="sr-only">Monday 18 Dec 2017</li>
+                                <li class="sr-only">Monday 1 Jan 2018</li>
+                                <li class="sr-only">Monday 15 Jan 2018</li>
+                                <li class="sr-only">Monday 29 Jan 2018</li>
+                                <li class="sr-only">Monday 12 Feb 2018</li>
+                                <li class="sr-only">Monday 26 Feb 2018</li>
+                            </ul>
+                            <p><a href="/Pages/Pages/Black-Bin.aspx">What goes in the black bin?</a></p>
+                        </div>
+                    </div>
+                    <div class="selectedContainer">
+                        <h3><img src="/public/images/bins_brown.svg" alt="">Brown bin collection days</h3>
+                        <div id="divBrownBin">
+                            <ul class="binCollectionTimesList">
+                                <li class="">Saturday 23 Sep 2017</li>
+                                <li class="">Saturday 7 Oct 2017</li>
+                                <li class="">Saturday 21 Oct 2017</li>
+                                <li class="sr-only">Saturday 4 Nov 2017</li>
+                                <li class="sr-only">Saturday 18 Nov 2017</li>
+                                <li class="sr-only">Saturday 2 Dec 2017</li>
+                            </ul>
+                            <p><a href="/Pages/brown-garden-waste-bin.aspx">What goes in the brown bin?</a></p>
+                        </div>
+                    </div>
+                    <div class="selectedContainer">
+                        <h3><img src="/public/images/bins_green.svg" alt="">Green bin collection days</h3>
+                        <div id="divGreenBin">
+                            <ul class="binCollectionTimesList">
+                                <li class="">Monday 18 Sep 2017</li>
+                                <li class="">Monday 2 Oct 2017</li>
+                                <li class="">Monday 16 Oct 2017</li>
+                                <li class="sr-only">Monday 30 Oct 2017</li>
+                                <li class="sr-only">Monday 13 Nov 2017</li>
+                                <li class="sr-only">Monday 27 Nov 2017</li>
+                                <li class="sr-only">Monday 11 Dec 2017</li>
+                                <li class="sr-only">Monday 25 Dec 2017</li>
+                                <li class="sr-only">Monday 8 Jan 2018</li>
+                                <li class="sr-only">Monday 22 Jan 2018</li>
+                                <li class="sr-only">Monday 5 Feb 2018</li>
+                                <li class="sr-only">Monday 19 Feb 2018</li>
+                                <li class="sr-only">Monday 5 Mar 2018</li>
+                            </ul>
+                            <p><a href="/Pages/How-to-use-your-green-recycling-bin.aspx">What goes in the green bin?</a></p>
+                        </div>
+                    </div>
+                    <div class="selectedContainer">
+                        <h3><img src="/public/images/bins_blue.svg" alt="">Blue bin collection days</h3>
+                        <div id="divBlueBin">
+                            <ul class="binCollectionTimesList">
+                                <li class="">Monday 18 Sep 2017</li>
+                                <li class="">Monday 2 Oct 2017</li>
+                                <li class="">Monday 16 Oct 2017</li>
+                                <li class="sr-only">Monday 30 Oct 2017</li>
+                                <li class="sr-only">Monday 13 Nov 2017</li>
+                                <li class="sr-only">Monday 27 Nov 2017</li>
+                                <li class="sr-only">Monday 11 Dec 2017</li>
+                                <li class="sr-only">Monday 25 Dec 2017</li>
+                                <li class="sr-only">Monday 8 Jan 2018</li>
+                                <li class="sr-only">Monday 22 Jan 2018</li>
+                                <li class="sr-only">Monday 5 Feb 2018</li>
+                                <li class="sr-only">Monday 19 Feb 2018</li>
+                                <li class="sr-only">Monday 5 Mar 2018</li>
+                            </ul>
+                            <p><a href="/Pages/What-goes-in-your-food-waste-bin.aspx">What goes in the blue bin?</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <asp:Panel ID="pnlPrintButton" Visible="false" runat="server">
+                    <div class="bin-calendar-print text">
+                        <h3>Print a bin collection calendar</h3>
+                        <p>It includes the next 13 bin collection dates for all bin types.</p>
+                        <button type="button" id="btnPrintCalender"  onclick="Print()" CssClass="btn btn-primary btn-print" >Print a calendar</button>
+                        <div role="note" aria-label="Information" class="text-highlight">
+                            <p>To print a calendar, please ensure your browser is not blocking pop-ups from this site.</p>
+                        </div>
+                    </div>
+                </asp:Panel>
+
+                <div class="lcc-loaderContainer">
+                    <div class="loaderContainer"></div>
                 </div>
                 
-                
-                <div class="lcc-formContainer">
+            </asp:Panel>
 
-                    <div class="lcc-caption">
-                        <label for="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_txtPostCode" id="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_lblPostCode">Postcode</label>
-                    </div>
-                    <div class="lcc-form">
-                        <input name="ctl00$ctl47$g_0b7726e5_d078_48fc_b7da_6202cf01a3f7$ctl00$txtPostCode" type="text" value="ls6 2sb" maxlength="10" id="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_txtPostCode" title="Please enter a postcode." class="lcc-input">
-                        <input type="submit" name="ctl00$ctl47$g_0b7726e5_d078_48fc_b7da_6202cf01a3f7$ctl00$btnSearchAddress" value="Search Address" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl47$g_0b7726e5_d078_48fc_b7da_6202cf01a3f7$ctl00$btnSearchAddress&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_btnSearchAddress" title="Search for selected adress." class="submit">
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div id="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_pnlAddressList" class="rowTwoCol">
-					
-                    <div class="lcc-formContainer">
-                        <div class="lcc-caption">
-                            <label for="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_ddlAddressList" id="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_lblAddressList">Select your address.</label>
-                        </div>
-                        <div class="lcc-form">
-                            <select name="ctl00$ctl47$g_0b7726e5_d078_48fc_b7da_6202cf01a3f7$ctl00$ddlAddressList" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl47$g_0b7726e5_d078_48fc_b7da_6202cf01a3f7$ctl00$ddlAddressList\',\'\')', 0)" id="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_ddlAddressList" title="Please select your address from the list. There is more than one selection available for postcode you have entered." class="lcc-dropdown">
-						<option value="Please select your address from the list">Please select your address from the list</option>
-						<option value="000072506446">1, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072506447">3, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072506448">5, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072506449">7, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072506451">17, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072506452">19, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072506976">9, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072506977">11, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072506978">15, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072506979">12, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072506980">10, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072506981">8, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072506982">6, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option selected="selected" value="000072507703">4, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-						<option value="000072507704">2, Rawling Way, Meanwood, Leeds, LS6 2SB</option>
-
-					</select>
-                        </div>
-                    </div>
-                    <div class="lcc-formContainer">
-                        <div class="lcc-caption">
-                            <label for="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_lblAddressRight" id="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_lblAddressLeft">Current selection</label>
-                        </div>
-                        <div class="lcc-form">
-                            <span id="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_lblAddressRight" title="Current selected address.">4 Rawling Way<br>Meanwood<br>Leeds<br>LS6 2SB</span>
-                        </div>
-                    </div>
-                    <div id="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_BinResultsDetails"><div class=""><div class="selectedContainer"><h3><img src="_layouts/images/WIRPBrand/iconBlackBin.png" alt="Black bin icon">Black bin collection days</h3><div id="divBlackBin"><ul class="binCollectionTimesList"><li class="">Monday 25 Sep 2017</li><li class="">Monday 9 Oct 2017</li><li class="">Monday 23 Oct 2017</li><li class="hideFromScreen">Monday 6 Nov 2017</li><li class="hideFromScreen">Monday 20 Nov 2017</li><li class="hideFromScreen">Monday 4 Dec 2017</li><li class="hideFromScreen">Monday 18 Dec 2017</li><li class="hideFromScreen">Monday 1 Jan 2018</li><li class="hideFromScreen">Monday 15 Jan 2018</li><li class="hideFromScreen">Monday 29 Jan 2018</li><li class="hideFromScreen">Monday 12 Feb 2018</li><li class="hideFromScreen">Monday 26 Feb 2018</li></ul></div></div><div class="selectedContainer"><h3><img src="_layouts/images/WIRPBrand/iconBrownBin.png" alt="Brown bin icon">Brown bin collection days</h3><div id="divBrownBin"><ul class="binCollectionTimesList"><li class="">Saturday 23 Sep 2017</li><li class="">Saturday 7 Oct 2017</li><li class="">Saturday 21 Oct 2017</li><li class="hideFromScreen">Saturday 4 Nov 2017</li><li class="hideFromScreen">Saturday 18 Nov 2017</li><li class="hideFromScreen">Saturday 2 Dec 2017</li></ul></div></div><div class="selectedContainer"><h3><img src="_layouts/images/WIRPBrand/iconGreenBin.png" alt="Green bin icon">Green bin collection days</h3><div id="divGreenBin"><ul class="binCollectionTimesList"><li class="">Monday 18 Sep 2017</li><li class="">Monday 2 Oct 2017</li><li class="">Monday 16 Oct 2017</li><li class="hideFromScreen">Monday 30 Oct 2017</li><li class="hideFromScreen">Monday 13 Nov 2017</li><li class="hideFromScreen">Monday 27 Nov 2017</li><li class="hideFromScreen">Monday 11 Dec 2017</li><li class="hideFromScreen">Monday 25 Dec 2017</li><li class="hideFromScreen">Monday 8 Jan 2018</li><li class="hideFromScreen">Monday 22 Jan 2018</li><li class="hideFromScreen">Monday 5 Feb 2018</li><li class="hideFromScreen">Monday 19 Feb 2018</li><li class="hideFromScreen">Monday 5 Mar 2018</li></ul></div></div></div></div>
-                    <div id="ctl00_ctl47_g_0b7726e5_d078_48fc_b7da_6202cf01a3f7_ctl00_pnlPrintButton" title="You can now view and print your next 13 bin collection dates for all your bin types">
-						
-                        <button type="button" id="btnPrintCalender" tooltip="Print calendar." onclick="Print()">Print a calendar</button>
-                    
-					</div>
-                    <div class="lcc-loaderContainer">
-                        <div class="loaderContainer">
-                        </div>
-                    </div>
-                
-				</div>
-
-            </fieldset>
-        </div>
+        </fieldset>
+    </form>
+  </div>

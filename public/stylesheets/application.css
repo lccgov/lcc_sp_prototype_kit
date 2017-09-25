@@ -22480,10 +22480,6 @@ hr {
 .check-your-bin-day #postcode-lookup-container {
   margin-bottom: -40px; }
 
-.check-your-bin-day #address-container {
-  margin-top: 40px;
-  margin-bottom: -40px; }
-
 .check-your-bin-day .bin-results {
   margin-top: 20px; }
 
@@ -23462,3 +23458,24 @@ footer.main {
   @media (max-width: 450px) {
     .ElginRoadworksWidget {
       height: 400px !important; } }
+
+@media (min-width: 1200px) {
+  .column-thirds .column-third:nth-child(4) {
+    clear: left; } }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .column-thirds .column-third {
+    width: 50%; }
+    .column-thirds .column-third:nth-child(3), .column-thirds .column-third:nth-child(5) {
+      clear: left; } }
+
+@media (max-width: 767px) {
+  .column-thirds .column-third {
+    clear: none; } }
+
+.hero-lcc-wrapper {
+  height: 55vh !important; }
+
+@media (max-width: 767px) {
+  .groupPromo ul li a p, .groupPromo ul li .link p, .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link p, .nearestItem-search-features-inner a .nearestItem-showonmap-link .groupPromo ul li .btn-link p {
+    font-size: 14px; } }

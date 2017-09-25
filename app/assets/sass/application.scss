@@ -409,3 +409,32 @@ footer.main {
     } 
 }
 
+//third columns for summary links
+.column-thirds .column-third{
+    @media (min-width: 1200px) {
+        &:nth-child(4){
+            clear:left;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width:50%;
+
+        &:nth-child(3),
+        &:nth-child(5){
+            clear:left;
+        }
+    }
+    @media (max-width: 767px) {
+        clear:none;
+    }
+}
+
+.hero-lcc-wrapper{
+    height:55vh !important;
+}
+
+@media (max-width: 767px){
+    .groupPromo ul li a p {
+        font-size: 14px;
+    }
+}
