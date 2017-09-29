@@ -1,7 +1,7 @@
 {% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
-	Bins, waste and recycling
+	Survey test page
 {% endblock %}
 
 
@@ -12,7 +12,7 @@
  
 
 {% block header %}
-    Bins, waste and recycling
+    Survey test page
 {% endblock%}
 
  {% block main_nav %}
@@ -28,17 +28,13 @@
 
 
  {% block breadcrumb %}
-<ul>
-    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
-        <a href="/lcc-home.html">Home</a>
-        <ul class="">
-            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Bins, waste and recycling</li>
-        </ul>
-    </li>
-</ul>
+
  {% endblock %}
 
 {% block sectionOneContent %}
+
+{% include "includes/lcc-components/survey-original.html" %}
+
 {% endblock %}
 
 {% block pageContent %}
@@ -46,10 +42,6 @@
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-    <ul class="list list-bullet">
-        <li><a href="/pages-lcc/bins/check-your-bin-day.html">Check your bin day</a></li>
-        <li><a href="/pages-lcc/bins/incorrect-bin-date-form.html">Incorrect bin date form</a></li>
-    </ul>
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}

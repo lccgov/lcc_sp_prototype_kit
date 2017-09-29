@@ -1,5 +1,5 @@
-<div data-module="Survey" class="survey">
-    <h3>Did you find what you were looking for?</h3>
+<div data-module="Survey" class="survey label-small">
+    <h3 class="survey-title">Did you find what you were looking for?</h3>
     <form>
         <div class="form-group">
             <fieldset>
@@ -10,7 +10,7 @@
                                     
                         <legend class="sr-only">Did you find what you were looking for?</legend>
                         
-                        <label for="yesFind" class="block-label" data-target="yesFind">
+                        <label for="yesFind" class="block-label inline" data-target="yesFind">
                             <input value="Yes" name="find" type="radio" id="yesFind" title="RadFind" />Yes</label>
                             
                             <div class="panel panel-border-narrow js-hidden" id="yesFind">                               
@@ -18,25 +18,23 @@
                                 <div id="panelEasy">
                                             
                                         <h4>How easy was it to get the help you wanted today?</h4>
-
-                                        <label for="veryEasy" class="block-label" data-target="veryEasy">
+                                        <label for="veryEasy" class="block-label inline" data-target="veryEasy">
                                             <input value="1" name="RadEasy" type="radio" id="veryEasy" class="radEasy" onclick="document.getElementById(&#39;lblEasyError&#39;).innerHTML = &#39;&#39;; return true" />Very easy</label>                       
-                                        <label for="easy" class="block-label" data-target="easy">
+                                        <label for="easy" class="block-label inline" data-target="easy">
                                             <input value="2" name="RadEasy" type="radio" id="easy" class="radEasy" onclick="document.getElementById(&#39;lblEasyError&#39;).innerHTML = &#39;&#39;; return true" />Easy</label>                       
-                                        <label for="neither" class="block-label" data-target="neither">
+                                        <label for="neither" class="block-label inline" data-target="neither">
                                             <input value="3" name="RadEasy" type="radio" id="neither" class="radEasy" onclick="document.getElementById(&#39;lblEasyError&#39;).innerHTML = &#39;&#39;; return true" />Neither</label>                        
-                                        <label for="difficult" class="block-label" data-target="difficult">
+                                        <label for="difficult" class="block-label inline" data-target="difficult">
                                             <input value="4" name="RadEasy" type="radio" id="difficult" class="radEasy" onclick="document.getElementById(&#39;lblEasyError&#39;).innerHTML = &#39;&#39;; return true" />Difficult</label>                       
-                                        <label for="veryDifficult" class="block-label" data-target="veryDifficult">
+                                        <label for="veryDifficult" class="block-label inline" data-target="veryDifficult">
                                             <input value="5" name="RadEasy" type="radio" id="veryDifficult" class="radEasy" onclick="document.getElementById(&#39;lblEasyError&#39;).innerHTML = &#39;&#39;; return true" />Very difficult</label> 
-
                                     <label id="lblEasyError" style="color: red"></label>
                                 
                                 </div>
                                 <!--/. panelEasy -->
                             </div>
 
-                        <label for="noFind" class="block-label" data-target="noFind">
+                        <label for="noFind" class="block-label inline" data-target="noFind">
                             <input value="No" name="find" type="radio" id="noFind" title="RadFind" />No</label>                
                     
                     </div>

@@ -438,3 +438,76 @@ footer.main {
         font-size: 14px;
     }
 }
+
+.survey{
+    border:1px solid $border-color;
+    margin:30px 0 30px;
+    padding:20px;
+
+    .form-group{
+        margin-bottom:0;
+    }
+
+    .survey-title{
+        @extend .heading-small;
+        margin-top:0px;
+    }
+
+    .survey-header{
+        .block-label{
+            margin-bottom:0;
+        }
+    }
+
+    .survey-body{
+        margin-top:30px;
+    }
+}
+
+.form-group {
+    .block-label.inline {
+        display:inline-block;
+        float:left;
+        margin-right:10px;
+        clear:none;
+    }
+}
+
+//block label
+.label-small{
+    .block-label {
+        padding: 8px 15px 8px 38px;
+        font-size:16px;
+    }
+
+    .block-label {
+        input {
+            top: 9px;
+            left: 10px;
+            width: 21px;
+            height: 21px;
+        }
+    }
+}
+
+.form-group{
+    .panel{
+        .form-date{
+            margin-bottom:30px;
+            display:inline-block;
+            width:100%;
+        }
+    }
+}
+
+.form-label-header{
+    @extend .heading-small;
+}
+
+h2 .form-hint{
+    margin-top:15px;
+}
+
+.form-group-button{
+    margin-top:15px;
+}

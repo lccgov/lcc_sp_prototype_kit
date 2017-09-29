@@ -2,8 +2,7 @@
     <form>
         <fieldset>
             <legend class="sr-only">Find your bin collection dates</legend>
-            <div class="searchControl">
-                <div class="form-group">
+            
                     <div id="postcode-lookup-container" class="form-group-button">
                         <div class="form-group">
                             <label class="form-label" for="postcode">Enter your postcode <span class="form-hint">For example, ‘LS6 2SB’.</span></label>
@@ -13,7 +12,8 @@
                             <button id="addressLookup" type="button" class="btn btn-secondary btn-small" value="Lookup Address">Lookup address</button>
                         </div>
                     </div>
-                </div>
+
+                <div id="pnlAddressList">
                 <div id="address-container" style="display:block">
                     <div class="form-group">
                         <label class="form-label" for="addressSelect">Select an address</label>
@@ -35,7 +35,9 @@
                             <option>17 RAWLING WAY, MEANWOOD, LEEDS, LS6 2SB</option>
                             <option>19 RAWLING WAY, MEANWOOD, LEEDS, LS6 2SB</option>
                         </select>
+                        <a class="form-link-option" href="#">Can't find your address?</a>
                     </div>
+                    
                 </div>
                 
                 
@@ -114,9 +116,10 @@
                                     <li class="sr-only">Monday 19 Feb 2018</li>
                                     <li class="sr-only">Monday 5 Mar 2018</li>
                                 </ul>
-                                <p><a href="/Pages/What-goes-in-your-food-waste-bin.aspx">What goes in the blue bin?</a></p>
+                                <!--<p><a href="/Pages/What-goes-in-your-food-waste-bin.aspx">What goes in the blue bin?</a></p>-->
                             </div>
                         </div>
+                        <a class="form-link-option" href="#">The bin dates are incorrect</a>
                     </div>
                     <div class="bin-calendar-print text">
                         <h3>Print a bin collection calendar</h3>

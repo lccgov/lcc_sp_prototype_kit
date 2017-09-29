@@ -1,7 +1,7 @@
 {% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
-	Bins, waste and recycling
+	Incorrect bin dates
 {% endblock %}
 
 
@@ -12,7 +12,7 @@
  
 
 {% block header %}
-    Bins, waste and recycling
+    Tell us about an incorrect bin collection date
 {% endblock%}
 
  {% block main_nav %}
@@ -32,13 +32,19 @@
     <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
         <a href="/lcc-home.html">Home</a>
         <ul class="">
-            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Bins, waste and recycling</li>
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span><a href="/pages-lcc/bins/bins-waste-and-recycling.html">Bins, waste and recycling</a>
+                <ul class="">
+                    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Incorrect bin dates</li>
+                </ul>
+            </li>
         </ul>
     </li>
 </ul>
  {% endblock %}
 
 {% block sectionOneContent %}
+
+
 {% endblock %}
 
 {% block pageContent %}
@@ -46,13 +52,13 @@
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-    <ul class="list list-bullet">
-        <li><a href="/pages-lcc/bins/check-your-bin-day.html">Check your bin day</a></li>
-        <li><a href="/pages-lcc/bins/incorrect-bin-date-form.html">Incorrect bin date form</a></li>
-    </ul>
+<h2 class="top">What bins are showing the wrong dates?</h2> 
+<p>You can select more than one type.</p>
+{% include "includes/lcc-components/where-i-live/incorrect-bin-date-form.html" %}
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
+
 {% endblock %}
 
 {% block sectionOneThirdCol1 %}
