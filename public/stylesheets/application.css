@@ -16358,7 +16358,7 @@ footer.main {
 footer.main .socialBookmarks h2 {
   color: #fff; }
 
-footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after {
+footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after, footer.main .socialBookmarks .flickr:after {
   border: 1px solid #fff;
   color: #fff; }
 
@@ -18172,7 +18172,8 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
     border: none;
     margin-top: 0px;
     float: left;
-    padding: 14px; }
+    padding: 12px;
+    text-decoration: none; }
     .sectionSubsite.news a.button:hover, .sectionSubsite.news .button.link:hover, .sectionSubsite.news .nearestItem-search-features-inner a .nearestItem-showonmap-link .button.btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sectionSubsite.news .button.btn-link:hover {
       background: #001a00;
       color: #fff;
@@ -18218,7 +18219,8 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
   #paging .contentPod a, #paging .contentPod .link, #paging .contentPod .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link {
     display: block;
     width: 100%;
-    padding: 15px; }
+    padding: 15px;
+    text-decoration: none; }
     #paging .contentPod a:hover, #paging .contentPod .link:hover, #paging .contentPod .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link:hover, #paging .contentPod a:focus, #paging .contentPod .link:focus, #paging .contentPod .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link:focus {
       text-decoration: none;
       background: #f2f2f2; }
@@ -19710,6 +19712,10 @@ a[rel="external"], [rel="external"].link, .nearestItem-search-features-inner a .
     font-family: FontAwesome;
     content: "\f0d9";
     margin-right: 5px; }
+  .link-back:hover {
+    border-bottom: 1px solid #3399BB; }
+  .link-back:visited {
+    color: #007299 !important; }
 
 ul,
 ol {
@@ -20699,6 +20705,12 @@ h2 + h3 {
 
 p + .panel, .sub-section-nav.panels p + .sub-section, p + .findMyNearest {
   margin: 50px 0; }
+
+.top-header-margin {
+  margin-top: 50px; }
+  @media (max-width: 641px) {
+    .top-header-margin {
+      margin-top: 30px; } }
 
 table {
   border-collapse: collapse;
