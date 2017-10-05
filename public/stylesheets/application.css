@@ -20790,9 +20790,12 @@ p + .panel, .sub-section-nav.panels p + .sub-section, p + .findMyNearest {
     .top-header-margin {
       margin-top: 30px; } }
 
+<<<<<<< HEAD
+=======
 .more {
   font-weight: 700; }
 
+>>>>>>> d02f07f744799777a8a370507a64f85c41d6b06d
 table {
   border-collapse: collapse;
   border-spacing: 0;
