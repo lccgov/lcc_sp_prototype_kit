@@ -287,63 +287,43 @@ hr{
     padding:0 !important;
 }
 
-//self service custom
-.header-actions{
-    position:absolute;
-    top:-110px;
-    right:15px;
+//LEEDS.GOV SPECIFIC
 
-    @media (max-width: 641px){
-        position:relative;
-        top:auto;
-        right:auto;
-        margin-bottom:20px;
-    }
+//Roadworks map
+.ElginRoadworksWidget{
+    margin-top: 40px;
+    margin-bottom: 40px;    
+    @media (max-width: 450px) {
+    height: 400px !important;
+    } 
 }
 
-//to be added to front end tookit
-.lead a[rel="external"] {
-    margin-right: 32px;
-}
-
-.atoz ul li:last-of-type a{
-    width:74px;
-}
-
-//promo
-.promo a{
-    span {
-        background: $base-link-color;
-        font-family:$font-secondary;
-        font-weight:600;
-        padding: 20px;
-
-        &:after{
-            bottom:17px;
-            right: 20px;
-            font-size:26px;
-            height:auto;
-            width:auto;
+//third columns for summary links
+.column-thirds .column-third{
+    @media (min-width: 1200px) {
+        &:nth-child(3n+4){
+            clear:left;
         }
     }
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width:50%;
 
-    &:hover span{
-        padding: 20px 20px 30px 20px;
-        background: rgba($base-link-color,0.95);
-        text-decoration:underline;
-
-        &:after{       
-            bottom:27px;
-            right: 20px;
-            text-decoration:none;
+        &:nth-child(2n+3){
+            clear:left;
         }
+    }
+    @media (max-width: 767px) {
+        clear:none;
     }
 }
 
-.promoListWebpart {
-    ol, ul{
-        margin:0;
-        padding:0;
+.column-thirds{
+    margin-left:-50px;
+    margin-right:-15px;
+
+    .column-third{
+        padding-left: 50px;
+        padding-right: 15px;
     }
 }
 
@@ -360,152 +340,73 @@ aside.col-md-4{
     }
 }
 
+//sub-section - Is this needed? Need to test. DH.
+.sub-section-nav .sub-section a {
+    .sub-section-heading{
+        text-decoration:none;
+        color:$base-link-color;
+    }
 
-//need adding to front-end toolkit
-.list-atoz{
-    padding:0;
-    float:none;
+    &:visited,
+    &:visited .sub-section-heading{
+        text-decoration:none !important;
+        color: #663399;
+    }
+}
 
-    li{
+//social bookmark link text decoration color 
+.socialBookmarks ul li a:visited{
+    color:$blue;
+}
+
+//promo bespoke style for LCC
+.promo a{
+    span {
+        background: $base-link-color;
+        font-family:$font-secondary;
+        font-weight:600;
+        padding: 20px 40px 20px 20px;
+
+        &:after{
+            bottom:17px;
+            right: 20px;
+            font-size:26px;
+            height:auto;
+            width:auto;
+        }
+    }
+
+    &:hover span{
+        padding: 20px 40px 30px 20px;
+        background: rgba($base-link-color,0.95);
+        text-decoration:underline;
+
+        &:after{       
+            bottom:27px;
+            right: 20px;
+            text-decoration:none;
+        }
+    }
+}
+
+//Promolistwebpart reset - Can this be global? Need to check. DH.
+.promoListWebpart {
+    ol, ul{
+        margin:0;
         padding:0;
-
-        h2{
-            margin:20px 0;
-        }
     }
 }
 
-ul.accordion div.text-highlight {
-    padding: 20px !important;
-}
+//self service custom buttons
+.header-actions{
+    position:absolute;
+    top:-110px;
+    right:15px;
 
-.section-title{
-    display:block;
-    font-size:24px;
-    color:$secondary-font-color;
-    font-weight:400;
-}
-
-footer.main {
-    margin-top: 0;
-}
-
-.atoz {
-    margin-bottom: 0 !important;;
-}
-
-.atoz ul li a,
-.atoz ul li.inactive{
-    width:30px;
-}
-
-.atoz ul li:last-of-type a{
-    width:60px;
-}
-
-.ElginRoadworksWidget{
-    margin-top: 40px;
-    margin-bottom: 40px;    
-    @media (max-width: 450px) {
-    height: 400px !important;
-    } 
-}
-
-//third columns for summary links
-.column-thirds .column-third{
-    @media (min-width: 1200px) {
-        &:nth-child(4){
-            clear:left;
-        }
+    @media (max-width: 641px){
+        position:relative;
+        top:auto;
+        right:auto;
+        margin-bottom:20px;
     }
-    @media (min-width: 768px) and (max-width: 1199px) {
-        width:50%;
-
-        &:nth-child(3),
-        &:nth-child(5){
-            clear:left;
-        }
-    }
-    @media (max-width: 767px) {
-        clear:none;
-    }
-}
-
-.hero-lcc-wrapper{
-    height:70vh !important;
-}
-
-@media (max-width: 767px){
-    .groupPromo ul li a p {
-        font-size: 14px;
-    }
-}
-
-.survey{
-    border:1px solid $border-color;
-    margin:30px 0 30px;
-    padding:20px;
-
-    .form-group{
-        margin-bottom:0;
-    }
-
-    .survey-title{
-        @extend .heading-small;
-        margin-top:0px;
-    }
-
-    .survey-header{
-        .block-label{
-            margin-bottom:0;
-        }
-    }
-
-    .survey-body{
-        margin-top:30px;
-    }
-}
-
-.form-group {
-    .block-label.inline {
-        display:inline-block;
-        float:left;
-        margin-right:10px;
-        clear:none;
-    }
-}
-
-//block label
-.label-small{
-    .block-label {
-        padding: 8px 15px 8px 38px;
-        font-size:16px;
-    }
-
-    .block-label {
-        input {
-            top: 9px;
-            left: 10px;
-            width: 21px;
-            height: 21px;
-        }
-    }
-}
-
-.form-group{
-    .panel{
-        .form-date{
-            margin-bottom:30px;
-            display:inline-block;
-            width:100%;
-        }
-    }
-}
-
-.form-label-header{
-    margin:0 0 10px;
-}
-
-.more{
-    font-weight:700;
 }

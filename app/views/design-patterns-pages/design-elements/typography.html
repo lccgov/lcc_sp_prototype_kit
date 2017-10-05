@@ -39,7 +39,7 @@ Typography
 
 {% block pageContent %}
 <div class="text">
-    <p class="lead">For Leeds.gov.uk domains, always use the <a href="https://fonts.google.com/specimen/Open+Sans" rel="external">Open Sans</a> font in Regular for body text, and <a href="https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat" rel="external">Montserrat</a> in Semi-Bold for headings.</p>
+    <p class="lead">For Leeds.gov.uk domains, always use the <a href="https://fonts.google.com/specimen/Open+Sans" rel="external">Open Sans</a> font in Regular for body text, and <a href="https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat" rel="external">Montserrat <span class="sr-only">External link</span></a> in Semi-Bold for headings.</p>
 </div>
 <div class="text">
     <h2 class="heading-large" id="typography-headings">Headings</h2>
@@ -47,7 +47,7 @@ Typography
         <li>use Montserrat semi-bold</li>
         <li>use sentence case for headings</li>
         <li>use headings consistently to create a clear hierarchy</li>
-        <li>use semantic headings and structure. <a href="http://www.webpagemistakes.ca/heading-structure-heading-tag/" rel="external">Read article on heading structure</a></li>
+        <li>use semantic headings and structure. <a href="http://www.webpagemistakes.ca/heading-structure-heading-tag/" rel="external">Read article on heading structure<span class="sr-only">External link</span></a></li>
     </ul>
 </div>
 <div class="example">
@@ -150,7 +150,7 @@ Typography
     <div class="text">
         <p><a href="#">A link without surrounding text</a></p>
         <p><a href="#">A body copy link</a>. Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.</p>
-        <p>A body copy <a href="#" rel="external">external link</a>. Fusce dapibus, tellus ac cursus commodo.</p>
+        <p>A body copy <a href="#" rel="external">external link <span class="sr-only">External link</span></a>. Fusce dapibus, tellus ac cursus commodo.</p>
         <a href="#" class="link-back">Back</a>
     </div>
 </div>
@@ -164,7 +164,7 @@ Typography
                 
                 &lt;p>&lt;a href="#">A body copy link&lt;/a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p>
 
-                &lt;p>A body copy &lt;a href="#" rel="external">external link&lt;/a>. Fusce dapibus, tellus ac cursus commodo.&lt;/p>
+                &lt;p>A body copy &lt;a href="#" rel="external">external link &lt;span class="sr-only">External link&lt;/span>&lt;/a>. Fusce dapibus, tellus ac cursus commodo.&lt;/p>
                 
                 &lt;a href="#" class="link-back">Back&lt;/a>
             </code>
@@ -193,11 +193,11 @@ Typography
         <li>imperdiet lorem consequat sit amet</li>
     </ol>
 
-    <ul class="list">
+    <ul class="list list-nav">
         <li><a href="#">Related link</a></li>
         <li><a href="#">Related link</a></li>
         <li><a href="#">Related link</a></li>
-        <li><a href="#" class="bold-xsmall">More</a></li>
+        <li><a href="#" class="more">More</a></li>
     </ul>
 </div>
 <div class="code-reveal">
@@ -221,11 +221,11 @@ Typography
                     &lt;li>imperdiet lorem consequat sit amet&lt;/li>
                 &lt;/ol>
 
-                &lt;ul class="list">
+                &lt;ul class="list list-nav">
                     &lt;li>&lt;a href="#">Related link&lt;/a>&lt;/li>
                     &lt;li>&lt;a href="#">Related link&lt;/a>&lt;/li>
                     &lt;li>&lt;a href="#">Related link&lt;/a>&lt;/li>
-                    &lt;li>&lt;a href="#" class="bold-xsmall">More&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#" class="more">More&lt;/a>&lt;/li>
                 &lt;/ul>
             </code>
         </pre>
