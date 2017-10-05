@@ -77,4 +77,8 @@
 
 .code-reveal{
   margin-bottom:30px;
+
+  a{
+    @extend .border-link;
+  }
 }
