@@ -22666,6 +22666,11 @@ hr {
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
+.or {
+  font-weight: 700;
+  margin: -15px 0 10px;
+  display: block; }
+
 .open-data {
   padding: 0; }
   .open-data a, .open-data .link, .open-data .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .open-data .btn-link {
