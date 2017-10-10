@@ -19701,7 +19701,7 @@ p.sharepoint,
   .lead a[rel="external"], .lead [rel="external"].link, .lead .nearestItem-search-features-inner a .nearestItem-showonmap-link [rel="external"].btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .lead [rel="external"].btn-link {
     margin-right: 32px; }
 
-.text, .part-content, #report-a-problem #report-a-problem-content, .text-highlight, .text-block {
+.text, .part-content, #report-a-problem #report-a-problem-content {
   max-width: 35em; }
 
 .text-description {
@@ -20790,12 +20790,9 @@ p + .panel, .sub-section-nav.panels p + .sub-section, p + .findMyNearest {
     .top-header-margin {
       margin-top: 30px; } }
 
-<<<<<<< HEAD
-=======
 .more {
   font-weight: 700; }
 
->>>>>>> d02f07f744799777a8a370507a64f85c41d6b06d
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -21879,7 +21876,7 @@ hr {
       -ms-border-radius: 100%;
       border-radius: 100%;
       margin: 0 auto; }
-      .swatch .swatch-item-wrapper .swatch-item .colour.text, .swatch .swatch-item-wrapper .swatch-item .colour.part-content, .swatch .swatch-item-wrapper .swatch-item #report-a-problem .colour#report-a-problem-content, #report-a-problem .swatch .swatch-item-wrapper .swatch-item .colour#report-a-problem-content, .swatch .swatch-item-wrapper .swatch-item .colour.text-highlight, .swatch .swatch-item-wrapper .swatch-item .colour.text-block {
+      .swatch .swatch-item-wrapper .swatch-item .colour.text, .swatch .swatch-item-wrapper .swatch-item .colour.part-content, .swatch .swatch-item-wrapper .swatch-item #report-a-problem .colour#report-a-problem-content, #report-a-problem .swatch .swatch-item-wrapper .swatch-item .colour#report-a-problem-content {
         background: #212224; }
       .swatch .swatch-item-wrapper .swatch-item .colour.text-secondary {
         background: #666B76; }

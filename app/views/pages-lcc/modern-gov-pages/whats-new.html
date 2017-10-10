@@ -1,0 +1,520 @@
+{% extends "layout_multi_sections-lcc.html" %}
+
+{% block page_title %}
+	What's new
+{% endblock %}
+
+
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+         <link href="http://democracy.leeds.gov.uk/SiteSpecific/ssMgStyles.css" rel="stylesheet">
+		 <link href="{{ asset_path }}stylesheets/mod-gov-new.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+    What's new
+{% endblock%}
+
+ {% block main_nav %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+<ul>
+    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+        <a href="/lcc-home.html">Home</a>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span><a href="/pages-lcc/modern-gov-pages/modern-gov-pages.html">Modern Gov Pages</a>
+                <ul class="">
+                    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>What's new</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+ {% endblock %}
+
+{% block sectionOneContent %}
+
+{% endblock %}
+
+{% block pageContent %}
+<div id="modgov"><h1 style="display:none">What's new</h1>
+<div class="mgLinks">
+
+<ul class="mgActionList">
+
+		<li><a type="application/rss+xml" href="mgRss.aspx?XXR=0" title="Link to subscribe to RSS feed">Subscribe to RSS feed <span><img height="14" width="14" src="mgimages/rss_14x14.png" alt="rss icon"></span> </a></li>
+
+</ul>
+</div>
+
+<div class="mgContent">
+
+	<form action="mgWhatsNew.aspx?" method="post" id="mgFormDateSelect">
+    <div class="mgHiddenField">
+	<input type="hidden" name="hCatId" value="0">  
+	<input type="hidden" name="hOrgId" value="0">  
+	</div>
+		
+
+	<div class="mgFormRow">
+	
+	<label for="DateRange">Date range:</label>
+	<input type="text" class=" mgDateRangeField" id="DateRange" name="DateRange" size="27" value="04/10/2017 - 11/10/2017" title="Date range">
+	<span class="mgNoBr">  
+		<a href="mgWhatsNew.aspx?CID=0&amp;WID=0&amp;CT=0&amp;DR=27%2f09%2f2017-04%2f10%2f2017"><img src="mgimages/left5.gif" alt="Earlier dates">Earlier</a>
+ - 		<a href="mgWhatsNew.aspx?CID=0&amp;WID=0&amp;CT=0&amp;DR=11%2f10%2f2017-18%2f10%2f2017">Later<img src="mgimages/right5.gif" alt="Later dates"></a>		
+  </span>
+
+	</div>
+	<div class="mgFormRow">
+		
+	<label for="mgCommitteeId">Committee:</label>
+	<select id="mgCommitteeId" name="CommitteeId" title="Select committee">  
+
+		<option value="-1">Select a committee</option>
+
+		<option value="0" selected="selected">All</option>
+				<option value="947">City Plans Panel</option>
+				<option value="161">Corporate Governance and Audit</option>
+				<option value="111">Council</option>
+				<option value="450">Development Plan Panel</option>
+				<option value="547">Employment Committee</option>
+				<option value="102">Executive Board</option>
+				<option value="538">Executive Board (Access to Inf</option>
+				<option value="696">General Purposes Committee</option>
+				<option value="965">Health and Wellbeing Board</option>
+				<option value="976">Housing Advisory Board</option>
+				<option value="997">Inner East Community Committee</option>
+				<option value="1000">Inner North East Community Com</option>
+				<option value="1006">Inner North West Community Com</option>
+				<option value="996">Inner South Community Committe</option>
+				<option value="1004">Inner West Community Committee</option>
+				<option value="793">Joint Health Overview and Scru</option>
+				<option value="402">Joint Plans Panel</option>
+				<option value="163">Licensing Committee</option>
+				<option value="430">Licensing Sub-Committee</option>
+				<option value="108">Member Management Committee</option>
+				<option value="949">North and East Plans Panel</option>
+				<option value="1003">Outer East Community Committee</option>
+				<option value="1005">Outer North East Community Com</option>
+				<option value="995">Outer North West Community Com</option>
+				<option value="1002">Outer South Community Committe</option>
+				<option value="1001">Outer West Community Committee</option>
+				<option value="702">School Organisation Advisory B</option>
+				<option value="1090">Scrutiny Board (Adults and Hea</option>
+				<option value="1089">Scrutiny Board (Children and F</option>
+				<option value="1091">Scrutiny Board (Environment, H</option>
+				<option value="1088">Scrutiny Board (Inclusive Grow</option>
+				<option value="1087">Scrutiny Board (Infrastructure</option>
+				<option value="1041">Scrutiny Board (Strategy and R</option>
+				<option value="950">South and West Plans Panel</option>
+				<option value="924">Standards and Conduct Committe</option>
+				<option value="980">Tenant Scrutiny Board</option>
+				<option value="1073">West Yorkshire Adoption Joint </option>
+				<option value="1056">West Yorkshire Joint Health Ov</option>
+	</select>
+
+	</div>
+	<div class="mgFormRow">
+	
+
+	<label for="Tag">Ward:</label>
+	<select id="Tag" name="Tag" title="Select ward"> 
+
+			<option value="0" selected="selected">(Any)</option>
+		
+			<option value="408">Adel and Wharfedale</option>
+
+			<option value="409">Alwoodley</option>
+
+			<option value="410">Ardsley and Robin Hood</option>
+
+			<option value="411">Armley</option>
+
+			<option value="412">Beeston and Holbeck</option>
+
+			<option value="413">Bramley and Stanningley</option>
+
+			<option value="414">Burmantofts and Richmond Hill</option>
+
+			<option value="415">Calverley and Farsley</option>
+
+			<option value="416">Chapel Allerton</option>
+
+			<option value="417">City and Hunslet</option>
+
+			<option value="418">Cross Gates and Whinmoor</option>
+
+			<option value="419">Farnley and Wortley</option>
+
+			<option value="420">Garforth and Swillington</option>
+
+			<option value="421">Gipton and Harehills</option>
+
+			<option value="422">Guiseley and Rawdon</option>
+
+			<option value="423">Harewood</option>
+
+			<option value="424">Headingley</option>
+
+			<option value="425">Horsforth</option>
+
+			<option value="426">Hyde Park and Woodhouse</option>
+
+			<option value="427">Killingbeck and Seacroft</option>
+
+			<option value="428">Kippax and Methley</option>
+
+			<option value="429">Kirkstall</option>
+
+			<option value="430">Middleton Park</option>
+
+			<option value="431">Moortown</option>
+
+			<option value="432">Morley North</option>
+
+			<option value="433">Morley South</option>
+
+			<option value="434">Otley and Yeadon</option>
+
+			<option value="435">Pudsey</option>
+
+			<option value="436">Rothwell</option>
+
+			<option value="437">Roundhay</option>
+
+			<option value="438">Temple Newsam</option>
+
+			<option value="470">Various</option>
+
+			<option value="439">Weetwood</option>
+
+			<option value="440">Wetherby</option>
+	</select>
+
+	</div>
+	<div class="mgFormRow">
+	<input class="mgSubmitButton" type="submit" name="Submit" value="Find" id="mgSubmit1">
+	</div>
+
+		
+		
+	</form>
+	<div class="mgList">
+	<h2 class="mgSectionTitle">Events</h2>
+		
+<ul class="mgDateList">
+				<li>
+				<span class="mgDateTxt">11/10/2017</span> -
+Meeting scheduled: <a href="ieListDocuments.aspx?MId=8075">Wednesday, 11th October, 2017 6.00 pm, Inner West Community Committee</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">11/10/2017</span> -
+Meeting scheduled: <a href="ieListDocuments.aspx?MId=8129">Wednesday, 11th October, 2017 1.30 pm, Tenant Scrutiny Board</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">11/10/2017</span> -
+Meeting scheduled: <a href="ieListDocuments.aspx?MId=8091">Wednesday, 11th October, 2017 10.30 am, Scrutiny Board (Inclusive Growth, Culture and Sport)</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">10/10/2017</span> -
+Meeting scheduled: <a href="ieListDocuments.aspx?MId=7930">Tuesday, 10th October, 2017 1.30 pm, Scrutiny Board (Adults and Health)</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">10/10/2017</span> -
+Meeting scheduled: <a href="ieListDocuments.aspx?MId=8015">Tuesday, 10th October, 2017 10.00 am, Licensing Sub-Committee</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">09/10/2017</span> -
+Meeting held: <a href="ieListDocuments.aspx?MId=7989">Monday, 9th October, 2017 10.30 am, Scrutiny Board (Environment, Housing and Communities)</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">09/10/2017</span> -
+
+							<!--Delegated--> Decision published:&nbsp;<a href="ieDecisionDetails.aspx?Id=44863">Appointments to Various Outside Bodies; City Solicitor</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">09/10/2017</span> -
+Issue published:&nbsp;<a href="mgIssueHistoryHome.aspx?IId=90183">Appointments to Various Outside Bodies</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">09/10/2017</span> -
+Minutes published:&nbsp;<a href="ieListDocuments.aspx?MId=8079">Meeting of Monday, 25th September, 2017 1.30 pm, Outer North West Community Committee</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">09/10/2017</span> -
+
+							<!--Delegated--> Decision published:&nbsp;<a href="ieDecisionDetails.aspx?Id=44864">Request to approve a contract extension for the existing Extra Care Service Provision at Hampton Crescent, LS9 8NH (YORE-97GBEK) in accordance with Contracts Procedure Rule 21.1; Director of Adults and Health</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">06/10/2017</span> -
+
+							<!--Delegated--> Decision published:&nbsp;<a href="ieDecisionDetails.aspx?Id=44862">Leeds City Council Apprenticeship Training Providers Framework Awards; Director of City Development</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">05/10/2017</span> -
+
+							<!--Delegated--> Decision published:&nbsp;<a href="ieDecisionDetails.aspx?Id=44861">Leeds Enterprise Zone Waiver of contract procedure rules 8.1 and 8.2 
+Award of contract to Arup Pty Ltd
+; Director of City Development</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">05/10/2017</span> -
+Issue published:&nbsp;<a href="mgIssueHistoryHome.aspx?IId=90181">Leeds Enterprise Zone Waiver of contract procedure rules 8.1 and 8.2 
+Award of contract to Arup Pty Ltd
+</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">05/10/2017</span> -
+Minutes published:&nbsp;<a href="ieListDocuments.aspx?MId=7910">Meeting of Thursday, 14th September, 2017 10.30 am, Scrutiny Board (Strategy and Resources)</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">05/10/2017</span> -
+
+							<!--Delegated--> Decision published:&nbsp;<a href="ieDecisionDetails.aspx?Id=44860">Approval of Sub-Delegation Scheme; Director of Adults and Health</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">05/10/2017</span> -
+Issue published:&nbsp;<a href="mgIssueHistoryHome.aspx?IId=90171">Approval of Sub-Delegation Scheme</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">05/10/2017</span> -
+
+							<!--Delegated--> Decision published:&nbsp;<a href="ieDecisionDetails.aspx?Id=44859">Community Right to Bid Nomination for Elland Road Football Stadium, Elland Road, Leeds, LS11 OES; Director of City Development</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">05/10/2017</span> -
+Issue published:&nbsp;<a href="mgIssueHistoryHome.aspx?IId=90170">Community Right to Bid Nomination for Elland Road Football Stadium, Elland Road, Leeds, LS11 OES</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">05/10/2017</span> -
+Meeting held: <a href="ieListDocuments.aspx?MId=8025">Thursday, 5th October, 2017 1.30 pm, South and West Plans Panel</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">05/10/2017</span> -
+
+							<!--Delegated--> Decision published:&nbsp;<a href="ieDecisionDetails.aspx?Id=44858">Request to waive contract procedure rules in respect of the procurement of medical services at relevant city centre events in 2017/2018.; Director of City Development</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">05/10/2017</span> -
+Issue published:&nbsp;<a href="mgIssueHistoryHome.aspx?IId=90169">Request to waive contract procedure rules in respect of the procurement of medical services at relevant city centre events in 2017/2018.</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">05/10/2017</span> -
+Issue published:&nbsp;<a href="mgIssueHistoryHome.aspx?IId=90157">Strategic Review of provision for children and young people with Special Education Needs and Disabilities (SEND)</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">05/10/2017</span> -
+
+							<!--Delegated--> Decision published:&nbsp;<a href="ieDecisionDetails.aspx?Id=44857">Parkwoods External Wall Installation (EWI) Scheme; Director of Resources and Housing</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">04/10/2017</span> -
+Minutes published:&nbsp;<a href="ieListDocuments.aspx?MId=7991">Meeting of Friday, 22nd September, 2017 10.00 am, Corporate Governance and Audit Committee</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">04/10/2017</span> -
+
+							<!--Delegated--> Decision published:&nbsp;<a href="ieDecisionDetails.aspx?Id=44856">Request to waive contract procedure rules in respect of the procurement of medical services at relevant events in 2017 and 2018.; Director of Communities and Environment</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">04/10/2017</span> -
+Issue published:&nbsp;<a href="mgIssueHistoryHome.aspx?IId=90156">Request to waive contract procedure rules in respect of the procurement of medical services at relevant events in 2017 and 2018.</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">04/10/2017</span> -
+
+							<!--Delegated--> Decision published:&nbsp;<a href="ieDecisionDetails.aspx?Id=44854">City Council’s response to the Pre-Submission Draft Walton Neighbourhood Plan; Chief Planning Officer</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">04/10/2017</span> -
+Issue published:&nbsp;<a href="mgIssueHistoryHome.aspx?IId=90155">City Council’s response to the Pre-Submission Draft Walton Neighbourhood Plan</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">04/10/2017</span> -
+Issue published:&nbsp;<a href="mgIssueHistoryHome.aspx?IId=90154">Approval to Use the Yorkshire Highway Alliance Specialist Surface Treatments Works 2017 - 2019 Framework Contract</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">04/10/2017</span> -
+Issue published:&nbsp;<a href="mgIssueHistoryHome.aspx?IId=90153">Approval to tender the Leeds Public Transport lnvestment Programme Delivery Partner</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">04/10/2017</span> -
+Meeting held: <a href="ieListDocuments.aspx?MId=8125">Wednesday, 4th October, 2017 10.00 am, West Yorkshire Adoption Joint Committee</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">04/10/2017</span> -
+Meeting held: <a href="ieListDocuments.aspx?MId=8109">Wednesday, 4th October, 2017 10.00 am, Licensing Committee</a>
+									</li>
+				<li>
+				<span class="mgDateTxt">04/10/2017</span> -
+
+							<!--Delegated--> Decision published:&nbsp;<a href="ieDecisionDetails.aspx?Id=44855">Authority to Procure – Upgrade of the Apex Data Centre to Tier III; Director of Resources and Housing</a>
+									</li>
+
+</ul>
+</div>
+<div class="mgHelpLine">	
+	</div>	
+</div>
+<div class="mgFooter">		
+
+	<p>&nbsp;</p>
+
+    <script src="edit-doc-activex.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="jquery-ui/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.10.2.custom.min.js"></script>
+
+    <script type="text/javascript">
+	var mgJQuery = jQuery.noConflict(true);
+        var thisFormValidator;
+    </script>
+
+    <script type="text/javascript" src="jquery-ui/json/json2.js"></script>
+    <script type="text/javascript" src="jquery-ui/Add-ons/mg.jqueryaddons.min.js"></script>
+    <script type="text/javascript" src="mgAjaxScripts.js"></script> 
+          
+    <script type="text/javascript">
+        function CommonAjaxInit()
+        {
+            Common_DocumentReady(false, 629272640462387)
+        }
+
+        mgJQuery(document).ready(CommonAjaxInit);
+
+    </script>  
+</div>
+</div>
+
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+{% include "pages-lcc/modern-gov-pages/modern-gov-related-pages.html" %}
+
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+     {% include "includes/re-userble-content-footer.html" %}
+ {% endblock %}
