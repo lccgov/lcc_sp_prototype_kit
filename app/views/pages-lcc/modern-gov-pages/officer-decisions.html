@@ -1,0 +1,367 @@
+{% extends "layout_multi_sections-lcc.html" %}
+
+{% block page_title %}
+	Meetings
+{% endblock %}
+
+
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+         <link href="http://democracy.leeds.gov.uk/SiteSpecific/ssMgStyles.css" rel="stylesheet">
+         <link href="{{ asset_path }}stylesheets/mod-gov-new.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+    Meetings
+{% endblock%}
+
+ {% block main_nav %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+<ul>
+    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+        <a href="/lcc-home.html">Home</a>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span><a href="/pages-lcc/modern-gov-pages/modern-gov-pages.html">Modern Gov Pages</a>
+                <ul class="">
+                    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Meetings</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+ {% endblock %}
+
+{% block sectionOneContent %}
+
+{% endblock %}
+
+{% block pageContent %}
+
+<div id="modgov"><h1 style="display:none">Decisions</h1>
+<p>Details of officer decisions relating to <a href="http://publicaccess.leeds.gov.uk/online-applications">planning applications</a>.</p><div class="mgContent">	
+
+
+	<form action="mgDelegatedDecisions.aspx?" method="post" id="mgFormDateSelect">
+    
+	<div class="mgHiddenField">
+	<input type="hidden" name="hView" value="0">
+	<input type="hidden" name="meta" value="mgdelegateddecisions">
+ 	<input type="hidden" name="H" value="0">
+   
+	</div>
+
+        <div class="mgFormRow">
+		
+	<label for="DateRange">Date range:</label>
+	<input type="text" class=" mgDateRangeField" id="DateRange" name="DateRange" size="27" value="27/09/2017 - 11/10/2017" title="Date range">
+	<span class="mgNoBr">  
+		<a href="mgDelegatedDecisions.aspx?&amp;RP=0&amp;K=0&amp;V=0&amp;DM=4&amp;HD=0&amp;DS=2&amp;Next=true&amp;META=mgdelegateddecisions&amp;DR=13%2f09%2f2017-27%2f09%2f2017"><img src="mgimages/left5.gif" alt="Earlier dates">Earlier</a>
+ - 		<a href="mgDelegatedDecisions.aspx?&amp;RP=0&amp;K=0&amp;V=0&amp;DM=4&amp;HD=0&amp;DS=2&amp;Next=true&amp;META=mgdelegateddecisions&amp;DR=11%2f10%2f2017-25%2f10%2f2017">Later<img src="mgimages/right5.gif" alt="Later dates"></a>		
+  </span>
+
+		</div>
+		
+	<div class="mgFormRow">
+		<label for="DecMaker">Decision makers:</label>
+		
+		  <select id="DecMaker" name="DecMaker"> 
+		  		<option value="0">Any</option> 
+
+		  		<option selected="selected" value="4">All officers</option>
+		  		<option value="2">All committees</option>
+
+		  	<option value="0T">----------------------------------------</option>
+
+		  		<option value="711O">Assistant Chief Executive</option>
+		  		<option value="690O">Chief Executive</option>
+		  		<option value="1076O">Chief Officer (Financial </option>
+		  		<option value="701O">Chief Planning Officer</option>
+		  		<option value="947C">City Plans Panel</option>
+		  		<option value="794O">City Solicitor</option>
+		  		<option value="161C">Corporate Governance and </option>
+		  		<option value="111C">Council</option>
+		  		<option value="588O">Deputy Chief Executive</option>
+		  		<option value="450C">Development Plan Panel</option>
+		  		<option value="599O">Director of Adult Social </option>
+		  		<option value="1079O">Director of Adults and He</option>
+		  		<option value="1078O">Director of Children and </option>
+		  		<option value="457O">Director of Children's Se</option>
+		  		<option value="597O">Director of City Developm</option>
+		  		<option value="1077O">Director of Communities a</option>
+		  		<option value="602O">Director of Environment a</option>
+		  		<option value="967O">Director of Public Health</option>
+		  		<option value="1075O">Director of Resources and</option>
+		  		<option value="547C">Employment Committee</option>
+		  		<option value="102C">Executive Board</option>
+		  		<option value="538C">Executive Board (Access t</option>
+		  		<option value="696C">General Purposes Committe</option>
+		  		<option value="981O">Head of Regional Policy</option>
+		  		<option value="965C">Health and Wellbeing Boar</option>
+		  		<option value="976C">Housing Advisory Board</option>
+		  		<option value="997C">Inner East Community Comm</option>
+		  		<option value="1000C">Inner North East Communit</option>
+		  		<option value="1006C">Inner North West Communit</option>
+		  		<option value="996C">Inner South Community Com</option>
+		  		<option value="1004C">Inner West Community Comm</option>
+		  		<option value="793C">Joint Health Overview and</option>
+		  		<option value="402C">Joint Plans Panel</option>
+		  		<option value="852O">Leader of Council</option>
+		  		<option value="108C">Member Management Committ</option>
+		  		<option value="949C">North and East Plans Pane</option>
+		  		<option value="1003C">Outer East Community Comm</option>
+		  		<option value="1005C">Outer North East Communit</option>
+		  		<option value="995C">Outer North West Communit</option>
+		  		<option value="1002C">Outer South Community Com</option>
+		  		<option value="1001C">Outer West Community Comm</option>
+		  		<option value="689P">Safer Leeds Partnership</option>
+		  		<option value="702C">School Organisation Advis</option>
+		  		<option value="1090C">Scrutiny Board (Adults an</option>
+		  		<option value="1089C">Scrutiny Board (Children </option>
+		  		<option value="1091C">Scrutiny Board (Environme</option>
+		  		<option value="1088C">Scrutiny Board (Inclusive</option>
+		  		<option value="1087C">Scrutiny Board (Infrastru</option>
+		  		<option value="1041C">Scrutiny Board (Strategy </option>
+		  		<option value="950C">South and West Plans Pane</option>
+		  		<option value="924C">Standards and Conduct Com</option>
+		  		<option value="824G">Support Officers for Inne</option>
+		  		<option value="980C">Tenant Scrutiny Board</option>
+		  		<option value="1073C">West Yorkshire Adoption J</option>
+		  		<option value="1054E">West Yorkshire Combined A</option>
+		  		<option value="1056C">West Yorkshire Joint Heal</option>
+								
+		  </select>
+		
+		</div>
+		<div class="mgFormRow">
+		<label for="DecStatus">Decision status:</label>
+		
+			<select size="1" id="DecStatus" name="DecStatus"> 
+		  		<option value="0">Any</option> 
+		  		<option value="1">Forthcoming decisions</option> 
+		  		<option selected="selected" value="2">Published</option>								
+		  		<option value="8">For consultation</option>								
+ <option value="3">For call-in</option> 		  		<option value="4">Approved</option> 
+		  		<option value="5">To be reconsidered</option> 
+		  		<option value="6">Awaiting implementation</option>								
+		  		<option value="7">Implemented</option>								
+			</select>	
+	</div>
+
+	<div class="mgFormRow">
+		<label for="TitleContains">Title contains:</label>
+		<input type="text" name="TitleContains" id="TitleContains" style="width:350px" value="">
+
+	</div>
+	<p>
+			<label for="KeyDec">				
+			<input type="checkbox" name="KeyDec" id="KeyDec" value="1">Show Key decisions only</label>			
+	</p>		
+	
+	<div class="mgFormRow"><input class="mgSubmitButton" type="submit" name="Submit" value="Find" id="mgSubmit1"></div>
+	
+	</form>
+	
+<div class="mgTabArea">
+<div class="mgTabs">
+
+		<ul>
+			<li><a class="mgTabSelectTitleLnk" href="mgDelegatedDecisions.aspx?&amp;DR=27%2f09%2f2017-11%2f10%2f2017&amp;RP=0&amp;K=0&amp;DM=4&amp;HD=0&amp;DS=2&amp;Next=true&amp;META=mgdelegateddecisions&amp;V=0" title="Summary tab">Summary</a></li>
+			<li><a class="mgTabUnSelectTitleLnk" href="mgDelegatedDecisions.aspx?&amp;DR=27%2f09%2f2017-11%2f10%2f2017&amp;RP=0&amp;K=0&amp;DM=4&amp;HD=0&amp;DS=2&amp;Next=true&amp;META=mgdelegateddecisions&amp;V=1" title="Detail tab">Details</a></li>
+ 
+		</ul>&nbsp;
+		
+</div>
+
+</div>
+                <table class="mgTabTable tablesorter tablesorter-default hasSaveSort hasFilters" summary="Table of decision summary data" role="grid" aria-labelledby="theCaption"> 
+                <caption class="mgSectionTitle">Decisions</caption> 
+				<thead class="mgFilterHeaderRow"><tr class="tablesorter-headerRow" role="row">
+                <th abbr="Title" data-placeholder="Enter text to match" scope="col" data-column="0" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Title: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Title<!--Pending Key Decisions--></div></th>
+					<th abbr="Reference" data-placeholder="Enter text" scope="col" data-column="1" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Ref: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Ref</div></th>
+					<th abbr="Published" data-placeholder="Enter date" scope="col" data-column="2" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Date: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Date<!--Date Made/Published--></div></th>
+					<th abbr="Applies" data-placeholder="Enter date" scope="col" data-column="3" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Effective from: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Effective from<!--Date Decision Applies--></div></th>
+ 					<th abbr="Call-ins" data-placeholder="Call-ins" scope="col" data-column="4" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Call-ins: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">Call-ins<!--Status - No. of Call-Ins--></div></th>
+
+				</tr><tr class="tablesorter-filter-row"><td><input type="search" placeholder="Enter text to match" class="tablesorter-filter" data-column="0" data-lastsearchtime="1507627241592" title="Enter text to match"></td><td><input type="search" placeholder="Enter text" class="tablesorter-filter" data-column="1" data-lastsearchtime="1507627241592" title="Enter text"></td><td><input type="search" placeholder="Enter date" class="tablesorter-filter" data-column="2" data-lastsearchtime="1507627241592" title="Enter date"></td><td><input type="search" placeholder="Enter date" class="tablesorter-filter" data-column="3" data-lastsearchtime="1507627241592" title="Enter date"></td><td><input type="search" placeholder="Call-ins" class="tablesorter-filter" data-column="4" data-lastsearchtime="1507627241592" title="Call-ins"></td></tr></thead><tbody aria-live="polite" aria-relevant="all">
+				
+<tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44863" title="Link to decision details for Appointments to Various Outside Bodies ref: 44863">Appointments to Various Outside Bodies<span class="mgHide"> ref: 44863</span></a></td><td class="mgMainTxt">D44863</td><td class="mgMainTxt">09/10/2017</td><td class="mgMainTxt">09/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44864" title="Link to decision details for Request to approve a contract extension for the existing Extra Care Service Provision at Hampton Crescent, LS9 8NH (YORE-97GBEK) in accordance with Contracts Procedure Rule 21.1 ref: 44864">Request to approve a contract extension for the existing Extra Care Service Provision at Hampton Crescent, LS9 8NH (YORE-97GBEK) in accordance with Contracts Procedure Rule 21.1<span class="mgHide"> ref: 44864</span></a></td><td class="mgMainTxt">D44864</td><td class="mgMainTxt">17/10/2017</td><td class="mgMainTxt">For consultation</td><td class="mgMainTxt"></td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44862" title="Link to decision details for Leeds City Council Apprenticeship Training Providers Framework Awards ref: 44862">Leeds City Council Apprenticeship Training Providers Framework Awards<span class="mgHide"> ref: 44862</span></a></td><td class="mgMainTxt">D44862</td><td class="mgMainTxt">16/10/2017</td><td class="mgMainTxt">For consultation</td><td class="mgMainTxt"></td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44861" title="Link to decision details for Leeds Enterprise Zone Waiver of contract procedure rules 8.1 and 8.2 
+Award of contract to Arup Pty Ltd
+ ref: 44861">Leeds Enterprise Zone Waiver of contract procedure rules 8.1 and 8.2 
+Award of contract to Arup Pty Ltd
+<span class="mgHide"> ref: 44861</span></a></td><td class="mgMainTxt">D44861</td><td class="mgMainTxt">05/10/2017</td><td class="mgMainTxt">05/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44860" title="Link to decision details for Approval of Sub-Delegation Scheme ref: 44860">Approval of Sub-Delegation Scheme<span class="mgHide"> ref: 44860</span></a></td><td class="mgMainTxt">D44860</td><td class="mgMainTxt">05/10/2017</td><td class="mgMainTxt">05/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44859" title="Link to decision details for Community Right to Bid Nomination for Elland Road Football Stadium, Elland Road, Leeds, LS11 OES ref: 44859">Community Right to Bid Nomination for Elland Road Football Stadium, Elland Road, Leeds, LS11 OES<span class="mgHide"> ref: 44859</span></a></td><td class="mgMainTxt">D44859</td><td class="mgMainTxt">05/10/2017</td><td class="mgMainTxt">05/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44858" title="Link to decision details for Request to waive contract procedure rules in respect of the procurement of medical services at relevant city centre events in 2017/2018. ref: 44858">Request to waive contract procedure rules in respect of the procurement of medical services at relevant city centre events in 2017/2018.<span class="mgHide"> ref: 44858</span></a></td><td class="mgMainTxt">D44858</td><td class="mgMainTxt">05/10/2017</td><td class="mgMainTxt">05/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44857" title="Link to decision details for Parkwoods External Wall Installation (EWI) Scheme ref: 44857">Parkwoods External Wall Installation (EWI) Scheme<span class="mgHide"> ref: 44857</span></a></td><td class="mgMainTxt">D44857</td><td class="mgMainTxt">13/10/2017</td><td class="mgMainTxt">21/10/2017</td><td class="mgMainTxt">0</td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44856" title="Link to decision details for Request to waive contract procedure rules in respect of the procurement of medical services at relevant events in 2017 and 2018. ref: 44856">Request to waive contract procedure rules in respect of the procurement of medical services at relevant events in 2017 and 2018.<span class="mgHide"> ref: 44856</span></a></td><td class="mgMainTxt">D44856</td><td class="mgMainTxt">04/10/2017</td><td class="mgMainTxt">04/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44854" title="Link to decision details for City Council’s response to the Pre-Submission Draft Walton Neighbourhood Plan ref: 44854">City Council’s response to the Pre-Submission Draft Walton Neighbourhood Plan<span class="mgHide"> ref: 44854</span></a></td><td class="mgMainTxt">D44854</td><td class="mgMainTxt">04/10/2017</td><td class="mgMainTxt">04/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44855" title="Link to decision details for Authority to Procure – Upgrade of the Apex Data Centre to Tier III ref: 44855">Authority to Procure – Upgrade of the Apex Data Centre to Tier III<span class="mgHide"> ref: 44855</span></a></td><td class="mgMainTxt">D44855</td><td class="mgMainTxt">12/10/2017</td><td class="mgMainTxt">20/10/2017</td><td class="mgMainTxt">0</td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44853" title="Link to decision details for Request to suspend lettings, remove from charge and demolish 16 Council Garages (G1 to G17) at Moor Crescent Gardens off Moor Crescent Chase, Leeds, LS11 5UL. ref: 44853">Request to suspend lettings, remove from charge and demolish 16 Council Garages (G1 to G17) at Moor Crescent Gardens off Moor Crescent Chase, Leeds, LS11 5UL.<span class="mgHide"> ref: 44853</span></a></td><td class="mgMainTxt">D44853</td><td class="mgMainTxt">03/10/2017</td><td class="mgMainTxt">03/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44852" title="Link to decision details for Request to suspend lettings, removal from charge and full demolition of the 32 garages (G1-33) at Parkwood Close, Beeston and declare site surplus to departmental requirements. ref: 44852">Request to suspend lettings, removal from charge and full demolition of the 32 garages (G1-33) at Parkwood Close, Beeston and declare site surplus to departmental requirements.<span class="mgHide"> ref: 44852</span></a></td><td class="mgMainTxt">D44852</td><td class="mgMainTxt">03/10/2017</td><td class="mgMainTxt">03/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44851" title="Link to decision details for Request to take out of charge 2 temporary garage plot sites at Newton Close, Rothwell ref: 44851">Request to take out of charge 2 temporary garage plot sites at Newton Close, Rothwell<span class="mgHide"> ref: 44851</span></a></td><td class="mgMainTxt">D44851</td><td class="mgMainTxt">03/10/2017</td><td class="mgMainTxt">03/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44850" title="Link to decision details for Request to demolish 6 garages on Bruce Lawn, Armley, Leeds, LS12 1XY ref: 44850">Request to demolish 6 garages on Bruce Lawn, Armley, Leeds, LS12 1XY<span class="mgHide"> ref: 44850</span></a></td><td class="mgMainTxt">D44850</td><td class="mgMainTxt">03/10/2017</td><td class="mgMainTxt">03/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44849" title="Link to decision details for Implementation of new branding for Leeds Art Gallery ref: 44849">Implementation of new branding for Leeds Art Gallery<span class="mgHide"> ref: 44849</span></a></td><td class="mgMainTxt">D44849</td><td class="mgMainTxt">02/10/2017</td><td class="mgMainTxt">02/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44847" title="Link to decision details for Procurement of a Design and Build Contract via the YORbuild2 framework to deliver new build Council Housing at the Beeches (Gipton) and Nevilles (Osmondthorpe) sites. ref: 44847">Procurement of a Design and Build Contract via the YORbuild2 framework to deliver new build Council Housing at the Beeches (Gipton) and Nevilles (Osmondthorpe) sites.<span class="mgHide"> ref: 44847</span></a></td><td class="mgMainTxt">D44847</td><td class="mgMainTxt">02/10/2017</td><td class="mgMainTxt">02/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44846" title="Link to decision details for Waiver Report for the Level 5 Commissioning and Wellbeing (RQF) Qualification ref: 44846">Waiver Report for the Level 5 Commissioning and Wellbeing (RQF) Qualification<span class="mgHide"> ref: 44846</span></a></td><td class="mgMainTxt">D44846</td><td class="mgMainTxt">02/10/2017</td><td class="mgMainTxt">02/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44845" title="Link to decision details for Advocacy Support and Services contract procurement. ref: 44845">Advocacy Support and Services contract procurement.<span class="mgHide"> ref: 44845</span></a></td><td class="mgMainTxt">D44845</td><td class="mgMainTxt">02/10/2017</td><td class="mgMainTxt">02/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44843" title="Link to decision details for Increase the resources within the Enhanced Income Management Service ref: 44843">Increase the resources within the Enhanced Income Management Service<span class="mgHide"> ref: 44843</span></a></td><td class="mgMainTxt">D44843</td><td class="mgMainTxt">02/10/2017</td><td class="mgMainTxt">02/10/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44844" title="Link to decision details for Public Space Protection Orders ref: 44844">Public Space Protection Orders<span class="mgHide"> ref: 44844</span></a></td><td class="mgMainTxt">D44844</td><td class="mgMainTxt">10/10/2017</td><td class="mgMainTxt">For consultation</td><td class="mgMainTxt"></td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44848" title="Link to decision details for Adults and Health Homecare contract Fee Review 2017 ref: 44848">Adults and Health Homecare contract Fee Review 2017<span class="mgHide"> ref: 44848</span></a></td><td class="mgMainTxt">D44848</td><td class="mgMainTxt">10/10/2017</td><td class="mgMainTxt">For consultation</td><td class="mgMainTxt"></td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44842" title="Link to decision details for Extension of Contracts for Scrap Metal, Waste Electrical &amp; Electronic Equipment (WEEE) and Household Batteries ref: 44842">Extension of Contracts for Scrap Metal, Waste Electrical &amp; Electronic Equipment (WEEE) and Household Batteries<span class="mgHide"> ref: 44842</span></a></td><td class="mgMainTxt">D44842</td><td class="mgMainTxt">29/09/2017</td><td class="mgMainTxt">29/09/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44841" title="Link to decision details for Housing Act - 1985 Proposed Compulsory Purchase Order
+14 Edinburgh Terrace, Armley, Leeds LS12 3RH
+ ref: 44841">Housing Act - 1985 Proposed Compulsory Purchase Order
+14 Edinburgh Terrace, Armley, Leeds LS12 3RH
+<span class="mgHide"> ref: 44841</span></a></td><td class="mgMainTxt">D44841</td><td class="mgMainTxt">29/09/2017</td><td class="mgMainTxt">29/09/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44840" title="Link to decision details for Approval to waive Contract Procedure Rules 8.1 and 8.2 and enter into a 
+contract with Esendex Limited for the provision of a bulk SMS messaging
+service four a period of four years
+ ref: 44840">Approval to waive Contract Procedure Rules 8.1 and 8.2 and enter into a 
+contract with Esendex Limited for the provision of a bulk SMS messaging
+service four a period of four years
+<span class="mgHide"> ref: 44840</span></a></td><td class="mgMainTxt">D44840</td><td class="mgMainTxt">28/09/2017</td><td class="mgMainTxt">28/09/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="even" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44839" title="Link to decision details for Waiver of Contracts Procedure Rules No 8.1 and 8.2 – Intermediate value procurements ref: 44839">Waiver of Contracts Procedure Rules No 8.1 and 8.2 – Intermediate value procurements<span class="mgHide"> ref: 44839</span></a></td><td class="mgMainTxt">D44839</td><td class="mgMainTxt">27/09/2017</td><td class="mgMainTxt">27/09/2017</td><td class="mgMainTxt">Not for call-in</td></tr><tr class="odd" style="display: table-row;"><td class="mgMainTxt"><a href="ieDecisionDetails.aspx?ID=44838" title="Link to decision details for Waiver of CPR 8.1 and 8.2, to enter into a new public contract to Giant Precision Limited ref: 44838">Waiver of CPR 8.1 and 8.2, to enter into a new public contract to Giant Precision Limited<span class="mgHide"> ref: 44838</span></a></td><td class="mgMainTxt">D44838</td><td class="mgMainTxt">27/09/2017</td><td class="mgMainTxt">27/09/2017</td><td class="mgMainTxt">Not for call-in</td></tr>			</tbody></table>
+			<div class="mgHelpLine">	
+</div>	
+</div>
+<div class="mgFooter">		
+
+	<p>&nbsp;</p>
+
+    <script src="edit-doc-activex.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="jquery-ui/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.10.2.custom.min.js"></script>
+
+    <script type="text/javascript">
+	var mgJQuery = jQuery.noConflict(true);
+        var thisFormValidator;
+    </script>
+
+    <script type="text/javascript" src="jquery-ui/json/json2.js"></script>
+    <script type="text/javascript" src="jquery-ui/Add-ons/mg.jqueryaddons.min.js"></script>
+    <script type="text/javascript" src="mgAjaxScripts.js"></script> 
+          
+    <script type="text/javascript">
+        function CommonAjaxInit()
+        {
+            Common_DocumentReady(true, 629272640462387)
+        }
+
+        mgJQuery(document).ready(CommonAjaxInit);
+
+    </script>  
+
+<script type="text/javascript" src="mgStarRatingScripts.js"></script>
+</div>
+</div>
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+{% include "pages-lcc/modern-gov-pages/modern-gov-related-pages.html" %}
+
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+     {% include "includes/re-userble-content-footer.html" %}
+ {% endblock %}

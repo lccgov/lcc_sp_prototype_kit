@@ -1,0 +1,372 @@
+{% extends "layout_multi_sections-lcc.html" %}
+
+{% block page_title %}
+	Street register
+{% endblock %}
+
+
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+    Street register
+{% endblock%}
+
+ {% block main_nav %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+<ul>
+    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+        <a href="/lcc-home.html">Home</a>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Street register</li>
+        </ul>
+    </li>
+</ul>
+ {% endblock %}
+
+{% block sectionOneContent %}
+
+{% endblock %}
+
+{% block pageContent %}
+<div class="text">
+    <p class="lead">The street register is a list of streets maintained at public expense (often known as adoption). The search facility below gives direct access to the council’s register.</p>
+    <p>The register contains a full list of publicly maintained streets. It does not hold a comprehensive listing of all streets, though many private or closed streets are included for information purposes.</p>
+    <h2>Street register search</h2>
+</div>
+
+<div id="street-register" class="search-panel">
+    <form>
+        <fieldset>
+            <legend class="sr-only">Street register search</legend>     
+                <div id="street-lookup" class="form-group-button">
+                    <div class="form-group">
+                        <label class="form-label" for="streetName">Enter a street name <span class="form-hint">For example, ‘Main Street’.</span></label>
+                        <input id="streetName" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">      
+                        <button id="streetLookup" type="button" class="btn btn-secondary btn-small" value="Search for street">Search <span class="sr-only">for street</span></button>
+                    </div>
+                </div>
+            
+                <!-- RESULTS-->
+                <div id="street-register_results">
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                <th>Street</th>
+                                <th>Area</th>
+                                <th>Status</th>
+                                <th><span class="sr-only">Details link</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>WAYLAND APPROACH</td>
+                                    <td>ADEL</td>
+                                    <td>PUBLIC</td>
+                                    <td><a href="#">Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>WAYLAND APPROACH</td>
+                                    <td>ADEL</td>
+                                    <td>PUBLIC</td>
+                                    <td><a href="#">Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>WAYLAND APPROACH</td>
+                                    <td>ADEL</td>
+                                    <td>PUBLIC</td>
+                                    <td><a href="#">Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>WAYLAND APPROACH</td>
+                                    <td>ADEL</td>
+                                    <td>PUBLIC</td>
+                                    <td><a href="#">Details</a></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--/ RESULTS-->
+            
+                    <!-- DETAILS-->
+                    <div id="street-register_details">
+                        <div class="description-list">
+                            <div class="description-list__item">
+                                <h3>Street</h3>
+                                <div class="description-list__item-content">
+                                    <p>ALBERT ROAD, MORLEY</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="description-list__item">
+                                <h3>From</h3>
+                                <div class="description-list__item-content">
+                                    <p>STATION ROAD</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="description-list__item">
+                                <h3>To</h3>
+                                <div class="description-list__item-content">
+                                    <p>WIDE LANE, INCLUDING THE CUL-DE-SAC BETWEEN NOS 33 & 55</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="description-list__item">
+                                <h3>Status</h3>
+                                <div class="description-list__item-content">
+                                    <p>PUBLIC</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="description-list__item">
+                                <h3>Length</h3>
+                                <div class="description-list__item-content">
+                                    <p>1341m</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="description-list__item">
+                                <h3>Street Reference Number</h3>
+                                <div class="description-list__item-content">
+                                    <p>23022832</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="description-list__item">
+                                <h3>Info</h3>
+                                <div class="description-list__item-content">
+                                    <p>ADOPTION INCLUDES PART OF THE ENTRANCE TO HANOVER COURT</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div id="footpaths">
+                            <h3 class="table-title">Footpaths</h3>
+                            <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>OFF ALBERT ROAD SIDE OF MINERS ARMS</td>
+                                        <td>VALLEY ROAD (ACCESS TO MORLEY STATION)</td>
+                                        <td>PUBLIC</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="un-named-streets">
+                            <h3 class="table-title">Un-named Streets</h3>
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                        <th>From</th>
+                                        <th>To</th>
+                                        <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ALBERTROAD NO 33</td>
+                                            <td>ALBERTROAD NO 55</td>
+                                            <td>PUBLIC</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="split-streets">
+                            <h3 class="table-title">Split Streets</h3>
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                        <th>From</th>
+                                        <th>To</th>
+                                        <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ALBERTROAD NO 33</td>
+                                            <td>ALBERTROAD NO 55</td>
+                                            <td>PUBLIC</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ DETAILS-->
+            
+        </fieldset>
+    </form>
+</div>
+<div class="hidden-text">
+    <a class="text-link reveal collapsed" role="button" data-toggle="collapse" href="#key" aria-expanded="false" aria-controls="key">
+    Key
+    </a>
+    <div class="collapse" id="key">
+        <div class="panel panel-border">
+    <div class="text">
+        <h3>Public</h3><p>Highway maintained at public expense.</p>
+        <h3>Private</h3><p>A private street is a road which is not maintained at the public expense. This means, that the council, as a Highway Authority, is under no obligation to carry out repairs or cleansing to the street, even though it could be a public right of way to which highway and traffic law can be applied. Records of land ownership are held by the national Land Registry service, not Leeds City Council.</p>
+        <h3>Closed</h3><p>Former highway which has been subject to a legal closure. Leeds City Council has no maintenance responsibility for these areas.</p>
+        <h3>Section 38</h3><p>The first stage in the adoption process. Streets which are subject to a Section 38 agreement are legally highway, but maintenance responsibility remains with the developer until formally handed over to Leeds City Council.</p>
+        <h3>Provisional</h3><p>The second stage in the adoption process. Has the same maintenance status as Section 38 but awaiting final inspection prior to adoption.</p>
+        <h3>Split Status</h3><p>Streets which have more than one status applicable. The details button will show information on the individual sections.</p>
+    </div>
+</div>
+    </div>
+</div>
+<div class="text">
+    <div role="note" aria-label="Information" class="text-highlight">
+        <p>The data is updated on a weekly basis.</p>
+    </div>
+    <p>We no longer provide plans detailing extents of adoption. We now provide a <a rel="external" href="https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=27d711fd7172467187621aa2aa628519">viewable map<span class="sr-only">External link</span></a> showing Highway adoption information online. </p>
+    <p>If you have any comments or queries on the data from the register please email us at&nbsp;<a title="streetregistry@leeds.gov.uk " href="mailto:streetregistry@leeds.gov.uk">streetregistry@leeds.gov.uk</a></p>
+    <p>New roads that have been constructed in accordance with the council's guidelines are normally adopted by way of an agreement between the developer and the council under section 38 of the Act. Existing roads will not normally be adopted unless they are brought up to current standards by the owners of the road. It may for example be unpaved, without kerbs, footways, surface water sewers, gullies and lighting or any of these features, and its surface is probably in a bad condition. Guidelines are available upon request.</p>
+    <p>Under the provisions of Sections 205 to 218 of the Highways Act 1980, the highway authority, that is the council, may resolve to raising the standard of a private street by providing any or all of the missing features or by improving the standard of any existing features. This procedure enables the council on completion of necessary remedial works to adopt the street as a highway maintainable at public expense.&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;</p>
+</div>
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+    
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+     {% include "includes/re-userble-content-footer.html" %}
+ {% endblock %}

@@ -1,0 +1,323 @@
+{% extends "layout_multi_sections-lcc.html" %}
+
+{% block page_title %}
+	Maintenance programme
+{% endblock %}
+
+
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+    Maintenance programme
+{% endblock%}
+
+ {% block main_nav %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+<ul>
+    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+        <a href="/lcc-home.html">Home</a>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Maintenance programme</li>
+        </ul>
+    </li>
+</ul>
+ {% endblock %}
+
+{% block sectionOneContent %}
+
+{% endblock %}
+
+{% block pageContent %}
+
+<div id="maintenance-programme" class="search-panel">
+    <form>
+        <fieldset>
+            <legend class="sr-only">Street register search</legend>     
+                <div id="maintenance-programme_search">
+                    <div class="form-group">
+                        <a href="#" class="form-label">Show all works</a>
+                    </div>
+                    <span class="or">OR</span>
+                    <div class="form-group">
+                        <label class="form-label" for="select-box">Show by ward</label>
+                        <select class="form-control" id="select-box" name="select-box">
+                            <option value="All wards">All wards</option>
+                            <option selected="selected" value="Adel and Wharfedale">Adel and Wharfedale</option>
+                            <option value="Alwoodley">Alwoodley</option>
+                            <option value="Ardsley and Robin Hood">Ardsley and Robin Hood</option>
+                            <option value="Armley">Armley</option>
+                            <option value="Beeston and Holbeck">Beeston and Holbeck</option>
+                            <option value="Bramley and Stanningley">Bramley and Stanningley</option>
+                            <option value="Burmantofts and Richmond Hill">Burmantofts and Richmond Hill</option>
+                            <option value="Calverley and Farsley">Calverley and Farsley</option>
+                            <option value="Chapel Allerton">Chapel Allerton</option>
+                            <option value="City and Hunslet">City and Hunslet</option>
+                            <option value="Farnley and Wortley">Farnley and Wortley</option>
+                            <option value="Garforth and Swillington">Garforth and Swillington</option>
+                            <option value="Gipton and Harehills">Gipton and Harehills</option>
+                            <option value="Guiseley and Rawdon">Guiseley and Rawdon</option>
+                            <option value="Harewood">Harewood</option>
+                            <option value="Headingley">Headingley</option>
+                            <option value="Horsforth">Horsforth</option>
+                            <option value="Hyde Park and Woodhouse">Hyde Park and Woodhouse</option>
+                            <option value="Killingbeck and Seacroft">Killingbeck and Seacroft</option>
+                            <option value="Kippax and Methley">Kippax and Methley</option>
+                            <option value="Kirkstall">Kirkstall</option>
+                            <option value="Middleton Park">Middleton Park</option>
+                            <option value="Moortown">Moortown</option>
+                            <option value="Morley North">Morley North</option>
+                            <option value="Morley South">Morley South</option>
+                            <option value="Otley and Yeadon">Otley and Yeadon</option>
+                            <option value="Pudsey">Pudsey</option>
+                            <option value="Rothwell">Rothwell</option>
+                            <option value="Roundhay">Roundhay</option>
+                            <option value="Temple Newsam">Temple Newsam</option>
+                            <option value="Weetwood">Weetwood</option>
+                            <option value="Wetherby">Wetherby</option>
+                        </select>
+                    </div>
+                    <span class="or">OR</span>
+                    <div class="form-group-button">
+                        <div class="form-group">
+                            <label class="form-label" for="streetName">Show by street <span class="form-hint">Enter a street name. For example, ‘Main Street’.</span></label>
+                            <input class="form-control" id="full-name-f1" type="text" name="full-name-f1">
+                        </div>
+                        <div class="form-group">      
+                            <button id="showStreet" type="button" class="btn btn-secondary btn-small" value="Search for street">Search <span class="sr-only">by street</span></button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- RESULTS-->
+                <div id="maintenance-programme_results" style="display:none">
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                <th>Promoter</th>
+                                <th>Road</th>
+                                <th>From - To</th>
+                                <th>Nature of Works</th>
+                                <th>Start Date</th>
+                                <th>Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Highways Maintenance</td>
+                                    <td>ADEL</td>
+                                    <td>Church La To Long Causeway</td>
+                                    <td>Surface dressing</td>
+                                    <td>Complete</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Highways Maintenance</td>
+                                    <td>ADEL</td>
+                                    <td>Church La To Long Causeway</td>
+                                    <td>Surface dressing</td>
+                                    <td>Early June</td>
+                                    <td>9 weeks</td>
+                                </tr>
+                                <tr>
+                                    <td>Highways Maintenance</td>
+                                    <td>ADEL</td>
+                                    <td>Church La To Long Causeway</td>
+                                    <td>Surface dressing</td>
+                                    <td>Complete</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Highways Maintenance</td>
+                                    <td>ADEL</td>
+                                    <td>Church La To Long Causeway</td>
+                                    <td>Surface dressing</td>
+                                    <td>Complete</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Highways Maintenance</td>
+                                    <td>ADEL</td>
+                                    <td>Church La To Long Causeway</td>
+                                    <td>Surface dressing</td>
+                                    <td>Early June</td>
+                                    <td>9 weeks</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--/ RESULTS -->   
+
+                    <!-- KEY -->
+                <div id="maintenance-programme_key" style="display:none">
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                <th>Code</th>
+                                <th>Treatment</th>
+                                <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>C</td>
+                                    <td>Carriageway</td>
+                                    <td>The carriageway will either be covered with new material or the existing surface will be removed and replaced.</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>Carriageway</td>
+                                    <td>The carriageway will either be covered with new material or the existing surface will be removed and replaced.</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>Carriageway</td>
+                                    <td>The carriageway will either be covered with new material or the existing surface will be removed and replaced.</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>Carriageway</td>
+                                    <td>The carriageway will either be covered with new material or the existing surface will be removed and replaced.</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--/ KEY -->  
+
+        </fieldset>
+    </form>
+</div>
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+    
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+     {% include "includes/re-userble-content-footer.html" %}
+ {% endblock %}

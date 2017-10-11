@@ -1,0 +1,498 @@
+{% extends "layout_multi_sections-lcc.html" %}
+
+{% block page_title %}
+	Calendar of meetings
+{% endblock %}
+
+
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+         <link href="http://democracy.leeds.gov.uk/SiteSpecific/ssMgStyles.css" rel="stylesheet">
+		 <link href="{{ asset_path }}stylesheets/mod-gov-new.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+    Calendar of meetings
+{% endblock%}
+
+ {% block main_nav %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+<ul>
+    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+        <a href="/lcc-home.html">Home</a>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span><a href="/pages-lcc/modern-gov-pages/modern-gov-pages.html">Modern Gov Pages</a>
+                <ul class="">
+                    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Calendar of meetings</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+ {% endblock %}
+
+{% block sectionOneContent %}
+
+{% endblock %}
+
+{% block pageContent %}
+<div id="modgov"><h1 style="display:none">Calendar of meetings</h1>
+<div class="mgLinks">
+
+<ul class="mgActionList">
+	        <li><a href="mgListDownloadOptions.aspx" title="Download meeting dates or papers">Download meeting dates or papers</a></li>
+
+        <li><a href="mgCalendarMonthView.aspx?RPID=22395897&amp;M=10&amp;DD=2017&amp;CID=0&amp;OT=&amp;C=-1&amp;MR=1" title="View more options">View more options</a></li>
+
+</ul>
+</div>
+<div class="mgContent">
+<div class="mgCalendar">
+
+	<form method="post" action="mgCalendarMonthView.aspx?" id="mgFormSelect">
+	<div class="mgHiddenField">
+		<input type="hidden" name="hNoBorder" value="0">
+		<input type="hidden" name="hOwnerId" value="0">
+		<input type="hidden" name="hOwnerType" value="">
+		<input type="hidden" name="RPID" value="0">  
+		<input type="hidden" name="hCatId" value="0">  
+		<input type="hidden" name="hOrgId" value="0">  
+		<input type="hidden" name="hMore" value="0">  
+		<input type="hidden" name="hWeekend" value="0">  		
+		<input type="hidden" name="hDeadlines" value="0">  		
+	</div>
+				
+
+		<p><label for="MonthSelect">Month:</label>
+			<select size="1" id="MonthSelect" name="MonthSelect">
+					<option value="1">January</option> 
+					<option value="2">February</option> 
+					<option value="3">March</option> 
+					<option value="4">April</option> 
+					<option value="5">May</option> 
+					<option value="6">June</option> 
+					<option value="7">July</option> 
+					<option value="8">August</option> 
+					<option value="9">September</option> 
+					<option selected="selected" value="10">October</option> 
+					<option value="11">November</option> 
+					<option value="12">December</option> 
+
+			</select>
+			
+	<label for="DisplayDate">Year: </label>	
+
+	<select size="1" id="DisplayDate" name="DisplayDate" title="Date range">
+			<option value="2002">2002</option> 
+			<option value="2003">2003</option> 
+			<option value="2004">2004</option> 
+			<option value="2005">2005</option> 
+			<option value="2006">2006</option> 
+			<option value="2007">2007</option> 
+			<option value="2008">2008</option> 
+			<option value="2009">2009</option> 
+			<option value="2010">2010</option> 
+			<option value="2011">2011</option> 
+			<option value="2012">2012</option> 
+			<option value="2013">2013</option> 
+			<option value="2014">2014</option> 
+			<option value="2015">2015</option> 
+			<option value="2016">2016</option> 
+			<option selected="selected" value="2017">2017</option> 
+			<option value="2018">2018</option> 
+			<option value="2019">2019</option> 
+	</select>
+	<span class="mgNoBr">  
+	<input class="mgGoButton" type="submit" name="Submit" value="Go">
+		<a href="mgCalendarMonthView.aspx?M=10&amp;CID=0&amp;OT=&amp;C=-1&amp;MR=0&amp;DL=0&amp;D=1&amp;ACT=Earlier&amp;DD=2017"><img src="mgimages/left5.gif" alt="Previous month">Previous month</a>
+ - 		<a href="mgCalendarMonthView.aspx?M=10&amp;CID=0&amp;OT=&amp;C=-1&amp;MR=0&amp;DL=0&amp;D=1&amp;ACT=Later&amp;DD=2017">Next month<img src="mgimages/right5.gif" alt="Next month"></a></span>		
+ </p>
+<div class="mgTabs">
+<!-- Insert the tabs -->
+
+	<ul>
+		<li><a class="mgTabUnSelectTitleLnk" href="mgCalendarWeekView.aspx?MR=0&amp;M=10&amp;DD=2017&amp;CID=0&amp;OT=&amp;C=-1&amp;D=10" title="Week tab">Week</a></li>
+		<li><a class="mgTabSelectTitleLnk" href="mgCalendarMonthView.aspx?M=10&amp;DD=2017&amp;CID=0&amp;OT=&amp;C=-1&amp;MR=0" title="Month tab">Month</a></li>
+
+		<li><a class="mgTabUnSelectTitleLnk" href="mgCalendarAgendaView.aspx?MR=0&amp;M=10&amp;DD=2017&amp;CID=0&amp;OT=&amp;C=-1&amp;D=10" title="Events tab">Events</a></li>
+
+	        <li class="mgCalWeekendLink"><a href="mgCalendarMonthView.aspx?M=10&amp;DD=2017&amp;CID=0&amp;OT=&amp;C=-1&amp;MR=0&amp;WE=1" title="View weekend events in October, 2017">View weekends</a></li>
+            			    
+          
+    </ul>&nbsp;
+</div>
+
+<table cellspacing="1" class="mgCalendarMonthGrid" summary="Table of calendar data">
+<!-- Insert the table section header -->
+		<caption class="mgSectionTitle">
+October 2017
+		</caption> <!--mjt-->
+
+			<tbody><tr>
+					<th abbr="Mon" scope="col">Monday&nbsp;</th>
+					<th abbr="Tues" scope="col">Tuesday&nbsp;</th>
+					<th abbr="Wed" scope="col">Wednesday&nbsp;</th>
+					<th abbr="Thurs" scope="col">Thursday&nbsp;</th>
+					<th abbr="Fri" scope="col">Friday&nbsp;</th>
+          </tr>
+        
+				<tr class="mgCalendarMonthRow">
+              
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayDimTxt" ></p>-->
+							<p class="mgCalendarDayDimTxt">25</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>1.30 pm <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=995&amp;MId=8079" title="Outer North West Community Committee, 25/09/2017 1.30 pm ">Outer North West Community Committee<span class="mgHide"> 25/09</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayDimTxt" ></p>-->
+							<p class="mgCalendarDayDimTxt">26</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>10.00 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=430&amp;MId=8014" title="Licensing Sub-Committee, 26/09/2017 10.00 am ">Licensing Sub-Committee<span class="mgHide"> 26/09</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayDimTxt" ></p>-->
+							<p class="mgCalendarDayDimTxt">27</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>10.30 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=1087&amp;MId=8100" title="Scrutiny Board (Infrastructure and Investment), 27/09/2017 10.30 am ">Scrutiny Board (Infrastructure and Investment)<span class="mgHide"> 27/09</span></a></li><li>1.00 pm <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=1001&amp;MId=8082" title="Outer West Community Committee, 27/09/2017 1.00 pm ">Outer West Community Committee<span class="mgHide"> 27/09</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayDimTxt" ></p>-->
+							<p class="mgCalendarDayDimTxt">28</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>10.00 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=965&amp;MId=7963" title="Health and Wellbeing Board, 28/09/2017 10.00 am ">Health and Wellbeing Board<span class="mgHide"> 28/09</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayDimTxt" ></p>-->
+							<p class="mgCalendarDayDimTxt">29</p>
+						</td>
+				</tr>
+				<tr class="mgCalendarMonthRow">
+              
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">2</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>3.00 pm <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=696&amp;MId=7971" title="General Purposes Committee, 02/10/2017 3.00 pm ">General Purposes Committee<span class="mgHide"> 02/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">3</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>5.00 pm <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=976&amp;MId=7976" title="Housing Advisory Board, 03/10/2017 5.00 pm ">Housing Advisory Board<span class="mgHide"> 03/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">4</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>10.00 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=163&amp;MId=8109" title="Licensing Committee, 04/10/2017 10.00 am ">Licensing Committee<span class="mgHide"> 04/10</span></a></li><li>10.00 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=1073&amp;MId=8125" title="West Yorkshire Adoption Joint Committee, 04/10/2017 10.00 am ">West Yorkshire Adoption Joint Committee<span class="mgHide"> 04/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">5</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>1.30 pm <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=950&amp;MId=8025" title="South and West Plans Panel, 05/10/2017 1.30 pm ">South and West Plans Panel<span class="mgHide"> 05/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">6</p>
+						</td>
+				</tr>
+				<tr class="mgCalendarMonthRow">
+              
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">9</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>10.30 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=1091&amp;MId=7989" title="Scrutiny Board (Environment, Housing and Communities), 09/10/2017 10.30 am ">Scrutiny Board (Environment, Housing and Commun<span class="mgHide">, 09/10</span>...</a></li>
+</ul>
+						</td>
+<td class="mgCalendarCellToday">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">10</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>10.00 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=430&amp;MId=8015" title="Licensing Sub-Committee, 10/10/2017 10.00 am ">Licensing Sub-Committee<span class="mgHide"> 10/10</span></a></li><li>1.30 pm <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=1090&amp;MId=7930" title="Scrutiny Board (Adults and Health), 10/10/2017 1.30 pm ">Scrutiny Board (Adults and Health)<span class="mgHide"> 10/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">11</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>10.30 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=1088&amp;MId=8091" title="Scrutiny Board (Inclusive Growth, Culture and Sport), 11/10/2017 10.30 am ">Scrutiny Board (Inclusive Growth, Culture and S<span class="mgHide">, 11/10</span>...</a></li><li>1.30 pm <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=980&amp;MId=8129" title="Tenant Scrutiny Board, 11/10/2017 1.30 pm ">Tenant Scrutiny Board<span class="mgHide"> 11/10</span></a></li><li>6.00 pm <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=1004&amp;MId=8075" title="Inner West Community Committee (Workshop - 6:00pm -7:30pm), Inner West Community Committee, 11/10/2017 6.00 pm ">Inner West Community Committee (Workshop - 6:00<span class="mgHide">, 11/10</span>...</a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">12</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>1.30 pm <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=947&amp;MId=7950" title="City Plans Panel, 12/10/2017 1.30 pm ">City Plans Panel<span class="mgHide"> 12/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">13</p>
+						</td>
+				</tr>
+				<tr class="mgCalendarMonthRow">
+              
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">16</p>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">17</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>10.00 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=430&amp;MId=8016" title="Licensing Sub-Committee, 17/10/2017 10.00 am ">Licensing Sub-Committee<span class="mgHide"> 17/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">18</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>1.00 pm <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=102&amp;MId=7830" title="Executive Board, 18/10/2017 1.00 pm ">Executive Board<span class="mgHide"> 18/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">19</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>9.45 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=1089&amp;MId=7921" title="Scrutiny Board (Children and Families), 19/10/2017 9.45 am ">Scrutiny Board (Children and Families)<span class="mgHide"> 19/10</span></a></li><li>1.30 pm <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=949&amp;MId=7939" title="North and East Plans Panel, 19/10/2017 1.30 pm ">North and East Plans Panel<span class="mgHide"> 19/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">20</p>
+						</td>
+				</tr>
+				<tr class="mgCalendarMonthRow">
+              
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">23</p>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">24</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>10.00 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=430&amp;MId=8017" title="Licensing Sub-Committee, 24/10/2017 10.00 am ">Licensing Sub-Committee<span class="mgHide"> 24/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">25</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>10.30 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=1087&amp;MId=8101" title="Scrutiny Board (Infrastructure and Investment), 25/10/2017 10.30 am ">Scrutiny Board (Infrastructure and Investment)<span class="mgHide"> 25/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">26</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>10.30 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=1041&amp;MId=7911" title="Scrutiny Board (Strategy and Resources), 26/10/2017 10.30 am ">Scrutiny Board (Strategy and Resources)<span class="mgHide"> 26/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">27</p>
+						</td>
+				</tr>
+				<tr class="mgCalendarMonthRow">
+              
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">30</p>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayTxt" ></p>-->
+							<p class="mgCalendarDayTxt">31</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>10.00 am <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=430&amp;MId=8019" title="Licensing Sub-Committee, 31/10/2017 10.00 am ">Licensing Sub-Committee<span class="mgHide"> 31/10</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayDimTxt" ></p>-->
+							<p class="mgCalendarDayDimTxt">1</p>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayDimTxt" ></p>-->
+							<p class="mgCalendarDayDimTxt">2</p>
+
+<ul class="mgCalendarMonthEventList">
+<li>1.30 pm <a class="mgCalendarCellTxt" href="ieListDocuments.aspx?CId=947&amp;MId=7951" title="City Plans Panel, 02/11/2017 1.30 pm ">City Plans Panel<span class="mgHide"> 02/11</span></a></li>
+</ul>
+						</td>
+<td class="mgCalendarCell">							<!--<p class="mgCalendarDayDimTxt" ></p>-->
+							<p class="mgCalendarDayDimTxt">3</p>
+						</td>
+				</tr>
+        
+</tbody></table>
+
+</form>
+</div>
+<div class="mgHelpLine">	
+<!--	-->
+</div>	
+
+</div>
+<div class="mgFooter">		
+
+	<p>&nbsp;</p>
+
+    <script src="edit-doc-activex.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="jquery-ui/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.10.2.custom.min.js"></script>
+
+    <script type="text/javascript">
+	var mgJQuery = jQuery.noConflict(true);
+        var thisFormValidator;
+    </script>
+
+    <script type="text/javascript" src="jquery-ui/json/json2.js"></script>
+    <script type="text/javascript" src="jquery-ui/Add-ons/mg.jqueryaddons.min.js"></script>
+    <script type="text/javascript" src="mgAjaxScripts.js"></script> 
+          
+    <script type="text/javascript">
+        function CommonAjaxInit()
+        {
+            Common_DocumentReady(false, 629272640462387)
+        }
+
+        mgJQuery(document).ready(CommonAjaxInit);
+
+    </script>  
+</div>
+</div>
+
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+{% include "pages-lcc/modern-gov-pages/modern-gov-related-pages.html" %}
+
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+     {% include "includes/re-userble-content-footer.html" %}
+ {% endblock %}

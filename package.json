@@ -39,6 +39,7 @@
     "syncy": "^2.0.1"
   },
   "devDependencies": {
-    "gulp-install": "^1.1.0"
+    "gulp-install": "^1.1.0",
+    "pinkie-promise": "^2.0.1"
   }
 }
