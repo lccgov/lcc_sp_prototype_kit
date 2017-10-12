@@ -1,0 +1,218 @@
+{% extends "layout_multi_sections-lcc.html" %}
+
+{% block page_title %}
+	Library card validator
+{% endblock %}
+
+
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+    Instant access to British Standards
+{% endblock%}
+
+ {% block main_nav %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+<ul>
+    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+        <a href="/lcc-home.html">Home</a>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Library card validator</li>
+        </ul>
+    </li>
+</ul>
+ {% endblock %}
+
+{% block sectionOneContent %}
+    <style type="text/css">
+		#libMsgErrorMessage {
+			display: none;
+		}
+	</style>
+	<script>
+        var LCC = LCC || {};  //namespace
+        LCC.LibraryNumberChecker = (function () {
+            var checker = {}
+            checker.validateAndRedirect = function(){
+                // sample ld p 0023111 8
+                // sample LD P 0513571 0
+                cardNum = document.getElementById('LibraryCardNo').value.replace(" ", "");
+                if(/[lL][dD][pP]\d{8}/.test(cardNum))
+                {
+                    // redirect user
+                    alert('Good to go)')
+                }
+                else
+                {
+                    document.getElementById('libNumber').innerText = cardNum + " is in the incorrrect format"
+                    document.getElementById('libMsgErrorMessage').style.display = 'block'
+                }
+            }
+            checker.clearError = function(){
+                var errorMsg = document.getElementById('libMsgErrorMessage')
+                errorMsg.style.display = 'none'
+            }
+            return checker
+        })();
+    </script>
+
+{% endblock %}
+
+{% block pageContent %}
+
+<div class="text"><p class="lead">Free access to British Standards for members of Leeds Libraries.</p></div>
+
+<div class="search-panel">
+    <h3>Login with your library card number (LDP********)</h3>
+	<fieldset>
+        <legend class="sr-only">Login with your library card number (LDP********)</span></legend>
+        <div id="libMsgErrorMessage" class="error-message-wrapper">
+			<p class="error-message">Sorry the number you entered <span id="libNumber"> is in the incorrrect format</span></span>
+		</div>
+        <div class="form-group-button">
+            <div class="form-group">
+                <label for="LibraryCardNo" id="LABEL_11" class="form-label bold">Your library card number
+                </label>
+                <input name="LibraryCardNo" value="LDP05135710" type="text" maxlength="11" size="30" id="LibraryCardNo" onchange="LCC.LibraryNumberChecker.clearError()" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <button type="button" name="BsolLogin" value="Login" id="BsolLogin" onclick="LCC.LibraryNumberChecker.validateAndRedirect()" class="btn btn-primary btn-small">Login <span class="sr-only">to British Standards (External link)</span></button>
+            </div>
+            <div class="form-group">
+                <a class="link-small" href="/libraries/joining-the-library">Not a member? Join today</a>
+            </div>
+        </div>
+	</fieldset>
+</div>
+
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% include "includes/design-patterns/side-nav.html" %}
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+    
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+     {% include "includes/re-userble-content-footer.html" %}
+ {% endblock %}
