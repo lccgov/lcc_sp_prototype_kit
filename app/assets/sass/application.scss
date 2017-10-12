@@ -514,3 +514,12 @@ aside.col-md-4{
     @extend .font-xsmall;
     color:$base-link-color;
 }
+
+.hidden{
+    display:none;
+}
+
+.form-group-off,
+.form-control-off{
+    @extend .hidden;
+}
