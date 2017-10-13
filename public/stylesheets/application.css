@@ -23724,6 +23724,13 @@ aside.col-md-4 {
 .link-small {
   color: #007299; }
 
-.hidden, .form-group-off,
+.sr-only, .form-group-off,
 .form-control-off {
-  display: none; }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
