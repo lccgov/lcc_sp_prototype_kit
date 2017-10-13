@@ -530,3 +530,31 @@ aside.col-md-4{
     @extend .sr-only;
 }
 
+
+.block-label.inline{
+    clear: both;
+    display: inline-block;
+    float: none;
+}
+
+.scopeNote{
+    @extend .font-xsmall;
+}
+
+#panelSurvey{
+    .panel{
+        #panelEasy{
+            h4{
+                @extend .heading-small;
+            }
+        }
+    }
+
+    .recaptcha{
+        margin:30px 0 20px;
+    }
+}
+
+.survey-info-text{
+    margin:0;
+}

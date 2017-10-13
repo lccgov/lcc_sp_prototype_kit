@@ -1,5 +1,5 @@
 <div id="panelSurvey" class="survey label-small">
-    <h3 class="survey-title">Did you find what you were looking for?</h3>
+    <h3 class="heading-small">Did you find what you were looking for?</h3>
     <form>
         <div class="form-group">	
             <div id="panelFind" class="survey-header">
@@ -16,12 +16,15 @@
                 </div>
             </div>
     
-            <div id="panelMain" class="survey-body panel panel-border-narrow" style="display:none"><!--DISPLAY NONE-->
+            <div id="panelMain" class="survey-body panel panel-border-narrow"><!--DISPLAY NONE-->
+
+                <p class="text survey-info-text">No personal information or requests for service should be made through this page as it only relates to website feedback.  If you need to speak to someone or make a service request please see our <a href="/Pages/contactus.aspx">contact details</a>.</p>
                 
                 <fieldset>
-                    <div id="panelEasy">    
+                    <div id="panelEasy">
+                        <h4 class="heading-small">How easy was it to get the help you wanted today?</h4>    
                         <fieldset id="fieldsetSurveyQ2" class="fieldsetSurveyMain">
-                            <legend id="fieldsetSurveyQ2Legend" class="fieldsetSurveyMainLegend">
+                            <legend class="sr-only" id="fieldsetSurveyQ2Legend" class="fieldsetSurveyMainLegend">
                                 <span id="lblQuestion2">How easy was it to get the help you wanted today?</span>
                             </legend> 
                             <div id="radEasy">
@@ -40,75 +43,43 @@
                     </div>
 
                     <div id="panelInfo">
-                    
-                            
-                        <fieldset id="fieldsetSurveyQ3" class="fieldsetSurveyMain">
-                            <legend id="fieldsetSurveyQ3Legend" class="fieldsetSurveyMainLegend">
-                                <span id="lblQuestion3">What information were you looking for?We are collecting this information to help us improve our web pages.If you have an enquiry that you would like us to respond to please use contact us instead.</span>
-                            </legend> 
-                            <textarea name="txtLookingFor" rows="4" cols="20" id="txtLookingFor"></textarea>
-                            <span class="scopeNote" id="lfScopeNote">500 characters left</span>
-                        </fieldset>
 
-                        <fieldset id="fieldsetSurveyQ4" class="fieldsetSurveyMain">
-                            <legend id="fieldsetSurveyQ4Legend" class="fieldsetSurveyMainLegend">
-                                <span id="lblQuestion4">Any further comments?</span>
-                            </legend> 
-                            <textarea name="txtFurtherComments" rows="4" cols="20" id="txtFurtherComments"></textarea>
-                            <span class="scopeNote" id="fcScopeNote">500 characters left</span>
-                        </fieldset>
+                        <div class="form-group">
+                            <label class="heading-small" for="txtLookingFor">
+                                What information were you looking for?
+                            </label>
+                            <textarea class="form-control form-control-3-4" name="txtLookingFor" rows="4" cols="20" id="txtLookingFor"></textarea>
+                            <p class="scopeNote" id="lfScopeNote">500 characters left</p>
+                        </div>
 
-                        <fieldset id="fieldsetSurveyReCaptcha" class="fieldsetSurveyMain">
-                            <legend id="fieldsetSurveyReCaptchaLegend" class="fieldsetSurveyReCaptchaLegend">
-                                <span id="lblReCaptchaLegend">reCAPTCHA validation</span>
-                            </legend> 
+                        <div class="form-group">
+                            <label class="heading-small" for="txtFurtherComments">
+                                Any further comments?
+                            </label>
+                            <textarea class="form-control form-control-3-4" name="txtFurtherComments" rows="4" cols="20" id="txtFurtherComments"></textarea>
+                            <p class="scopeNote" id="fcScopeNote">500 characters left</p>
+                        </div>
 
-                            <div class="recaptcha">                     
-                                <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
-                                <div>
-                                    <div class="g-recaptcha" data-sitekey="6LdKcRUTAAAAANf7GSp08gjotDLHIWqCPDUm5BwL"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LdKcRUTAAAAANf7GSp08gjotDLHIWqCPDUm5BwL&amp;co=aHR0cDovL3d3dy5sZWVkcy5nb3YudWs6ODA.&amp;hl=en&amp;v=r20170829114530&amp;size=normal&amp;cb=r3t5fp8cbmke" title="recaptcha widget" width="304" height="78" frameborder="0" scrolling="no" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
-                                </div>
+                        <div class="recaptcha">                     
+                            <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+                            <div class="g-recaptcha" data-sitekey="6LdKcRUTAAAAANf7GSp08gjotDLHIWqCPDUm5BwL"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LdKcRUTAAAAANf7GSp08gjotDLHIWqCPDUm5BwL&amp;co=aHR0cDovL3d3dy5sZWVkcy5nb3YudWs6ODA.&amp;hl=en&amp;v=r20171011122914&amp;size=normal&amp;cb=dcq9rwls060w" title="recaptcha widget" width="304" height="78" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+                        </div>
 
-                            </div>
-
-                            <a id="anchorSurveyReCAPTCHAfailed" class="anchorSurveyReCAPTCHAfailed" href="#anchorSurveyReCAPTCHAfailed"><span id="lblErrorMessage"></span></a>
-                            </fieldset>
-                    
-                </div>
+                        <a id="anchorSurveyReCAPTCHAfailed" class="anchorSurveyReCAPTCHAfailed" href="#anchorSurveyReCAPTCHAfailed"><span id="lblErrorMessage"></span></a>
+                
+                    </div>
 
                     <div id="panelButton">
-                    
-                        <fieldset class="fieldsetSurveyMain">
-                            <input type="submit" name="btnSurveySubmit" value="Submit" onclick="return ValidateForm();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSurveySubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnSurveySubmit" title="Submit this survey form." class="submit">
-                        </fieldset>
-                    
-                </div>
-
-                
-                </fieldset>
-            
-            </div>
-
-            <div id="panelThanks" style="display:none"><!--DISPLAY NONE-->		
-                <fieldset id="fieldsetSurveyCompleted">
-                    <legend id="legendSurveyCompleted">
-                        <a id="anchorSurveyCompleted" title="Survey completed. Thank you for your feedback" class="anchorSurveyCompletedHeader" href="#fieldsetSurveyCompleted"><span id="lblSurveyCompleted">Survey completed</span></a>
-                    </legend>
-                    <div class="row">
-                        <a id="anchorSurveyCompletedText" title="Survey completed" class="anchorSurveyCompleted" href="#anchorSurveyCompletedText"><span id="lblSurveyCompletedText">Thank you for your feedback</span></a>
-                        
+                        <input type="submit" name="btnSurveySubmit" value="Submit" onclick="return ValidateForm();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSurveySubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnSurveySubmit" title="Submit this survey form." class="btn btn-primary btn-small">  
                     </div>
-                    <p>
-                        <!-- -->
-                    </p>
-                    <p>
-                        <!-- -->
-                    </p>
-                    <p>
-                        <!-- -->
-                    </p>
-                </fieldset>
+
+                </fieldset>     
             </div>
         </div>
+
+        <div id="panelThanks" class="panel"><!--DISPLAY NONE-->		
+            <p id="anchorSurveyCompletedText"><span id="lblSurveyCompletedText">Thank you for your feedback</span></p>                      
+        </div>
+
     </form>
 </div>
