@@ -542,6 +542,14 @@ aside.col-md-4{
 }
 
 #panelSurvey{
+    @extend .search-panel;
+    background:transparent;
+    border:1px solid $border-color;
+
+    h3{
+        margin-top:0;
+    }
+
     .panel{
         #panelEasy{
             h4{
