@@ -94,4 +94,4 @@ document.addEventListener("DOMContentLoaded", randomImage);
     theme: "square"
 };
 
-$("#hero-site-search").easyAutocomplete(options);
+//$("#hero-site-search").easyAutocomplete(options);

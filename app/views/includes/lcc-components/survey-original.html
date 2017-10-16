@@ -1,83 +1,186 @@
 <div id="panelSurvey" class="survey label-small">
     <form class="form-group">	
-            <div id="panelFind" class="survey-header">
+            <div id="ctl00_PlaceHolderMain_LCCSurvey_panelFind" class="survey-header">
                 <h3 class="heading-small">Did you find what you were looking for?</h3>
                 <div id="fieldsetSurveyHeader">
                     <legend id="fieldsetSurveyHeaderLegend" class="sr-only">
-                        <span id="lblQuestion1">Did you find the information you were looking for?</span>
+                        <span id="ctl00_PlaceHolderMain_LCCSurvey_lblQuestion1">Did you find the information you were looking for?</span>
                     </legend> 
-                    <div id="radFind" onclick="return showHideDiv()" border="0">
-                        <label for="radFind_0" class="block-label inline" data-target="radFind_0">
-                            <input id="radFind_0" type="radio" name="radFind" value="Yes">Yes</label>
-                        <label for="radFind_1" class="block-label inline">
-                            <input id="radFind_1" type="radio" name="radFind" value="No">No</label>
+                    <div id="ctl00_PlaceHolderMain_LCCSurvey_radFind" class="survey-radio" onclick="return showHideDiv()" border="0">
+                        <label for="ctl00_PlaceHolderMain_LCCSurvey_radFind_0" class="block-label inline" data-target="ctl00_PlaceHolderMain_LCCSurvey_radFind_0">
+                            <input id="ctl00_PlaceHolderMain_LCCSurvey_radFind_0" type="radio" name="radFind" value="Yes">Yes</label>
+                        <label for="ctl00_PlaceHolderMain_LCCSurvey_radFind_1" class="block-label inline" data-target="ctl00_PlaceHolderMain_LCCSurvey_radFind_1">
+                            <input id="ctl00_PlaceHolderMain_LCCSurvey_radFind_1" type="radio" name="radFind" value="No">No</label>
                     </div>       
                 </div>
             </div>
     
-            <div id="panelMain" class="survey-body panel panel-border-narrow"><!--DISPLAY NONE-->
+            <div id="ctl00_PlaceHolderMain_LCCSurvey_panelMain" class="survey-body panel panel-border-narrow" style="display:none"><!--DISPLAY NONE-->
 
-                <p class="text survey-info-text">No personal information or requests for service should be made through this page as it only relates to website feedback.  If you need to speak to someone or make a service request please see our <a href="/Pages/contactus.aspx">contact details</a>.</p>
+                <p class="text survey-info-text">No personal information or requests for service should be made through this survey as it only relates to website feedback.  If you need to speak to someone or make a service request please see our <a href="/Pages/contactus.aspx">contact details</a>.</p>
                 
                 <fieldset>
-                    <div id="panelEasy">
+                    <div id="#ctl00_PlaceHolderMain_LCCSurvey_panelEasy" class="survey-easy">
                         <h4 class="heading-small">How easy was it to get the information you needed from this page?</h4>    
-                        <fieldset id="fieldsetSurveyQ2" class="fieldsetSurveyMain">
-                            <legend class="sr-only" id="fieldsetSurveyQ2Legend" class="fieldsetSurveyMainLegend">
-                                <span id="lblQuestion2">How easy was it to get the information you needed from this page?</span>
+                        <fieldset id="ctl00_PlaceHolderMain_LCCSurvey_fieldsetSurveyQ2" class="fieldsetSurveyMain">
+                            <legend class="sr-only" id="ctl00_PlaceHolderMain_LCCSurvey_fieldsetSurveyQ2Legend" class="fieldsetSurveyMainLegend">
+                                <span id="ctl00_PlaceHolderMain_LCCSurvey_lblQuestion2">How easy was it to get the information you needed from this page?</span>
                             </legend> 
-                            <div id="radEasy">
-                                <label for="radEasy_0" class="block-label inline">
-                                    <input id="radEasy_0" type="radio" name="radEasy" value="1">Very easy</label>
-                                <label for="radEasy_1" class="block-label inline">
-                                    <input id="radEasy_1" type="radio" name="radEasy" value="2">Easy</label>
-                                <label for="radEasy_2" class="block-label inline">
-                                    <input id="radEasy_2" type="radio" name="radEasy" value="3">Neither</label>
-                                <label for="radEasy_3" class="block-label inline">
-                                    <input id="radEasy_3" type="radio" name="radEasy" value="4">Difficult</label>
-                                <label for="radEasy_4" class="block-label inline">
-                                    <input id="radEasy_4" type="radio" name="radEasy" value="5">Very difficult</label>                      
+                            <div id="ctl00_PlaceHolderMain_LCCSurvey_radEasy">
+                                <label for="ctl00_PlaceHolderMain_LCCSurvey_radEasy_0" class="block-label inline">
+                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_0" type="radio" name="radEasy" value="1">Very easy</label>
+                                <label for="ctl00_PlaceHolderMain_LCCSurvey_radEasy_1" class="block-label inline">
+                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_1" type="radio" name="radEasy" value="2">Easy</label>
+                                <label for="ctl00_PlaceHolderMain_LCCSurvey_radEasy_2" class="block-label inline">
+                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_2" type="radio" name="radEasy" value="3">Neither</label>
+                                <label for="ctl00_PlaceHolderMain_LCCSurvey_radEasy_3" class="block-label inline">
+                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_3" type="radio" name="radEasy" value="4">Difficult</label>
+                                <label for="ctl00_PlaceHolderMain_LCCSurvey_radEasy_4" class="block-label inline">
+                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_4" type="radio" name="radEasy" value="5">Very difficult</label>                      
                             </div>          
                         </fieldset>          
                     </div>
 
-                    <div id="panelInfo">
+                    <div id="#ctl00_PlaceHolderMain_LCCSurvey_panelMain">
 
                         <div class="form-group">
-                            <label class="heading-small" for="txtLookingFor">
+                            <label class="heading-small" for="#ctl00_PlaceHolderMain_LCCSurvey_txtLookingFor">
                                 What information were you looking for?
                             </label>
-                            <textarea class="form-control form-control-3-4" name="txtLookingFor" rows="4" cols="20" id="txtLookingFor"></textarea>
+                            <textarea class="form-control form-control-3-4" name="#ctl00_PlaceHolderMain_LCCSurvey_txtLookingFor" rows="4" cols="20" id="#ctl00_PlaceHolderMain_LCCSurvey_txtLookingFor"></textarea>
                             <p class="scopeNote" id="lfScopeNote">500 characters left</p>
                         </div>
 
                         <div class="form-group">
-                            <label class="heading-small" for="txtFurtherComments">
+                            <label class="heading-small" for="#ctl00_PlaceHolderMain_LCCSurvey_txtFurtherComments">
                                 Any further comments?
                             </label>
-                            <textarea class="form-control form-control-3-4" name="txtFurtherComments" rows="4" cols="20" id="txtFurtherComments"></textarea>
+                            <textarea class="form-control form-control-3-4" name="#ctl00_PlaceHolderMain_LCCSurvey_txtFurtherComments" rows="4" cols="20" id="#ctl00_PlaceHolderMain_LCCSurvey_txtFurtherComments"></textarea>
                             <p class="scopeNote" id="fcScopeNote">500 characters left</p>
                         </div>
 
                         <div class="recaptcha">                     
                             <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
-                            <div class="g-recaptcha" data-sitekey="6LdKcRUTAAAAANf7GSp08gjotDLHIWqCPDUm5BwL"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LdKcRUTAAAAANf7GSp08gjotDLHIWqCPDUm5BwL&amp;co=aHR0cDovL3d3dy5sZWVkcy5nb3YudWs6ODA.&amp;hl=en&amp;v=r20171011122914&amp;size=normal&amp;cb=dcq9rwls060w" title="recaptcha widget" width="304" height="78" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+                            <div class="g-recaptcha" data-sitekey="6LdKcRUTAAAAANf7GSp08gjotDLHIWqCPDUm5BwL"><div style="width: 302px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LdKcRUTAAAAANf7GSp08gjotDLHIWqCPDUm5BwL&amp;co=aHR0cDovL3d3dy5sZWVkcy5nb3YudWs6ODA.&amp;hl=en&amp;v=r20171011122914&amp;size=normal&amp;cb=dcq9rwls060w" title="recaptcha widget" width="302" height="78" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; padding: 0px; resize: none;  display: none; "></textarea></div></div>
                         </div>
 
-                        <a id="anchorSurveyReCAPTCHAfailed" class="anchorSurveyReCAPTCHAfailed" href="#anchorSurveyReCAPTCHAfailed"><span id="lblErrorMessage"></span></a>
+                        <a id="ctl00_PlaceHolderMain_LCCSurvey_anchorSurveyReCAPTCHAfailed" class="anchorSurveyReCAPTCHAfailed" href="#anchorSurveyReCAPTCHAfailed"><span id="lblErrorMessage"></span></a>
                 
                     </div>
 
-                    <div id="panelButton">
+                    <div id="ctl00_PlaceHolderMain_LCCSurvey_panelButton">
                         <input type="submit" name="btnSurveySubmit" value="Submit" onclick="return ValidateForm();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSurveySubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnSurveySubmit" title="Submit this survey form." class="btn btn-primary btn-small">  
                     </div>
 
                 </fieldset>     
             </div>
 
-        <div id="panelThanks"><!--DISPLAY NONE-->		
+        <div id="ctl00_PlaceHolderMain_LCCSurvey_panelThanks" style="display:none"><!--DISPLAY NONE-->		
             <p id="anchorSurveyCompletedText"><span id="lblSurveyCompletedText">Thank you for your feedback</span></p>                      
         </div>
 
     </form>
 </div>
+
+<script type="text/javascript">
+    
+    function showHideDiv() {
+        var isFindChecked = false;
+        var isFindYes = false;
+        var rblFind = document.getElementById("ctl00_PlaceHolderMain_LCCSurvey_radFind");
+        var radioButtonsFind = rblFind.getElementsByTagName("input");
+
+        for (var i = 0; i < radioButtonsFind.length; i++) {
+            if (radioButtonsFind[i].checked) {
+                isFindChecked = true;
+                if (radioButtonsFind[i].value == "Yes") {
+                    jQuery('#ctl00_PlaceHolderMain_LCCSurvey_panelEasy').show();
+                }
+                if (radioButtonsFind[i].value == "No") {
+                    jQuery('#ctl00_PlaceHolderMain_LCCSurvey_panelEasy').hide();
+                }
+                jQuery('#ctl00_PlaceHolderMain_LCCSurvey_panelMain').show();
+                return true;
+            }
+        }
+    }
+
+    function ValidateForm() {
+        var isFindChecked = false;
+        var isEasyChecked = false;
+        var isFindYes = false;
+        var rblFind = document.getElementById("ctl00_PlaceHolderMain_LCCSurvey_radFind");
+        var radioButtonsFind = rblFind.getElementsByTagName("input");
+
+        for (var i = 0; i < radioButtonsFind.length; i++) {
+            if (radioButtonsFind[i].checked) {
+                isFindChecked = true;
+                if (radioButtonsFind[i].value == "Yes") {
+                    isFindYes = true;
+                }
+                break;
+            }
+        }
+
+        if (!isFindChecked) {
+            return isFindChecked;
+        }
+
+        else if (isFindYes) {
+            var rblEasy = document.getElementById("ctl00_PlaceHolderMain_LCCSurvey_radEasy");
+            var radioButtonsEasy = rblEasy.getElementsByTagName("input");
+
+            for (var i = 0; i < radioButtonsEasy.length; i++) {
+                if (radioButtonsEasy[i].checked) {
+                    isEasyChecked = true;
+                    break;
+                }
+            }
+
+            if (!isEasyChecked) {
+                alert("Please tell us how easy it was to find the information you were looking for");
+                return isEasyChecked;
+            }
+        }
+    }
+
+
+    jQuery('#ctl00_PlaceHolderMain_LCCSurvey_txtLookingFor').each(function () {
+             var maxlimit = 500;
+            var length = jQuery(this).val().length;
+            if (length >= maxlimit) {
+                jQuery(this).val(jQuery(this).val().substring(0, maxlimit));
+                length = maxlimit;
+            }
+            jQuery(this).parent().find('.scopeNote').html((maxlimit - length) + ' characters left');
+            jQuery(this).keyup(function () {
+                var new_length = jQuery(this).val().length;
+                if (new_length >= maxlimit) {
+                    jQuery(this).val(jQuery(this).val().substring(0, maxlimit));
+                    new_length = maxlimit;
+                }
+                jQuery(this).parent().find('.scopeNote').html((maxlimit - new_length) + ' characters left');
+            });
+
+        });
+
+    jQuery('#ctl00_PlaceHolderMain_LCCSurvey_txtFurtherComments').each(function () {
+            var maxlimit = 500;
+            var length = jQuery(this).val().length;
+            if (length >= maxlimit) {
+                jQuery(this).val(jQuery(this).val().substring(0, maxlimit));
+                length = maxlimit;
+            }
+            jQuery(this).parent().find('.scopeNote').html((maxlimit - length) + ' characters left');
+            jQuery(this).keyup(function () {
+                var new_length = jQuery(this).val().length;
+                if (new_length >= maxlimit) {
+                    jQuery(this).val(jQuery(this).val().substring(0, maxlimit));
+                    new_length = maxlimit;
+                }
+                jQuery(this).parent().find('.scopeNote').html((maxlimit - new_length) + ' characters left');
+            });
+
+        });
+
+</script>

@@ -514,6 +514,7 @@ aside.col-md-4{
     @extend .font-xsmall;
     color:$base-link-color;
 }
+
 .sr-only{
     position: absolute;
     width: 1px;
@@ -541,17 +542,20 @@ aside.col-md-4{
     @extend .font-xsmall;
 }
 
-#panelSurvey{
+.survey{
     @extend .search-panel;
     background:transparent;
     border:1px solid $border-color;
+    margin-bottom:0;
 
     h3{
         margin-top:0;
     }
 
     .panel{
-        #panelEasy{
+        margin-bottom:0 !important;
+
+        .survey-easy{
             h4{
                 @extend .heading-small;
             }
@@ -565,4 +569,12 @@ aside.col-md-4{
 
 .survey-info-text{
     margin:0;
+}
+
+.survey-radio{
+    margin-bottom:-20px;
+}
+
+.survey-body{
+    margin-top:30px !important;
 }
