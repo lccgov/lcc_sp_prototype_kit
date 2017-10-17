@@ -8,9 +8,9 @@
                     </legend> 
                     <div id="ctl00_PlaceHolderMain_LCCSurvey_radFind" class="survey-radio" onclick="return showHideDiv()" border="0">
                         <label for="ctl00_PlaceHolderMain_LCCSurvey_radFind_0" class="block-label inline" data-target="ctl00_PlaceHolderMain_LCCSurvey_radFind_0">
-                            <input id="ctl00_PlaceHolderMain_LCCSurvey_radFind_0" type="radio" name="radFind" value="Yes">Yes</label>
+                            <input id="ctl00_PlaceHolderMain_LCCSurvey_radFind_0" type="radio" name="ctl00_PlaceHolderMain_LCCSurvey_radFind" value="Yes">Yes</label>
                         <label for="ctl00_PlaceHolderMain_LCCSurvey_radFind_1" class="block-label inline" data-target="ctl00_PlaceHolderMain_LCCSurvey_radFind_1">
-                            <input id="ctl00_PlaceHolderMain_LCCSurvey_radFind_1" type="radio" name="radFind" value="No">No</label>
+                            <input id="ctl00_PlaceHolderMain_LCCSurvey_radFind_1" type="radio" name="ctl00_PlaceHolderMain_LCCSurvey_radFind" value="No">No</label>
                     </div>       
                 </div>
             </div>
@@ -28,15 +28,15 @@
                             </legend> 
                             <div id="ctl00_PlaceHolderMain_LCCSurvey_radEasy">
                                 <label for="ctl00_PlaceHolderMain_LCCSurvey_radEasy_0" class="block-label inline">
-                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_0" type="radio" name="radEasy" value="1">Very easy</label>
+                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_0" type="radio" name="ctl00_PlaceHolderMain_LCCSurvey_radEasy" value="1">Very easy</label>
                                 <label for="ctl00_PlaceHolderMain_LCCSurvey_radEasy_1" class="block-label inline">
-                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_1" type="radio" name="radEasy" value="2">Easy</label>
+                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_1" type="radio" name="ctl00_PlaceHolderMain_LCCSurvey_radEasy" value="2">Easy</label>
                                 <label for="ctl00_PlaceHolderMain_LCCSurvey_radEasy_2" class="block-label inline">
-                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_2" type="radio" name="radEasy" value="3">Neither</label>
+                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_2" type="radio" name="ctl00_PlaceHolderMain_LCCSurvey_radEasy" value="3">Neither</label>
                                 <label for="ctl00_PlaceHolderMain_LCCSurvey_radEasy_3" class="block-label inline">
-                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_3" type="radio" name="radEasy" value="4">Difficult</label>
+                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_3" type="radio" name="ctl00_PlaceHolderMain_LCCSurvey_radEasy" value="4">Difficult</label>
                                 <label for="ctl00_PlaceHolderMain_LCCSurvey_radEasy_4" class="block-label inline">
-                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_4" type="radio" name="radEasy" value="5">Very difficult</label>                      
+                                    <input id="ctl00_PlaceHolderMain_LCCSurvey_radEasy_4" type="radio" name="ctl00_PlaceHolderMain_LCCSurvey_radEasy" value="5">Very difficult</label>                      
                             </div>          
                         </fieldset>          
                     </div>
@@ -104,83 +104,5 @@
             }
         }
     }
-
-    function ValidateForm() {
-        var isFindChecked = false;
-        var isEasyChecked = false;
-        var isFindYes = false;
-        var rblFind = document.getElementById("ctl00_PlaceHolderMain_LCCSurvey_radFind");
-        var radioButtonsFind = rblFind.getElementsByTagName("input");
-
-        for (var i = 0; i < radioButtonsFind.length; i++) {
-            if (radioButtonsFind[i].checked) {
-                isFindChecked = true;
-                if (radioButtonsFind[i].value == "Yes") {
-                    isFindYes = true;
-                }
-                break;
-            }
-        }
-
-        if (!isFindChecked) {
-            return isFindChecked;
-        }
-
-        else if (isFindYes) {
-            var rblEasy = document.getElementById("ctl00_PlaceHolderMain_LCCSurvey_radEasy");
-            var radioButtonsEasy = rblEasy.getElementsByTagName("input");
-
-            for (var i = 0; i < radioButtonsEasy.length; i++) {
-                if (radioButtonsEasy[i].checked) {
-                    isEasyChecked = true;
-                    break;
-                }
-            }
-
-            if (!isEasyChecked) {
-                alert("Please tell us how easy it was to find the information you were looking for");
-                return isEasyChecked;
-            }
-        }
-    }
-
-
-    jQuery('#ctl00_PlaceHolderMain_LCCSurvey_txtLookingFor').each(function () {
-             var maxlimit = 500;
-            var length = jQuery(this).val().length;
-            if (length >= maxlimit) {
-                jQuery(this).val(jQuery(this).val().substring(0, maxlimit));
-                length = maxlimit;
-            }
-            jQuery(this).parent().find('.scopeNote').html((maxlimit - length) + ' characters left');
-            jQuery(this).keyup(function () {
-                var new_length = jQuery(this).val().length;
-                if (new_length >= maxlimit) {
-                    jQuery(this).val(jQuery(this).val().substring(0, maxlimit));
-                    new_length = maxlimit;
-                }
-                jQuery(this).parent().find('.scopeNote').html((maxlimit - new_length) + ' characters left');
-            });
-
-        });
-
-    jQuery('#ctl00_PlaceHolderMain_LCCSurvey_txtFurtherComments').each(function () {
-            var maxlimit = 500;
-            var length = jQuery(this).val().length;
-            if (length >= maxlimit) {
-                jQuery(this).val(jQuery(this).val().substring(0, maxlimit));
-                length = maxlimit;
-            }
-            jQuery(this).parent().find('.scopeNote').html((maxlimit - length) + ' characters left');
-            jQuery(this).keyup(function () {
-                var new_length = jQuery(this).val().length;
-                if (new_length >= maxlimit) {
-                    jQuery(this).val(jQuery(this).val().substring(0, maxlimit));
-                    new_length = maxlimit;
-                }
-                jQuery(this).parent().find('.scopeNote').html((maxlimit - new_length) + ' characters left');
-            });
-
-        });
 
 </script>
