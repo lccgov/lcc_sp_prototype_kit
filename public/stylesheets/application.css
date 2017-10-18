@@ -23996,7 +23996,7 @@ aside.col-md-4 {
     margin: 20px 0 0;
     display: inline-block; }
   #OngoingIncidents .IncidentPanel .IncidentFooter {
-    background: rgba(157, 165, 178, 0.2);
+    background: transparent;
     margin: 0 -20px -20px -20px;
     padding: 20px; }
     #OngoingIncidents .IncidentPanel .IncidentFooter p {
@@ -24020,9 +24020,7 @@ aside.col-md-4 {
         margin: 15px 0 0; }
       #OngoingIncidents .IncidentPanel .IncidentFooter {
         margin: 0 -15px -15px -15px;
-        padding: 15px; }
-        #OngoingIncidents .IncidentPanel .IncidentFooter p {
-          text-align: left; } }
+        padding: 15px; } }
 
 #OngoingIncidents .Warning {
   border-color: #c0392b;
@@ -24031,7 +24029,6 @@ aside.col-md-4 {
     background: #c0392b;
     color: #FFFFFF; }
   #OngoingIncidents .Warning .IncidentFooter {
-    background: rgba(192, 57, 43, 0.1);
     background: transparent; }
     #OngoingIncidents .Warning .IncidentFooter p {
       color: #666B76; }
@@ -24043,7 +24040,6 @@ aside.col-md-4 {
     background: #007299;
     color: #FFFFFF; }
   #OngoingIncidents .Information .IncidentFooter {
-    background: rgba(0, 114, 153, 0.1);
     background: transparent; }
     #OngoingIncidents .Information .IncidentFooter p {
       color: #666B76; }
@@ -24055,7 +24051,6 @@ aside.col-md-4 {
     background: #FFBF47;
     color: #212224; }
   #OngoingIncidents .Highlight .IncidentFooter {
-    background: rgba(255, 191, 71, 0.1);
     background: transparent; }
     #OngoingIncidents .Highlight .IncidentFooter p {
       color: #666B76; }
@@ -24067,7 +24062,6 @@ aside.col-md-4 {
     background: #DCDEE1;
     color: #212224; }
   #OngoingIncidents .Summary .IncidentFooter {
-    background: rgba(220, 222, 225, 0.1);
     background: transparent; }
     #OngoingIncidents .Summary .IncidentFooter p {
       color: #666B76; }

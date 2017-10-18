@@ -553,7 +553,7 @@ aside.col-md-4{
             display:inline-block;
         }
         .IncidentFooter{
-            background:rgba($grey,0.2);
+            background:transparent;
             margin:0 -20px -20px -20px;
             padding:20px;
 
@@ -587,10 +587,6 @@ aside.col-md-4{
             .IncidentFooter{
                 margin:0 -15px -15px -15px;
                 padding:15px;
-
-                p{
-                    text-align:left;
-                }
             }
         }
     }
@@ -605,7 +601,6 @@ aside.col-md-4{
         color:$IncidentHeaderColor;
     }
     .IncidentFooter{
-        background:rgba($IncidentColor,0.1);
         background:transparent;
 
         p{
