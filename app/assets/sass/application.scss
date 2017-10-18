@@ -615,16 +615,16 @@ aside.col-md-4{
 
 #OngoingIncidents{
     .Warning{
-        @include IncidentPanelColors($red,$white,$base-font-color);
+        @include IncidentPanelColors($red,$white,$secondary-font-color);
     }
     .Information{
-        @include IncidentPanelColors($blue,$white,$base-font-color);
+        @include IncidentPanelColors($blue,$white,$secondary-font-color);
     }
     .Highlight{
-        @include IncidentPanelColors($yellow,$base-font-color,$base-font-color);
+        @include IncidentPanelColors($yellow,$base-font-color,$secondary-font-color);
     }
     .Summary{
-        @include IncidentPanelColors($light-grey,$base-font-color,$base-font-color);
+        @include IncidentPanelColors($light-grey,$base-font-color,$secondary-font-color);
     }
 }
 
