@@ -530,7 +530,7 @@ aside.col-md-4{
 //emergencies
 #OngoingIncidents{
     .IncidentPanel{
-        border:4px solid $grey;
+        border:0;
         margin-bottom:20px;
         padding:20px;
 
@@ -554,13 +554,13 @@ aside.col-md-4{
         }
         .IncidentFooter{
             background:rgba($grey,0.2);
-            margin:20px -20px -20px -20px;
-            padding:15px 20px;
+            margin:0 -20px -20px -20px;
+            padding:20px;
 
             p{
                 @extend .font-xsmall;
                 margin:0;
-                text-align:right;
+                text-align:left;
             }
         }
 
@@ -585,8 +585,8 @@ aside.col-md-4{
                 margin:15px 0 0;
             }
             .IncidentFooter{
-                margin:15px -15px -15px -15px;
-                padding:10px 15px;
+                margin:0 -15px -15px -15px;
+                padding:15px;
 
                 p{
                     text-align:left;
@@ -598,28 +598,33 @@ aside.col-md-4{
 
 @mixin IncidentPanelColors($IncidentColor,$IncidentHeaderColor,$IncidentFooterColor){
     border-color:$IncidentColor;
+    background:rgba($IncidentColor,0.1);
 
     h3{
         background:$IncidentColor;
         color:$IncidentHeaderColor;
     }
     .IncidentFooter{
-        background:rgba($IncidentColor,0.2);
-        color:$IncidentFooterColor;
+        background:rgba($IncidentColor,0.1);
+        background:transparent;
+
+        p{
+            color:$IncidentFooterColor;
+        }
     }
 }
 
 #OngoingIncidents{
     .Warning{
-        @include IncidentPanelColors($red,$white,$black);
+        @include IncidentPanelColors($red,$white,$secondary-font-color);
     }
     .Information{
-        @include IncidentPanelColors($blue,$white,$black);
+        @include IncidentPanelColors($blue,$white,$secondary-font-color);
     }
     .Highlight{
-        @include IncidentPanelColors($yellow,$black,$black);
+        @include IncidentPanelColors($yellow,$base-font-color,$secondary-font-color);
     }
     .Summary{
-        @include IncidentPanelColors($light-grey,$black,$black);
+        @include IncidentPanelColors($light-grey,$base-font-color,$secondary-font-color);
     }
 }
