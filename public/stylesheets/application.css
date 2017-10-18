@@ -23978,7 +23978,7 @@ aside.col-md-4 {
     border: 0; }
 
 #OngoingIncidents .IncidentPanel {
-  border: 0;
+  border: 4px solid #9DA5B2;
   margin-bottom: 20px;
   padding: 20px; }
   #OngoingIncidents .IncidentPanel h3 {
@@ -23996,12 +23996,12 @@ aside.col-md-4 {
     margin: 20px 0 0;
     display: inline-block; }
   #OngoingIncidents .IncidentPanel .IncidentFooter {
-    background: transparent;
-    margin: 0 -20px -20px -20px;
-    padding: 20px; }
+    background: rgba(157, 165, 178, 0.3);
+    margin: 20px -20px -20px -20px;
+    padding: 15px 20px; }
     #OngoingIncidents .IncidentPanel .IncidentFooter p {
       margin: 0;
-      text-align: left; }
+      text-align: right; }
   @media (max-width: 641px) {
     #OngoingIncidents .IncidentPanel {
       margin-bottom: 15px;
@@ -24019,49 +24019,47 @@ aside.col-md-4 {
       #OngoingIncidents .IncidentPanel a, #OngoingIncidents .IncidentPanel .link, #OngoingIncidents .IncidentPanel .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #OngoingIncidents .IncidentPanel .btn-link {
         margin: 15px 0 0; }
       #OngoingIncidents .IncidentPanel .IncidentFooter {
-        margin: 0 -15px -15px -15px;
-        padding: 15px; } }
+        margin: 15px -15px -15px -15px;
+        padding: 10px 15px; }
+        #OngoingIncidents .IncidentPanel .IncidentFooter p {
+          text-align: left; } }
 
 #OngoingIncidents .Warning {
-  border-color: #c0392b;
-  background: rgba(192, 57, 43, 0.1); }
+  border-color: #c0392b; }
   #OngoingIncidents .Warning h3 {
     background: #c0392b;
     color: #FFFFFF; }
   #OngoingIncidents .Warning .IncidentFooter {
-    background: transparent; }
+    background: rgba(192, 57, 43, 0.2); }
     #OngoingIncidents .Warning .IncidentFooter p {
-      color: #666B76; }
+      color: #212224; }
 
 #OngoingIncidents .Information {
-  border-color: #007299;
-  background: rgba(0, 114, 153, 0.1); }
+  border-color: #007299; }
   #OngoingIncidents .Information h3 {
     background: #007299;
     color: #FFFFFF; }
   #OngoingIncidents .Information .IncidentFooter {
-    background: transparent; }
+    background: rgba(0, 114, 153, 0.2); }
     #OngoingIncidents .Information .IncidentFooter p {
-      color: #666B76; }
+      color: #212224; }
 
 #OngoingIncidents .Highlight {
-  border-color: #FFBF47;
-  background: rgba(255, 191, 71, 0.1); }
+  border-color: #FFBF47; }
   #OngoingIncidents .Highlight h3 {
     background: #FFBF47;
     color: #212224; }
   #OngoingIncidents .Highlight .IncidentFooter {
-    background: transparent; }
+    background: rgba(255, 191, 71, 0.2); }
     #OngoingIncidents .Highlight .IncidentFooter p {
-      color: #666B76; }
+      color: #212224; }
 
 #OngoingIncidents .Summary {
-  border-color: #DCDEE1;
-  background: rgba(220, 222, 225, 0.1); }
+  border-color: #DCDEE1; }
   #OngoingIncidents .Summary h3 {
     background: #DCDEE1;
     color: #212224; }
   #OngoingIncidents .Summary .IncidentFooter {
-    background: transparent; }
+    background: rgba(220, 222, 225, 0.2); }
     #OngoingIncidents .Summary .IncidentFooter p {
-      color: #666B76; }
+      color: #212224; }
