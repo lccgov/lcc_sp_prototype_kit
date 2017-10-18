@@ -23980,7 +23980,11 @@ aside.col-md-4 {
 #OngoingIncidents .IncidentPanel {
   border: 4px solid #9DA5B2;
   margin-bottom: 20px;
-  padding: 20px; }
+  padding: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
   #OngoingIncidents .IncidentPanel h3 {
     background: #9DA5B2;
     margin: 0;
@@ -24030,7 +24034,7 @@ aside.col-md-4 {
     background: #c0392b;
     color: #FFFFFF; }
   #OngoingIncidents .Warning .IncidentFooter {
-    background: rgba(192, 57, 43, 0.2); }
+    background: rgba(192, 57, 43, 0.1); }
     #OngoingIncidents .Warning .IncidentFooter p {
       color: #212224; }
 
@@ -24040,7 +24044,7 @@ aside.col-md-4 {
     background: #007299;
     color: #FFFFFF; }
   #OngoingIncidents .Information .IncidentFooter {
-    background: rgba(0, 114, 153, 0.2); }
+    background: rgba(0, 114, 153, 0.1); }
     #OngoingIncidents .Information .IncidentFooter p {
       color: #212224; }
 
@@ -24050,7 +24054,7 @@ aside.col-md-4 {
     background: #FFBF47;
     color: #212224; }
   #OngoingIncidents .Highlight .IncidentFooter {
-    background: rgba(255, 191, 71, 0.2); }
+    background: rgba(255, 191, 71, 0.1); }
     #OngoingIncidents .Highlight .IncidentFooter p {
       color: #212224; }
 
@@ -24060,7 +24064,7 @@ aside.col-md-4 {
     background: #DCDEE1;
     color: #212224; }
   #OngoingIncidents .Summary .IncidentFooter {
-    background: rgba(220, 222, 225, 0.2); }
+    background: rgba(220, 222, 225, 0.1); }
     #OngoingIncidents .Summary .IncidentFooter p {
       color: #212224; }
 
