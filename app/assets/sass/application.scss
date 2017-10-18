@@ -626,3 +626,39 @@ aside.col-md-4{
         @include IncidentPanelColors($light-grey,$base-font-color,$base-font-color);
     }
 }
+
+//form styles
+.form-group + .text-highlight{
+    margin-bottom:60px;
+
+    @media (max-width: 641px){
+        margin-bottom:50px;
+    }
+}
+
+.form-top{
+    margin-bottom:50px;
+    clear:both;
+    display:inline-block;
+    width:100%;
+
+    @media (max-width: 641px){
+        margin-bottom:30px;
+    }
+
+    .form-back{
+        width:50%;
+        float:left;
+
+        a{
+            margin:0;
+        }
+    }
+
+    .form-progress{
+        text-align:right;
+        width:50%;
+        float:right;
+        color:$secondary-font-color;
+    }
+}

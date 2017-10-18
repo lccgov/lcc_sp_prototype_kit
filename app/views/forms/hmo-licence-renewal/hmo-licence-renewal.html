@@ -1,0 +1,261 @@
+{% extends "layout_multi_sections-lcc.html" %}
+
+{% block page_title %}
+	HMO Licence Renewal
+{% endblock %}
+
+
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+    HMO Licence Renewal
+{% endblock%}
+
+ {% block main_nav %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+  <style>
+     #panelSurvey{
+         display:none;
+     }
+     </style>
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+
+ {% endblock %}
+
+{% block sectionOneContent %}
+   <h2>What is a licensable HMO</h2>
+
+<div class="text">
+    <p>If you are a private landlord/managing agent and let out a property as a licensable HMO, that property must have a valid licence issued by the council. A licensable HMO is one where the property:</p>
+</div>
+<ul class="list list-bullet">
+    <li>Comprises 3 or more storeys;</li>
+    <li>Has 5 or more unrelated occupiers (consisting of 2 or more households) and;</li>
+    <li>Who share an amenity such as a kitchen, toilet, bathroom or lounge.</li>
+</ul>
+<div class="text">
+    <p>If the property consists of a mixture of self-contained flats and flats where the tenant has to go out of their flat usually through a communal area to make use of an amenity as described above (whether for their exclusive use or not), then this may require a HMO licence. In addition, properties let above commercial premises may require a HMO licence.</p>
+</div>
+
+<div class="row">
+    <ul class="accordion" data-module="accordion">
+        <li>
+            <div class="accordion-drawer">
+                <a href="#" class="header"><span class="sr-only">Click to expand</span>When can I use the HMO licence renewal process?</a>
+                <div style="display: none;" class="content-block">
+                    <p>This form can ONLY be used in the following circumstances:</p>
+                    <ul class="list list-bullet">
+                        <li>By an existing licence holder wishing to renew an UNEXPIRED licence; AND</li>
+                        <li>Where there are no material changes at the property and you are able to make a statutory declaration to that effect If you are wanting to add or change the licence holder/occupancy numbers or your licence has expired, you must use the <a href="http://www.leeds.gov.uk/docs/HMO-Licence-Application-Form-and-Guidance-Notes-2017.pdf">full HMO licence application form</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="accordion-drawer">
+                <a href="#" class="header"><span class="sr-only">Click to expand</span>What information do I need to fill out a renewal form?</a>
+                <div style="display: none;" class="content-block">
+                    <p>You must have the following:</p>
+                    <ul class="list list-bullet">
+                        <li>Existing licence reference number of the property you wish to renew;</li>
+                        <li>Fit and proper person number;</li>
+                        <li>Leeds Rental Standard membership number;</li>
+                        <li>A means of paying the licence fee on-line. Please email us <a href="mailto:HMO.Team@leeds.gov.uk?subject=HMO licence renewal - deatils request.">HMO.Team@leeds.gov.uk</a> if you do not have this information. We will verify your details and provide you with this.</li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="accordion-drawer">
+                <a href="#" class="header"><span class="sr-only">Click to expand</span>How much will my licence cost?</a>
+                <div style="display: none;" class="content-block">
+                    <p>HMO Licence Fees:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Property Type</th>
+                                <th class="numeric" scope="col">HMO Licence Fee (Accredited Landlord)</th>
+                                <th class="numeric" scope="col">HMO Licence Fee (Non-accredited Landlord)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>5 - 6 occupants</td>
+                                <td class="numeric">£675</td>
+                                <td class="numeric">£825</td>
+                            </tr>
+                            <tr>
+                                <td>7 - 8 occupants</td>
+                                <td class="numeric">£850</td>
+                                <td class="numeric">£1,000</td>
+                            </tr>
+                            <tr>
+                                <td>9 + occupants</td>
+                                <td class="numeric">£1,200</td>
+                                <td class="numeric">£1,350</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="accordion-drawer">
+                <a href="#" class="header"><span class="sr-only">Click to expand</span>Public register</a>
+                <div style="display: none;" class="content-block">
+                    <p>The council is required by law to establish and maintain a register of all HMO licences granted. As such your name and address (as it appears on the licence) will appear on this register and will be made available for inspection by members of the public at all reasonable times. A shorter version of the register can be viewed on-line at <a href="https://datamillnorth.org/dataset/housing-of-multiple-occupation-licence-register">Data Mill North website</a></p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="accordion-drawer">
+                <a href="#" class="header"><span class="sr-only">Click to expand</span>Incorrect or misleading information &amp; licence application withdrawals</a>
+                <div style="display: none;" class="content-block">
+                    <p>If we become aware of any information which is found to be incorrect or misleading with regards to discount eligibility we will seek to recover the value of the discount claimed. The council reserves the right to issue a shorter duration HMO licence if there is reason to believe that an applicant has previously evaded HMO licensing or has provided incorrect or misleading information for the purpose of obtaining a licence discount. In such cases the applicant will be given the opportunity to provide evidence to the contrary. Accreditation discounts will not be available to landlords where it appears that a timely application has not been made to the council. If after applying and paying for your renewal you decide to withdraw your licence application part way through the administrative process, the council, upon written request by the applicant giving reasons for its withdrawal, will issue a refund minus an administration fee of £150.</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <form action="/HMOLicenceRenewal" id="FormToSubmit" method="post">
+        <div class="form-group">
+            <!--<input class="btn btn-primary" name="command"  type="submit" value="Continue">-->
+
+            <!-- Temporary button for prototype -->
+            <a href="/forms/hmo-licence-renewal/hmo-licence-renewal-page-1" class="btn btn-primary">Continue</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+{% block pageContent %}
+
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+    
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+     {% include "includes/re-userble-content-footer.html" %}
+ {% endblock %}

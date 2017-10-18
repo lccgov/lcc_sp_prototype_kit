@@ -24063,3 +24063,28 @@ aside.col-md-4 {
     background: rgba(220, 222, 225, 0.2); }
     #OngoingIncidents .Summary .IncidentFooter p {
       color: #212224; }
+
+.form-group + .text-highlight, .form-group + .text-block {
+  margin-bottom: 60px; }
+  @media (max-width: 641px) {
+    .form-group + .text-highlight, .form-group + .text-block {
+      margin-bottom: 50px; } }
+
+.form-top {
+  margin-bottom: 50px;
+  clear: both;
+  display: inline-block;
+  width: 100%; }
+  @media (max-width: 641px) {
+    .form-top {
+      margin-bottom: 30px; } }
+  .form-top .form-back {
+    width: 50%;
+    float: left; }
+    .form-top .form-back a, .form-top .form-back .link, .form-top .form-back .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .form-top .form-back .btn-link {
+      margin: 0; }
+  .form-top .form-progress {
+    text-align: right;
+    width: 50%;
+    float: right;
+    color: #666B76; }
