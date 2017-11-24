@@ -683,6 +683,10 @@ aside.col-md-4{
             border: 1px solid #F6F7FA;
             background: white;
 
+            @media (max-width: 1100px){
+                min-width:65px;
+            }
+
             a{
                 padding: 0;
                 border: 0;
@@ -691,13 +695,22 @@ aside.col-md-4{
                 width: 100%;
                 display: inline-block;
                 background: white;
-                padding:20px 0;
+                padding:10px 0;
+
+                @media (max-width: 1100px){
+                    padding:20px 0;
+                }
             }
 
             &.inactive{
-                padding:20px 0;
+                padding:10px 0;
                 border: 1px solid white;
                 width:auto;
+
+                @media (max-width: 1100px){
+                    padding:20px 0;
+                    min-width:65px;
+                }
             }
 
             &:last-of-type a{
@@ -705,8 +718,3 @@ aside.col-md-4{
             }
         }
     }
-@media (max-width: 1100px){
-    li {
-        min-width:65px;
-    }
-}
