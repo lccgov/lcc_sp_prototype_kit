@@ -60,18 +60,7 @@ function randomImage(){
    '/public/images/home-hero-images/4.jpg',
    '/public/images/home-hero-images/5.jpg',
    '/public/images/home-hero-images/6.jpg',
-   '/public/images/home-hero-images/7.jpg',
-   '/public/images/home-hero-images/8.jpg',
-   '/public/images/home-hero-images/9.jpg',
-   '/public/images/home-hero-images/10.jpg',
-   '/public/images/home-hero-images/11.jpg',
-   '/public/images/home-hero-images/12.jpg',
-   '/public/images/home-hero-images/13.jpg',
-   '/public/images/home-hero-images/14.jpg',
-   '/public/images/home-hero-images/15.jpg',
-   '/public/images/home-hero-images/16.jpg',
-   '/public/images/home-hero-images/17.jpg',
-   '/public/images/home-hero-images/18.jpg'];
+   '/public/images/home-hero-images/7.jpg'];
   var size = images.length;
   var x = Math.floor(size * Math.random());
   console.log(x);
