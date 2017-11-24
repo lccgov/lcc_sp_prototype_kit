@@ -718,3 +718,18 @@ aside.col-md-4{
             }
         }
     }
+
+//Hero Mobile styling - NEEDS ADDING TO FET 
+@media (max-width: 330px){
+    .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
+        font-size: 28px;
+        margin: 0 0 5px;
+    }
+}
+
+@media (max-width: 320px){
+    .header-lcc .logo {
+        font-size: 18px;
+        margin: 14px 0;
+    }
+}

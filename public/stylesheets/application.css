@@ -24324,3 +24324,13 @@ aside.col-md-4 {
           min-width: 50px; } }
     .atoz ul li:last-of-type a, .atoz ul li:last-of-type .link, .atoz ul li:last-of-type .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .atoz ul li:last-of-type .btn-link {
       width: 100%; }
+
+@media (max-width: 330px) {
+  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
+    font-size: 28px;
+    margin: 0 0 5px; } }
+
+@media (max-width: 320px) {
+  .header-lcc .logo {
+    font-size: 18px;
+    margin: 14px 0; } }

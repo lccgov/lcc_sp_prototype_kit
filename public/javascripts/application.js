@@ -59,8 +59,7 @@ function randomImage(){
    '/public/images/home-hero-images/3.jpg',
    '/public/images/home-hero-images/4.jpg',
    '/public/images/home-hero-images/5.jpg',
-   '/public/images/home-hero-images/6.jpg',
-   '/public/images/home-hero-images/7.jpg'];
+   '/public/images/home-hero-images/6.jpg'];
   var size = images.length;
   var x = Math.floor(size * Math.random());
   console.log(x);
