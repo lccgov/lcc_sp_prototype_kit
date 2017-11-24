@@ -664,3 +664,18 @@ aside.col-md-4{
         color:$secondary-font-color;
     }
 }
+
+//A to Z Mobile styling - NEEDS ADDING TO FET 
+@media (max-width: 990px){
+    .atoz{
+        padding:20px 0 30px;
+    }
+    .atoz ul li a,
+    .atoz ul li.inactive{
+        width:65px;
+        padding:20px 0;
+    }
+    .atoz ul li:last-of-type a{
+        width:134px;
+    }
+}
