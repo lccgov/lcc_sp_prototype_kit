@@ -24301,7 +24301,7 @@ aside.col-md-4 {
     background: white; }
     @media (max-width: 1100px) {
       .atoz ul li {
-        min-width: 65px; } }
+        min-width: 50px; } }
     .atoz ul li a, .atoz ul li .link, .atoz ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .atoz ul li .btn-link {
       padding: 0;
       border: 0;
@@ -24313,14 +24313,14 @@ aside.col-md-4 {
       padding: 10px 0; }
       @media (max-width: 1100px) {
         .atoz ul li a, .atoz ul li .link, .atoz ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .atoz ul li .btn-link {
-          padding: 20px 0; } }
+          padding: 15px 0; } }
     .atoz ul li.inactive {
       padding: 10px 0;
       border: 1px solid white;
       width: auto; }
       @media (max-width: 1100px) {
         .atoz ul li.inactive {
-          padding: 20px 0;
-          min-width: 65px; } }
+          padding: 15px 0;
+          min-width: 50px; } }
     .atoz ul li:last-of-type a, .atoz ul li:last-of-type .link, .atoz ul li:last-of-type .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .atoz ul li:last-of-type .btn-link {
       width: 100%; }
