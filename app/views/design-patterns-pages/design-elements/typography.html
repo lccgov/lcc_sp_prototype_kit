@@ -86,24 +86,24 @@ Typography
         <h2 class="heading-large">A large heading</h2>
         <h3 class="heading-medium">A medium heading</h3>
         <h4 class="heading-small">A small heading</h4>
-    </div>
-    <div class="code-reveal">
-        <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyHeadingsCode" aria-expanded="false" aria-controls="typographyHeadingsCode">
-        Show code
-        </a>
-        <div class="collapse exampleCode" id="typographyHeadingsCode">
-            <pre>
-                <code class="line-numbers language-markup">
-                    &lt;h1 class="heading-xlarge">A 50px bold xlarge heading&lt;/h1>
+        <div class="code-reveal">
+            <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyHeadingsCode" aria-expanded="false" aria-controls="typographyHeadingsCode">
+            Show code
+            </a>
+            <div class="collapse exampleCode" id="typographyHeadingsCode">
+                <pre>
+                    <code class="line-numbers language-markup">
+                        &lt;h1 class="heading-xlarge">A 50px bold xlarge heading&lt;/h1>
 
-                    &lt;h2 class="heading-large">A 32px bold large heading&lt;/h2>
+                        &lt;h2 class="heading-large">A 32px bold large heading&lt;/h2>
 
-                    &lt;h3 class="heading-medium">A 24px bold medium heading&lt;/h3>
+                        &lt;h3 class="heading-medium">A 24px bold medium heading&lt;/h3>
 
-                    &lt;h4 class="heading-small">A 21px bold small heading&lt;/h4>
+                        &lt;h4 class="heading-small">A 21px bold small heading&lt;/h4>
 
-                </code>
-            </pre>
+                    </code>
+                </pre>
+            </div>
         </div>
     </div>
 
@@ -122,7 +122,7 @@ Typography
         <p class="lead">This is a lead paragraph. Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.</p>
         <p>This is a body copy paragraph. Felis at varius tincidunt, turpis dui finibus risus, ac varius libero eros ac dolor.</p>
     </div>
-    </div>
+    
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyLeadParagraphCode" aria-expanded="false" aria-controls="typographyLeadParagraphCode">
         Show code
@@ -136,6 +136,7 @@ Typography
                 </code>
             </pre>
         </div>
+    </div>
     </div>
 
     <div class="text">
@@ -152,7 +153,7 @@ Typography
         <p>This is a body copy paragraph. Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.</p>
         <p class="font-xsmall">A supporting text paragraph. Felis at varius tincidunt, turpis dui finibus risus, ac varius libero eros ac dolor.</p>
     </div>
-    </div>
+    
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyBodyCopyCode" aria-expanded="false" aria-controls="typographyBodyCopyCode">
         Show code
@@ -169,6 +170,7 @@ Typography
             </pre>
         </div>
     </div>
+    </div>
 
     <div class="text">
     <h2 class="heading-large" id="typography-links">Links</h2>
@@ -182,9 +184,10 @@ Typography
             <p><a href="#">A link without surrounding text</a></p>
             <p><a href="#">A body copy link</a>. Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.</p>
             <p>A body copy <a href="#" rel="external">external link <span class="sr-only">External link</span></a>. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p>A body copy <a href="#" rel="pdf">PDF document (PDF, 1MB) <span class="sr-only">External link</span></a>. Fusce dapibus, tellus ac cursus commodo.</p>
             <a href="#" class="link-back">Back</a>
         </div>
-    </div>
+    
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyLinksCode" aria-expanded="false" aria-controls="typographyLinksCode">
             Show code</a>
@@ -196,11 +199,14 @@ Typography
                     &lt;p>&lt;a href="#">A body copy link&lt;/a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p>
 
                     &lt;p>A body copy &lt;a href="#" rel="external">external link &lt;span class="sr-only">External link&lt;/span>&lt;/a>. Fusce dapibus, tellus ac cursus commodo.&lt;/p>
+
+                    &lt;p>A body copy &lt;a href="#" rel="pdf">PDF document (PDF, 1MB) &lt;span class="sr-only">External link&lt;/span>&lt;/a>. Fusce dapibus, tellus ac cursus commodo.&lt;/p>
                     
                     &lt;a href="#" class="link-back">Back&lt;/a>
                 </code>
             </pre>
         </div>
+    </div>
     </div>
 
     <div class="text">
@@ -227,10 +233,10 @@ Typography
         <ul class="list list-nav">
             <li><a href="#">Related link</a></li>
             <li><a href="#">Related link</a></li>
-            <li><a href="#">Related link</a></li>
+            <li><a href="#" rel="external">External link <span class="sr-only">External link</span></a></li>
             <li><a href="#" class="more">More</a></li>
         </ul>
-    </div>
+    
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyListsCode" aria-expanded="false" aria-controls="typographyListsCode">
         Show code
@@ -256,11 +262,13 @@ Typography
                         &lt;li>&lt;a href="#">Related link&lt;/a>&lt;/li>
                         &lt;li>&lt;a href="#">Related link&lt;/a>&lt;/li>
                         &lt;li>&lt;a href="#">Related link&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#" rel="external">External link &lt;span class="sr-only">External link&lt;/span>&lt;/a>&lt;/li>
                         &lt;li>&lt;a href="#" class="more">More&lt;/a>&lt;/li>
                     &lt;/ul>
                 </code>
             </pre>
         </div>
+    </div>
     </div>
 
     <div class="text">
@@ -285,7 +293,7 @@ Typography
                 <p>If you need to contact the council urgently when our offices are closed phone one of our <a href="#">emergency numbers</a>.</p>
             </div>
         </div>
-    </div>
+    
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyInsetTextCode" aria-expanded="false" aria-controls="typographyInsetTextCode">
         Show code
@@ -309,6 +317,7 @@ Typography
                 </code>
             </pre>
         </div>
+    </div>
     </div>
     <div class="text">
         <h2 class="heading-large" id="typography-text-block">Text block</h2>
@@ -336,7 +345,7 @@ Typography
             <strong>Account number:</strong> 00000000<br>
             <strong>Sort code:</strong> 57-12-72</p>
         </div>
-    </div>
+    
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyTextBlockCode" aria-expanded="false" aria-controls="typographyTextBlockCode">
         Show code
@@ -367,6 +376,7 @@ Typography
             </pre>
         </div>
     </div>
+    </div>
 
     <div class="text">
         <h2 class="heading-large" id="typography-legal-text">Legal text</h2>
@@ -385,7 +395,7 @@ Typography
                 </strong>
             </div>
         </div>
-    </div>
+    
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyLegalTextCode" aria-expanded="false" aria-controls="typographyLegalTextCode">
         Show code
@@ -403,6 +413,7 @@ Typography
             </pre>
         </div>
     </div>
+    </div>
 
     <div class="text">
         <h2 class="heading-large" id="typography-blockquote">Blockquote</h2>
@@ -415,7 +426,7 @@ Typography
                 <cite title="Source Title">Headteacher - Calverley Church of England Primary School</cite>
             </footer>
         </blockquote>
-    </div>
+    
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyBlockquoteCode" aria-expanded="false" aria-controls="typographyBlockquoteCode">
         Show code
@@ -433,6 +444,7 @@ Typography
                 </code>
             </pre>
         </div>
+    </div>
     </div>
 
     <div class="text">
@@ -452,7 +464,7 @@ Typography
                 </div>
             </div>
         </div>
-    </div>
+    
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#hidden-text-reveal" aria-expanded="false" aria-controls="hidden-text-reveal">
         Show code
@@ -474,6 +486,7 @@ Typography
                 </code>
             </pre>
         </div>
+    </div>
     </div>
 
     <div class="text">
