@@ -20037,31 +20037,6 @@ blockquote {
       blockquote footer {
         font-size: 16px !important; } }
 
-.panel, .sub-section-nav.panels .sub-section, .findMyNearest, .search-panel, .survey {
-  background: #E5F1F5;
-  padding: 20px;
-  box-shadow: none;
-  border-radius: 0;
-  border: 0;
-  margin: 30px 0; }
-  .panel.top, .sub-section-nav.panels .top.sub-section, .top.findMyNearest, .top.search-panel, .top.survey {
-    margin-top: 0; }
-  .panel.panel-border, .sub-section-nav.panels .panel-border.sub-section, .panel-border.findMyNearest, .panel-border.search-panel, .panel-border.survey {
-    background: white;
-    border: 10px solid #E5F1F5; }
-  @media (min-width: 641px) {
-    .panel, .sub-section-nav.panels .sub-section, .findMyNearest, .search-panel, .survey {
-      padding: 30px;
-      margin: 30px 0; } }
-  .panel h2:first-child, .sub-section-nav.panels .sub-section h2:first-child, .findMyNearest h2:first-child, .search-panel h2:first-child, .survey h2:first-child,
-  .panel h3:first-child, .sub-section-nav.panels .sub-section h3:first-child, .findMyNearest h3:first-child, .search-panel h3:first-child, .survey h3:first-child,
-  .panel h4:first-child, .sub-section-nav.panels .sub-section h4:first-child, .findMyNearest h4:first-child, .search-panel h4:first-child, .survey h4:first-child {
-    margin-top: 0; }
-  .panel .media-container, .sub-section-nav.panels .sub-section .media-container, .findMyNearest .media-container, .search-panel .media-container, .survey .media-container {
-    margin: 0; }
-  .panel p:last-child, .sub-section-nav.panels .sub-section p:last-child, .findMyNearest p:last-child, .search-panel p:last-child, .survey p:last-child {
-    margin-bottom: 0; }
-
 ul + .text-highlight, ul + .text-block {
   margin-top: 6px; }
 
@@ -21027,9 +21002,6 @@ h2 + h3 {
 .text-highlight p + ul, .text-block p + ul {
   margin-top: 15px; }
 
-p + .panel, .sub-section-nav.panels p + .sub-section, p + .findMyNearest, p + .search-panel, p + .survey {
-  margin: 50px 0; }
-
 .top-header-margin {
   margin-top: 50px; }
   @media (max-width: 641px) {
@@ -21086,7 +21058,8 @@ p + .panel, .sub-section-nav.panels p + .sub-section, p + .findMyNearest, p + .s
     display: block;
     font-weight: 400; }
 
-.sr-only {
+.sr-only, .panel-event .panel-event-info .panel-event-info-date,
+.panel-event .panel-event-info strong {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -21095,6 +21068,401 @@ p + .panel, .sub-section-nav.panels p + .sub-section, p + .findMyNearest, p + .s
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0; }
+
+.panel, .sub-section-nav.panels .sub-section, .findMyNearest, .search-panel, .survey {
+  background: #E5F1F5;
+  padding: 20px;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0;
+  margin: 30px 0; }
+  .panel.top, .sub-section-nav.panels .top.sub-section, .top.findMyNearest, .top.search-panel, .top.survey {
+    margin-top: 0; }
+  .panel.panel-border, .sub-section-nav.panels .panel-border.sub-section, .panel-border.findMyNearest, .panel-border.search-panel, .panel-border.survey {
+    background: white;
+    border: 10px solid #E5F1F5; }
+  @media (min-width: 641px) {
+    .panel, .sub-section-nav.panels .sub-section, .findMyNearest, .search-panel, .survey {
+      padding: 30px;
+      margin: 30px 0; } }
+  .panel h2:first-child, .sub-section-nav.panels .sub-section h2:first-child, .findMyNearest h2:first-child, .search-panel h2:first-child, .survey h2:first-child,
+  .panel h3:first-child, .sub-section-nav.panels .sub-section h3:first-child, .findMyNearest h3:first-child, .search-panel h3:first-child, .survey h3:first-child,
+  .panel h4:first-child, .sub-section-nav.panels .sub-section h4:first-child, .findMyNearest h4:first-child, .search-panel h4:first-child, .survey h4:first-child {
+    margin-top: 0; }
+  .panel .media-container, .sub-section-nav.panels .sub-section .media-container, .findMyNearest .media-container, .search-panel .media-container, .survey .media-container {
+    margin: 0; }
+  .panel p:last-child, .sub-section-nav.panels .sub-section p:last-child, .findMyNearest p:last-child, .search-panel p:last-child, .survey p:last-child {
+    margin-bottom: 0; }
+
+p + .panel, .sub-section-nav.panels p + .sub-section, p + .findMyNearest, p + .search-panel, p + .survey {
+  margin: 50px 0; }
+
+.panel.alt, .sub-section-nav.panels .alt.sub-section, .alt.findMyNearest, .alt.search-panel, .alt.survey {
+  background: #007299; }
+  .panel.alt h2, .sub-section-nav.panels .alt.sub-section h2, .alt.findMyNearest h2, .alt.search-panel h2, .alt.survey h2,
+  .panel.alt h3, .sub-section-nav.panels .alt.sub-section h3, .alt.findMyNearest h3, .alt.search-panel h3, .alt.survey h3,
+  .panel.alt p, .sub-section-nav.panels .alt.sub-section p, .alt.findMyNearest p, .alt.search-panel p, .alt.survey p,
+  .panel.alt .btn, .sub-section-nav.panels .alt.sub-section .btn, .alt.findMyNearest .btn, .alt.search-panel .btn, .alt.survey .btn,
+  .panel.alt .form-group input[type=button], .form-group
+  .panel.alt input[type=button], .sub-section-nav.panels .alt.sub-section .form-group input[type=button], .form-group .sub-section-nav.panels .alt.sub-section input[type=button], .alt.findMyNearest .form-group input[type=button], .form-group .alt.findMyNearest input[type=button], .alt.search-panel .form-group input[type=button], .form-group .alt.search-panel input[type=button], .alt.survey .form-group input[type=button], .form-group .alt.survey input[type=button],
+  .panel.alt .form-group input.btn.btn-primary, .form-group
+  .panel.alt input.btn.btn-primary, .alt.findMyNearest .form-group input.btn.btn-primary, .form-group .alt.findMyNearest input.btn.btn-primary, .alt.search-panel .form-group input.btn.btn-primary, .form-group .alt.search-panel input.btn.btn-primary, .alt.survey .form-group input.btn.btn-primary, .form-group .alt.survey input.btn.btn-primary,
+  .panel.alt .form-group input.limitedrte-Style-BUTTON, .form-group
+  .panel.alt input.limitedrte-Style-BUTTON, .alt.findMyNearest .form-group input.limitedrte-Style-BUTTON, .form-group .alt.findMyNearest input.limitedrte-Style-BUTTON, .alt.search-panel .form-group input.limitedrte-Style-BUTTON, .form-group .alt.search-panel input.limitedrte-Style-BUTTON, .alt.survey .form-group input.limitedrte-Style-BUTTON, .form-group .alt.survey input.limitedrte-Style-BUTTON,
+  .panel.alt .form-group input[type=submit], .form-group
+  .panel.alt input[type=submit], .sub-section-nav.panels .alt.sub-section .form-group input[type=submit], .form-group .sub-section-nav.panels .alt.sub-section input[type=submit], .alt.findMyNearest .form-group input[type=submit], .form-group .alt.findMyNearest input[type=submit], .alt.search-panel .form-group input[type=submit], .form-group .alt.search-panel input[type=submit], .alt.survey .form-group input[type=submit], .form-group .alt.survey input[type=submit],
+  .panel.alt #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a
+  .panel.alt #myChatLinkInfo, .sub-section-nav.panels .alt.sub-section #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .sub-section-nav.panels .alt.sub-section #myChatLinkInfo, .alt.findMyNearest #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .alt.findMyNearest #myChatLinkInfo, .alt.search-panel #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .alt.search-panel #myChatLinkInfo, .alt.survey #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .alt.survey #myChatLinkInfo,
+  .panel.alt #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link
+  .panel.alt #myChatLinkInfo, .sub-section-nav.panels .alt.sub-section #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .sub-section-nav.panels .alt.sub-section #myChatLinkInfo, .alt.findMyNearest #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .alt.findMyNearest #myChatLinkInfo, .alt.search-panel #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .alt.search-panel #myChatLinkInfo, .alt.survey #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .alt.survey #myChatLinkInfo,
+  .panel.alt .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link
+  .panel.alt #myChatLinkInfo, .sub-section-nav.panels .alt.sub-section .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .sub-section-nav.panels .alt.sub-section #myChatLinkInfo, .alt.findMyNearest .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .alt.findMyNearest #myChatLinkInfo, .alt.search-panel .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .alt.search-panel #myChatLinkInfo, .alt.survey .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .alt.survey #myChatLinkInfo,
+  .panel.alt .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox
+  .panel.alt .ms-srch-sb-searchLink, .sub-section-nav.panels .alt.sub-section .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .sub-section-nav.panels .alt.sub-section .ms-srch-sb-searchLink, .alt.findMyNearest .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .alt.findMyNearest .ms-srch-sb-searchLink, .alt.search-panel .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .alt.search-panel .ms-srch-sb-searchLink, .alt.survey .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .alt.survey .ms-srch-sb-searchLink,
+  .panel.alt .limitedrte-Style-BUTTON, .sub-section-nav.panels .alt.sub-section .limitedrte-Style-BUTTON, .alt.findMyNearest .limitedrte-Style-BUTTON, .alt.search-panel .limitedrte-Style-BUTTON, .alt.survey .limitedrte-Style-BUTTON,
+  .panel.alt blockquote, .sub-section-nav.panels .alt.sub-section blockquote, .alt.findMyNearest blockquote, .alt.search-panel blockquote, .alt.survey blockquote,
+  .panel.alt blockquote footer, .sub-section-nav.panels .alt.sub-section blockquote footer, .alt.findMyNearest blockquote footer, .alt.search-panel blockquote footer, .alt.survey blockquote footer {
+    color: white; }
+  .panel.alt .btn.btn-outline, .sub-section-nav.panels .alt.sub-section .btn.btn-outline, .alt.findMyNearest .btn.btn-outline, .alt.search-panel .btn.btn-outline, .alt.survey .btn.btn-outline, .panel.alt .form-group input[type=button].btn-outline, .form-group .panel.alt input[type=button].btn-outline, .sub-section-nav.panels .alt.sub-section .form-group input[type=button].btn-outline, .form-group .sub-section-nav.panels .alt.sub-section input[type=button].btn-outline, .alt.findMyNearest .form-group input[type=button].btn-outline, .form-group .alt.findMyNearest input[type=button].btn-outline, .alt.search-panel .form-group input[type=button].btn-outline, .form-group .alt.search-panel input[type=button].btn-outline, .alt.survey .form-group input[type=button].btn-outline, .form-group .alt.survey input[type=button].btn-outline, .panel.alt .form-group input[type=button].btn-outline, .form-group .panel.alt input[type=button].btn-outline, .sub-section-nav.panels .alt.sub-section .form-group input[type=button].btn-outline, .form-group .sub-section-nav.panels .alt.sub-section input[type=button].btn-outline, .alt.findMyNearest .form-group input[type=button].btn-outline, .form-group .alt.findMyNearest input[type=button].btn-outline, .alt.search-panel .form-group input[type=button].btn-outline, .form-group .alt.search-panel input[type=button].btn-outline, .alt.survey .form-group input[type=button].btn-outline, .form-group .alt.survey input[type=button].btn-outline, .panel.alt .form-group #myChatLinkContainer #myChatLink a input[type=button].btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink a .panel.alt input[type=button].btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section .form-group #myChatLinkContainer #myChatLink a input[type=button].btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink a .sub-section-nav.panels .alt.sub-section input[type=button].btn-outline#myChatLinkInfo, .alt.findMyNearest .form-group #myChatLinkContainer #myChatLink a input[type=button].btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink a .alt.findMyNearest input[type=button].btn-outline#myChatLinkInfo, .alt.search-panel .form-group #myChatLinkContainer #myChatLink a input[type=button].btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink a .alt.search-panel input[type=button].btn-outline#myChatLinkInfo, .alt.survey .form-group #myChatLinkContainer #myChatLink a input[type=button].btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink a .alt.survey input[type=button].btn-outline#myChatLinkInfo, .panel.alt #myChatLinkContainer #myChatLink a .form-group input[type=button].btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group .panel.alt input[type=button].btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section #myChatLinkContainer #myChatLink a .form-group input[type=button].btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group .sub-section-nav.panels .alt.sub-section input[type=button].btn-outline#myChatLinkInfo, .alt.findMyNearest #myChatLinkContainer #myChatLink a .form-group input[type=button].btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group .alt.findMyNearest input[type=button].btn-outline#myChatLinkInfo, .alt.search-panel #myChatLinkContainer #myChatLink a .form-group input[type=button].btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group .alt.search-panel input[type=button].btn-outline#myChatLinkInfo, .alt.survey #myChatLinkContainer #myChatLink a .form-group input[type=button].btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group .alt.survey input[type=button].btn-outline#myChatLinkInfo, .panel.alt .form-group #myChatLinkContainer #myChatLink .link input[type=button].btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link .panel.alt input[type=button].btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section .form-group #myChatLinkContainer #myChatLink .link input[type=button].btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link .sub-section-nav.panels .alt.sub-section input[type=button].btn-outline#myChatLinkInfo, .alt.findMyNearest .form-group #myChatLinkContainer #myChatLink .link input[type=button].btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link .alt.findMyNearest input[type=button].btn-outline#myChatLinkInfo, .alt.search-panel .form-group #myChatLinkContainer #myChatLink .link input[type=button].btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link .alt.search-panel input[type=button].btn-outline#myChatLinkInfo, .alt.survey .form-group #myChatLinkContainer #myChatLink .link input[type=button].btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link .alt.survey input[type=button].btn-outline#myChatLinkInfo, .panel.alt #myChatLinkContainer #myChatLink .link .form-group input[type=button].btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group .panel.alt input[type=button].btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section #myChatLinkContainer #myChatLink .link .form-group input[type=button].btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group .sub-section-nav.panels .alt.sub-section input[type=button].btn-outline#myChatLinkInfo, .alt.findMyNearest #myChatLinkContainer #myChatLink .link .form-group input[type=button].btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group .alt.findMyNearest input[type=button].btn-outline#myChatLinkInfo, .alt.search-panel #myChatLinkContainer #myChatLink .link .form-group input[type=button].btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group .alt.search-panel input[type=button].btn-outline#myChatLinkInfo, .alt.survey #myChatLinkContainer #myChatLink .link .form-group input[type=button].btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group .alt.survey input[type=button].btn-outline#myChatLinkInfo, .panel.alt .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link input[type=button].btn-outline#myChatLinkInfo, .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .panel.alt input[type=button].btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link input[type=button].btn-outline#myChatLinkInfo, .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .sub-section-nav.panels .alt.sub-section input[type=button].btn-outline#myChatLinkInfo, .alt.findMyNearest .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link input[type=button].btn-outline#myChatLinkInfo, .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .alt.findMyNearest input[type=button].btn-outline#myChatLinkInfo, .alt.search-panel .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link input[type=button].btn-outline#myChatLinkInfo, .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .alt.search-panel input[type=button].btn-outline#myChatLinkInfo, .alt.survey .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link input[type=button].btn-outline#myChatLinkInfo, .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .alt.survey input[type=button].btn-outline#myChatLinkInfo, .panel.alt .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group input[type=button].btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group .panel.alt input[type=button].btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group input[type=button].btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group .sub-section-nav.panels .alt.sub-section input[type=button].btn-outline#myChatLinkInfo, .alt.findMyNearest .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group input[type=button].btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group .alt.findMyNearest input[type=button].btn-outline#myChatLinkInfo, .alt.search-panel .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group input[type=button].btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group .alt.search-panel input[type=button].btn-outline#myChatLinkInfo, .alt.survey .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group input[type=button].btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group .alt.survey input[type=button].btn-outline#myChatLinkInfo, .panel.alt .form-group .col-md-8 #SearchBox input[type=button].btn-outline.ms-srch-sb-searchLink, .form-group .col-md-8 #SearchBox .panel.alt input[type=button].btn-outline.ms-srch-sb-searchLink, .sub-section-nav.panels .alt.sub-section .form-group .col-md-8 #SearchBox input[type=button].btn-outline.ms-srch-sb-searchLink, .form-group .col-md-8 #SearchBox .sub-section-nav.panels .alt.sub-section input[type=button].btn-outline.ms-srch-sb-searchLink, .alt.findMyNearest .form-group .col-md-8 #SearchBox input[type=button].btn-outline.ms-srch-sb-searchLink, .form-group .col-md-8 #SearchBox .alt.findMyNearest input[type=button].btn-outline.ms-srch-sb-searchLink, .alt.search-panel .form-group .col-md-8 #SearchBox input[type=button].btn-outline.ms-srch-sb-searchLink, .form-group .col-md-8 #SearchBox .alt.search-panel input[type=button].btn-outline.ms-srch-sb-searchLink, .alt.survey .form-group .col-md-8 #SearchBox input[type=button].btn-outline.ms-srch-sb-searchLink, .form-group .col-md-8 #SearchBox .alt.survey input[type=button].btn-outline.ms-srch-sb-searchLink, .panel.alt .col-md-8 #SearchBox .form-group input[type=button].btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .form-group .panel.alt input[type=button].btn-outline.ms-srch-sb-searchLink, .sub-section-nav.panels .alt.sub-section .col-md-8 #SearchBox .form-group input[type=button].btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .form-group .sub-section-nav.panels .alt.sub-section input[type=button].btn-outline.ms-srch-sb-searchLink, .alt.findMyNearest .col-md-8 #SearchBox .form-group input[type=button].btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .form-group .alt.findMyNearest input[type=button].btn-outline.ms-srch-sb-searchLink, .alt.search-panel .col-md-8 #SearchBox .form-group input[type=button].btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .form-group .alt.search-panel input[type=button].btn-outline.ms-srch-sb-searchLink, .alt.survey .col-md-8 #SearchBox .form-group input[type=button].btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .form-group .alt.survey input[type=button].btn-outline.ms-srch-sb-searchLink, .panel.alt .form-group input.btn-outline.btn.btn-primary, .form-group .panel.alt input.btn-outline.btn.btn-primary, .sub-section-nav.panels .alt.sub-section .form-group input.btn-outline.btn.btn-primary, .form-group .sub-section-nav.panels .alt.sub-section input.btn-outline.btn.btn-primary, .alt.findMyNearest .form-group input.btn-outline.btn.btn-primary, .form-group .alt.findMyNearest input.btn-outline.btn.btn-primary, .alt.search-panel .form-group input.btn-outline.btn.btn-primary, .form-group .alt.search-panel input.btn-outline.btn.btn-primary, .alt.survey .form-group input.btn-outline.btn.btn-primary, .form-group .alt.survey input.btn-outline.btn.btn-primary, .panel.alt .form-group #myChatLinkContainer #myChatLink a input.btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink a .panel.alt input.btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section .form-group #myChatLinkContainer #myChatLink a input.btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink a .sub-section-nav.panels .alt.sub-section input.btn-outline#myChatLinkInfo, .alt.findMyNearest .form-group #myChatLinkContainer #myChatLink a input.btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink a .alt.findMyNearest input.btn-outline#myChatLinkInfo, .alt.search-panel .form-group #myChatLinkContainer #myChatLink a input.btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink a .alt.search-panel input.btn-outline#myChatLinkInfo, .alt.survey .form-group #myChatLinkContainer #myChatLink a input.btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink a .alt.survey input.btn-outline#myChatLinkInfo, .panel.alt #myChatLinkContainer #myChatLink a .form-group input.btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group .panel.alt input.btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section #myChatLinkContainer #myChatLink a .form-group input.btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group .sub-section-nav.panels .alt.sub-section input.btn-outline#myChatLinkInfo, .alt.findMyNearest #myChatLinkContainer #myChatLink a .form-group input.btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group .alt.findMyNearest input.btn-outline#myChatLinkInfo, .alt.search-panel #myChatLinkContainer #myChatLink a .form-group input.btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group .alt.search-panel input.btn-outline#myChatLinkInfo, .alt.survey #myChatLinkContainer #myChatLink a .form-group input.btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group .alt.survey input.btn-outline#myChatLinkInfo, .panel.alt .form-group #myChatLinkContainer #myChatLink .link input.btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link .panel.alt input.btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section .form-group #myChatLinkContainer #myChatLink .link input.btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link .sub-section-nav.panels .alt.sub-section input.btn-outline#myChatLinkInfo, .alt.findMyNearest .form-group #myChatLinkContainer #myChatLink .link input.btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link .alt.findMyNearest input.btn-outline#myChatLinkInfo, .alt.search-panel .form-group #myChatLinkContainer #myChatLink .link input.btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link .alt.search-panel input.btn-outline#myChatLinkInfo, .alt.survey .form-group #myChatLinkContainer #myChatLink .link input.btn-outline#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link .alt.survey input.btn-outline#myChatLinkInfo, .panel.alt #myChatLinkContainer #myChatLink .link .form-group input.btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group .panel.alt input.btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section #myChatLinkContainer #myChatLink .link .form-group input.btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group .sub-section-nav.panels .alt.sub-section input.btn-outline#myChatLinkInfo, .alt.findMyNearest #myChatLinkContainer #myChatLink .link .form-group input.btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group .alt.findMyNearest input.btn-outline#myChatLinkInfo, .alt.search-panel #myChatLinkContainer #myChatLink .link .form-group input.btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group .alt.search-panel input.btn-outline#myChatLinkInfo, .alt.survey #myChatLinkContainer #myChatLink .link .form-group input.btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group .alt.survey input.btn-outline#myChatLinkInfo, .panel.alt .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link input.btn-outline#myChatLinkInfo, .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .panel.alt input.btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link input.btn-outline#myChatLinkInfo, .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .sub-section-nav.panels .alt.sub-section input.btn-outline#myChatLinkInfo, .alt.findMyNearest .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link input.btn-outline#myChatLinkInfo, .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .alt.findMyNearest input.btn-outline#myChatLinkInfo, .alt.search-panel .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link input.btn-outline#myChatLinkInfo, .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .alt.search-panel input.btn-outline#myChatLinkInfo, .alt.survey .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link input.btn-outline#myChatLinkInfo, .form-group .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .alt.survey input.btn-outline#myChatLinkInfo, .panel.alt .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group input.btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group .panel.alt input.btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group input.btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group .sub-section-nav.panels .alt.sub-section input.btn-outline#myChatLinkInfo, .alt.findMyNearest .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group input.btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group .alt.findMyNearest input.btn-outline#myChatLinkInfo, .alt.search-panel .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group input.btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group .alt.search-panel input.btn-outline#myChatLinkInfo, .alt.survey .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group input.btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .form-group .alt.survey input.btn-outline#myChatLinkInfo, .panel.alt .form-group .col-md-8 #SearchBox input.btn-outline.ms-srch-sb-searchLink, .form-group .col-md-8 #SearchBox .panel.alt input.btn-outline.ms-srch-sb-searchLink, .sub-section-nav.panels .alt.sub-section .form-group .col-md-8 #SearchBox input.btn-outline.ms-srch-sb-searchLink, .form-group .col-md-8 #SearchBox .sub-section-nav.panels .alt.sub-section input.btn-outline.ms-srch-sb-searchLink, .alt.findMyNearest .form-group .col-md-8 #SearchBox input.btn-outline.ms-srch-sb-searchLink, .form-group .col-md-8 #SearchBox .alt.findMyNearest input.btn-outline.ms-srch-sb-searchLink, .alt.search-panel .form-group .col-md-8 #SearchBox input.btn-outline.ms-srch-sb-searchLink, .form-group .col-md-8 #SearchBox .alt.search-panel input.btn-outline.ms-srch-sb-searchLink, .alt.survey .form-group .col-md-8 #SearchBox input.btn-outline.ms-srch-sb-searchLink, .form-group .col-md-8 #SearchBox .alt.survey input.btn-outline.ms-srch-sb-searchLink, .panel.alt .col-md-8 #SearchBox .form-group input.btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .form-group .panel.alt input.btn-outline.ms-srch-sb-searchLink, .sub-section-nav.panels .alt.sub-section .col-md-8 #SearchBox .form-group input.btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .form-group .sub-section-nav.panels .alt.sub-section input.btn-outline.ms-srch-sb-searchLink, .alt.findMyNearest .col-md-8 #SearchBox .form-group input.btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .form-group .alt.findMyNearest input.btn-outline.ms-srch-sb-searchLink, .alt.search-panel .col-md-8 #SearchBox .form-group input.btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .form-group .alt.search-panel input.btn-outline.ms-srch-sb-searchLink, .alt.survey .col-md-8 #SearchBox .form-group input.btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .form-group .alt.survey input.btn-outline.ms-srch-sb-searchLink, .panel.alt .form-group input.btn-outline.limitedrte-Style-BUTTON, .form-group .panel.alt input.btn-outline.limitedrte-Style-BUTTON, .sub-section-nav.panels .alt.sub-section .form-group input.btn-outline.limitedrte-Style-BUTTON, .form-group .sub-section-nav.panels .alt.sub-section input.btn-outline.limitedrte-Style-BUTTON, .alt.findMyNearest .form-group input.btn-outline.limitedrte-Style-BUTTON, .form-group .alt.findMyNearest input.btn-outline.limitedrte-Style-BUTTON, .alt.search-panel .form-group input.btn-outline.limitedrte-Style-BUTTON, .form-group .alt.search-panel input.btn-outline.limitedrte-Style-BUTTON, .alt.survey .form-group input.btn-outline.limitedrte-Style-BUTTON, .form-group .alt.survey input.btn-outline.limitedrte-Style-BUTTON, .panel.alt .form-group input.btn-outline[type=submit], .form-group .panel.alt input.btn-outline[type=submit], .sub-section-nav.panels .alt.sub-section .form-group input.btn-outline[type=submit], .form-group .sub-section-nav.panels .alt.sub-section input.btn-outline[type=submit], .alt.findMyNearest .form-group input.btn-outline[type=submit], .form-group .alt.findMyNearest input.btn-outline[type=submit], .alt.search-panel .form-group input.btn-outline[type=submit], .form-group .alt.search-panel input.btn-outline[type=submit], .alt.survey .form-group input.btn-outline[type=submit], .form-group .alt.survey input.btn-outline[type=submit], .panel.alt #myChatLinkContainer #myChatLink a .btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel.alt .btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section #myChatLinkContainer #myChatLink a .btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .sub-section-nav.panels .alt.sub-section .btn-outline#myChatLinkInfo, .alt.findMyNearest #myChatLinkContainer #myChatLink a .btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .alt.findMyNearest .btn-outline#myChatLinkInfo, .alt.search-panel #myChatLinkContainer #myChatLink a .btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .alt.search-panel .btn-outline#myChatLinkInfo, .alt.survey #myChatLinkContainer #myChatLink a .btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink a .alt.survey .btn-outline#myChatLinkInfo, .panel.alt #myChatLinkContainer #myChatLink .link .btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .panel.alt .btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section #myChatLinkContainer #myChatLink .link .btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .sub-section-nav.panels .alt.sub-section .btn-outline#myChatLinkInfo, .alt.findMyNearest #myChatLinkContainer #myChatLink .link .btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .alt.findMyNearest .btn-outline#myChatLinkInfo, .alt.search-panel #myChatLinkContainer #myChatLink .link .btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .alt.search-panel .btn-outline#myChatLinkInfo, .alt.survey #myChatLinkContainer #myChatLink .link .btn-outline#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .alt.survey .btn-outline#myChatLinkInfo, .panel.alt .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .panel.alt .btn-outline#myChatLinkInfo, .sub-section-nav.panels .alt.sub-section .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .sub-section-nav.panels .alt.sub-section .btn-outline#myChatLinkInfo, .alt.findMyNearest .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .alt.findMyNearest .btn-outline#myChatLinkInfo, .alt.search-panel .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .alt.search-panel .btn-outline#myChatLinkInfo, .alt.survey .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .btn-outline#myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .alt.survey .btn-outline#myChatLinkInfo, .panel.alt .col-md-8 #SearchBox .btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .panel.alt .btn-outline.ms-srch-sb-searchLink, .sub-section-nav.panels .alt.sub-section .col-md-8 #SearchBox .btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .sub-section-nav.panels .alt.sub-section .btn-outline.ms-srch-sb-searchLink, .alt.findMyNearest .col-md-8 #SearchBox .btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .alt.findMyNearest .btn-outline.ms-srch-sb-searchLink, .alt.search-panel .col-md-8 #SearchBox .btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .alt.search-panel .btn-outline.ms-srch-sb-searchLink, .alt.survey .col-md-8 #SearchBox .btn-outline.ms-srch-sb-searchLink, .col-md-8 #SearchBox .alt.survey .btn-outline.ms-srch-sb-searchLink, .panel.alt .btn-outline.limitedrte-Style-BUTTON, .sub-section-nav.panels .alt.sub-section .btn-outline.limitedrte-Style-BUTTON, .alt.findMyNearest .btn-outline.limitedrte-Style-BUTTON, .alt.search-panel .btn-outline.limitedrte-Style-BUTTON, .alt.survey .btn-outline.limitedrte-Style-BUTTON, .panel.alt .form-group input.limitedrte-Style-BUTTON[type=button].btn-outline, .form-group .panel.alt input.limitedrte-Style-BUTTON[type=button].btn-outline, .sub-section-nav.panels .alt.sub-section .form-group input.limitedrte-Style-BUTTON[type=button].btn-outline, .form-group .sub-section-nav.panels .alt.sub-section input.limitedrte-Style-BUTTON[type=button].btn-outline, .alt.findMyNearest .form-group input.limitedrte-Style-BUTTON[type=button].btn-outline, .form-group .alt.findMyNearest input.limitedrte-Style-BUTTON[type=button].btn-outline, .alt.search-panel .form-group input.limitedrte-Style-BUTTON[type=button].btn-outline, .form-group .alt.search-panel input.limitedrte-Style-BUTTON[type=button].btn-outline, .alt.survey .form-group input.limitedrte-Style-BUTTON[type=button].btn-outline, .form-group .alt.survey input.limitedrte-Style-BUTTON[type=button].btn-outline {
+    color: white !important;
+    border-color: white !important; }
+
+.panel.img, .sub-section-nav.panels .img.sub-section, .img.findMyNearest, .img.search-panel, .img.survey {
+  position: relative;
+  padding: 0;
+  min-height: 250px;
+  margin: 30px 0; }
+  @media (min-width: 641px) {
+    .panel.img, .sub-section-nav.panels .img.sub-section, .img.findMyNearest, .img.search-panel, .img.survey {
+      margin: 60px 0; } }
+  .panel.img .container-fluid, .sub-section-nav.panels .img.sub-section .container-fluid, .img.findMyNearest .container-fluid, .img.search-panel .container-fluid, .img.survey .container-fluid {
+    padding: 0; }
+  .panel.img hr, .sub-section-nav.panels .img.sub-section hr, .img.findMyNearest hr, .img.search-panel hr, .img.survey hr {
+    border-top: 1px solid #d3d3d3; }
+  .panel.img .img-container, .sub-section-nav.panels .img.sub-section .img-container, .img.findMyNearest .img-container, .img.search-panel .img-container, .img.survey .img-container {
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    min-height: 250px; }
+    .panel.img .img-container.right, .sub-section-nav.panels .img.sub-section .img-container.right, .img.findMyNearest .img-container.right, .img.search-panel .img-container.right, .img.survey .img-container.right {
+      right: 0px;
+      left: auto; }
+    .panel.img .img-container.center, .sub-section-nav.panels .img.sub-section .img-container.center, .img.findMyNearest .img-container.center, .img.search-panel .img-container.center, .img.survey .img-container.center {
+      right: auto;
+      left: auto;
+      text-align: center; }
+    @media screen and (max-width: 990px) {
+      .panel.img .img-container, .sub-section-nav.panels .img.sub-section .img-container, .img.findMyNearest .img-container, .img.search-panel .img-container, .img.survey .img-container {
+        position: relative; } }
+  .panel.img .content, .sub-section-nav.panels .img.sub-section .content, .img.findMyNearest .content, .img.search-panel .content, .img.survey .content {
+    padding: 30px; }
+    @media (min-width: 641px) {
+      .panel.img .content, .sub-section-nav.panels .img.sub-section .content, .img.findMyNearest .content, .img.search-panel .content, .img.survey .content {
+        padding: 50px; } }
+  .panel.img.event, .sub-section-nav.panels .img.event.sub-section, .img.event.findMyNearest, .img.event.search-panel, .img.event.survey {
+    min-height: auto;
+    font-size: 16px; }
+    .panel.img.event h3, .sub-section-nav.panels .img.event.sub-section h3, .img.event.findMyNearest h3, .img.event.search-panel h3, .img.event.survey h3,
+    .panel.img.event .heading-medium, .sub-section-nav.panels .img.event.sub-section .heading-medium, .img.event.findMyNearest .heading-medium, .img.event.search-panel .heading-medium, .img.event.survey .heading-medium,
+    .panel.img.event .ms-rtestate-field h3, .ms-rtestate-field
+    .panel.img.event h3,
+    .panel.img.event h3, .sub-section-nav.panels .img.event.sub-section h3, .img.event.findMyNearest h3, .img.event.search-panel h3, .img.event.survey h3,
+    .panel.img.event .part-content h2, .part-content
+    .panel.img.event h2, .sub-section-nav.panels .img.event.sub-section .part-content h2, .part-content .sub-section-nav.panels .img.event.sub-section h2, .img.event.findMyNearest .part-content h2, .part-content .img.event.findMyNearest h2, .img.event.search-panel .part-content h2, .part-content .img.event.search-panel h2, .img.event.survey .part-content h2, .part-content .img.event.survey h2,
+    .panel.img.event legend, .sub-section-nav.panels .img.event.sub-section legend, .img.event.findMyNearest legend, .img.event.search-panel legend, .img.event.survey legend,
+    .panel.img.event .sideNav h2, .sideNav
+    .panel.img.event h2, .sub-section-nav.panels .img.event.sub-section .sideNav h2, .sideNav .sub-section-nav.panels .img.event.sub-section h2, .img.event.findMyNearest .sideNav h2, .sideNav .img.event.findMyNearest h2, .img.event.search-panel .sideNav h2, .sideNav .img.event.search-panel h2, .img.event.survey .sideNav h2, .sideNav .img.event.survey h2,
+    .panel.img.event
+    .sideNav h3,
+    .sideNav
+    .panel.img.event h3,
+    .panel.img.event
+    .relatedPages h2,
+    .relatedPages
+    .panel.img.event h2, .sub-section-nav.panels .img.event.sub-section
+    .relatedPages h2,
+    .relatedPages .sub-section-nav.panels .img.event.sub-section h2, .img.event.findMyNearest
+    .relatedPages h2,
+    .relatedPages .img.event.findMyNearest h2, .img.event.search-panel
+    .relatedPages h2,
+    .relatedPages .img.event.search-panel h2, .img.event.survey
+    .relatedPages h2,
+    .relatedPages .img.event.survey h2,
+    .panel.img.event
+    .relatedPages h3,
+    .relatedPages
+    .panel.img.event h3,
+    .panel.img.event .list-atoz li h2, .list-atoz li
+    .panel.img.event h2, .sub-section-nav.panels .img.event.sub-section .list-atoz li h2, .list-atoz li .sub-section-nav.panels .img.event.sub-section h2, .img.event.findMyNearest .list-atoz li h2, .list-atoz li .img.event.findMyNearest h2, .img.event.search-panel .list-atoz li h2, .list-atoz li .img.event.search-panel h2, .img.event.survey .list-atoz li h2, .list-atoz li .img.event.survey h2,
+    .panel.img.event #report-a-problem #report-a-problem-content h2, #report-a-problem #report-a-problem-content
+    .panel.img.event h2, .sub-section-nav.panels .img.event.sub-section #report-a-problem #report-a-problem-content h2, #report-a-problem #report-a-problem-content .sub-section-nav.panels .img.event.sub-section h2, .img.event.findMyNearest #report-a-problem #report-a-problem-content h2, #report-a-problem #report-a-problem-content .img.event.findMyNearest h2, .img.event.search-panel #report-a-problem #report-a-problem-content h2, #report-a-problem #report-a-problem-content .img.event.search-panel h2, .img.event.survey #report-a-problem #report-a-problem-content h2, #report-a-problem #report-a-problem-content .img.event.survey h2 {
+      margin: 0.2631578947em 0 0 0;
+      font-size: 20px; }
+      .panel.img.event h3 span, .sub-section-nav.panels .img.event.sub-section h3 span, .img.event.findMyNearest h3 span, .img.event.search-panel h3 span, .img.event.survey h3 span,
+      .panel.img.event .heading-medium span, .sub-section-nav.panels .img.event.sub-section .heading-medium span, .img.event.findMyNearest .heading-medium span, .img.event.search-panel .heading-medium span, .img.event.survey .heading-medium span,
+      .panel.img.event .ms-rtestate-field h3 span, .ms-rtestate-field
+      .panel.img.event h3 span, .img.event.findMyNearest .ms-rtestate-field h3 span, .ms-rtestate-field .img.event.findMyNearest h3 span, .img.event.search-panel .ms-rtestate-field h3 span, .ms-rtestate-field .img.event.search-panel h3 span, .img.event.survey .ms-rtestate-field h3 span, .ms-rtestate-field .img.event.survey h3 span,
+      .panel.img.event h3 span, .sub-section-nav.panels .img.event.sub-section h3 span, .img.event.findMyNearest h3 span, .img.event.search-panel h3 span, .img.event.survey h3 span,
+      .panel.img.event .part-content h2 span, .part-content
+      .panel.img.event h2 span, .sub-section-nav.panels .img.event.sub-section .part-content h2 span, .part-content .sub-section-nav.panels .img.event.sub-section h2 span, .img.event.findMyNearest .part-content h2 span, .part-content .img.event.findMyNearest h2 span, .img.event.search-panel .part-content h2 span, .part-content .img.event.search-panel h2 span, .img.event.survey .part-content h2 span, .part-content .img.event.survey h2 span,
+      .panel.img.event legend span, .sub-section-nav.panels .img.event.sub-section legend span, .img.event.findMyNearest legend span, .img.event.search-panel legend span, .img.event.survey legend span,
+      .panel.img.event .sideNav h2 span, .sideNav
+      .panel.img.event h2 span, .sub-section-nav.panels .img.event.sub-section .sideNav h2 span, .sideNav .sub-section-nav.panels .img.event.sub-section h2 span, .img.event.findMyNearest .sideNav h2 span, .sideNav .img.event.findMyNearest h2 span, .img.event.search-panel .sideNav h2 span, .sideNav .img.event.search-panel h2 span, .img.event.survey .sideNav h2 span, .sideNav .img.event.survey h2 span,
+      .panel.img.event
+      .sideNav h3 span,
+      .sideNav
+      .panel.img.event h3 span, .img.event.findMyNearest
+      .sideNav h3 span,
+      .sideNav .img.event.findMyNearest h3 span, .img.event.search-panel
+      .sideNav h3 span,
+      .sideNav .img.event.search-panel h3 span, .img.event.survey
+      .sideNav h3 span,
+      .sideNav .img.event.survey h3 span,
+      .panel.img.event
+      .relatedPages h2 span,
+      .relatedPages
+      .panel.img.event h2 span, .sub-section-nav.panels .img.event.sub-section
+      .relatedPages h2 span,
+      .relatedPages .sub-section-nav.panels .img.event.sub-section h2 span, .img.event.findMyNearest
+      .relatedPages h2 span,
+      .relatedPages .img.event.findMyNearest h2 span, .img.event.search-panel
+      .relatedPages h2 span,
+      .relatedPages .img.event.search-panel h2 span, .img.event.survey
+      .relatedPages h2 span,
+      .relatedPages .img.event.survey h2 span,
+      .panel.img.event
+      .relatedPages h3 span,
+      .relatedPages
+      .panel.img.event h3 span, .img.event.findMyNearest
+      .relatedPages h3 span,
+      .relatedPages .img.event.findMyNearest h3 span, .img.event.search-panel
+      .relatedPages h3 span,
+      .relatedPages .img.event.search-panel h3 span, .img.event.survey
+      .relatedPages h3 span,
+      .relatedPages .img.event.survey h3 span,
+      .panel.img.event .list-atoz li h2 span, .list-atoz li
+      .panel.img.event h2 span, .sub-section-nav.panels .img.event.sub-section .list-atoz li h2 span, .list-atoz li .sub-section-nav.panels .img.event.sub-section h2 span, .img.event.findMyNearest .list-atoz li h2 span, .list-atoz li .img.event.findMyNearest h2 span, .img.event.search-panel .list-atoz li h2 span, .list-atoz li .img.event.search-panel h2 span, .img.event.survey .list-atoz li h2 span, .list-atoz li .img.event.survey h2 span,
+      .panel.img.event #report-a-problem #report-a-problem-content h2 span, #report-a-problem #report-a-problem-content
+      .panel.img.event h2 span, .sub-section-nav.panels .img.event.sub-section #report-a-problem #report-a-problem-content h2 span, #report-a-problem #report-a-problem-content .sub-section-nav.panels .img.event.sub-section h2 span, .img.event.findMyNearest #report-a-problem #report-a-problem-content h2 span, #report-a-problem #report-a-problem-content .img.event.findMyNearest h2 span, .img.event.search-panel #report-a-problem #report-a-problem-content h2 span, #report-a-problem #report-a-problem-content .img.event.search-panel h2 span, .img.event.survey #report-a-problem #report-a-problem-content h2 span, #report-a-problem #report-a-problem-content .img.event.survey h2 span {
+        color: #007299;
+        float: right; }
+        @media (max-width: 767px) {
+          .panel.img.event h3 span, .sub-section-nav.panels .img.event.sub-section h3 span, .img.event.findMyNearest h3 span, .img.event.search-panel h3 span, .img.event.survey h3 span,
+          .panel.img.event .heading-medium span, .sub-section-nav.panels .img.event.sub-section .heading-medium span, .img.event.findMyNearest .heading-medium span, .img.event.search-panel .heading-medium span, .img.event.survey .heading-medium span,
+          .panel.img.event .ms-rtestate-field h3 span, .ms-rtestate-field
+          .panel.img.event h3 span, .img.event.findMyNearest .ms-rtestate-field h3 span, .ms-rtestate-field .img.event.findMyNearest h3 span, .img.event.search-panel .ms-rtestate-field h3 span, .ms-rtestate-field .img.event.search-panel h3 span, .img.event.survey .ms-rtestate-field h3 span, .ms-rtestate-field .img.event.survey h3 span,
+          .panel.img.event h3 span, .sub-section-nav.panels .img.event.sub-section h3 span, .img.event.findMyNearest h3 span, .img.event.search-panel h3 span, .img.event.survey h3 span,
+          .panel.img.event .part-content h2 span, .part-content
+          .panel.img.event h2 span, .sub-section-nav.panels .img.event.sub-section .part-content h2 span, .part-content .sub-section-nav.panels .img.event.sub-section h2 span, .img.event.findMyNearest .part-content h2 span, .part-content .img.event.findMyNearest h2 span, .img.event.search-panel .part-content h2 span, .part-content .img.event.search-panel h2 span, .img.event.survey .part-content h2 span, .part-content .img.event.survey h2 span,
+          .panel.img.event legend span, .sub-section-nav.panels .img.event.sub-section legend span, .img.event.findMyNearest legend span, .img.event.search-panel legend span, .img.event.survey legend span,
+          .panel.img.event .sideNav h2 span, .sideNav
+          .panel.img.event h2 span, .sub-section-nav.panels .img.event.sub-section .sideNav h2 span, .sideNav .sub-section-nav.panels .img.event.sub-section h2 span, .img.event.findMyNearest .sideNav h2 span, .sideNav .img.event.findMyNearest h2 span, .img.event.search-panel .sideNav h2 span, .sideNav .img.event.search-panel h2 span, .img.event.survey .sideNav h2 span, .sideNav .img.event.survey h2 span,
+          .panel.img.event
+          .sideNav h3 span,
+          .sideNav
+          .panel.img.event h3 span, .img.event.findMyNearest
+          .sideNav h3 span,
+          .sideNav .img.event.findMyNearest h3 span, .img.event.search-panel
+          .sideNav h3 span,
+          .sideNav .img.event.search-panel h3 span, .img.event.survey
+          .sideNav h3 span,
+          .sideNav .img.event.survey h3 span,
+          .panel.img.event
+          .relatedPages h2 span,
+          .relatedPages
+          .panel.img.event h2 span, .sub-section-nav.panels .img.event.sub-section
+          .relatedPages h2 span,
+          .relatedPages .sub-section-nav.panels .img.event.sub-section h2 span, .img.event.findMyNearest
+          .relatedPages h2 span,
+          .relatedPages .img.event.findMyNearest h2 span, .img.event.search-panel
+          .relatedPages h2 span,
+          .relatedPages .img.event.search-panel h2 span, .img.event.survey
+          .relatedPages h2 span,
+          .relatedPages .img.event.survey h2 span,
+          .panel.img.event
+          .relatedPages h3 span,
+          .relatedPages
+          .panel.img.event h3 span, .img.event.findMyNearest
+          .relatedPages h3 span,
+          .relatedPages .img.event.findMyNearest h3 span, .img.event.search-panel
+          .relatedPages h3 span,
+          .relatedPages .img.event.search-panel h3 span, .img.event.survey
+          .relatedPages h3 span,
+          .relatedPages .img.event.survey h3 span,
+          .panel.img.event .list-atoz li h2 span, .list-atoz li
+          .panel.img.event h2 span, .sub-section-nav.panels .img.event.sub-section .list-atoz li h2 span, .list-atoz li .sub-section-nav.panels .img.event.sub-section h2 span, .img.event.findMyNearest .list-atoz li h2 span, .list-atoz li .img.event.findMyNearest h2 span, .img.event.search-panel .list-atoz li h2 span, .list-atoz li .img.event.search-panel h2 span, .img.event.survey .list-atoz li h2 span, .list-atoz li .img.event.survey h2 span,
+          .panel.img.event #report-a-problem #report-a-problem-content h2 span, #report-a-problem #report-a-problem-content
+          .panel.img.event h2 span, .sub-section-nav.panels .img.event.sub-section #report-a-problem #report-a-problem-content h2 span, #report-a-problem #report-a-problem-content .sub-section-nav.panels .img.event.sub-section h2 span, .img.event.findMyNearest #report-a-problem #report-a-problem-content h2 span, #report-a-problem #report-a-problem-content .img.event.findMyNearest h2 span, .img.event.search-panel #report-a-problem #report-a-problem-content h2 span, #report-a-problem #report-a-problem-content .img.event.search-panel h2 span, .img.event.survey #report-a-problem #report-a-problem-content h2 span, #report-a-problem #report-a-problem-content .img.event.survey h2 span {
+            float: none; } }
+    .panel.img.event .img-container, .sub-section-nav.panels .img.event.sub-section .img-container, .img.event.findMyNearest .img-container, .img.event.search-panel .img-container, .img.event.survey .img-container {
+      min-height: 150px; }
+    .panel.img.event .content, .sub-section-nav.panels .img.event.sub-section .content, .img.event.findMyNearest .content, .img.event.search-panel .content, .img.event.survey .content {
+      padding: 20px; }
+  .panel.img .panel-promo_title, .sub-section-nav.panels .img.sub-section .panel-promo_title, .img.findMyNearest .panel-promo_title, .img.search-panel .panel-promo_title, .img.survey .panel-promo_title {
+    margin: 0 0 10px;
+    font-size: 27px; }
+    @media (min-width: 990px) {
+      .panel.img .panel-promo_title, .sub-section-nav.panels .img.sub-section .panel-promo_title, .img.findMyNearest .panel-promo_title, .img.search-panel .panel-promo_title, .img.survey .panel-promo_title {
+        font-size: 40px; } }
+  .panel.img .panel-promo_text, .sub-section-nav.panels .img.sub-section .panel-promo_text, .img.findMyNearest .panel-promo_text, .img.search-panel .panel-promo_text, .img.survey .panel-promo_text {
+    margin: 0 0 25px;
+    font-size: 16px;
+    line-height: 1.6; }
+    @media (min-width: 990px) {
+      .panel.img .panel-promo_text, .sub-section-nav.panels .img.sub-section .panel-promo_text, .img.findMyNearest .panel-promo_text, .img.search-panel .panel-promo_text, .img.survey .panel-promo_text {
+        font-size: 21px; } }
+  .panel.img .btn, .sub-section-nav.panels .img.sub-section .btn, .img.findMyNearest .btn, .img.search-panel .btn, .img.survey .btn, .panel.img .form-group input[type=button], .form-group .panel.img input[type=button], .sub-section-nav.panels .img.sub-section .form-group input[type=button], .form-group .sub-section-nav.panels .img.sub-section input[type=button], .img.findMyNearest .form-group input[type=button], .form-group .img.findMyNearest input[type=button], .img.search-panel .form-group input[type=button], .form-group .img.search-panel input[type=button], .img.survey .form-group input[type=button], .form-group .img.survey input[type=button], .panel.img .form-group input.btn.btn-primary, .form-group .panel.img input.btn.btn-primary, .img.findMyNearest .form-group input.btn.btn-primary, .form-group .img.findMyNearest input.btn.btn-primary, .img.search-panel .form-group input.btn.btn-primary, .form-group .img.search-panel input.btn.btn-primary, .img.survey .form-group input.btn.btn-primary, .form-group .img.survey input.btn.btn-primary, .panel.img .form-group input.limitedrte-Style-BUTTON, .form-group .panel.img input.limitedrte-Style-BUTTON, .img.findMyNearest .form-group input.limitedrte-Style-BUTTON, .form-group .img.findMyNearest input.limitedrte-Style-BUTTON, .img.search-panel .form-group input.limitedrte-Style-BUTTON, .form-group .img.search-panel input.limitedrte-Style-BUTTON, .img.survey .form-group input.limitedrte-Style-BUTTON, .form-group .img.survey input.limitedrte-Style-BUTTON, .panel.img .form-group input[type=submit], .form-group .panel.img input[type=submit], .sub-section-nav.panels .img.sub-section .form-group input[type=submit], .form-group .sub-section-nav.panels .img.sub-section input[type=submit], .img.findMyNearest .form-group input[type=submit], .form-group .img.findMyNearest input[type=submit], .img.search-panel .form-group input[type=submit], .form-group .img.search-panel input[type=submit], .img.survey .form-group input[type=submit], .form-group .img.survey input[type=submit], .panel.img #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel.img #myChatLinkInfo, .sub-section-nav.panels .img.sub-section #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .sub-section-nav.panels .img.sub-section #myChatLinkInfo, .img.findMyNearest #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .img.findMyNearest #myChatLinkInfo, .img.search-panel #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .img.search-panel #myChatLinkInfo, .img.survey #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .img.survey #myChatLinkInfo, .panel.img #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .panel.img #myChatLinkInfo, .sub-section-nav.panels .img.sub-section #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .sub-section-nav.panels .img.sub-section #myChatLinkInfo, .img.findMyNearest #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .img.findMyNearest #myChatLinkInfo, .img.search-panel #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .img.search-panel #myChatLinkInfo, .img.survey #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .img.survey #myChatLinkInfo, .panel.img .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .panel.img #myChatLinkInfo, .sub-section-nav.panels .img.sub-section .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .sub-section-nav.panels .img.sub-section #myChatLinkInfo, .img.findMyNearest .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .img.findMyNearest #myChatLinkInfo, .img.search-panel .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .img.search-panel #myChatLinkInfo, .img.survey .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .img.survey #myChatLinkInfo, .panel.img .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .panel.img .ms-srch-sb-searchLink, .sub-section-nav.panels .img.sub-section .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .sub-section-nav.panels .img.sub-section .ms-srch-sb-searchLink, .img.findMyNearest .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .img.findMyNearest .ms-srch-sb-searchLink, .img.search-panel .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .img.search-panel .ms-srch-sb-searchLink, .img.survey .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .img.survey .ms-srch-sb-searchLink, .panel.img .limitedrte-Style-BUTTON, .sub-section-nav.panels .img.sub-section .limitedrte-Style-BUTTON, .img.findMyNearest .limitedrte-Style-BUTTON, .img.search-panel .limitedrte-Style-BUTTON, .img.survey .limitedrte-Style-BUTTON {
+    margin: 0; }
+
+.content-block {
+  margin: 0 auto; }
+
+.panel blockquote, .sub-section-nav.panels .sub-section blockquote, .findMyNearest blockquote, .search-panel blockquote, .survey blockquote {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  padding: 0 0 0 30px;
+  border: 0;
+  position: relative; }
+  .panel blockquote:before, .sub-section-nav.panels .sub-section blockquote:before, .findMyNearest blockquote:before, .search-panel blockquote:before, .survey blockquote:before {
+    font-family: FontAwesome;
+    content: "\f10d";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    opacity: 0.5;
+    font-size: 25px; }
+    @media (min-width: 641px) {
+      .panel blockquote:before, .sub-section-nav.panels .sub-section blockquote:before, .findMyNearest blockquote:before, .search-panel blockquote:before, .survey blockquote:before {
+        left: -15px;
+        font-size: 30px; } }
+  .panel blockquote footer, .sub-section-nav.panels .sub-section blockquote footer, .findMyNearest blockquote footer, .search-panel blockquote footer, .survey blockquote footer {
+    font-weight: 400;
+    margin-top: 15px; }
+  @media (min-width: 990px) {
+    .panel blockquote, .sub-section-nav.panels .sub-section blockquote, .findMyNearest blockquote, .search-panel blockquote, .survey blockquote {
+      font-size: 32px; } }
+
+.panel-event .panel-event-title {
+  margin: 0 0 15px; }
+
+.panel-event .panel-event-description {
+  margin: 0 0 20px; }
+
+.panel-event .panel-event-date {
+  background: #007299;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #007299 0%, #007299 50%, #007299 50%, #005f80 50%, #005f80 50%, #007299 50%, #005f80 50%, #005f80 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #007299 0%, #007299 50%, #007299 50%, #005f80 50%, #005f80 50%, #007299 50%, #005f80 50%, #005f80 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #007299 0%, #007299 50%, #007299 50%, #005f80 50%, #005f80 50%, #007299 50%, #005f80 50%, #005f80 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+  /* IE6-9 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align-items: center;
+  -moz-box-align-items: center;
+  -ms-flex-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: absolute; }
+  @media (max-width: 767px) {
+    .panel-event .panel-event-date {
+      padding: 20px;
+      top: 0;
+      right: 0; } }
+  @media (min-width: 767px) {
+    .panel-event .panel-event-date {
+      position: absolute;
+      min-height: 250px; } }
+  @media (min-width: 990px) {
+    .panel-event .panel-event-date {
+      height: 100%; } }
+  .panel-event .panel-event-date .panel-event-date-details {
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    font-size: 14px; }
+    @media (min-width: 767px) {
+      .panel-event .panel-event-date .panel-event-date-details {
+        font-size: 28px; } }
+    .panel-event .panel-event-date .panel-event-date-details span {
+      display: block; }
+      .panel-event .panel-event-date .panel-event-date-details span.big-number {
+        font-size: 40px;
+        font-weight: 700; }
+        @media (min-width: 767px) {
+          .panel-event .panel-event-date .panel-event-date-details span.big-number {
+            font-size: 100px; } }
+
+.panel-event .panel-event-info .panel-event-info-location,
+.panel-event .panel-event-info .panel-event-info-time {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  padding-left: 28px;
+  position: relative; }
+  .panel-event .panel-event-info .panel-event-info-location:before,
+  .panel-event .panel-event-info .panel-event-info-time:before {
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    font-size: 16px;
+    width: 16px;
+    text-align: center; }
+  @media (min-width: 641px) {
+    .panel-event .panel-event-info .panel-event-info-location,
+    .panel-event .panel-event-info .panel-event-info-time {
+      font-size: 16px;
+      padding-left: 30px; }
+      .panel-event .panel-event-info .panel-event-info-location:before,
+      .panel-event .panel-event-info .panel-event-info-time:before {
+        top: -3px;
+        font-size: 21px;
+        width: 21px; } }
+
+.panel-event .panel-event-info .panel-event-info-location {
+  color: #007299;
+  margin-bottom: 10px; }
+  .panel-event .panel-event-info .panel-event-info-location:before {
+    content: "\f041"; }
+
+.panel-event .panel-event-info .panel-event-info-time:before {
+  content: "\f017"; }
+
+.panel-event-list {
+  margin: 30px 0; }
+  @media (min-width: 641px) {
+    .panel-event-list {
+      margin: 60px 0; } }
+  .panel-event-list h2 {
+    margin-top: 0; }
+  .panel-event-list p + .panel-event {
+    margin-top: 30px; }
+
+.panel.img + .panel.img, .sub-section-nav.panels .img.sub-section + .panel.img, .img.findMyNearest + .panel.img, .img.search-panel + .panel.img, .img.survey + .panel.img, .sub-section-nav.panels .panel.img + .img.sub-section, .sub-section-nav.panels .img.sub-section + .img.sub-section, .sub-section-nav.panels .img.findMyNearest + .img.sub-section, .sub-section-nav.panels .img.search-panel + .img.sub-section, .sub-section-nav.panels .img.survey + .img.sub-section, .panel.img + .img.findMyNearest, .sub-section-nav.panels .img.sub-section + .img.findMyNearest, .img.findMyNearest + .img.findMyNearest, .img.search-panel + .img.findMyNearest, .img.survey + .img.findMyNearest, .panel.img + .img.search-panel, .sub-section-nav.panels .img.sub-section + .img.search-panel, .img.findMyNearest + .img.search-panel, .img.search-panel + .img.search-panel, .img.survey + .img.search-panel, .panel.img + .img.survey, .sub-section-nav.panels .img.sub-section + .img.survey, .img.findMyNearest + .img.survey, .img.search-panel + .img.survey, .img.survey + .img.survey {
+  margin-top: -15px; }
+  @media (min-width: 641px) {
+    .panel.img + .panel.img, .sub-section-nav.panels .img.sub-section + .panel.img, .img.findMyNearest + .panel.img, .img.search-panel + .panel.img, .img.survey + .panel.img, .sub-section-nav.panels .panel.img + .img.sub-section, .sub-section-nav.panels .img.sub-section + .img.sub-section, .sub-section-nav.panels .img.findMyNearest + .img.sub-section, .sub-section-nav.panels .img.search-panel + .img.sub-section, .sub-section-nav.panels .img.survey + .img.sub-section, .panel.img + .img.findMyNearest, .sub-section-nav.panels .img.sub-section + .img.findMyNearest, .img.findMyNearest + .img.findMyNearest, .img.search-panel + .img.findMyNearest, .img.survey + .img.findMyNearest, .panel.img + .img.search-panel, .sub-section-nav.panels .img.sub-section + .img.search-panel, .img.findMyNearest + .img.search-panel, .img.search-panel + .img.search-panel, .img.survey + .img.search-panel, .panel.img + .img.survey, .sub-section-nav.panels .img.sub-section + .img.survey, .img.findMyNearest + .img.survey, .img.search-panel + .img.survey, .img.survey + .img.survey {
+      margin-top: -30px; } }
 
 table {
   border-collapse: collapse;
@@ -24069,10 +24437,10 @@ hr {
   border-color: rgba(220, 222, 225, 0.5); }
 
 .btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary, .form-group input.limitedrte-Style-BUTTON, .form-group input[type=submit], #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .col-md-8 #SearchBox .ms-srch-sb-searchLink, .limitedrte-Style-BUTTON {
-  border-bottom: 2px solid #006700; }
+  box-shadow: 0px 3px 0px #006700; }
 
 .btn-secondary, .form-group input[type=button].btn-secondary {
-  border-bottom: 2px solid #005f80; }
+  box-shadow: 0px 3px 0px #005f80; }
 
 .cd-top:focus {
   background: #FFBF47 url("images/cd-top-arrow.svg") no-repeat center 50% !important;
