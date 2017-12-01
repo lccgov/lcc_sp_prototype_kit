@@ -9,7 +9,6 @@
 
                 h3{
                     padding-right: 25px;
-                    font-weight:700;
 
                     &:after{
                         @media (max-width: 767px){
@@ -115,4 +114,9 @@
             }
         }
     }
+}
+
+//mega promo fixes
+.mega-promo{
+    padding-top:0;
 }

@@ -1,6 +1,4 @@
-//default sharpoint css - REMOVE BEFORE UPLOADING
-@import 'sharepoint_core_15';
-@import 'sharepoint_search_15';
+@import 'sharepoint'; //default sharpoint css - REMOVE BEFORE UPLOADING
 
 //google fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,700'); 
@@ -34,14 +32,6 @@ $dark-yellow:#FAA300;
 $red:#c0392b;
 
 //$base-background-color:#fff;
-$base-font-size:16px;
-$base-font-color:$black;
-$header-font-color:$black;
-$base-link-color:$blue;
-$base-link-hover-color:$light-blue;
-$base-link-visited-color:#4C2C92;
-$secondary-link-color:$dark-blue;
-$secondary-font-color:$dark-grey;
 $border-color:$light-grey;
 $brand-color:$blue;
 $button-color:$green;
@@ -49,10 +39,24 @@ $button-hover-color:lighten($button-color,5%);
 $focus-color:$yellow;
 $base-container-width:1280px ;
 //$btn-background-color:green ;
+$alert-color:$red;
+
+//typography
 $font-primary:'Open Sans', sans-serif; // main font
 $font-secondary:'Montserrat', sans-serif; // secondary font used for headings
-//$header-font-weight: 600;
-$alert-color:$red;
+//$base-font-size:16px !default;
+//$base-font-size-desktop:19px !default;
+$base-line-height: 1.4;
+$base-font-color:$black;
+$header-font-color:$black;
+$secondary-font-color:$dark-grey;
+$header-font-weight: 700;
+//$base-font-weight: 400 !default;
+
+$base-link-color:$blue;
+$base-link-hover-color:$light-blue;
+$base-link-visited-color:#4C2C92;
+$secondary-link-color:$dark-blue;
 
 //panel colours
 $panel-color:#E5F1F5;
@@ -172,96 +176,54 @@ $group-promo-arrow-color: $grey;
 $input-color:$black;
 $input-border-color:$grey;
 
-@import 'mixins';
-@import 'variables';
-@import 'brandColors';
+@import 'base';
 
-//FRONT END TOOLKIT SASS FILES
+@import 'brand-colors';
 
-//available sass files please un-comment out as required
-@import 'sharepointOverides';
-//@import 'mainMenuSubsites'; //subsites only
-//@import 'socialMedia'; //subsites only
-//@import 'sideNavigation'; //subsites only
-@import 'blocklinks'; //subsites only
-@import 'contentLink'; //subsites only
-//@import 'contentAssets'; //subsites only
-@import 'polaroids'; //subsites only
-@import 'iconLinks'; //subsites only
-@import 'heroBanner'; //subsites only
-@import 'promoListwebpart'; //subsites only
-@import 'promoGroup'; //subsites only
-@import 'sectionSubsite'; //subsites only
-@import 'promo'; //subsites only
-@import 'carousel'; //subsites only
-//@import 'eventsWebparts'; //subsites only
-@import 'breadcrumb';
+@import '2010-typography-overrides';
 @import 'accordion';
-@import 'alerts';
-@import 'news';
-@import 'groupPromo';
-@import 'docList';
-@import 'blockQuote';
-@import 'accessibility';
+@import 'a-to-z';
+@import 'block-links';
+@import 'block-quote';
+//@import 'carousel';
+//@import 'content-assets'; //subsite only
+//@import 'content-link'; //subsite only
+@import 'description-list';
+@import 'doc-list'; //needs aligning with lcc_doc-list and a.doc within typography - DH
+//@import 'events-search-results';
+//@import 'events-webparts';
+@import 'group-promo';
+//@import 'hero-banner';
+//@import 'hero-banner-overlay'; //needs aligning with hero-bnner - RM
+@import 'icon-links';
 @import 'mega-promo';
-@import 'buttons';
-@import 'browser-alert';
-@import 'typography-lcc';
-@import 'panel';
-@import 'tables';
-@import 'form_elements';
-@import 'images';
-@import 'webchat';
-@import 'description_list_accessible';
-@import 'phase-banner';
-@import 'side-nav';
-@import 'pagination';
-@import 'part-nav';
+//@import 'news';
+@import 'open-data'; //is it leeds.gov.uk specific? - does it need re-naming- DH
+@import 'journey-page';
+@import 'phase-banner'; //work needed to have in page beta banner
+//@import 'polaroids'; //subsite only
+@import 'promo';
+//@import 'promo-list-webpart'; //subsite only
+//@import 'section-subsite'; //subsite only
+@import 'sharepoint-overrides'; 
+@import 'side-nav'; //needs aligning with side-navigation - DH & RM
+//@import 'side-navigation'; //needs aligning with side-nav - DH & RM
 @import 'sub-section-nav';
-@import 'atoz';
-@import 'lcc_search';
-@import 'survey-webpart';
+@import 'url-helper';
+@import 'webchat';
 
-//CUSTOM SASS FILES FOR STYLE GUIDE
-//@import 'prism';
-@import 'styleguide_digital';
-@import 'styleguide_code-example';
-@import 'styleguide_sticky';
-@import 'styleguide_swatch';
+@import 'styleguide';
 
-//CUSTOM LEEDS.GOV.UK STYLES
-@import 'easy-autocomplete';
-@import 'search-results';
+@import 'leedsgov-specific';
+@import 'leedsgov-overrides';
+
 @import 'where-i-live';
-@import 'open-data';
-@import 'lcc_hero';
-@import 'lcc_news';
-@import 'ie-support';
-@import 'sharepoint_2010_style_fallback';
-@import 'eventsSearchResults';
 
-//BASE LEEDS.GOV.UK STYLES
-@import 'lcc_base_styles';
-
-//in front end toolkit
-@import 'lcc_footer';
-@import 'lcc_header';
-
-@import 'report_a_problem';
-
-
-//CUSTOM STYLES FOR LEEDS.GOV.UK
-@import 'lcc_mega-promo';
+@import 'modern-gov';
 
 //site background
 html{
     background-color:$blue;
-}
-
-//bootsrap override
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-    padding-right: 15px;
-    padding-left: 15px;
 }
 
 //hr
@@ -290,11 +252,6 @@ hr{
     margin:30px 0;
 }
 
-//clear
-.clear{
-    padding:0 !important;
-}
-
 //LEEDS.GOV SPECIFIC
 
 //Roadworks map
@@ -304,35 +261,6 @@ hr{
     @media (max-width: 450px) {
     height: 400px !important;
     } 
-}
-
-//third columns for summary links
-.column-thirds .column-third{
-    @media (min-width: 1200px) {
-        &:nth-child(3n+4){
-            clear:left;
-        }
-    }
-    @media (min-width: 768px) and (max-width: 1199px) {
-        width:50%;
-
-        &:nth-child(2n+3){
-            clear:left;
-        }
-    }
-    @media (max-width: 767px) {
-        clear:none;
-    }
-}
-
-.column-thirds{
-    margin-left:-50px;
-    margin-right:-15px;
-
-    .column-third{
-        padding-left: 50px;
-        padding-right: 15px;
-    }
 }
 
 //right hand column top margin
@@ -446,59 +374,6 @@ aside.col-md-4{
 .groupPromo ul li a p{
     line-height:1.4;
 }
-        
-//mega promo fixes
-.mega-promo{
-    padding-top:0;
-}
-
-.mega-promo .mega-promo__item{
-    width:100%;
-}
-
-
-//input submit styling
-.form-group{
-    input[type=submit]{
-        @extend .btn;
-        @extend .btn-primary;
-    }
-}
-
-//rss feed
-#rss-content{
-    padding:0;
-    margin:-5px 0 0;
-
-    .rss-article{
-        border-bottom:1px solid $border-color;
-        margin-bottom: 15px;
-
-        .rss-article-title{
-            a{
-                margin-right:0;
-                margin-bottom: 15px;
-                display: inline-block;
-            }
-        }
-        .rss-article-pubDate{
-            span{
-                @extend .font-xsmall;
-                color:$secondary-font-color;
-            }
-        }
-        .rss-article-description{
-            p{
-                 @extend .font-xsmall;
-            }
-            div{
-                p{
-
-                }
-            }
-        }
-    }
-}
 
 //rss feed sharepoint overrides
 .col-md-4{
@@ -528,106 +403,5 @@ aside.col-md-4{
             padding:0;
             border:0;
         }
-    }
-}
-
-//emergencies
-#OngoingIncidents{
-    .IncidentPanel{
-        border:4px solid $grey;
-        margin-bottom:20px;
-        padding:20px;
-        @include border-radius(4px);
-
-        h3{
-            background:$grey;
-            margin:0;
-            padding:20px;
-            margin:-20px -20px 20px -20px;
-        }
-        img{
-            height:150px;
-            float:left;
-            margin-right:20px;
-        }
-        p{
-            margin:0;
-        }
-        a{
-            margin:20px 0 0;
-            display:inline-block;
-        }
-        .IncidentFooter{
-            background:rgba($grey, 0.3);
-            margin:20px -20px -20px -20px;
-            padding:15px 20px;
-
-            p{
-                @extend .font-xsmall;
-                margin:0;
-                text-align:right;
-            }
-        }
-
-        @media (max-width: 641px){
-            margin-bottom:15px;
-            padding:15px;
-
-            h3{
-                padding:15px;
-                margin:-15px -15px 15px -15px;
-            }
-            img{
-                width:100%;
-                height:auto;
-                float:none;
-                margin:0 0 15px;
-            }
-            p{
-                margin:0;
-            }
-            a{
-                margin:15px 0 0;
-            }
-            .IncidentFooter{
-                margin:15px -15px -15px -15px;
-                padding:10px 15px;
-
-                p{
-                    text-align:left;
-                }
-            }
-        }
-    }
-}
-
-@mixin IncidentPanelColors($IncidentColor,$IncidentHeaderColor,$IncidentFooterColor){
-    border-color:$IncidentColor;
-
-    h3{
-        background:$IncidentColor;
-        color:$IncidentHeaderColor;
-    }
-    .IncidentFooter{
-        background:rgba($IncidentColor,0.1);
-
-        p{
-            color:$IncidentFooterColor;
-        }
-    }
-}
-
-#OngoingIncidents{
-    .Warning{
-        @include IncidentPanelColors($red,$white,$secondary-font-color);
-    }
-    .Information{
-        @include IncidentPanelColors($blue,$white,$secondary-font-color);
-    }
-    .Highlight{
-        @include IncidentPanelColors($yellow,$base-font-color,$secondary-font-color);
-    }
-    .Summary{
-        @include IncidentPanelColors($light-grey,$base-font-color,$secondary-font-color);
     }
 }

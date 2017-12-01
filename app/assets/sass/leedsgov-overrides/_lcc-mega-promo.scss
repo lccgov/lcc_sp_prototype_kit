@@ -2,14 +2,9 @@
     .mega-promo__item {
         a {
             .mega-promo__content {
-                
-                .mega-promo__header{
-                    font-weight:700 !important;
-                }
 
                 .mega-promo__secondary{
                     color:$secondary-font-color;
-                    font-weight:400;
                 }
             }
 
@@ -120,5 +115,11 @@
     @media (max-width: 990px){
         .mega-promo .mega-promo__item.featured a {
             padding-bottom: 50px;
+        }
+    }
+
+    @media (min-width: 767px){
+        .mega-promo .mega-promo__item.featured .mega-promo__header {
+            font-size: 34px!important;
         }
     }
