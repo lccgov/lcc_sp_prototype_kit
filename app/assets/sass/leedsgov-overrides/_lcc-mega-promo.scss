@@ -3,8 +3,13 @@
         a {
             .mega-promo__content {
 
+                .mega-promo__header{
+                    line-height:1.4;
+
+                }
                 .mega-promo__secondary{
                     color:$secondary-font-color;
+                    line-height:1.6;
                 }
             }
 

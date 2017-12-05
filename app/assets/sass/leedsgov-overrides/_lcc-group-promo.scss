@@ -2,13 +2,19 @@
 .groupPromo{
     ul{
         margin-top:0;
+        padding:0;
 
         li{
             a{
                 border:0;
 
+                @media (max-width: 600px){
+                    padding:20px;
+                }
+
                 h3{
                     padding-right: 25px;
+                    line-height:1.4;
 
                     &:after{
                         @media (max-width: 767px){
@@ -22,6 +28,7 @@
                 p{
                     font-weight:400;
                     color:$secondary-font-color;
+                    line-height:1.6 !important;
 
                     @media (max-width: 767px){
                         font-size:16px;
@@ -107,6 +114,10 @@
 
             a{
                 background:white;
+
+                @media (max-width: 600px){
+                    padding:20px 15px;
+                }
 
                 &:hover{
                     background:white !important;

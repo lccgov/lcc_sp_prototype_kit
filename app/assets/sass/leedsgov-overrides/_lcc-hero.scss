@@ -8,7 +8,7 @@
     z-index:-2;
 
     @media (min-width: 767px) {
-        height:75vh;
+        height:85vh;
     }
 
     .hero-lcc{
@@ -143,6 +143,7 @@
                             background:$primary-button-background-color;
                             font-size:21px;
                             margin:0;
+                            color:white;
 
                             &:hover{
                                 background:$button-hover-color;
@@ -258,7 +259,7 @@
                             }
 
                             &:before{
-                                background-color:$light-blue;
+                                background-color:transparent;
                                 -webkit-border-radius:0 4px 4px 0;
                                 -moz-border-radius:0 4px 4px 0;
                                 -ms-border-radius:0 4px 4px 0;

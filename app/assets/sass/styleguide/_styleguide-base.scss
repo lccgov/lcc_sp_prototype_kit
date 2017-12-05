@@ -8,7 +8,7 @@
 }
 
 //logo
-.header-left{
+/*.header-left{
   padding:0 !important;
 }
 .logo {
@@ -37,6 +37,28 @@
     &:hover{
       color:$border-color;
     }
+}*/
+
+.logo{
+    background-image:url(../images/logo.svg);
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:250px;
+    height:25px;
+    background-position:left top;
+    background-size:100%;
+    margin:5px 0 0;
+
+    @media (max-width: 990px) {
+        width:150px;
+        height:15px;
+    }
+
+    @media (max-width: 361px) {
+        width:120px;
+        height:12px;
+    }
+
 }
 
 //nav
