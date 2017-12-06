@@ -26,7 +26,7 @@
         background:transparent;
         border:0;
         margin:0;
-        padding:10px 0 10px 20px;
+        padding:10px 0;
         box-shadow:none;
         color:white;
         display:inline-block;
@@ -37,65 +37,62 @@
         display:block;
         position:relative;
 
-        @media (min-width: 361px) {
-            font-size:16px;
-            padding:10px 0 10px 20px;
-        }
-
-        @media (min-width: 991px) {
-            font-size:19px;
-            padding:10px 0 10px 24px;
-        }
-
-        @media (max-width: 990px) {
-            &:before{
-                font-family: "FontAwesome";
-                color:white;
-                position:absolute;
-                left:0;
-                top:10px;
-                opacity:0.5;
-            }
-        }
-
         &:hover{
-            text-decoration:underline !important;
-
-            &:before{
-                opacity:1;
-            }
+            text-decoration:underline;
         } 
 
         &:focus{
             &:before{
                 color:$base-font-color;
             }
+        }
+
+        @media (min-width: 361px) {
+            font-size:16px;
+        }
+
+        @media (min-width: 991px) {
+            font-size:19px;
+        }
+
+        @media (max-width: 641px) {
+            &:before{
+                font-family: "FontAwesome";
+                font-size:30px;
+            }
+
+            &:hover{
+                text-decoration:none;
+
+                &:before{
+                    opacity:0.6;
+                }
+            }
+
+            span{
+                display:none;
+            }
         }  
     }
 
     .btn-account{
-        @media (max-width: 990px) {
-        &:before{
-            content: "\f007"; 
+        @media (max-width: 641px) {
+            &:before{
+                content: "\f007"; 
+            }
         }
-    }
     }
 
     a.search{
-        margin-left:15px;
+        margin-left:30px;
 
-        @media (min-width: 991px) {
-            margin-left:30px;
-        }
-        @media (max-width: 990px) {
-        &:before{
-            content: "\f002"; 
-        }
-    }
-    }
+        @media (max-width: 641px) {
+            margin-left:15px;
 
-    .search-text{
-        display:block;
+            &:before{
+                content: "\f002"; 
+            }
+        }
     }
 
     .header-nav{
@@ -141,11 +138,6 @@ $header-height-mobile:50px;
     @media (max-width: 990px) {
         width:150px;
         height:15px;
-    }
-
-    @media (max-width: 361px) {
-        width:120px;
-        height:12px;
     }
 
 }

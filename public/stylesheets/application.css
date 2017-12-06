@@ -24408,7 +24408,7 @@ footer.main .footerGlobal {
     background: transparent;
     border: 0;
     margin: 0;
-    padding: 10px 0 10px 20px;
+    padding: 10px 0;
     box-shadow: none;
     color: white;
     display: inline-block;
@@ -24418,65 +24418,68 @@ footer.main .footerGlobal {
     border-radius: 0;
     display: block;
     position: relative; }
-    @media (min-width: 361px) {
-      .header-lcc .btn-account,
-      .header-lcc a.search,
-      .header-lcc .search.link,
-      .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-      .header-lcc .search.btn-link {
-        font-size: 16px;
-        padding: 10px 0 10px 20px; } }
-    @media (min-width: 991px) {
-      .header-lcc .btn-account,
-      .header-lcc a.search,
-      .header-lcc .search.link,
-      .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-      .header-lcc .search.btn-link {
-        font-size: 19px;
-        padding: 10px 0 10px 24px; } }
-    @media (max-width: 990px) {
-      .header-lcc .btn-account:before,
-      .header-lcc a.search:before,
-      .header-lcc .search.link:before,
-      .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-      .header-lcc .search.btn-link:before {
-        font-family: "FontAwesome";
-        color: white;
-        position: absolute;
-        left: 0;
-        top: 10px;
-        opacity: 0.5; } }
     .header-lcc .btn-account:hover,
     .header-lcc a.search:hover,
     .header-lcc .search.link:hover,
     .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link
     .header-lcc .search.btn-link:hover {
-      text-decoration: underline !important; }
-      .header-lcc .btn-account:hover:before,
-      .header-lcc a.search:hover:before,
-      .header-lcc .search.link:hover:before,
-      .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-      .header-lcc .search.btn-link:hover:before {
-        opacity: 1; }
+      text-decoration: underline; }
     .header-lcc .btn-account:focus:before,
     .header-lcc a.search:focus:before,
     .header-lcc .search.link:focus:before,
     .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:focus:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
     .header-lcc .search.btn-link:focus:before {
       color: #212224; }
-  @media (max-width: 990px) {
+    @media (min-width: 361px) {
+      .header-lcc .btn-account,
+      .header-lcc a.search,
+      .header-lcc .search.link,
+      .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+      .header-lcc .search.btn-link {
+        font-size: 16px; } }
+    @media (min-width: 991px) {
+      .header-lcc .btn-account,
+      .header-lcc a.search,
+      .header-lcc .search.link,
+      .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+      .header-lcc .search.btn-link {
+        font-size: 19px; } }
+    @media (max-width: 641px) {
+      .header-lcc .btn-account:before,
+      .header-lcc a.search:before,
+      .header-lcc .search.link:before,
+      .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+      .header-lcc .search.btn-link:before {
+        font-family: "FontAwesome";
+        font-size: 30px; }
+      .header-lcc .btn-account:hover,
+      .header-lcc a.search:hover,
+      .header-lcc .search.link:hover,
+      .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+      .header-lcc .search.btn-link:hover {
+        text-decoration: none; }
+        .header-lcc .btn-account:hover:before,
+        .header-lcc a.search:hover:before,
+        .header-lcc .search.link:hover:before,
+        .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+        .header-lcc .search.btn-link:hover:before {
+          opacity: 0.6; }
+      .header-lcc .btn-account span,
+      .header-lcc a.search span,
+      .header-lcc .search.link span,
+      .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link span, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+      .header-lcc .search.btn-link span {
+        display: none; } }
+  @media (max-width: 641px) {
     .header-lcc .btn-account:before {
       content: "\f007"; } }
   .header-lcc a.search, .header-lcc .search.link, .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .search.btn-link {
-    margin-left: 15px; }
-    @media (min-width: 991px) {
+    margin-left: 30px; }
+    @media (max-width: 641px) {
       .header-lcc a.search, .header-lcc .search.link, .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .search.btn-link {
-        margin-left: 30px; } }
-    @media (max-width: 990px) {
-      .header-lcc a.search:before, .header-lcc .search.link:before, .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .search.btn-link:before {
-        content: "\f002"; } }
-  .header-lcc .search-text {
-    display: block; }
+        margin-left: 15px; }
+        .header-lcc a.search:before, .header-lcc .search.link:before, .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .search.btn-link:before {
+          content: "\f002"; } }
   .header-lcc .header-nav {
     float: right;
     /*a{
@@ -24511,10 +24514,6 @@ footer.main .footerGlobal {
     .header-lcc .logo {
       width: 150px;
       height: 15px; } }
-  @media (max-width: 361px) {
-    .header-lcc .logo {
-      width: 120px;
-      height: 12px; } }
 
 .sectionHeader .container-fluid .header-wrapper {
   height: 75px;
