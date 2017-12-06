@@ -47,13 +47,15 @@
             padding:10px 0 10px 24px;
         }
 
-        &:before{
-            font-family: "FontAwesome";
-            color:white;
-            position:absolute;
-            left:0;
-            top:10px;
-            opacity:0.5;
+        @media (max-width: 990px) {
+            &:before{
+                font-family: "FontAwesome";
+                color:white;
+                position:absolute;
+                left:0;
+                top:10px;
+                opacity:0.5;
+            }
         }
 
         &:hover{
@@ -72,9 +74,11 @@
     }
 
     .btn-account{
+        @media (max-width: 990px) {
         &:before{
             content: "\f007"; 
         }
+    }
     }
 
     a.search{
@@ -83,10 +87,11 @@
         @media (min-width: 991px) {
             margin-left:30px;
         }
-
+        @media (max-width: 990px) {
         &:before{
             content: "\f002"; 
         }
+    }
     }
 
     .search-text{

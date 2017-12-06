@@ -221,6 +221,7 @@
                             @include justify-content(center);
                             @include flex-direction(column);
                             border-bottom:2px solid darken($secondary-button-background-color,5%);
+                            color:white;
 
 
                             &:hover{

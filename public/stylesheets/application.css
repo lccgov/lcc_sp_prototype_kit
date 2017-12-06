@@ -24111,7 +24111,8 @@ footer.main .footerGlobal {
               -ms-flex-flex-direction: column;
               -webkit-flex-direction: column;
               flex-direction: column;
-              border-bottom: 2px solid #005f80; }
+              border-bottom: 2px solid #005f80;
+              color: white; }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=submit]:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=submit]:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .limitedrte-Style-BUTTON:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .col-md-8 #SearchBox .ms-srch-sb-searchLink:hover, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .ms-srch-sb-searchLink:hover {
                 background: #3399BB;
                 color: #FFFFFF;
@@ -24433,17 +24434,18 @@ footer.main .footerGlobal {
       .header-lcc .search.btn-link {
         font-size: 19px;
         padding: 10px 0 10px 24px; } }
-    .header-lcc .btn-account:before,
-    .header-lcc a.search:before,
-    .header-lcc .search.link:before,
-    .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-    .header-lcc .search.btn-link:before {
-      font-family: "FontAwesome";
-      color: white;
-      position: absolute;
-      left: 0;
-      top: 10px;
-      opacity: 0.5; }
+    @media (max-width: 990px) {
+      .header-lcc .btn-account:before,
+      .header-lcc a.search:before,
+      .header-lcc .search.link:before,
+      .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+      .header-lcc .search.btn-link:before {
+        font-family: "FontAwesome";
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        opacity: 0.5; } }
     .header-lcc .btn-account:hover,
     .header-lcc a.search:hover,
     .header-lcc .search.link:hover,
@@ -24462,15 +24464,17 @@ footer.main .footerGlobal {
     .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:focus:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
     .header-lcc .search.btn-link:focus:before {
       color: #212224; }
-  .header-lcc .btn-account:before {
-    content: "\f007"; }
+  @media (max-width: 990px) {
+    .header-lcc .btn-account:before {
+      content: "\f007"; } }
   .header-lcc a.search, .header-lcc .search.link, .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .search.btn-link {
     margin-left: 15px; }
     @media (min-width: 991px) {
       .header-lcc a.search, .header-lcc .search.link, .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .search.btn-link {
         margin-left: 30px; } }
-    .header-lcc a.search:before, .header-lcc .search.link:before, .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .search.btn-link:before {
-      content: "\f002"; }
+    @media (max-width: 990px) {
+      .header-lcc a.search:before, .header-lcc .search.link:before, .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .search.btn-link:before {
+        content: "\f002"; } }
   .header-lcc .search-text {
     display: block; }
   .header-lcc .header-nav {
