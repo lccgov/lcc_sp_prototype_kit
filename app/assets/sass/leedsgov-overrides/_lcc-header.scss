@@ -160,6 +160,14 @@ $header-height-mobile:50px;
         height:15px;
     }
 
+    &:hover{
+        opacity:0.8;
+    }
+
+    &:active{
+        opacity:0.7;
+    }
+
 }
 
 .sectionHeader {
