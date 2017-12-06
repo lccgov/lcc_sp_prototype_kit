@@ -213,6 +213,7 @@ $input-border-color:$grey;
 @import 'webchat';
 
 @import 'styleguide';
+@import 'sticky-nav';
 
 @import 'leedsgov-specific';
 @import 'leedsgov-overrides';
@@ -490,22 +491,20 @@ $back-top-hover-background:grey;
     padding: 15px 20px;
 
     &.btn-arrow{
-        padding: 15px 20px;
+        padding-right: 45px;
 
         &:before{
             display:none !important;
         }
         &:after{
-            display: inline-block;
-            position: relative;
-            right: auto;
+            right: 20px;
+            top: 50%;
             height: auto;
             background: transparent;
             padding: 0 0 0 15px;
-            top: auto;
             font-size: inherit;
             text-align: center;
-            line-height: inherit;
+            line-height: 0;
             width: auto;
         }
     }
@@ -560,4 +559,9 @@ $back-top-hover-background:grey;
             color:white;
         }
     }
+}
+
+.breadcrumb {
+    font-size: 14px;
+    line-height:1.5;
 }
