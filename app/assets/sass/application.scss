@@ -554,6 +554,11 @@ $back-top-hover-background:grey;
         background:$panel-color;
         border-bottom:0;
 
+        @media (max-width: $base-container-width){
+            margin:0 -15px;
+            padding:10px 15px;
+        }
+
         strong{
             background:$blue;
             color:white;

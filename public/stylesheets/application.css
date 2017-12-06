@@ -25413,6 +25413,10 @@ aside.col-md-4 {
     padding: 10px;
     background: #E5F1F5;
     border-bottom: 0; }
+    @media (max-width: 1280px) {
+      .phase-banner.page {
+        margin: 0 -15px;
+        padding: 10px 15px; } }
     .phase-banner.page strong {
       background: #007299;
       color: white; }
