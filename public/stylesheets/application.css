@@ -16325,6 +16325,9 @@ table.styledTable td,
 .link-small,
 .telephone .additionalInfo,
 .scopeNote,
+.eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p,
+.eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p,
+.nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link .eventsContentPod .eventsContentPodWrapper p,
 #OngoingIncidents .IncidentPanel .IncidentFooter p,
 #report-a-problem .report-a-problem-toggle,
 #rss-content .rss-article .rss-article-pubDate span,
@@ -16397,6 +16400,9 @@ table.styledTable td,
   .top.link-small,
   .telephone .top.additionalInfo,
   .top.scopeNote,
+  .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p.top,
+  .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p.top,
+  .nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link .eventsContentPod .eventsContentPodWrapper p.top,
   #OngoingIncidents .IncidentPanel .IncidentFooter p.top,
   #report-a-problem .top.report-a-problem-toggle,
   #rss-content .rss-article .rss-article-pubDate span.top,
@@ -16467,6 +16473,9 @@ table.styledTable td,
   .bottom.link-small,
   .telephone .bottom.additionalInfo,
   .bottom.scopeNote,
+  .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p.bottom,
+  .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p.bottom,
+  .nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link .eventsContentPod .eventsContentPodWrapper p.bottom,
   #OngoingIncidents .IncidentPanel .IncidentFooter p.bottom,
   #report-a-problem .bottom.report-a-problem-toggle,
   #rss-content .rss-article .rss-article-pubDate span.bottom,
@@ -16596,11 +16605,11 @@ table.styledTable td,
       font-size: 19px;
       line-height: 1.3157894737; } }
 
-.font-xsmall, .link-small, .telephone .additionalInfo, .scopeNote, #OngoingIncidents .IncidentPanel .IncidentFooter p, #report-a-problem .report-a-problem-toggle, #rss-content .rss-article .rss-article-pubDate span, #rss-content .rss-article .rss-article-description p, .form-link-option {
+.font-xsmall, .link-small, .telephone .additionalInfo, .scopeNote, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p, .nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link .eventsContentPod .eventsContentPodWrapper p, #OngoingIncidents .IncidentPanel .IncidentFooter p, #report-a-problem .report-a-problem-toggle, #rss-content .rss-article .rss-article-pubDate span, #rss-content .rss-article .rss-article-description p, .form-link-option {
   font-size: 14px;
   line-height: 1.1428571429; }
   @media (min-width: 641px) {
-    .font-xsmall, .link-small, .telephone .additionalInfo, .scopeNote, #OngoingIncidents .IncidentPanel .IncidentFooter p, #report-a-problem .report-a-problem-toggle, #rss-content .rss-article .rss-article-pubDate span, #rss-content .rss-article .rss-article-description p, .form-link-option {
+    .font-xsmall, .link-small, .telephone .additionalInfo, .scopeNote, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p, .nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link .eventsContentPod .eventsContentPodWrapper p, #OngoingIncidents .IncidentPanel .IncidentFooter p, #report-a-problem .report-a-problem-toggle, #rss-content .rss-article .rss-article-pubDate span, #rss-content .rss-article .rss-article-description p, .form-link-option {
       font-size: 16px;
       line-height: 1.25; } }
 
@@ -21195,6 +21204,44 @@ docsList
 @media (max-width: 600px) {
   .docList.two li, .docList.three li, .docList.four li, .docList.five li {
     width: 100%; } }
+
+.eventSearchResults h2 {
+  margin-top: 0; }
+
+.eventSearchResults .eventSearchResultsList .eventListOnly ul.content {
+  padding: 0; }
+  .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li {
+    margin-bottom: 5px; }
+    .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link {
+      text-decoration: none;
+      background: #F6F7FA;
+      display: inline-block;
+      width: 100%;
+      padding: 30px; }
+      .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper h3, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper h3, .nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link .eventsContentPod .eventsContentPodWrapper h3 {
+        position: relative;
+        margin: 0 0 3px;
+        color: #007299;
+        padding-right: 25px; }
+        .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper h3:after, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper h3:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link .eventsContentPod .eventsContentPodWrapper h3:after {
+          content: '\f105';
+          font-family: FontAwesome;
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: #9da5b2; }
+      .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper .dateFull .dateTime, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper .dateFull .dateTime, .nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link .eventsContentPod .eventsContentPodWrapper .dateFull .dateTime {
+        color: #212224; }
+      .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p, .nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link .eventsContentPod .eventsContentPodWrapper p {
+        margin-bottom: 0;
+        color: #666B76; }
+        .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p strong, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p strong, .nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link .eventsContentPod .eventsContentPodWrapper p strong {
+          font-weight: normal; }
+      .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a:hover .eventsContentPod .eventsContentPodWrapper h3, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link:hover .eventsContentPod .eventsContentPodWrapper h3, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover .eventsContentPod .eventsContentPodWrapper h3, .nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link:hover .eventsContentPod .eventsContentPodWrapper h3 {
+        color: #3399BB;
+        text-decoration: underline; }
+        .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a:hover .eventsContentPod .eventsContentPodWrapper h3:after, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link:hover .eventsContentPod .eventsContentPodWrapper h3:after, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover .eventsContentPod .eventsContentPodWrapper h3:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .btn-link:hover .eventsContentPod .eventsContentPodWrapper h3:after {
+          color: #3399BB; }
 
 .groupPromo .listWebpart {
   margin: 0;
