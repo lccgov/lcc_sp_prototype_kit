@@ -25208,7 +25208,7 @@ aside.col-md-4 {
   width: auto;
   position: fixed;
   bottom: 10px;
-  right: auto;
+  right: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   /* image replacement properties */
   overflow: hidden;
@@ -25226,7 +25226,11 @@ aside.col-md-4 {
   text-align: center;
   padding: 10px;
   text-decoration: none;
-  font-size: 14px; }
+  font-size: 14px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
   @media only screen and (min-width: 767px) {
     .cd-top {
       right: 20px;
@@ -25290,3 +25294,44 @@ aside.col-md-4 {
 
 .btn:visited, .form-group input[type=button]:visited, .form-group input.btn.btn-primary:visited, .form-group input[type=submit]:visited, .form-group input.limitedrte-Style-BUTTON:visited, .limitedrte-Style-BUTTON:visited, #myChatLinkContainer #myChatLink a #myChatLinkInfo:visited, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:visited, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo:visited, .col-md-8 #SearchBox .ms-srch-sb-searchLink:visited {
   color: white; }
+
+.phase-banner {
+  padding: 7px 0;
+  background: #E5F1F5; }
+  .phase-banner p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4; }
+    @media (max-width: 641px) {
+      .phase-banner p {
+        font-size: 14px;
+        position: relative;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align-items: center;
+        -moz-box-align-items: center;
+        -ms-flex-align-items: center;
+        -webkit-align-items: center;
+        align-items: center; } }
+    .phase-banner p strong {
+      background: #007299;
+      color: white;
+      padding: 1px 5px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+      margin-right: 7px; }
+      @media (max-width: 641px) {
+        .phase-banner p strong {
+          margin-right: 10px; } }
+  .phase-banner.page {
+    padding: 10px;
+    background: #E5F1F5;
+    border-bottom: 0; }
+    .phase-banner.page strong {
+      background: #007299;
+      color: white; }

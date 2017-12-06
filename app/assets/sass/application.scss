@@ -411,7 +411,7 @@ $back-top-hover-background:grey;
     width: auto;//delete when merging
     position: fixed;
     bottom: 10px;
-    right: auto;
+    right: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     /* image replacement properties */
     overflow: hidden; //delete when merging
@@ -430,6 +430,7 @@ $back-top-hover-background:grey;
     padding:10px;
     text-decoration:none;
     font-size:14px;
+    @include border-radius(4px);
 
     @media only screen and (min-width: 767px) {
         right: 20px;
@@ -512,4 +513,45 @@ $back-top-hover-background:grey;
 
 .btn:visited{
     color:white;
+}
+
+.phase-banner{
+    padding:7px 0;
+    background:$panel-color;
+
+    p{
+        margin:0;
+        font-size:16px;
+        line-height:1.4;
+
+        @media (max-width: 641px){
+            font-size:14px;
+            position:relative;
+            @include flexbox();
+            @include align-items(center);
+        }
+
+        strong{
+            background:#007299;
+            color:white;
+            padding:1px 5px;
+            @include border-radius(2px);
+            margin-right:7px;
+
+            @media (max-width: 641px){
+                margin-right:10px;
+            }
+        }
+    }
+
+    &.page{
+        padding:10px;
+        background:$panel-color;
+        border-bottom:0;
+
+        strong{
+            background:$blue;
+            color:white;
+        }
+    }
 }
