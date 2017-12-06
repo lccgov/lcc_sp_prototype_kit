@@ -56,12 +56,12 @@
         }
 
         @media (max-width: 641px) {
-            width:20px;
+            width:22px;
             text-align:center;
 
             &:before{
                 font-family: "FontAwesome";
-                font-size:20px;
+                font-size:22px;
             }
 
             &:hover{
@@ -150,12 +150,12 @@ $header-height-mobile:50px;
     height:25px;
     background-position:left top;
     background-size:100%;
-    margin:14px 0;
+    margin:12px 0;
     line-height:0;
 
     @media (max-width: 990px) {
-        width:180px;
-        height:18px;
+        width:190px;
+        height:19px;
     }
 
     &:hover{
