@@ -234,11 +234,11 @@ hr{
 //buttons
 .btn-primary{
     //border-bottom:2px solid darken($primary-button-background-color,5%);
-    box-shadow: 0px 3px 0px darken($primary-button-background-color,5%);
+    box-shadow: 0px 3px 0px darken($primary-button-background-color,10%);
 }
 .btn-secondary{
     //border-bottom:2px solid darken($secondary-button-background-color,5%);
-    box-shadow: 0px 3px 0px darken($secondary-button-background-color,5%);
+    box-shadow: 0px 3px 0px darken($secondary-button-background-color,10%);
 }
 
 //video container
@@ -484,6 +484,31 @@ $back-top-hover-background:grey;
   opacity: 1;
 }
 
+//btn overrides
+.btn{
+    padding: 15px 20px;
+
+    &.btn-arrow{
+        padding: 15px 20px;
+
+    &:before{
+        display:none !important;
+    }
+    &:after{
+        display: inline-block;
+        position: relative;
+        right: auto;
+        height: auto;
+        background: transparent;
+        padding: 0 0 0 15px;
+        top: auto;
+        font-size: inherit;
+        text-align: center;
+        line-height: inherit;
+        width: auto;
+    }
+    }
+}
 
 .btn:visited{
     color:white;

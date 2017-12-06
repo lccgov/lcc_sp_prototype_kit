@@ -1,3 +1,10 @@
+@mixin transition-all($seconds){
+    -webkit-transition: all $seconds ease;
+  -moz-transition: all $seconds ease;
+  -o-transition: all $seconds ease;
+  transition: all $seconds ease;
+}
+
 .header-lcc{
 
     /*a{
@@ -56,6 +63,9 @@
         }
 
         @media (max-width: 641px) {
+            width:30px;
+            text-align:center;
+
             &:before{
                 font-family: "FontAwesome";
                 font-size:30px;
@@ -92,6 +102,16 @@
             &:before{
                 content: "\f002"; 
             }
+
+            &.active{
+                &:before {
+                    content: "\f00d"; 
+                }
+            }
+        }
+
+        @media (min-width: 642px) {
+            display:none;
         }
     }
 
@@ -161,6 +181,8 @@ $header-height-mobile:50px;
 
             .header-content{
                 float:right;
+                @include flexbox();
+                @include align-items(center);
 
                 .header-custom{
                     display:inline-block;
@@ -275,10 +297,7 @@ $header-height-mobile:50px;
 
 
 //search
-#nav-search {
-    display:block;
-    margin: 0;
-    float:right;
+/*#nav-search {
 
     .ms-srch-sb > input{
         outline:0;
@@ -293,7 +312,7 @@ $header-height-mobile:50px;
     .ms-srch-sb-searchLink{
         margin: 0 !important;
         padding:0 15px;
-        line-height: 45px;
+        line-height: 30px;
 
         &:before{
             font-size:34px;
@@ -301,22 +320,36 @@ $header-height-mobile:50px;
             margin:0;
         }
     }
-}
+}*/
 
    #nav-search {
-        position: absolute;
-        top:50px;
-        left: 0px;
-        padding: 0 15px 15px;
-        height: auto;
-        width: 100%;
-        z-index: 10;
-        display: none;
-        margin:0;
+        background:transparent;
+        margin:0 0 0 30px;
+        display: block;
+        position:relative;
+        top:auto;
+        left:auto;
+        padding:0;
+        float:none;
+        width:auto;
         background:$brand-color !important;
 
-        @media (min-width: 991px) {
-            top:75px;
+        
+        @media (max-width: 990px) {
+            margin:0 0 0 20px;
+            padding:0;
+        }
+
+        @media (max-width: 641px) {
+            margin:0;
+            position: absolute;
+            top:50px;
+            left: 0px;
+            padding: 15px 15px 30px;
+            height: auto;
+            width: 100%;
+            z-index: 10;
+            display: none;
         }
 
         &.active{
@@ -328,31 +361,56 @@ $header-height-mobile:50px;
             max-width:$base-container-width - 30px;
             margin:0 auto;
         }
+        .ms-srch-sb{
+            input{
+                font-size:19px;
 
-        .ms-srch-sb-searchLink{
-            padding:0;
-            line-height:55px;
-            background:transparent;
-            color:$base-link-color;
-            text-align: center;
-            line-height: 1.2;
-
-            &:hover{
-                background:$button-hover-color !important;
+                @media (max-width: 990px) {
+                    height:40px !important;
+                    font-size:16px;
+                    padding-left: 10px !important;
+                }
             }
+            .ms-srch-sb-searchLink{
+                padding:0;
+                line-height:55px;
+                background:transparent;
+                color:$base-link-color;
+                text-align: center;
+                line-height: 1.2;
+                @include flexbox();
+                @include align-items(center);
+                @include justify-content(center);
 
-            &:active{
-                background:darken($button-color,8%) !important;
-                color:#fff !important;
-            }
-        
-            &:before{
-                font-family: "FontAwesome";
-                font-size:34px;
-                content: "\f002";
-                margin:0;
+                @media (max-width: 990px) {
+                    height:40px !important;
+                    width:40px !important;
+                    line-height:40px;
+                }
+
+                &:hover{
+                    background:transparent !important;
+                    color:darken($base-link-color, 5%) !important;
+                }
+
+                &:active{
+                   background:transparent !important;
+                    color:darken($base-link-color, 10%) !important;
+                }
+            
+                &:before{
+                    font-family: "FontAwesome";
+                    font-size:34px;
+                    content: "\f002";
+                    margin:0;
+
+                    @media (max-width: 990px) {
+                        font-size:24px;
+                    }
+                }
             }
         }
+        
 }
 
 .search-text{
