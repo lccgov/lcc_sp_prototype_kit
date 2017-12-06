@@ -24532,7 +24532,7 @@ footer.main .footerGlobal {
       .header-lcc .search.link,
       .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
       .header-lcc .search.btn-link {
-        width: 30px;
+        width: 20px;
         text-align: center; }
         .header-lcc .btn-account:before,
         .header-lcc a.search:before,
@@ -24540,7 +24540,7 @@ footer.main .footerGlobal {
         .header-lcc .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
         .header-lcc .search.btn-link:before {
           font-family: "FontAwesome";
-          font-size: 30px; }
+          font-size: 20px; }
         .header-lcc .btn-account:hover,
         .header-lcc a.search:hover,
         .header-lcc .search.link:hover,
@@ -24595,6 +24595,9 @@ footer.main .footerGlobal {
             }
         }*/ }
 
+.header-logo {
+  line-height: 0; }
+
 .header-nav-container .logo {
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
@@ -24603,11 +24606,12 @@ footer.main .footerGlobal {
   height: 25px;
   background-position: left top;
   background-size: 100%;
-  margin: 20px 0 15px; }
+  margin: 14px 0;
+  line-height: 0; }
   @media (max-width: 990px) {
     .header-nav-container .logo {
-      width: 150px;
-      height: 15px; } }
+      width: 180px;
+      height: 18px; } }
   .header-nav-container .logo:hover {
     opacity: 0.8; }
   .header-nav-container .logo:active {
