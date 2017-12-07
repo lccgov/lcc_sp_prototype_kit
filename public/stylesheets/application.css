@@ -16213,7 +16213,7 @@ img#tprprt-sort {
       -moz-column-count: 1;
       column-count: 1; } }
 
-.input-focus, .form-control:focus, .col-md-8 #SearchBox:focus, .col-md-8 #SearchBox .ms-srch-sbLarge input:focus, #modgov .mgFormRow input:focus, #modgov select:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input:focus {
+.input-focus, .form-control:focus, .col-md-8 #SearchBox:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input:focus, #modgov .mgFormRow input:focus, #modgov select:focus, .col-md-8 #SearchBox .ms-srch-sbLarge input:focus {
   -webkit-box-shadow: 0 0 0 4px #FFBF47;
   -moz-box-shadow: 0 0 0 4px #FFBF47;
   box-shadow: 0 0 0 4px #FFBF47; }
@@ -20937,93 +20937,6 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
     .list-atoz li h2 {
       margin: 20px 0; }
 
-.blockLinks .listWebpart {
-  background: transparent;
-  color: #555;
-  padding: 0px; }
-  .blockLinks .listWebpart h2 {
-    color: #555; }
-  .blockLinks .listWebpart a, .blockLinks .listWebpart .link, .blockLinks .listWebpart .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .blockLinks .listWebpart .btn-link {
-    background: rgba(18, 18, 18, 0);
-    color: #555; }
-    .blockLinks .listWebpart a:hover, .blockLinks .listWebpart .link:hover, .blockLinks .listWebpart .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .blockLinks .listWebpart .btn-link:hover {
-      background: transparent; }
-  .blockLinks .listWebpart h2 {
-    display: block;
-    padding-bottom: 15px; }
-  .blockLinks .listWebpart ul {
-    text-align: center; }
-    .col-lg-12 .blockLinks .listWebpart ul li {
-      width: 12.5%; }
-    .col-md-8 .blockLinks .listWebpart ul li {
-      width: 20%; }
-    .col-md-6 .blockLinks .listWebpart ul li {
-      width: 25%; }
-    .col-md-4 .blockLinks .listWebpart ul li {
-      width: 50%; }
-      .col-md-4 .blockLinks .listWebpart ul li a img, .col-md-4 .blockLinks .listWebpart ul li .link img, .nearestItem-search-features-inner a .nearestItem-showonmap-link .col-md-4 .blockLinks .listWebpart ul li .btn-link img {
-        width: 66%;
-        margin: 0 17% 15px; }
-    .blockLinks .listWebpart ul li a, .blockLinks .listWebpart ul li .link, .blockLinks .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .blockLinks .listWebpart ul li .btn-link {
-      text-align: center;
-      font-size: 1em;
-      float: left;
-      width: 100%;
-      padding: 15px;
-      cursor: pointer;
-      border: none;
-      margin: 0px; }
-      .blockLinks .listWebpart ul li a img, .blockLinks .listWebpart ul li .link img, .blockLinks .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link img, .nearestItem-search-features-inner a .nearestItem-showonmap-link .blockLinks .listWebpart ul li .btn-link img {
-        border: 0px;
-        width: 80%;
-        margin: 0 10% 15px; }
-      .blockLinks .listWebpart ul li a:hover, .blockLinks .listWebpart ul li .link:hover, .blockLinks .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .blockLinks .listWebpart ul li .btn-link:hover {
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        background: rgba(0, 0, 0, 0.1); }
-    @media only screen and (max-width: 991px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 16.66%; }
-        .col-lg-12 .blockLinks .listWebpart ul li a img, .col-lg-12 .blockLinks .listWebpart ul li .link img, .nearestItem-search-features-inner a .nearestItem-showonmap-link .col-lg-12 .blockLinks .listWebpart ul li .btn-link img, .col-md-8 .blockLinks .listWebpart ul li a img, .col-md-8 .blockLinks .listWebpart ul li .link img, .nearestItem-search-features-inner a .nearestItem-showonmap-link .col-md-8 .blockLinks .listWebpart ul li .btn-link img, .col-md-6 .blockLinks .listWebpart ul li a img, .col-md-6 .blockLinks .listWebpart ul li .link img, .nearestItem-search-features-inner a .nearestItem-showonmap-link .col-md-6 .blockLinks .listWebpart ul li .btn-link img, .col-md-4 .blockLinks .listWebpart ul li a img, .col-md-4 .blockLinks .listWebpart ul li .link img, .nearestItem-search-features-inner a .nearestItem-showonmap-link .col-md-4 .blockLinks .listWebpart ul li .btn-link img {
-          width: 100%;
-          margin: 0 0 15px 0; } }
-    @media only screen and (max-width: 768px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 25%; } }
-    @media only screen and (max-width: 600px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 33.333%; } }
-    @media only screen and (max-width: 420px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 50%; } }
-
-/*BLOCK LINK END*/
-blockquote {
-  padding: 30px 60px 30px 80px;
-  position: relative;
-  border-left: 10px solid #bbcada;
-  margin: 30px 0; }
-  blockquote p {
-    margin: 0;
-    font-size: 1.250em !important; }
-  blockquote span {
-    position: absolute;
-    width: 26px;
-    height: 21px;
-    display: block;
-    top: 25px;
-    left: 20px; }
-    blockquote span.open-quote:after {
-      content: '\f10d';
-      font-family: FontAwesome;
-      font-size: 40px;
-      color: #333; }
-  blockquote footer {
-    padding: 10px 0;
-    background: transparent;
-    font-size: 1em;
-    color: #000; }
-
 .description-list {
   margin: 10px 0 30px; }
   .description-list .description-list__item {
@@ -21672,6 +21585,332 @@ blockquote {
     content: "\f0e1";
     left: 35%; }
 
+.hero-lcc-wrapper {
+  background-image: none;
+  background-color: #093b51;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -2; }
+  @media (min-width: 767px) {
+    .hero-lcc-wrapper {
+      height: 75vh; } }
+  .hero-lcc-wrapper .hero-lcc {
+    background: rgba(9, 59, 81, 0.5);
+    background: -webkit-radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
+    /* For Firefox 3.6 to 15 */
+    background: radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
+    /* Standard syntax */
+    z-index: -1;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-justify-content: center;
+    -moz-box-justify-content: center;
+    -ms-flex-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align-items: center;
+    -moz-box-align-items: center;
+    -ms-flex-align-items: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    @media (max-width: 767px) {
+      .hero-lcc-wrapper .hero-lcc {
+        padding: 80px 0;
+        background: rgba(9, 59, 81, 0.7);
+        background: -webkit-radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
+        /* For Safari 5.1 to 6.0 */
+        background: -o-radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
+        /* For Firefox 3.6 to 15 */
+        background: radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
+        /* Standard syntax */ } }
+    .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
+      max-width: 900px;
+      width: 100%;
+      padding: 15px; }
+      @media (max-width: 500px) {
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
+          padding: 0px 15px; } }
+      .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro {
+        text-align: center;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); }
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
+          color: #fff;
+          margin: 0 0 7px;
+          font-size: 52px; }
+          @media (max-width: 500px) {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
+              font-size: 36px;
+              margin: 0 0 5px; } }
+          @media (max-width: 330px) {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
+              font-size: 28px; } }
+          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header span {
+            display: block;
+            font-size: 24px;
+            font-weight: 400;
+            margin: 0 0 7px; }
+            @media (max-width: 500px) {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header span {
+                font-size: 19px;
+                margin: 0 0 5px; } }
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
+          margin: 0 0 20px;
+          color: #fff;
+          font-size: 24px;
+          font-weight: 400; }
+          @media (max-width: 500px) {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
+              font-size: 19px; } }
+      .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
+        background: rgba(38, 50, 56, 0.25);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        padding: 10px; }
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper {
+          margin: 0 0 10px; }
+          @media (max-width: 767px) {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper {
+              margin: 0 0 5px; } }
+          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search {
+            position: relative; }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search:before {
+              font-family: FontAwesome;
+              content: "\f002";
+              position: absolute;
+              left: 15px;
+              top: 50%;
+              margin-top: -17px;
+              font-size: 30px;
+              line-height: 1;
+              color: #666B76;
+              z-index: 4; }
+              @media (max-width: 766px) {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search:before {
+                  display: none; } }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
+              height: 45px;
+              -webkit-border-radius: 4px 0 0 4px;
+              -moz-border-radius: 4px 0 0 4px;
+              -ms-border-radius: 4px 0 0 4px;
+              border-radius: 4px 0 0 4px;
+              font-size: 16px;
+              width: 100% !important;
+              border: 0 !important;
+              padding: 6px 12px !important; }
+              @media (min-width: 767px) {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
+                  padding-left: 60px !important;
+                  font-size: 20px !important;
+                  height: 55px; } }
+              @media (max-width: 350px) {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
+                  font-size: 14px; } }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink {
+              height: 55px;
+              border: 0;
+              padding: 10px 25px;
+              background: #008000;
+              font-size: 21px;
+              margin: 0;
+              color: white; }
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button]:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button]:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit]:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit]:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink:hover, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink:hover {
+                background: #009a00;
+                color: #FFFFFF; }
+              @media (max-width: 766px) {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink {
+                  width: 45px;
+                  height: 45px; } }
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink:after, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink:after {
+                display: none; }
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit] i, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit] i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo i, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo i, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo i, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink i, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink i {
+                font-size: 26px; }
+                @media (min-width: 767px) {
+                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit] i, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit] i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo i, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo i, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo i, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink i, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink i {
+                    display: none; } }
+              @media (max-width: 766px) {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink {
+                  padding: 5px 10px; }
+                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] span, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit] span, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit] span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo span, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo span, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo span, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink span, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink span {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    margin: -1px;
+                    overflow: hidden;
+                    clip: rect(0, 0, 0, 0);
+                    border: 0; } }
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular {
+          padding: 0;
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-flex-wrap: wrap;
+          -moz-box-flex-wrap: wrap;
+          -ms-flex-flex-wrap: wrap;
+          -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+          margin: 0 0 0 -10px; }
+          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular.two .hero-lcc__most-popular-item {
+            width: 50% !important; }
+            @media (max-width: 767px) {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular.two .hero-lcc__most-popular-item {
+                width: 100% !important; } }
+          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-flex: 1 1 auto;
+            -moz-box-flex: 1 1 auto;
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            -webkit-box-align-items: stretch;
+            -moz-box-align-items: stretch;
+            -ms-flex-align-items: stretch;
+            -webkit-align-items: stretch;
+            align-items: stretch;
+            -webkit-box-align-content: space-between;
+            -moz-box-align-content: space-between;
+            -ms-flex-align-content: space-between;
+            -webkit-align-content: space-between;
+            align-content: space-between;
+            width: 33.33% !important;
+            padding-left: 10px;
+            padding-bottom: 10px; }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link {
+              width: 100%;
+              text-align: left;
+              margin: 0;
+              font-size: 16px;
+              padding: 12px 50px 12px 12px !important;
+              font-weight: 400;
+              background: #007299;
+              border: 0;
+              margin: 0;
+              line-height: 1.3;
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-box-justify-content: center;
+              -moz-box-justify-content: center;
+              -ms-flex-justify-content: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+              -webkit-box-flex-direction: column;
+              -moz-box-flex-direction: column;
+              -ms-flex-flex-direction: column;
+              -webkit-flex-direction: column;
+              flex-direction: column;
+              color: white;
+              box-shadow: 0px 3px 0px #00394d;
+              min-height: 45px; }
+              @media (min-width: 767px) {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link {
+                  min-height: 55px;
+                  padding: 15px 50px 15px 15px !important; } }
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:hover {
+                background: #00394d;
+                color: white; }
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:active, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:active {
+                border: 0;
+                box-shadow: 0px 3px 0px #FFBF47;
+                background: #FFBF47;
+                color: #212224; }
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:focus:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:focus:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:focus:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:active:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:active:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:active:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:active:before {
+                  background: #FFBF47; }
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:after {
+                display: block;
+                font-family: FontAwesome;
+                content: "\f105";
+                position: absolute;
+                right: 0px;
+                height: auto;
+                background: transparent;
+                padding: 0;
+                top: 50%;
+                font-size: 22px;
+                content: "\f105";
+                padding: 0;
+                text-align: center;
+                line-height: 0;
+                width: 36px;
+                font-size: 22px;
+                width: 55px; }
+                @media (max-width: 767px) {
+                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:after {
+                    width: 45px; } }
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:after {
+                z-index: 5; }
+              @media (min-width: 767px) {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link {
+                  font-size: 19px;
+                  padding: 17px 70px 17px 15px; } }
+        @media (max-width: 767px) {
+          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
+            padding: 5px 5px 0px; }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular {
+              margin: 0; }
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
+                width: 100% !important;
+                padding-left: 0;
+                padding-bottom: 5px; } }
+
+.no-flexbox .hero-lcc-wrapper .hero-lcc {
+  display: table;
+  width: 100%;
+  background: rgba(9, 59, 81, 0.7); }
+  .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 15em; }
+    @media (max-width: 1400px) {
+      .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
+        padding: 0 10em; } }
+    @media (max-width: 1200px) {
+      .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
+        padding: 0 5em; } }
+    @media (max-width: 990px) {
+      .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
+        padding: 0; } }
+    .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular {
+      width: 100%;
+      display: table; }
+      .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
+        display: table-cell; }
+        @media (max-width: 767px) {
+          .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
+            display: block; } }
+
+.ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
+  padding: 80px 15em; }
+  .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
+    height: 55px; }
+  .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit] i, .form-group .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit] i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo i, #myChatLinkContainer #myChatLink a .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo i, #myChatLinkContainer #myChatLink .link .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo i, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink i, .col-md-8 #SearchBox .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink i {
+    display: none; }
+
 .mega-promo {
   display: -webkit-box;
   display: -moz-box;
@@ -22099,103 +22338,6 @@ blockquote {
           margin-right: 10px; } }
   .phase-banner.page {
     padding: 10px; }
-
-.promo {
-  background-size: cover !important;
-  padding: 0;
-  margin-bottom: 1.875em;
-  position: relative;
-  width: 100%;
-  overflow: hidden; }
-  .promo a, .promo .link, .promo .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .promo .btn-link {
-    display: block;
-    min-height: 270px; }
-    .promo a span.image, .promo .link span.image, .promo .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link span.image, .nearestItem-search-features-inner a .nearestItem-showonmap-link .promo .btn-link span.image {
-      height: 100%;
-      width: 100%;
-      bottom: 0px;
-      transition: transform 1s;
-      background-size: cover !important; }
-      .promo a span.image:hover, .promo .link span.image:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .promo .btn-link span.image:hover {
-        transform: scale(1.1); }
-      .promo a span.image:after, .promo .link span.image:after, .promo .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link span.image:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .promo .btn-link span.image:after {
-        display: none; }
-    .promo a span, .promo .link span, .promo .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link span, .nearestItem-search-features-inner a .nearestItem-showonmap-link .promo .btn-link span {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 15px;
-      color: #fff;
-      border-radius: 0 0px 0px 0;
-      bottom: 0px;
-      color: #fff;
-      left: 0;
-      position: absolute;
-      width: 100%;
-      transition: all 0.5s ease; }
-      .promo a span:after, .promo .link span:after, .promo .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link span:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .promo .btn-link span:after {
-        content: '\f105';
-        font-family: FontAwesome;
-        position: absolute;
-        font-weight: normal;
-        bottom: 17px;
-        right: 0px;
-        height: 25px;
-        width: 25px;
-        display: block;
-        color: #fff;
-        font-size: 22px;
-        transition: all 0.5s ease; }
-    .promo a:hover span, .promo .link:hover span, .promo .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover span, .nearestItem-search-features-inner a .nearestItem-showonmap-link .promo .btn-link:hover span {
-      width: 100%;
-      padding: 15px 15px 40px 15px; }
-
-.two .listWebpart ul .promo {
-  width: 48% !important; }
-
-.three .listWebpart ul .promo {
-  width: 31.33% !important; }
-
-.four .listWebpart ul .promo {
-  width: 23% !important; }
-
-.two .listWebpart ul,
-.three .listWebpart ul,
-.four .listWebpart ul {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -moz-box-flex-wrap: wrap;
-  -ms-flex-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 0 0 -2%; }
-  @media (max-width: 600px) {
-    .two .listWebpart ul,
-    .three .listWebpart ul,
-    .four .listWebpart ul {
-      margin: 0; } }
-  .two .listWebpart ul .promo,
-  .three .listWebpart ul .promo,
-  .four .listWebpart ul .promo {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align-items: stretch;
-    -moz-box-align-items: stretch;
-    -ms-flex-align-items: stretch;
-    -webkit-align-items: stretch;
-    align-items: stretch;
-    margin: 0 0 2% 2%; }
-    @media (max-width: 600px) {
-      .two .listWebpart ul .promo,
-      .three .listWebpart ul .promo,
-      .four .listWebpart ul .promo {
-        margin: 0 0 15px;
-        width: 100% !important; } }
 
 /**********************
 Sharepoint overides
@@ -23011,36 +23153,6 @@ pre {
   .masterhead.lcc {
     display: block; }
 
-/*.header-left{
-  padding:0 !important;
-}
-.logo {
-    height: auto;
-    width: auto;
-    background: none;
-    display:inline-block;
-    margin:9px 0;
-    text-decoration:none;
-    border:0;
-    font-family:$font-secondary;
-    font-weight:600;
-
-    &:after{
-        content:'LCC DIGITAL';
-        font-size:36px;
-        text-transform:uppercase;
-        font-weight:700;
-        color: #fff;
-
-        @media (max-width: 767px) {
-              font-size:26px;
-          }
-    }
-
-    &:hover{
-      color:$border-color;
-    }
-}*/
 .header-left {
   line-height: 0;
   padding: 10px 0; }
@@ -23293,6 +23405,109 @@ hr {
 
 .list-contents li {
   margin-bottom: 10px; }
+
+#modgov .mgTabs ul li a, #modgov .mgTabs ul li .link, #modgov .mgTabs ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #modgov .mgTabs ul li .btn-link {
+  width: auto;
+  padding: 5px 15px; }
+
+#modgov .mgCalendarCell, .mgCalendarCellToday {
+  font-size: 14px !important; }
+
+#modgov h2.mgSectionTitle {
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 50px;
+  line-height: 1.25;
+  margin-bottom: .7em;
+  font-size: 32px;
+  line-height: 1.25;
+  margin-top: 50px;
+  margin-bottom: .7em;
+  color: #212224;
+  background-color: transparent; }
+
+#modgov .mgFormRow {
+  display: inline-block;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 30px; }
+
+#modgov .mgFormRow label, #modgov .mgContent label {
+  display: block;
+  font-weight: normal;
+  font-size: 19px;
+  width: 100%; }
+  @media (min-width: 641px) {
+    #modgov .mgFormRow label, #modgov .mgContent label {
+      font-size: 21px; } }
+
+#modgov .mgFormRow input, #modgov select {
+  max-width: 40em;
+  height: 45px;
+  color: #212224 !important;
+  background-color: #fff !important;
+  background-image: none;
+  border: 1px solid #9DA5B2 !important;
+  box-shadow: none;
+  font-size: 16px;
+  padding: 5px !important;
+  background: white !important;
+  font-family: "Open Sans", sans-serif !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+  @media (min-width: 641px) {
+    #modgov .mgFormRow input, #modgov select {
+      width: 50% !important;
+      font-size: 19px; } }
+  #modgov .mgFormRow input:focus, #modgov select:focus {
+    outline: 0; }
+
+#modgov input.mgGoButton, #modgov input.mgSubmitButton, #modgov input#butGo {
+  font-weight: 400;
+  font-size: 19px;
+  border: 0;
+  border-radius: 4px;
+  white-space: normal;
+  box-shadow: none;
+  margin: 0;
+  text-decoration: none !important;
+  padding: 12px 15px !important;
+  text-align: left;
+  line-height: 1.3em;
+  background-color: #008000 !important;
+  color: #FFFFFF !important;
+  border-color: #008000 !important;
+  min-width: auto;
+  height: auto;
+  box-shadow: 0 3px 0 #006700;
+  width: auto !important; }
+  #modgov input.mgGoButton:hover, #modgov input.mgSubmitButton:hover, #modgov input#butGo:hover {
+    background-color: #006700 !important; }
+
+#modgov a.mgTabUnSelectTitleLnk, #modgov .mgTabUnSelectTitleLnk.link, #modgov .nearestItem-search-features-inner a .nearestItem-showonmap-link .mgTabUnSelectTitleLnk.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #modgov .mgTabUnSelectTitleLnk.btn-link, #modgov a.mgTabUnSelectTitleLnk:hover, #modgov .mgTabUnSelectTitleLnk.link:hover, #modgov .nearestItem-search-features-inner a .nearestItem-showonmap-link .mgTabUnSelectTitleLnk.btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link #modgov .mgTabUnSelectTitleLnk.btn-link:hover {
+  background: transparent; }
+
+#modgov caption.mgSectionTitle, #modgov a.mgTabSelectTitleLnk, #modgov .mgTabSelectTitleLnk.link, #modgov .nearestItem-search-features-inner a .nearestItem-showonmap-link .mgTabSelectTitleLnk.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #modgov .mgTabSelectTitleLnk.btn-link, #modgov a.mgTabSelectTitleLnk:hover, #modgov .mgTabSelectTitleLnk.link:hover, #modgov .nearestItem-search-features-inner a .nearestItem-showonmap-link .mgTabSelectTitleLnk.btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link #modgov .mgTabSelectTitleLnk.btn-link:hover, #modgov div.mgTableTitleTxt, #modgov p.mgSectionTitle {
+  background: #007299; }
+
+#modgov li.mgTableOddRow, #modgov li.mgTableEvenRow {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background: none;
+  background-color: transparent;
+  margin: 0 !important;
+  list-style-type: none;
+  border-bottom: 1px solid #dcdee1; }
+
+#anchorSurveyCompletedText {
+  padding: 20px;
+  background: rgba(0, 128, 0, 0.1);
+  font-weight: 500; }
 
 #OngoingIncidents .IncidentPanel {
   border: 4px solid #9DA5B2;
@@ -24290,435 +24505,6 @@ footer.main .footerGlobal {
   font-weight: 700;
   margin: -15px 0 10px;
   display: block; }
-
-#modgov .mgTabs ul li a, #modgov .mgTabs ul li .link, #modgov .mgTabs ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #modgov .mgTabs ul li .btn-link {
-  width: auto;
-  padding: 5px 15px; }
-
-#modgov .mgCalendarCell, .mgCalendarCellToday {
-  font-size: 14px !important; }
-
-#modgov h2.mgSectionTitle {
-  padding: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 50px;
-  line-height: 1.25;
-  margin-bottom: .7em;
-  font-size: 32px;
-  line-height: 1.25;
-  margin-top: 50px;
-  margin-bottom: .7em;
-  color: #212224;
-  background-color: transparent; }
-
-#modgov .mgFormRow {
-  display: inline-block;
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 30px; }
-
-#modgov .mgFormRow label, #modgov .mgContent label {
-  display: block;
-  font-weight: normal;
-  font-size: 19px;
-  width: 100%; }
-  @media (min-width: 641px) {
-    #modgov .mgFormRow label, #modgov .mgContent label {
-      font-size: 21px; } }
-
-#modgov .mgFormRow input, #modgov select {
-  max-width: 40em;
-  height: 45px;
-  color: #212224 !important;
-  background-color: #fff !important;
-  background-image: none;
-  border: 1px solid #9DA5B2 !important;
-  box-shadow: none;
-  font-size: 16px;
-  padding: 5px !important;
-  background: white !important;
-  font-family: "Open Sans", sans-serif !important;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px; }
-  @media (min-width: 641px) {
-    #modgov .mgFormRow input, #modgov select {
-      width: 50% !important;
-      font-size: 19px; } }
-  #modgov .mgFormRow input:focus, #modgov select:focus {
-    outline: 0; }
-
-#modgov input.mgGoButton, #modgov input.mgSubmitButton, #modgov input#butGo {
-  font-weight: 400;
-  font-size: 19px;
-  border: 0;
-  border-radius: 4px;
-  white-space: normal;
-  box-shadow: none;
-  margin: 0;
-  text-decoration: none !important;
-  padding: 12px 15px !important;
-  text-align: left;
-  line-height: 1.3em;
-  background-color: #008000 !important;
-  color: #FFFFFF !important;
-  border-color: #008000 !important;
-  min-width: auto;
-  height: auto;
-  box-shadow: 0 3px 0 #006700;
-  width: auto !important; }
-  #modgov input.mgGoButton:hover, #modgov input.mgSubmitButton:hover, #modgov input#butGo:hover {
-    background-color: #006700 !important; }
-
-#modgov a.mgTabUnSelectTitleLnk, #modgov .mgTabUnSelectTitleLnk.link, #modgov .nearestItem-search-features-inner a .nearestItem-showonmap-link .mgTabUnSelectTitleLnk.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #modgov .mgTabUnSelectTitleLnk.btn-link, #modgov a.mgTabUnSelectTitleLnk:hover, #modgov .mgTabUnSelectTitleLnk.link:hover, #modgov .nearestItem-search-features-inner a .nearestItem-showonmap-link .mgTabUnSelectTitleLnk.btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link #modgov .mgTabUnSelectTitleLnk.btn-link:hover {
-  background: transparent; }
-
-#modgov caption.mgSectionTitle, #modgov a.mgTabSelectTitleLnk, #modgov .mgTabSelectTitleLnk.link, #modgov .nearestItem-search-features-inner a .nearestItem-showonmap-link .mgTabSelectTitleLnk.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #modgov .mgTabSelectTitleLnk.btn-link, #modgov a.mgTabSelectTitleLnk:hover, #modgov .mgTabSelectTitleLnk.link:hover, #modgov .nearestItem-search-features-inner a .nearestItem-showonmap-link .mgTabSelectTitleLnk.btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link #modgov .mgTabSelectTitleLnk.btn-link:hover, #modgov div.mgTableTitleTxt, #modgov p.mgSectionTitle {
-  background: #007299; }
-
-#modgov li.mgTableOddRow, #modgov li.mgTableEvenRow {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  background: none;
-  background-color: transparent;
-  margin: 0 !important;
-  list-style-type: none;
-  border-bottom: 1px solid #dcdee1; }
-
-#anchorSurveyCompletedText {
-  padding: 20px;
-  background: rgba(0, 128, 0, 0.1);
-  font-weight: 500; }
-
-.hero-lcc-wrapper {
-  background-image: none;
-  background-color: #093b51;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: -2; }
-  @media (min-width: 767px) {
-    .hero-lcc-wrapper {
-      height: 75vh; } }
-  .hero-lcc-wrapper .hero-lcc {
-    background: rgba(9, 59, 81, 0.5);
-    background: -webkit-radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
-    /* For Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
-    /* For Firefox 3.6 to 15 */
-    background: radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
-    /* Standard syntax */
-    z-index: -1;
-    height: 100%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-justify-content: center;
-    -moz-box-justify-content: center;
-    -ms-flex-justify-content: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align-items: center;
-    -moz-box-align-items: center;
-    -ms-flex-align-items: center;
-    -webkit-align-items: center;
-    align-items: center; }
-    @media (max-width: 767px) {
-      .hero-lcc-wrapper .hero-lcc {
-        padding: 80px 0;
-        background: rgba(9, 59, 81, 0.7);
-        background: -webkit-radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
-        /* For Safari 5.1 to 6.0 */
-        background: -o-radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
-        /* For Opera 11.1 to 12.0 */
-        background: -moz-radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
-        /* For Firefox 3.6 to 15 */
-        background: radial-gradient(rgba(9, 59, 81, 0.9), rgba(9, 59, 81, 0.5));
-        /* Standard syntax */ } }
-    .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
-      max-width: 900px;
-      width: 100%;
-      padding: 15px; }
-      @media (max-width: 500px) {
-        .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
-          padding: 0px 15px; } }
-      .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro {
-        text-align: center;
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); }
-        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
-          color: #fff;
-          margin: 0 0 7px;
-          font-size: 52px; }
-          @media (max-width: 500px) {
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
-              font-size: 36px;
-              margin: 0 0 5px; } }
-          @media (max-width: 330px) {
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
-              font-size: 28px; } }
-          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header span {
-            display: block;
-            font-size: 24px;
-            font-weight: 400;
-            margin: 0 0 7px; }
-            @media (max-width: 500px) {
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header span {
-                font-size: 19px;
-                margin: 0 0 5px; } }
-        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
-          margin: 0 0 20px;
-          color: #fff;
-          font-size: 24px;
-          font-weight: 400; }
-          @media (max-width: 500px) {
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
-              font-size: 19px; } }
-      .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
-        background: rgba(38, 50, 56, 0.25);
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        border-radius: 4px;
-        padding: 10px; }
-        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper {
-          margin: 0 0 10px; }
-          @media (max-width: 767px) {
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper {
-              margin: 0 0 5px; } }
-          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search {
-            position: relative; }
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search:before {
-              font-family: FontAwesome;
-              content: "\f002";
-              position: absolute;
-              left: 15px;
-              top: 50%;
-              margin-top: -17px;
-              font-size: 30px;
-              line-height: 1;
-              color: #666B76;
-              z-index: 4; }
-              @media (max-width: 766px) {
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search:before {
-                  display: none; } }
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
-              height: 45px;
-              -webkit-border-radius: 4px 0 0 4px;
-              -moz-border-radius: 4px 0 0 4px;
-              -ms-border-radius: 4px 0 0 4px;
-              border-radius: 4px 0 0 4px;
-              font-size: 16px;
-              width: 100% !important;
-              border: 0 !important;
-              padding: 6px 12px !important; }
-              @media (min-width: 767px) {
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
-                  padding-left: 60px !important;
-                  font-size: 20px !important;
-                  height: 55px; } }
-              @media (max-width: 350px) {
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
-                  font-size: 14px; } }
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink {
-              height: 55px;
-              border: 0;
-              padding: 10px 25px;
-              background: #008000;
-              font-size: 21px;
-              margin: 0;
-              color: white; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button]:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button]:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit]:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit]:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink:hover, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink:hover {
-                background: #009a00;
-                color: #FFFFFF; }
-              @media (max-width: 766px) {
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink {
-                  width: 45px;
-                  height: 45px; } }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink:after, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink:after {
-                display: none; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit] i, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit] i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo i, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo i, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo i, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink i, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink i {
-                font-size: 26px; }
-                @media (min-width: 767px) {
-                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit] i, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit] i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo i, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo i, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo i, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink i, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink i {
-                    display: none; } }
-              @media (max-width: 766px) {
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink {
-                  padding: 5px 10px; }
-                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] span, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit] span, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit] span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo span, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo span, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo span, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink span, .col-md-8 #SearchBox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink span {
-                    position: absolute;
-                    width: 1px;
-                    height: 1px;
-                    padding: 0;
-                    margin: -1px;
-                    overflow: hidden;
-                    clip: rect(0, 0, 0, 0);
-                    border: 0; } }
-        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular {
-          padding: 0;
-          display: -webkit-box;
-          display: -moz-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-box-flex-wrap: wrap;
-          -moz-box-flex-wrap: wrap;
-          -ms-flex-flex-wrap: wrap;
-          -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
-          margin: 0 0 0 -10px; }
-          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular.two .hero-lcc__most-popular-item {
-            width: 50% !important; }
-            @media (max-width: 767px) {
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular.two .hero-lcc__most-popular-item {
-                width: 100% !important; } }
-          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-flex: 1 1 auto;
-            -moz-box-flex: 1 1 auto;
-            -webkit-flex: 1 1 auto;
-            -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-            -webkit-box-align-items: stretch;
-            -moz-box-align-items: stretch;
-            -ms-flex-align-items: stretch;
-            -webkit-align-items: stretch;
-            align-items: stretch;
-            -webkit-box-align-content: space-between;
-            -moz-box-align-content: space-between;
-            -ms-flex-align-content: space-between;
-            -webkit-align-content: space-between;
-            align-content: space-between;
-            width: 33.33% !important;
-            padding-left: 10px;
-            padding-bottom: 10px; }
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link {
-              width: 100%;
-              text-align: left;
-              margin: 0;
-              font-size: 16px;
-              padding: 12px 50px 12px 12px !important;
-              font-weight: 400;
-              background: #007299;
-              border: 0;
-              margin: 0;
-              line-height: 1.3;
-              display: -webkit-box;
-              display: -moz-box;
-              display: -ms-flexbox;
-              display: -webkit-flex;
-              display: flex;
-              -webkit-box-justify-content: center;
-              -moz-box-justify-content: center;
-              -ms-flex-justify-content: center;
-              -webkit-justify-content: center;
-              justify-content: center;
-              -webkit-box-flex-direction: column;
-              -moz-box-flex-direction: column;
-              -ms-flex-flex-direction: column;
-              -webkit-flex-direction: column;
-              flex-direction: column;
-              color: white;
-              box-shadow: 0px 3px 0px #00394d;
-              min-height: 45px; }
-              @media (min-width: 767px) {
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link {
-                  min-height: 55px;
-                  padding: 15px 50px 15px 15px !important; } }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:hover {
-                background: #00394d;
-                color: white; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:active, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:active {
-                border: 0;
-                box-shadow: 0px 3px 0px #FFBF47;
-                background: #FFBF47;
-                color: #212224; }
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:focus:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:focus:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:focus:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:active:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:active:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:active:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:active:before {
-                  background: #FFBF47; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:after {
-                display: block;
-                font-family: FontAwesome;
-                content: "\f105";
-                position: absolute;
-                right: 0px;
-                height: auto;
-                background: transparent;
-                padding: 0;
-                top: 50%;
-                font-size: 22px;
-                content: "\f105";
-                padding: 0;
-                text-align: center;
-                line-height: 0;
-                width: 36px;
-                font-size: 22px;
-                width: 55px; }
-                @media (max-width: 767px) {
-                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:after {
-                    width: 45px; } }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link:after {
-                z-index: 5; }
-              @media (min-width: 767px) {
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .link, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn-link {
-                  font-size: 19px;
-                  padding: 17px 70px 17px 15px; } }
-        @media (max-width: 767px) {
-          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
-            padding: 5px 5px 0px; }
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular {
-              margin: 0; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
-                width: 100% !important;
-                padding-left: 0;
-                padding-bottom: 5px; } }
-
-.no-flexbox .hero-lcc-wrapper .hero-lcc {
-  display: table;
-  width: 100%;
-  background: rgba(9, 59, 81, 0.7); }
-  .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
-    margin: 0 auto;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0 15em; }
-    @media (max-width: 1400px) {
-      .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
-        padding: 0 10em; } }
-    @media (max-width: 1200px) {
-      .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
-        padding: 0 5em; } }
-    @media (max-width: 990px) {
-      .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
-        padding: 0; } }
-    .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular {
-      width: 100%;
-      display: table; }
-      .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
-        display: table-cell; }
-        @media (max-width: 767px) {
-          .no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
-            display: block; } }
-
-.ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
-  padding: 80px 15em; }
-  .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
-    height: 55px; }
-  .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit] i, .form-group .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit] i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo i, #myChatLinkContainer #myChatLink a .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo i, #myChatLinkContainer #myChatLink .link .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo i, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink i, .col-md-8 #SearchBox .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink i {
-    display: none; }
 
 .sectionHeader .container-fluid .header-wrapper {
   height: 75px;

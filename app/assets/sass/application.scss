@@ -59,8 +59,7 @@ $panel-color-secondary:#DCDEE1;
 //$search-link-background:#F3F3F4 ;
 //$search-link:#333 ;
 // mainNav.scss
-$main-nav-background:lighten( $brand-color,
-3%);
+$main-nav-background:lighten( $brand-color,3%);
 //$main-nav-link:#fff ;
 //footer.scss
 //$footer-font-color:#fff ;
@@ -160,32 +159,35 @@ $input-border-color:$grey;
 //$phase-banner-stage-background:#007299 !default;
 //$phase-banner-stage-color:white !default;
 
+
+//- FRONT END TOOLKIT
 @import 'url-helper';
 @import 'base';
 @import 'brand-colors';
 @import '2010-typography-overrides';
 @import 'accordion';
 @import 'a-to-z';
-@import 'block-links';
-@import 'block-quote';
+//@import 'block-links'; //subsite only
+//@import 'block-quote'; //subsite only
 //@import 'carousel';
 //@import 'content-assets'; //subsite only
 //@import 'content-link'; //subsite only
 @import 'description-list';
-@import 'doc-list'; //needs aligning with lcc_doc-list and a.doc within typography - DH
+@import 'doc-list';
 @import 'events-search-results';
 //@import 'events-webparts';
 @import 'group-promo';
 //@import 'hero-banner';
 //@import 'hero-banner-overlay'; //needs aligning with hero-bnner - RM
 @import 'icon-links';
+@import 'lcc-hero';
 @import 'mega-promo';
-//@import 'news';
+//@import 'news'; //subsites only
 @import 'open-data'; //is it leeds.gov.uk specific? - does it need re-naming- DH
 @import 'journey-page';
-@import 'phase-banner'; //work needed to have in page beta banner
+@import 'phase-banner';
 //@import 'polaroids'; //subsite only
-@import 'promo';
+//@import 'promo'; //subsites only
 //@import 'promo-list-webpart'; //subsite only
 //@import 'section-subsite'; //subsite only
 @import 'sharepoint-overrides';
@@ -193,14 +195,17 @@ $input-border-color:$grey;
 //@import 'side-navigation'; //needs aligning with side-nav - DH & RM
 @import 'sub-section-nav';
 @import 'webchat';
+
+//-PROJECT SPECIFIC
 @import 'styleguide';//not needed for live site
 @import 'sticky-nav';//not currently needed for live site
+@import 'modern-gov'; //not needed for live site
+
 @import 'leedsgov-specific';
 @import 'leedsgov-overrides';
-@import 'where-i-live';
-@import 'modern-gov'; //not needed for live site
-@import 'lcc-hero';
-@import 'lcc-header';
+@import 'where-i-live'; //needs fine tuning and adding to toolkit - DH
+
+@import 'lcc-header'; //a part of the toolkit but needs to be at end
 
 //site background
 html {
