@@ -66,36 +66,6 @@
     margin: 10px;
 }
 
-@media (max-width: 767px) {
-    #nav-search {
-        position: absolute;
-        top: 62px;
-        left: 0px;
-        background: #bdc3c7;
-        padding: 20px;
-        margin: 0px;
-        height: auto;
-        width: 100%;
-        z-index: 10;
-        display: none;
-        &.active {
-            display: block;
-        }
-        .input-group {
-            margin: 0 !important;
-            width: 100%;
-        }
-        .ms-srch-sb>input {
-            min-width: 100% !important;
-            margin: 0px !important;
-        }
-        .ms-srch-sb > .ms-srch-sb-searchLink {
-            height: 100%;
-            min-height: 100%;
-        }
-    }
-}
-
 #s4-bodyContainer {
     padding-bottom: 0px !important;
 }

@@ -21072,9 +21072,6 @@ blockquote {
       .description-list .description-list__item .description-list__item-content .text-highlight, .description-list .description-list__item .description-list__item-content .text-block {
         margin: 10px 0; }
 
-/*********************
-docsList
-**********************/
 .docList a, .docList .link, .docList .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .btn-link {
   display: block;
   text-align: left;
@@ -21082,7 +21079,7 @@ docsList
   height: 100%;
   padding-top: 45px;
   font-weight: bold;
-  border: 1px solid #ddd;
+  border: 1px solid #DCDEE1;
   text-decoration: none !important; }
   .docList a:hover, .docList .link:hover, .docList .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .btn-link:hover, .docList a:focus, .docList .link:focus, .docList .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .btn-link:focus {
     background: #F6F7FA;
@@ -21130,7 +21127,8 @@ docsList
     position: absolute;
     top: 12px;
     right: 15px;
-    color: #666B76; }
+    color: #666B76;
+    font-weight: 300; }
 
 .docList .pdf a:before, .docList .pdf .link:before, .docList .pdf .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .pdf .btn-link:before {
   content: '\f1c1';
@@ -21152,7 +21150,23 @@ docsList
   content: '\f1c4';
   color: orange; }
 
-.docList .pdf a:hover:before, .docList .pdf .link:hover:before, .docList .pdf .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .pdf .btn-link:hover:before, .docList .word a:hover:before, .docList .word .link:hover:before, .docList .word .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .word .btn-link:hover:before, .docList .xl a:hover:before, .docList .xl .link:hover:before, .docList .xl .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .xl .btn-link:hover:before, .docList .external a:hover:before, .docList .external .link:hover:before, .docList .external .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .external .btn-link:hover:before, .docList .pp a:hover:before, .docList .pp .link:hover:before, .docList .pp .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .pp .btn-link:hover:before {
+.docList .pdf a:hover:before, .docList .pdf .link:hover:before, .docList .pdf .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .pdf .btn-link:hover:before,
+.docList .word a:hover:before,
+.docList .word .link:hover:before,
+.docList .word .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.docList .word .btn-link:hover:before,
+.docList .xl a:hover:before,
+.docList .xl .link:hover:before,
+.docList .xl .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.docList .xl .btn-link:hover:before,
+.docList .external a:hover:before,
+.docList .external .link:hover:before,
+.docList .external .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.docList .external .btn-link:hover:before,
+.docList .pp a:hover:before,
+.docList .pp .link:hover:before,
+.docList .pp .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.docList .pp .btn-link:hover:before {
   color: #fff; }
 
 .docList.one, .docList.two, .docList.three, .docList.four, .docList.five {
@@ -21163,6 +21177,9 @@ docsList
 
 .docList li {
   padding: 15px; }
+  @media (max-width: 600px) {
+    .docList li {
+      padding: 5px 0; } }
 
 .docList.five li {
   width: 20%; }
@@ -21188,7 +21205,11 @@ docsList
     .docList.one li a:hover, .docList.one li .link:hover, .docList.one li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one li .btn-link:hover {
       background: #F6F7FA;
       text-decoration: none; }
-      .docList.one li a:hover span.info, .docList.one li .link:hover span.info, .docList.one li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover span.info, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one li .btn-link:hover span.info, .docList.one li a:hover:before, .docList.one li .link:hover:before, .docList.one li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one li .btn-link:hover:before, .docList.one li a:hover span.thirdInfo, .docList.one li .link:hover span.thirdInfo, .docList.one li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover span.thirdInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one li .btn-link:hover span.thirdInfo {
+      .docList.one li a:hover span.info, .docList.one li .link:hover span.info, .docList.one li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover span.info, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one li .btn-link:hover span.info, .docList.one li a:hover:before, .docList.one li .link:hover:before, .docList.one li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one li .btn-link:hover:before,
+      .docList.one li a:hover span.thirdInfo,
+      .docList.one li .link:hover span.thirdInfo,
+      .docList.one li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover span.thirdInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+      .docList.one li .btn-link:hover span.thirdInfo {
         background: transparent;
         color: #212224; }
     .docList.one li a:before, .docList.one li .link:before, .docList.one li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one li .btn-link:before {
@@ -21220,18 +21241,39 @@ docsList
       right: auto; }
 
 @media (max-width: 1200px) {
-  .docList.four li, .docList.five li {
+  .docList.four li,
+  .docList.five li {
     width: 33%;
     float: left; } }
 
 @media (max-width: 991px) {
-  .docList.three li, .docList.four li, .docList.five li {
+  .docList.three li,
+  .docList.four li,
+  .docList.five li {
     width: 50%;
     float: left; } }
 
 @media (max-width: 600px) {
-  .docList.two li, .docList.three li, .docList.four li, .docList.five li {
+  .docList.two li,
+  .docList.three li,
+  .docList.four li,
+  .docList.five li {
     width: 100%; } }
+
+.docList.one .listWebpart ul li {
+  float: none; }
+  .docList.one .listWebpart ul li a:before, .docList.one .listWebpart ul li .link:before, .docList.one .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one .listWebpart ul li .btn-link:before {
+    top: 22px; }
+    @media (max-width: 641px) {
+      .docList.one .listWebpart ul li a:before, .docList.one .listWebpart ul li .link:before, .docList.one .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one .listWebpart ul li .btn-link:before {
+        top: 20px; } }
+  .docList.one .listWebpart ul li:first-of-type a, .docList.one .listWebpart ul li:first-of-type .link, .docList.one .listWebpart ul li:first-of-type .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one .listWebpart ul li:first-of-type .btn-link {
+    border-top: 1px solid #DCDEE1; }
+
+.docList.one, .docList.two, .docList.three, .docList.four, .docList.five {
+  margin: 30px 0; }
+  .docList.one ul li a, .docList.one ul li .link, .docList.one ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one ul li .btn-link, .docList.two ul li a, .docList.two ul li .link, .docList.two ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.two ul li .btn-link, .docList.three ul li a, .docList.three ul li .link, .docList.three ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.three ul li .btn-link, .docList.four ul li a, .docList.four ul li .link, .docList.four ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.four ul li .btn-link, .docList.five ul li a, .docList.five ul li .link, .docList.five ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.five ul li .btn-link {
+    border-bottom: 1px solid #DCDEE1; }
 
 .eventSearchResults h2 {
   margin-top: 0; }
@@ -21741,22 +21783,21 @@ docsList
           color: #007299;
           margin: 0 0 10px;
           font-size: 24px;
-          line-height: 30px;
+          line-height: 1.4;
           font-weight: 700; }
           @media (max-width: 500px) {
             .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__header, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link .mega-promo__content .mega-promo__header {
-              font-size: 21px;
-              line-height: 26px; } }
+              font-size: 21px; } }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__secondary, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link .mega-promo__content .mega-promo__secondary {
           color: #212224;
           margin: 0;
           font-size: 18px;
-          line-height: 24px;
-          font-weight: 400; }
+          font-weight: 400;
+          color: #666B76;
+          line-height: 1.6; }
           @media (max-width: 500px) {
             .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__secondary, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link .mega-promo__content .mega-promo__secondary {
-              font-size: 16px;
-              line-height: 20px; } }
+              font-size: 16px; } }
       .mega-promo .mega-promo__item a .mega-promo__highlight, .mega-promo .mega-promo__item .link .mega-promo__highlight, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link .mega-promo__highlight {
         background: #007299;
         color: #FFFFFF;
@@ -21769,7 +21810,6 @@ docsList
       width: 100% !important; }
       .mega-promo .mega-promo__item.featured .mega-promo__header {
         font-size: 32px !important;
-        line-height: 36px !important;
         margin-bottom: 10px !important;
         color: #007299; }
       @media (min-width: 600px) {
@@ -21783,8 +21823,7 @@ docsList
             padding-bottom: 50px; } }
       @media (min-width: 767px) {
         .mega-promo .mega-promo__item.featured .mega-promo__header {
-          font-size: 40px !important;
-          line-height: 44px !important; } }
+          font-size: 34px !important; } }
       @media (min-width: 990px) {
         .mega-promo .mega-promo__item.featured a:after, .mega-promo .mega-promo__item.featured .link:after, .mega-promo .mega-promo__item.featured .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item.featured .btn-link:after {
           right: 30px;
@@ -21817,8 +21856,7 @@ docsList
     .mega-promo .mega-promo__item.quarter {
       width: 25% !important; }
       .mega-promo .mega-promo__item.quarter .mega-promo__header {
-        font-size: 21px !important;
-        line-height: 26px !important; }
+        font-size: 21px !important; }
       @media (max-width: 767px) {
         .mega-promo .mega-promo__item.quarter {
           width: 50% !important; } }
@@ -21840,12 +21878,10 @@ docsList
     .mega-promo .mega-promo__item.no-img .mega-promo__img-wrapper {
       display: none; }
     .mega-promo .mega-promo__item.no-img .mega-promo__header {
-      font-size: 32px !important;
-      line-height: 36px !important; }
+      font-size: 32px !important; }
       @media (max-width: 500px) {
         .mega-promo .mega-promo__item.no-img .mega-promo__header {
-          font-size: 24px !important;
-          line-height: 30px !important; } }
+          font-size: 24px !important; } }
     .mega-promo .mega-promo__item.no-img .mega-promo__highlight {
       position: relative;
       top: auto;
@@ -21860,6 +21896,50 @@ docsList
   .no-flexbox .mega-promo .mega-promo__item.featured a, .no-flexbox .mega-promo .mega-promo__item.featured .link, .no-flexbox .mega-promo .mega-promo__item.featured .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .no-flexbox .mega-promo .mega-promo__item.featured .btn-link {
     display: inline-block;
     width: 100%; }
+
+@media (min-width: 767px) {
+  .col-md-8 .mega-promo .mega-promo__item.two-thirds .mega-promo__header, .col-md-8 .mega-promo .mega-promo__item.half .mega-promo__header {
+    font-size: 24px !important; } }
+
+.col-md-8 .mega-promo .mega-promo__item.featured .mega-promo__header {
+  font-size: 32px !important; }
+
+@media (max-width: 600px) {
+  .mega-promo .mega-promo__item.featured {
+    width: auto !important; } }
+
+@media (min-width: 767px) {
+  .mega-promo .mega-promo__item a .mega-promo__content, .mega-promo .mega-promo__item .link .mega-promo__content, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link .mega-promo__content {
+    display: block; }
+  .mega-promo .mega-promo__item a, .mega-promo .mega-promo__item .link, .mega-promo .mega-promo__item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link {
+    padding-bottom: 50px; }
+  .mega-promo .mega-promo__item.featured a, .mega-promo .mega-promo__item.featured .link, .mega-promo .mega-promo__item.featured .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item.featured .btn-link {
+    padding-bottom: 0px; } }
+
+.mega-promo .mega-promo__item a:after, .mega-promo .mega-promo__item .link:after, .mega-promo .mega-promo__item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link:after {
+  right: 30px;
+  bottom: 30px; }
+  @media (max-width: 767px) {
+    .mega-promo .mega-promo__item a:after, .mega-promo .mega-promo__item .link:after, .mega-promo .mega-promo__item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link:after {
+      right: 20px;
+      bottom: 20px; } }
+
+.mega-promo .mega-promo__item a .mega-promo__content, .mega-promo .mega-promo__item .link .mega-promo__content, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link .mega-promo__content {
+  padding: 30px !important; }
+  @media (max-width: 767px) {
+    .mega-promo .mega-promo__item a .mega-promo__content, .mega-promo .mega-promo__item .link .mega-promo__content, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link .mega-promo__content {
+      padding: 20px !important; } }
+
+.mega-promo .mega-promo__item.third a, .mega-promo .mega-promo__item.third .link, .mega-promo .mega-promo__item.third .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item.third .btn-link,
+.mega-promo .mega-promo__item.quarter a,
+.mega-promo .mega-promo__item.quarter .link,
+.mega-promo .mega-promo__item.quarter .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
+.mega-promo .mega-promo__item.quarter .btn-link {
+  padding-bottom: 50px; }
+
+@media (max-width: 990px) {
+  .mega-promo .mega-promo__item.featured a, .mega-promo .mega-promo__item.featured .link, .mega-promo .mega-promo__item.featured .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item.featured .btn-link {
+    padding-bottom: 50px; } }
 
 .open-data {
   padding: 0; }
@@ -23715,155 +23795,6 @@ ul.accordion li div.content-block .open-data div.clear {
 .survey-body {
   margin-top: 30px !important; }
 
-ul.accordion {
-  margin: 30px 0; }
-  ul.accordion li {
-    border-color: #DCDEE1;
-    border-bottom: 1px solid #DCDEE1;
-    border-left: 5px solid transparent !important; }
-    ul.accordion li:hover {
-      border-left: 5px solid #007299 !important; }
-    ul.accordion li ul li,
-    ul.accordion li ul li:hover {
-      border: 0 !important; }
-    ul.accordion li a.header, ul.accordion li .header.link, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link {
-      color: #007299;
-      border-bottom: 1px solid rgba(0, 114, 153, 0);
-      text-decoration: none;
-      cursor: pointer;
-      border: none !important;
-      font-weight: 700;
-      padding: 20px 20px 20px 59px;
-      text-decoration: none !important;
-      font-size: 19px; }
-      ul.accordion li a.header:hover, ul.accordion li .header.link:hover, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link:hover {
-        color: #004c66;
-        border-color: #004c66;
-        text-decoration: none; }
-      ul.accordion li a.header:visited, ul.accordion li .header.link:visited, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link:visited, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link:visited {
-        color: #007299;
-        border-color: rgba(0, 114, 153, 0);
-        text-decoration: none; }
-      @media (max-width: 641px) {
-        ul.accordion li a.header, ul.accordion li .header.link, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link {
-          font-size: 16px;
-          padding: 10px 10px 10px 39px; } }
-      ul.accordion li a.header:after, ul.accordion li .header.link:after, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link:after {
-        font-family: FontAwesome;
-        font-size: 19px;
-        content: "\f067";
-        position: absolute;
-        right: auto;
-        left: 20px;
-        top: 20px;
-        margin-top: 0;
-        color: #007299;
-        font-weight: 400; }
-        @media (max-width: 641px) {
-          ul.accordion li a.header:after, ul.accordion li .header.link:after, ul.accordion li .nearestItem-search-features-inner a .nearestItem-showonmap-link .header.btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion li .header.btn-link:after {
-            font-size: 16px;
-            left: 10px;
-            top: 10px; } }
-    ul.accordion li div {
-      padding: 0 !important; }
-    ul.accordion li div.content-block {
-      padding: 20px 20px 20px 60px !important; }
-      @media (max-width: 641px) {
-        ul.accordion li div.content-block {
-          padding: 10px 10px 10px 39px !important; } }
-  ul.accordion .list a, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul a, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul a,
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul a,
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul a,
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul a,
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol a, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol a,
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol a,
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol a,
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol a,
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion .binCollectionTimesList a, ul.accordion .list .link, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul .link, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul .link,
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul .link,
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul .link,
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul .link,
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol .link, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol .link,
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol .link,
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol .link,
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol .link,
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion .binCollectionTimesList .link, ul.accordion .list .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion .list .btn-link, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul .btn-link, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ul .btn-link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul .btn-link,
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ul .btn-link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul .btn-link,
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ul .btn-link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul .btn-link,
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ul .btn-link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul .btn-link,
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ul .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ul .btn-link, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol .btn-link, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ol .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ol .btn-link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol .btn-link,
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ol .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ol .btn-link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol .btn-link,
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ol .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ol .btn-link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol .btn-link,
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ol .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ol .btn-link, ul.accordion
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol .btn-link,
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ol .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ol .btn-link, ul.accordion .binCollectionTimesList .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link ul.accordion .binCollectionTimesList .btn-link {
-    text-decoration: none; }
-
-@media (max-width: 600px) {
-  .docList .listWebpart ul li {
-    padding: 5px 0; } }
-
-.docList .listWebpart ul li a, .docList .listWebpart ul li .link, .docList .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .listWebpart ul li .btn-link {
-  text-decoration: none;
-  border-color: #DCDEE1; }
-  .docList .listWebpart ul li a span.thirdInfo, .docList .listWebpart ul li .link span.thirdInfo, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList .listWebpart ul li .btn-link span.thirdInfo {
-    font-weight: 300;
-    color: #666B76; }
-
-.docList.one .listWebpart ul li {
-  float: none; }
-  .docList.one .listWebpart ul li a:before, .docList.one .listWebpart ul li .link:before, .docList.one .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one .listWebpart ul li .btn-link:before {
-    top: 22px; }
-    @media (max-width: 641px) {
-      .docList.one .listWebpart ul li a:before, .docList.one .listWebpart ul li .link:before, .docList.one .listWebpart ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:before, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one .listWebpart ul li .btn-link:before {
-        top: 20px; } }
-  .docList.one .listWebpart ul li:first-of-type a, .docList.one .listWebpart ul li:first-of-type .link, .docList.one .listWebpart ul li:first-of-type .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one .listWebpart ul li:first-of-type .btn-link {
-    border-top: 1px solid #DCDEE1; }
-
-.docList.one, .docList.two, .docList.three, .docList.four, .docList.five {
-  margin: 30px 0; }
-  .docList.one ul li a, .docList.one ul li .link, .docList.one ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.one ul li .btn-link, .docList.two ul li a, .docList.two ul li .link, .docList.two ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.two ul li .btn-link, .docList.three ul li a, .docList.three ul li .link, .docList.three ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.three ul li .btn-link, .docList.four ul li a, .docList.four ul li .link, .docList.four ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.four ul li .btn-link, .docList.five ul li a, .docList.five ul li .link, .docList.five ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .docList.five ul li .btn-link {
-    border-bottom: 1px solid #DCDEE1; }
-
 footer.main .container-fluid {
   padding: 0; }
 
@@ -24065,13 +23996,6 @@ footer.main .footerGlobal {
 .mega-promo {
   padding-top: 0; }
 
-.mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__header, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link .mega-promo__content .mega-promo__header {
-  line-height: 1.4; }
-
-.mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__secondary, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link .mega-promo__content .mega-promo__secondary {
-  color: #666B76;
-  line-height: 1.6; }
-
 .mega-promo .mega-promo__item a:hover, .mega-promo .mega-promo__item .link:hover, .mega-promo .mega-promo__item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link:hover {
   background: white; }
   .mega-promo .mega-promo__item a:hover .mega-promo__header, .mega-promo .mega-promo__item .link:hover .mega-promo__header, .mega-promo .mega-promo__item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover .mega-promo__header, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link:hover .mega-promo__header, .mega-promo .mega-promo__item a:hover:after, .mega-promo .mega-promo__item .link:hover:after, .mega-promo .mega-promo__item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link:hover:after {
@@ -24101,71 +24025,6 @@ footer.main .footerGlobal {
   .mega-promo .mega-promo__item.blue a .mega-promo__highlight, .mega-promo .mega-promo__item.blue .link .mega-promo__highlight, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item.blue .btn-link .mega-promo__highlight {
     background: #007299;
     color: #FFFFFF; }
-
-@media (min-width: 767px) {
-  .col-md-8 .mega-promo .mega-promo__item.two-thirds .mega-promo__header, .col-md-8 .mega-promo .mega-promo__item.half .mega-promo__header {
-    font-size: 24px !important; } }
-
-.col-md-8 .mega-promo .mega-promo__item.featured .mega-promo__header {
-  font-size: 32px !important;
-  line-height: 36px !important; }
-
-@media (max-width: 600px) {
-  .mega-promo .mega-promo__item.featured {
-    width: auto !important; } }
-
-@media (min-width: 767px) {
-  .mega-promo .mega-promo__item a .mega-promo__content, .mega-promo .mega-promo__item .link .mega-promo__content, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link .mega-promo__content {
-    display: block; }
-  .mega-promo .mega-promo__item a, .mega-promo .mega-promo__item .link, .mega-promo .mega-promo__item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link {
-    padding-bottom: 50px; }
-  .mega-promo .mega-promo__item.featured a, .mega-promo .mega-promo__item.featured .link, .mega-promo .mega-promo__item.featured .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item.featured .btn-link {
-    padding-bottom: 0px; } }
-
-.mega-promo .mega-promo__item a:after, .mega-promo .mega-promo__item .link:after, .mega-promo .mega-promo__item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link:after {
-  right: 30px;
-  bottom: 30px; }
-  @media (max-width: 767px) {
-    .mega-promo .mega-promo__item a:after, .mega-promo .mega-promo__item .link:after, .mega-promo .mega-promo__item .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link:after {
-      right: 20px;
-      bottom: 20px; } }
-
-.mega-promo .mega-promo__item a .mega-promo__content, .mega-promo .mega-promo__item .link .mega-promo__content, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link .mega-promo__content {
-  padding: 30px !important; }
-  @media (max-width: 767px) {
-    .mega-promo .mega-promo__item a .mega-promo__content, .mega-promo .mega-promo__item .link .mega-promo__content, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item .btn-link .mega-promo__content {
-      padding: 20px !important; } }
-
-.mega-promo .mega-promo__item.third a, .mega-promo .mega-promo__item.third .link, .mega-promo .mega-promo__item.third .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item.third .btn-link,
-.mega-promo .mega-promo__item.quarter a,
-.mega-promo .mega-promo__item.quarter .link,
-.mega-promo .mega-promo__item.quarter .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link
-.mega-promo .mega-promo__item.quarter .btn-link {
-  padding-bottom: 50px; }
-
-@media (max-width: 990px) {
-  .mega-promo .mega-promo__item.featured a, .mega-promo .mega-promo__item.featured .link, .mega-promo .mega-promo__item.featured .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item.featured .btn-link {
-    padding-bottom: 50px; } }
-
-@media (min-width: 767px) {
-  .mega-promo .mega-promo__item.featured .mega-promo__header {
-    font-size: 34px !important; } }
-
-#paging .contentPod a, #paging .contentPod .link, #paging .contentPod .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link {
-  text-decoration: none !important; }
-  #paging .contentPod a:hover, #paging .contentPod .link:hover, #paging .contentPod .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link:hover {
-    background: #F6F7FA; }
-  #paging .contentPod a p.date, #paging .contentPod .link p.date, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link p.date {
-    margin-top: 0;
-    font-size: 14px;
-    font-weight: 700; }
-  #paging .contentPod a h3, #paging .contentPod .link h3, .nearestItem-search-features-inner a .nearestItem-showonmap-link #paging .contentPod .btn-link h3 {
-    color: #007299;
-    margin-bottom: 10px;
-    text-decoration: underline; }
-
-#archive .content-block {
-  padding: 20px 0 !important; }
 
 .ms-srch-sb > input {
   -webkit-border-radius: 4px !important;
@@ -24224,30 +24083,6 @@ footer.main .footerGlobal {
 #nav-search {
   float: left;
   margin: 10px; }
-
-@media (max-width: 767px) {
-  #nav-search {
-    position: absolute;
-    top: 62px;
-    left: 0px;
-    background: #bdc3c7;
-    padding: 20px;
-    margin: 0px;
-    height: auto;
-    width: 100%;
-    z-index: 10;
-    display: none; }
-    #nav-search.active {
-      display: block; }
-    #nav-search .input-group {
-      margin: 0 !important;
-      width: 100%; }
-    #nav-search .ms-srch-sb > input {
-      min-width: 100% !important;
-      margin: 0px !important; }
-    #nav-search .ms-srch-sb > .ms-srch-sb-searchLink {
-      height: 100%;
-      min-height: 100%; } }
 
 #s4-bodyContainer {
   padding-bottom: 0px !important; }
