@@ -39,6 +39,11 @@
     }
 }*/
 
+.header-left{
+    line-height: 0;
+    padding:10px 0;
+}
+
 .logo{
     background-image:url(../images/logo.svg);
     background-repeat:no-repeat;
@@ -62,11 +67,20 @@
 }
 
 //nav
-.main-nav ul li {
-    a{
-      font-size:18px;
-      padding:12px;
-      text-decoration:none;
+.main-nav ul {
+    padding:10px 0;
+    li {
+        a{
+        font-size:18px;
+        padding:0;
+        text-decoration:none;
+        margin-right:15px;
+
+        &:hover{
+            background:none;
+            text-decoration:underline;
+        }
+        }
     }
 }
 

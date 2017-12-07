@@ -1,17 +1,9 @@
 @import 'sharepoint'; //default sharpoint css - REMOVE BEFORE UPLOADING
 
 //google fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,700'); 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,700');
 
 // available variables to change the brand colours as required
-// masterhead.scss
-
-//$head-background: #ffffff;
-
-//mainMenu.scss -- responsive icons color
-//$menu-link-color:#337ab7;
-
-//base.scss
 
 //base colours
 $blue:#007299;
@@ -30,20 +22,22 @@ $white:#FFFFFF;
 $yellow:#FFBF47;
 $dark-yellow:#FAA300;
 $red:#c0392b;
-
 //$base-background-color:#fff;
 $border-color:$light-grey;
 $brand-color:$blue;
 $button-color:$green;
-$button-hover-color:lighten($button-color,5%);
+$button-hover-color:lighten($button-color,
+5%);
 $focus-color:$yellow;
-$base-container-width:1280px ;
+$base-container-width:1280px;
 //$btn-background-color:green ;
 $alert-color:$red;
 
 //typography
-$font-primary:'Open Sans', sans-serif; // main font
-$font-secondary:'Montserrat', sans-serif; // secondary font used for headings
+$font-primary:'Open Sans',
+sans-serif; // main font
+$font-secondary:'Montserrat',
+sans-serif; // secondary font used for headings
 //$base-font-size:16px !default;
 //$base-font-size-desktop:19px !default;
 $base-line-height: 1.4;
@@ -52,7 +46,6 @@ $header-font-color:$black;
 $secondary-font-color:$dark-grey;
 $header-font-weight: 700;
 //$base-font-weight: 400 !default;
-
 $base-link-color:$blue;
 $base-link-hover-color:$light-blue;
 $base-link-visited-color:#4C2C92;
@@ -61,47 +54,36 @@ $secondary-link-color:$dark-blue;
 //panel colours
 $panel-color:#E5F1F5;
 $panel-color-secondary:#DCDEE1;
-
 //global used on all partials to get a uniform spacing between elements
 //$base-margin-bottom:1.875em ;
-
 //headerTop
 //$search-link-background:#F3F3F4 ;
 //$search-link:#333 ;
-
 // mainNav.scss
-$main-nav-background:lighten( $brand-color, 3% );
+$main-nav-background:lighten( $brand-color,
+3%);
 //$main-nav-link:#fff ;
-
 //footer.scss
 //$footer-font-color:#fff ;
 //$footer-nav-selected-link:#133E8D ;
-
 //sectionSubsite.scss - socialamedia.scss
 //$section-Background:#efefef ;
-
 //socialamedia.scss
 //$social-link-color:#337ab7 ;
-
 //sideNavigation.scss
 //$side-nav-active-background:#133E8D ;
-
 //carousel.scss
 //$carousel-active-background:#000 ;
 //$carousel-indicators-active-background:#ccc ;
 //$carousel-caption-background: rgba(0,0,0,0.6) ;
 //$carousel-caption-font-color:#fff ;
-
-
 //blocklinks.scss
-
 //$block-link-back:#f6f6f6 ;
 //$block-link-back-hover:#3380A4 ;
 //$promo-group-border:1px solid #fff ; 
 //$promo-group-background:#EDF2F5 ; 
 //$promo-group-li-background:#EDF2F5 ;
 //$promo-group-link-color:#216486 ;
-
 //promolist webpart
 //$link-font-color:#fff;
 //$span-info-color:#133E8D;
@@ -114,7 +96,6 @@ $main-nav-background:lighten( $brand-color, 3% );
 //$contentFontColor:#333;
 //$content-arrow-color:#133E8D;
 //$content-border-color:#ddd;
-
 //section backgrounds
 $sectionHeader-background-color:$brand-color;
 $sectionOne-background-color:#fff;
@@ -122,28 +103,22 @@ $sectionTwo-background-color:#fff;
 $sectionThree-background-color:#fff;
 $sectionFour-background-color:#fff;
 $sectionFive-background-color:#fff;
-
 //iconlinks
 //$iconLinkIconColor:#FFC82E;
-
 //heroBanner
 //$heroFontBackground:rgba(0, 0, 0, 0.5); 
 //$heroFontcolor:#fff; 
-
 //news
 //$news-button-background: #3498DB ;
-$news-pod-back:#ffffff ;
+$news-pod-back:#ffffff;
 $news-pod-border-color:#ddd;
-
 //accordion
 //$accordion-color:green;
 //$accordion-border-color:#ECF0F1;
-
 //Block quote
 // $blockquoteBorderColor:#bbcada ;
 // $blockquoteQuoteColor:#333;
 // $blockquoteQuoteFooterColor:#000;
-
 //highlighted box in content assets
 //$highlighted-background-color:#333 !default;
 //$highlighted-font-color:#fff !default;
@@ -176,10 +151,19 @@ $group-promo-arrow-color: $grey;
 $input-color:$black;
 $input-border-color:$grey;
 
+//back to top
+//$back-top-color:white;
+//$back-top-hover-color:white;
+//$back-top-background:black;
+//$back-top-hover-background:grey;
+
+//phase banner
+//$phase-banner-stage-background:#007299 !default;
+//$phase-banner-stage-color:white !default;
+
+@import 'url-helper';
 @import 'base';
-
 @import 'brand-colors';
-
 @import '2010-typography-overrides';
 @import 'accordion';
 @import 'a-to-z';
@@ -205,298 +189,128 @@ $input-border-color:$grey;
 @import 'promo';
 //@import 'promo-list-webpart'; //subsite only
 //@import 'section-subsite'; //subsite only
-@import 'sharepoint-overrides'; 
+@import 'sharepoint-overrides';
 @import 'side-nav'; //needs aligning with side-navigation - DH & RM
 //@import 'side-navigation'; //needs aligning with side-nav - DH & RM
 @import 'sub-section-nav';
-@import 'url-helper';
 @import 'webchat';
-
-@import 'styleguide';
-@import 'sticky-nav';
-
+@import 'styleguide';//not needed for live site
+@import 'sticky-nav';//not currently needed for live site
 @import 'leedsgov-specific';
 @import 'leedsgov-overrides';
-
 @import 'where-i-live';
-
-@import 'modern-gov';
+@import 'modern-gov'; //not needed for live site
+@import 'lcc-hero';
+@import 'lcc-header';
 
 //site background
-html{
-    background-color:$blue;
-}
-
-//hr
-hr{
-  border-color:rgba( $border-color, .5 );
-}
-
-//buttons
-.btn-primary{
-    //border-bottom:2px solid darken($primary-button-background-color,5%);
-    box-shadow: 0px 3px 0px darken($primary-button-background-color,10%);
-}
-.btn-secondary{
-    //border-bottom:2px solid darken($secondary-button-background-color,5%);
-    box-shadow: 0px 3px 0px darken($secondary-button-background-color,10%);
+html {
+    background-color: $blue;
 }
 
 //video container
-.media-container{
-    margin:30px 0;
+.media-container {
+    margin: 30px 0;
 }
 
-//LEEDS.GOV SPECIFIC
-
 //Roadworks map
-.ElginRoadworksWidget{
+.ElginRoadworksWidget {
     margin-top: 40px;
-    margin-bottom: 40px;    
+    margin-bottom: 40px;
     @media (max-width: 450px) {
-    height: 400px !important;
-    } 
+        height: 400px !important;
+    }
 }
 
 //right hand column top margin
-aside.col-md-4{
-    margin-top:50px;
-
+aside.col-md-4 {
+    margin-top: 50px;
     @media (max-width: 990px) {
-        margin-top:30px;
+        margin-top: 30px;
     }
-
-    &.empty{
-        margin-top:0 !important;
+    &.empty {
+        margin-top: 0 !important;
     }
 }
 
 //sub-section - Is this needed? Need to test. DH.
 .sub-section-nav .sub-section a {
-    .sub-section-heading{
-        text-decoration:none;
-        color:$base-link-color;
+    .sub-section-heading {
+        text-decoration: none;
+        color: $base-link-color;
     }
-
     &:visited,
-    &:visited .sub-section-heading{
-        text-decoration:none !important;
+    &:visited .sub-section-heading {
+        text-decoration: none !important;
         color: #663399;
     }
 }
 
 //social bookmark link text decoration color 
-.socialBookmarks ul li a:visited{
-    color:$blue;
-}
-
-//promo bespoke style for LCC
-.promo a{
-    span {
-        background: $base-link-color;
-        font-family:$font-secondary;
-        font-weight:600;
-        padding: 20px 40px 20px 20px;
-
-        &:after{
-            bottom:17px;
-            right: 20px;
-            font-size:26px;
-            height:auto;
-            width:auto;
-        }
-    }
-
-    &:hover span{
-        padding: 20px 40px 30px 20px;
-        background: rgba($base-link-color,0.95);
-        text-decoration:underline;
-
-        &:after{       
-            bottom:27px;
-            right: 20px;
-            text-decoration:none;
-        }
-    }
+.socialBookmarks ul li a:visited {
+    color: $blue;
 }
 
 //Promolistwebpart reset - Can this be global? Need to check. DH.
 .promoListWebpart {
-    ol, ul{
-        margin:0;
-        padding:0;
+    ol,
+    ul {
+        margin: 0;
+        padding: 0;
     }
 }
 
 //self service custom buttons
-.header-actions{
-    position:absolute;
-    top:-110px;
-    right:15px;
-
-    @media (max-width: 641px){
-        position:relative;
-        top:auto;
-        right:auto;
-        margin-bottom:20px;
+.header-actions {
+    position: absolute;
+    top: -110px;
+    right: 15px;
+    @media (max-width: 641px) {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-bottom: 20px;
     }
 }
 
 //sp pagination
-.pagination-nav{
-    position:relative;
-
-    #PagingSelf{
+.pagination-nav {
+    position: relative;
+    #PagingSelf {
         position: absolute;
         left: 50%;
         width: 100px;
         top: 30%;
         margin-left: -50px;
-        z-index:5;
-
+        z-index: 5;
         @media (max-width: 641px) {
             position: relative;
             left: auto;
             width: 100%;
             top: auto;
             margin-left: 0;
-            text-align:center
+            text-align: center
         }
     }
-}
-
-//group promo line height fix
-.groupPromo ul li a p{
-    line-height:1.4;
-}
-
-//rss feed sharepoint overrides
-.col-md-4{
-    .ms-webpart-titleText.ms-webpart-titleText{
-        font-family: $font-secondary;
-        color:$base-font-color;
-        font-weight: 600;
-        margin-top: 0;
-        margin-bottom: 15px;
-        padding-bottom: 10px;
-        font-size: 24px;
-        border-bottom: 5px solid #f6f7fa;
-
-        @media (max-width: 641px){
-            font-size: 21px;
-            margin-bottom: 15px;
-        }
-    }
-}
-
-.ms-wpContentDivSpace {
-    table{
-        margin:0;
-        border:0;
-        
-        td{
-            padding:0;
-            border:0;
-        }
-    }
-}
-
-$back-top-color:white;
-$back-top-hover-color:white;
-$back-top-background:black;
-$back-top-hover-background:grey;
-
-.cd-top {
-    display: inline-block;
-    height: auto;//delete when merging
-    width: auto;//delete when merging
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    /* image replacement properties */
-    overflow: hidden; //delete when merging
-    text-indent: 0;
-    white-space: nowrap;
-    background: $back-top-background;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-    -moz-transition: opacity .3s 0s, visibility 0s .3s;
-    -o-transition: opacity .3s 0s, visibility 0s .3s;
-    transition: opacity .3s 0s, visibility 0s .3s;
-    z-index:999;
-    color:$back-top-color;
-    text-align:center;
-    padding:10px;
-    text-decoration:none;
-    font-size:14px;
-    @include border-radius(4px);
-
-    @media only screen and (min-width: 767px) {
-        right: 20px;
-        bottom: 20px;
-        font-size:16px;
-    }
-    @media only screen and (min-width: 1024px) {
-        height: auto;//delete when merging
-        width: auto;//delete when merging
-        right: 30px;
-        bottom: 30px;
-    }
-
-    &:before{
-        font-family: FontAwesome;
-        content:'\f077';
-        display:block;
-        line-height:0;
-        margin:5px 0 10px;
-    }
-
-    &:focus{
-        background:$focus-color;
-        opacity:1;
-    }
-
-    &:hover{
-        text-decoration:none;
-        color:$back-top-hover-color;
-        background:$back-top-hover-background;
-    }
-
-    &.cd-is-visible {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    &.cd-fade-out {
-        opacity: .5;
-    }
-}
-.cd-top.cd-is-visible, 
-.cd-top.cd-fade-out, 
-.no-touch .cd-top:hover {
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-  -moz-transition: opacity .3s 0s, visibility 0s 0s;
-  -o-transition: opacity .3s 0s, visibility 0s 0s;
-  transition: opacity .3s 0s, visibility 0s 0s;
-}
-.no-touch .cd-top:hover {
-  background-color: $back-top-hover-background;
-  opacity: 1;
 }
 
 //btn overrides
-.btn{
+.btn-primary {
+    box-shadow: 0px 3px 0px darken($primary-button-background-color, 10%);
+}
+
+.btn-secondary {
+    box-shadow: 0px 3px 0px darken($secondary-button-background-color, 10%);
+}
+
+.btn {
     padding: 15px 20px;
-
-    &.btn-arrow{
+    &.btn-arrow {
         padding-right: 45px;
-
-        &:before{
-            display:none !important;
+        &:before {
+            display: none !important;
         }
-        &:after{
+        &:after {
             right: 20px;
             top: 50%;
             height: auto;
@@ -508,59 +322,14 @@ $back-top-hover-background:grey;
             width: auto;
         }
     }
-
     &:focus,
-    &:active{
-        border-color:$focus-color !important;
+    &:active {
+        border-color: $focus-color !important;
         box-shadow: 0px 3px 0px $focus-color;
     }
 }
 
-.btn:visited{
-    color:white;
-}
-
-.phase-banner{
-    padding:7px 0;
-    background:$panel-color;
-
-    p{
-        margin:0;
-        font-size:16px;
-        line-height:1.4;
-
-        @media (max-width: 641px){
-            font-size:14px;
-            position:relative;
-            @include flexbox();
-            @include align-items(center);
-        }
-
-        strong{
-            background:#007299;
-            color:white;
-            padding:1px 5px;
-            @include border-radius(2px);
-            margin-right:7px;
-
-            @media (max-width: 641px){
-                margin-right:10px;
-            }
-        }
-    }
-
-    &.page{
-        padding:10px;
-        background:$panel-color;
-        border-bottom:0;
-
-        strong{
-            background:$blue;
-            color:white;
-        }
-    }
-}
-
+//bredcrumb override
 .breadcrumb {
-    line-height:1.5;
+    line-height: 1.5;
 }
