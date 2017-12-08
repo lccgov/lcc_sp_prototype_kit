@@ -19816,7 +19816,12 @@ footer.main {
       footer.main .socialBookmarks ul li:first-of-type {
         display: block;
         padding-bottom: 0.65em; } }
-    footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after, footer.main .socialBookmarks .flickr:after {
+    footer.main .socialBookmarks .facebook:after,
+    footer.main .socialBookmarks .twitter:after,
+    footer.main .socialBookmarks .youtube:after,
+    footer.main .socialBookmarks .email:after,
+    footer.main .socialBookmarks .instagram:after,
+    footer.main .socialBookmarks .flickr:after {
       font-family: FontAwesome;
       font-size: 25px;
       border-radius: 50%;
@@ -20937,6 +20942,10 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
     .list-atoz li h2 {
       margin: 20px 0; }
 
+.no-flexbox .atoz ul li,
+.no-flexbox .atoz ul li.inactive {
+  width: 6.5%; }
+
 .description-list {
   margin: 10px 0 30px; }
   .description-list .description-list__item {
@@ -21520,6 +21529,12 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
   .ie8 .groupPromo ul li a, .ie8 .groupPromo ul li .link, .ie8 .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .ie8 .groupPromo ul li .btn-link {
     width: 100%; }
 
+.no-flexbox .groupPromo ul li {
+  width: 100% !important; }
+  .no-flexbox .groupPromo ul li a, .no-flexbox .groupPromo ul li .link, .no-flexbox .groupPromo ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .no-flexbox .groupPromo ul li .btn-link {
+    width: 100% !important;
+    min-height: 0 !important; }
+
 /* iconLinks -----------------------------------------------------------------*/
 .iconLinks ul {
   text-align: center;
@@ -21911,6 +21926,13 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
   .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=submit] i, .form-group .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=submit] i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .limitedrte-Style-BUTTON i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo i, #myChatLinkContainer #myChatLink a .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo i, #myChatLinkContainer #myChatLink .link .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link #myChatLinkInfo i, .nearestItem-search-features-inner a .nearestItem-showonmap-link #myChatLinkContainer #myChatLink .btn-link .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .col-md-8 #SearchBox .ms-srch-sb-searchLink i, .col-md-8 #SearchBox .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .ms-srch-sb-searchLink i {
     display: none; }
 
+.no-flexbox .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item {
+  width: auto !important; }
+
+.ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
+  line-height: 55px;
+  padding-left: 60px !important; }
+
 .mega-promo {
   display: -webkit-box;
   display: -moz-box;
@@ -22048,12 +22070,12 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
     .mega-promo .mega-promo__item.featured {
       width: 100% !important; }
       .mega-promo .mega-promo__item.featured .mega-promo__header {
-        font-size: 32px !important;
+        font-size: 24px !important;
         margin-bottom: 10px !important;
         color: #007299; }
       @media (min-width: 600px) {
         .mega-promo .mega-promo__item.featured .mega-promo__highlight {
-          font-size: 20px !important; } }
+          font-size: 20px; } }
       @media (max-width: 600px) {
         .mega-promo .mega-promo__item.featured {
           margin-left: -15px;
@@ -22062,7 +22084,7 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
             padding-bottom: 50px; } }
       @media (min-width: 767px) {
         .mega-promo .mega-promo__item.featured .mega-promo__header {
-          font-size: 34px !important; } }
+          font-size: 32px !important; } }
       @media (min-width: 990px) {
         .mega-promo .mega-promo__item.featured a:after, .mega-promo .mega-promo__item.featured .link:after, .mega-promo .mega-promo__item.featured .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:after, .nearestItem-search-features-inner a .nearestItem-showonmap-link .mega-promo .mega-promo__item.featured .btn-link:after {
           right: 30px;
@@ -22089,13 +22111,13 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
       width: 50% !important; }
     @media (min-width: 767px) {
       .mega-promo .mega-promo__item.two-thirds .mega-promo__header, .mega-promo .mega-promo__item.half .mega-promo__header {
-        font-size: 32px !important; } }
+        font-size: 32px; } }
     .mega-promo .mega-promo__item.third {
       width: 33.33% !important; }
     .mega-promo .mega-promo__item.quarter {
       width: 25% !important; }
       .mega-promo .mega-promo__item.quarter .mega-promo__header {
-        font-size: 21px !important; }
+        font-size: 21px; }
       @media (max-width: 767px) {
         .mega-promo .mega-promo__item.quarter {
           width: 50% !important; } }
@@ -22117,10 +22139,10 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
     .mega-promo .mega-promo__item.no-img .mega-promo__img-wrapper {
       display: none; }
     .mega-promo .mega-promo__item.no-img .mega-promo__header {
-      font-size: 32px !important; }
+      font-size: 32px; }
       @media (max-width: 500px) {
         .mega-promo .mega-promo__item.no-img .mega-promo__header {
-          font-size: 24px !important; } }
+          font-size: 24px; } }
     .mega-promo .mega-promo__item.no-img .mega-promo__highlight {
       position: relative;
       top: auto;
@@ -22138,10 +22160,10 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
 
 @media (min-width: 767px) {
   .col-md-8 .mega-promo .mega-promo__item.two-thirds .mega-promo__header, .col-md-8 .mega-promo .mega-promo__item.half .mega-promo__header {
-    font-size: 24px !important; } }
+    font-size: 24px; } }
 
 .col-md-8 .mega-promo .mega-promo__item.featured .mega-promo__header {
-  font-size: 32px !important; }
+  font-size: 32px; }
 
 @media (max-width: 600px) {
   .mega-promo .mega-promo__item.featured {
@@ -22950,6 +22972,12 @@ h1 input.ms-long {
     .sub-section-heading, .sub-section-nav.panels .sub-section a .sub-section-heading, .sub-section-nav.panels .sub-section .link .sub-section-heading, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sub-section-nav.panels .sub-section .btn-link .sub-section-heading {
       font-size: 19px;
       margin: 20px 0 15px; } }
+
+.no-flexbox .sub-section-nav {
+  margin: 0; }
+  .no-flexbox .sub-section-nav .sub-section {
+    width: 100%;
+    margin: 15px 0; }
 
 #myChatLinkContainer {
   margin: 30px 0; }
@@ -24757,6 +24785,34 @@ footer.main .footerGlobal {
       @media (max-width: 990px) {
         #nav-search .ms-srch-sb .ms-srch-sb-searchLink:before {
           font-size: 24px; } }
+
+.no-flexbox .sectionHeader .container-fluid .header-wrapper {
+  display: table;
+  width: 100%; }
+  .no-flexbox .sectionHeader .container-fluid .header-wrapper .header-logo {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 12px 0; }
+    .no-flexbox .sectionHeader .container-fluid .header-wrapper .header-logo .logo {
+      background-image: url(../images/logo.png); }
+  .no-flexbox .sectionHeader .container-fluid .header-wrapper .header-content {
+    display: table-cell;
+    vertical-align: middle; }
+    .no-flexbox .sectionHeader .container-fluid .header-wrapper .header-content .header-custom {
+      display: table-cell;
+      vertical-align: middle;
+      float: left; }
+      .no-flexbox .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button {
+        padding: 15px 0; }
+        .no-flexbox .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn-account {
+          font-size: 19px; }
+    .no-flexbox .sectionHeader .container-fluid .header-wrapper .header-content .header-nav {
+      float: right; }
+      .no-flexbox .sectionHeader .container-fluid .header-wrapper .header-content .header-nav #nav-search {
+        padding: 10px 0; }
+
+.ie8 a.search, .ie8 .search.link, .ie8 .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .ie8 .search.btn-link {
+  display: none; }
 
 html {
   background-color: #007299; }
