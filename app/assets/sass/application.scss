@@ -1,4 +1,4 @@
-//@import 'sharepoint'; //default sharpoint css - REMOVE BEFORE UPLOADING
+@import 'sharepoint'; //default sharpoint css - REMOVE BEFORE UPLOADING
 
 //google fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,700');
@@ -197,8 +197,8 @@ $input-border-color:$grey;
 @import 'webchat';
 
 //-PROJECT SPECIFIC
-//@import 'styleguide';//not needed for live site
-//@import 'sticky-nav';//not currently needed for live site
+@import 'styleguide';//not needed for live site
+@import 'sticky-nav';//not currently needed for live site
 @import 'modern-gov'; //not needed for live site
 
 @import 'leedsgov-specific';
