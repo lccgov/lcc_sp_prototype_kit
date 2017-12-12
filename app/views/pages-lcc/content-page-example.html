@@ -39,6 +39,20 @@
  {% endblock %}
 
 {% block sectionOneContent %}
+<div class="lcc-search-box">
+    <div class="input-group">
+        <label class="sr-only" for="siteSearch">Search the website</label>
+        <div class="easy-autocomplete eac-square eac-description">
+            <div id="menu-container">
+                <input type="text" class="form-control" id="siteSearch" autocomplete="off">
+            </div>
+        </div>
+        <span class="input-group-btn">
+            <button id="btnSearch" class="btn" type="button"><span class="sr-only">Search</span></button>
+        </span>
+    </div>
+</div>
+
 <h2>Accordion - accessible</h2>
 <ul class="accordion">
     <li>

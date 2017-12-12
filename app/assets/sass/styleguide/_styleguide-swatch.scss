@@ -85,7 +85,7 @@
         padding:15px;
 
         h3{
-          @extend .heading-small;
+          @include heading-small();
           margin-top:0;
           margin-bottom:10px;
         }
