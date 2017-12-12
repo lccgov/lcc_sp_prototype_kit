@@ -198,7 +198,7 @@ $input-border-color:$grey;
 
 //-PROJECT SPECIFIC
 //@import 'styleguide';//not needed for live site
-@import 'sticky-nav';//not currently needed for live site
+//@import 'sticky-nav';//not currently needed for live site
 @import 'modern-gov'; //not needed for live site
 
 @import 'leedsgov-specific';
@@ -309,7 +309,8 @@ aside.col-md-4 {
 
 .btn {
     padding: 15px 20px;
-    &.btn-arrow {
+    &.btn-arrow,
+    &.btn[rel=external] {
         padding-right: 45px;
         &:before {
             display: none !important;
