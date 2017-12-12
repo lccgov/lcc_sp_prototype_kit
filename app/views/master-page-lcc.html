@@ -82,7 +82,7 @@
                                     </div>
                                     <div class="header-content">
                                         <div id="header-custom" class="header-custom">
-                                            <div class="header-button"><a class="btn-account" href="/pages-lcc/my-account.html"> <span>My Account</span></a></div>
+                                            
                                         </div>
                                         
                                         <div class="header-nav">
@@ -193,5 +193,15 @@
             r('/vs/1/vsopts.js'); 
             })(); 
         </script>
+
+        <!-- Script for header-custom -->
+        <script>
+
+            var headerCustom = '<div class="header-button"><a class="btn-account" href="/pages-lcc/my-account.html"> <span>My Account</span></a></div>'
+
+            $("#header-custom").prepend(headerCustom);
+
+        </script>
+
    </body>
 </html>
