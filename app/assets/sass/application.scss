@@ -53,6 +53,8 @@ $secondary-link-color:$dark-blue;
 //panel colours
 $panel-color:#E5F1F5;
 $panel-color-secondary:#DCDEE1;
+//$panel-alt-background-color:$lighter-grey;
+//$panel-alt-color:$base-font-color;
 //global used on all partials to get a uniform spacing between elements
 //$base-margin-bottom:1.875em ;
 //headerTop
@@ -337,4 +339,78 @@ aside.col-md-4 {
 //bredcrumb override
 .breadcrumb {
     line-height: 1.5;
+}
+
+//page logo
+.page-logo{
+    margin:0 0 30px;
+
+    @media (min-width: 400px) {
+        max-width:50%;
+    }
+
+    @media (min-width: 641px) {
+        margin:-20px 0 30px;
+    }
+
+    @media (min-width: 990px) {
+        position:absolute;
+        right:-48%;
+        top:50px;
+        max-width:50%;
+        max-height:100px;
+    }
+}
+
+.panel.alt a{
+    color:$base-link-color;
+}
+
+.panel.top{
+    margin-top:0;
+}
+
+//sponsors
+.sponsors{
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    border-top:1px solid $border-color;
+    border-bottom:1px solid $border-color;
+    margin:30px 0 0;
+    padding:15px 0;
+    @media (min-width: 641px) {
+        margin:50px 0 0;
+    }
+    img{
+        max-height:130px;
+        padding:15px;
+    }
+    a{
+        &:hover{
+            img{
+                opacity:0.7;
+            }
+        }
+    }
+}
+
+//helper class
+.center-text{
+    margin:0 auto;
+}
+
+.mega-promo + h2{
+    margin-top:5px;
+}
+
+.mega-promo + .panel{
+    margin-top:-15px;
+}
+
+
+@media (max-width: 990px) {
+    .panel .media-container {
+        margin-top: 15px;
+    }
 }
