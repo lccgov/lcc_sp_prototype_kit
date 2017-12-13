@@ -23743,17 +23743,17 @@ aside.col-md-4 {
 .panel.top {
   margin-top: 0; }
 
-.sponsors {
+.sponsor-logos {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-justify-content: center;
-  -moz-box-justify-content: center;
-  -ms-flex-justify-content: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-box-justify-content: space-evenly;
+  -moz-box-justify-content: space-evenly;
+  -ms-flex-justify-content: space-evenly;
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align-items: center;
   -moz-box-align-items: center;
   -ms-flex-align-items: center;
@@ -23764,12 +23764,12 @@ aside.col-md-4 {
   margin: 30px 0 0;
   padding: 15px 0; }
   @media (min-width: 641px) {
-    .sponsors {
+    .sponsor-logos {
       margin: 50px 0 0; } }
-  .sponsors img {
+  .sponsor-logos img {
     max-height: 130px;
     padding: 15px; }
-  .sponsors a:hover img, .sponsors .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover img, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sponsors .btn-link:hover img {
+  .sponsor-logos a:hover img, .sponsor-logos .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover img, .nearestItem-search-features-inner a .nearestItem-showonmap-link .sponsor-logos .btn-link:hover img {
     opacity: 0.7; }
 
 .center-text {
