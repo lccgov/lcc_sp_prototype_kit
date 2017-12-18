@@ -146,3 +146,12 @@
     display: none !important;
   }
 }
+
+@media (max-width: 641px) {
+  .tablesaw{
+    th,
+    td {
+        border-bottom: 0;
+    }
+  }
+}
