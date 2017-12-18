@@ -22437,7 +22437,11 @@ ul.accordion li div.content-block .open-data div.clear {
   -ms-border-radius: 4px;
   border-radius: 4px;
   width: 100% !important;
-  padding: 0 !important; }
+  padding: 0 !important;
+  float: none; }
+  @media (min-width: 641px) {
+    .col-md-8 #SearchBox {
+      height: 55px; } }
   .col-md-8 #SearchBox .ms-srch-sbLarge {
     background-color: transparent;
     position: relative; }
@@ -22453,6 +22457,9 @@ ul.accordion li div.content-block .open-data div.clear {
       width: 100%;
       position: relative;
       padding: 5px; }
+      @media (min-width: 641px) {
+        .col-md-8 #SearchBox .ms-srch-sbLarge input {
+          height: 53px; } }
   .col-md-8 #SearchBox .ms-srch-sb-searchLink {
     font-weight: 400;
     font-size: 19px;
@@ -22470,9 +22477,9 @@ ul.accordion li div.content-block .open-data div.clear {
     text-align: left;
     line-height: 1.3em;
     position: relative;
-    background-color: #008000;
-    color: #FFFFFF;
-    border-color: #008000;
+    background-color: #007299;
+    color: white;
+    border-color: #007299;
     text-decoration: none;
     text-align: center;
     position: absolute;
@@ -22482,6 +22489,7 @@ ul.accordion li div.content-block .open-data div.clear {
     width: 45px;
     border: 0 !important;
     margin: 0;
+    padding: 0;
     -webkit-border-radius: 0px 4px 4px 0px;
     -moz-border-radius: 0px 4px 4px 0px;
     -ms-border-radius: 0px 4px 4px 0px;
@@ -22498,25 +22506,39 @@ ul.accordion li div.content-block .open-data div.clear {
       color: #212224;
       border-color: #FFBF47 !important; }
     .col-md-8 #SearchBox .ms-srch-sb-searchLink:hover {
-      background: #009a00;
-      color: #FFFFFF;
-      border-color: #009a00; }
+      background: #0085b3;
+      color: white;
+      border-color: #0085b3; }
     .col-md-8 #SearchBox .ms-srch-sb-searchLink:active {
-      background: #004d00 !important;
-      color: #FFFFFF !important;
-      border-color: #004d00 !important; }
+      background: #004c66 !important;
+      color: white !important;
+      border-color: #004c66 !important; }
     .col-md-8 #SearchBox .ms-srch-sb-searchLink:visited {
-      color: #FFFFFF; }
+      color: white; }
+    @media (min-width: 641px) {
+      .col-md-8 #SearchBox .ms-srch-sb-searchLink {
+        height: 55px;
+        width: 55px; } }
+    @media (max-width: 641px) {
+      .col-md-8 #SearchBox .ms-srch-sb-searchLink {
+        padding: 0;
+        margin: 0; } }
     .col-md-8 #SearchBox .ms-srch-sb-searchLink img {
       display: none; }
     .col-md-8 #SearchBox .ms-srch-sb-searchLink:before {
       font-family: "FontAwesome";
+      font-size: 28px;
       content: "\f002";
-      font-size: 30px;
-      line-height: 1;
+      margin: 0;
+      color: white;
       position: absolute;
-      right: 8px;
-      top: 7px; }
+      left: 50%;
+      top: 50%;
+      margin-top: -14px;
+      margin-left: -13px; }
+      @media (max-width: 641px) {
+        .col-md-8 #SearchBox .ms-srch-sb-searchLink:before {
+          margin-top: -12px; } }
 
 .col-md-8 .ms-srch-group .ms-srch-group-content {
   display: inline-block;
@@ -22579,7 +22601,8 @@ ul.accordion li div.content-block .open-data div.clear {
       width: 100%;
       font-size: 19px;
       font-weight: 400;
-      position: relative; }
+      position: relative;
+      padding-right: 30px; }
       .col-md-4 .ms-ref-ctrl .ms-ref-refiner #Container .ms-ref-refinername .ms-ref-uparrow,
       .col-md-4 .ms-ref-ctrl .ms-ref-refiner #Container .ms-ref-refinername .ms-ref-downarrow {
         width: auto;
@@ -23622,6 +23645,104 @@ footer.main .footerGlobal {
 
 .ie8 a.search, .ie8 .nearestItem-search-features-inner a .nearestItem-showonmap-link .search.btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .ie8 .search.btn-link {
   display: none; }
+
+/*! Tablesaw - v3.0.6 - 2017-11-20
+* https://github.com/filamentgroup/tablesaw
+* Copyright (c) 2017 Filament Group; Licensed MIT */
+.tablesaw {
+  width: 100%;
+  max-width: 100%;
+  empty-cells: show;
+  border-collapse: collapse;
+  border: 0;
+  padding: 0; }
+
+.tablesaw * {
+  box-sizing: border-box; }
+
+.tablesaw-stack td .tablesaw-cell-label,
+.tablesaw-stack th .tablesaw-cell-label {
+  display: none; }
+
+/* Mobile first styles: Begin with the stacked presentation at narrow widths */
+/* Support note IE9+: @media only all */
+@media only all {
+  /* Show the table cells as a block level element */
+  .tablesaw-stack {
+    clear: both; }
+  .tablesaw-stack td,
+  .tablesaw-stack th {
+    text-align: left;
+    display: block; }
+  .tablesaw-stack tr {
+    clear: both;
+    display: table-row; }
+  /* Make the label elements a percentage width */
+  .tablesaw-stack td .tablesaw-cell-label,
+  .tablesaw-stack th .tablesaw-cell-label {
+    display: inline-block;
+    padding: 0 .6em 0 0;
+    width: 30%; }
+  /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
+  .tablesaw-stack th .tablesaw-cell-label-top,
+  .tablesaw-stack td .tablesaw-cell-label-top {
+    display: block;
+    padding: .4em 0;
+    margin: .4em 0; }
+  .tablesaw-cell-label {
+    display: block; }
+  /* Avoid double strokes when stacked */
+  .tablesaw-stack tbody th.group {
+    margin-top: -1px; }
+  /* Avoid double strokes when stacked */
+  .tablesaw-stack th.group b.tablesaw-cell-label {
+    display: none !important; } }
+
+@media (max-width: 39.9375em) {
+  /* Table rows have a gray bottom stroke by default */
+  .tablesaw-stack tbody tr {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #dfdfdf; }
+  .tablesaw-stack thead td,
+  .tablesaw-stack thead th {
+    display: none; }
+  .tablesaw-stack tbody td,
+  .tablesaw-stack tbody th {
+    display: block;
+    float: left;
+    clear: left;
+    width: 100%; }
+  .tablesaw-cell-label {
+    vertical-align: top; }
+  .tablesaw-cell-content {
+    display: inline-block;
+    max-width: 67%; }
+  .tablesaw-stack .tablesaw-stack-block .tablesaw-cell-label,
+  .tablesaw-stack .tablesaw-stack-block .tablesaw-cell-content {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0; }
+  .tablesaw-stack td:empty,
+  .tablesaw-stack th:empty {
+    display: none; } }
+
+/* Media query to show as a standard table at 560px (35em x 16px) or wider */
+@media (min-width: 40em) {
+  .tablesaw-stack tr {
+    display: table-row; }
+  /* Show the table header rows */
+  .tablesaw-stack td,
+  .tablesaw-stack th,
+  .tablesaw-stack thead td,
+  .tablesaw-stack thead th {
+    display: table-cell;
+    margin: 0; }
+  /* Hide the labels in each cell */
+  .tablesaw-stack td .tablesaw-cell-label,
+  .tablesaw-stack th .tablesaw-cell-label {
+    display: none !important; } }
 
 html {
   background-color: #007299; }

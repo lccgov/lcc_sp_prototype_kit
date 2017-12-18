@@ -39,6 +39,7 @@
  {% endblock %}
 
 {% block sectionOneContent %}
+<h2>Search box</h2>
 <div class="lcc-search-box">
     <div class="input-group">
         <label class="sr-only" for="siteSearch">Search the website</label>
@@ -52,6 +53,9 @@
         </span>
     </div>
 </div>
+
+<h2>Sharepoint search box</h2>
+<div id="SearchBox" name="Control" class="ms-floatLeft">            <div class="ms-srch-sbLarge ms-srch-sb-border" id="ctl00_ctl48_g_0ba62345_5b9a_47a5_b85b_ec3622f6c1ed_csr_sboxdiv">                <input type="text" value="" maxlength="2048" accesskey="S" title="Search..." id="ctl00_ctl48_g_0ba62345_5b9a_47a5_b85b_ec3622f6c1ed_csr_sbox" autocomplete="off" autocorrect="off" onkeypress="if (Srch.U.isEnterKey(String.fromCharCode(event.keyCode))) { $getClientControl(this).search(this.value);return Srch.U.cancelEvent(event); }" onkeydown="var ctl = $getClientControl(this);ctl.activateDefaultQuerySuggestionBehavior();" onfocus="var ctl = $getClientControl(this);ctl.hidePrompt();ctl.setBorder(true);" onblur="var ctl = $getClientControl(this);ctl.showPrompt();ctl.setBorder(false);" class="ms-textLarge ms-srch-sbLarge-fullWidth ms-srch-sb-prompt ms-helperText"> 				<a title="Search" class="ms-srch-sb-searchLink" id="ctl00_ctl48_g_0ba62345_5b9a_47a5_b85b_ec3622f6c1ed_csr_SearchLink" onclick="$getClientControl(this).search($get('ctl00_ctl48_g_0ba62345_5b9a_47a5_b85b_ec3622f6c1ed_csr_sbox').value);" href="javascript: {}">					<img src="/_layouts/15/images/searchresultui.png?rev=23" class="ms-srch-sbLarge-searchImg" id="searchImg" alt="Search">                </a>                <div class="ms-qSuggest-container ms-shadow" id="AutoCompContainer">                    <div id="ctl00_ctl48_g_0ba62345_5b9a_47a5_b85b_ec3622f6c1ed_csr_AutoCompList"></div>                </div>	</div>        </div>
 
 <h2>Accordion - accessible</h2>
 <ul class="accordion">
@@ -327,6 +331,113 @@
   </tbody>
 </table>
 
+<h2>Responsive table</h2>
+<table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="tablesaw-2503">
+			<thead>
+				<tr>
+					<th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="persist">Movie Title</th>
+					<th scope="col" data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="" data-tablesaw-priority="3">Rank</th>
+					<th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="2">Year</th>
+					<th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="1"><abbr title="Rotten Tomato Rating">Rating</abbr></th>
+					<th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="4">Gross</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="title"><b class=" tablesaw-cell-label">Movie Title</b><span class="tablesaw-cell-content"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a></span></td>
+					<td><b class=" tablesaw-cell-label">Rank</b><span class="tablesaw-cell-content">1</span></td>
+					<td><b class=" tablesaw-cell-label">Year</b><span class="tablesaw-cell-content">2009</span></td>
+					<td><b class=" tablesaw-cell-label"><abbr title="Rotten Tomato Rating">Rating</abbr></b><span class="tablesaw-cell-content">83%</span></td>
+					<td><b class=" tablesaw-cell-label">Gross</b><span class="tablesaw-cell-content">$2.7B</span></td>
+				</tr>
+			</tbody>
+		</table>
+
+<h2>Responsive table</h2>
+<table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="tablesaw-2503">
+			<thead>
+				<tr>
+					<th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="persist">Movie Title</th>
+					<th scope="col" data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="" data-tablesaw-priority="3">Rank</th>
+					<th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="2">Year</th>
+					<th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="1"><abbr title="Rotten Tomato Rating">Rating</abbr></th>
+					<th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="4">Gross</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="title"><b class=" tablesaw-cell-label">Movie Title</b><span class="tablesaw-cell-content"><a href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a></span></td>
+					<td><b class=" tablesaw-cell-label">Rank</b><span class="tablesaw-cell-content">1</span></td>
+					<td><b class=" tablesaw-cell-label">Year</b><span class="tablesaw-cell-content">2009</span></td>
+					<td><b class=" tablesaw-cell-label"><abbr title="Rotten Tomato Rating">Rating</abbr></b><span class="tablesaw-cell-content">83%</span></td>
+					<td><b class=" tablesaw-cell-label">Gross</b><span class="tablesaw-cell-content">$2.7B</span></td>
+				</tr>
+				<tr>
+					<td class="title"><b class=" tablesaw-cell-label">Movie Title</b><span class="tablesaw-cell-content"><a href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></span></td>
+					<td><b class=" tablesaw-cell-label">Rank</b><span class="tablesaw-cell-content">2</span></td>
+					<td><b class=" tablesaw-cell-label">Year</b><span class="tablesaw-cell-content">1997</span></td>
+					<td><b class=" tablesaw-cell-label"><abbr title="Rotten Tomato Rating">Rating</abbr></b><span class="tablesaw-cell-content">88%</span></td>
+					<td><b class=" tablesaw-cell-label">Gross</b><span class="tablesaw-cell-content">$2.1B</span></td>
+				</tr>
+				<tr>
+					<td class="title"><b class=" tablesaw-cell-label">Movie Title</b><span class="tablesaw-cell-content"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The Avengers</a></span></td>
+					<td><b class=" tablesaw-cell-label">Rank</b><span class="tablesaw-cell-content">3</span></td>
+					<td><b class=" tablesaw-cell-label">Year</b><span class="tablesaw-cell-content">2012</span></td>
+					<td><b class=" tablesaw-cell-label"><abbr title="Rotten Tomato Rating">Rating</abbr></b><span class="tablesaw-cell-content">92%</span></td>
+					<td><b class=" tablesaw-cell-label">Gross</b><span class="tablesaw-cell-content">$1.5B</span></td>
+				</tr>
+				<tr>
+					<td class="title"><b class=" tablesaw-cell-label">Movie Title</b><span class="tablesaw-cell-content"><a href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry Potter and the Deathly Hallows—Part 2</a></span></td>
+					<td><b class=" tablesaw-cell-label">Rank</b><span class="tablesaw-cell-content">4</span></td>
+					<td><b class=" tablesaw-cell-label">Year</b><span class="tablesaw-cell-content">2011</span></td>
+					<td><b class=" tablesaw-cell-label"><abbr title="Rotten Tomato Rating">Rating</abbr></b><span class="tablesaw-cell-content">96%</span></td>
+					<td><b class=" tablesaw-cell-label">Gross</b><span class="tablesaw-cell-content">$1.3B</span></td>
+				</tr>
+				<tr>
+					<td class="title"><b class=" tablesaw-cell-label">Movie Title</b><span class="tablesaw-cell-content"><a href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a></span></td>
+					<td><b class=" tablesaw-cell-label">Rank</b><span class="tablesaw-cell-content">5</span></td>
+					<td><b class=" tablesaw-cell-label">Year</b><span class="tablesaw-cell-content">2013</span></td>
+					<td><b class=" tablesaw-cell-label"><abbr title="Rotten Tomato Rating">Rating</abbr></b><span class="tablesaw-cell-content">89%</span></td>
+					<td><b class=" tablesaw-cell-label">Gross</b><span class="tablesaw-cell-content">$1.2B</span></td>
+				</tr>
+				<tr>
+					<td class="title"><b class=" tablesaw-cell-label">Movie Title</b><span class="tablesaw-cell-content"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a></span></td>
+					<td><b class=" tablesaw-cell-label">Rank</b><span class="tablesaw-cell-content">6</span></td>
+					<td><b class=" tablesaw-cell-label">Year</b><span class="tablesaw-cell-content">2013</span></td>
+					<td><b class=" tablesaw-cell-label"><abbr title="Rotten Tomato Rating">Rating</abbr></b><span class="tablesaw-cell-content">78%</span></td>
+					<td><b class=" tablesaw-cell-label">Gross</b><span class="tablesaw-cell-content">$1.2B</span></td>
+				</tr>
+				<tr>
+					<td class="title"><b class=" tablesaw-cell-label">Movie Title</b><span class="tablesaw-cell-content"><a href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the Moon</a></span></td>
+					<td><b class=" tablesaw-cell-label">Rank</b><span class="tablesaw-cell-content">7</span></td>
+					<td><b class=" tablesaw-cell-label">Year</b><span class="tablesaw-cell-content">2011</span></td>
+					<td><b class=" tablesaw-cell-label"><abbr title="Rotten Tomato Rating">Rating</abbr></b><span class="tablesaw-cell-content">36%</span></td>
+					<td><b class=" tablesaw-cell-label">Gross</b><span class="tablesaw-cell-content">$1.1B</span></td>
+				</tr>
+				<tr>
+					<td class="title"><b class=" tablesaw-cell-label">Movie Title</b><span class="tablesaw-cell-content"><a href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of the Rings: The Return of the King</a></span></td>
+					<td><b class=" tablesaw-cell-label">Rank</b><span class="tablesaw-cell-content">8</span></td>
+					<td><b class=" tablesaw-cell-label">Year</b><span class="tablesaw-cell-content">2003</span></td>
+					<td><b class=" tablesaw-cell-label"><abbr title="Rotten Tomato Rating">Rating</abbr></b><span class="tablesaw-cell-content">95%</span></td>
+					<td><b class=" tablesaw-cell-label">Gross</b><span class="tablesaw-cell-content">$1.1B</span></td>
+				</tr>
+				<tr>
+					<td class="title"><b class=" tablesaw-cell-label">Movie Title</b><span class="tablesaw-cell-content"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></span></td>
+					<td><b class=" tablesaw-cell-label">Rank</b><span class="tablesaw-cell-content">9</span></td>
+					<td><b class=" tablesaw-cell-label">Year</b><span class="tablesaw-cell-content">2012</span></td>
+					<td><b class=" tablesaw-cell-label"><abbr title="Rotten Tomato Rating">Rating</abbr></b><span class="tablesaw-cell-content">92%</span></td>
+					<td><b class=" tablesaw-cell-label">Gross</b><span class="tablesaw-cell-content">$1.1B</span></td>
+				</tr>
+				<tr>
+					<td class="title"><b class=" tablesaw-cell-label">Movie Title</b><span class="tablesaw-cell-content"><a href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of Extinction</a></span></td>
+					<td><b class=" tablesaw-cell-label">Rank</b><span class="tablesaw-cell-content">10</span></td>
+					<td><b class=" tablesaw-cell-label">Year</b><span class="tablesaw-cell-content">2014</span></td>
+					<td><b class=" tablesaw-cell-label"><abbr title="Rotten Tomato Rating">Rating</abbr></b><span class="tablesaw-cell-content">18%</span></td>
+					<td><b class=" tablesaw-cell-label">Gross</b><span class="tablesaw-cell-content">$1.0B</span></td>
+				</tr>
+			</tbody>
+		</table>
+
 <h2 class="heading-large">Panel</h2>
 <div class="panel">
     <h3 class="heading-medium top">Panel header</h3>
@@ -365,6 +476,8 @@
 <img class="img-content img-left" src="https://lcc-prototype-kit.herokuapp.com/public/images/16-9-image-leeds.jpg" alt="" />
 <p>If you already pay by Direct Debit and want to spread your payments email the Council Tax team.</p>
 <div class="clear"></div>
+
+
 
 <h2>Accordion</h2>
 <ul class="accordion" data-module="accordion">
