@@ -12,7 +12,7 @@ $('.reveal-code').click(function(){
 		if($this.hasClass('collapsed')){
 			$this.text(' Hide code');			
 		} else {
-			$this.text(' Show code');
+			$this.text(' See code');
 		}
 	});
     

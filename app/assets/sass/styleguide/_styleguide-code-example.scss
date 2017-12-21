@@ -76,9 +76,13 @@
 }
 
 .code-reveal{
-      margin: 30px 0 15px;
+      margin: 45px 0 0;
 
   a{
-    @include border-link();
+    background:$base-link-color;
+    color:white;
+    padding:10px 15px;
+    @include border-radius(4px);
+    display:inline-block;
   }
 }

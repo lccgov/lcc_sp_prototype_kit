@@ -1,0 +1,378 @@
+{% extends "layout_multi_sections.html" %}
+
+{% block page_title %}
+	Panels
+{% endblock %}
+
+
+  {% block css_register %}
+    <script src="https://use.typekit.net/pws7qio.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+{% block additional_page_scripts %}
+    <script src="/public/javascripts/prism.js" type="text/javascript"></script>  
+{% endblock %}  
+ 
+
+{% block header %}
+Panels
+{% endblock %}
+
+ {% block main_nav %}
+  {% include "includes/main_nav.html" %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
+ {% endblock %}
+
+{% block sectionOneContent %}
+{% endblock %}
+
+{% block pageContent %}
+
+
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+{% endblock %}
+
+{% block sectionLeftHandColumn %}
+<div id="sticky-anchor"></div>
+<div id="sticky" class="secondary-nav">
+    <h3 class="heading-xsmall heading-contents">Contents:</h3>
+    <ul class="list list-contents">
+        <li><a href="#text-panel">Text panel</a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block sectionOneRightContent %}
+<div class="text">
+    <p class="lead">A panel can be used to highlight different types of content in a variety of ways.</p>
+</div>
+<h2 class="heading-large" id="text-panel">Text panel</h2>
+<div class="example">
+      <div class="panel">
+          <h3>Text panel header</h3>
+          <p>This is the body copy of the text panel. You can have <a href="#">links</a> within the copy.</p>
+      </div>
+      <div class="code-reveal">
+        <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#buttonsButtonText" aria-expanded="false" aria-controls="buttonsButtonText">
+        See code
+        </a>
+        <div class="collapse exampleCode" id="buttonsButtonText">
+            <pre>
+                <code class="line-numbers language-markup">
+                    &lt;div class="panel">
+                        &lt;h3>Panel header&lt;/h3>
+                        &lt;p>This is the body text of the panel. You can have &lt;a href="#">links&lt;/a> within the copy.&lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+<h2 class="heading-large" id="text-panel-alt">Text panel alternative</h2>
+<div class="example">
+      <div class="panel alt">
+          <h3>Text panel alternative header</h3>
+          <p>This is the body copy of the text panel. You can have <a href="#">links</a> within the copy.</p>
+      </div>
+      <div class="code-reveal">
+        <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#buttonsButtonText" aria-expanded="false" aria-controls="buttonsButtonText">
+        See code
+        </a>
+        <div class="collapse exampleCode" id="buttonsButtonText">
+            <pre>
+                <code class="line-numbers language-markup">
+                    &lt;div class="panel">
+                        &lt;h3>Text panel alternative header&lt;/h3>
+                        &lt;p>This is the body text of the panel. You can have &lt;a href="#">links&lt;/a> within the copy.&lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+<h2 class="heading-large" id="text-panel-alt">Panel with an image</h2>
+<div class="example">
+      <div class="panel img">
+        <div class="container-fluid">
+        <div class="img-container right col-md-6" style="background-image: url('/public/images/home-hero-images/1.jpg');">
+        </div>
+        <div class="col-md-6 content">
+            <h2>Interested in fostering?</h2>
+            <p>Register your interest with us and a member of our team will get in touch and answer any questions you may have.</p>
+            <a class="btn btn-secondary btn-arrow">Register your interest</a>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+    </div>
+      <div class="code-reveal">
+        <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#buttonsButtonText" aria-expanded="false" aria-controls="buttonsButtonText">
+        See code
+        </a>
+        <div class="collapse exampleCode" id="buttonsButtonText">
+            <pre>
+                <code class="line-numbers language-markup">
+                    &lt;div class="panel">
+                        &lt;h3>Text panel alternative header&lt;/h3>
+                        &lt;p>This is the body text of the panel. You can have &lt;a href="#">links&lt;/a> within the copy.&lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+<h2 class="heading-large" id="text-panel-alt">Panel quote</h2>
+<div class="example">
+    <div class="panel">
+        <div class="container-fluid">
+            <blockquote>
+                There is no such thing as a typical foster carer - everybody has somethng to bring in terms of experience and knowledge.
+            </blockquote>
+        <div class="clearfix"></div>
+        </div>
+    </div>
+      <div class="code-reveal">
+        <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#buttonsButtonText" aria-expanded="false" aria-controls="buttonsButtonText">
+        See code
+        </a>
+        <div class="collapse exampleCode" id="buttonsButtonText">
+            <pre>
+                <code class="line-numbers language-markup">
+                    &lt;div class="panel">
+                        &lt;h3>Text panel alternative header&lt;/h3>
+                        &lt;p>This is the body text of the panel. You can have &lt;a href="#">links&lt;/a> within the copy.&lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+<h2 class="heading-large" id="text-panel-alt">Panel quote with an image</h2>
+<div class="example">
+      <div class="panel img alt">
+        <div class="container-fluid">
+        <div class="img-container right col-md-6" style="background-image: url('/public/images/home-hero-images/1.jpg');">
+        </div>
+        <div class="col-md-6 content">
+            <blockquote>
+                There is no such thing as a typical foster carer - everybody has somethng to bring in terms of experience and knowledge.
+            </blockquote>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+    </div>
+      <div class="code-reveal">
+        <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#buttonsButtonText" aria-expanded="false" aria-controls="buttonsButtonText">
+        See code
+        </a>
+        <div class="collapse exampleCode" id="buttonsButtonText">
+            <pre>
+                <code class="line-numbers language-markup">
+                    &lt;div class="panel">
+                        &lt;h3>Text panel alternative header&lt;/h3>
+                        &lt;p>This is the body text of the panel. You can have &lt;a href="#">links&lt;/a> within the copy.&lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+<h2 class="heading-large" id="text-panel-alt">Event panel</h2>
+<div class="example">
+            <div class="panel-event-list">
+        <h2>Events</h2>
+        <p class="text">Come along and have a coffee with one of our foster carers and a member of staff from the recruitment team, they can anser all your questions.</p>
+        <div class="panel img panel-event">
+        <div class="container-fluid">
+        <div class="img-container col-sm-6 col-md-3" style="background-image: url('/public/images/home-hero-images/1.jpg');">
+        </div>
+        <div class="col-sm-6 col-sm-offset-6 col-md-offset-3 col-md-3 panel-event-date">
+            <div class="panel-event-date-wrapper">
+                <p class="panel-event-date-details">
+                    <span>TUES</span>
+                    <span class="big-number">27</span>
+                    <span>OCT 2017</span>
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-md-offset-6 content panel-event-content">
+            <h3 class="panel-event-title">Information event</h3>
+            <p class="panel-event-description">Event space area at the bottom of the indoor market, near the food outlets</p>
+            <div class="panel-event-info">
+                <p class="panel-event-info-location"><strong>Location</strong> <a href="https://www.google.co.uk/maps/place/Leeds+Kirkgate+Market,+Kirkgate,+Leeds+LS2/@53.7971889,-1.5410197,17z/data=!3m1!4b1!4m5!3m4!1s0x48795c19fbb16a6b:0x6a81ca2e80255197!8m2!3d53.7972642!4d-1.5387237">Leeds Kirkgate Market <span class="sr-only">Get directions. External link.</span></a></p>
+                <p class="panel-event-info-time"><strong>Time</strong> Drop in from 11am to 3pm</p>
+                <p class="panel-event-info-date"><strong>Date</strong> Tuesday 27th October 2017</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="panel img panel-event">
+        <div class="container-fluid">
+        <div class="img-container col-sm-6 col-md-3" style="background-image: url('/public/images/home-hero-images/1.jpg');">
+        </div>
+        <div class="col-sm-6 col-sm-offset-6 col-md-offset-3 col-md-3 panel-event-date">
+            <div class="panel-event-date-wrapper">
+                <p class="panel-event-date-details">
+                    <span>WED</span>
+                    <span class="big-number">6</span>
+                    <span>DEC 2017</span>
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-md-offset-6 content panel-event-content">
+            <h3 class="panel-event-title">Fostering children with complex needs / disabilities</h3>
+            <p class="panel-event-description">Free on-site parking</p>
+            <div class="panel-event-info">
+                <p class="panel-event-info-location"><strong>Location</strong> <a href="https://www.google.co.uk/maps/place/Village+Hotel+Leeds+North/@53.834195,-1.589756,15z/data=!4m5!3m4!1s0x0:0xf7d7911c75845ff6!8m2!3d53.834195!4d-1.589756">Village Hotel North, 186 Otley Rd, Headingley, Leeds LS16 5PR <span class="sr-only">Get directions. External link.</span></a></p>
+                <p class="panel-event-info-time"><strong>Time</strong> 6pm to 8:30pm</p>
+                <p class="panel-event-info-date"><strong>Date</strong> Wednesday 6th December 2017</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+    </div>
+    </div>
+      <div class="code-reveal">
+        <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#buttonsButtonText" aria-expanded="false" aria-controls="buttonsButtonText">
+        See code
+        </a>
+        <div class="collapse exampleCode" id="buttonsButtonText">
+            <pre>
+                <code class="line-numbers language-markup">
+                    &lt;div class="panel">
+                        &lt;h3>Text panel alternative header&lt;/h3>
+                        &lt;p>This is the body text of the panel. You can have &lt;a href="#">links&lt;/a> within the copy.&lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+     {% include "includes/footer-styleguide.html" %}
+ {% endblock %}

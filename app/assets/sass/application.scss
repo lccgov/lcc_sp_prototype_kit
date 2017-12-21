@@ -161,6 +161,7 @@ $input-border-color:$grey;
 //$phase-banner-stage-background:#007299 !default;
 //$phase-banner-stage-color:white !default;
 
+@import 'bootstrap.3.3';
 
 //- FRONT END TOOLKIT
 @import 'url-helper';
@@ -475,5 +476,54 @@ table{
                 padding: 8px;
             }
         }
+    }
+}
+
+//panels
+.panel{
+    h2,
+    h3,
+    h4{
+        margin-bottom:15px;
+        + p{
+            margin-top:0;
+        }
+    }
+
+    p{
+        margin-bottom:15px;
+
+        + .btn{
+            margin-top:5px !important;
+        }
+    }
+}
+
+
+.panel.img .content {
+    @media (min-width: 641px){
+        padding: 30px;
+    }
+}
+
+
+.panel blockquote {
+    @media (min-width: 990px){
+        font-size: 27px;
+    }
+}
+
+//inset text
+.text-highlight,
+blockquote {
+    padding:15px;
+    @media (min-width: 641px){
+        padding:30px;
+    }
+}
+.text-block {
+    padding:0 15px;
+    @media (min-width: 641px){
+        padding:0 30px;
     }
 }

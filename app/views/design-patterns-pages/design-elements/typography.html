@@ -70,12 +70,11 @@ Typography
 {% endblock %}
 {% block sectionOneRightContent %}
     <div class="text">
-        <p class="lead">For Leeds.gov.uk domains, always use the <a href="https://fonts.google.com/specimen/Open+Sans" rel="external">Open Sans</a> font in Regular for body text, and <a href="https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat" rel="external">Montserrat <span class="sr-only">External link</span></a> in Semi-Bold for headings.</p>
+        <p class="lead">For Leeds.gov.uk domains, always use the <a href="https://fonts.google.com/specimen/Open+Sans" rel="external">Open Sans</a> font in Regular for body text, and <a href="https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat" rel="external">Montserrat <span class="sr-only">External link</span></a> in Bold for headings.</p>
     </div>
     <div class="text">
         <h2 class="heading-large" id="typography-headings">Headings</h2>
         <ul class="list list-bullet text">
-            <li>use Montserrat semi-bold</li>
             <li>use sentence case for headings</li>
             <li>use headings consistently to create a clear hierarchy</li>
             <li>use semantic headings and structure. <a href="http://www.webpagemistakes.ca/heading-structure-heading-tag/" rel="external">Read article on heading structure<span class="sr-only">External link</span></a></li>
@@ -88,19 +87,18 @@ Typography
         <h4 class="heading-small">A small heading</h4>
         <div class="code-reveal">
             <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyHeadingsCode" aria-expanded="false" aria-controls="typographyHeadingsCode">
-            Show code
+            See code
             </a>
             <div class="collapse exampleCode" id="typographyHeadingsCode">
                 <pre>
                     <code class="line-numbers language-markup">
-                        &lt;h1 class="heading-xlarge">A 50px bold xlarge heading&lt;/h1>
+                        &lt;h1 class="heading-xlarge">A xlarge heading&lt;/h1>
 
-                        &lt;h2 class="heading-large">A 32px bold large heading&lt;/h2>
+                        &lt;h2 class="heading-large">A large heading&lt;/h2>
 
-                        &lt;h3 class="heading-medium">A 24px bold medium heading&lt;/h3>
+                        &lt;h3 class="heading-medium">A medium heading&lt;/h3>
 
-                        &lt;h4 class="heading-small">A 21px bold small heading&lt;/h4>
-
+                        &lt;h4 class="heading-small">A small heading&lt;/h4>
                     </code>
                 </pre>
             </div>
@@ -112,10 +110,7 @@ Typography
         Lead paragraph
     </h2>
 
-    <ul class="list list-bullet">
-        <li>use 24px for a lead paragraph</li>
-        <li>there should only be one lead paragraph per page</li>
-    </ul>
+    <p>There should only be one lead paragraph per page.</p>
     </div>
     <div class="example">
     <div class="text">
@@ -125,7 +120,7 @@ Typography
     
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyLeadParagraphCode" aria-expanded="false" aria-controls="typographyLeadParagraphCode">
-        Show code
+        See code
         </a>
         <div class="collapse exampleCode" id="typographyLeadParagraphCode">
             <pre>
@@ -141,12 +136,7 @@ Typography
 
     <div class="text">
     <h2 class="heading-large" id="typography-body-copy">Body copy</h2>
-    <ul class="list list-bullet text">
-        <li>use Open Sans Regular</li>
-        <li>avoid using bold and italics</li>
-        <li>use 19px for body copy – 16px for smaller screens</li>
-        <li>make sure lines of text don’t exceed 75 characters, as they become harder to read beyond that point</li>
-    </ul>
+    <p>Avoid using bold and italics.</p>
     </div>
     <div class="example">
     <div class="text">
@@ -156,7 +146,7 @@ Typography
     
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyBodyCopyCode" aria-expanded="false" aria-controls="typographyBodyCopyCode">
-        Show code
+        See code
         </a>
         <div class="collapse exampleCode" id="typographyBodyCopyCode">
             <pre>
@@ -174,10 +164,7 @@ Typography
 
     <div class="text">
     <h2 class="heading-large" id="typography-links">Links</h2>
-    <ul class="list list-bullet text">
-        <li>links within body copy should be blue and underlined</li>
-        <li>links without surrounding text should not have a full stop at the end</li>
-    </ul>
+    <p>Links without surrounding text should not have a full stop at the end.</p>
     </div>
     <div class="example">
         <div class="text">
@@ -190,7 +177,7 @@ Typography
     
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyLinksCode" aria-expanded="false" aria-controls="typographyLinksCode">
-            Show code</a>
+            See code</a>
         <div class="collapse exampleCode" id="typographyLinksCode">
             <pre>
                 <code class="line-numbers language-markup">
@@ -216,30 +203,40 @@ Typography
     </p>
     </div>
     <div class="example">
+        <h3>Bullet list</h3>
         <ul class="list list-bullet">
             <li>here is a bulleted list</li>
             <li>in tincidunt dolor volutpat</li>
             <li>est non tempus malesuada</li>
             <li>imperdiet lorem consequat sit amet</li>
         </ul>
-
+        <h3>Numbered list</h3>
         <ol class="list list-number">
             <li>here is a numbered list</li>
             <li>in tincidunt dolor volutpat</li>
             <li>est non tempus malesuada</li>
             <li>imperdiet lorem consequat sit amet</li>
         </ol>
-
+        <h3>Navigation list</h3>
         <ul class="list list-nav">
             <li><a href="#">Related link</a></li>
             <li><a href="#">Related link</a></li>
             <li><a href="#" rel="external">External link <span class="sr-only">External link</span></a></li>
             <li><a href="#" class="more">More</a></li>
         </ul>
-    
+        <h3>Stepped list</h3>
+        <ol class="list list-step">
+            <li>A home visit</li>
+            <li>Completion of an application form</li>
+            <li>Attending a three day training course</li>
+            <li>General medical and criminal records check (known as a Disclosure and Barring Service – DBS check)</li>
+            <li>Working with a social worker on your assessment and portfolio</li>
+            <li>Attending a fostering panel</li>
+            <li>Registration as a foster carer</li>
+        </ol>
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyListsCode" aria-expanded="false" aria-controls="typographyListsCode">
-        Show code
+        See code
         </a>
         <div class="collapse exampleCode" id="typographyListsCode">
             <pre>
@@ -265,6 +262,16 @@ Typography
                         &lt;li>&lt;a href="#" rel="external">External link &lt;span class="sr-only">External link&lt;/span>&lt;/a>&lt;/li>
                         &lt;li>&lt;a href="#" class="more">More&lt;/a>&lt;/li>
                     &lt;/ul>
+
+                    &lt;ol class="list list-step">
+                        &lt;li>A home visit&lt;/li>
+                        &lt;li>Completion of an application form&lt;/li>
+                        &lt;li>Attending a three day training course&lt;/li>
+                        &lt;li>General medical and criminal records check (known as a Disclosure and Barring Service – DBS check)&lt;/li>
+                        &lt;li>Working with a social worker on your assessment and portfolio&lt;/li>
+                        &lt;li>Attending a fostering panel&lt;/li>
+                        &lt;li>Registration as a foster carer&lt;/li>
+                    &lt;/ol>
                 </code>
             </pre>
         </div>
@@ -296,7 +303,7 @@ Typography
     
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyInsetTextCode" aria-expanded="false" aria-controls="typographyInsetTextCode">
-        Show code
+        See code
         </a>
         <div class="collapse exampleCode" id="typographyInsetTextCode">
             <pre>
@@ -348,7 +355,7 @@ Typography
     
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyTextBlockCode" aria-expanded="false" aria-controls="typographyTextBlockCode">
-        Show code
+        See code
         </a>
         <div class="collapse exampleCode" id="typographyTextBlockCode">
             <pre>
@@ -398,7 +405,7 @@ Typography
     
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyLegalTextCode" aria-expanded="false" aria-controls="typographyLegalTextCode">
-        Show code
+        See code
         </a>
         <div class="collapse exampleCode" id="typographyLegalTextCode">
             <pre>
@@ -429,7 +436,7 @@ Typography
     
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#typographyBlockquoteCode" aria-expanded="false" aria-controls="typographyBlockquoteCode">
-        Show code
+        See code
         </a>
         <div class="collapse exampleCode" id="typographyBlockquoteCode">
             <pre>
@@ -467,7 +474,7 @@ Typography
     
     <div class="code-reveal">
         <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#hidden-text-reveal" aria-expanded="false" aria-controls="hidden-text-reveal">
-        Show code
+        See code
         </a>
         <div class="collapse exampleCode" id="hidden-text-reveal">
             <pre>

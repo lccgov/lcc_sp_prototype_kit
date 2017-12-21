@@ -19,15 +19,23 @@
         <link rel="manifest" href="{{ asset_path }}images/manifest.json?1.1.60">
         <link rel="mask-icon" href="{{ asset_path }}images/safari-pinned-tab.svg?1.1.60" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
-        <!-- Bootstrap CSS -->
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 
-        <!-- Google fonts Montserrat and Open Sans -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,700" rel="stylesheet">
+        <!-- Bootstrap CSS 
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> -->
+        <!-- Font Awesome 
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" /> -->
+
+        <!-- Font Awesome - Fix for render blocking -->
+        <script type='text/javascript'>
+        //<![CDATA[ 
+        function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }loadCSS("<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />");
+        //]]> 
+        </script>
+
+        <!-- Modernizr tells you what HTML, CSS and JavaScript features the user’s browser has to offer. -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <!-- Respond JS - min/max-width media query polyfill -->
+        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 
         <meta name="GENERATOR" content="Microsoft SharePoint" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -38,6 +46,7 @@
         <!-- Application CSS -->
         {% block css_register %}{% endblock %}
         </head>
+        
     <body>
 
         <div id="skiplink-container">
