@@ -29299,6 +29299,11 @@ aside.col-md-4 {
     @media (min-width: 641px) {
       .btn.btn-small {
         padding: 12px 16px; } }
+    .btn.btn-small.btn-arrow {
+      padding: 10px 40px 10px 14px; }
+      @media (min-width: 641px) {
+        .btn.btn-small.btn-arrow {
+          padding: 12px 42px 12px 16px; } }
 
 .breadcrumb {
   line-height: 1.5; }
@@ -29318,9 +29323,6 @@ aside.col-md-4 {
       top: 50px;
       max-width: 50%;
       max-height: 100px; } }
-
-.panel.alt a, .panel.alt .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .panel.alt .btn-link {
-  color: #007299; }
 
 .panel.top {
   margin-top: 0; }
@@ -29418,7 +29420,12 @@ table caption {
 .panel h2,
 .panel h3,
 .panel h4 {
-  margin-bottom: 15px; }
+  margin-bottom: 10px; }
+  @media (min-width: 641px) {
+    .panel h2,
+    .panel h3,
+    .panel h4 {
+      margin-bottom: 15px; } }
   .panel h2 + p,
   .panel h3 + p,
   .panel h4 + p {
@@ -29429,19 +29436,24 @@ table caption {
   .panel p + .btn {
     margin-top: 5px !important; }
 
+.panel .btn {
+  margin-bottom: 0; }
+
 @media (min-width: 641px) {
   .panel.img .content {
     padding: 30px; } }
 
 @media (min-width: 990px) {
   .panel blockquote {
-    font-size: 27px; } }
+    font-size: 24px;
+    line-height: 1.25; } }
 
-.text-highlight,
+.panel blockquote:before {
+  left: -10px; }
+
 blockquote {
   padding: 15px; }
   @media (min-width: 641px) {
-    .text-highlight,
     blockquote {
       padding: 30px; } }
 
@@ -29450,3 +29462,9 @@ blockquote {
   @media (min-width: 641px) {
     .text-block {
       padding: 0 30px; } }
+
+.text-highlight {
+  padding: 15px; }
+  @media (min-width: 641px) {
+    .text-highlight {
+      padding: 15px 30px; } }

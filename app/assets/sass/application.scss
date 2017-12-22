@@ -53,8 +53,8 @@ $secondary-link-color:$dark-blue;
 //panel colours
 $panel-color:#E5F1F5;
 $panel-color-secondary:#DCDEE1;
-//$panel-alt-background-color:$lighter-grey;
-//$panel-alt-color:$base-font-color;
+//$panel-alt-background-color:#003F55;
+//$panel-alt-color:white;
 //global used on all partials to get a uniform spacing between elements
 //$base-margin-bottom:1.875em ;
 //headerTop
@@ -342,6 +342,12 @@ aside.col-md-4 {
         @media (min-width: 641px) {
             padding: 12px 16px;
         }
+        &.btn-arrow{
+            padding: 10px 40px 10px 14px;
+            @media (min-width: 641px) {
+                padding: 12px 42px 12px 16px;
+            }
+        }
     }
 }
 
@@ -369,10 +375,6 @@ aside.col-md-4 {
         max-width:50%;
         max-height:100px;
     }
-}
-
-.panel.alt a{
-    color:$base-link-color;
 }
 
 .panel.top{
@@ -479,12 +481,17 @@ table{
     }
 }
 
+$panel-padding:30px;
+
 //panels
 .panel{
     h2,
     h3,
     h4{
-        margin-bottom:15px;
+        margin-bottom:10px;
+        @media (min-width: 641px){
+            margin-bottom:15px; 
+        }
         + p{
             margin-top:0;
         }
@@ -497,24 +504,34 @@ table{
             margin-top:5px !important;
         }
     }
+
+    .btn{
+        margin-bottom:0;
+    }
 }
 
 
 .panel.img .content {
     @media (min-width: 641px){
-        padding: 30px;
+        padding: $panel-padding;
     }
 }
 
 
 .panel blockquote {
     @media (min-width: 990px){
-        font-size: 27px;
+        font-size: 24px;
+        line-height:1.25;
     }
 }
 
+
+//panel blockquote
+.panel blockquote:before {
+    left: -10px;
+}
+
 //inset text
-.text-highlight,
 blockquote {
     padding:15px;
     @media (min-width: 641px){
@@ -525,5 +542,11 @@ blockquote {
     padding:0 15px;
     @media (min-width: 641px){
         padding:0 30px;
+    }
+}
+.text-highlight {
+    padding:15px;
+    @media (min-width: 641px){
+        padding:15px 30px;
     }
 }
