@@ -27464,13 +27464,7 @@ hr {
 .code-reveal {
   margin: 45px 0 0; }
   .code-reveal a, .code-reveal .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .code-reveal .btn-link {
-    background: #007299;
-    color: white;
-    padding: 10px 15px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px;
+    border-bottom: 1px solid rgba(0, 114, 153, 0.5);
     display: inline-block; }
 
 .swatch {
@@ -29468,3 +29462,10 @@ blockquote {
   @media (min-width: 641px) {
     .text-highlight {
       padding: 15px 30px; } }
+
+.pagination-nav {
+  border-top: 1px solid #DCDEE1;
+  border-bottom: 1px solid #DCDEE1; }
+
+.part-navigation__container {
+  border-bottom: 1px solid #DCDEE1; }

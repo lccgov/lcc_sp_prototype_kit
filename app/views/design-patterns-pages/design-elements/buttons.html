@@ -57,7 +57,11 @@ Buttons
 <div id="sticky" class="secondary-nav">
     <h3 class="heading-xsmall heading-contents">Contents:</h3>
     <ul class="list list-contents">
-        <li><a href="#button-text">Button text</a></li>
+        <li><a href="#primary-button">Primary button</a></li>
+        <li><a href="#secondary-button">Secondary button</a></li>
+        <li><a href="#ghost-button">Ghost button</a></li>
+        <li><a href="#button-external-link">Button external link</a></li>
+        <li><a href="#button-accessibility">Button accessibility</a></li>
     </ul>
 </div>
 {% endblock %}
@@ -65,45 +69,109 @@ Buttons
 {% block sectionOneRightContent %}
 <div class="text">
     <p class="lead">Use buttons to move though a transaction, aim to use only one button per page.</p>
+    <p class="text">Button text should be short and describe the action the button performs.</p>
 </div>
-<h2 class="heading-large" id="button-text">Button text</h2>
-<p class="text">Button text should be short and describe the action the button performs.</p>
+<h2 class="heading-large" id="primary-button">Primary button</h2>
 <div class="example">
       <a class="btn btn-primary btn-arrow" href="#">Save and continue</a>
-      <a rel="external" class="btn btn-primary btn-arrow" href="#">Search for council tax bands <span class="sr-only">External link</span></a>
       <div class="code-reveal">
-        <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#buttonsButtonText" aria-expanded="false" aria-controls="buttonsButtonText">
+        <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#primary-button-reveal" aria-expanded="false" aria-controls="primary-button-reveal">
         See code
         </a>
-        <div class="collapse exampleCode" id="buttonsButtonText">
+        <div class="collapse exampleCode" id="primary-button-reveal">
             <pre>
                 <code class="line-numbers language-markup">
-                &lt;a class="btn btn-primary btn-arrow">Save and continuen&lt;/a>
-                &lt;a rel="external" class="btn btn-primary btn-arrow" href="#">Search for council tax bands &lt;span class="sr-only">External link&lt;/span>&lt;/a>
+                &lt;a class="btn btn-primary btn-arrow" href="#">Save and continue&lt;/a>
                 </code>
             </pre>
         </div>
     </div>
 </div>
 
+<h2 class="heading-large" id="secondary-button">Secondary button</h2>
+<div class="example">
+      <a class="btn btn-secondary btn-small" href="#">Lookup address</a>
+      <div class="code-reveal">
+        <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#secondary-button-reveal" aria-expanded="false" aria-controls="secondary-button-reveal">
+        See code
+        </a>
+        <div class="collapse exampleCode" id="secondary-button-reveal">
+            <pre>
+                <code class="line-numbers language-markup">
+                &lt;a class="btn btn-secondary btn-small" href="#">Lookup address&lt;/a>
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+<h3>Secondary button in context</h3>
+<div class="example">
+    <div id="check-your-bin-day" class="findMyNearest check-your-bin-day">
+        <form>
+            <fieldset>
+                <legend class="sr-only">Find your bin collection dates</legend>    
+                <div id="postcode-lookup-container" class="form-group-button">
+                    <div class="form-group">
+                        <label class="form-label" for="postcode">Enter your postcode <span class="form-hint">For example, ‘LS6 2SB’.</span></label>
+                        <input id="postcode" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">      
+                        <button id="addressLookup" type="button" class="btn btn-secondary btn-small" value="Lookup Address">Lookup address</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
 
-<!--<h2 class="heading-large" id="button-text">Action button</h2>
+<h2 class="heading-large" id="ghost-button">Ghost button</h2>
+<div class="example">
+      <a class="btn btn-outline" href="#">Register interest</a>
+      <div class="code-reveal">
+        <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#ghost-button-reveal" aria-expanded="false" aria-controls="ghost-button-reveal">
+        See code
+        </a>
+        <div class="collapse exampleCode" id="ghost-button-reveal">
+            <pre>
+                <code class="line-numbers language-markup">
+                &lt;a class="btn btn-outline" href="#">Register interest&lt;/a>
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+
+<h2 class="heading-large" id="button-external-link">Button - external link</h2>
 <p class="text">Button text should be short and describe the action the button performs.</p>
 <div class="example">
-      <a class="btn btn-primary" href="#">Save and continue</a>
-</div>
-<div class="code-reveal">
-    <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#buttons-action" aria-expanded="false" aria-controls="buttons-action">
-    See code
-    </a>
-    <div class="collapse exampleCode" id="buttons-action">
-        <pre>
-            <code class="line-numbers language-markup">
-            &lt;a class="btn btn-primary">Save and continue&lt;/a>
-            </code>
-        </pre>
+      <a rel="external" href="#" class="btn btn-primary btn-arrow">Search for a property band <span class="sr-only">External link</span></a>
+      <div class="code-reveal">
+        <a class="text-link reveal reveal-code collapsed" role="button" data-toggle="collapse" href="#button-external-link-reveal" aria-expanded="false" aria-controls="button-external-link-reveal">
+        See code
+        </a>
+        <div class="collapse exampleCode" id="button-external-link-reveal">
+            <pre>
+                <code class="line-numbers language-markup">
+                &lt;a rel="external" class="btn btn-primary btn-arrow" href="#">Search for council tax bands &lt;span class="sr-only">(External link)&lt;/span>&lt;/a>
+                </code>
+            </pre>
+        </div>
     </div>
-</div>-->
+</div>
+
+<div id="button-accessibility" role="note" aria-label="Information" class="text-highlight">
+    <h2 class="heading-medium top">Accessibility: External link</h2>
+    <div class="text">
+        <p>To make users aware of an external link, you must add;</p>
+        <ul class="list list-bullet">
+            <li>rel="external"</li>
+            <li>span class="sr-only">(External link)</li>
+        </ul>
+    </div>
+    <h3>Example</h3>
+    <pre class="language-markup"><code class="line-numbers language-markup">&lt;a rel="external" class="btn btn-primary" href="#">Button link &lt;span class="sr-only">(External link)&lt;/span>&lt;/a></code></pre>
+</div>
+
 {% endblock %}
 
 {% block sectionOneThirdCol1 %}
