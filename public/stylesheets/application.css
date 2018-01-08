@@ -29462,10 +29462,3 @@ blockquote {
   @media (min-width: 641px) {
     .text-highlight {
       padding: 15px 30px; } }
-
-.pagination-nav {
-  border-top: 1px solid #DCDEE1;
-  border-bottom: 1px solid #DCDEE1; }
-
-.part-navigation__container {
-  border-bottom: 1px solid #DCDEE1; }
