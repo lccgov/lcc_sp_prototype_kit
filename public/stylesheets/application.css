@@ -29462,3 +29462,25 @@ blockquote {
   @media (min-width: 641px) {
     .text-highlight {
       padding: 15px 30px; } }
+
+.paragraph,
+p,
+p.sharepoint,
+.link-back,
+.hidden-text,
+.text-link.reveal,
+ul.list {
+  line-height: 1.6; }
+
+.lead {
+  font-size: 19px;
+  line-height: 1.6; }
+  @media (min-width: 641px) {
+    .lead {
+      font-size: 24px;
+      line-height: 1.6;
+      margin-top: 1.0526315789em; } }
+  .lead.header {
+    margin-bottom: 50px; }
+  .lead a[rel="external"], .lead .nearestItem-search-features-inner a .nearestItem-showonmap-link [rel="external"].btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .lead [rel="external"].btn-link {
+    margin-right: 32px; }

@@ -550,3 +550,32 @@ blockquote {
         padding:15px 30px;
     }
 }
+
+.paragraph,
+p,
+p.sharepoint,
+.link-back,
+.hidden-text,
+.text-link.reveal,
+ul.list {
+  line-height:1.6;
+}
+
+.lead {
+  font-size: 19px;
+  line-height: 1.6;
+
+  @media (min-width: 641px) {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-top: 1.0526315789em;
+  }
+
+  &.header{
+    margin-bottom:50px;
+  }
+
+  a[rel="external"] {
+      margin-right: 32px;
+  }
+}
