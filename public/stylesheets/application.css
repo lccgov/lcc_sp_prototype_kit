@@ -27403,6 +27403,9 @@ hr {
       .intro p.lead {
         margin: 0 0 30px; } }
 
+.logo-footer span {
+  background: url("/public/images/lcc-logo-white-01.svg") left center no-repeat; }
+
 .example {
   position: relative;
   overflow: hidden;
@@ -29484,3 +29487,30 @@ ul.list {
     margin-bottom: 50px; }
   .lead a[rel="external"], .lead .nearestItem-search-features-inner a .nearestItem-showonmap-link [rel="external"].btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .lead [rel="external"].btn-link {
     margin-right: 32px; }
+
+.text-highlight * {
+  margin: 15px 0 0; }
+
+.text-highlight li {
+  margin: 7px 0 0; }
+  .text-highlight li:first-child {
+    margin-top: 0; }
+
+.text-highlight *:first-child {
+  margin-top: 0 !important; }
+
+.text-highlight *:last-child {
+  margin-bottom: 0 !important; }
+
+.text-highlight pre {
+  margin-top: 15px; }
+
+@media (max-width: 641px) {
+  .text-highlight h2, .text-highlight h3, .text-highlight h4, .text-block h2, .text-block h3, .text-block h4 {
+    margin-bottom: 15px; } }
+
+.description-list .description-list__item h3 {
+  line-height: 1.6; }
+  @media (min-width: 641px) {
+    .description-list .description-list__item h3 {
+      padding: 1rem .75rem 1rem 0; } }
