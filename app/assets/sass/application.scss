@@ -609,23 +609,31 @@ ul.list {
 }
 
 //forms
-.btn-start{
-    @include btn();
-    display:inline-block;
-}
-
 .service-name{
     color:white;
     font-weight:700;
     font-family:$font-secondary;
-    font-size:19px;
+    font-size:16px;
     width:100%;
-    padding-left:0 190px;
+    padding:10px 0 10px 10px;
     text-align:right;
+    @media (min-width: 641px){
+        font-size:19px;
+    }
     @media (min-width: 990px){
         margin-left:-250px;
         padding:0 250px;
         font-size:24px;
         text-align:center;
+    }
+}
+
+
+.sectionHeader .container-fluid .header-wrapper {
+    min-height: 75px;
+    height: auto;
+    @media (max-width: 990px){
+        min-height: 50px;
+        height: auto;
     }
 }
