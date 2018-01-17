@@ -29566,3 +29566,20 @@ h1 .form-progress {
     .sectionHeader .container-fluid .header-wrapper {
       min-height: 50px;
       height: auto; } }
+
+.check-answers p {
+  float: left;
+  margin: 0 !important; }
+
+.check-answers a, .check-answers .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .check-answers .btn-link {
+  float: right;
+  line-height: 1.6; }
+
+.panel-confirmation {
+  text-align: center;
+  padding: 30px 15px; }
+  @media (min-width: 641px) {
+    .panel-confirmation {
+      padding: 80px 40px; } }
+  .panel-confirmation h1 {
+    margin: 0 0 15px; }

@@ -662,3 +662,25 @@ h1 .form-progress{
         height: auto;
     }
 }
+
+.check-answers{
+    p{
+        float:left;
+        margin:0 !important;
+    }
+    a{
+        float:right;
+        line-height:1.6;
+    }
+}
+
+.panel-confirmation{
+    text-align:center;
+    padding:30px 15px;
+    @media (min-width: 641px){
+        padding:80px 40px;
+    }
+    h1{
+        margin:0 0 15px;
+    }
+}
