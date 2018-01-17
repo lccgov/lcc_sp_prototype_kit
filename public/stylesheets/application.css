@@ -29567,6 +29567,10 @@ h1 .form-progress {
       min-height: 50px;
       height: auto; } }
 
+@media (max-width: 641px) {
+  .check-answers {
+    padding-bottom: 80px 40px; } }
+
 .check-answers p {
   float: left;
   margin: 0 !important; }

@@ -664,6 +664,9 @@ h1 .form-progress{
 }
 
 .check-answers{
+    @media (max-width: 641px){
+        padding-bottom:80px 40px;
+    }
     p{
         float:left;
         margin:0 !important;
