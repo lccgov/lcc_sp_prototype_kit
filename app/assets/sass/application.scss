@@ -609,26 +609,51 @@ ul.list {
 }
 
 //forms
-.service-name{
-    color:white;
-    font-weight:700;
-    font-family:$font-secondary;
-    font-size:16px;
-    width:100%;
-    padding:10px 0 10px 10px;
-    text-align:right;
-    @media (min-width: 641px){
-        font-size:19px;
-    }
-    @media (min-width: 990px){
-        margin-left:-250px;
-        padding:0 250px;
-        font-size:24px;
-        text-align:center;
+.header-lcc{
+    .service-name{
+        width:100%;
+        display:block;
+        padding:10px 0 10px 10px;
+        text-align:right;
+        @media (min-width: 990px){
+            margin-left:-250px;
+            padding:0 250px;
+            text-align:center;
+        }
+        a{
+            color:white;
+            font-weight:700;
+            font-family:$font-secondary;
+            font-size:16px; 
+            margin:0;
+            padding:0;
+            width:auto;
+            text-align:right;
+            display:inline-block;
+            @media (min-width: 641px){
+                font-size:19px;
+            }
+            @media (min-width: 990px){
+                font-size:24px;
+                text-align:center;
+            }     
+        }
     }
 }
 
+.form-back{
+    margin:10px 0 0;
+    padding:0;
+}
 
+h1 .form-progress{
+    display:block;
+    font-size:16px;
+    color:$secondary-font-color;
+    @media (min-width: 641px){
+        font-size:19px;
+    }
+}
 .sectionHeader .container-fluid .header-wrapper {
     min-height: 75px;
     height: auto;

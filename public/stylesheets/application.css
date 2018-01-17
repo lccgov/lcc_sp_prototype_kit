@@ -29519,23 +29519,45 @@ ul.list {
   .text-highlight h2, .text-highlight h3, .text-highlight h4, .text-block h2, .text-block h3, .text-block h4 {
     margin-bottom: 15px; } }
 
-.service-name {
-  color: white;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+.header-lcc .service-name {
   width: 100%;
+  display: block;
   padding: 10px 0 10px 10px;
   text-align: right; }
-  @media (min-width: 641px) {
-    .service-name {
-      font-size: 19px; } }
   @media (min-width: 990px) {
-    .service-name {
+    .header-lcc .service-name {
       margin-left: -250px;
       padding: 0 250px;
-      font-size: 24px;
       text-align: center; } }
+  .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
+    color: white;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    text-align: right;
+    display: inline-block; }
+    @media (min-width: 641px) {
+      .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
+        font-size: 19px; } }
+    @media (min-width: 990px) {
+      .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
+        font-size: 24px;
+        text-align: center; } }
+
+.form-back {
+  margin: 10px 0 0;
+  padding: 0; }
+
+h1 .form-progress {
+  display: block;
+  font-size: 16px;
+  color: #666B76; }
+  @media (min-width: 641px) {
+    h1 .form-progress {
+      font-size: 19px; } }
 
 .sectionHeader .container-fluid .header-wrapper {
   min-height: 75px;

@@ -1,4 +1,4 @@
-{% extends "layout_multi_sections-lcc-forms.html" %}
+{% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
 	Form example - Start page
@@ -8,20 +8,19 @@
     <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
 {% endblock %}
 
+{% block service_start_page %}
+    /forms/form-example/start-page
+{% endblock %}
+
 {% block service_name %}
-    Report a missed bin
+    Service name
 {% endblock %}
  
 {% block header %}
-    Start page
+    Service name
 {% endblock%}
 
 {% block sectionOneTop %}
-    <style>
-        #panelSurvey{
-            display:none;
-        }
-    </style>
 {% endblock %} 
 
 {% block sectionOneFull%}
@@ -29,6 +28,14 @@
 
 
 {% block breadcrumb %}
+<ul>
+    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+        <a href="/lcc-home.html">Home</a>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Start page</li>
+        </ul>
+    </li>
+</ul>
 {% endblock %}
 
 {% block sectionOneContent %}
@@ -45,8 +52,18 @@
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
+<nav role="navigation">
+    <div class="sideNav">
+        <h3>Related pages</h3> 	    	
+        <ul class="nav">
+            <li><a class="item" href="#" title="" id="">Link one</a></li>          
+            <li><a class="item" href="#" title="" id="">Link two</a></li>    
+            <li><a class="item" href="#" title="" id="">Link three</a></li>                                               	        
+        </ul>	    
+    </div>
+</nav>
 {% endblock %}
 
   {% block reuserblecontent_footer %}
-     {% include "includes/footer-forms.html" %}
+  {% include "includes/re-userble-content-footer.html" %}
  {% endblock %}
