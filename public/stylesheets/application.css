@@ -29522,13 +29522,20 @@ ul.list {
 .header-lcc .service-name {
   width: 100%;
   display: block;
-  padding: 10px 0 10px 10px;
-  text-align: right; }
+  margin: -5px 0 10px 0;
+  text-align: left; }
+  @media (min-width: 641px) {
+    .header-lcc .service-name {
+      text-align: right;
+      position: absolute;
+      top: 15px;
+      right: 15px; } }
   @media (min-width: 990px) {
     .header-lcc .service-name {
       margin-left: -250px;
       padding: 0 250px;
-      text-align: center; } }
+      text-align: center;
+      top: 30px; } }
   .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
     color: white;
     font-weight: 700;
@@ -29537,11 +29544,11 @@ ul.list {
     margin: 0;
     padding: 0;
     width: auto;
-    text-align: right;
     display: inline-block; }
     @media (min-width: 641px) {
       .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
-        font-size: 19px; } }
+        font-size: 19px;
+        text-align: right; } }
     @media (min-width: 990px) {
       .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
         font-size: 24px;
@@ -29559,25 +29566,30 @@ h1 .form-progress {
     h1 .form-progress {
       font-size: 19px; } }
 
-.sectionHeader .container-fluid .header-wrapper {
-  min-height: 75px;
-  height: auto; }
-  @media (max-width: 990px) {
-    .sectionHeader .container-fluid .header-wrapper {
-      min-height: 50px;
-      height: auto; } }
-
-@media (max-width: 641px) {
-  .check-answers {
-    padding-bottom: 80px 40px; } }
-
-.check-answers p {
-  float: left;
-  margin: 0 !important; }
-
-.check-answers a, .check-answers .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .check-answers .btn-link {
-  float: right;
-  line-height: 1.6; }
+.check-answers {
+  position: relative; }
+  @media (max-width: 641px) {
+    .check-answers h3 {
+      padding-right: 75px; } }
+  .check-answers p {
+    margin: 0 !important;
+    width: 100%; }
+    @media (min-width: 641px) {
+      .check-answers p {
+        float: left;
+        width: 80%; } }
+  .check-answers a, .check-answers .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .check-answers .btn-link {
+    text-align: right;
+    line-height: 1.6; }
+    @media (max-width: 641px) {
+      .check-answers a, .check-answers .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .check-answers .btn-link {
+        position: absolute;
+        top: 1rem;
+        right: 0; } }
+    @media (min-width: 641px) {
+      .check-answers a, .check-answers .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .check-answers .btn-link {
+        float: right;
+        width: 20%; } }
 
 .panel-confirmation {
   text-align: center;

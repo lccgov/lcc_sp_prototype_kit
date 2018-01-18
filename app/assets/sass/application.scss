@@ -613,12 +613,19 @@ ul.list {
     .service-name{
         width:100%;
         display:block;
-        padding:10px 0 10px 10px;
-        text-align:right;
+        margin:-5px 0 10px 0;
+        text-align:left;
+        @media (min-width: 641px){
+            text-align:right;
+            position:absolute;
+            top:15px;
+            right:15px;
+        }
         @media (min-width: 990px){
             margin-left:-250px;
             padding:0 250px;
             text-align:center;
+            top:30px;
         }
         a{
             color:white;
@@ -628,10 +635,10 @@ ul.list {
             margin:0;
             padding:0;
             width:auto;
-            text-align:right;
             display:inline-block;
             @media (min-width: 641px){
                 font-size:19px;
+                text-align:right;
             }
             @media (min-width: 990px){
                 font-size:24px;
@@ -654,26 +661,35 @@ h1 .form-progress{
         font-size:19px;
     }
 }
-.sectionHeader .container-fluid .header-wrapper {
-    min-height: 75px;
-    height: auto;
-    @media (max-width: 990px){
-        min-height: 50px;
-        height: auto;
-    }
-}
 
 .check-answers{
-    @media (max-width: 641px){
-        padding-bottom:80px 40px;
+    position:relative;
+    h3{
+        @media (max-width: 641px){
+            padding-right:75px;
+        }
     }
     p{
-        float:left;
         margin:0 !important;
+        width:100%;
+        @media (min-width: 641px){
+            float:left;
+            width:80%;
+        }
     }
     a{
-        float:right;
+        text-align:right;
         line-height:1.6;
+        @media (max-width: 641px){
+            position:absolute;
+            top:1rem;
+            right:0;
+        }
+        @media (min-width: 641px){
+            float:right;
+            width:20%;
+            
+        }
     }
 }
 
