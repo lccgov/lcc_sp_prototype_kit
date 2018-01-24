@@ -637,11 +637,10 @@ ul.list {
             width:auto;
             display:inline-block;
             @media (min-width: 641px){
-                font-size:19px;
                 text-align:right;
             }
             @media (min-width: 990px){
-                font-size:24px;
+                font-size:19px;
                 text-align:center;
             }     
         }

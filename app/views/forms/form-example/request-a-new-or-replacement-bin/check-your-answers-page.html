@@ -1,0 +1,94 @@
+{% extends "layout_multi_sections-lcc-forms.html" %}
+
+{% block page_title %}
+	Request a new or replacement bin - Check your answers page
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/form-example/request-a-new-or-replacement-bin/start-page
+{% endblock %}
+
+{% block service_name %}
+    Request a new or replacement bin
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+   Check your answers before sending your application
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/form-example/request-a-new-or-replacement-bin/question-5" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<div class="description-list">
+    <h2>Section one</h2>
+    <div class="description-list__item check-answers">
+        <h3>Question one</h3>
+        <div class="description-list__item-content">
+            <p>Answer to question one</p>
+            <a href="/forms/form-example/request-a-new-or-replacement-bin/question-1-change">Change <span class="sr-only">answer to question one</span></a>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="description-list__item check-answers">
+        <h3>Question two</h3>
+        <div class="description-list__item-content">
+            <p>Answer to question two</p>
+            <a href="/forms/form-example/request-a-new-or-replacement-bin/question-1-change">Change <span class="sr-only">answer to question two</span></a>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="description-list">
+        <h2>Section two</h2>
+        <div class="description-list__item check-answers">
+            <h3>Question one</h3>
+            <div class="description-list__item-content">
+                <p>Answer to question one</p>
+                <a href="/forms/form-example/request-a-new-or-replacement-bin/question-1-change">Change <span class="sr-only">answer to question one</span></a>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="description-list__item check-answers">
+            <h3>Question two</h3>
+            <div class="description-list__item-content">
+                <p>Answer to question two</p>
+                <a href="/forms/form-example/request-a-new-or-replacement-bin/question-1-change">Change <span class="sr-only">answer to question two</span></a>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+<div class="text">
+    <h2>Now send your application</h2>
+    <div role="note" aria-label="Information" class="text-highlight">
+        <p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+    </div>
+    <a class="btn btn-primary btn-arrow" href="/forms/form-example/request-a-new-or-replacement-bin/confirmation-page">Accept and send</a>
+</div>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reuserblecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

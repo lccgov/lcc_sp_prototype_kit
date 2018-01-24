@@ -1,7 +1,7 @@
-{% extends "layout_multi_sections-lcc-forms.html" %}
+{% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
-	Form example - Start page
+	Request a new or replacement bin - Start page
 {% endblock %}
 
 {% block css_register %}
@@ -13,19 +13,14 @@
 {% endblock %}
 
 {% block service_name %}
-    Service name
+    Request a new or replacement bin
 {% endblock %}
  
 {% block header %}
-    Start page
+    Request a new or replacement bin
 {% endblock%}
 
 {% block sectionOneTop %}
-    <style>
-        #panelSurvey{
-            display:none;
-        }
-    </style>
 {% endblock %} 
 
 {% block sectionOneFull%}
@@ -53,12 +48,22 @@
         <li>list item three</li>
     </ul>
 </div>
-<a class="btn btn-primary btn-arrow" href="/forms/form-example/question-1">Start now</a>
+<a class="btn btn-primary btn-arrow" href="/forms/form-example/request-a-new-or-replacement-bin/question-1">Start now</a>
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
+<nav role="navigation">
+    <div class="sideNav">
+        <h3>Related pages</h3> 	    	
+        <ul class="nav">
+            <li><a class="item" href="#" title="" id="">Link one</a></li>          
+            <li><a class="item" href="#" title="" id="">Link two</a></li>    
+            <li><a class="item" href="#" title="" id="">Link three</a></li>                                               	        
+        </ul>	    
+    </div>
+</nav>
 {% endblock %}
 
   {% block reuserblecontent_footer %}
-     {% include "includes/footer-forms.html" %}
+  {% include "includes/re-userble-content-footer.html" %}
  {% endblock %}

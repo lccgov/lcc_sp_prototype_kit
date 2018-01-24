@@ -29547,11 +29547,10 @@ ul.list {
     display: inline-block; }
     @media (min-width: 641px) {
       .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
-        font-size: 19px;
         text-align: right; } }
     @media (min-width: 990px) {
       .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
-        font-size: 24px;
+        font-size: 19px;
         text-align: center; } }
 
 .form-back {
