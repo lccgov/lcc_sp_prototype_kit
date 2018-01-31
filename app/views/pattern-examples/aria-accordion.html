@@ -1,26 +1,26 @@
 {% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
-	Council tax
+	ARIA accordion example
 {% endblock %}
 
 
-{% block css_register %}
-    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
-{% endblock %}
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
 
 {% block header %}
-    Council tax
+    ARIA accordion example
 {% endblock%}
 
-{% block main_nav %}
-{% endblock %}
+ {% block main_nav %}
+ {% endblock %}
 
-{% block sectionTopFull%}
-    {% include "includes/beta-banner.html" %}
-{% endblock %}
 
-{% block sectionOneTop %}
+
+ {% block sectionOneTop %}
 {% endblock %} 
 
 {% block sectionOneFull%}
@@ -32,13 +32,14 @@
     <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
         <a href="/lcc-home.html">Home</a>
         <ul class="">
-            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Council tax</li>
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>ARIA accordion example</li>
         </ul>
     </li>
 </ul>
  {% endblock %}
 
 {% block sectionOneContent %}
+    
 {% endblock %}
 
 {% block pageContent %}
@@ -46,8 +47,68 @@
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-    {% include "includes/lcc-components/council-tax/pods-council-tax.html" %}
-    {% include "includes/lcc-components/council-tax/subsection-council-tax.html" %}
+
+<div class="accordion"
+    data-aria-accordion
+    data-multi
+    data-default="none">
+
+    <h3 class="accordion__heading">
+        Heading 1
+    </h3>
+    <div class="accordion__panel">
+        <p>
+            Here is the first panel of content.
+        </p>
+        <p>
+            This particular accordion example can have multiple opened panels at a time, or every panel closed.
+        </p>
+    </div>
+
+    <h3 class="accordion__heading">
+        Heading 2
+    </h3>
+    <div class="accordion__panel">
+        <p>
+            By using the <code>data-multi</code> attribute, multiple
+            panels can be opened at once.
+        </p>
+    </div>
+
+    <h3 class="accordion__heading">
+        Heading 3
+    </h3>
+    <div class="accordion__panel">
+        <p>
+            The <code>data-default="none"</code> attribute is used to
+            indicate that no panel will be open by default, when the
+            accordion is initially rendered.
+        </p>
+    </div>
+</div>
+
+<!--<ul class="accordion" data-module="accordion">
+    <li>
+        <div class="accordion-drawer">
+            <a href="#" class="header"><span class="sr-only">Click to expand</span>Item one</a>
+            <div style="display: none;" class="content-block">
+                <p>Here's where the content goes, this is a <a href="#">hyperlink</a></p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="accordion-drawer">
+            <a href="#" class="header"><span class="sr-only">Click to expand</span>Item two</a>
+            <div style="display: none;" class="content-block">
+                <p>An accordion item with a list:</p>
+                <ul class="list list-bullet">
+                    <li>List item one</li>
+                    <li>List item one</li>
+                </ul>
+            </div>
+        </div>
+    </li>
+</ul>-->
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
@@ -133,7 +194,7 @@
 
 {% block sectionFiveTop %}
 
-{% endblock %} 
+{% endblock %}  
 
 {% block sectionFiveFull%}
 {% endblock %}

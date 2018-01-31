@@ -22852,6 +22852,86 @@ form legend {
     float: right;
     color: #666B76; }
 
+.header-lcc .service-name {
+  width: 100%;
+  display: block;
+  margin: -5px 0 10px 0;
+  text-align: left; }
+  @media (min-width: 641px) {
+    .header-lcc .service-name {
+      text-align: right;
+      position: absolute;
+      top: 15px;
+      right: 15px; } }
+  @media (min-width: 990px) {
+    .header-lcc .service-name {
+      margin-left: -250px;
+      padding: 0 250px;
+      text-align: center;
+      top: 30px; } }
+  .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
+    color: white;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: inline-block; }
+    @media (min-width: 641px) {
+      .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
+        text-align: right; } }
+    @media (min-width: 990px) {
+      .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
+        font-size: 19px;
+        text-align: center; } }
+
+.form-back {
+  margin: 10px 0 0;
+  padding: 0; }
+
+h1 .form-progress {
+  display: block;
+  font-size: 16px;
+  color: #666B76; }
+  @media (min-width: 641px) {
+    h1 .form-progress {
+      font-size: 19px; } }
+
+.check-answers {
+  position: relative; }
+  @media (max-width: 641px) {
+    .check-answers h3 {
+      padding-right: 75px; } }
+  .check-answers p {
+    margin: 0 !important;
+    width: 100%; }
+    @media (min-width: 641px) {
+      .check-answers p {
+        float: left;
+        width: 80%; } }
+  .check-answers a, .check-answers .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .check-answers .btn-link {
+    text-align: right;
+    line-height: 1.6; }
+    @media (max-width: 641px) {
+      .check-answers a, .check-answers .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .check-answers .btn-link {
+        position: absolute;
+        top: 1rem;
+        right: 0; } }
+    @media (min-width: 641px) {
+      .check-answers a, .check-answers .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .check-answers .btn-link {
+        float: right;
+        width: 20%; } }
+
+.panel-confirmation {
+  text-align: center;
+  padding: 30px 15px; }
+  @media (min-width: 641px) {
+    .panel-confirmation {
+      padding: 80px 40px; } }
+  .panel-confirmation h1 {
+    margin: 0 0 15px; }
+
 a:focus, .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:focus,
 input[type=submit]:focus,
 .btn:focus,
@@ -24106,7 +24186,7 @@ footer.main {
 
 .logo-footer span {
   background: url("<%= asset_path('lcc-logo-white-01.svg') %>") center center no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   width: 150px;
   height: 45px;
   display: block;
@@ -25084,6 +25164,142 @@ ul.accordion li div.content-block div + .btn {
 
 ul.accordion div.text-highlight {
   padding: 20px !important; }
+
+.accordion {
+  list-style: none;
+  margin: 0 0 -1px;
+  padding: 0;
+  border-bottom: 1px solid #DCDEE1; }
+
+.accordion > li {
+  margin: 0; }
+
+/**
+ * Add zero-width space. needed to ensure Safari + VO respect list semantics.
+ * Set the before content to position absolute to negate any visible space
+ * the before content could add to the document.
+ */
+.accordion > li:before {
+  content: "\200B";
+  position: absolute; }
+
+/**
+ * Accordion Heading
+ */
+.js .accordion__heading {
+  border-top: 1px solid #DCDEE1;
+  margin: -1px 0 0;
+  position: relative; }
+
+.js .accordion__trigger {
+  -webkit-appearance: none;
+  background-color: white;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #007299;
+  cursor: pointer;
+  display: block;
+  font-size: inherit;
+  padding: 1em .5em;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  z-index: 2;
+  font-size: 16px;
+  padding-left: 2.500em;
+  border-left: 5px solid transparent; }
+  @media (min-width: 641px) {
+    .js .accordion__trigger {
+      font-size: 19px;
+      padding-left: 3.158em; } }
+  .js .accordion__trigger:after {
+    font-family: FontAwesome;
+    font-size: 16px;
+    content: "\f067";
+    position: absolute;
+    right: auto;
+    left: 0.625em;
+    top: 1em;
+    margin-top: 0;
+    color: #007299;
+    font-weight: 400; }
+    @media (min-width: 641px) {
+      .js .accordion__trigger:after {
+        font-size: 19px;
+        left: 1.053em; } }
+
+/**
+ * This is needed to allow a double tap iOS 11
+ * Safari + VO to function correctly, if there
+ * are multiple elements (wrapper spans) to layout
+ * text nodes within the accordion button.
+
+	-- This is not needed if a button only contains text
+	   and no other child nodes wrapping the text --
+
+.accordion__trigger > * {
+	pointer-events: none;
+}
+ */
+.js .accordion__trigger:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #007299;
+  outline: none;
+  border-color: #007299; }
+
+.js .accordion__trigger:focus {
+  background-color: #FFBF47;
+  color: #212224;
+  outline: none; }
+  .js .accordion__trigger:focus:after {
+    color: #212224; }
+
+.accordion__trigger[aria-disabled="true"]:hover {
+  cursor: not-allowed; }
+
+.accordion__trigger[aria-disabled="true"]:focus {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+.accordion__trigger[aria-expanded="true"] {
+  border-color: #007299; }
+  .accordion__trigger[aria-expanded="true"]:after {
+    content: "\f068"; }
+
+.js .accordion__panel {
+  background-color: inherit;
+  max-height: 0vh;
+  overflow: hidden;
+  padding: .05em 1.25em;
+  position: relative;
+  visibility: hidden;
+  z-index: 1;
+  border-bottom: 1px solid #DCDEE1; }
+  .js .accordion__panel:last-of-type {
+    border-bottom: 0; }
+  .js .accordion__panel p {
+    margin-top: 0; }
+
+.js .accordion__panel {
+  margin-top: -.1em; }
+
+.js .accordion__panel > :last-child {
+  margin-bottom: 0; }
+
+.js .accordion__panel[aria-hidden="true"] {
+  border-bottom: 1px solid #DCDEE1; }
+
+.js .accordion__panel[aria-hidden="false"] {
+  max-height: 100vh;
+  overflow: auto;
+  padding: 1.5em .5em;
+  visibility: visible;
+  padding-left: 3.158em;
+  border-left: 5px solid #007299;
+  padding-left: 2.500em; }
+  @media (min-width: 641px) {
+    .js .accordion__panel[aria-hidden="false"] {
+      padding-left: 3.158em; } }
 
 .atoz {
   background: #F6F7FA;
@@ -28983,7 +29199,7 @@ footer.main .footerGlobal {
   width: 250px;
   height: 25px;
   background-position: left top;
-  background-size: 100%;
+  background-size: 100% 100%;
   margin: 12px 0;
   line-height: 0; }
   @media (max-width: 990px) {
@@ -29276,10 +29492,15 @@ aside.col-md-4 {
         margin-left: 0;
         text-align: center; } }
 
-.btn-primary {
+.btn-primary,
+.form-group input[type=button],
+.form-group input.btn.btn-primary,
+.form-group input[type=submit],
+.limitedrte-Style-BUTTON {
   box-shadow: 0px 3px 0px #004d00; }
 
-.btn-secondary {
+.btn-secondary,
+.form-group input[type=button].btn-secondary {
   box-shadow: 0px 3px 0px #004c66; }
 
 .btn {
@@ -29519,82 +29740,68 @@ ul.list {
   .text-highlight h2, .text-highlight h3, .text-highlight h4, .text-block h2, .text-block h3, .text-block h4 {
     margin-bottom: 15px; } }
 
-.header-lcc .service-name {
-  width: 100%;
-  display: block;
-  margin: -5px 0 10px 0;
-  text-align: left; }
-  @media (min-width: 641px) {
-    .header-lcc .service-name {
-      text-align: right;
-      position: absolute;
-      top: 15px;
-      right: 15px; } }
-  @media (min-width: 990px) {
-    .header-lcc .service-name {
-      margin-left: -250px;
-      padding: 0 250px;
-      text-align: center;
-      top: 30px; } }
-  .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
-    color: white;
-    font-weight: 700;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    display: inline-block; }
-    @media (min-width: 641px) {
-      .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
-        text-align: right; } }
-    @media (min-width: 990px) {
-      .header-lcc .service-name a, .header-lcc .service-name .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .header-lcc .service-name .btn-link {
-        font-size: 19px;
-        text-align: center; } }
-
-.form-back {
-  margin: 10px 0 0;
-  padding: 0; }
-
-h1 .form-progress {
-  display: block;
-  font-size: 16px;
-  color: #666B76; }
-  @media (min-width: 641px) {
-    h1 .form-progress {
-      font-size: 19px; } }
-
-.check-answers {
+.pocket {
   position: relative; }
-  @media (max-width: 641px) {
-    .check-answers h3 {
-      padding-right: 75px; } }
-  .check-answers p {
-    margin: 0 !important;
-    width: 100%; }
-    @media (min-width: 641px) {
-      .check-answers p {
-        float: left;
-        width: 80%; } }
-  .check-answers a, .check-answers .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .check-answers .btn-link {
-    text-align: right;
-    line-height: 1.6; }
-    @media (max-width: 641px) {
-      .check-answers a, .check-answers .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .check-answers .btn-link {
-        position: absolute;
-        top: 1rem;
-        right: 0; } }
-    @media (min-width: 641px) {
-      .check-answers a, .check-answers .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .check-answers .btn-link {
-        float: right;
-        width: 20%; } }
+  .pocket .pocket-wrapper {
+    height: 300px;
+    overflow: hidden; }
+    .pocket .pocket-wrapper.active {
+      height: 100%; }
+    .pocket .pocket-wrapper.panel-event-pocket {
+      height: 475px; }
+      .pocket .pocket-wrapper.panel-event-pocket.active {
+        height: 100%; }
+  .pocket .pocket-control {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #DCDEE1;
+    height: 100px;
+    background: rgba(255, 255, 255, 0);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, white));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+    /* IE6-9 */ }
+    .pocket .pocket-control .btn-more {
+      margin: 0;
+      font-size: 24px;
+      margin-top: 65px; }
+      .pocket .pocket-control .btn-more:after {
+        font-family: "FontAwesome";
+        display: inline-block;
+        content: "\f078";
+        margin-left: 10px; }
 
-.panel-confirmation {
-  text-align: center;
-  padding: 30px 15px; }
-  @media (min-width: 641px) {
-    .panel-confirmation {
-      padding: 80px 40px; } }
-  .panel-confirmation h1 {
-    margin: 0 0 15px; }
+.error-summary {
+  border: 5px solid #cc0000;
+  padding: 30px; }
+  .error-summary * {
+    margin: 15px 0 0; }
+  .error-summary li {
+    margin: 7px 0 0; }
+    .error-summary li:first-child {
+      margin-top: 0; }
+  .error-summary *:first-child {
+    margin-top: 0 !important; }
+  .error-summary *:last-child {
+    margin-bottom: 0 !important; }
+  .error-summary .error-summary-list {
+    padding: 0; }
+    .error-summary .error-summary-list li a, .error-summary .error-summary-list li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .error-summary .error-summary-list li .btn-link {
+      color: #cc0000;
+      font-weight: bold; }
+
+.form-label {
+  font-weight: bold; }

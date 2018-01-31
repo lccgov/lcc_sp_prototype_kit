@@ -1,5 +1,27 @@
 <!-- THIS PAGE LAYOUT HAS BEEN CREATED TESTING, FOR IT'S EXACTLY THE SAME IN FRONTEND TOOLKIT -->
 {% extends "master-page-lcc.html" %}{% block body_content %}
+<!--SECTION TOP-->
+<section id="sectionTop">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                    {% block sectionTopFull %}{% endblock %}
+            </div>
+        </div>
+    </div>
+</section>
+<!--BREADCRUMB-->
+<section id="breadcrumb-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb">
+                    {% block breadcrumb %}{% endblock %} 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% block sectionOneTop %}{% endblock %}
 <section id="main" class="sectionOne">
     <div class="container-fluid">
@@ -8,13 +30,6 @@
                 {% block sectionOneFull %}{% endblock %}
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-             <div class="breadcrumb">
-                    {% block breadcrumb %}{% endblock %} 
-             </div>
-            </div>
-            </div>
             <div class="row">
                     <div class="col-md-8">
                     <h1>{% block header %}{% endblock %}</h1> 

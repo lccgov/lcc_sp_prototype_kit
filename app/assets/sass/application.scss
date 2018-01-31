@@ -113,8 +113,8 @@ $sectionFive-background-color:#fff;
 $news-pod-back:#ffffff;
 $news-pod-border-color:#ddd;
 //accordion
-//$accordion-color:green;
-//$accordion-border-color:#ECF0F1;
+$accordion-color:$base-link-color;
+$accordion-border-color:$border-color;
 //Block quote
 // $blockquoteBorderColor:#bbcada ;
 // $blockquoteQuoteColor:#333;
@@ -169,6 +169,7 @@ $input-border-color:$grey;
 @import 'brand-colors';
 @import '2010-typography-overrides';
 @import 'accordion';
+@import 'accordion-aria';
 @import 'a-to-z';
 //@import 'block-links'; //subsite only
 //@import 'block-quote'; //subsite only
@@ -304,11 +305,16 @@ aside.col-md-4 {
 }
 
 //btn overrides
-.btn-primary {
+.btn-primary,
+.form-group input[type=button],
+.form-group input.btn.btn-primary,
+.form-group input[type=submit],
+.limitedrte-Style-BUTTON {
     box-shadow: 0px 3px 0px darken($primary-button-background-color, 10%);
 }
 
-.btn-secondary {
+.btn-secondary,
+.form-group input[type=button].btn-secondary {
     box-shadow: 0px 3px 0px darken($secondary-button-background-color, 10%);
 }
 
@@ -608,97 +614,75 @@ ul.list {
 }
 }
 
-//forms
-.header-lcc{
-    .service-name{
-        width:100%;
-        display:block;
-        margin:-5px 0 10px 0;
-        text-align:left;
-        @media (min-width: 641px){
-            text-align:right;
-            position:absolute;
-            top:15px;
-            right:15px;
-        }
-        @media (min-width: 990px){
-            margin-left:-250px;
-            padding:0 250px;
-            text-align:center;
-            top:30px;
-        }
-        a{
-            color:white;
-            font-weight:700;
-            font-family:$font-secondary;
-            font-size:16px; 
-            margin:0;
-            padding:0;
-            width:auto;
-            display:inline-block;
-            @media (min-width: 641px){
-                text-align:right;
-            }
-            @media (min-width: 990px){
-                font-size:19px;
-                text-align:center;
-            }     
-        }
-    }
-}
-
-.form-back{
-    margin:10px 0 0;
-    padding:0;
-}
-
-h1 .form-progress{
-    display:block;
-    font-size:16px;
-    color:$secondary-font-color;
-    @media (min-width: 641px){
-        font-size:19px;
-    }
-}
-
-.check-answers{
+//pocket
+.pocket{
     position:relative;
-    h3{
-        @media (max-width: 641px){
-            padding-right:75px;
+    .pocket-wrapper{
+        height:300px;
+        overflow:hidden;
+        &.active{
+            height:100%;
+        }
+        &.panel-event-pocket{
+            height:475px;
+            &.active{
+                height:100%;
+            }
         }
     }
-    p{
-        margin:0 !important;
+    .pocket-control{
+        position:absolute;
+        bottom:0;
+        text-align:center;
         width:100%;
-        @media (min-width: 641px){
-            float:left;
-            width:80%;
-        }
-    }
-    a{
-        text-align:right;
-        line-height:1.6;
-        @media (max-width: 641px){
-            position:absolute;
-            top:1rem;
-            right:0;
-        }
-        @media (min-width: 641px){
-            float:right;
-            width:20%;
-            
+        border-bottom:1px solid $border-color;
+        height:100px;
+        @include linearGradient(rgba(255,255,255,0), rgba(255,255,255,1));
+
+        .btn-more{
+            margin:0;
+            font-size:24px;
+            margin-top:65px;
+            &:after{
+                font-family: "FontAwesome";
+                display:inline-block;
+                content: "\f078";
+                margin-left:10px;
+            }
         }
     }
 }
 
-.panel-confirmation{
-    text-align:center;
-    padding:30px 15px;
-    @media (min-width: 641px){
-        padding:80px 40px;
+//errors and validation 
+.error-summary{
+    border: 5px solid #cc0000;
+    padding:30px;
+    *{
+        margin:15px 0 0;
     }
-    h1{
-        margin:0 0 15px;
+    li{
+        margin:7px 0 0;
+        &:first-child{
+            margin-top:0;
+        }
     }
+    *:first-child { 
+        margin-top: 0 !important; 
+    }
+    *:last-child { 
+        margin-bottom: 0 !important; 
+    }
+    .error-summary-list{
+        padding:0;
+        li{
+            a{
+                color:#cc0000;
+                font-weight:bold;
+            }
+        }
+    }
+}
+
+.form-label{
+    font-weight:bold;
 }
