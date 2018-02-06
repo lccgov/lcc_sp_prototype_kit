@@ -27632,6 +27632,28 @@ hr {
 .logo-footer span {
   background: url("/public/images/lcc-logo-white-01.svg") left center no-repeat; }
 
+.main-nav .container-fluid ul li a, .main-nav .container-fluid ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link, .nearestItem-search-features-inner a .nearestItem-showonmap-link .main-nav .container-fluid ul li .btn-link {
+  font-weight: bold; }
+
+@media (max-width: 767px) {
+  .main-nav {
+    position: relative;
+    left: 0;
+    top: 0px;
+    z-index: 0;
+    min-height: auto;
+    width: 100%;
+    transition: none; }
+    .main-nav .container-fluid {
+      padding: 0 15px; }
+      .main-nav .container-fluid ul li {
+        border-top: 0;
+        margin: 0px;
+        padding-top: 0 !important;
+        width: auto; }
+        .main-nav .container-fluid ul li a:hover, .main-nav .container-fluid ul li .nearestItem-search-features-inner a .nearestItem-showonmap-link .btn-link:hover, .nearestItem-search-features-inner a .nearestItem-showonmap-link .main-nav .container-fluid ul li .btn-link:hover {
+          background: transparent; } }
+
 .example {
   position: relative;
   overflow: hidden;

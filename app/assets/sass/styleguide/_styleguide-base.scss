@@ -131,3 +131,37 @@ hr {
 .logo-footer span {
     background: url('/public/images/lcc-logo-white-01.svg') left center no-repeat;
 }
+.main-nav {
+    .container-fluid {
+        ul{
+            li{
+                a{
+                    font-weight:bold;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px){
+        position: relative;
+        left: 0;
+        top: 0px;
+        z-index: 0;
+        min-height: auto;
+        width: 100%;
+        transition: none;
+        .container-fluid {
+            padding:0 15px;
+            ul li {
+                border-top: 0;
+                margin: 0px;
+                padding-top: 0 !important;
+                width: auto;
+                a{
+                    &:hover{
+                        background:transparent;
+                    }
+                }
+            }
+        }
+    }
+}
