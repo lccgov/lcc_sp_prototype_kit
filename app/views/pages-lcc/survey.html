@@ -1,7 +1,7 @@
-{% extends "layout_multi_sections.html" %}
+{% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
-	Home Page
+	Survey test page
 {% endblock %}
 
 
@@ -12,11 +12,10 @@
  
 
 {% block header %}
-Design Patterns
-{% endblock %}
+    Survey test page
+{% endblock%}
 
  {% block main_nav %}
-  {% include "includes/main_nav.html" %}
  {% endblock %}
 
 
@@ -29,18 +28,20 @@ Design Patterns
 
 
  {% block breadcrumb %}
-  {% include "includes/breadcrumb_sp.html" %}
+
  {% endblock %}
 
 {% block sectionOneContent %}
+
+{% include "includes/lcc-components/survey-original.html" %}
+
 {% endblock %}
 
 {% block pageContent %}
+
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-  <p class="lead">Patterns are a simple, reusable solution to a design problem.</p>
-  {% include "includes/design-patterns/group-promos-nav.html" %}
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
@@ -125,6 +126,7 @@ Design Patterns
 
 
 {% block sectionFiveTop %}
+
 {% endblock %} 
 
 {% block sectionFiveFull%}
@@ -147,9 +149,8 @@ Design Patterns
  {% endblock %}
 
   {% block footer_nav %}
-   {% include "includes/footer_nav.html" %}
  {% endblock %}
 
-  {% block reuserblecontent_footer %}
-     {% include "includes/footer-styleguide.html" %}
+  {% block reusablecontent_footer %}
+     {% include "includes/reusable-content-footer.html" %}
  {% endblock %}
