@@ -1,0 +1,42 @@
+<!-- THIS PAGE LAYOUT HAS BEEN CREATED TESTING, FOR IT'S EXACTLY THE SAME IN FRONTEND TOOLKIT -->
+{% extends "master-page-styleguide.html" %}{% block body_content %}
+{% block sectionOneTop %}{% endblock %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            {% block sectionOneFull %}{% endblock %}
+        </div>
+    </div>
+</div>
+<!-- main nav -->
+<nav id="main-menu" class="main-nav" role="navigation">
+    <div class="container-fluid">
+        <!-- sharepoint nav -->
+        <div data-name="main_nav">
+        {% block main_nav %}{% endblock %}
+        </div>
+        <!--/.sharepoint nav -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!-- /.main-menu -->
+
+<section id="main" class="sectionOne">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="sr-only">{% block header %}{% endblock %}</h1>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-3">
+                    {% block sectionLeftHandColumn %}{% endblock %}
+                </div>
+                <div class="col-md-9 design-system-content">
+                    {% block sectionOneRightContent %}{% endblock %}
+                </div>
+           </div>
+    </div>         
+</section>
+
+{% endblock %}

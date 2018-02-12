@@ -1,21 +1,24 @@
-{% extends "layout_multi_sections-lcc.html" %}
+{% extends "layout_multi_sections.html" %}
 
 {% block page_title %}
-	Part Nav Example
+	Mega Promo
 {% endblock %}
 
 
   {% block css_register %}
+        <script src="https://use.typekit.net/pws7qio.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
          <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
    {% endblock %}
 
  
 
 {% block header %}
-    Who can get Council Tax support
-{% endblock%}
+Mega Promo
+{% endblock %}
 
  {% block main_nav %}
+  {% include "includes/main_nav.html" %}
  {% endblock %}
 
 
@@ -28,44 +31,22 @@
 
 
  {% block breadcrumb %}
-<ul>
-    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
-        <a href="/lcc-home.html">Home</a>
-        <ul class="">
-            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Current page</li>
-        </ul>
-    </li>
-</ul>
+  {% include "includes/breadcrumb_sp.html" %}
  {% endblock %}
 
 {% block sectionOneContent %}
-{% include "includes/design-system/part-nav.html" %}
-<div class="text">
-    <h1 class="part-title">Deductions for adults in the household</h1>
-    <p>The Council Tax Support scheme will provide 100% protection to the following claimant or their partner who is:</p>
-    <ul class="list list-bullet">
-        <li>A pensioner</li>
-        <li>Entitled to a disability premium or disabled child premium</li>
-        <li>Entitled to Employment Support Allowance and who also receives a qualifying disability related benefit</li>
-        <li>Receiving a carer’s premium</li>
-        <li>Receiving a war disablement pension, war widows pension or war widower’s pension</li>
-        <li>Caring for a child dependant under 6.</li>
-    </ul>
-    <p>Claimants of working age (other than those listed above) will now have to make a contribution themselves towards their Council Tax bill.</p>
-    <p>As Council Tax Support will be calculated as a means tested discount, the amount each household will have to pay towards their Council Tax will depend on their individual circumstances.</p>
-</div>
-{% include "includes/design-system/pagination.html" %}
 {% endblock %}
 
 {% block pageContent %}
-
 {% endblock %}
 
 {% block sectionOneFullBottom %}
+      <p class="lead header">A promo is a snippet of content which links to a full piece of content elsewhere on www.leeds.gov.uk.</p>
+        {% include "includes/design-system/mega-promo.html" %}
+        {% include "includes/design-system/mega-promo-no-images.html" %}
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}
-{% include "includes/design-system/side-nav.html" %}
 {% endblock %}
 
 {% block sectionOneThirdCol1 %}
@@ -88,6 +69,7 @@
 {% endblock %}
 
 {% block sectionTwoRightHandColumn %}
+      {% include "includes/design-system/promo-single.html" %}
 {% endblock %}
 
 {% block sectionTwoThirdCol1 %}
@@ -147,7 +129,6 @@
 
 
 {% block sectionFiveTop %}
-
 {% endblock %} 
 
 {% block sectionFiveFull%}
