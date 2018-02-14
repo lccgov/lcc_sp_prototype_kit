@@ -217,3 +217,9 @@ $input-border-color:$grey;
 html {
     background-color: $blue;
 }
+
+.hidden-text{
+    .panel *{
+        @include text();
+    }
+}

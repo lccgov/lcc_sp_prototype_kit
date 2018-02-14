@@ -1,6 +1,6 @@
 //sticky
 #sticky-anchor {
-    @media (max-width: 990px) {
+    @media (max-width: 768px) {
         display: none;
     }
 }
@@ -15,7 +15,7 @@
     top: 0;
     padding: 20px 0 0;
     z-index: 10000;
-    @media (max-width: 990px) {
+    @media (max-width: 768px) {
         position: relative;
         top: auto;
         padding: 0;

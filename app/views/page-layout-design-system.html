@@ -1,13 +1,6 @@
 <!-- THIS PAGE LAYOUT HAS BEEN CREATED TESTING, FOR IT'S EXACTLY THE SAME IN FRONTEND TOOLKIT -->
-{% extends "master-page-styleguide.html" %}{% block body_content %}
+{% extends "master-page-design-system.html" %}{% block body_content %}
 {% block sectionOneTop %}{% endblock %}
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-12">
-            {% block sectionOneFull %}{% endblock %}
-        </div>
-    </div>
-</div>
 <!-- main nav -->
 <nav id="main-menu" class="main-nav" role="navigation">
     <div class="container-fluid">
@@ -24,15 +17,10 @@
 <section id="main" class="sectionOne">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="sr-only">{% block header %}{% endblock %}</h1>
-            </div>
-        </div>
-        <div class="row">
-                <div class="col-md-3">
+                <aside class="col-sm-3 col-md-2 design-system-menu">
                     {% block sectionLeftHandColumn %}{% endblock %}
-                </div>
-                <div class="col-md-9 design-system-content">
+                </aside>
+                <div class="col-sm-9 col-md-10 design-system-content">
                     {% block sectionOneRightContent %}{% endblock %}
                 </div>
            </div>

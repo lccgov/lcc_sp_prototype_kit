@@ -1,7 +1,35 @@
-.container-fluid{
-    max-width: 1600px !important;
-}
+.design-system{
 
+    //design system specific styling
+
+    .container-fluid{
+        max-width: 1600px !important;
+    }
+    .contents-box{
+        .heading-contents{
+            margin-top:0;
+            margin-bottom:15px;
+        }
+        .list-contents{
+            border-bottom:1px solid $border-color;
+            padding-bottom:30px;
+        }
+    } 
+    :not(pre) > code[class*="language-"], pre[class*="language-"]{
+        margin-top:0;
+    }
+    .heading-mark-up{
+        background:#bfc1c3;
+        padding:10px 15px;
+        margin-bottom:0;
+        font-size:16px;
+    }
+    .cd-top {
+        &.cd-top.cd-fade-out {
+            opacity: .8;
+        }
+    }
+}
 /*temporarily hide masterhead*/
 .masterhead {
     display:none;
@@ -10,60 +38,6 @@
       display:block;
     }
 }
-
-.header-left{
-    line-height: 0;
-    padding:10px 0;
-}
-
-.logo{
-    background-image:url(../images/logo.svg);
-    background-repeat:no-repeat;
-    display:inline-block;
-    width:250px;
-    height:25px;
-    background-position:left top;
-    background-size:100%;
-    margin:5px 0 0;
-
-    @media (max-width: 990px) {
-        width:150px;
-        height:15px;
-    }
-
-    @media (max-width: 361px) {
-        width:120px;
-        height:12px;
-    }
-
-}
-
-//nav
-.main-nav {
-    border-bottom:1px solid $border-color;
-    background:white;
-    ul {
-    li {
-        a{
-        font-size:24px;
-        padding:10px;
-        text-decoration:none;
-        margin-right:15px;
-        color:$base-link-color;
-        &:hover{
-            background:none;
-            text-decoration:underline;
-            color:$base-link-hover-color;
-        }
-        }
-    }
-    }
-}
-
-//secondary-nav
-  .heading-contents{
-    margin-top:0.46875em;
-  }
 
 @media screen and (max-width: 400px){
   .highlighted a.btn {
@@ -81,26 +55,6 @@ hr {
       text-align:right !important;
       margin-top:50px;
   }
-}
-
-.lcc-digital-header{
-  background:$lighter-grey;
-  padding:60px 0;
-
-  h1,
-  p{
-    width:50%;
-  }
-
-  h1{
-    margin:0 0 20px;
-  }
-
-  p{
-    font-size:24px;
-    margin:0;
-  }
-
 }
 
 .intro{
@@ -139,17 +93,11 @@ hr {
 .logo-footer span {
     background: url('/public/images/lcc-logo-white-01.svg') left center no-repeat;
 }
+
+//nav
 .main-nav {
-    .container-fluid {
-        ul{
-            li{
-                a{
-                    font-weight:bold;
-                }
-            }
-        }
-    }
-    @media (max-width: 767px){
+    background:$lighter-grey;
+    @media (max-width: 990px){
         position: relative;
         left: 0;
         top: 0px;
@@ -157,16 +105,54 @@ hr {
         min-height: auto;
         width: 100%;
         transition: none;
-        .container-fluid {
+    }
+    .container-fluid {
+        @media (max-width: 990px){
             padding:0 15px;
-            ul li {
-                border-top: 0;
-                margin: 0px;
-                padding-top: 0 !important;
-                width: auto;
+        }
+        ul{
+            li{
+                @media (max-width: 990px){
+                    border-top: 0;
+                    margin: 0px;
+                    padding-top: 0 !important;
+                    width: auto;
+                }
                 a{
+                    font-size:21px;
+                    padding:10px 0;
+                    text-decoration:none;
+                    margin-right:25px;
+                    color:$base-link-color;
+                    border-bottom:5px solid transparent;
+                    border-top:5px solid transparent;
                     &:hover{
-                        background:transparent;
+                        background:none;
+                        text-decoration:none;
+                        color:$base-link-color;
+                        border-bottom:5px solid $base-link-color;
+                    }
+                    &.active{
+                        border-bottom:5px solid $base-link-color;
+                        font-weight:bold;
+                    }
+                    @media (max-width: 990px){
+                        width:auto;
+                        font-size:19px;
+                        padding:10px 0;
+                        text-decoration:none;
+                        margin-right:15px;
+                        &:hover{
+                            background:transparent;
+                        }
+                    }
+                    @media (max-width: 500px){
+                        font-size:16px;
+                        margin-right:10px;
+                    }
+                    @media (max-width: 400px){
+                        font-size:14px;
+                        margin-right:8px;
                     }
                 }
             }
@@ -186,8 +172,13 @@ hr {
                 text-decoration:none;
                 padding:10px;
                 display:block;
+                border-left:5px solid transparent;
                 &:hover{
                     border-left:5px solid $base-link-color;
+                    color:$base-link-color;
+                    padding:10px;
+                }
+                &:visited{
                     color:$base-link-color;
                 }
             }
@@ -198,12 +189,13 @@ hr {
             &.active{
                 a{
                     border-left:5px solid $base-link-color;
+                    font-weight:bold;
+                    padding:10px;
                 }
                 .level-two{
-                    display:block;
+                    //display:block;
                     li{
                         a{
-                            border-left:5px solid transparent;
                             font-size:16px;
                             padding:5px 10px;
                         }
@@ -215,6 +207,29 @@ hr {
 }
 
 .design-system-content{
-    border-left:1px solid $border-color;
-    padding-left:50px;
+    @media (min-width: 768px){
+        border-left:1px solid $border-color;
+        padding:0 50px 50px;
+    }
+}
+
+.design-system-menu{
+    @media (min-width: 768px){
+        padding-right:0;
+    }
+    .design-system-side-nav{
+        @media (max-width: 767px){
+            display:none;
+        }
+    }
+    .link-back{
+        margin-top:30px;
+        @media (min-width: 768px){
+            display:none;
+        }
+    }
+}
+
+.heading-contents{
+    margin-top:15px;
 }
