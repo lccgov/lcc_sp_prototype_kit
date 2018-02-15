@@ -1,0 +1,22 @@
+{% extends "design-system-master-page.html" %}
+
+ {% block additional_page_scripts %}
+    <script src="/public/javascripts/prism.js" type="text/javascript"></script>  
+{% endblock %}  
+
+{% block sectionOneTopGlobal %}{% endblock %}
+
+{% block body_content %}
+<section id="main" class="sectionOne">
+    <div class="container-fluid">
+        <div class="row">
+                <aside class="col-sm-4 col-md-2 design-system-menu sticker">
+                    {% block sectionLeftHandColumn %}{% endblock %}
+                </aside>
+                <div class="col-sm-8 col-md-10 design-system-content">
+                    {% block sectionOneRightContent %}{% endblock %}
+                </div>
+           </div>
+    </div>         
+</section>
+{% endblock %}

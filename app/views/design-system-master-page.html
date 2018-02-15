@@ -24,12 +24,12 @@
         <meta name="GENERATOR" content="Microsoft SharePoint" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <meta http-equiv="Expires" content="0" />
-        <title>{% block page_title %}{% endblock %}</title>
+        <title>{{ page_title }} - LEEDS.GOV.UK Design System</title>
         <!-- Template CSS -->
         <link rel="stylesheet" href="{{ asset_path }}stylesheets/lcc-template.css?1.1.105" />
         <!-- Application CSS -->
-        {% block css_register %}{% endblock %}
-        </head>
+        <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+    </head>
     <body class="design-system">
     
         <div id="skiplink-container">
@@ -57,6 +57,7 @@
                                     <div class="header-logo">
                                         <a href="\" title="Go to the homepage" class="logo"><span class="sr-only">Go to home page</span></a>
                                     </div>
+                                    <span class="service-title">Design System</span>
                                 </div>
                             </div>
                         </section>
@@ -77,11 +78,22 @@
                     <![endif]>
                 <![endif]-->
 
-                  <!-- ALERTS -->
-                <div id="alert">
-                {% block layout_alerts %}{% endblock %}
-                </div>
-                 <!-- /ALERTS -->
+                {% block sectionOneTopGlobal %}{% endblock %}
+
+                {% block sectionOneTop %}{% endblock %}
+                
+                <!-- main nav -->
+                <nav id="main-menu" class="main-nav" role="navigation">
+                    <div class="container-fluid">
+                        <!-- sharepoint nav -->
+                        <div data-name="main_nav">
+                            {% include "includes/design-system/design-system-nav.html" %}
+                        </div>
+                        <!--/.sharepoint nav -->
+                    </div>
+                    <!-- /.container -->
+                </nav>
+                <!-- /.main-menu -->
 
                 <!-- MAIN CONTENT -->
                 <div data-name="bodycontent">
@@ -93,7 +105,7 @@
                     <section class="footerGlobal">
                         <div class="container-fluid">
                             <!-- build:footerCustom -->
-                            {% block reusablecontent_footer %}{% endblock %}
+                            {% include "includes/design-system/design-system-footer.html" %}
                             <!-- endbuild -->
                             <div id="GoogleAnalytics"></div>
                         </div>

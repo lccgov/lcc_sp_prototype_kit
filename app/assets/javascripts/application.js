@@ -45,12 +45,6 @@ $(function() {
     sticky_relocate();
 });
 
-var dir = 1;
-var MIN_TOP = 200;
-var MAX_TOP = 350;
-
-$('main').scrollspy({ target: '#sidebar-nav' })
-
 //random image for hero-lcc
 function randomImage(){
   var images = [
