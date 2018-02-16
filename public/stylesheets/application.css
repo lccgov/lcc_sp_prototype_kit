@@ -27876,7 +27876,7 @@ pre {
   border-color: #DCDEE1; }
 
 html.design-system {
-  background-color: #E5F1F5; }
+  background-color: #f0f7f9; }
 
 .design-system .service-title {
   text-align: right;
@@ -27886,10 +27886,10 @@ html.design-system {
 
 .design-system .header-logo a {
   text-align: left !important;
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
   @media (min-width: 990px) {
     .design-system .header-logo a {
-      margin-bottom: 28px; } }
+      margin-bottom: 30px; } }
   .design-system .header-logo a span {
     display: block;
     font-size: 10px;
@@ -28045,7 +28045,7 @@ hr {
   background: url("/public/images/lcc-logo-white-01.svg") left center no-repeat; }
 
 .main-nav {
-  background: #E5F1F5; }
+  background: #f0f7f9; }
   @media (max-width: 990px) {
     .main-nav {
       position: relative;
@@ -28086,8 +28086,7 @@ hr {
       background: none;
       text-decoration: none;
       color: #007299;
-      border-bottom: 5px solid #007299;
-      font-weight: bold; }
+      border-bottom: 5px solid #007299; }
       @media (max-width: 500px) {
         .main-nav .container-fluid ul li a:hover {
           border-bottom: 3px solid #007299; } }
@@ -28128,22 +28127,17 @@ hr {
       border-left: 5px solid #007299;
       color: #007299;
       padding: 15px;
-      font-weight: bold; }
+      padding: 10px 15px;
+      background: #E5F1F5; }
     .design-system-side-nav ul li a:visited {
       color: #007299; }
     .design-system-side-nav ul li a p {
       display: none; }
-  .design-system-side-nav ul li .level-two {
-    display: none;
-    margin: 10px 0 30px; }
   .design-system-side-nav ul li.active a {
     border-left: 5px solid #007299;
     font-weight: bold;
-    background: #E5F1F5;
+    background: #f0f7f9;
     padding: 15px; }
-  .design-system-side-nav ul li.active .level-two li a {
-    font-size: 16px;
-    padding: 5px 10px; }
 
 .design-system-content {
   padding: 0 15px 50px; }
@@ -28194,11 +28188,20 @@ hr {
       padding: 0 15px;
       margin-bottom: 15px;
       display: inline-block; }
-      .design-system-landing-page-menu ul li a:hover {
-        font-weight: bold; }
 
 .heading-contents {
   margin-top: 15px; }
+
+.design-system-intro {
+  background: #007299;
+  padding: 50px 0; }
+  .design-system-intro h1 {
+    margin: 0 0 15px;
+    color: white; }
+  .design-system-intro p {
+    color: white;
+    margin: 0;
+    line-height: 1.4; }
 
 .example {
   position: relative;
@@ -29875,3 +29878,10 @@ blockquote {
     color: #666B76;
     font-weight: normal;
     font-style: normal; }
+
+.mega-promo.white .mega-promo__item a {
+  background: white; }
+  .mega-promo.white .mega-promo__item a:active .mega-promo__header,
+  .mega-promo.white .mega-promo__item a:active .mega-promo__secondary, .mega-promo.white .mega-promo__item a:active:after, .mega-promo.white .mega-promo__item a:focus .mega-promo__header,
+  .mega-promo.white .mega-promo__item a:focus .mega-promo__secondary, .mega-promo.white .mega-promo__item a:focus:after {
+    color: #212224 !important; }

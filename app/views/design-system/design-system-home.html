@@ -1,0 +1,61 @@
+{% extends "design-system-page-layout-landing.html" %}
+
+{% set section_id = "home" %} <!-- Section id var for main nav --> 
+{% set page_title = "Home" %} <!-- Page title var for page header (H1) and page title -->       
+
+{% block sectionOneTop %}
+<style>
+    .sectionOne{
+        background:#f0f7f9;
+    }
+    .main-nav {
+        background:#ffffff;
+    }
+</style>
+
+{% endblock %}
+
+{% block sectionLeftHandColumn %}
+{% endblock %}
+
+{% block sectionOneRightContent %}
+{% endblock %}
+
+{% block sectionOneFull %}
+<h1 class="sr-only">LEEDS.GOV.UK Design System Home</h1>
+<div class="mega-promo white" style="margin:60px 0;">
+    <div class="mega-promo__item third">
+        <a href="/design-system/styles">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image:url();"></div>    
+            </div>	     
+            <div class="mega-promo__content">                
+                <h3 class="mega-promo__header">Styles</h3>	                
+                <p class="mega-promo__secondary">Guides for applying layout, typography, color and images.</p>	            
+            </div>	            			
+        </a>			
+    </div>
+    <div class="mega-promo__item third">
+        <a href="/design-system/components">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image:url();"></div>    
+            </div>	     
+            <div class="mega-promo__content">                
+                <h3 class="mega-promo__header">Components</h3>	                
+                <p class="mega-promo__secondary">Re-usable, accessible components for forms, navigation, panels and more.</p>	            
+            </div>	            			
+        </a>			
+    </div>
+    <div class="mega-promo__item third">
+        <a href="/design-system/patterns">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image:url();"></div>    
+            </div>	     
+            <div class="mega-promo__content">                
+                <h3 class="mega-promo__header">Patterns</h3>	                
+                <p class="mega-promo__secondary">Common tasks like entering names and addresses and filling in forms.</p>	            
+            </div>	            			
+        </a>			
+    </div>
+</div>
+{% endblock %}

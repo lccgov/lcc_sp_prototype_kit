@@ -287,3 +287,22 @@ blockquote{
         font-style:normal;
     }
 }
+
+.mega-promo{
+    &.white{
+        .mega-promo__item{
+            a{
+                background:white;
+                &:active,
+                &:focus{
+                    .mega-promo__header,
+                    .mega-promo__secondary,
+                    &:after{
+                        color:$base-font-color !important;
+                    }
+
+                }
+            }
+        }
+    }
+}
