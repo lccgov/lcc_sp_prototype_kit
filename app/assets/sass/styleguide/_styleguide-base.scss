@@ -1,6 +1,6 @@
 html {
     &.design-system{
-        background-color: lighten($panel-color,3%);
+        background-color: white;
     }
 }
 .design-system{
@@ -14,9 +14,11 @@ html {
     }
     .header-logo a {
         background-image: url(../images/logo-lcc-digital.svg);
-        width: 220px;
+        width: 194px;
+        height:22px;
         @media (max-width: 990px) {
-            width:170px;
+            width:132px;
+            height:15px;
         }
     }
     .container-fluid{
@@ -130,9 +132,9 @@ html {
     }
 
     .mega-promo.home{
-        margin: 30px 0 30px -15px;
+        margin: 30px 0 0 -15px;
         @media (min-width: 641px){
-            margin: 60px 0 60px -15px;
+            margin: 60px 0 0 -15px;
         }
     }
 }
@@ -278,7 +280,7 @@ hr {
 
 .design-system-side-nav{
     &.stick {
-        max-width:250px;
+        width:15.66%;
         @media (min-width: 1600px){
             width:250px;
         }
@@ -377,17 +379,15 @@ hr {
         padding:50px 0;
     }
     h1{
-        margin:0 0 10px;
+        margin:0 0 5px;
         color:white;
-        line-height:1.2;
+        line-height:1.1;
         font-size:32px;
         @media (min-width: 641px){
-            font-size:48px;
+            font-size:50px;
         }
         span{
-            @media (max-width: 990px){
                 display:block;
-            } 
         }
     }
     p{
@@ -395,6 +395,7 @@ hr {
         margin:0;
         line-height:1.4;
         font-size:16px;
+        max-width:28em;
         @media (min-width: 641px){
             font-size:21px;
         }
