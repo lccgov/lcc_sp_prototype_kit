@@ -12,13 +12,15 @@
 {% endblock %}
 
 {% block sectionOneRightContent %}
-<h1>{{ page_title }}</h1>
-
-<!-- Page content goes here -->
+<div class="page-header-section">
+    <h1>{{ page_title }}</h1>
+    <p class="lead">Typography is used to create clear hierarchy throughout the layout.</p>
+</div>
 
 <div class="contents-box">
     <h2 class="heading-contents">Contents</h2>
     <ul class="list list-contents">
+        <li><a href="#typography-fonts">Fonts</a></li>
         <li><a href="#typography-headings">Headings</a></li>
         <li><a href="#typography-lead-paragraph">Lead paragraph</a></li>
         <li><a href="#typography-body-copy">Body copy</a></li>
@@ -32,15 +34,16 @@
     </ul>
 </div>
     <div class="text">
-        <p class="lead">For Leeds.gov.uk domains, always use the <a href="https://fonts.google.com/specimen/Open+Sans" rel="external">Open Sans</a> font in Regular for body text, and <a href="https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat" rel="external">Montserrat <span class="sr-only">External link</span></a> in Bold for headings.</p>
+        <h2 class="heading-large top" id="typography-fonts">Fonts</h2>
+        <p>For Leeds.gov.uk domains, always use the <a href="https://fonts.google.com/specimen/Open+Sans" rel="external">Open Sans</a> font in Regular for body text, and <a href="https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat" rel="external">Montserrat <span class="sr-only">External link</span></a> in Bold for headings.</p>
     </div>
     <div class="text">
         <h2 class="heading-large" id="typography-headings">Headings</h2>
-        <ul class="list list-bullet text">
-            <li>use sentence case for headings</li>
-            <li>use headings consistently to create a clear hierarchy</li>
-            <li>use semantic headings and structure. <a href="http://www.webpagemistakes.ca/heading-structure-heading-tag/" rel="external">Read article on heading structure<span class="sr-only">External link</span></a></li>
-        </ul>
+        <p>Use sentence case for headings</p>
+        <div role="note" aria-label="Information" class="text-highlight">
+            <h3>Accessibility for headings</h3>
+            <p>Use semantic headings and structure. Find out more about <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/" rel="external">heading structure<span class="sr-only">External link</span></a>.</p>
+        </div>
     </div>
     <div class="example">
         <h1 class="heading-xlarge">A xlarge heading</h1>
@@ -92,15 +95,14 @@
     <div class="example">
     <div class="text">
         <p>This is a body copy paragraph. Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.</p>
-        <p class="font-xsmall">A supporting text paragraph. Felis at varius tincidunt, turpis dui finibus risus, ac varius libero eros ac dolor.</p>
+        <p>Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.</p>
     </div>
     <h3 class="heading-mark-up">HTML Mark-up <span class="sr-only">for body copy</span></h3>
     <pre>
         <code class="line-numbers language-markup">
             &lt;div class="text">
                 &lt;p>This is a body copy paragraph. Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.&lt;/p>
-            
-                &lt;p class="font-xsmall">A supporting text paragraph. Felis at varius tincidunt, turpis dui finibus risus, ac varius libero eros ac dolor.&lt;/p>
+                &lt;p>Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.&lt;/p>
             &lt;div>
         </code>
     </pre>
@@ -112,24 +114,55 @@
     </div>
     <div class="example">
         <div class="text">
-            <p><a href="#">A link without surrounding text</a></p>
-            <p><a href="#">A body copy link</a>. Pretium molestie ligula in, volutpat mattis libero. Aenean dapibus augue id dolor egestas, in tincidunt dolor volutpat.</p>
-            <p>A body copy <a href="#" rel="external">external link <span class="sr-only">External link</span></a>. Fusce dapibus, tellus ac cursus commodo.</p>
-            <p>A body copy <a href="#" rel="pdf">PDF document (PDF, 1MB) <span class="sr-only">External link</span></a>. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h3>Link with surround text</h3>
+            <p><a href="#">See all events</a></p>
         </div>
         <h3 class="heading-mark-up">HTML Mark-up <span class="sr-only">for links</span></h3>
         <pre>
             <code class="line-numbers language-markup">
                 &lt;div class="text">
-
-                    &lt;p>&lt;a href="#">A link without surrounding text&lt;/a>&lt;/p>
-                    
-                    &lt;p>&lt;a href="#">A body copy link&lt;/a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p>
-
+                    &lt;p>&lt;a href="#">See all events&lt;/a>&lt;/p>
+                &lt;div>
+            </code>
+        </pre>
+        <div class="text">
+            <h3>Body copy link</h3>
+            <p>This is what a <a href="#">body copy link</a> looks like.</p>
+        </div>
+        <h3 class="heading-mark-up">HTML Mark-up <span class="sr-only">for links</span></h3>
+        <pre>
+            <code class="line-numbers language-markup">
+                &lt;div class="text">
+                     &lt;p>This is what a &lt;a href="#">body copy link&lt;/a> looks like.&lt;/p>
+                &lt;div>
+            </code>
+        </pre>
+        <div class="text">
+            <h3>External link</h3>
+            <p>A body copy <a href="#" rel="external">external link <span class="sr-only">External link</span></a>. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <pre>
+            <code class="line-numbers language-markup">
+                &lt;div class="text">
                     &lt;p>A body copy &lt;a href="#" rel="external">external link &lt;span class="sr-only">External link&lt;/span>&lt;/a>. Fusce dapibus, tellus ac cursus commodo.&lt;/p>
-
-                    &lt;p>A body copy &lt;a href="#" rel="pdf">PDF document (PDF, 1MB) &lt;span class="sr-only">External link&lt;/span>&lt;/a>. Fusce dapibus, tellus ac cursus commodo.&lt;/p>
-
+                &lt;div>
+            </code>
+        </pre>
+        <div class="text">
+            <h3>Document links</h3>
+            <p>A <a href="#" rel="pdf">PDF document (PDF, 1MB)<span class="sr-only"> External link</span></a> within body copy.</p>
+            <p>A <a href="#" rel="doc">Word document (Word, 1.5MB)<span class="sr-only"> External link</span></a> within body copy.</p>
+            <p>A <a href="#" rel="xl">Excel document (Excel, 0.5MB)<span class="sr-only"> External link</span></a> within body copy.</p>
+            <p>A <a href="#" rel="pp">PowerPoint document (PowerPoint, 2MB)<span class="sr-only"> External link</span></a> within body copy.</p>
+        </div>
+        <h3 class="heading-mark-up">HTML Mark-up <span class="sr-only">for links</span></h3>
+        <pre>
+            <code class="line-numbers language-markup">
+                &lt;div class="text">
+                    &lt;p>A &lt;a href="#" rel="pdf">PDF document (PDF, 1MB)&lt;span class="sr-only"> External link&lt;/span>&lt;/a> within body copy.&lt;/p>
+                    &lt;p>A &lt;a href="#" rel="doc">Word document (Word, 1.5MB)&lt;span class="sr-only"> External link&lt;/span>&lt;/a> within body copy.&lt;/p>
+                    &lt;p>A &lt;a href="#" rel="xl">Excel document (Excel, 0.5MB)&lt;span class="sr-only"> External link&lt;/span>&lt;/a> within body copy.&lt;/p>
+                    &lt;p>A &lt;a href="#" rel="pp">PowerPoint document (PowerPoint, 2MB)&lt;span class="sr-only"> External link&lt;/span>&lt;/a> within body copy.&lt;/p>
                 &lt;div>
             </code>
         </pre>
@@ -232,13 +265,7 @@
     <div class="example">
         <div class="text">
             <div role="note" aria-label="Information" class="text-highlight">
-                <p>We won’t be able to award a discount if you live in a household with two or more non-students or part-time students.</p>
-            </div>
-            <div role="note" aria-label="Information" class="text-highlight text-highlight--blue">
-                <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
-            </div>
-            <div role="note" aria-label="Information" class="text-highlight text-highlight--green">
-                <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</p>
+                <p>Before you apply you’ll need your council tax account number - <a href="#">your account number can be found on your bill</a>.</p>
             </div>
             <div role="note" aria-label="Information" class="text-highlight text-highlight--red">
                 <h2>Emergency and out-of-hours</h2>
@@ -252,15 +279,7 @@
             &lt;div class="text">
 
                 &lt;div role="note" aria-label="Information" class="text-highlight">
-                    &lt;p>We won’t be able to award a discount if you live in a household with two or more non-students or part-time students.&lt;/p>
-                &lt;/div>
-
-                &lt;div role="note" aria-label="Information" class="text-highlight text-highlight--blue">
-                    &lt;p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.&lt;/p>
-                &lt;/div>
-
-                &lt;div role="note" aria-label="Information" class="text-highlight text-highlight--green">
-                    &lt;p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.&lt;/p>
+                    &lt;p>Before you apply you’ll need your council tax account number - &lt;a href="#">your account number can be found on your bill&lt;/a>.&lt;/p>
                 &lt;/div>
 
                 &lt;div role="note" aria-label="Information" class="text-highlight text-highlight--red">
@@ -275,7 +294,7 @@
     <div class="text">
         <h2 class="heading-large" id="typography-text-block">Text block</h2>
         <p class="text">
-        Use text block to highlight information. For example: phone numbers, addresses and banking information.
+        Use text block to highlight contact information.
         </p>
     </div>
     <div class="example">
@@ -335,7 +354,7 @@
     <div class="text">
         <h2 class="heading-large" id="typography-legal-text">Legal text</h2>
         <p class="text">
-        Use bold text with an exclamation icon if there are legal consequences - for example, a fine or prison sentence.
+            Use bold text with an exclamation icon if there are legal consequences - for example, a fine or prison sentence.
         </p>
     </div>
     <div class="example">
@@ -345,7 +364,7 @@
                     <span class="sr-only">Warning</span>
                 </i>
                 <strong class="bold-small">
-                You can be fined up to £5,000 if you don’t register.
+                You can be fined up to £10,000 if you don’t register.
                 </strong>
             </div>
         </div>
@@ -356,7 +375,7 @@
                 &lt;i class="fa fa-exclamation-triangle" aria-hidden="true">
                     &lt;span class="sr-only">Warning&lt;/span>
                 &lt;/i>
-                &lt;strong class="bold-small">You can be fined up to £5,000 if you don’t register.&lt;/strong>
+                &lt;strong class="bold-small">You can be fined up to £10,000 if you don’t register.&lt;/strong>
             &lt;/div>
             </code>
         </pre>
@@ -366,13 +385,15 @@
         <h2 class="heading-large" id="typography-blockquote">Blockquote</h2>
     </div>
     <div class="example">
-        <blockquote>
-            <span class="open-quote"></span>
-            <p>I had the opportunity to work with a number of partners on this project and engaged with a number of senior managers across the authority.</p>
-            <footer class="blockquote-footer">
-                <cite title="Source Title">Headteacher - Calverley Church of England Primary School</cite>
-            </footer>
-        </blockquote>
+        <div class="text">
+            <blockquote>
+                <span class="open-quote"></span>
+                <p>I had the opportunity to work with a number of partners on this project and engaged with a number of senior managers across the authority.</p>
+                <footer class="blockquote-footer">
+                    <cite title="Source Title">Headteacher - Calverley Church of England Primary School</cite>
+                </footer>
+            </blockquote>
+        </div>
         <h3 class="heading-mark-up">HTML Mark-up <span class="sr-only">for blockquote</span></h3>
         <pre>
             <code class="line-numbers language-markup">
@@ -390,17 +411,26 @@
     <div class="text">
         <h2 class="heading-large" id="hidden-text">Hidden text (progressive disclosure)</h2>
         <p>Use this to make your page easier to scan, only showing contextual information when required.</p>
-        <p>Click on "Help with nationality" to see how this works.</p>
+        <p>Click on "If you study as a full-time student elsewhere" to see how this works.</p>
     </div>
     <div class="example">
         <div class="hidden-text">
             <a class="text-link reveal collapsed" role="button" data-toggle="collapse" href="#hidden-text-example" aria-expanded="false" aria-controls="hidden-text-example">
-            Help with nationality
+            If you study as a full-time student elsewhere
             </a>
             <div class="collapse" id="hidden-text-example">
                 <div class="panel panel-border">
-                    <p> If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.</p>
-                    <p>We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.</p>
+                    <div role="note" aria-label="Information" class="text-highlight">
+                        <p>You cannot apply online.</p>
+                    </div>
+                    <p>Instead you'll need to provide us with a Council tax Student Certificate from your admissions/student services department.</p>
+                    <p>You can hand this in to a <a href="#">One Stop Centre</a> or post it to:</p>
+                    <div class="text-block">
+                        <p>Leeds City Council 
+                        <br>P.O. Box 60 
+                        <br>Leeds 
+                        <br>LS2 8JR</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -409,12 +439,21 @@
             <code class="line-numbers language-markup">
                 &lt;div class="hidden-text">
                     &lt;a class="text-link reveal collapsed" role="button" data-toggle="collapse" href="#hidden-text-example" aria-expanded="false" aria-controls="hidden-text-example">
-                    Help with nationality
+                    If you study as a full-time student elsewhere
                     &lt;/a>
                     &lt;div class="collapse" id="hidden-text-example">
                         &lt;div class="panel panel-border">
-                            &lt;p> If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.&lt;/p>
-                            &lt;p>We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.&lt;/p>
+                            &lt;div role="note" aria-label="Information" class="text-highlight">
+                                &lt;p>You cannot apply online.&lt;/p>
+                            &lt;/div>
+                            &lt;p>Instead you'll need to provide us with a Council tax Student Certificate from your admissions/student services department.&lt;/p>
+                            &lt;p>You can hand this in to a &lt;a href="#">One Stop Centre&lt;/a> or post it to:&lt;/p>
+                            &lt;div class="text-block">
+                                &lt;p>Leeds City Council 
+                                &lt;br>P.O. Box 60 
+                                &lt;br>Leeds 
+                                &lt;br>LS2 8JR&lt;/p>
+                            &lt;/div>
                         &lt;/div>
                     &lt;/div>
                 &lt;/div>

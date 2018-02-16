@@ -1,9 +1,35 @@
+html {
+    &.design-system{
+        background-color: $panel-color;
+    }
+}
 .design-system{
 
     //design system specific styling
-
+    .service-title{
+        text-align:right;
+        position:relative;
+        padding:0;
+        font-weight:400;
+    }
+    .header-logo a {
+        text-align:left !important;
+        margin-bottom:20px;
+        @media (min-width: 990px){
+            margin-bottom:28px;
+        }
+        span{
+            display:block;
+            font-size:10px;
+            margin-top:16px;
+            @media (min-width: 990px){
+                font-size:14px;
+                margin-top:28px;
+            }
+        }
+    }
     .container-fluid{
-        max-width: 1600px !important;
+        max-width: 100% !important;
     }
     .container{
         max-width: 1170px !important;
@@ -14,32 +40,61 @@
         }
     }
     .contents-box{
+        margin-bottom:25px;
         .heading-contents{
             margin-top:0;
-            margin-bottom:15px;
+            @include sr-only();
         }
         .list-contents{
-            border-bottom:1px solid $border-color;
-            padding-bottom:15px;
-            margin:0 0 15px;
             @media (min-width: 641px){
                 padding-bottom:25px;
                 margin:0;
+            }
+            li{
+                margin:0;
+                a{
+                    border-left:3px solid $panel-color;
+                    padding:0 15px;
+                    margin-bottom:15px;
+                    display:inline-block;
+                }
             }
         }
     } 
     :not(pre) > code[class*="language-"], pre[class*="language-"]{
         margin-top:0;
     }
+    pre[class*="language-"]{
+        border:1px solid darken($panel-color,5%);
+    }
     .heading-mark-up{
-        background:#bfc1c3;
+        background:$panel-color;
         padding:10px 15px;
-        margin:15px 0 0;
-        font-size:16px;
+        margin:30px 0 -1px;
+        font-size:19px;
+        color:$secondary-font-color;
+        border:1px solid darken($panel-color,5%);
     }
     .cd-top {
+        width:100%;
+        border-radius:0;
+        right:0;
+        bottom:0;
+        background:$blue;
+        @media (min-width: 641px){
+            padding:20px;
+            font-size:19px;
+        }
         &.cd-top.cd-fade-out {
-            opacity: .8;
+            opacity: .9;
+            &:hover{
+                background:$blue;
+                opacity: .7;
+            }
+        }
+        &:hover{
+            background:$blue;
+            opacity: .7;
         }
     }
     .page-header-section{
@@ -149,7 +204,7 @@ hr {
 
 //nav
 .main-nav {
-    background:$lighter-grey;
+    background:$panel-color;
     @media (max-width: 990px){
         position: relative;
         left: 0;
@@ -175,6 +230,9 @@ hr {
                     a{
                         border-bottom:5px solid $base-link-color;
                         font-weight:bold;
+                        @media (max-width: 641px){
+                            border-bottom:3px solid $base-link-color;
+                        }
                     }
                 }
                 a{
@@ -185,29 +243,35 @@ hr {
                     color:$base-link-color;
                     border-bottom:5px solid transparent;
                     border-top:5px solid transparent;
+                    @media (max-width: 641px){
+                        border-bottom:3px solid transparent;
+                        border-top:3px solid transparent; 
+                    }
                     &:hover{
                         background:none;
                         text-decoration:none;
                         color:$base-link-color;
                         border-bottom:5px solid $base-link-color;
+                        font-weight:bold;
+                        @media (max-width: 500px){
+                            border-bottom:3px solid $base-link-color;
+                        }
                     }
                     @media (max-width: 990px){
                         width:auto;
                         font-size:19px;
-                        padding:10px 0;
+                        padding:10px;
                         text-decoration:none;
-                        margin-right:15px;
                         &:hover{
                             background:transparent;
                         }
                     }
                     @media (max-width: 500px){
                         font-size:16px;
-                        margin-right:10px;
+                        padding:7px;
                     }
                     @media (max-width: 400px){
                         font-size:14px;
-                        margin-right:8px;
                     }
                 }
             }
@@ -228,7 +292,7 @@ hr {
     }
     ul{
         padding:0;
-        margin:45px 0 0;
+        margin:45px 0;
         li{
             a{
                 text-decoration:none;
@@ -238,6 +302,8 @@ hr {
                 &:hover{
                     border-left:5px solid $base-link-color;
                     color:$base-link-color;
+                    padding:15px;
+                    font-weight:bold;
                 }
                 &:visited{
                     color:$base-link-color;
@@ -254,7 +320,8 @@ hr {
                 a{
                     border-left:5px solid $base-link-color;
                     font-weight:bold;
-                    background:$lighter-grey;
+                    background:$panel-color;
+                    padding:15px;
                 }
                 .level-two{
                     //display:block;
@@ -271,8 +338,9 @@ hr {
 }
 
 .design-system-content{
+    padding:0 15px 50px;
     @media (min-width: 768px){
-        border-left:1px solid $border-color;
+        border-left:1px solid $panel-color;
         padding:0 50px 50px;
     }
 }
@@ -280,7 +348,7 @@ hr {
 .design-system-menu{
     @media (min-width: 768px){
         padding-right:0;
-        border-right:1px solid $border-color;
+        border-right:1px solid $panel-color;
         margin-right:-1px;
     }
     .design-system-side-nav{
@@ -302,7 +370,16 @@ hr {
         margin:0;
         @include three-columns();
         li{
-            margin-bottom:15px;
+            margin:0;
+            a{
+                border-left:3px solid $panel-color;
+                padding:0 15px;
+                margin-bottom:15px;
+                display:inline-block;
+                &:hover{
+                    font-weight:bold;
+                }
+            }
         }
     }
 }

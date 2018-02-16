@@ -218,16 +218,34 @@ html {
     background-color: $blue;
 }
 
+//hidden text
 .hidden-text{
-    .panel *{
-        @include text();
+    .panel {
+        *{
+        margin:15px 0 0;
+            @include text();
+        }
+        li{
+            margin:7px 0 0;
+            &:first-child{
+                margin-top:0;
+            }
+        }
+        *:first-child { 
+            margin-top: 0 !important; 
+        }
+        *:last-child { 
+            margin-bottom: 0 !important; 
+        }
     }
 }
 
+//header
 .header-wrapper{
     position:relative;
 }
 
+//service title
 .service-title{
     position: absolute;
     width: 100%;
@@ -239,9 +257,33 @@ html {
     font-size:21px;
 }
 
-.design-system .service-title{
-    text-align:right;
+//blockquote
+blockquote{
+    font-family:$font-secondary;
+    font-weight:bold;
     position:relative;
-    padding:0;
-    font-weight:400;
+    padding:0 30px 0 80px;
+    margin:30px 0;
+    @media (min-width: 641px){
+        margin:60px 0;
+    }
+    &:before{
+        font-family: FontAwesome;
+        content: "\f10d";
+        position: absolute;
+        top: 0;
+        left: 30px;
+        opacity: 0.5;
+        font-size: 32px;
+    }
+    p{
+        margin:0 0 15px;
+        padding:0;
+    }
+    .blockquote-footer,
+    cite{
+        color:$secondary-font-color;
+        font-weight:normal;
+        font-style:normal;
+    }
 }
