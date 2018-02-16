@@ -234,7 +234,7 @@ hr {
                     }
                 }
                 a{
-                    font-size:21px;
+                    font-size:19px;
                     padding:10px 20px;
                     text-decoration:none;
                     margin:0;
@@ -372,7 +372,10 @@ hr {
 
 .design-system-intro{
     background:$blue;
-    padding:50px 0;
+    padding:30px 0;
+    @media (min-width: 641px){
+        padding:50px 0;
+    }
     h1{
         margin:0 0 10px;
         color:white;
@@ -391,9 +394,9 @@ hr {
         color:white;
         margin:0;
         line-height:1.4;
-        font-size:19px;
+        font-size:16px;
         @media (min-width: 641px){
-            font-size:24px;
+            font-size:21px;
         }
     }
 }
