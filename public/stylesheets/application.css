@@ -27885,19 +27885,11 @@ html.design-system {
   font-weight: 400; }
 
 .design-system .header-logo a {
-  text-align: left !important;
-  margin-bottom: 24px; }
-  @media (min-width: 990px) {
+  background-image: url(../images/logo-lcc-digital.svg);
+  width: 220px; }
+  @media (max-width: 990px) {
     .design-system .header-logo a {
-      margin-bottom: 30px; } }
-  .design-system .header-logo a span {
-    display: block;
-    font-size: 10px;
-    margin-top: 16px; }
-    @media (min-width: 990px) {
-      .design-system .header-logo a span {
-        font-size: 14px;
-        margin-top: 28px; } }
+      width: 170px; } }
 
 .design-system .container-fluid {
   max-width: 100% !important; }
@@ -27999,6 +27991,12 @@ html.design-system {
 
 .design-system .groupPromo p {
   font-family: "Open Sans", sans-serif; }
+
+.design-system .mega-promo.home {
+  margin: 30px 0 30px -15px; }
+  @media (min-width: 641px) {
+    .design-system .mega-promo.home {
+      margin: 60px 0 60px -15px; } }
 
 /*temporarily hide masterhead*/
 .masterhead {
@@ -28196,12 +28194,24 @@ hr {
   background: #007299;
   padding: 50px 0; }
   .design-system-intro h1 {
-    margin: 0 0 15px;
-    color: white; }
+    margin: 0 0 10px;
+    color: white;
+    line-height: 1.2;
+    font-size: 32px; }
+    @media (min-width: 641px) {
+      .design-system-intro h1 {
+        font-size: 48px; } }
+    @media (max-width: 990px) {
+      .design-system-intro h1 span {
+        display: block; } }
   .design-system-intro p {
     color: white;
     margin: 0;
-    line-height: 1.4; }
+    line-height: 1.4;
+    font-size: 19px; }
+    @media (min-width: 641px) {
+      .design-system-intro p {
+        font-size: 24px; } }
 
 .example {
   position: relative;
