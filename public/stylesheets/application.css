@@ -27878,6 +27878,12 @@ pre {
 html.design-system {
   background-color: white; }
 
+.design-system .sectionHeader .container-fluid .header-wrapper {
+  height: 65px; }
+  @media (max-width: 990px) {
+    .design-system .sectionHeader .container-fluid .header-wrapper {
+      height: 45px; } }
+
 .design-system .service-title {
   text-align: right;
   position: relative;
@@ -27886,12 +27892,12 @@ html.design-system {
 
 .design-system .header-logo a {
   background-image: url(../images/logo-lcc-digital.svg);
-  width: 194px;
-  height: 22px; }
+  width: 168px;
+  height: 19px; }
   @media (max-width: 990px) {
     .design-system .header-logo a {
-      width: 132px;
-      height: 15px; } }
+      width: 105px;
+      height: 12px; } }
 
 .design-system .container-fluid {
   max-width: 100% !important; }
@@ -28072,7 +28078,7 @@ hr {
         border-bottom: 3px solid #007299; } }
   .main-nav .container-fluid ul li a {
     font-size: 19px;
-    padding: 10px 20px;
+    padding: 7px 10px;
     text-decoration: none;
     margin: 0;
     color: #007299;
@@ -28137,7 +28143,7 @@ hr {
     border-left: 5px solid #007299;
     font-weight: bold;
     background: #f0f7f9;
-    padding: 15px; }
+    padding: 10px 15px; }
 
 .design-system-content {
   padding: 0 15px 50px; }

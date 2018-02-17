@@ -5,6 +5,13 @@ html {
 }
 .design-system{
 
+    .sectionHeader .container-fluid .header-wrapper{
+        height:65px;
+        @media (max-width: 990px) {
+            height:45px;
+        }
+    }
+
     //design system specific styling
     .service-title{
         text-align:right;
@@ -14,11 +21,11 @@ html {
     }
     .header-logo a {
         background-image: url(../images/logo-lcc-digital.svg);
-        width: 194px;
-        height:22px;
+        width: 168px;
+        height:19px;
         @media (max-width: 990px) {
-            width:132px;
-            height:15px;
+            width:105px;
+            height:12px;
         }
     }
     .container-fluid{
@@ -237,7 +244,7 @@ hr {
                 }
                 a{
                     font-size:19px;
-                    padding:10px 20px;
+                    padding:7px 10px;
                     text-decoration:none;
                     margin:0;
                     color:$base-link-color;
@@ -317,7 +324,7 @@ hr {
                     border-left:5px solid $base-link-color;
                     font-weight:bold;
                     background:lighten($panel-color,3%);
-                    padding:15px;
+                    padding:10px 15px;
                 }
             }
         }
