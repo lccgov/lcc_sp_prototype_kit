@@ -30,7 +30,7 @@
         <!-- Application CSS -->
         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
     </head>
-    <body>
+    <body id="top">
     
         <div id="skiplink-container">
             <div>
@@ -97,10 +97,23 @@
                   {% block body_content %}{% endblock %}
                 </div>
                 <!-- /MAIN CONTENT -->
+                {% block back_to_top %}{% endblock %}
                 <!-- footer -->
-                {% block footer %}{% endblock %} 
-                <!-- BACK TO TOP -->
-                <a href="#0" class="cd-top" data-module="back-to-top">Back to top</a>         
+                <footer class="main" role="contentinfo">
+                    <section class="footerGlobal">
+                        <div class="container-fluid">
+                            <!-- build:footerCustom -->
+                            <div class="col-sm-12 logo-footer">
+                                <span></span>
+                                <p class="copyright">Copyright © Leeds City Council 2018</p>
+                            </div>
+                            <!-- endbuild -->
+                            <div id="GoogleAnalytics"></div>
+                        </div>
+                        <!-- /.row -->
+                    </section>
+                </footer>
+                <!-- BACK TO TOP -->        
             </div>
         </div> 
         <!-- webchat modal popup placeholder - legacy code. maybe worth changing in the future but changes to the engagement engine would be needed -->

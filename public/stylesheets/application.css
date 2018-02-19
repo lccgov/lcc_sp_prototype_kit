@@ -27875,8 +27875,11 @@ pre {
   border-radius: 0;
   border-color: #DCDEE1; }
 
-html.design-system {
-  background-color: white; }
+.design-system footer.main {
+  background: #007299; }
+
+.design-system .sectionOne {
+  padding-bottom: 50px; }
 
 .design-system .sectionHeader .container-fluid .header-wrapper {
   height: 65px; }
@@ -27892,8 +27895,8 @@ html.design-system {
 
 .design-system .header-logo a {
   background-image: url(../images/logo-lcc-digital.svg);
-  width: 168px;
-  height: 19px; }
+  width: 190px;
+  height: 22px; }
   @media (max-width: 990px) {
     .design-system .header-logo a {
       width: 105px;
@@ -27904,9 +27907,6 @@ html.design-system {
 
 .design-system .container {
   max-width: 1170px !important; }
-
-.design-system .sectionOne .col-sm-12 {
-  padding-bottom: 50px; }
 
 .design-system .contents-box {
   margin-bottom: 25px; }
@@ -27951,7 +27951,8 @@ html.design-system {
   border-radius: 0;
   right: 0;
   bottom: 0;
-  background: #007299; }
+  background: #007299;
+  border-top: 1px solid white; }
   @media (min-width: 641px) {
     .design-system .cd-top {
       padding: 20px;
@@ -28001,10 +28002,12 @@ html.design-system {
   font-family: "Open Sans", sans-serif; }
 
 .design-system .mega-promo.home {
-  margin: 30px 0 0 -15px; }
+  margin: 30px 0 0 -15px;
+  padding: 0; }
   @media (min-width: 641px) {
     .design-system .mega-promo.home {
-      margin: 60px 0 0 -15px; } }
+      margin: 60px 0 0 -15px;
+      padding: 0; } }
 
 /*temporarily hide masterhead*/
 .masterhead {
@@ -28224,6 +28227,20 @@ hr {
       .design-system-intro p {
         font-size: 21px; } }
 
+.back-top {
+  width: 100%;
+  text-align: center;
+  background: #003F55;
+  color: white;
+  padding: 15px;
+  display: block;
+  text-decoration: none; }
+  .back-top:visited {
+    color: white; }
+  .back-top:hover {
+    background: #00526f;
+    color: white; }
+
 .example {
   position: relative;
   overflow: hidden;
@@ -28378,7 +28395,7 @@ hr {
   z-index: 10000;
   overflow: auto;
   padding: 15px 0 15px;
-  max-height: 80vh;
+  max-height: 70vh;
   width: calc(100% * (1/6) - 15px); }
   @media (max-width: 990px) {
     #sticky.stick {
