@@ -53,7 +53,7 @@ html {
             li{
                 margin:0;
                 a{
-                    border-left:3px solid $panel-color;
+                    border-left:3px solid $lighter-grey;
                     padding:0 15px;
                     margin-bottom:15px;
                     display:inline-block;
@@ -211,7 +211,7 @@ hr {
 
 //nav
 .main-nav {
-    background:lighten($panel-color,3%);
+    background:$lighter-grey;
     @media (max-width: 990px){
         position: relative;
         left: 0;
@@ -310,7 +310,7 @@ hr {
                     color:$base-link-color;
                     padding:15px;
                     padding:10px 15px;
-                    background:$panel-color;
+                    background:$lighter-grey;
                 }
                 &:visited{
                     color:$base-link-color;
@@ -323,7 +323,7 @@ hr {
                 a{
                     border-left:5px solid $base-link-color;
                     font-weight:bold;
-                    background:lighten($panel-color,3%);
+                    background:$lighter-grey;
                     padding:10px 15px;
                 }
             }
@@ -332,17 +332,17 @@ hr {
 }
 
 .design-system-content{
-    padding:0 15px 50px;
+    padding:0 15px 100px;
     @media (min-width: 768px){
-        border-left:1px solid $panel-color;
-        padding:0 50px 50px;
+        border-left:1px solid $lighter-grey;
+        padding:0 50px 100px;
     }
 }
 
 .design-system-menu{
     @media (min-width: 768px){
         padding-right:0;
-        border-right:1px solid $panel-color;
+        border-right:1px solid $lighter-grey;
         margin-right:-1px;
     }
     .design-system-side-nav{
@@ -366,7 +366,7 @@ hr {
         li{
             margin:0;
             a{
-                border-left:3px solid $panel-color;
+                border-left:3px solid $lighter-grey;
                 padding:0 15px;
                 margin-bottom:15px;
                 display:inline-block;
@@ -386,21 +386,21 @@ hr {
         padding:50px 0;
     }
     h1{
-        margin:0 0 5px;
+        margin:0 0 10px;
         color:white;
         line-height:1.1;
         font-size:32px;
         @media (min-width: 641px){
-            font-size:50px;
+            font-size:60px;
         }
         span{
-                display:block;
+            display:block;
         }
     }
     p{
         color:white;
         margin:0;
-        line-height:1.4;
+        line-height:1.6;
         font-size:16px;
         max-width:28em;
         @media (min-width: 641px){

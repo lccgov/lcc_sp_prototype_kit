@@ -22,6 +22,7 @@
     <ul class="list list-contents">
         <li><a href="#typography-fonts">Fonts</a></li>
         <li><a href="#typography-headings">Headings</a></li>
+        <li><a href="#typography-text-wrapper">Text wrapper</a></li>
         <li><a href="#typography-lead-paragraph">Lead paragraph</a></li>
         <li><a href="#typography-body-copy">Body copy</a></li>
         <li><a href="#typography-links">Links</a></li>
@@ -30,7 +31,7 @@
         <li><a href="#typography-text-block">Text block</a></li>
         <li><a href="#typography-legal-text">Legal text</a></li>
         <li><a href="#typography-blockquote">Blockquote</a></li>
-        <li><a href="#hidden-text">Hidden text (progressive disclosure)</a></li>
+        <li><a href="#typography-hidden-text">Hidden text (progressive disclosure)</a></li>
     </ul>
 </div>
     <div class="text">
@@ -62,6 +63,32 @@
             &lt;h3 class="heading-medium">A medium heading&lt;/h3>
 
             &lt;h4 class="heading-small">A small heading&lt;/h4>
+        </code>
+    </pre>
+
+    <div class="text">
+    <h2 class="heading-large" id="typography-text-wrapper">
+        Text wrapper
+    </h2>
+
+    <p>Use this to make sure lines of text don't exceed 75 characters, as they become harder to read beyond that point.</p>
+    <p>You can apply it to a block of content or a single element.
+    </div>
+    <div class="example">
+        <div class="text">
+            <p>This is body copy paragraph within the text wrapper. Pretium molestie ligula in, volutpat mattis libero.</p>
+            <p>Felis at varius tincidunt, turpis dui finibus risus, ac varius libero eros ac dolor.</p>
+        </div>
+        <p class="text">This is body copy paragraph with a class of text applied to it. Pretium molestie ligula in, volutpat mattis libero.</p>
+    </div>
+    <h3 class="heading-mark-up">HTML Mark-up <span class="sr-only">for text wrapper</span></h3>
+    <pre>
+        <code class="line-numbers language-markup">
+            &lt;div class="text">
+                &lt;p>This is body copy within the text wrapper. Pretium molestie ligula in, volutpat mattis libero.&lt;/p>
+            &lt;/div>
+
+            &lt;p class="text">This is body copy paragraph with a class of text applied to it. Pretium molestie ligula in, volutpat mattis libero.&lt;/p>
         </code>
     </pre>
 
@@ -365,7 +392,7 @@
                     <span class="sr-only">Warning</span>
                 </i>
                 <strong class="bold-small">
-                You can be fined up to £10,000 if you don’t register.
+                You must complete and return this form within 14 days. If you don’t, or if you provide false information, you could be fined and you may end up with a criminal record.
                 </strong>
             </div>
         </div>
@@ -377,7 +404,7 @@
             &lt;i class="fa fa-exclamation-triangle" aria-hidden="true">
                 &lt;span class="sr-only">Warning&lt;/span>
             &lt;/i>
-            &lt;strong class="bold-small">You can be fined up to £10,000 if you don’t register.&lt;/strong>
+            &lt;strong class="bold-small">You must complete and return this form within 14 days. If you don’t, or if you provide false information, you could be fined and you may end up with a criminal record.&lt;/strong>
         &lt;/div>
         </code>
     </pre>
@@ -410,7 +437,7 @@
     </pre>
 
     <div class="text">
-        <h2 class="heading-large" id="hidden-text">Hidden text (progressive disclosure)</h2>
+        <h2 class="heading-large" id="typography-hidden-text">Hidden text (progressive disclosure)</h2>
         <p>Use this to make your page easier to scan, only showing contextual information when required.</p>
         <p>Click on "If you study as a full-time student elsewhere" to see how this works.</p>
     </div>

@@ -1,160 +1,89 @@
-{% extends "layout_multi_sections.html" %}
+{% extends "design-system-page-layout-guide.html" %}
 
-{% block page_title %}
-	Alerts
+{% set section_id = "components" %} <!-- Section id var for main nav --> 
+{% set page_id = "alerts" %} <!-- Page id var for side nav --> 
+{% set page_title = "Alerts" %} <!-- Page title var for page header (H1) and page title -->    
+
+{% block sectionOneTop %}{% endblock %}
+
+{% block sectionLeftHandColumn %}
+    <!-- Side nav include -->  
+    {% include "includes/design-system/design-system-side-nav.html" %}
 {% endblock %}
 
+{% block sectionOneRightContent %}
+<div class="page-header-section">
+    <h1>{{ page_title }}</h1>
+    <p class="lead">Alerts are used to...</p>
+</div>
 
-  {% block css_register %}
-         <script src="https://use.typekit.net/pws7qio.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
-   {% endblock %}
-
- 
-
-{% block header %}
-Alerts
-{% endblock %}
-
- {% block main_nav %}
-  {% include "includes/main_nav.html" %}
- {% endblock %}
+<div class="contents-box">
+    <h2 class="heading-contents">Contents</h2>
+    <ul class="list list-contents">
+        <li><a href="#alerts-emergencey-message">Emergencey message</a></li>
+        <li><a href="#alerts-announcement">Announcement</a></li>
+        <li><a href="#sharepoint">SharePoint guidance</a></li>
+    </ul>
+</div>
 
 
+<h2 id="alerts-emergencey-message" class="heading-large">Emergency message</h2>
+<div class="example">
+  <div class="alert alert-warning alert-dismissible" role="alert">
+    <div class="container-fluid">
+      <div class="alertInner"><button href="#" type="button" class="close" data-dismiss="alert" aria-label="Close"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        <h2>Emergency message header</h2>
+        <p>Here's where the information goes</p>
+        <a class="btn btn-default" href="#">Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="heading-mark-up">HTML Mark-up <span class="sr-only">for emergencey message</span></h3>
+<pre>
+    <code class="line-numbers language-markup">
+        &lt;div class="alert alert-warning alert-dismissible" role="alert">
+          &lt;div class="container-fluid">
+            &lt;div class="alertInner">&lt;button href="#" type="button" class="close" data-dismiss="alert" aria-label="Close">&lt;span class="glyphicon glyphicon-remove" aria-hidden="true">&lt;/span>&lt;/button>
+              &lt;h2>Emergency message header&lt;/h2>
+              &lt;p>Here's where the information goes&lt;/p>
+              &lt;a class="btn btn-default" href="#">Link&lt;/a>
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+    </code>
+</pre>
 
- {% block sectionOneTop %}
-{% endblock %} 
+<h2 id="alerts-announcement" class="heading-large">Announcement</h2>
+<div class="example">
+  <div class="alert alert-info alert-dismissible" role="alert">
+    <div class="container-fluid">
+      <div class="alertInner"><button href="#" type="button" class="close" data-dismiss="alert" aria-label="Close"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+        <h2>Announcement header</h2>
+        <p>Here's where the information goes</p>
+        <a class="btn btn-default" href="#">Link</a>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="heading-mark-up">HTML Mark-up <span class="sr-only">for announcement</span></h3>
+<pre>
+    <code class="line-numbers language-markup">
+        &lt;div class="alert alert-info alert-dismissible" role="alert">
+          &lt;div class="container-fluid">
+            &lt;div class="alertInner">&lt;button href="#" type="button" class="close" data-dismiss="alert" aria-label="Close">&lt;span class="glyphicon glyphicon-remove" aria-hidden="true">&lt;/span>&lt;/button>
+              &lt;h2>Announcement header&lt;/h2>
+              &lt;p>Here's where the information goes&lt;/p>
+              &lt;a class="btn btn-default" href="#">Link&lt;/a>
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+    </code>
+</pre>
 
-{% block sectionOneFull%}
-{% endblock %}
-
-
- {% block breadcrumb %}
-  {% include "includes/breadcrumb_sp.html" %}
- {% endblock %}
-
-{% block sectionOneContent %}
-<p class="lead">Alerts can be used on any page</p>
-<h2 class="heading-medium">Emergency message</h2>
-{% include "includes/design-system/alerts/alert-warning.html" %}
-<h2 class="heading-medium">Announcement</h2>
-{% include "includes/design-system/alerts/alert-info.html" %}
-{% endblock %}
-
-{% block pageContent %}
-{% endblock %}
-
-
-{% block sectionOneFullBottom %}
-{% endblock %}
-
-{% block sectionOneRightHandColumn %}
-{% endblock %}
-
-{% block sectionOneThirdCol1 %}
- {% endblock %}
-
- {% block sectionOneThirdCol2 %}
- {% endblock %}
-
-{% block sectionOneThirdCol3 %}
- {% endblock %}
-
-
-{% block sectionTwoTop %}
-{% endblock %} 
-
-{% block sectionTwoFull%} 
-{% endblock %}
-
-{% block sectionTwoContent %}
-{% endblock %}
-
-{% block sectionTwoRightHandColumn %}
-{% endblock %}
-
-{% block sectionTwoThirdCol1 %}
- {% endblock %}
-
- {% block sectionTwoThirdCol2 %}
- {% endblock %}
-
-{% block sectionTwoThirdCol3 %}
- {% endblock %}
-
-
-{% block sectionThreeTop %}
-{% endblock %} 
-
-{% block sectionThreeFull%}
-{% endblock %}
-
-{% block sectionThreeContent %}
-{% endblock %}
-
-{% block sectionThreeRightHandColumn %}
-{% endblock %}
-
-{% block sectionThreeThirdCol1 %}
- {% endblock %}
-
- {% block sectionThreeThirdCol2 %}
- {% endblock %}
-
-{% block sectionThreeThirdCol3 %}
- {% endblock %}
-
-
-{% block sectionFourTop %}
-{% endblock %} 
-
-{% block sectionFourFull%}
+<div class="text">
+    <h2 class="heading-large" id="sharepoint">SharePoint guidance</h2>
+    <p>Sharepoint instructions to go here...</p>
+</div>
 
 {% endblock %}
-
-{% block sectionFourContent %}
-{% endblock %}
-
-{% block sectionFourRightHandColumn %}
-{% endblock %}
-
-{% block sectionFourThirdCol1 %}
- {% endblock %}
-
- {% block sectionFourThirdCol2 %}
- {% endblock %}
-
-{% block sectionFourThirdCol3 %}
- {% endblock %}
-
-
-
-{% block sectionFiveTop %}
-{% endblock %} 
-
-{% block sectionFiveFull%}
-{% endblock %}
-
-{% block sectionFiveContent %}
-{% endblock %}
-
-{% block sectionFiveRightHandColumn %}
-{% endblock %}
-
-{% block sectionFiveThirdCol1 %}
- {% endblock %}
-
- {% block sectionFiveThirdCol2 %}
-
- {% endblock %}
-
-{% block sectionFiveThirdCol3 %}
- {% endblock %}
-
-  {% block footer_nav %}
- {% endblock %}
-
-  {% block reusablecontent_footer %}
-     {% include "includes/reusable-content-footer.html" %}
- {% endblock %}

@@ -9,9 +9,7 @@
 $blue:#007299;
 $dark-blue: #003F55;
 $light-blue: #3399BB;
-$pale-blue: #b3d9e6;
-$green:#008000;
-$light-green:#009A00;
+$lighter-blue: #E5F1F5;
 $black:#212224;
 $light-black:#3D414A;
 $dark-grey:#666B76;
@@ -19,9 +17,18 @@ $grey:#9DA5B2;
 $light-grey:#DCDEE1;
 $lighter-grey:#F6F7FA;
 $white:#FFFFFF;
+$green:#008000;
+$dark-green:darken($green,5%);
+$light-green:#009A00;
+$lighter-green:lighten($green,50%);
 $yellow:#FFBF47;
 $dark-yellow:#FAA300;
+$light-yellow:#FAA300;
+$lighter-yellow:#FAA300;
 $red:#c0392b;
+$dark-red:#c0392b;
+$light-red:#c0392b;
+$lighter-red:#c0392b;
 //$base-background-color:#fff;
 $border-color:$light-grey;
 $brand-color:$blue;
@@ -264,6 +271,7 @@ blockquote{
     position:relative;
     padding:0 30px 0 80px;
     margin:30px 0;
+    border-left: 5px solid $border-color;
     @media (min-width: 641px){
         margin:60px 0;
     }
@@ -285,6 +293,8 @@ blockquote{
         color:$secondary-font-color;
         font-weight:normal;
         font-style:normal;
+        font-size:16px;
+        line-height:1.6;
     }
 }
 
@@ -305,4 +315,8 @@ blockquote{
             }
         }
     }
+}
+
+.accordion__panel{
+    @include text();
 }
