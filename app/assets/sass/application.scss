@@ -320,3 +320,25 @@ blockquote{
 .accordion__panel{
     @include text();
 }
+
+.form-label{
+    font-weight:400;
+}
+
+.form-date {
+    .form-group{
+        margin-top:10px;
+        @media (min-width: 641px){
+            width: 65px;
+        }
+    }
+    .form-group-year{
+        @media (min-width: 641px){
+            width: 100px;
+        }
+    }
+}
+
+legend{
+    line-height:1.6;
+}
