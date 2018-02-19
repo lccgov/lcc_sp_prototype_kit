@@ -22490,22 +22490,22 @@ h2 + h3 {
 
 .btn-secondary,
 .form-group input[type=button].btn-secondary {
-  background-color: #007299;
-  color: #FFFFFF;
-  border-color: #007299; }
+  background-color: #FFFFFF;
+  color: #007299;
+  border-color: #FFFFFF; }
   .btn-secondary:hover,
   .form-group input[type=button].btn-secondary:hover {
-    background: #0085b3;
-    color: #FFFFFF;
-    border-color: #0085b3; }
+    background: white;
+    color: #007299;
+    border-color: white; }
   .btn-secondary:active,
   .form-group input[type=button].btn-secondary:active {
-    background: #004c66 !important;
-    color: #FFFFFF !important;
-    border-color: #004c66 !important; }
+    background: #e6e6e6 !important;
+    color: #007299 !important;
+    border-color: #e6e6e6 !important; }
   .btn-secondary:visited,
   .form-group input[type=button].btn-secondary:visited {
-    color: #FFFFFF; }
+    color: #007299; }
 
 .btn-outline,
 .form-group input[type=button].btn-outline {
@@ -26332,14 +26332,14 @@ ul.accordion div.text-highlight {
               -webkit-flex-direction: column;
               flex-direction: column;
               color: white;
-              box-shadow: 0px 3px 0px #00394d;
+              box-shadow: 0px 3px 0px #d9d9d9;
               min-height: 45px; }
               @media (min-width: 767px) {
                 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a {
                   min-height: 55px;
                   padding: 15px 50px 15px 15px !important; } }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:hover {
-                background: #00394d;
+                background: #d9d9d9;
                 color: white; }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item a:active {
                 border: 0;
@@ -28378,7 +28378,11 @@ hr {
   z-index: 10000;
   overflow: auto;
   padding: 15px 0 15px;
-  max-height: 80vh; }
+  max-height: 80vh;
+  width: calc(100% * (1/6) - 15px); }
+  @media (max-width: 990px) {
+    #sticky.stick {
+      width: calc(100% * (1/3) - 15px); } }
   @media (max-width: 768px) {
     #sticky.stick {
       position: relative;
@@ -29181,7 +29185,7 @@ aside.col-md-4 {
 
 .btn-secondary,
 .form-group input[type=button].btn-secondary {
-  box-shadow: 0px 3px 0px #004c66; }
+  box-shadow: 0px 3px 0px #e6e6e6; }
 
 .btn {
   padding: 15px 20px; }
