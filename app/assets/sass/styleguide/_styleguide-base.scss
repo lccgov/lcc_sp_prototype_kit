@@ -1,11 +1,13 @@
 .design-system{
-
-    footer.main{
-        background:$blue;
-    }
-
-    .sectionOne{
-        padding-bottom:50px
+    
+    .groupPromo.three ul{
+        margin:30px 0 0;
+        @media (min-width: 641px) {
+            margin:50px 0 0;
+        }
+        @media (min-width: 991px) {
+            margin:80px 0 50px;
+        }
     }
 
     .sectionHeader .container-fluid .header-wrapper{
@@ -14,7 +16,6 @@
             height:45px;
         }
     }
-
     //design system specific styling
     .service-title{
         text-align:right;
@@ -51,7 +52,7 @@
             li{
                 margin:0;
                 a{
-                    border-left:3px solid $lighter-grey;
+                    border-left:3px solid $border-color;
                     padding:0 15px;
                     margin-bottom:15px;
                     display:inline-block;
@@ -73,29 +74,6 @@
         color:$secondary-font-color;
         border:1px solid darken($panel-color,5%);
     }
-    .cd-top {
-        width:100%;
-        border-radius:0;
-        right:0;
-        bottom:0;
-        background:$blue;
-        border-top:1px solid white;
-        @media (min-width: 641px){
-            padding:20px;
-            font-size:19px;
-        }
-        &.cd-top.cd-fade-out {
-            opacity: .9;
-            &:hover{
-                background:$blue;
-                opacity: .7;
-            }
-        }
-        &:hover{
-            background:$blue;
-            opacity: .7;
-        }
-    }
     .page-header-section{
         margin:30px 0;
         @media (min-width: 641px){
@@ -110,41 +88,7 @@
             color:$secondary-font-color;
         }
     }
-    .groupPromo{
-        a{
-            font-family:$font-secondary;
-            font-weight:700;
-            font-size:19px;
-            padding-right:40px;
-            @media (min-width: 641px){
-                font-size:24px;
-            }
-            &:after{
-                content: '\f105';
-                font-family: FontAwesome;
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                color: #9DA5B2;
-                @media (min-width: 767px){
-                    top: 30px;
-                    right: 30px;
-                }
-            }
-        }
-        p{
-            font-family:$font-primary;
-        }
-    }
 
-    .mega-promo.home{
-        margin: 30px 0 0 -15px;
-        padding:0;
-        @media (min-width: 641px){
-            margin: 60px 0 0 -15px;
-            padding:0;
-        }
-    }
 }
 /*temporarily hide masterhead*/
 .masterhead {
@@ -245,7 +189,7 @@ hr {
                 }
                 a{
                     font-size:19px;
-                    padding:7px 10px;
+                    padding:10px;
                     text-decoration:none;
                     margin:0;
                     color:$base-link-color;
@@ -254,6 +198,7 @@ hr {
                     @media (max-width: 641px){
                         border-bottom:3px solid transparent;
                         border-top:3px solid transparent; 
+                        padding:7px;
                     }
                     &:hover{
                         background:none;
@@ -335,7 +280,7 @@ hr {
 .design-system-content{
     padding:0 15px 100px;
     @media (min-width: 768px){
-        border-left:1px solid $lighter-grey;
+        border-left:1px solid $border-color;
         padding:0 50px 100px;
     }
 }
@@ -343,7 +288,7 @@ hr {
 .design-system-menu{
     @media (min-width: 768px){
         padding-right:0;
-        border-right:1px solid $lighter-grey;
+        border-right:1px solid $border-color;
         margin-right:-1px;
     }
     .design-system-side-nav{
@@ -367,7 +312,7 @@ hr {
         li{
             margin:0;
             a{
-                border-left:3px solid $lighter-grey;
+                border-left:3px solid $border-color;
                 padding:0 15px;
                 margin-bottom:15px;
                 display:inline-block;
@@ -380,49 +325,9 @@ hr {
     margin-top:15px;
 }
 
-.design-system-intro{
-    background:$blue;
-    padding:30px 0;
-    @media (min-width: 641px){
-        padding:50px 0;
-    }
-    h1{
-        margin:0 0 10px;
-        color:white;
-        line-height:1.1;
-        font-size:32px;
-        @media (min-width: 641px){
-            font-size:60px;
-        }
-        span{
-            display:block;
-        }
-    }
-    p{
-        color:white;
-        margin:0;
-        line-height:1.6;
-        font-size:16px;
-        max-width:28em;
-        @media (min-width: 641px){
-            font-size:21px;
-        }
-    }
-}
-
-.back-top{
-    width:100%;
-    text-align:center;
-    background:$dark-blue;
-    color:white;
-    padding:15px;
-    display:block;
-    text-decoration:none;
-    &:visited{
-        color:white;
-    }
-    &:hover{
-        background:lighten($dark-blue,5%);
-        color:white;
+.design-system-landing-page{
+    padding-bottom:30px;
+    @media (min-width: 641px) {
+        padding-bottom:50px;
     }
 }

@@ -18,17 +18,17 @@ $light-grey:#DCDEE1;
 $lighter-grey:#F6F7FA;
 $white:#FFFFFF;
 $green:#008000;
-$dark-green:darken($green,5%);
+$dark-green:darken($green,10%);
 $light-green:#009A00;
-$lighter-green:lighten($green,50%);
-$yellow:#FFBF47;
-$dark-yellow:#FAA300;
-$light-yellow:#FAA300;
-$lighter-yellow:#FAA300;
-$red:#c0392b;
-$dark-red:#c0392b;
-$light-red:#c0392b;
-$lighter-red:#c0392b;
+$lighter-green:lighten($green,70%);
+$yellow:#F7CA18;
+$dark-yellow:darken($yellow,10%);
+$light-yellow:lighten($yellow,10%);
+$lighter-yellow:lighten($yellow,40%);
+$red:#E11C0E;
+$dark-red:darken($red,15%);
+$light-red:lighten($red,10%);
+$lighter-red:lighten($red,50%);
 //$base-background-color:#fff;
 $border-color:$light-grey;
 $brand-color:$blue;
@@ -142,8 +142,8 @@ $promo-highlight-color:$white;
 //button colours
 $primary-button-background-color:$green;
 $primary-button-color:$white;
-$secondary-button-background-color:$white;
-$secondary-button-color:$blue;
+$secondary-button-background-color:$blue;
+$secondary-button-color:white;
 $outline-button-border-color:$blue;
 $outline-button-color:$blue;
 
@@ -341,4 +341,11 @@ blockquote{
 
 legend{
     line-height:1.6;
+}
+
+.groupPromo.three ul li {
+    width: 100% !important;
+    @media (min-width: 990px){
+        width: calc(100% * (1/3) - 5px) !important;
+    }
 }
