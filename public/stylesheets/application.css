@@ -27854,7 +27854,7 @@ code[class*="language-"] ::selection {
 
 pre[class*="language-"] {
   border: 1px solid #bfc1c3;
-  padding: 1em;
+  padding: 15px 60px 15px 15px;
   margin: 0;
   overflow: auto; }
 
@@ -28267,6 +28267,13 @@ hr {
     border-bottom: 1px solid rgba(0, 114, 153, 0.5);
     display: inline-block; }
 
+.code-snippet {
+  position: relative; }
+  .code-snippet .clipboard {
+    position: absolute;
+    right: 15px;
+    bottom: 15px; }
+
 .swatch {
   display: -webkit-box;
   display: -moz-box;
@@ -28403,7 +28410,7 @@ hr {
         border-radius: 3px 3px 0 0; }
         @media (min-width: 641px) {
           .colour-palette .colour-palette_item .colour-palette_variant:first-of-type {
-            padding: 40px 30px; } }
+            padding: 50px 30px; } }
       .colour-palette .colour-palette_item .colour-palette_variant:last-of-type {
         border-radius: 0 0 3px 3px;
         color: #263238; }
@@ -28431,11 +28438,6 @@ hr {
       background: #007299; }
       .colour-palette .colour-palette_item.blue .colour-palette_variant:after {
         content: "#007299"; }
-      .colour-palette .colour-palette_item.blue .colour-palette_variant:nth-child(1) {
-        font-size: 16px; }
-        @media (min-width: 641px) {
-          .colour-palette .colour-palette_item.blue .colour-palette_variant:nth-child(1) {
-            font-size: 19px; } }
       .colour-palette .colour-palette_item.blue .colour-palette_variant:nth-child(2) {
         background: #3399bb;
         color: #263238; }
@@ -28453,11 +28455,6 @@ hr {
       background: #2e7d32; }
       .colour-palette .colour-palette_item.green .colour-palette_variant:after {
         content: "#2e7d32"; }
-      .colour-palette .colour-palette_item.green .colour-palette_variant:nth-child(1) {
-        font-size: 16px; }
-        @media (min-width: 641px) {
-          .colour-palette .colour-palette_item.green .colour-palette_variant:nth-child(1) {
-            font-size: 19px; } }
       .colour-palette .colour-palette_item.green .colour-palette_variant:nth-child(2) {
         background: #60ad5e;
         color: #263238; }
@@ -28475,11 +28472,6 @@ hr {
       background: #d32f2f; }
       .colour-palette .colour-palette_item.red .colour-palette_variant:after {
         content: "#d32f2f"; }
-      .colour-palette .colour-palette_item.red .colour-palette_variant:nth-child(1) {
-        font-size: 16px; }
-        @media (min-width: 641px) {
-          .colour-palette .colour-palette_item.red .colour-palette_variant:nth-child(1) {
-            font-size: 19px; } }
       .colour-palette .colour-palette_item.red .colour-palette_variant:nth-child(2) {
         background: #ff6659;
         color: #263238; }
@@ -28497,11 +28489,6 @@ hr {
       background: #fbc02d; }
       .colour-palette .colour-palette_item.yellow .colour-palette_variant:after {
         content: "#fbc02d"; }
-      .colour-palette .colour-palette_item.yellow .colour-palette_variant:nth-child(1) {
-        font-size: 16px; }
-        @media (min-width: 641px) {
-          .colour-palette .colour-palette_item.yellow .colour-palette_variant:nth-child(1) {
-            font-size: 19px; } }
       .colour-palette .colour-palette_item.yellow .colour-palette_variant:nth-child(2) {
         background: #fff263;
         color: #263238; }
@@ -28519,44 +28506,78 @@ hr {
       color: #263238; }
     .colour-palette .colour-palette_item.black .colour-palette_variant {
       background: #263238;
-      color: white; }
+      color: white;
+      font-size: 14px; }
+      @media (min-width: 641px) {
+        .colour-palette .colour-palette_item.black .colour-palette_variant {
+          font-size: 16px; } }
       .colour-palette .colour-palette_item.black .colour-palette_variant:after {
         content: "#263238"; }
     .colour-palette .colour-palette_item.light-black .colour-palette_variant {
       background: #37474f;
-      color: white; }
+      color: white;
+      font-size: 14px; }
+      @media (min-width: 641px) {
+        .colour-palette .colour-palette_item.light-black .colour-palette_variant {
+          font-size: 16px; } }
       .colour-palette .colour-palette_item.light-black .colour-palette_variant:after {
         content: "#37474f"; }
     .colour-palette .colour-palette_item.dark-grey .colour-palette_variant {
       background: #455a64;
-      color: white; }
+      color: white;
+      font-size: 14px; }
+      @media (min-width: 641px) {
+        .colour-palette .colour-palette_item.dark-grey .colour-palette_variant {
+          font-size: 16px; } }
       .colour-palette .colour-palette_item.dark-grey .colour-palette_variant:after {
         content: "#455a64"; }
     .colour-palette .colour-palette_item.grey .colour-palette_variant {
       background: #90a4ae;
-      color: #263238; }
+      color: #263238;
+      font-size: 14px; }
+      @media (min-width: 641px) {
+        .colour-palette .colour-palette_item.grey .colour-palette_variant {
+          font-size: 16px; } }
       .colour-palette .colour-palette_item.grey .colour-palette_variant:after {
         content: "#90a4ae"; }
     .colour-palette .colour-palette_item.light-grey .colour-palette_variant {
       background: #eceff1;
-      color: #263238; }
+      color: #263238;
+      font-size: 14px; }
+      @media (min-width: 641px) {
+        .colour-palette .colour-palette_item.light-grey .colour-palette_variant {
+          font-size: 16px; } }
       .colour-palette .colour-palette_item.light-grey .colour-palette_variant:after {
         content: "#eceff1"; }
-    .colour-palette .colour-palette_item.lighter-grey .colour-palette_variant {
-      background: #f8f9fa;
-      color: #263238; }
-      .colour-palette .colour-palette_item.lighter-grey .colour-palette_variant:after {
-        content: "#f8f9fa"; }
+    .colour-palette .colour-palette_item.lighter-grey {
+      border: 1px solid #eceff1; }
+      .colour-palette .colour-palette_item.lighter-grey .colour-palette_variant {
+        background: #f8f9fa;
+        color: #263238;
+        font-size: 14px; }
+        @media (min-width: 641px) {
+          .colour-palette .colour-palette_item.lighter-grey .colour-palette_variant {
+            font-size: 16px; } }
+        .colour-palette .colour-palette_item.lighter-grey .colour-palette_variant:after {
+          content: "#f8f9fa"; }
     .colour-palette .colour-palette_item.white {
       border: 1px solid #eceff1; }
       .colour-palette .colour-palette_item.white .colour-palette_variant {
         background: #FFFFFF;
-        color: #263238; }
+        color: #263238;
+        font-size: 14px; }
+        @media (min-width: 641px) {
+          .colour-palette .colour-palette_item.white .colour-palette_variant {
+            font-size: 16px; } }
         .colour-palette .colour-palette_item.white .colour-palette_variant:after {
           content: "#FFFFFF"; }
     .colour-palette .colour-palette_item.lighter-blue .colour-palette_variant {
       background: #e5f1f5;
-      color: #263238; }
+      color: #263238;
+      font-size: 14px; }
+      @media (min-width: 641px) {
+        .colour-palette .colour-palette_item.lighter-blue .colour-palette_variant {
+          font-size: 16px; } }
       .colour-palette .colour-palette_item.lighter-blue .colour-palette_variant:after {
         content: "#e5f1f5"; }
 
