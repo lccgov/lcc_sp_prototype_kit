@@ -1,217 +1,134 @@
+@mixin color-palette-variant($main-color,$light-color,$dark-color,$lighter-color){
+.colour-palette_variant{
+    background:$main-color;
+    &:after{
+      content:"#{$main-color}";
+    }
+    &:nth-child(2){
+      background:$light-color;
+      color:$base-font-color;
+      &:after{
+        content:"#{$light-color}";
+      }
+    }
+    &:nth-child(3){
+      background:$dark-color;
+      &:after{
+        content:"#{$dark-color}";
+      }
+    }
+    &:nth-child(4){
+      background:$lighter-color;
+      &:after{
+        content:"#{$lighter-color}";
+      }
+    }
+  }
+}
+
+@mixin color-palette-variant-single($main-color,$color){
+.colour-palette_variant{
+    background:$main-color;
+    color:$color;
+    &:after{
+      content:"#{$main-color}";
+    }
+  }
+}
+      
 .colour-palette{
   @include flexbox();
   @include flex-direction(row);
   @include flex-wrap(wrap);
   margin:15px 0 45px -15px;
   @media (min-width: 641px) {   
-    margin:15px 0 60px -30px;
+    margin:15px 0 60px -15px;
   }
   .colour-palette_item{
     width: 100% !important;
     margin:15px 0 0 15px;
-    text-align:center;
     float: left;
     @media (min-width: 641px) {
-      width: calc(100% * (1/2) - 30px) !important;
-      margin:15px 0 0 30px;
+      width: calc(100% * (1/2) - 15px) !important;
+      margin:15px 0 0 15px;
     }
     @media (min-width: 990px) {
-      width: calc(100% * (1/4) - 30px) !important;
-      margin:15px 0 0 30px;
+      width: calc(100% * (1/4) - 15px) !important;
+      margin:15px 0 0 15px;
     }
     .colour-palette_variant{
-      padding:20px 10px;
+      padding:15px;
       background:$grey;
       color:white;
-      font-size:16px;
+      font-size:14px;
       line-height:1.6;
-      &:before{
+      @media (min-width: 641px) {
+        font-size:16px;
+        padding:30px;
+      }
+      &:after{
         opacity:0.9;
         display:block;
       }
       &:first-of-type{
-        font-size:19px;
-        padding:40px 10px;
-        border-radius:4px 4px 0 0;
+        padding:30px 15px;
+        border-radius:3px 3px 0 0;
+        @media (min-width: 641px) {
+          padding:40px 30px;
+        }
       }
       &:last-of-type{
-        border-radius:0 0 4px 4px;
+        border-radius:0 0 3px 3px;
         color:$base-font-color;
       }
     }
     &.single{
       .colour-palette_variant{
-        @include border-radius(4px);
-        padding:20px 10px;
+        @include border-radius(3px);
+        padding:15px;
         color:white;
+        @media (min-width: 641px) {
+          font-size:16px;
+          padding:30px;
+        }
       }
     }
     &.blue{
-      .colour-palette_variant{
-        background:$blue;
-        &:before{
-          content:"$blue";
-        }
-        &:nth-child(2){
-          background:$light-blue;
-          color:$base-font-color;
-          &:before{
-            content:"$light-blue";
-          }
-        }
-        &:nth-child(3){
-          background:$dark-blue;
-          &:before{
-            content:"$dark-blue";
-          }
-        }
-        &:nth-child(4){
-          background:$lighter-blue;
-          &:before{
-            content:"$lighter-blue";
-          }
-        }
-      }
+        @include color-palette-variant($blue,$light-blue,$dark-blue,$lighter-blue);
     }
     &.green{
-      .colour-palette_variant{
-        background:$green;
-        &:before{
-          content:"$green";
-        }
-        &:nth-child(2){
-          background:$light-green;
-          &:before{
-            content:"$lighter-green";
-          }
-        }
-        &:nth-child(3){
-          background:$dark-green;
-          &:before{
-            content:"$lighter-green";
-          }
-        }
-        &:nth-child(4){
-          background:$lighter-green;
-          &:before{
-            content:"$lighter-green";
-          }
-        }
-      }
+      @include color-palette-variant($green,$light-green,$dark-green,$lighter-green);
     }
     &.red{
-      .colour-palette_variant{
-        background:$red;
-        &:before{
-          content:"$red";
-        }
-        &:nth-child(2){
-          background:$light-red;
-          &:before{
-            content:"$light-red";
-          }
-        }
-        &:nth-child(3){
-          background:$dark-red;
-          &:before{
-            content:"$dark-red";
-          }
-        }
-        &:nth-child(4){
-          background:$lighter-red;
-          &:before{
-            content:"$lighter-red";
-          }
-        }
-      }
+      @include color-palette-variant($red,$light-red,$dark-red,$lighter-red);
     }
     &.yellow{
+      @include color-palette-variant($yellow,$light-yellow,$dark-yellow,$lighter-yellow);
       .colour-palette_variant{
-        background:$yellow;
         color:$base-font-color;
-        &:before{
-          content:"$yellow";
-        }
-        &:nth-child(2){
-          background:$light-yellow;
-          &:before{
-            content:"$light-yellow";
-          }
-        }
-        &:nth-child(3){
-          background:$dark-yellow;
-          &:before{
-            content:"$dark-yellow";
-          }
-        }
-        &:nth-child(4){
-          background:$lighter-yellow;
-          &:before{
-            content:"$lighter-yellow";
-          }
-        }
       }
     }
     &.black{
-      .colour-palette_variant{
-        background:$black;
-        &:before{
-          content:"$black";
-        }
-      }
+      @include color-palette-variant-single($black,white);
     }
     &.light-black{
-      .colour-palette_variant{
-        background:$light-black;
-        &:before{
-          content:"$light-black";
-        }
-      }
+      @include color-palette-variant-single($light-black,white);
     }
     &.dark-grey{
-      .colour-palette_variant{
-        background:$dark-grey;
-        &:before{
-          content:"$dark-grey";
-        }
-      }
+      @include color-palette-variant-single($dark-grey,white);
     }
     &.grey{
-      .colour-palette_variant{
-        background:$grey;
-        color:$base-font-color;
-        &:before{
-          content:"$grey";
-        }
-      }
+      @include color-palette-variant-single($grey,$base-font-color);
     }
     &.light-grey{
-      .colour-palette_variant{
-        background:$light-grey;
-        color:$base-font-color;
-        &:before{
-          content:"$light-grey";
-        }
-      }
+      @include color-palette-variant-single($light-grey,$base-font-color);
     }
     &.lighter-grey{
-      .colour-palette_variant{
-        background:$lighter-grey;
-        color:$base-font-color;
-        &:before{
-          content:"$lighter-grey";
-        }
-      }
+      @include color-palette-variant-single($lighter-grey,$base-font-color);
     }
     &.white{
-      .colour-palette_variant{
-        background:white;
-        color:$base-font-color;
-        border:1px solid $border-color;
-        &:before{
-          content:"$white";
-        }
-      }
+      @include color-palette-variant-single($white,$base-font-color);
+      border:1px solid $border-color;
     }
   }
 }
