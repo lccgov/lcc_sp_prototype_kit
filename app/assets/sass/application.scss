@@ -7,9 +7,9 @@
 
 //base colours
 $blue:#007299;
-$dark-blue: #003F55;
-$light-blue: #3399BB;
-$lighter-blue: #E5F1F5;
+$dark-blue: #003f55;
+$light-blue: #3399bb;
+$lighter-blue: #e5f1f5;
 $black:#263238;
 $light-black:#37474f;
 $dark-grey:#455a64;
@@ -57,8 +57,8 @@ $base-link-visited-color:#4C2C92;
 $secondary-link-color:$dark-blue;
 
 //panel colours
-$panel-color:#E5F1F5;
-$panel-color-secondary:#DCDEE1;
+$panel-color:$lighter-blue;
+$panel-color-secondary:$light-grey;
 //$panel-alt-background-color:#003F55;
 //$panel-alt-color:white;
 //global used on all partials to get a uniform spacing between elements
@@ -67,7 +67,7 @@ $panel-color-secondary:#DCDEE1;
 //$search-link-background:#F3F3F4 ;
 //$search-link:#333 ;
 // mainNav.scss
-$main-nav-background:lighten( $brand-color,3%);
+$main-nav-background:lighten($brand-color,3%);
 //$main-nav-link:#fff ;
 //footer.scss
 //$footer-font-color:#fff ;
@@ -133,7 +133,7 @@ $accordion-border-color:$border-color;
 
 //mega-promo
 $promo-background-color:$lighter-grey;
-$promo-arrow-color:#9DA5B2;
+$promo-arrow-color:$grey;
 $promo-header-color:$blue;
 $promo-secondary-color:$black;
 $promo-highlight-background-color:$blue;
