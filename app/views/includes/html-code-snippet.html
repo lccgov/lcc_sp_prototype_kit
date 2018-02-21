@@ -1,0 +1,20 @@
+{% macro field(name, value='', type='text') %}
+<div class="code-snippet">
+    <h3 class="heading-mark-up">HTML Snippet <span class="sr-only">{{ code.heading }}</span></h3>
+    <pre>
+        <code id="{{ code.id }}" class="line-numbers language-markup">
+            {{ code.snippet }}
+        </code>
+    </pre>
+    <button class="clipboard" data-clipboard-target="#{{ code.id }}">
+        Copy
+    </button>
+</div>
+{% endmacro %}
+
+{% macro field(name, value='', type='text') %}
+<div class="field">
+  <input type="{{ type }}" name="{{ name }}"
+         value="{{ value | escape }}" />
+</div>
+{% endmacro %}
