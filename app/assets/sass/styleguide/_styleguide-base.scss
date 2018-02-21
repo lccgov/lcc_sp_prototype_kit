@@ -75,6 +75,7 @@
         border:1px solid darken($panel-color,5%);
     }
     .page-header-section{
+        @include text();
         margin:30px 0;
         @media (min-width: 641px){
             margin:50px 0;
@@ -83,7 +84,6 @@
             margin:0 0 15px;
         }
         p{
-            @include text();
             margin:0;
             color:$secondary-font-color;
         }

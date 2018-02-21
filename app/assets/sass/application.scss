@@ -266,3 +266,24 @@ legend{
         @include text();
     }
 }
+
+.form-group input[type=file] {
+    padding: 10px 0 0;
+}
+
+.example.top{
+    margin-top:0;
+}
+
+ul.bottom{
+    margin-bottom:0;
+    li{
+        &:last-of-type{
+            margin-bottom:0;
+        }
+    }
+}
+
+.phase-banner p strong{
+    background:$blue;
+}
