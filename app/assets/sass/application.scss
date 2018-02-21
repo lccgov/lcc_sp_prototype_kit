@@ -260,3 +260,9 @@ html {
 legend{
     line-height: 1.6;
 }
+
+.error-summary{
+    *{
+        @include text();
+    }
+}
