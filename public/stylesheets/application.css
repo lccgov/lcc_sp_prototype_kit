@@ -28429,14 +28429,17 @@ hr {
     font-size: 3rem;
     color: white;
     margin: 0;
-    line-height: 1; }
+    line-height: 1;
+    margin-bottom: 0.75rem; }
     @media (min-width: 768px) {
       .design-system .hero.section-brand .hero-content h1 {
-        font-size: 5rem; } }
+        font-size: 6rem; } }
+    .design-system .hero.section-brand .hero-content h1 span {
+      display: block; }
   .design-system .hero.section-brand .hero-content p {
-    font-size: 19px;
+    font-size: 16px;
     margin: 0;
-    line-height: 1.2; }
+    line-height: 1.4; }
     @media (min-width: 768px) {
       .design-system .hero.section-brand .hero-content p {
         font-size: 24px; } }
@@ -28445,20 +28448,21 @@ hr {
   margin: 15px 0 0; }
   @media (min-width: 641px) {
     .design-system .groupPromo.three ul {
-      margin: 30px 0 0; } }
-  @media (min-width: 991px) {
-    .design-system .groupPromo.three ul {
-      margin: 50px 0 20px; } }
+      margin: 50px 0 0; } }
   @media (max-width: 990px) {
     .design-system .groupPromo.three ul li {
       margin: 5px 0 0 0; }
       .design-system .groupPromo.three ul li:first-of-type {
         margin: 0; } }
   .design-system .groupPromo.three ul li a {
-    padding: 30px; }
+    padding: 15px; }
     @media (min-width: 991px) {
       .design-system .groupPromo.three ul li a {
         padding: 30px 30px 45px; } }
+
+@media (max-width: 641px) {
+  .design-system .groupPromo.three.home ul {
+    margin: 15px 0 -15px; } }
 
 .design-system .sectionHeader .container-fluid .header-wrapper {
   height: 65px; }
@@ -28533,18 +28537,31 @@ hr {
       margin: 50px 0; } }
   .design-system .page-header-section h1 {
     margin: 0 0 15px; }
+    .design-system .page-header-section h1 span {
+      display: block;
+      font-size: 16px;
+      color: #455a64;
+      text-transform: uppercase; }
+      @media (min-width: 641px) {
+        .design-system .page-header-section h1 span {
+          font-size: 19px; } }
   .design-system .page-header-section p {
     margin: 0;
     color: #455a64; }
 
-.design-system-side-nav.stick {
-  width: 15.66%; }
-  @media (min-width: 1600px) {
-    .design-system-side-nav.stick {
-      width: 250px; } }
-  .design-system-side-nav.stick ul {
-    padding: 0;
-    margin: 0; }
+.design-system-side-nav.stick ul {
+  padding: 0;
+  margin: 0; }
+
+.design-system-side-nav h2 {
+  margin: 45px 0 15px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #455a64;
+  text-transform: uppercase; }
+
+.design-system-side-nav h2 + ul {
+  margin-top: 0; }
 
 .design-system-side-nav ul {
   padding: 0;
@@ -28630,6 +28647,32 @@ hr {
       padding-bottom: 50px; } }
 
 @media (max-width: 990px) {
+  .design-system #sticky-anchor {
+    display: block; } }
+
+@media (max-width: 768px) {
+  .design-system #sticky-anchor {
+    display: none; } }
+
+.design-system #sticky.stick {
+  overflow: auto;
+  padding: 15px 0 15px;
+  max-height: 70vh !important;
+  width: calc(100% * (1/4) - 15px); }
+  @media (max-width: 990px) {
+    .design-system #sticky.stick {
+      width: calc(100% * (1/3) - 15px);
+      margin-top: 0 !important;
+      position: fixed;
+      top: 0; } }
+  @media (max-width: 768px) {
+    .design-system #sticky.stick {
+      position: relative;
+      top: auto;
+      padding: 0;
+      z-index: 1; } }
+
+@media (max-width: 990px) {
   #sticky-anchor {
     display: none; } }
 
@@ -28648,32 +28691,6 @@ hr {
       padding: 0;
       z-index: 1;
       height: auto !important; } }
-
-@media (max-width: 990px) {
-  .design-system #sticky-anchor {
-    display: block; } }
-
-@media (max-width: 768px) {
-  .design-system #sticky-anchor {
-    display: none; } }
-
-.design-system #sticky.stick {
-  overflow: auto;
-  padding: 15px 0 15px;
-  max-height: 70vh !important;
-  width: calc(100% * (1/6) - 15px); }
-  @media (max-width: 990px) {
-    .design-system #sticky.stick {
-      width: calc(100% * (1/3) - 15px);
-      margin-top: 0 !important;
-      position: fixed;
-      top: 0; } }
-  @media (max-width: 768px) {
-    .design-system #sticky.stick {
-      position: relative;
-      top: auto;
-      padding: 0;
-      z-index: 1; } }
 
 .list-contents li {
   margin-bottom: 10px; }
