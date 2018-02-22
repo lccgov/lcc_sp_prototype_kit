@@ -15,7 +15,7 @@ $light-black:#37474f;
 $dark-grey:#455a64;
 $grey:#90a4ae;
 $light-grey:#eceff1;
-$lighter-grey:#f8f9fa;
+$lighter-grey:#f5f5f6;
 $white:#FFFFFF;
 $green:#2e7d32;
 $dark-green:#005005;
@@ -290,16 +290,19 @@ ul.bottom{
 
 footer.main .footerGlobal nav ul li {
     a{
+        color:$lighter-blue;
         border:0;
         text-decoration:underline;
         &:hover{
-            color:$lighter-blue;
+            opacity:0.7;
+            text-decoration:underline;
         }
     }
     &.active{
         a{
+            font-weight:bold;
+            color:white;
             text-decoration:none;
-            color:$lighter-blue;
         }
     }
 }
