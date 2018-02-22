@@ -1,0 +1,92 @@
+.design-system{
+    
+    .groupPromo.three ul{
+        margin:30px 0 0;
+        @media (min-width: 641px) {
+            margin:50px 0 0;
+        }
+        @media (min-width: 991px) {
+            margin:80px 0 50px;
+        }
+    }
+
+    .sectionHeader .container-fluid .header-wrapper{
+        height:65px;
+        @media (max-width: 990px) {
+            height:45px;
+        }
+    }
+    //design system specific styling
+    .service-title{
+        text-align:right;
+        position:relative;
+        padding:0;
+        font-weight:400;
+    }
+    .header-logo a {
+        background-image: url(../images/logo-lcc-digital.svg);
+        width: 190px;
+        height:22px;
+        @media (max-width: 990px) {
+            width:105px;
+            height:12px;
+        }
+    }
+    .container-fluid{
+        max-width: 100% !important;
+    }
+    .container{
+        max-width: 1170px !important;
+    }
+    .contents-box{
+        margin-bottom:25px;
+        .heading-contents{
+            margin-top:0;
+            @include sr-only();
+        }
+        .list-contents{
+            @media (min-width: 641px){
+                padding-bottom:25px;
+                margin:0;
+            }
+            li{
+                margin:0;
+                a{
+                    border-left:3px solid $border-color;
+                    padding:0 15px;
+                    margin-bottom:15px;
+                    display:inline-block;
+                }
+            }
+        }
+    } 
+    :not(pre) > code[class*="language-"], pre[class*="language-"]{
+        margin-top:0;
+    }
+    pre[class*="language-"]{
+        border:1px solid darken($panel-color,5%);
+    }
+    .heading-mark-up{
+        background:$panel-color;
+        padding:10px 15px;
+        margin:30px 0 -1px;
+        font-size:19px;
+        color:$secondary-font-color;
+        border:1px solid darken($panel-color,5%);
+    }
+    .page-header-section{
+        @include text();
+        margin:30px 0;
+        @media (min-width: 641px){
+            margin:50px 0;
+        }
+        h1{
+            margin:0 0 15px;
+        }
+        p{
+            margin:0;
+            color:$secondary-font-color;
+        }
+    }
+
+}
