@@ -27973,7 +27973,11 @@ hr {
   background: url("/public/images/lcc-logo-white-01.svg") left center no-repeat; }
 
 .main-nav {
-  background: #f5f5f6; }
+  background: #f5f5f6;
+  border-bottom: 3px solid #eceff1; }
+  @media (min-width: 641px) {
+    .main-nav {
+      border-bottom: 3px solid #eceff1; } }
   @media (max-width: 990px) {
     .main-nav {
       position: relative;
@@ -27986,54 +27990,53 @@ hr {
   @media (max-width: 990px) {
     .main-nav .container-fluid {
       padding: 0 15px; } }
-  @media (max-width: 990px) {
-    .main-nav .container-fluid ul li {
-      border-top: 0;
-      margin: 0px;
-      padding-top: 0 !important;
-      width: auto; } }
-  .main-nav .container-fluid ul li.active a {
-    border-bottom: 5px solid #007299;
-    font-weight: bold; }
-    @media (max-width: 641px) {
-      .main-nav .container-fluid ul li.active a {
-        border-bottom: 3px solid #007299; } }
-  .main-nav .container-fluid ul li a {
-    font-size: 19px;
-    padding: 10px;
-    text-decoration: none;
-    margin: 0;
-    color: #007299;
-    border-bottom: 5px solid transparent;
-    border-top: 5px solid transparent; }
-    @media (max-width: 641px) {
-      .main-nav .container-fluid ul li a {
-        border-bottom: 3px solid transparent;
-        border-top: 3px solid transparent;
-        padding: 7px; } }
-    .main-nav .container-fluid ul li a:hover {
-      background: none;
-      text-decoration: none;
-      color: #007299;
-      border-bottom: 5px solid #007299; }
-      @media (max-width: 500px) {
-        .main-nav .container-fluid ul li a:hover {
-          border-bottom: 3px solid #007299; } }
+  .main-nav .container-fluid ul {
+    margin-bottom: -3px; }
     @media (max-width: 990px) {
-      .main-nav .container-fluid ul li a {
-        width: auto;
-        font-size: 19px;
-        padding: 10px;
-        text-decoration: none; }
-        .main-nav .container-fluid ul li a:hover {
-          background: transparent; } }
-    @media (max-width: 500px) {
-      .main-nav .container-fluid ul li a {
-        font-size: 16px;
-        padding: 7px; } }
-    @media (max-width: 400px) {
-      .main-nav .container-fluid ul li a {
-        font-size: 14px; } }
+      .main-nav .container-fluid ul li {
+        border-top: 0;
+        margin: 0px;
+        padding-top: 0 !important;
+        width: auto; } }
+    .main-nav .container-fluid ul li.active a {
+      border-bottom: 3px solid #007299;
+      font-weight: bold; }
+    .main-nav .container-fluid ul li a {
+      font-size: 19px;
+      padding: 10px;
+      text-decoration: none;
+      margin: 0;
+      color: #007299;
+      border-bottom: 3px solid transparent;
+      border-top: 3px solid transparent; }
+      @media (max-width: 641px) {
+        .main-nav .container-fluid ul li a {
+          border-bottom: 3px solid transparent;
+          border-top: 3px solid transparent;
+          padding: 7px; } }
+      .main-nav .container-fluid ul li a:hover {
+        background: none;
+        text-decoration: none;
+        color: #007299;
+        border-bottom: 3px solid #007299; }
+        @media (max-width: 641px) {
+          .main-nav .container-fluid ul li a:hover {
+            border-bottom: 3px solid #007299; } }
+      @media (max-width: 990px) {
+        .main-nav .container-fluid ul li a {
+          width: auto;
+          font-size: 19px;
+          padding: 10px;
+          text-decoration: none; }
+          .main-nav .container-fluid ul li a:hover {
+            background: transparent; } }
+      @media (max-width: 500px) {
+        .main-nav .container-fluid ul li a {
+          font-size: 16px;
+          padding: 7px; } }
+      @media (max-width: 400px) {
+        .main-nav .container-fluid ul li a {
+          font-size: 14px; } }
 
 .example {
   position: relative;
@@ -28406,10 +28409,10 @@ hr {
 .design-system,
 .design-system footer.main,
 .design-system footer.main .footerGlobal {
-  background: #f5f5f6 !important; }
+  background: white !important; }
 
 .design-system footer.main {
-  border-top: 5px solid #eceff1; }
+  border-top: 3px solid #eceff1; }
   .design-system footer.main .footerGlobal .logo-footer img {
     margin-bottom: 20px; }
   .design-system footer.main p {
@@ -28431,6 +28434,9 @@ hr {
     margin: 0;
     line-height: 1;
     margin-bottom: 0.75rem; }
+    @media (min-width: 641px) {
+      .design-system .hero.section-brand .hero-content h1 {
+        font-size: 5rem; } }
     @media (min-width: 768px) {
       .design-system .hero.section-brand .hero-content h1 {
         font-size: 6rem; } }
@@ -28457,7 +28463,8 @@ hr {
         .design-system .groupPromo.three ul li:first-of-type {
           margin: 0; } }
     .design-system .groupPromo.three ul li a {
-      padding: 15px; }
+      padding: 15px;
+      border-bottom: 3px solid #eceff1; }
       @media (min-width: 641px) {
         .design-system .groupPromo.three ul li a {
           padding: 30px; } }
@@ -28575,9 +28582,9 @@ hr {
     text-decoration: none;
     padding: 10px 15px;
     display: block;
-    border-left: 5px solid transparent; }
+    border-left: 3px solid transparent; }
     .design-system-side-nav ul li a:hover {
-      border-left: 5px solid #007299;
+      border-left: 3px solid #007299;
       color: #007299;
       padding: 15px;
       padding: 10px 15px;
@@ -28587,7 +28594,7 @@ hr {
     .design-system-side-nav ul li a p {
       display: none; }
   .design-system-side-nav ul li.active a {
-    border-left: 5px solid #007299;
+    border-left: 3px solid #007299;
     font-weight: bold;
     background: #f5f5f6;
     padding: 10px 15px; }
@@ -28597,7 +28604,7 @@ hr {
   @media (min-width: 768px) {
     .design-system-content {
       float: right;
-      border-left: 1px solid #eceff1;
+      border-left: 3px solid #eceff1;
       padding: 0 50px 100px; } }
   .design-system-content .link-back {
     margin: 30px 0 0; }
@@ -28608,9 +28615,7 @@ hr {
 @media (min-width: 768px) {
   .design-system-menu {
     float: left;
-    padding-right: 0;
-    border-right: 1px solid #eceff1;
-    margin-right: -1px; } }
+    padding-right: 0; } }
 
 @media (max-width: 767px) {
   .design-system-menu .design-system-side-nav {

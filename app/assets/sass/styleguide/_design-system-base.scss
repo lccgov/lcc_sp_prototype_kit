@@ -1,11 +1,11 @@
 .design-system,
 .design-system footer.main,
 .design-system footer.main .footerGlobal{
-    background:$lighter-grey !important;
+    background:white !important;
 }
 .design-system{
     footer.main {
-        border-top:5px solid $light-grey;
+        border-top:3px solid $light-grey;
         .footerGlobal {
             .logo-footer img{
                 margin-bottom:20px;
@@ -34,6 +34,9 @@
                 margin:0;
                 line-height:1;
                 margin-bottom:0.75rem;
+                @media (min-width: 641px) {
+                    font-size:5rem;
+                }
                 @media (min-width: 768px) {
                     font-size: 6rem;
                 }
@@ -68,6 +71,7 @@
                 }
                 a {
                     padding:15px;
+                    border-bottom:3px solid $light-grey;
                     @media (min-width: 641px) {
                         padding: 30px;
                     }
@@ -201,9 +205,9 @@
                 text-decoration:none;
                 padding:10px 15px;
                 display:block;
-                border-left:5px solid transparent;
+                border-left:3px solid transparent;
                 &:hover{
-                    border-left:5px solid $base-link-color;
+                    border-left:3px solid $base-link-color;
                     color:$base-link-color;
                     padding:15px;
                     padding:10px 15px;
@@ -218,7 +222,7 @@
             }
             &.active{
                 a{
-                    border-left:5px solid $base-link-color;
+                    border-left:3px solid $base-link-color;
                     font-weight:bold;
                     background:$lighter-grey;
                     padding:10px 15px;
@@ -232,7 +236,7 @@
     padding:0 15px 100px;
     @media (min-width: 768px){
         float:right;
-        border-left:1px solid $border-color;
+        border-left:3px solid $border-color;
         padding:0 50px 100px;
     }
     .link-back{
@@ -247,8 +251,6 @@
     @media (min-width: 768px){
         float:left;
         padding-right:0;
-        border-right:1px solid $border-color;
-        margin-right:-1px;
     }
     .design-system-side-nav{
         @media (max-width: 767px){

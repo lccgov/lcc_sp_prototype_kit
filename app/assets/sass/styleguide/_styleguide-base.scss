@@ -65,6 +65,10 @@ hr {
 //nav
 .main-nav {
     background:$lighter-grey;
+    border-bottom:3px solid $light-grey;
+    @media (min-width: 641px){
+        border-bottom:3px solid $light-grey;
+    }
     @media (max-width: 990px){
         position: relative;
         left: 0;
@@ -79,6 +83,7 @@ hr {
             padding:0 15px;
         }
         ul{
+            margin-bottom: -3px;
             li{
                 @media (max-width: 990px){
                     border-top: 0;
@@ -88,11 +93,8 @@ hr {
                 }
                 &.active{
                     a{
-                        border-bottom:5px solid $base-link-color;
+                        border-bottom:3px solid $base-link-color;
                         font-weight:bold;
-                        @media (max-width: 641px){
-                            border-bottom:3px solid $base-link-color;
-                        }
                     }
                 }
                 a{
@@ -101,8 +103,8 @@ hr {
                     text-decoration:none;
                     margin:0;
                     color:$base-link-color;
-                    border-bottom:5px solid transparent;
-                    border-top:5px solid transparent;
+                    border-bottom:3px solid transparent;
+                    border-top:3px solid transparent;
                     @media (max-width: 641px){
                         border-bottom:3px solid transparent;
                         border-top:3px solid transparent; 
@@ -112,8 +114,8 @@ hr {
                         background:none;
                         text-decoration:none;
                         color:$base-link-color;
-                        border-bottom:5px solid $base-link-color;
-                        @media (max-width: 500px){
+                        border-bottom:3px solid $base-link-color;
+                        @media (max-width: 641px){
                             border-bottom:3px solid $base-link-color;
                         }
                     }
