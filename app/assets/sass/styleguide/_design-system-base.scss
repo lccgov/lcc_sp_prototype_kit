@@ -230,28 +230,28 @@
 
 .design-system-content{
     padding:0 15px 100px;
-    float:right;
     @media (min-width: 768px){
+        float:right;
         border-left:1px solid $border-color;
         padding:0 50px 100px;
+    }
+    .link-back{
+        margin:30px 0 0;
+        @media (min-width: 768px){
+            display:none;
+        }
     }
 }
 
 .design-system-menu{
-    float:left;
     @media (min-width: 768px){
+        float:left;
         padding-right:0;
         border-right:1px solid $border-color;
         margin-right:-1px;
     }
     .design-system-side-nav{
         @media (max-width: 767px){
-            display:none;
-        }
-    }
-    .link-back{
-        margin:30px 0 0;
-        @media (min-width: 768px){
             display:none;
         }
     }
