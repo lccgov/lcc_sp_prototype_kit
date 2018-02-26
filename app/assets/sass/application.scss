@@ -306,3 +306,47 @@ footer.main .footerGlobal nav ul li {
         }
     }
 }
+
+.alert a {
+    color:$base-link-color;
+}
+
+.list-nav{
+    li{
+        border-left:3px solid $lighter-grey;
+        a{
+            border:0;
+            padding-left:15px;
+            text-decoration:underline !important;
+            display: inline-block;
+        }
+    }
+}
+
+.sub-section-nav .sub-section .sub-section-heading {
+    border-bottom: 0;
+}
+
+.box-layout{
+    &.other{
+        p{
+            color:$secondary-font-color;
+        }
+    }
+    .list-nav{
+        li{
+            border-left:3px solid darken($border-color,5%);
+        }
+    }
+}
+
+.telephone{
+    position:relative;
+    padding-left:24px;
+    &:before{
+        margin-right:0;
+        color:$grey;
+        position:absolute;
+        left:0;
+    }
+}
