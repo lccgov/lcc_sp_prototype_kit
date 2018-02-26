@@ -30229,7 +30229,7 @@ footer.main .footerGlobal nav ul li.active a {
   padding-bottom: 0; }
   .box-layout.other p {
     color: #455a64;
-    margin: 0; }
+    margin: 0 0 10px; }
   .box-layout.other .box-layout-item:last-of-type {
     padding-bottom: 0; }
 
