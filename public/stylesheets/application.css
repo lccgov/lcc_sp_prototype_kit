@@ -30224,9 +30224,14 @@ footer.main .footerGlobal nav ul li.active a {
 .alert a {
   color: #007299; }
 
-.box-layout.other p {
-  color: #455a64;
-  margin: 0; }
+.box-layout.other {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+  .box-layout.other p {
+    color: #455a64;
+    margin: 0; }
+  .box-layout.other .box-layout-item:last-of-type {
+    padding-bottom: 0; }
 
 @media (max-width: 641px) {
   .box-layout.main.transparent .box-layout-item {

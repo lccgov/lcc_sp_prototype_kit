@@ -313,9 +313,16 @@ footer.main .footerGlobal nav ul li {
 
 .box-layout{
     &.other{
+        margin-bottom:0;
+        padding-bottom:0;
         p{
             color:$secondary-font-color;
             margin:0;
+        }
+        .box-layout-item{
+            &:last-of-type{
+                padding-bottom:0;
+            }
         }
     }
     &.main{
