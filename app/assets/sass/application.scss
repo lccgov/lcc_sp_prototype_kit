@@ -336,6 +336,19 @@ footer.main .footerGlobal nav ul li {
     .list-nav{
         li{
             border-left:3px solid darken($border-color,5%);
+            &:last-child{
+                margin:0;
+            }
+        }
+    }
+    &.transparent{
+        .box-layout-item{
+            background:transparent;
+            padding:0 30px 15px 0;
+            @media (max-width: 641px){
+                width: 100%;
+                padding:0 0 5px 0;
+            }
         }
     }
 }
@@ -343,10 +356,19 @@ footer.main .footerGlobal nav ul li {
 .telephone{
     position:relative;
     padding-left:24px;
+    margin-bottom: 10px;
     &:before{
         margin-right:0;
         color:$grey;
         position:absolute;
         left:0;
+    }
+}
+
+@media (min-width: 641px){
+    .text-highlight--red,
+    .text-highlight--blue,
+    .text-highlight--green {
+        padding: 30px;
     }
 }

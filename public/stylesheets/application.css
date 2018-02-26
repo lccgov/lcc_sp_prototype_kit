@@ -30240,12 +30240,29 @@ footer.main .footerGlobal nav ul li.active a {
 
 .box-layout .list-nav li {
   border-left: 3px solid #dde3e6; }
+  .box-layout .list-nav li:last-child {
+    margin: 0; }
+
+.box-layout.transparent .box-layout-item {
+  background: transparent;
+  padding: 0 30px 15px 0; }
+  @media (max-width: 641px) {
+    .box-layout.transparent .box-layout-item {
+      width: 100%;
+      padding: 0 0 5px 0; } }
 
 .telephone {
   position: relative;
-  padding-left: 24px; }
+  padding-left: 24px;
+  margin-bottom: 10px; }
   .telephone:before {
     margin-right: 0;
     color: #90a4ae;
     position: absolute;
     left: 0; }
+
+@media (min-width: 641px) {
+  .text-highlight--red,
+  .text-highlight--blue,
+  .text-highlight--green {
+    padding: 30px; } }
