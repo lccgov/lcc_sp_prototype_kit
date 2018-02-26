@@ -30224,17 +30224,6 @@ footer.main .footerGlobal nav ul li.active a {
 .alert a {
   color: #007299; }
 
-.list-nav li {
-  border-left: 3px solid #f5f5f6; }
-  .list-nav li a {
-    border: 0;
-    padding-left: 15px;
-    text-decoration: underline !important;
-    display: inline-block; }
-
-.sub-section-nav .sub-section .sub-section-heading {
-  border-bottom: 0; }
-
 .box-layout.other p {
   color: #455a64;
   margin: 0; }
@@ -30245,6 +30234,11 @@ footer.main .footerGlobal nav ul li.active a {
 
 .box-layout .list-nav li {
   border-left: 3px solid #f5f5f6; }
+  .box-layout .list-nav li a {
+    border: 0;
+    padding-left: 15px;
+    text-decoration: underline !important;
+    display: inline-block; }
   .box-layout .list-nav li:last-child {
     margin: 0; }
 
@@ -30280,3 +30274,10 @@ footer.main .footerGlobal nav ul li.active a {
 
 .text-highlight.top {
   margin-top: 0; }
+
+@media (max-width: 641px) {
+  .phase-banner p {
+    -moz-box-align-items: flex-start;
+    -ms-flex-align-items: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start; } }
