@@ -333,6 +333,15 @@ footer.main .footerGlobal nav ul li {
             color:$secondary-font-color;
         }
     }
+    &.main{
+        &.transparent{
+            .box-layout-item{
+                @media (max-width: 641px){
+                    padding:0 0 15px 0;
+                }
+            }
+        }
+    }
     .list-nav{
         li{
             border-left:3px solid darken($border-color,5%);
@@ -356,7 +365,10 @@ footer.main .footerGlobal nav ul li {
 .telephone{
     position:relative;
     padding-left:24px;
-    margin-bottom: 10px;
+    margin:5px 0 15px;
+    @media (max-width: 641px){    
+        margin:0 0 15px;
+    }
     &:before{
         margin-right:0;
         color:$grey;
