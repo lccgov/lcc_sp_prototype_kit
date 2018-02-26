@@ -30236,7 +30236,8 @@ footer.main .footerGlobal nav ul li.active a {
   border-bottom: 0; }
 
 .box-layout.other p {
-  color: #455a64; }
+  color: #455a64;
+  margin-top: 0; }
 
 @media (max-width: 641px) {
   .box-layout.main.transparent .box-layout-item {
@@ -30257,11 +30258,14 @@ footer.main .footerGlobal nav ul li.active a {
 
 .telephone {
   position: relative;
-  padding-left: 24px;
-  margin: 5px 0 15px; }
+  padding-left: 27px;
+  margin: 5px 0 15px;
+  font-size: 21px; }
   @media (max-width: 641px) {
     .telephone {
-      margin: 0 0 15px; } }
+      padding-left: 22px;
+      margin: 0 0 15px;
+      font-size: 19px; } }
   .telephone:before {
     margin-right: 0;
     color: #90a4ae;

@@ -331,6 +331,7 @@ footer.main .footerGlobal nav ul li {
     &.other{
         p{
             color:$secondary-font-color;
+            margin-top:0;
         }
     }
     &.main{
@@ -364,10 +365,13 @@ footer.main .footerGlobal nav ul li {
 
 .telephone{
     position:relative;
-    padding-left:24px;
+    padding-left:27px;
     margin:5px 0 15px;
-    @media (max-width: 641px){    
+    font-size:21px;
+    @media (max-width: 641px){  
+        padding-left:22px;  
         margin:0 0 15px;
+        font-size:19px;
     }
     &:before{
         margin-right:0;
