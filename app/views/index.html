@@ -1,75 +1,70 @@
-{% extends "page-layout-styleguide.html" %}
+{% extends "layout_multi_sections_home-lcc.html" %}
 
 {% block page_title %}
 	Home Page
 {% endblock %}
 
 
-  {% block css_register %}
-  <script src="https://use.typekit.net/pws7qio.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+{% block css_register %}
     <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
-   {% endblock %}
+{% endblock %}
 
+<!-- TEMPORARY FIX TO ALLOW SEARCH AUTOFILL TO WORK -->
+{% block additional_page_scripts %}
+    <script src="{{ asset_path }}javascripts/jquery.easy-autocomplete.min.js"></script>
+    <script src="/public/javascripts/application.js?1.1.60" type="text/javascript"></script>  
+{% endblock %}  
  
 
 {% block header %}
 {% endblock %}
 
  {% block main_nav %}
-  {% include "includes/main_nav.html" %}
  {% endblock %}
 
 
 
- {% block sectionOneTop %}
-
-<!--<div class="lcc-digital-header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class ="col-lg-12">
-                <h1>Welcome to LCC DIGITAL</h1>
-                <p>Here you will find all our patterns and features available to all Leeds City Council's sites and applications</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="hero-lcc-wrapper">
-    <div class="hero-lcc">
-        <div class="hero-lcc__content">
-            <div class="hero-lcc__intro">
-                <h1 class="hero-lcc__intro-header"><span>Welcome to </span>LCC DIGITAL</h1>
-                <h2 class="hero-lcc__intro-secondary">How can we help you today?</h2>
-            </div>
-            <div class="hero-lcc__actions">
-                <div class="hero-lcc__most-popular-wrapper">
-                    <ul class="hero-lcc__most-popular two">
-                        <li class="hero-lcc__most-popular-item"><a href="#" class="btn btn-green btn-arrow">Check your bin day</a></li>
-                        <li class="hero-lcc__most-popular-item"><a href="#" class="btn btn-green btn-arrow">Online payments</a></li>
-                        <li class="hero-lcc__most-popular-item"><a href="#" class="btn btn-green btn-arrow">Apply for a primary school</a></li>
-                        <li class="hero-lcc__most-popular-item"><a href="#" class="btn btn-green btn-arrow">Roadworks and closures</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
-
+{% block sectionOneTop %}
+    {% include "includes/lcc-components/home-page/hero-lcc.html" %}
 {% endblock %} 
 
 {% block sectionOneFull%}
+<!-- Bespoke style for leeds.gov.uk home page -->
+<style>
+    body, .sectionOne{
+        background:#eceff1;
+    }
+    .atoz{
+        background:#ffffff;
+    }
+    .atoz ul li a, .atoz ul li.inactive{
+        border-color:#F6F7FA;
+    }
+    .header-nav a.search,
+    #nav-search{
+        display:none;
+    }
+    @media (max-width: 767px){
+        .header-lcc .header-nav a.my-account {
+            width:65px;
+        }
+    }
+    .mega-promo .mega-promo__item.blue a {
+        background: #007299;
+    }
+    .mega-promo .mega-promo__item a {
+        background: #FFFFFF;
+    }
+
+    .mega-promo {
+        padding:0;
+    }
+</style>
 {% endblock %}
 
 {% block sectionOneFullBottom %}
-<div class="intro">
-<h1><span>WELCOME TO </span>LCC DIGITAL</h1>
-    <p class="lead">Here you will find all our patterns and features available to all LEEDS.GOV.UK sites and applications</p>
-    <div class="btn-inline">
-        <a class="btn btn-primary btn-arrow" href="/design-system/styleguide.html">Style guide and design patterns</a>
-    </div>
-</div>
-
+    {% include "includes/lcc-components/home-page/group-promos-lcc-home.html" %}
+    {% include "includes/lcc-components/home-page/promo-lcc-home.html" %}
 {% endblock %}
 
 
@@ -101,7 +96,6 @@
 {% endblock %} 
 
 {% block sectionTwoFull%} 
-
 {% endblock %}
 
 {% block sectionTwoContent %}
@@ -191,5 +185,5 @@
  {% endblock %}
 
  {% block reusablecontent_footer %}
-     {% include "includes/footer-styleguide.html" %}
+     {% include "includes/reusable-content-footer.html" %}
  {% endblock %}

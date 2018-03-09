@@ -29980,6 +29980,10 @@ aside.col-md-4 {
   margin: -15px 0 10px;
   display: block; }
 
+.findMyNearest .text-highlight,
+.findMyNearest .text-block {
+  border-color: #c0cad1; }
+
 .sectionHeader .container-fluid .header-wrapper {
   height: 75px;
   display: -webkit-box;
