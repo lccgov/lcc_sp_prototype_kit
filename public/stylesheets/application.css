@@ -29467,7 +29467,7 @@ aside.col-md-4 {
 .example {
   position: relative;
   overflow: hidden;
-  border: 1px solid #eceff1;
+  border: 1px solid #90a4ae;
   padding: 60px 15px 15px;
   margin: 30px 0;
   background: #FFFFFF; }
@@ -29480,7 +29480,7 @@ aside.col-md-4 {
     font-size: 12px;
     background: #FFFFFF;
     color: #455a64;
-    border: 1px solid #eceff1;
+    border: 1px solid #90a4ae;
     text-transform: uppercase; }
 
 @media (min-width: 641px) {
