@@ -1,0 +1,135 @@
+{% extends "layout_multi_sections-lcc.html" %}
+
+{% block page_title %}
+	Decision Tree
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block header %}
+    Decision tree
+{% endblock%}
+
+{% block main_nav %}{% endblock %}
+
+{% block sectionOneTop %}{% endblock %} 
+
+{% block sectionOneFull%}{% endblock %}
+
+{% block breadcrumb %}
+    <ul>
+        <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+            <a href="/">Home</a>
+            <ul class="">
+                <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Decision tree</li>
+            </ul>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block sectionOneContent %}
+
+<div class="text">
+
+    <h2>Getting rid of unwanted items</h2>
+
+    <div class="lcc-tree-container"></div>
+     
+</div>
+
+{% endblock %}
+
+{% block pageContent %}{% endblock %}
+
+{% block sectionOneFullBottom %}{% endblock %}
+
+{% block sectionOneRightHandColumn %}{% endblock %}
+{% block sectionOneThirdCol1 %}{% endblock %}
+{% block sectionOneThirdCol2 %}{% endblock %}
+{% block sectionOneThirdCol3 %}{% endblock %}
+{% block sectionTwoTop %}{% endblock %} 
+{% block sectionTwoFull%}{% endblock %}
+{% block sectionTwoContent %}{% endblock %}
+{% block sectionTwoRightHandColumn %}{% endblock %}
+{% block sectionTwoThirdCol1 %}{% endblock %}
+{% block sectionTwoThirdCol2 %}{% endblock %}
+{% block sectionTwoThirdCol3 %}{% endblock %}
+{% block sectionThreeTop %}{% endblock %} 
+{% block sectionThreeFull%}{% endblock %}
+{% block sectionThreeContent %}{% endblock %}
+{% block sectionThreeRightHandColumn %}{% endblock %}
+{% block sectionThreeThirdCol1 %}{% endblock %}
+{% block sectionThreeThirdCol2 %}{% endblock %}
+{% block sectionThreeThirdCol3 %}{% endblock %}
+{% block sectionFourTop %}{% endblock %} 
+
+{% block sectionFourFull%}
+    <h2 id="inpagelink-survaypanel">Survey panel</h2>
+    {% include "includes/lcc-components/survey-original.html" %}
+{% endblock %}
+
+{% block sectionFourContent %}{% endblock %}
+{% block sectionFourRightHandColumn %}{% endblock %}
+{% block sectionFourThirdCol1 %}{% endblock %}
+{% block sectionFourThirdCol2 %}{% endblock %}
+{% block sectionFourThirdCol3 %}{% endblock %}
+{% block sectionFiveTop %}{% endblock %} 
+{% block sectionFiveFull%}{% endblock %}
+{% block sectionFiveContent %}{% endblock %}
+{% block sectionFiveRightHandColumn %}{% endblock %}
+{% block sectionFiveThirdCol1 %}{% endblock %}
+{% block sectionFiveThirdCol2 %}{% endblock %}
+{% block sectionFiveThirdCol3 %}{% endblock %}
+{% block footer_nav %} {% endblock %}
+
+{% block additional_page_scripts %}
+
+    <script type="text/javascript">
+        var bookacollection = '<h3>Book a collection</h3><p>If you are unable to get rid of your items in the above ways and you are prepared to wait for up to 3 weeks, we offer a limited service to remove items from homes. This will be chargeable at a subsidised rate of £20.00.</p><p>You can find out more information about this service on our <a href="/residents/bins-and-recycling/book-an-unwanted-items-collection">Book a collection page</a>.</p><p>If a collection is not made on your appointment date then please leave the item(s) outside for a further 48 hours. Please ensure that your item/s are left in the exact location given during your booking, and that you have followed the rules for collection.</p>'
+                            
+        var data = {
+            message: '<h3>Is your item classed as garden waste?</h3>',
+            decisions: [
+                    {
+                        answer: 'Yes',
+                        message: '<h3>Garden Waste</h3><p>If you are requiring a garden waste collection and do not have access to a brown bin, please visit our <a href="#">Garden waste page</a>. This page contains guidance on booking a collection and the terms and conditions of collections.</p>'                
+                    },
+                    {
+                        answer: 'No',
+                        message: '<h3>Are you able to donate your item to charity?</h3>',
+                        decisions: [                
+                            {
+                                answer: "I'm not sure",
+                                message: '<h3>Donating to charity</h3><p>Items such as sofas, chairs and beds must carry fire safety labels. All electrical items should be free from rust, be reasonably clean, have intact seals and ideally be in full working order.</p><p>You can read more about donating to these charities in our \'Pass It On\' leaflet (PDF 1.5MB).</p><p>Most of the following organisations will collect re-usable items from your home for free:</p><h4><a href="#">Emmaus Leeds</a></h4><p>Accept furniture, electricals, white goods, bric a brac, clothes, bedding and more. Telephone 0113 248 4288.</p><h4><a href="#">Leeds and Moortown Furniture Store</a></h4><p>Accept sofas, beds, bedroom storage, tables, chairs and other living room furniture. In addition they take bedding, curtains, towels, pans and mirrors. They do not collect electrical appliances or white goods. Telephone 0113 273 9727.</p><h3>Still need to book a collection?</h3>',
+                                decisions: [                
+                                    {
+                                        answer: 'Yes',
+                                        message: bookacollection                       
+                                    }
+                                ]                      
+                            },
+                            {
+                                answer: 'No',
+                                message: bookacollection
+                            }
+                        ]
+                    }            
+                ]
+        };
+
+        jQuery(document).ready(function() {
+            jQuery('.lcc-tree-container').decisionTree({data: data});
+        });
+
+    </script>
+
+{% endblock %}
+
+{% block reusablecontent_footer %}
+    {% include "includes/reusable-content-footer.html" %}
+
+
+
+{% endblock %}
